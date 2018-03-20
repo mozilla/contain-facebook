@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Contain Facebook",
+    "version": "1.0",
+
+    "description": "Adds a container to protect browsing history from facebook.com tracking",
+
+    "icons": {
+        "48": "contain-facebook.png"
+    },
+
+    "permissions": [
+        "<all_urls>",
+        "contextualIdentities",
+        "cookies",
+        "tabs",
+        "webRequestBlocking",
+        "webRequest"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
