@@ -1,12 +1,19 @@
 let facebookCookieStoreId = null;
 
-browser.contextualIdentities.query({name: "Facebook"}).then(contexts => {
+// Param values from https://developer.mozilla.org/Add-ons/WebExtensions/API/contextualIdentities/create
+const FACEBOOK_CONTAINER_NAME = "Facebook";
+const FACEBOOK_CONTAINER_COLOR = "blue";
+const FACEBOOK_CONTAINER_ICON = "circle";
+
+browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME}).then(contexts => {
   if (contexts.length > 0) {
-    console.log("User already has a/the Facebook container, assigning cookieStoreId: ", contexts[0].cookieStoreId);
     facebookCookieStoreId = contexts[0].cookieStoreId;
   } else {
-    browser.contextualIdentities.create({name: "Facebook", color: "blue", icon: "circle"}).then(context => {
-      console.log("created context. Assigning cookieStoreId: ", context.cookieStoreId);
+    browser.contextualIdentities.create({
+      name: FACEBOOK_CONTAINER_NAME,
+      color: FACEBOOK_CONTAINER_COLOR,
+      icon: FACEBOOK_CONTAINER_ICON}
+    ).then(context => {
       facebookCookieStoreId = context.cookieStoreId;
     });
   }
@@ -18,17 +25,13 @@ browser.webRequest.onBeforeRequest.addListener(options => {
   browser.tabs.get(options.tabId).then(tab => {
     const tabCookieStoreId = tab.cookieStoreId;
     if (isFacebook) {
-      console.log("detected a top-level load to facebook.com ...");
       if (tabCookieStoreId !== facebookCookieStoreId) {
-        console.log("not in the facebookCookieStoreId! (", facebookCookieStoreId, "). Switching cookieStoreId.");
         browser.tabs.create({url: requestUrl, cookieStoreId: facebookCookieStoreId});
         browser.tabs.remove(options.tabId);
         return {cancel: true};
       }
     } else {
-      console.log("detected a top-level load NOT to facebook.com ...");
       if (tabCookieStoreId === facebookCookieStoreId) {
-        console.log("IN the facebookCookieStoreId! (", facebookCookieStoreId, "). Switching cookieStoreId.");
         browser.tabs.create({url: requestUrl});
         browser.tabs.remove(options.tabId);
         return {cancel: true};
