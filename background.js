@@ -4,6 +4,14 @@ let facebookCookieStoreId = null;
 const FACEBOOK_CONTAINER_NAME = "Facebook";
 const FACEBOOK_CONTAINER_COLOR = "blue";
 const FACEBOOK_CONTAINER_ICON = "circle";
+const FACEBOOK_DOMAIN = "facebook.com";
+const FACEBOOK_COOKIE_URL = 'https://' + FACEBOOK_DOMAIN + '/';
+
+browser.cookies.getAll({domain: FACEBOOK_DOMAIN}).then(cookies => {
+  for (let cookie of cookies) {
+    browser.cookies.remove({name: cookie.name, url: FACEBOOK_COOKIE_URL});
+  }
+});
 
 browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME}).then(contexts => {
   if (contexts.length > 0) {
