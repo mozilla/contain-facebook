@@ -7,6 +7,8 @@ const FACEBOOK_CONTAINER_ICON = "circle";
 const FACEBOOK_DOMAIN = "facebook.com";
 const FACEBOOK_COOKIE_URL = 'https://' + FACEBOOK_DOMAIN + '/';
 
+const facebookHostRE = new RegExp(`^(.*\.)?${FACEBOOK_DOMAIN}$`);
+
 browser.cookies.getAll({domain: FACEBOOK_DOMAIN}).then(cookies => {
   for (let cookie of cookies) {
     browser.cookies.remove({name: cookie.name, url: FACEBOOK_COOKIE_URL});
@@ -28,19 +30,19 @@ browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME}).then(context
 });
 
 browser.webRequest.onBeforeRequest.addListener(options => {
-  const requestUrl = options.url;
-  const isFacebook = requestUrl.indexOf("facebook.com") > -1;
+  const requestUrl = new URL(options.url);
+  const isFacebook = facebookHostRE.test(requestUrl.host);
   browser.tabs.get(options.tabId).then(tab => {
     const tabCookieStoreId = tab.cookieStoreId;
     if (isFacebook) {
       if (tabCookieStoreId !== facebookCookieStoreId) {
-        browser.tabs.create({url: requestUrl, cookieStoreId: facebookCookieStoreId});
+        browser.tabs.create({url: requestUrl.toString(), cookieStoreId: facebookCookieStoreId});
         browser.tabs.remove(options.tabId);
         return {cancel: true};
       }
     } else {
       if (tabCookieStoreId === facebookCookieStoreId) {
-        browser.tabs.create({url: requestUrl});
+        browser.tabs.create({url: requestUrl.toString()});
         browser.tabs.remove(options.tabId);
         return {cancel: true};
       }
