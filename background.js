@@ -9,7 +9,7 @@ const FACEBOOK_DOMAINS = ["facebook.com", "fb.com"];
 const facebookHostREs = [];
 
 for (let facebookDomain of FACEBOOK_DOMAINS) {
-  facebookHostREs.push(new RegExp(`^(.*\.)?${facebookDomain}$`));
+  facebookHostREs.push(new RegExp(`^(.*)?${facebookDomain}$`));
   const facebookCookieUrl = `https://${facebookDomain}/`;
 
   browser.cookies.getAll({domain: facebookDomain}).then(cookies => {
@@ -33,7 +33,7 @@ browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME}).then(context
   }
 });
 
-browser.webRequest.onBeforeRequest.addListener(options => {
+async function containFacebook(options) {
   const requestUrl = new URL(options.url);
   let isFacebook = false;
   for (let facebookHostRE of facebookHostREs) {
@@ -42,20 +42,24 @@ browser.webRequest.onBeforeRequest.addListener(options => {
       break;
     }
   }
-  browser.tabs.get(options.tabId).then(tab => {
-    const tabCookieStoreId = tab.cookieStoreId;
-    if (isFacebook) {
-      if (tabCookieStoreId !== facebookCookieStoreId) {
+  const tab = await browser.tabs.get(options.tabId);
+  const tabCookieStoreId = tab.cookieStoreId;
+  if (isFacebook) {
+    if (tabCookieStoreId !== facebookCookieStoreId) {
+      // See https://github.com/mozilla/contain-facebook/issues/23
+      // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
+      if (facebookCookieStoreId) {
         browser.tabs.create({url: requestUrl.toString(), cookieStoreId: facebookCookieStoreId});
         browser.tabs.remove(options.tabId);
         return {cancel: true};
       }
-    } else {
-      if (tabCookieStoreId === facebookCookieStoreId) {
-        browser.tabs.create({url: requestUrl.toString()});
-        browser.tabs.remove(options.tabId);
-        return {cancel: true};
-      }
     }
-  });
-},{urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
+  } else {
+    if (tabCookieStoreId === facebookCookieStoreId) {
+      browser.tabs.create({url: requestUrl.toString()});
+      browser.tabs.remove(options.tabId);
+      return {cancel: true};
+    }
+  }
+}
+browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
