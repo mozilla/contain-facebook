@@ -1,12 +1,13 @@
 {
     "manifest_version": 2,
-    "name": "Contain Facebook",
+    "name": "Facebook Container",
     "version": "1.1.0",
 
-    "description": "Adds a container to protect browsing history from facebook.com tracking",
+    "description": "Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies.",
 
     "icons": {
-        "48": "contain-facebook.png"
+        "48": "icon.png",
+        "96": "icon@2x.png"
     },
 
     "permissions": [
