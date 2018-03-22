@@ -4,16 +4,20 @@ let facebookCookieStoreId = null;
 const FACEBOOK_CONTAINER_NAME = "Facebook";
 const FACEBOOK_CONTAINER_COLOR = "blue";
 const FACEBOOK_CONTAINER_ICON = "circle";
-const FACEBOOK_DOMAIN = "facebook.com";
-const FACEBOOK_COOKIE_URL = 'https://' + FACEBOOK_DOMAIN + '/';
+const FACEBOOK_DOMAINS = ["facebook.com", "fb.com"];
 
-const facebookHostRE = new RegExp(`^(.*\.)?${FACEBOOK_DOMAIN}$`);
+const facebookHostREs = [];
 
-browser.cookies.getAll({domain: FACEBOOK_DOMAIN}).then(cookies => {
-  for (let cookie of cookies) {
-    browser.cookies.remove({name: cookie.name, url: FACEBOOK_COOKIE_URL});
-  }
-});
+for (let facebookDomain of FACEBOOK_DOMAINS) {
+  facebookHostREs.push(new RegExp(`^(.*\.)?${facebookDomain}$`));
+  const facebookCookieUrl = `https://${facebookDomain}/`;
+
+  browser.cookies.getAll({domain: facebookDomain}).then(cookies => {
+    for (let cookie of cookies) {
+      browser.cookies.remove({name: cookie.name, url: facebookCookieUrl});
+    }
+  });
+}
 
 browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME}).then(contexts => {
   if (contexts.length > 0) {
@@ -31,7 +35,13 @@ browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME}).then(context
 
 browser.webRequest.onBeforeRequest.addListener(options => {
   const requestUrl = new URL(options.url);
-  const isFacebook = facebookHostRE.test(requestUrl.host);
+  let isFacebook = false;
+  for (let facebookHostRE of facebookHostREs) {
+    if (facebookHostRE.test(requestUrl.host)) {
+      isFacebook = true;
+      break;
+    }
+  }
   browser.tabs.get(options.tabId).then(tab => {
     const tabCookieStoreId = tab.cookieStoreId;
     if (isFacebook) {
