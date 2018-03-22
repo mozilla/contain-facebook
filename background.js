@@ -45,7 +45,7 @@ async function containFacebook(options) {
   const tab = await browser.tabs.get(options.tabId);
   const tabCookieStoreId = tab.cookieStoreId;
   if (isFacebook) {
-    if (tabCookieStoreId !== facebookCookieStoreId) {
+    if (tabCookieStoreId !== facebookCookieStoreId && !tab.incognito) {
       // See https://github.com/mozilla/contain-facebook/issues/23
       // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
       if (facebookCookieStoreId) {
