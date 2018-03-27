@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Facebook Container",
-    "version": "1.2.3",
+    "version": "1.2.4",
 
     "description": "Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies.",
 
@@ -23,6 +23,7 @@
         "<all_urls>",
         "contextualIdentities",
         "cookies",
+        "management",
         "tabs",
         "webRequestBlocking",
         "webRequest"

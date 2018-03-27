@@ -4,23 +4,27 @@ const FACEBOOK_CONTAINER_COLOR = "blue";
 const FACEBOOK_CONTAINER_ICON = "briefcase";
 const FACEBOOK_DOMAINS = ["facebook.com", "www.facebook.com", "fb.com"];
 
+const MAC_ADDON_ID = "@testpilot-containers";
+
 let facebookCookieStoreId = null;
 
 const facebookHostREs = [];
 
 async function isFacebookAlreadyAssignedInMAC () {
+  let macAddonInfo;
+  // If the MAC add-on isn't installed, return false
+  try {
+    macAddonInfo = await browser.management.get(MAC_ADDON_ID);
+  } catch (e) {
+    return false;
+  }
   let anyFBDomainsAssigned = false;
   for (let facebookDomain of FACEBOOK_DOMAINS) {
     const facebookCookieUrl = `https://${facebookDomain}/`;
-    let assignment;
-    try {
-      assignment = await browser.runtime.sendMessage("@testpilot-containers", {
-        method: "getAssignment",
-        url: facebookCookieUrl
-      });
-    } catch (e) {
-      return false;
-    }
+    const assignment = await browser.runtime.sendMessage(MAC_ADDON_ID, {
+      method: "getAssignment",
+      url: facebookCookieUrl
+    });
     if (assignment) {
       anyFBDomainsAssigned = true;
     }
