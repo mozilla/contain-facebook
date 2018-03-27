@@ -18,7 +18,6 @@ async function isFacebookAlreadyAssignedInMAC () {
   } catch (e) {
     return false;
   }
-  let anyFBDomainsAssigned = false;
   for (let facebookDomain of FACEBOOK_DOMAINS) {
     const facebookCookieUrl = `https://${facebookDomain}/`;
     const assignment = await browser.runtime.sendMessage(MAC_ADDON_ID, {
@@ -26,10 +25,10 @@ async function isFacebookAlreadyAssignedInMAC () {
       url: facebookCookieUrl
     });
     if (assignment) {
-      anyFBDomainsAssigned = true;
+      return true;
     }
   }
-  return anyFBDomainsAssigned;
+  return false;
 }
 
 (async function init() {
