@@ -8,6 +8,7 @@ const MAC_ADDON_ID = "@testpilot-containers";
 
 let facebookCookieStoreId = null;
 
+const canceledRequests = {};
 const facebookHostREs = [];
 
 async function isFacebookAlreadyAssignedInMAC () {
@@ -30,6 +31,49 @@ async function isFacebookAlreadyAssignedInMAC () {
     }
   }
   return anyFBDomainsAssigned;
+}
+
+function cancelRequest (tab, options) {
+  // we decided to cancel the request at this point, register canceled request
+  canceledRequests[tab.id] = {
+    requestIds: {
+      [options.requestId]: true
+    },
+    urls: {
+      [options.url]: true
+    }
+  };
+
+  // since webRequest onCompleted and onErrorOccurred are not 100% reliable
+  // we register a timer here to cleanup canceled requests, just to make sure we don't
+  // end up in a situation where certain urls in a tab.id stay canceled
+  setTimeout(() => {
+    if (canceledRequests[tab.id]) {
+      delete canceledRequests[tab.id];
+    }
+  }, 2000);
+}
+
+function shouldCancelEarly (tab, options) {
+  // we decided to cancel the request at this point
+  if (!canceledRequests[tab.id]) {
+    cancelRequest(tab, options);
+  } else {
+    let cancelEarly = false;
+    if (canceledRequests[tab.id].requestIds[options.requestId] ||
+        canceledRequests[tab.id].urls[options.url]) {
+      // same requestId or url from the same tab
+      // this is a redirect that we have to cancel early to prevent opening two tabs
+      cancelEarly = true;
+    }
+    // register this requestId and url as canceled too
+    canceledRequests[tab.id].requestIds[options.requestId] = true;
+    canceledRequests[tab.id].urls[options.url] = true;
+    if (cancelEarly) {
+      return true;
+    }
+  }
+  return false;
 }
 
 (async function init() {
@@ -83,6 +127,9 @@ async function isFacebookAlreadyAssignedInMAC () {
         // See https://github.com/mozilla/contain-facebook/issues/23
         // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
         if (facebookCookieStoreId) {
+          if (shouldCancelEarly(tab, options)) {
+            return {cancel: true};
+          }
           browser.tabs.create({url: requestUrl.toString(), cookieStoreId: facebookCookieStoreId});
           browser.tabs.remove(options.tabId);
           return {cancel: true};
@@ -90,6 +137,9 @@ async function isFacebookAlreadyAssignedInMAC () {
       }
     } else {
       if (tabCookieStoreId === facebookCookieStoreId) {
+        if (shouldCancelEarly(tab, options)) {
+          return {cancel: true};
+        }
         browser.tabs.create({url: requestUrl.toString()});
         browser.tabs.remove(options.tabId);
         return {cancel: true};
@@ -99,4 +149,16 @@ async function isFacebookAlreadyAssignedInMAC () {
 
   // Add the request listener
   browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
+
+  // Clean up canceled requests
+  browser.webRequest.onCompleted.addListener((options) => {
+    if (canceledRequests[options.tabId]) {
+     delete canceledRequests[options.tabId];
+    }
+  },{urls: ["<all_urls>"], types: ["main_frame"]});
+  browser.webRequest.onErrorOccurred.addListener((options) => {
+    if (canceledRequests[options.tabId]) {
+      delete canceledRequests[options.tabId];
+    }
+  },{urls: ["<all_urls>"], types: ["main_frame"]});
 })();
