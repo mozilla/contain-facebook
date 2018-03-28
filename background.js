@@ -40,7 +40,7 @@ async function isFacebookAlreadyAssignedInMAC () {
 
   // Clear all facebook cookies
   for (let facebookDomain of FACEBOOK_DOMAINS) {
-    facebookHostREs.push(new RegExp(`^(.*)?${facebookDomain}$`));
+    facebookHostREs.push(new RegExp(`^(.*\\.)?${facebookDomain}$`));
     const facebookCookieUrl = `https://${facebookDomain}/`;
 
     browser.cookies.getAll({domain: facebookDomain}).then(cookies => {
