@@ -83,14 +83,23 @@ async function isFacebookAlreadyAssignedInMAC () {
         // See https://github.com/mozilla/contain-facebook/issues/23
         // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
         if (facebookCookieStoreId) {
-          browser.tabs.create({url: requestUrl.toString(), cookieStoreId: facebookCookieStoreId});
+          browser.tabs.create({
+            url: requestUrl.toString(),
+            cookieStoreId: facebookCookieStoreId,
+            active: tab.active,
+            index: tab.index
+          });
           browser.tabs.remove(options.tabId);
           return {cancel: true};
         }
       }
     } else {
       if (tabCookieStoreId === facebookCookieStoreId) {
-        browser.tabs.create({url: requestUrl.toString()});
+        browser.tabs.create({
+          url: requestUrl.toString(),
+          active: tab.active,
+          index: tab.index
+        });
         browser.tabs.remove(options.tabId);
         return {cancel: true};
       }
