@@ -2,16 +2,17 @@
 const FACEBOOK_CONTAINER_NAME = "Facebook";
 const FACEBOOK_CONTAINER_COLOR = "blue";
 const FACEBOOK_CONTAINER_ICON = "briefcase";
-const FACEBOOK_DOMAINS = ["facebook.com", "www.facebook.com", "fb.com", "fbcdn.net", "cdn.fbsbx.com",
-                          "instagram.com", "www.instagram.com",
-                          "messenger.com", "www.messenger.com",
-                          "atdmt.com"];
+const FACEBOOK_DOMAINS = [
+  "facebook.com", "www.facebook.com", "fb.com", "fbcdn.net", "cdn.fbsbx.com",
+  "instagram.com", "www.instagram.com",
+  "messenger.com", "www.messenger.com",
+  "atdmt.com"
+];
 
 const MAC_ADDON_ID = "@testpilot-containers";
 
 let macAddonEnabled = false;
 let facebookCookieStoreId = null;
-let facebookCookiesCleared = false;
 
 const canceledRequests = {};
 const facebookHostREs = [];
@@ -38,17 +39,17 @@ async function setupMACAddonManagementListeners () {
     if (info.id === MAC_ADDON_ID) {
       macAddonEnabled = false;
     }
-  })
+  });
   browser.management.onEnabled.addListener(info => {
     if (info.id === MAC_ADDON_ID) {
       macAddonEnabled = true;
     }
-  })
+  });
   browser.management.onDisabled.addListener(info => {
     if (info.id === MAC_ADDON_ID) {
       macAddonEnabled = false;
     }
-  })
+  });
 }
 
 async function getMACAssignment (url) {
@@ -116,7 +117,7 @@ async function clearFacebookCookies () {
   // Clear all facebook cookies
   const containers = await browser.contextualIdentities.query({});
   containers.push({
-    cookieStoreId: 'firefox-default'
+    cookieStoreId: "firefox-default"
   });
   containers.map(container => {
     const storeId = container.cookieStoreId;
@@ -146,7 +147,7 @@ async function clearFacebookCookies () {
 
 async function setupContainer () {
   // Use existing Facebook container, or create one
-  const contexts = await browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME})
+  const contexts = await browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME});
   if (contexts.length > 0) {
     facebookCookieStoreId = contexts[0].cookieStoreId;
   } else {
@@ -154,7 +155,7 @@ async function setupContainer () {
       name: FACEBOOK_CONTAINER_NAME,
       color: FACEBOOK_CONTAINER_COLOR,
       icon: FACEBOOK_CONTAINER_ICON
-    })
+    });
     facebookCookieStoreId = context.cookieStoreId;
   }
 }
@@ -234,7 +235,7 @@ async function containFacebook (options) {
   // Clean up canceled requests
   browser.webRequest.onCompleted.addListener((options) => {
     if (canceledRequests[options.tabId]) {
-     delete canceledRequests[options.tabId];
+      delete canceledRequests[options.tabId];
     }
   },{urls: ["<all_urls>"], types: ["main_frame"]});
   browser.webRequest.onErrorOccurred.addListener((options) => {
