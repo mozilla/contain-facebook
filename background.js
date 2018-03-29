@@ -127,7 +127,8 @@ async function containFacebook (options) {
           url: requestUrl.toString(),
           cookieStoreId: facebookCookieStoreId,
           active: tab.active,
-          index: tab.index
+          index: tab.index,
+          windowId: tab.windowId
         });
         browser.tabs.remove(options.tabId);
         return {cancel: true};
@@ -138,7 +139,8 @@ async function containFacebook (options) {
       browser.tabs.create({
         url: requestUrl.toString(),
         active: tab.active,
-        index: tab.index
+        index: tab.index,
+        windowId: tab.windowId
       });
       browser.tabs.remove(options.tabId);
       return {cancel: true};
