@@ -61,7 +61,7 @@ async function getMACAssignment (url) {
 
 function generateFacebookHostREs () {
   for (let facebookDomain of FACEBOOK_DOMAINS) {
-    facebookHostREs.push(new RegExp(`^(.*)?${facebookDomain}$`));
+    facebookHostREs.push(new RegExp(`^(.*\\.)?${facebookDomain}$`));
   }
 }
 
