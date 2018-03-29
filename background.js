@@ -2,7 +2,7 @@
 const FACEBOOK_CONTAINER_NAME = "Facebook";
 const FACEBOOK_CONTAINER_COLOR = "blue";
 const FACEBOOK_CONTAINER_ICON = "briefcase";
-const FACEBOOK_DOMAINS = ["facebook.com", "www.facebook.com", "fb.com"];
+const FACEBOOK_DOMAINS = ["facebook.com", "www.facebook.com", "fb.com", "messenger.com", "www.messenger.com"];
 
 const MAC_ADDON_ID = "@testpilot-containers";
 
