@@ -109,17 +109,36 @@ function generateFacebookHostREs () {
   }
 }
 
-function clearFacebookCookies () {
+async function clearFacebookCookies () {
   // Clear all facebook cookies
-  for (let facebookDomain of FACEBOOK_DOMAINS) {
-    const facebookCookieUrl = `https://${facebookDomain}/`;
+  const containers = await browser.contextualIdentities.query({});
+  containers.push({
+    cookieStoreId: 'firefox-default'
+  });
+  containers.map(container => {
+    const storeId = container.cookieStoreId;
+    if (storeId === facebookCookieStoreId) {
+      // Don't clear cookies in the Facebook Container
+      return;
+    }
 
-    browser.cookies.getAll({domain: facebookDomain}).then(cookies => {
-      for (let cookie of cookies) {
-        browser.cookies.remove({name: cookie.name, url: facebookCookieUrl});
-      }
+    FACEBOOK_DOMAINS.map(async facebookDomain => {
+      const facebookCookieUrl = `https://${facebookDomain}/`;
+
+      const cookies = await browser.cookies.getAll({
+        domain: facebookDomain,
+        storeId
+      });
+
+      cookies.map(cookie => {
+        browser.cookies.remove({
+          name: cookie.name,
+          url: facebookCookieUrl,
+          storeId
+        });
+      });
     });
-  }
+  });
 }
 
 async function setupContainer () {
@@ -200,9 +219,9 @@ async function containFacebook (options) {
   await setupMACAddonManagementListeners();
   macAddonEnabled = await isMACAddonEnabled();
 
+  await setupContainer();
   clearFacebookCookies();
   generateFacebookHostREs();
-  await setupContainer();
 
   // Add the request listener
   browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
