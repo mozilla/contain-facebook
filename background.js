@@ -174,6 +174,46 @@ function reopenTab ({url, tab, cookieStoreId}) {
   browser.tabs.remove(tab.id);
 }
 
+
+async function blockFacebookCookies (details) {
+  if (details.tabId === -1) {
+    // Request doesn't belong to a tab
+    return;
+  }
+
+  const tab = await browser.tabs.get(details.tabId);
+  if (tab.cookieStoreId === facebookCookieStoreId) {
+    // Don't block cookies in Facebook Container
+    return;
+  }
+
+  if (!isFacebookURL(details.url)) {
+    // Only handle Facebook URL requests
+    return;
+  }
+
+  if (isFacebookURL(tab.url)) {
+    // Facebook is loaded in the current tab, MAC assigned
+    return;
+  }
+
+  if (tab.url === "about:blank" && tab.status === "loading") {
+    // Tab still loading, check if request URL is MAC assigned
+    const macAssigned = await getMACAssignment(details.url);
+    if (macAssigned) {
+      return;
+    }
+  }
+
+  // Not Facebook Container but Facebook URL
+  // Strip cookies header if present
+  return Object.assign(details, {
+    requestHeaders: details.requestHeaders.filter(header => {
+      return header.name.toLowerCase() === "cookie"
+    });
+  });
+}
+
 function isFacebookURL (url) {
   const parsedUrl = new URL(url);
   for (let facebookHostRE of facebookHostREs) {
@@ -340,9 +380,15 @@ async function containFacebook (options) {
       delete canceledRequests[options.tabId];
     }
   },{urls: ["<all_urls>"], types: ["main_frame"]});
-
   // Add the request listener
   browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
+
+  // Block outgoing facebook cookies in Non-Facebook Containers
+  browser.webRequest.onBeforeSendHeaders.addListener(blockFacebookCookies, {
+    urls: ['<all_urls>']
+  }, [
+    'blocking', 'requestHeaders'
+  ]);
 
   maybeReopenAlreadyOpenTabs();
 })();
