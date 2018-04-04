@@ -7,6 +7,12 @@ const FACEBOOK_DOMAINS = ["facebook.com", "www.facebook.com", "fb.com", "fbcdn.n
                           "messenger.com", "www.messenger.com",
                           "atdmt.com"];
 
+const FACEBOOK_OAUTH_ENDPOINTS = [
+  /^https:\/\/www\.facebook\.com\/dialog\/oauth\?/,
+  /^https:\/\/www\.facebook\.com\/v1\.0\/dialog\/oauth\?/,
+  /^https:\/\/www\.facebook\.com\/login\.php\?.*&next=https%3A%2F%2Fwww\.facebook\.com%2Fv1\.0%2Fdialog%2Foauth%3F/
+];
+
 const MAC_ADDON_ID = "@testpilot-containers";
 
 let macAddonEnabled = false;
@@ -106,6 +112,64 @@ function shouldCancelEarly (tab, options) {
   return false;
 }
 
+async function isAllowedFacebookOAuthInMacContainer (options) {
+  if (!macAddonEnabled) {
+    return false;
+  }
+
+  const extractRedirectUri = (url) => {
+    const parsedUrl = new URL(url);
+    const queryParts = parsedUrl.search.substring(1).split("&");
+    const redirectUriPart = queryParts.find(queryPart => queryPart.startsWith("redirect_uri="));
+    if (!redirectUriPart) {
+      return {
+        queryParts
+      };
+    }
+    const redirectUri = redirectUriPart.split('=')[1];
+    return {
+      redirectUri: decodeURIComponent(redirectUri)
+    };
+  }
+
+  for (const oauthEndpoint of FACEBOOK_OAUTH_ENDPOINTS) {
+    if (!oauthEndpoint.test(options.url)) {
+      continue;
+    }
+
+    if (options.originUrl) {
+      const macAssigned = await getMACAssignment(options.originUrl);
+      if (macAssigned) {
+        return true;
+      }
+    }
+
+    const extracted = extractRedirectUri(options.url);
+    let redirectUri = extracted.redirectUri || false;
+    if (!redirectUri) {
+      const nextPart = extracted.queryParts.find(queryPart => queryPart.startsWith("next="));
+      if (!nextPart) {
+        continue;
+      }
+      const nextUrl = decodeURIComponent(nextPart.split('=')[1]);
+      const nextExtracted = extractRedirectUri(nextUrl);
+      redirectUri = nextExtracted.redirectUri;
+      if (!redirectUri) {
+        continue;
+      }
+    }
+
+    if (redirectUri) {
+      const macAssigned = await getMACAssignment(redirectUri);
+      if (macAssigned) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
+
 function generateFacebookHostREs () {
   for (let facebookDomain of FACEBOOK_DOMAINS) {
     facebookHostREs.push(new RegExp(`^(.*\\.)?${facebookDomain}$`));
@@ -189,6 +253,10 @@ async function containFacebook (options) {
       // See https://github.com/mozilla/contain-facebook/issues/23
       // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
       if (facebookCookieStoreId) {
+        if (await isAllowedFacebookOAuthInMacContainer(options)) {
+          return;
+        }
+
         if (shouldCancelEarly(tab, options)) {
           return {cancel: true};
         }
