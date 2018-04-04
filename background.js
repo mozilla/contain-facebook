@@ -241,4 +241,14 @@ async function containFacebook (options) {
       delete canceledRequests[options.tabId];
     }
   },{urls: ["<all_urls>"], types: ["main_frame"]});
+
+  // web.whatsapp.com workaround, see #101
+  browser.tabs.onUpdated.addListener((tabId, changeInfo) => {
+    if (changeInfo.url && /^https?:\/\/web.whatsapp.com/.test(changeInfo.url)) {
+      containFacebook({
+        tabId,
+        url: changeInfo.url
+      })
+    }
+  })
 })();
