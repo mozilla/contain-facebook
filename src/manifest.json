@@ -21,6 +21,7 @@
 
     "permissions": [
         "<all_urls>",
+        "browsingData",
         "contextualIdentities",
         "cookies",
         "management",
