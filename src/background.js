@@ -163,6 +163,8 @@ async function clearFacebookCookies () {
           storeId
         });
       });
+      // Also clear Service Workers as it breaks detecting onBeforeRequest
+      await browser.browsingData.remove({hostnames: [facebookDomain]}, {serviceWorkers: true});
     });
   });
 }
