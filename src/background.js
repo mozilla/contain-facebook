@@ -124,15 +124,32 @@ async function clearFacebookCookies () {
   containers.push({
     cookieStoreId: "firefox-default"
   });
-  containers.map(container => {
-    const storeId = container.cookieStoreId;
-    if (storeId === facebookCookieStoreId) {
-      // Don't clear cookies in the Facebook Container
+
+  let macAssignments = [];
+  if (macAddonEnabled) {
+    const promises = FACEBOOK_DOMAINS.map(async facebookDomain => {
+      const assigned = await getMACAssignment(`https://${facebookDomain}/`);
+      return assigned ? facebookDomain : null;
+    });
+    macAssignments = await Promise.all(promises);
+  }
+
+  FACEBOOK_DOMAINS.map(async facebookDomain => {
+    const facebookCookieUrl = `https://${facebookDomain}/`;
+
+    // dont clear cookies for facebookDomain if mac assigned (with or without www.)
+    if (macAddonEnabled &&
+        (macAssignments.includes(facebookDomain) ||
+         macAssignments.includes(`www.${facebookDomain}`))) {
       return;
     }
 
-    FACEBOOK_DOMAINS.map(async facebookDomain => {
-      const facebookCookieUrl = `https://${facebookDomain}/`;
+    containers.map(async container => {
+      const storeId = container.cookieStoreId;
+      if (storeId === facebookCookieStoreId) {
+        // Don't clear cookies in the Facebook Container
+        return;
+      }
 
       const cookies = await browser.cookies.getAll({
         domain: facebookDomain,
