@@ -1,0 +1,30 @@
+{
+  "name": "contain-facebook",
+  "version": "1.2.4",
+  "description": "Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies. ",
+  "main": "background.js",
+  "scripts": {
+    "test": "eslint .",
+    "build": "npm test && web-ext build --overwrite-dest --ignore-files 'package*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mozilla/contain-facebook.git"
+  },
+  "keywords": [
+    "addon",
+    "firefox",
+    "mozilla"
+  ],
+  "author": "Luke Crouch",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mozilla/contain-facebook/issues"
+  },
+  "homepage": "https://github.com/mozilla/contain-facebook#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-no-unsanitized": "^2.0.2",
+    "web-ext": "^2.6.0"
+  }
+}
