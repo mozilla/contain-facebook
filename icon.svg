@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 96 96" height="96" width="96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <clipPath id="c">
+    <rect x="1.5" y="1.5" width="93" height="93" rx="13" ry="13"/>
+  </clipPath>
+  <path id="a" d="m0 25.5 4.5-4.5 4.5 4.5v49.5h-9z"/>
+  <rect id="b" x="17" width="62" height="4.5"/>
+</defs>
+<g clip-path="url(#c)" stroke-width="0">
+  <rect width="96" height="96" fill="#fc8c22"/>
+  <path d="m33 96c-8-28 42-70 28-96h-61v96z" fill="#cc086a"/>
+  <path d="m33 96c-8-28 42-70 28-96h25c5 51-55 64-47 96z" fill="#e71784"/>
+  <path d="m39 96c8-12 18-26 57-36v-16c-11 0-16 2-20 4 7-5 14-12 20-28v-20h-10c5 51-55 64-47 96z" fill="#fc441c"/>
+  <path d="m39 96c8-12 18-26 57-36v15c-14 11-33 8-51 21z" fill="#fb5d1d"/>
+  <g fill="#fff">
+    <use x="16.5" xlink:href="#a"/>
+    <use x="34.5" xlink:href="#a"/>
+    <use x="52.5" xlink:href="#a"/>
+    <use x="70.5" xlink:href="#a"/>
+    <use y="34.5" xlink:href="#b"/>
+    <use y="61.5" xlink:href="#b"/>
+  </g>
+</g>
+</svg>
