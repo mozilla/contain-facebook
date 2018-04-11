@@ -31,26 +31,20 @@ async function isMACAddonEnabled () {
 }
 
 async function setupMACAddonManagementListeners () {
-  browser.management.onInstalled.addListener(info => {
-    if (info.id === MAC_ADDON_ID) {
-      macAddonEnabled = true;
-    }
-  });
-  browser.management.onUninstalled.addListener(info => {
+  function disabledExtension (info) {
     if (info.id === MAC_ADDON_ID) {
       macAddonEnabled = false;
     }
-  });
-  browser.management.onEnabled.addListener(info => {
+  }
+  function enabledExtension (info) {
     if (info.id === MAC_ADDON_ID) {
       macAddonEnabled = true;
     }
-  });
-  browser.management.onDisabled.addListener(info => {
-    if (info.id === MAC_ADDON_ID) {
-      macAddonEnabled = false;
-    }
-  });
+  }
+  browser.management.onInstalled.addListener(enabledExtension);
+  browser.management.onEnabled.addListener(enabledExtension);
+  browser.management.onUninstalled.addListener(disabledExtension);
+  browser.management.onDisabled.addListener(disabledExtension);
 }
 
 async function getMACAssignment (url) {
@@ -331,7 +325,7 @@ async function containFacebook (options) {
   return {cancel: true};
 }
 
-(async function init() {
+(async function init () {
   await setupMACAddonManagementListeners();
   macAddonEnabled = await isMACAddonEnabled();
 
