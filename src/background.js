@@ -6,6 +6,7 @@ const FACEBOOK_DOMAINS = [
   "facebook.com", "www.facebook.com", "fb.com", "fbcdn.net", "cdn.fbsbx.com",
   "instagram.com", "www.instagram.com",
   "messenger.com", "www.messenger.com",
+  "whatsapp.com", "www.whatsapp.com", "web.whatsapp.com", "cdn.whatsapp.net",
   "atdmt.com"
 ];
 
