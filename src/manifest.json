@@ -21,9 +21,11 @@
 
     "permissions": [
         "<all_urls>",
+        "browsingData",
         "contextualIdentities",
         "cookies",
         "management",
+        "storage",
         "tabs",
         "webRequestBlocking",
         "webRequest"

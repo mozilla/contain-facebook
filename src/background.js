@@ -137,53 +137,28 @@ function generateFacebookHostREs () {
   }
 }
 
-async function clearFacebookCookies () {
-  // Clear all facebook cookies
-  const containers = await browser.contextualIdentities.query({});
-  containers.push({
-    cookieStoreId: "firefox-default"
-  });
-
-  let macAssignments = [];
-  if (macAddonEnabled) {
-    const promises = FACEBOOK_DOMAINS.map(async facebookDomain => {
-      const assigned = await getMACAssignment(`https://${facebookDomain}/`);
-      return assigned ? facebookDomain : null;
-    });
-    macAssignments = await Promise.all(promises);
+async function clearFacebookStorage () {
+  const key = "storage-cleared";
+  const storageResponse = await browser.storage.local.get([key]);
+  if (key in storageResponse) {
+    return true;
   }
-
-  FACEBOOK_DOMAINS.map(async facebookDomain => {
-    const facebookCookieUrl = `https://${facebookDomain}/`;
-
-    // dont clear cookies for facebookDomain if mac assigned (with or without www.)
-    if (macAddonEnabled &&
-        (macAssignments.includes(facebookDomain) ||
-         macAssignments.includes(`www.${facebookDomain}`))) {
-      return;
-    }
-
-    containers.map(async container => {
-      const storeId = container.cookieStoreId;
-      if (storeId === facebookCookieStoreId) {
-        // Don't clear cookies in the Facebook Container
-        return;
-      }
-
-      const cookies = await browser.cookies.getAll({
-        domain: facebookDomain,
-        storeId
-      });
-
-      cookies.map(cookie => {
-        browser.cookies.remove({
-          name: cookie.name,
-          url: facebookCookieUrl,
-          storeId
-        });
-      });
+  const clearPromises = FACEBOOK_DOMAINS.map(async facebookDomain => {
+    // Clear all storages
+    // Also clear Service Workers as it breaks detecting onBeforeRequest
+    return browser.browsingData.remove({hostnames: [facebookDomain]}, {
+      cookies: true,
+      cache: true,
+      localStorage: true,
+      pluginData: true,
+      serviceWorkers: true
     });
   });
+  await Promise.all(clearPromises);
+  browser.storage.local.set({
+    [key]: true
+  });
+  return true;
 }
 
 async function setupContainer () {
@@ -364,7 +339,8 @@ async function containFacebook (options) {
     console.log(error);
     return;
   }
-  clearFacebookCookies();
+  // One time clean of all FB data
+  await clearFacebookStorage();
   generateFacebookHostREs();
 
   // Clean up canceled requests
