@@ -23,6 +23,7 @@ async function isMACAddonEnabled () {
   try {
     const macAddonInfo = await browser.management.get(MAC_ADDON_ID);
     if (macAddonInfo.enabled) {
+      sendJailedDomainsToMAC();
       return true;
     }
   } catch (e) {
@@ -31,27 +32,45 @@ async function isMACAddonEnabled () {
   return false;
 }
 
-async function setupMACAddonManagementListeners () {
-  browser.management.onInstalled.addListener(info => {
-    if (info.id === MAC_ADDON_ID) {
-      macAddonEnabled = true;
+async function setupMACAddonListeners () {
+  browser.runtime.onMessageExternal.addListener((message, sender) => {
+    if (sender.id !== "@testpilot-containers") {
+      return;
+    }
+    switch (message.method) {
+    case "MACListening":
+      sendJailedDomainsToMAC();
+      break;
     }
   });
-  browser.management.onUninstalled.addListener(info => {
-    if (info.id === MAC_ADDON_ID) {
-      macAddonEnabled = false;
-    }
-  });
-  browser.management.onEnabled.addListener(info => {
-    if (info.id === MAC_ADDON_ID) {
-      macAddonEnabled = true;
-    }
-  });
-  browser.management.onDisabled.addListener(info => {
+  function disabledExtension (info) {
     if (info.id === MAC_ADDON_ID) {
       macAddonEnabled = false;
     }
-  });
+  }
+  function enabledExtension (info) {
+    if (info.id === MAC_ADDON_ID) {
+      macAddonEnabled = true;
+    }
+  }
+  browser.management.onInstalled.addListener(enabledExtension);
+  browser.management.onEnabled.addListener(enabledExtension);
+  browser.management.onUninstalled.addListener(disabledExtension);
+  browser.management.onDisabled.addListener(disabledExtension);
+}
+
+async function sendJailedDomainsToMAC () {
+  try {
+    return await browser.runtime.sendMessage(MAC_ADDON_ID, {
+      method: "jailedDomains",
+      urls: FACEBOOK_DOMAINS.map((domain) => {
+        return `https://${domain}/`;
+      })
+    });
+  } catch (e) {
+    // We likely might want to handle this case: https://github.com/mozilla/contain-facebook/issues/113#issuecomment-380444165
+    return false;
+  }
 }
 
 async function getMACAssignment (url) {
@@ -334,8 +353,8 @@ async function containFacebook (options) {
   return {cancel: true};
 }
 
-(async function init() {
-  await setupMACAddonManagementListeners();
+(async function init () {
+  await setupMACAddonListeners();
   macAddonEnabled = await isMACAddonEnabled();
 
   try {
