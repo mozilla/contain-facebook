@@ -25,6 +25,7 @@
         "contextualIdentities",
         "cookies",
         "management",
+        "storage",
         "tabs",
         "webRequestBlocking",
         "webRequest"
