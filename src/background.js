@@ -7,7 +7,7 @@ const FACEBOOK_DOMAINS = [
   "instagram.com", "www.instagram.com",
   "messenger.com", "www.messenger.com",
   "whatsapp.com", "www.whatsapp.com", "web.whatsapp.com", "cdn.whatsapp.net", "www-cdn.whatsapp.net",
-  "atdmt.com"
+  "atdmt.com", "vk.com", "www.vk.com"
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
