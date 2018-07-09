@@ -4,7 +4,7 @@ const FACEBOOK_CONTAINER_COLOR = "blue";
 const FACEBOOK_CONTAINER_ICON = "briefcase";
 const FACEBOOK_DOMAINS = [
   "facebook.com", "www.facebook.com", "fb.com", "fbcdn.net", "fbsbx.com",
-  "instagram.com", "www.instagram.com", "cdninstagram.com",
+  "instagram.com", "www.instagram.com", "cdninstagram.com", "messengerdevelopers.com", "blog.messengerdevelopers.com",
   "messenger.com", "www.messenger.com",
   "whatsapp.com", "www.whatsapp.com", "web.whatsapp.com", "cdn.whatsapp.net", "www-cdn.whatsapp.net",
   "atdmt.com",
