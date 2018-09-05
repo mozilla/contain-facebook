@@ -11,7 +11,8 @@ const FACEBOOK_DOMAINS = [
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
   "messenger.com", "www.messenger.com", "m.me",
   "whatsapp.com", "www.whatsapp.com", "web.whatsapp.com", "cdn.whatsapp.net", "www-cdn.whatsapp.net",
-  "atdmt.com", "vk.com", "www.vk.com"
+  "atdmt.com", "vk.com", "www.vk.com",
+  "www.oculus.com", "developer.oculus.com", "creator.oculus.com", "support.oculus.com", "secure.oculus.com", "auth.oculus.com", "oculusforbusiness.com", "www.oculusforbusiness.com", "forums.oculus.com", "forums.oculusvr.com"
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
