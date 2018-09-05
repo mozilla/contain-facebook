@@ -1,3 +1,24 @@
+# Custom Fork additions
+
+I've forked this because the Firefox dev team seems to have abandoned it. Check the latest commit date for currency.
+
+Additions:
+
+* many new domains, per [PRs against the source repo](https://github.com/mozilla/contain-facebook/pulls).
+
+
+To use this plugin, you will need to build and load it manually into Firefox.  
+
+1. be sure you are using the latest verstion of FF
+2. download this repo and build it
+3. visit `about:config` in your Firefox browser
+4. set `xpinstall.signatures.required` to `false`
+5. install fia the Extensions page
+
+Remember to forever be cautious of new extensions, and malicious sites that may try to auto-install them!
+
+-----
+
 # Facebook Container
 
 **Prevent Facebook from tracking your visits to other websites**
