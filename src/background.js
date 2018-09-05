@@ -5,6 +5,8 @@ const FACEBOOK_CONTAINER_ICON = "briefcase";
 const FACEBOOK_DOMAINS = [
   "facebook.com", "www.facebook.com", "facebook.net", "fb.com", 
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net", "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net",
+  "facebookcorewwwi.onion", "www.facebookcorewwwi.onion", "fbcdn23dssr3jqnq.onion",
+  "m.facebookcorewwwi.onion", "l.facebookcorewwwi.onion", "lm.facebookcorewwwi.onion",
   "instagram.com", "www.instagram.com", "logger.instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
   "messenger.com", "www.messenger.com", "m.me",
