@@ -9,7 +9,7 @@ const FACEBOOK_DOMAINS = [
   "m.facebookcorewwwi.onion", "l.facebookcorewwwi.onion", "lm.facebookcorewwwi.onion",
   "instagram.com", "www.instagram.com", "logger.instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
-  "messenger.com", "www.messenger.com", "m.me",
+  "messenger.com", "www.messenger.com", "m.me", "messengerdevelopers.com", 
   "whatsapp.com", "www.whatsapp.com", "web.whatsapp.com", "cdn.whatsapp.net", "www-cdn.whatsapp.net",
   "atdmt.com", "vk.com", "www.vk.com",
   "www.oculus.com", "developer.oculus.com", "creator.oculus.com", "support.oculus.com", "secure.oculus.com", "auth.oculus.com", "oculusforbusiness.com", "www.oculusforbusiness.com", "forums.oculus.com", "forums.oculusvr.com"
