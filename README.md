@@ -5,7 +5,6 @@ I've forked this because the Firefox dev team seems to have abandoned it. Check 
 Additions:
 
 * many new domains, per [PRs against the source repo](https://github.com/mozilla/contain-facebook/pulls).
-* logic updates to fuzzy-match domains
 
 
 To use this plugin, you will need to build and load it manually into Firefox.  
