@@ -4,8 +4,8 @@ const FACEBOOK_CONTAINER_COLOR = "blue";
 const FACEBOOK_CONTAINER_ICON = "briefcase";
 const FACEBOOK_DOMAINS = [
   "facebook.com", "www.facebook.com", "facebook.net", "fb.com", 
-  "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net", "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net"
-  "instagram.com", "www.instagram.com",
+  "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net", "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net",
+  "instagram.com", "www.instagram.com", "logger.instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
   "messenger.com", "www.messenger.com", "m.me",
   "whatsapp.com", "www.whatsapp.com", "web.whatsapp.com", "cdn.whatsapp.net", "www-cdn.whatsapp.net",
