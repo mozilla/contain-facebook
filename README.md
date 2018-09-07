@@ -6,6 +6,7 @@ Additions:
 
 * many new domains, per [PRs against the source repo](https://github.com/mozilla/contain-facebook/pulls).
 
+You can install this add-on from the `.xpi` file included in this repo.  Or follow the instructions below.
 
 To use this plugin, you will need to build and load it manually into Firefox.  
 
