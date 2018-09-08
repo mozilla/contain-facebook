@@ -16,6 +16,9 @@ const FACEBOOK_DOMAINS = [
   "onavo.com"
 ];
 
+// Adding more? Just keep it organized, above.  It only matches for base domain - you don't need all of the subdomains.
+// Keep sharp!  You've got this!
+
 const MAC_ADDON_ID = "@testpilot-containers";
 
 let macAddonEnabled = false;
