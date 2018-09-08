@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
     "name": "Facebook Container NewAlexandria",
-    "version": "1.5.1",
+    "version": "1.5.2",
 
-    "description": "This forked Facebook Container isolates a more-comprehensive list of Facebook domains, to isolate that activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies.  Available on Firefox Add-on Site",
+    "description": "This forked Facebook Container isolates a more-comprehensive list of Facebook domains.  It will be kept updated and live until the MOzilla team gets back around to maintaining their version of this add-on. This add-on isolates Facebook + subsidiary activity from the rest of your web activity, in order to prevent Facebook from tracking you outside of the Facebook network.",
 
     "icons": {
         "48": "icon.png",
