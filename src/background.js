@@ -3,6 +3,8 @@ const FACEBOOK_CONTAINER_NAME = "Facebook";
 const FACEBOOK_CONTAINER_COLOR = "blue";
 const FACEBOOK_CONTAINER_ICON = "briefcase";
 const FACEBOOK_DOMAINS = [
+  "facebookcorewwwi.onion", "www.facebookcorewwwi.onion", "fbcdn23dssr3jqnq.onion",
+  "m.facebookcorewwwi.onion", "l.facebookcorewwwi.onion", "lm.facebookcorewwwi.onion",
   "facebook.com", "www.facebook.com", "fb.com", "fbcdn.net", "cdn.fbsbx.com",
   "instagram.com", "www.instagram.com",
   "messenger.com", "www.messenger.com",
