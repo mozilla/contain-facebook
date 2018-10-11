@@ -9,7 +9,7 @@ const FACEBOOK_DOMAINS = [
   "whatsapp.com", "www.whatsapp.com", "web.whatsapp.com", "cdn.whatsapp.net", "www-cdn.whatsapp.net",
   "atdmt.com",
   "onavo.com",
-  "oculus.com"
+  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com"
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
