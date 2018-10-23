@@ -310,7 +310,16 @@ async function maybeReopenAlreadyOpenTabs () {
   });
 }
 
+function stripFbclid(url) {
+  const strippedUrl = new URL(url);
+  strippedUrl.searchParams.delete("fbclid");
+  return strippedUrl.href;
+}
+
 async function containFacebook (options) {
+  if (options.url.includes("fbclid")) {
+    return {redirectUrl: stripFbclid(options.url)};
+  }
   // Listen to requests and open Facebook into its Container,
   // open other sites into the default tab context
   if (options.tabId === -1) {
