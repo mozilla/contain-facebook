@@ -7,6 +7,36 @@ describe("Contain", () => {
     facebookContainer = webExtension.facebookContainer;
   });
 
+  describe("All requests stripped of fbclid param", () => {
+    const responses = {};
+    beforeEach(async () => {
+    });
+
+    it("should redirect non-Facebook urls with fbclid stripped", async () => {
+      await background.browser.tabs._create({url: "https://github.com/?fbclid=123"}, {responses});
+      expect(background.browser.tabs.create).to.not.have.been.called;
+      const [promise] = responses.webRequest.onBeforeRequest;
+      const result = await promise;
+      expect(result.redirectUrl).to.equal("https://github.com/");
+    });
+
+    it("should preserve other url params", async () => {
+      await background.browser.tabs._create({url: "https://github.com/mozilla/contain-facebook/issues?q=is%3Aissue+is%3Aopen+track&fbclid=123"}, {responses});
+      expect(background.browser.tabs.create).to.not.have.been.called;
+      const [promise] = responses.webRequest.onBeforeRequest;
+      const result = await promise;
+      expect(result.redirectUrl).to.equal("https://github.com/mozilla/contain-facebook/issues?q=is%3Aissue+is%3Aopen+track");
+    });
+
+    it("should redirect Facebook urls with fbclid stripped", async () => {
+      await background.browser.tabs._create({url: "https://www.facebook.com/help/securitynotice?fbclid=123"}, {responses});
+      expect(background.browser.tabs.create).to.not.have.been.called;
+      const [promise] = responses.webRequest.onBeforeRequest;
+      const result = await promise;
+      expect(result.redirectUrl).to.equal("https://www.facebook.com/help/securitynotice");
+    });
+  });
+
   describe("Incoming requests to Facebook Domains outside of Facebook Container", () => {
     const responses = {};
     beforeEach(async () => {
