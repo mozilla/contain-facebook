@@ -323,7 +323,9 @@ function stripFbclid(url) {
 }
 
 async function containFacebook (options) {
-  if (options.url.includes("fbclid")) {
+  const url = new URL(options.url);
+  const urlSearchParm = new URLSearchParams(url.search);
+  if (urlSearchParm.has("fbclid")) {
     return {redirectUrl: stripFbclid(options.url)};
   }
   // Listen to requests and open Facebook into its Container,
