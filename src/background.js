@@ -3,9 +3,12 @@ const FACEBOOK_CONTAINER_NAME = "Facebook";
 const FACEBOOK_CONTAINER_COLOR = "blue";
 const FACEBOOK_CONTAINER_ICON = "briefcase";
 const FACEBOOK_DOMAINS = [
-  "facebook.com", "www.facebook.com", "facebook.net", "fb.com", 
+  "facebook.com", "www.facebook.com", "facebook.net", "fb.com", "fb.me",
+  "facebookcorewwwi.onion", "fbcdn23dssr3jqnq.onion",
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
+  "f8.com",
+
 
   "instagram.com", 
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
@@ -15,7 +18,8 @@ const FACEBOOK_DOMAINS = [
   "atdmt.com",
 
   "onavo.com",
-  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com"
+  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
+  "lassovideos.com",
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
