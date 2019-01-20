@@ -9,7 +9,6 @@ const FACEBOOK_DOMAINS = [
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
   "f8.com",
 
-
   "instagram.com", 
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
 
@@ -20,6 +19,7 @@ const FACEBOOK_DOMAINS = [
   "onavo.com",
   "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
   "lassovideos.com",
+  "internet.org", 
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
