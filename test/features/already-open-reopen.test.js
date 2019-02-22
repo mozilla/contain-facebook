@@ -60,11 +60,11 @@ describe("Already Open Reopen", () => {
     it("should wait for still loading tabs and then reopen them", async () => {
       expect(background.browser.tabs.create).to.not.have.been.called;
       tab.url = "https://www.facebook.com";
-      const [promise] = background.browser.tabs.onUpdated.addListener.yield(tab.id, {
+      background.browser.tabs.onUpdated.addListener.yield(tab.id, {
         url: tab.url,
         status: "complete"
       }, tab);
-      await promise;
+      await new Promise(setTimeout);
 
       expect(background.browser.tabs.create).to.have.been.calledWithMatch({
         url: "https://www.facebook.com",
