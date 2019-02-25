@@ -15,8 +15,11 @@ const FACEBOOK_DOMAINS = [
   "atdmt.com",
 
   "onavo.com",
-  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com"
+  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
+  "f8.com"
 ];
+
+const SSO_DOMAINS = ["jumpcloud.com"];
 
 const MAC_ADDON_ID = "@testpilot-containers";
 
@@ -26,6 +29,7 @@ let facebookCookieStoreId = null;
 const canceledRequests = {};
 const tabsWaitingToLoad = {};
 const facebookHostREs = [];
+const ssoHostREs = [];
 
 async function isMACAddonEnabled () {
   try {
@@ -140,9 +144,9 @@ function shouldCancelEarly (tab, options) {
   return false;
 }
 
-function generateFacebookHostREs () {
-  for (let facebookDomain of FACEBOOK_DOMAINS) {
-    facebookHostREs.push(new RegExp(`^(.*\\.)?${facebookDomain}$`));
+function generateDomainHostREs (domains=FACEBOOK_DOMAINS, hostREs=facebookHostREs) {
+  for (let hostDomain of domains) {
+    hostREs.push(new RegExp(`^(.*\\.)?${hostDomain}$`));
   }
 }
 
@@ -223,10 +227,10 @@ function reopenTab ({url, tab, cookieStoreId}) {
   browser.tabs.remove(tab.id);
 }
 
-function isFacebookURL (url) {
+function isContainedURL (url, hostREs=facebookHostREs) {
   const parsedUrl = new URL(url);
-  for (let facebookHostRE of facebookHostREs) {
-    if (facebookHostRE.test(parsedUrl.host)) {
+  for (let hostRE of hostREs) {
+    if (hostRE.test(parsedUrl.host)) {
       return true;
     }
   }
@@ -239,7 +243,7 @@ function shouldContainInto (url, tab) {
     return false;
   }
 
-  if (isFacebookURL(url)) {
+  if (isContainedURL(url)) {
     if (tab.cookieStoreId !== facebookCookieStoreId) {
       // Facebook-URL outside of Facebook Container Tab
       // Should contain into Facebook Container
@@ -248,6 +252,11 @@ function shouldContainInto (url, tab) {
   } else if (tab.cookieStoreId === facebookCookieStoreId) {
     // Non-Facebook-URL inside Facebook Container Tab
     // Should contain into Default Container
+    // Except for SSO Domains which should be in Facebook Container
+    // only when called from Facebook Container for SSO login to work
+    if (isContainedURL(url, ssoHostREs)){
+      return facebookCookieStoreId;
+    }
     return "firefox-default";
   }
 
@@ -387,7 +396,8 @@ async function containFacebook (options) {
     return;
   }
   clearFacebookCookies();
-  generateFacebookHostREs();
+  generateDomainHostREs();
+  generateDomainHostREs(SSO_DOMAINS, ssoHostREs);
 
   // Clean up canceled requests
   browser.webRequest.onCompleted.addListener((options) => {
