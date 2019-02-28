@@ -1,0 +1,51 @@
+
+
+body {
+  font-family: Roboto, Noto, "San Francisco", Ubuntu, "Segoe UI", "Fira Sans", message-box, Arial, sans-serif;
+  inline-size: 300px;
+  max-inline-size: 300px;
+}
+
+:root{
+  --font-size-heading: 1.33rem;
+}
+
+.text {
+  color:rgb(55, 103, 236);
+}
+
+.onboarding-title {
+  color: #43484e;
+  font-size: var(--font-size-heading);
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+  max-inline-size: 80%;
+}
+
+.onboarding-button {
+  align-items: center;
+  background-color: #0965f8;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex: 0 0 44px;
+  font-size: 14px;
+  inline-size: 100%;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 75ms;
+}
+
+.hide {
+  display: none !important;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-block-size: 400px;
+}

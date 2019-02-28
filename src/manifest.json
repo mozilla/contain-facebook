@@ -21,6 +21,7 @@
 
     "permissions": [
         "<all_urls>",
+        "activeTab",
         "browsingData",
         "contextualIdentities",
         "cookies",
@@ -30,6 +31,13 @@
         "webRequestBlocking",
         "webRequest"
     ],
+
+    "browser_action": {
+      "browser_style": true,
+      "default_icon": "blocked-48.png",
+      "default_title": "Block-facebook",
+      "default_popup": "panel.html"
+    },
 
     "background": {
         "scripts": ["background.js"]
