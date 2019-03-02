@@ -17,9 +17,17 @@
       }
     },
 
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": "fb-ban.png",
+        "default_title": "Block-facebook",
+        "default_popup": "panel.html"
+      },
+
     "homepage_url": "https://github.com/mozilla/contain-facebook",
 
     "permissions": [
+        "activeTab",
         "<all_urls>",
         "browsingData",
         "contextualIdentities",
