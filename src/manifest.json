@@ -27,7 +27,6 @@
     "homepage_url": "https://github.com/mozilla/contain-facebook",
 
     "permissions": [
-        "activeTab",
         "<all_urls>",
         "browsingData",
         "contextualIdentities",
