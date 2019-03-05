@@ -1,26 +1,15 @@
 .wrapper {
   width: 280px;
   height: 170px;
-  padding: 10px 10px 10px 10px;
   box-shadow: 0 8px 40px rgba(#000000, .2);
 }
-      
-.wrapper .profile {
-  line-height: 1.5em;
-  margin-top: 0.5em;
-  position: relative;
-  border-bottom: 1px solid #dbd5d5;
-  zoom: 1;
-  padding-bottom: 10px;
+
+.padding{
+  padding: 0px 10px 10px 20px;
 }
-          
-.profile :after {
-  width: 100%;
-  height: 1px;
-  content: ' ';
-  display: block;
-  margin-top: 1.3em;
-  background: #E9EFF6;
+
+.heading {
+  border-bottom: 1px solid #CCC;
 }
 
 .text {
