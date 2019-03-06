@@ -1,7 +1,7 @@
 .wrapper {
   width: 280px;
   height: 170px;
-  box-shadow: 0 8px 40px rgba(#000000, .2);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
 }
 
 .padding{
