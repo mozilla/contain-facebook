@@ -20,7 +20,7 @@
     "browser_action": {
         "browser_style": true,
         "default_icon": "fb-ban.png",
-        "default_title": "Block-facebook",
+        "default_title": "Facebook Container",
         "default_popup": "panel.html"
       },
 

@@ -12,6 +12,10 @@
   border-bottom: 1px solid #CCC;
 }
 
+.display {
+  display: none;
+}
+
 .text {
   color: rgb(0, 110, 255)
 }
