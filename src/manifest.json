@@ -19,10 +19,10 @@
 
     "browser_action": {
         "browser_style": true,
-        "default_icon": "fb-ban.png",
+        "default_icon": "fbc-icon.svg",
         "default_title": "Facebook Container",
         "default_popup": "panel.html"
-      },
+    },
 
     "homepage_url": "https://github.com/mozilla/contain-facebook",
 
