@@ -407,5 +407,6 @@ async function containFacebook (options) {
 
   // Add the request listener
   browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
+  
   maybeReopenAlreadyOpenTabs();
 })();
