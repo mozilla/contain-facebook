@@ -234,7 +234,7 @@ function isFacebookURL (url) {
 }
 
 function showPanelHandler() {
-  document.getElementById('2').style.display = 'none';
+  document.getElementById("2").style.display = "none";
 }
 
 function shouldContainInto (url, tab) {
