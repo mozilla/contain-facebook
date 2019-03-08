@@ -19,6 +19,7 @@ const FACEBOOK_DOMAINS = [
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
+const FB_PANEL_SHOWN = browser.storage.local.get("FB_PANEL_SHOWN");
 
 let macAddonEnabled = false;
 let facebookCookieStoreId = null;
@@ -359,6 +360,17 @@ async function containFacebook (options) {
     // Request doesn't need to be contained
     return;
   }
+    if(isFacebookURL(options.url)) {
+      function showPanel() {
+        browser.browserAction.setPopup({popup: "./panel1.html"});
+      }
+    } else {
+      showPanel.browser.browserAction.setPopup({popup: "./panel2.html"});
+    }
+  if(isFacebookURL(options.url) && !FB_PANEL_SHOWN) {
+    showPanel();
+    browser.local.storage.set({FB_PANEL_SHOWN: true});
+  }
   if (shouldCancelEarly(tab, options)) {
     // We need to cancel early to prevent multiple reopenings
     return {cancel: true};
@@ -370,6 +382,14 @@ async function containFacebook (options) {
     cookieStoreId
   });
   return {cancel: true};
+}
+
+function showPanel() {
+  if(isFacebookURL){
+    browser.browserAction.getPopup({});
+  }else {
+    browser.browserAction.getPopup({});
+  }
 }
 
 (async function init () {
