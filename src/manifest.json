@@ -19,6 +19,13 @@
 
     "homepage_url": "https://github.com/mozilla/contain-facebook",
 
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": "fbc-icon.svg",
+        "default_title": "Facebook Container",
+        "default_popup": "panel1.html"
+    },
+
     "permissions": [
         "<all_urls>",
         "browsingData",
