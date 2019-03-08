@@ -360,13 +360,13 @@ async function containFacebook (options) {
     // Request doesn't need to be contained
     return;
   }
-    if(isFacebookURL(options.url)) {
-      function showPanel() {
-        browser.browserAction.setPopup({popup: "./panel1.html"});
-      }
-    } else {
-      showPanel.browser.browserAction.setPopup({popup: "./panel2.html"});
+  if(isFacebookURL(options.url)) {
+    function showPanel() {
+      browser.browserAction.setPopup({popup: "./panel1.html"});
     }
+  } else {
+    showPanel.browser.browserAction.setPopup({popup: "./panel2.html"});
+  }
   if(isFacebookURL(options.url) && !FB_PANEL_SHOWN) {
     showPanel();
     browser.local.storage.set({FB_PANEL_SHOWN: true});
