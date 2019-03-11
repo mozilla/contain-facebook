@@ -361,11 +361,9 @@ async function containFacebook (options) {
     return;
   }
   if(isFacebookURL(options.url)) {
-    function showPanel() {
-      browser.browserAction.setPopup({popup: "./panel1.html"});
-    }
-  } else {
-    showPanel.browser.browserAction.setPopup({popup: "./panel2.html"});
+    browser.browserAction.setPopup({popup: "./panel1.html"});
+  }else {
+    browser.browserAction.setPopup({popup: "./panel2.html"});
   }
   if(isFacebookURL(options.url) && !FB_PANEL_SHOWN) {
     showPanel();
