@@ -1,11 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "__MSG_extensionName__",
+    "name": "Facebook Container",
     "version": "1.4.2",
 
     "default_locale": "en",
 
-    "description": "__MSG_extensionDescription__",
+    "description": "Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies.",
 
     "icons": {
         "48": "icon.svg",

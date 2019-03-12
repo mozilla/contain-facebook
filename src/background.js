@@ -19,7 +19,6 @@ const FACEBOOK_DOMAINS = [
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
-const FB_PANEL_SHOWN = browser.storage.local.get("FB_PANEL_SHOWN");
 
 let macAddonEnabled = false;
 let facebookCookieStoreId = null;
@@ -323,7 +322,29 @@ function stripFbclid(url) {
   return strippedUrl.href;
 }
 
+async function tabUpdateListener (tabId, changeInfo, tab) {
+  await updateBrowserActionIcon(tab.url);
+}
+
+async function updateBrowserActionIcon (url) {
+  if(isFacebookURL(url)) {
+    browser.browserAction.setPopup({popup: "./panel1.html"});
+    const FBC_STORAGE = await browser.storage.local.get();
+    if (FBC_STORAGE.PANEL_SHOWN !== true) {
+      await browser.browserAction.setBadgeBackgroundColor({
+        color: "#3B5998"
+      });
+      browser.browserAction.setBadgeText({text: "funny"});
+    }
+  } else {
+    browser.browserAction.setPopup({popup: "./panel2.html"});
+    browser.browserAction.setBadgeText({text: ""});
+  }
+}
+
 async function containFacebook (options) {
+  await updateBrowserActionIcon (options.url);
+
   const url = new URL(options.url);
   const urlSearchParm = new URLSearchParams(url.search);
   if (urlSearchParm.has("fbclid")) {
@@ -360,17 +381,7 @@ async function containFacebook (options) {
     // Request doesn't need to be contained
     return;
   }
-  if(isFacebookURL(options.url)) {
-    function showPanel() {
-      browser.browserAction.setPopup({popup: "./panel1.html"});
-    }
-  } else {
-    showPanel.browser.browserAction.setPopup({popup: "./panel2.html"});
-  }
-  if(isFacebookURL(options.url) && !FB_PANEL_SHOWN) {
-    showPanel();
-    browser.local.storage.set({FB_PANEL_SHOWN: true});
-  }
+
   if (shouldCancelEarly(tab, options)) {
     // We need to cancel early to prevent multiple reopenings
     return {cancel: true};
@@ -382,14 +393,6 @@ async function containFacebook (options) {
     cookieStoreId
   });
   return {cancel: true};
-}
-
-function showPanel() {
-  if(isFacebookURL){
-    browser.browserAction.getPopup({});
-  }else {
-    browser.browserAction.getPopup({});
-  }
 }
 
 (async function init () {
@@ -423,6 +426,8 @@ function showPanel() {
 
   // Add the request listener
   browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
+
+  browser.tabs.onUpdated.addListener(tabUpdateListener);
 
   maybeReopenAlreadyOpenTabs();
 })();
