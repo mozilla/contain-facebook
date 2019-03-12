@@ -327,10 +327,10 @@ async function tabUpdateListener (tabId, changeInfo, tab) {
 }
 
 async function updateBrowserActionIcon (url) {
-  if(isFacebookURL(url)) {
+  if (isFacebookURL(url)) {
     browser.browserAction.setPopup({popup: "./panel1.html"});
-    const FBC_STORAGE = await browser.storage.local.get();
-    if (FBC_STORAGE.PANEL_SHOWN !== true) {
+    const fbcStorage = await browser.storage.local.get();
+    if (fbcStorage.PANEL_SHOWN !== true) {
       await browser.browserAction.setBadgeBackgroundColor({
         color: "#3B5998"
       });
@@ -343,7 +343,7 @@ async function updateBrowserActionIcon (url) {
 }
 
 async function containFacebook (options) {
-  await updateBrowserActionIcon (options.url);
+  await updateBrowserActionIcon(options.url);
 
   const url = new URL(options.url);
   const urlSearchParm = new URLSearchParams(url.search);
