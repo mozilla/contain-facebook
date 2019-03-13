@@ -334,7 +334,7 @@ async function updateBrowserActionIcon (url) {
       await browser.browserAction.setBadgeBackgroundColor({
         color: "#3B5998"
       });
-      browser.browserAction.setBadgeText({text: "funny"});
+      browser.browserAction.setBadgeText({text: " "});
     }
   } else {
     browser.browserAction.setPopup({popup: "./panel2.html"});
