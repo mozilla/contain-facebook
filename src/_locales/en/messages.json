@@ -8,7 +8,7 @@
         "description": "Description of the extension."
     },
     "onFacebookHeader": {
-        "message": "You're browsing in a Facebook Container tab",
+        "message": "You’re browsing in a Facebook Container tab",
         "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container."
     },
     "onFacebookText": {
