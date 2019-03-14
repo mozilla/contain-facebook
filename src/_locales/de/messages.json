@@ -6,5 +6,21 @@
     "extensionDescription": {
         "message": "Der Facebook-Container isoliert Ihre Facebook-Aktivitäten von den restlichen Webaktivitäten, um zu verhindern, dass Facebook Sie durch Cookies von Drittanbietern außerhalb der Website verfolgt.",
         "description": "Description of the extension."
+    },
+    "onFacebookHeader": {
+        "message": "Sie surfen in einem Facebook-Container-Tab",
+        "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container."
+    },
+    "onFacebookText": {
+        "message": "Die blaue Linie am unteren Rand der Registerkarte wird angezeigt, wenn Sie Facebook oder andere Facebook-Websites wie Instagram oder Messenger besuchen. Ihre Aktivitäten auf diesen Seiten verbleiben im Facebook-Container.",
+        "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container."
+    },
+    "notOnFacebookHeader": {
+        "message": "Wie funktioniert Facebook Container?",
+        "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened INTO Facebook Container."
+    },
+    "notOnFacebookText": {
+        "message": "Andere Websites werden außerhalb des Facebook-Containers geöffnet. Dies macht es für Facebook schwieriger, Ihre Aktivitäten im Internet zu verfolgen.",
+        "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container."
     }
 }
