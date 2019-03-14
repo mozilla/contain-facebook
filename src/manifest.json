@@ -25,7 +25,12 @@
         "browser_style": true,
         "default_icon": "fbc-icon.svg",
         "default_title": "Facebook Container",
-        "default_popup": "panel1.html"
+        "default_popup": "panel1.html",
+        "theme_icons": [{
+            "light": "fbc-icon.svg",
+            "dark": "fbc-icon2.svg",
+            "size": 24
+          }]
     },
 
     "permissions": [
