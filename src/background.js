@@ -327,13 +327,11 @@ async function tabUpdateListener (tabId, changeInfo, tab) {
 }
 
 async function areAllStringsTranslated () {
-  // I'd love to do this with a const somehow
-  let allStringsTranslated = true;
   const enMessagesPath = browser.extension.getURL("_locales/en/messages.json");
   const resp = await fetch(enMessagesPath);
   const enMessages = await resp.json();
 
-  Object.keys(enMessages).forEach((key) => {
+  for (const key of Object.keys(enMessages)){
     // TODO: this doesn't check if the add-on messages are translated into
     // any other browser.i18n.getAcceptedLanguages() options ... but then,
     // I don't think browser.i18n let's us get messages in anything but the
@@ -342,10 +340,10 @@ async function areAllStringsTranslated () {
     const enMessage = enMessages[key].message;
     const translatedMessage = browser.i18n.getMessage(key);
     if (translatedMessage == enMessage) {
-      allStringsTranslated = false;
+      return false;
     }
-  });
-  return allStringsTranslated;
+  }
+  return true;
 }
 
 async function updateBrowserActionIcon (url) {
