@@ -327,6 +327,10 @@ async function tabUpdateListener (tabId, changeInfo, tab) {
 }
 
 async function areAllStringsTranslated () {
+  const browserUILanguage = browser.i18n.getUILanguage();
+  if (browserUILanguage && browserUILanguage.startsWith("en")) {
+    return true;
+  }
   const enMessagesPath = browser.extension.getURL("_locales/en/messages.json");
   const resp = await fetch(enMessagesPath);
   const enMessages = await resp.json();
