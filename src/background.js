@@ -326,7 +326,36 @@ async function tabUpdateListener (tabId, changeInfo, tab) {
   await updateBrowserActionIcon(tab.url);
 }
 
+async function areAllStringsTranslated () {
+  const browserUILanguage = browser.i18n.getUILanguage();
+  if (browserUILanguage && browserUILanguage.startsWith("en")) {
+    return true;
+  }
+  const enMessagesPath = browser.extension.getURL("_locales/en/messages.json");
+  const resp = await fetch(enMessagesPath);
+  const enMessages = await resp.json();
+
+  for (const key of Object.keys(enMessages)){
+    // TODO: this doesn't check if the add-on messages are translated into
+    // any other browser.i18n.getAcceptedLanguages() options ... but then,
+    // I don't think browser.i18n let's us get messages in anything but the
+    // primary language anyway? Does browser.i18n.getMessage automatically
+    // check for secondary languages?
+    const enMessage = enMessages[key].message;
+    const translatedMessage = browser.i18n.getMessage(key);
+    if (translatedMessage == enMessage) {
+      return false;
+    }
+  }
+  return true;
+}
+
 async function updateBrowserActionIcon (url) {
+  const fullyTranslated = await areAllStringsTranslated();
+  if (!fullyTranslated) {
+    browser.browserAction.disable();
+    return;
+  }
   if (isFacebookURL(url)) {
     browser.browserAction.setPopup({popup: "./panel1.html"});
     const fbcStorage = await browser.storage.local.get();
@@ -334,7 +363,7 @@ async function updateBrowserActionIcon (url) {
       await browser.browserAction.setBadgeBackgroundColor({
         color: "#3B5998"
       });
-      browser.browserAction.setBadgeText({text: "funny"});
+      browser.browserAction.setBadgeText({text: " "});
     }
   } else {
     browser.browserAction.setPopup({popup: "./panel2.html"});
