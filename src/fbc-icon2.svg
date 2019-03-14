@@ -11,7 +11,7 @@
                         <use xlink:href="#path-1"></use>
                     </mask>
                     <use fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
-                    <g mask="url(#mask-2)" fill="#F9F9FA" fill-opacity="0.8" fill-rule="evenodd">
+                    <g mask="url(#mask-2)" fill="#4C4C4C" fill-opacity="0.8" fill-rule="evenodd">
                         <rect x="0" y="0" width="28" height="24"></rect>
                     </g>
                 </g>
