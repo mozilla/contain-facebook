@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
   const currentActiveTab = tabsQueryResult[0];
   const currentActiveURL = new URL(currentActiveTab.url);
-  const currentActiveHostname = currentActiveURL.hostname;
+  const currentActiveHostname = currentActiveURL.hostname || browser.i18n.getMessage("thisSite");
 
   const uiMessages = document.querySelectorAll(".uiMessage");
   uiMessages.forEach(el => {
