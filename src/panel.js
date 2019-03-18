@@ -9,11 +9,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
   const currentActiveTab = tabsQueryResult[0];
   const currentActiveURL = new URL(currentActiveTab.url);
-  const currentActiveHostname = currentActiveURL.hostname || browser.i18n.getMessage("thisSite");
 
   const uiMessages = document.querySelectorAll(".uiMessage");
-  uiMessages.forEach(el => {
-    const message = browser.i18n.getMessage(el.id, currentActiveHostname);
-    el.textContent = message;
-  });
+  for (const el of uiMessages) {
+    if (el.id.endsWith("Header") && currentActiveURL.hostname == "") {
+      el.textContent = browser.i18n.getMessage("onUnknownSiteHeader");
+      continue;
+    }
+    el.textContent = browser.i18n.getMessage(el.id, currentActiveURL.hostname);
+  }
 });

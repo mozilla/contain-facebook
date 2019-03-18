@@ -13,10 +13,6 @@
             }
         }
     },
-    "thisSite": {
-        "message": "This site",
-        "description": "This is shown as the $URL$ in the onFacebookHeader message if the user is on a page with an empty URL. E.g., about:home, about:addons, etc."
-    },
     "onFacebookText": {
         "message": "This icon appears in the address bar when you visit websites like Facebook.com, Instagram.com, or Messenger.com that are in the Facebook Container.",
         "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container."
@@ -34,5 +30,9 @@
     "notOnFacebookText": {
         "message": "This icon appears in the address bar when you visit websites like Facebook.com, Instagram.com, or Messenger.com that are in the Facebook Container.",
         "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container."
+    },
+    "onUnknownSiteHeader": {
+        "message": "This site is not in the Facebook Container.",
+        "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab."
     }
 }
