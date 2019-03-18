@@ -3,7 +3,9 @@
     "name": "Facebook Container",
     "version": "1.4.2",
 
-    "description": "Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies.",
+    "default_locale": "en",
+
+    "description": "__MSG_extensionDescription__",
 
     "icons": {
         "48": "icon.svg",
@@ -18,6 +20,18 @@
     },
 
     "homepage_url": "https://github.com/mozilla/contain-facebook",
+
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": "fbc-icon.svg",
+        "default_title": "Facebook Container",
+        "default_popup": "panel1.html",
+        "theme_icons": [{
+            "light": "fbc-icon.svg",
+            "dark": "fbc-icon2.svg",
+            "size": 24
+          }]
+    },
 
     "permissions": [
         "<all_urls>",

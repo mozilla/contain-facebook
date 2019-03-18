@@ -1,0 +1,30 @@
+.wrapper {
+  width: 380px;
+  height: 220px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+}
+  
+.padding{
+  padding: 0px 0px 0px 0px;
+}
+
+.text{
+  padding-left: 25px;
+  padding-right: 45px;
+  font-size: 14px;
+}
+
+.img {
+  padding-right: 10px;
+  align-items: baseline;
+}
+  
+.heading {
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 15px;
+}
+  
+.display {
+  display: none;
+}

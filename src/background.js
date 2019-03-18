@@ -322,7 +322,58 @@ function stripFbclid(url) {
   return strippedUrl.href;
 }
 
+async function tabUpdateListener (tabId, changeInfo, tab) {
+  await updateBrowserActionIcon(tab.url);
+}
+
+async function areAllStringsTranslated () {
+  const browserUILanguage = browser.i18n.getUILanguage();
+  if (browserUILanguage && browserUILanguage.startsWith("en")) {
+    return true;
+  }
+  const enMessagesPath = browser.extension.getURL("_locales/en/messages.json");
+  const resp = await fetch(enMessagesPath);
+  const enMessages = await resp.json();
+
+  for (const key of Object.keys(enMessages)){
+    // TODO: this doesn't check if the add-on messages are translated into
+    // any other browser.i18n.getAcceptedLanguages() options ... but then,
+    // I don't think browser.i18n let's us get messages in anything but the
+    // primary language anyway? Does browser.i18n.getMessage automatically
+    // check for secondary languages?
+    const enMessage = enMessages[key].message;
+    const translatedMessage = browser.i18n.getMessage(key);
+    if (translatedMessage == enMessage) {
+      return false;
+    }
+  }
+  return true;
+}
+
+async function updateBrowserActionIcon (url) {
+  const fullyTranslated = await areAllStringsTranslated();
+  if (!fullyTranslated) {
+    browser.browserAction.disable();
+    return;
+  }
+  if (isFacebookURL(url)) {
+    browser.browserAction.setPopup({popup: "./panel1.html"});
+    const fbcStorage = await browser.storage.local.get();
+    if (fbcStorage.PANEL_SHOWN !== true) {
+      await browser.browserAction.setBadgeBackgroundColor({
+        color: "#3B5998"
+      });
+      browser.browserAction.setBadgeText({text: " "});
+    }
+  } else {
+    browser.browserAction.setPopup({popup: "./panel2.html"});
+    browser.browserAction.setBadgeText({text: ""});
+  }
+}
+
 async function containFacebook (options) {
+  await updateBrowserActionIcon(options.url);
+
   const url = new URL(options.url);
   const urlSearchParm = new URLSearchParams(url.search);
   if (urlSearchParm.has("fbclid")) {
@@ -359,6 +410,7 @@ async function containFacebook (options) {
     // Request doesn't need to be contained
     return;
   }
+
   if (shouldCancelEarly(tab, options)) {
     // We need to cancel early to prevent multiple reopenings
     return {cancel: true};
@@ -403,6 +455,8 @@ async function containFacebook (options) {
 
   // Add the request listener
   browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
+
+  browser.tabs.onUpdated.addListener(tabUpdateListener);
 
   maybeReopenAlreadyOpenTabs();
 })();
