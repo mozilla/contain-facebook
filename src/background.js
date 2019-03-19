@@ -323,7 +323,7 @@ function stripFbclid(url) {
 }
 
 async function tabUpdateListener (tabId, changeInfo, tab) {
-  await updateBrowserActionIcon(tab.url);
+  await updateBrowserActionIcon(tab);
 }
 
 async function areAllStringsTranslated () {
@@ -350,29 +350,32 @@ async function areAllStringsTranslated () {
   return true;
 }
 
-async function updateBrowserActionIcon (url) {
+async function updateBrowserActionIcon (tab) {
+  const url = tab.url;
   const fullyTranslated = await areAllStringsTranslated();
   if (!fullyTranslated) {
     browser.browserAction.disable();
     return;
   }
   if (isFacebookURL(url)) {
-    browser.browserAction.setPopup({popup: "./panel1.html"});
+    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel1.html"});
     const fbcStorage = await browser.storage.local.get();
     if (fbcStorage.PANEL_SHOWN !== true) {
       await browser.browserAction.setBadgeBackgroundColor({
+        tabId: tab.id,
         color: "#3B5998"
       });
-      browser.browserAction.setBadgeText({text: " "});
+      browser.browserAction.setBadgeText({tabId: tab.id, text: " "});
     }
   } else {
-    browser.browserAction.setPopup({popup: "./panel2.html"});
-    browser.browserAction.setBadgeText({text: ""});
+    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel2.html"});
+    browser.browserAction.setBadgeText({tabId: tab.id, text: ""});
   }
 }
 
 async function containFacebook (options) {
-  await updateBrowserActionIcon(options.url);
+  const tab = await browser.tabs.get(options.tabId);
+  await updateBrowserActionIcon(tab);
 
   const url = new URL(options.url);
   const urlSearchParm = new URLSearchParams(url.search);
@@ -398,7 +401,6 @@ async function containFacebook (options) {
     return;
   }
 
-  const tab = await browser.tabs.get(options.tabId);
   if (tab.incognito) {
     // We don't handle incognito tabs
     return;

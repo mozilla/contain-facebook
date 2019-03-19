@@ -14,6 +14,28 @@
   font-size: 14px;
 }
 
+.userContext-icon {
+  padding-left: 25px;
+  padding-right: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.userContext-label {
+  margin-inline-start: 0;
+  margin-inline-end: 3px;
+  color: #37adff;
+}
+
+.userContext-indicator {
+  width: 16px;
+  height: 16px;
+  background-image: url("briefcase.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .img {
   padding-right: 10px;
   align-items: baseline;
