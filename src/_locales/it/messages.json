@@ -1,7 +1,11 @@
 {
+  "extensionDescription": {
+    "message": "Facebook Container isola l’attività su Facebook dalla navigazione su altri siti. In questo modo Facebook non può tracciarti, utilizzando cookie di terze parti, al di fuori dei siti web di loro proprietà.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "onFacebookHeader": {
     "message": "$URL$ è in Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
         "content": "$1", 
@@ -9,9 +13,13 @@
       }
     }
   }, 
+  "onFacebookText": {
+    "message": "Questa icona viene visualizzata nella barra degli indirizzi quando visiti siti come Facebook.com, Instagram.com o Messenger.com che vengono isolati in Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ non è in Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened INTO Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
         "content": "$1", 
@@ -19,8 +27,12 @@
       }
     }
   }, 
+  "notOnFacebookText": {
+    "message": "Altri siti vengono aperti al di fuori di Facebook Container. In questo modo è più difficile per Facebook tracciare le tue attività sul Web.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "onUnknownSiteHeader": {
     "message": "Questo sito non è in Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab."
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
   }
 }
