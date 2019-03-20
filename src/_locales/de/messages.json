@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container isoliert Ihre Facebook-Aktivitäten von Ihren übrigen Internet-Aktivitäten und verhindert so, dass Facebook Sie über Cookies von Dritt-Anbietern außerhalb der Facebook-Website verfolgt.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$ befindet sich im Facebook-Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Dieses Symbol wird in der Adressleiste angezeigt, wenn Sie Websites wie Facebook.com, Instagram.com oder Messenger.com besuchen, die sich im Facebook-Container befinden.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$ befindet sich nicht im Facebook-Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Diese Seite befindet sich außerhalb des Facebook-Containers. Dies macht es für Facebook schwieriger, Sie im Internet zu verfolgen.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Diese Website befindet sich nicht im Facebook-Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
