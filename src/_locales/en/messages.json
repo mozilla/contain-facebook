@@ -28,7 +28,7 @@
         }
     },
     "notOnFacebookText": {
-        "message": "Other sites open outside of the Facebook Container. This makes it harder for Facebook to track your activity around the web.",
+        "message": "This site is outside of the Facebook Container. This makes it harder for Facebook to track you around the web.",
         "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
     },
     "onUnknownSiteHeader": {
