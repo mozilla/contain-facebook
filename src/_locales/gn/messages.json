@@ -13,6 +13,10 @@
       }
     }
   }, 
+  "onFacebookText": {
+    "message": "Ko ta'ãngachu'i ejuhúta kundaharape rendápe eikévo ñanduti rendápe ha’éva Facebook.com, Instagram.com térã Messenger.com oĩva Facebook Container ryepýpe.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ ndaipóri Facebook Container ryepýpe.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
