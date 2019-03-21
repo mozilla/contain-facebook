@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container ញែក​សកម្មភាព Facebook របស់​អ្នក​​ចេញ​ពី​សកម្មភាព​បណ្ដាញ​របស់​អ្នក​ដែល​នៅ​សល់ ដើម្បី​ការពារ Facebook ពី​ការតាមដាន​អ្នក​នៅ​ខាង​ក្រៅ​គេហទំព័រ Facebook តាមរយៈ​ខូឃី​ភាគី​ទី​បី។", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$ ស្ថិត​នៅ​ក្នុង Facebook Container ។", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "រូបតំណាង​នេះ​បង្ហាញ​នៅ​ក្នុង​របារ​អាសយដ្ឋាន នៅពេល​អ្នក​ចូល​មើល​គេហទំព័រ​ដូចជា Facebook.com, Instagram.com ឬ Messenger.com ដែល​ស្ថិត​នៅ​ក្នុង Facebook Container ។", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$ មិន​ស្ថិត​នៅ​ក្នុង Facebook Container ទេ។", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "គេហទំព័រ​នេះ​នៅ​ខាងក្រៅ Facebook Container ។ វា​ធ្វើ​ឲ្យ Facebook លំបាក​ក្នុង​ការ​តាមដាន​អ្នក​នៅ​លើ​បណ្ដាញ។", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "គេហទំព័រ​នេះ​មិន​ស្ថិត​នៅ​ក្នុង Facebook Container ទេ។", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
