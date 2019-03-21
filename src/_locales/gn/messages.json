@@ -1,0 +1,26 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container omoha’eño ne rembiapo Facebook pegua ambue mba’e ñandutípe rejapóvagui, omboyke hag̃ua Facebook ohapykuehóvo okápe oikóva  iñanduti rendágui kookie mbohapyháva rupive.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$ oĩ Facebook Container ryepýpe.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$ ndaipóri Facebook Container ryepýpe.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }
+}
