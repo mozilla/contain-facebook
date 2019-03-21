@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "A Facebook Container elkülöníti a Facebook tevékenységét a többi webes tevékenységtől annak érdekében, hogy megakadályozza, hogy a Facebook a webhelyén kívül is követhesse Önt a harmadik féltől származó sütik révén.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "A $URL$ a Facebook Containerben található.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Ez az ikon megjelenik a címsorban, ha olyan webhelyeket keres fel, mint a Facebook.com, az Instagram.com vagy a Messenger.com, melyek a Facebook Containerben találhatóak.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "A $URL$ nem a Facebook Containerben található.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Ez a webhely a Facebook Containeren kívül található. Ez megnehezíti a Facebook számára, hogy követhesse Önt a weben.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Ez a webhely nem a Facebook Containerben található.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
