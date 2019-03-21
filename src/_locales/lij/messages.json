@@ -27,6 +27,10 @@
       }
     }
   }, 
+  "notOnFacebookText": {
+    "message": "Sto scito o l'é averto feua da Facebook Container. Coscì saiâ ciù difiçile che Facebook se fasse i afari teu.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "onUnknownSiteHeader": {
     "message": "Sto scito o no l'é inte Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
