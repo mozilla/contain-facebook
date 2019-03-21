@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Mae Facebook Container yn ynysu eich gweithgaredd Facebook rhag gweddill eich gweithgaredd gwe er mwyn rhwystro Facebook rhag eich tracio chi y tu allan i wefan Facebook drwy gwcis trydydd parti.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "Mae $URL$ o fewn y Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Mae'r eicon yma'n ymddangos yn y bar cyfeiriad pan fyddwch yn ymweld â gwefannau fel Facebook.com, Instagram.com neu Messenger.com sydd o fewn y Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "Nid yw $URL$ o fewn y Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Mae'r wefan hon y tu allan i Facebook Container. Mae hyn yn ei gwneud hi'n anoddach i Facebook eich tracio chi o amgylch y we.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Nid yw'r wefan hon o fewn y Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
