@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container oddeľuje vaše surfovanie na Facebooku od ostatného surfovania na internete, čím vás chráni pred sledovaním zo strany Facebooku mimo jeho stránok.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "Stránka $URL$ je otvorená vo Facebook Containeri.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Táto ikona sa objaví v paneli s adresou pri každej návšteve stránok Facebook.com, Instagram.com alebo Messenger.com, ktoré sa otvárajú vo Facebook Containeri.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "Stránka $URL$ nie je otvorená vo Facebook Containeri.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Táto stránka nie je otvorená vo Facebook Containeri. To znamená, že je pre Facebook ťažšie vás na nej sledovať.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Táto stránka nie je otvorená vo Facebook Containeri.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
