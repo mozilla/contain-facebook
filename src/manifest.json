@@ -23,7 +23,7 @@
 
     "browser_action": {
         "browser_style": true,
-        "default_icon": "fbc-icon.svg",
+        "default_icon": "fbc-icon2.svg",
         "default_title": "Facebook Container",
         "default_popup": "panel1.html",
         "theme_icons": [
