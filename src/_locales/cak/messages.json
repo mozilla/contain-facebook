@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container yerujech'uj ri taq asamaj richin Facebook chi kiwa ri ajk'amaya'l asamaj richin nichajïx chi ri Facebook man kerojqaj toq man k'o ta ri Facebook pa ajk'amaya'l ruxaq rik'in taq kikuki aj rox winäq.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$ k'o pa Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Re wachib'äl re' k'o pa ri kikajtz'ik ochochib'äl toq ye'atz'ët ajk'amaya'l taq ruxaq achi'el Facebook.com, Instagram.com o ri Messenger.com ri k'o pa ri Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "Man k'o ta ri $URL$ pa Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Man k'o ta pa Facebook Container re ruxaq re'. Re re' nub'än k'ayew chuwäch ri Facebook richin nrojqaj pa ri ajk'amaya'l.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Man k'o ta pa Facebook Container re ruxaq re'.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
