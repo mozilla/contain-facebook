@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container wydziela Twoje działania w serwisie Facebook od pozostałych działań w Internecie, aby uniemożliwić Facebookowi śledzenie Cię poza swoją witryną za pomocą ciasteczek zewnętrznych witryn.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "Witryna $URL$ jest otwarta w ramach rozszerzenia Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Ta ikona jest wyświetlana na pasku adresu podczas odwiedzania takich witryn jak Facebook.com, Instagram.com czy Messenger.com, które są otwarte w ramach rozszerzenia Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "Witryna $URL$ nie jest otwarta w ramach rozszerzenia Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Ta witryna jest otwarta poza rozszerzeniem Facebook Container. Utrudnia to Facebookowi śledzenie Cię w Internecie.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Ta witryna nie jest otwarta w ramach rozszerzenia Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
