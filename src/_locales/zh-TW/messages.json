@@ -1,4 +1,8 @@
 {
+  "extensionDescription": {
+    "message": "Facebook Container 會將您在 Facebook 的上網行為隔絕於其他上網行為之外，以防止 Facebook 在其網站以外的地方，透過第三方 Cookie 追蹤您的上網紀錄。", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "onFacebookHeader": {
     "message": "$URL$ 位於 Facebook Container 中。", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -9,6 +13,10 @@
       }
     }
   }, 
+  "onFacebookText": {
+    "message": "當您開啟 Facebook.com、Instagram.com 或 Messenger.com 等位於 Facebook Container 的網站時，將於網址列顯示此圖示。", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ 不在 Facebook Container 中。", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -18,6 +26,10 @@
         "example": "www.google.com"
       }
     }
+  }, 
+  "notOnFacebookText": {
+    "message": "此網站不在 Facebook Container 中，這樣 Facebook 比較不容易在網路上追蹤您。", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "onUnknownSiteHeader": {
     "message": "此網站不在 Facebook Container 中。", 
