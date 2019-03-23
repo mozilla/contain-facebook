@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Кантэйнер для Facebook ізалюе вашу дзейнасць у Facebook ад астатняй вашай актыўнасці ў сеціве, каб прадухіліць асочванне вас Facebook-ам па-за межамі сайта Facebook з дапамогай кукаў трэціх асоб.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$ адкрыты ў Кантэйнеры для Facebook.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Гэты значок з'яўляецца ў адрасным радку пры наведванні вэб-сайтаў кшталту Facebook.com, Instagram.com або Messenger.com, якія адкрыты ў Кантэйнеры для Facebook.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$ не ў Кантэйнеры для Facebook.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Гэты сайт адкрыты па-за межамі Кантэйнера для Facebook. Гэта робіць асочванне вас па сеціве цяжэйшым для Facebook.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Гэты сайт не ў Кантэйнеры для Facebook.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
