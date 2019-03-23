@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container แยกกิจกรรม Facebook ของคุณออกจากกิจกรรมเว็บที่เหลือเพื่อป้องกันไม่ให้ Facebook ติดตามคุณนอกเว็บไซต์ Facebook ผ่านคุกกี้ของบุคคลที่สาม", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$ อยู่ใน Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "ไอคอนนี้จะปรากฏในแถบที่อยู่เมื่อคุณเยี่ยมชมเว็บไซต์เช่น Facebook.com, Instagram.com หรือ Messenger.com ที่อยู่ใน Facebook Container", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$ ไม่ได้อยู่ใน Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "ไซต์นี้อยู่ภายนอก Facebook Container ซึ่งทำให้ Facebook ติดตามคุณได้ยากขึ้น", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "ไซต์นี้ไม่ได้อยู่ใน Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
