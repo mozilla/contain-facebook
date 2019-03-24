@@ -34,5 +34,13 @@
     "onUnknownSiteHeader": {
         "message": "This site is not in the Facebook Container.",
         "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    },
+    "privateBrowsingHeader": {
+        "message": "Not available in Private Browsing",
+        "description": "This is shown at the top of the panel pop-up when the user is in a Private Browsing window."
+    },
+    "privateBrowsingText": {
+        "message": "Facebook Container is not available in Private Browsing windows or if \"Never remember history\" is selected in the Firefox history options.",
+        "description": "This is shown in the body of the panel pop-up when the user is in a Private Browsing window. DO NOT TRANSLATE \"Facebook Container\"."
     }
 }

@@ -357,6 +357,10 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.disable();
     return;
   }
+  if (tab.incognito) {
+    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel-pb.html"});
+    return;
+  }
   if (isFacebookURL(url)) {
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel1.html"});
     const fbcStorage = await browser.storage.local.get();

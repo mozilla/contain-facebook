@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const uiMessages = document.querySelectorAll(".uiMessage");
   for (const el of uiMessages) {
-    if (el.id.endsWith("Header") && currentActiveURL.hostname == "") {
+    if (el.id.endsWith("Header") && currentActiveURL.hostname == "" && !currentActiveTab.incognito) {
       el.textContent = browser.i18n.getMessage("onUnknownSiteHeader");
       continue;
     }
