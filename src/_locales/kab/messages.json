@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Amagbar Facebook ad iεzel armud-inek n Facebook ɣef urmud-inek web akken ur ittaǧǧa ara Facebook ad ak-iḍfer beṛṛa n usmel-ines s ttawil n inagan n tuqqna tis kraḍ.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$ URL $ atan deg umagbar Facebook.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Tagnit-a ad d-ban deg ufeggag n tansa mi ara ad terzuḍ pver ismal web am Facebook.com, Instagram.com neɣ Messenger.com i yellan deg umagbar Facebook.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$ ulac-it deg umagbar Facebook.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Asmel-agi yella beṛṛa n umagbar Facebook. Aya ad yessiwɛeṛ i Facebook ad k-yeḍfeṛ deg Web. ", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Asmel-agi ulac deg umagbar Facebook.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
