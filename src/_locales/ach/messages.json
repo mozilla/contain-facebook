@@ -1,0 +1,6 @@
+{
+  "onUnknownSiteHeader": {
+    "message": "Kakube man pe tye ii Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
