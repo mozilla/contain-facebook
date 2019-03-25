@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container a vir hoc'h oberiantiz Facebook disrannet eus ar hoc'h oberiantiz web all evit ma ne c'hallfe ket Facebook heuliañ ac'hanoc'h e diavaez al lec'hienn Facebook dre doupinoù trede.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "Er Facebook Container emañ $URL$.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Er varrenn-chomlec'h e vo skrammet an arlun-mañ pa weladennot lec'hiennoù evel Facebook.com, Instagram.com pe Messenger.com hag a zo er Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "N'emañ ket $URL$ er Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "E diavaez ar Facebook Container emañ al lec'hienn-mañ. Diaesoc'h e vo da Facebook heuliañ ac'hanoc'h war ar web.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "N'emañ ket al lec'hienn-mañ er Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
