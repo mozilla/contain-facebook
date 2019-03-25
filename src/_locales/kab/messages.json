@@ -14,7 +14,7 @@
     }
   }, 
   "onFacebookText": {
-    "message": "Tagnit-a ad d-ban deg ufeggag n tansa mi ara ad terzuḍ pver ismal web am Facebook.com, Instagram.com neɣ Messenger.com i yellan deg umagbar Facebook.", 
+    "message": "Tagnit-a ad d-ban deg ufeggag n tansa mi ara ad terzuḍ ɣer ismal web am Facebook.com, Instagram.com neɣ Messenger.com i yellan deg umagbar Facebook.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
