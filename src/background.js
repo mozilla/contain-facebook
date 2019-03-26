@@ -351,6 +351,10 @@ async function areAllStringsTranslated () {
 }
 
 async function updateBrowserActionIcon (tab) {
+  if (tab.incognito) {
+    browser.browserAction.disable(tab.id);
+    return;
+  }
   const url = tab.url;
   const fullyTranslated = await areAllStringsTranslated();
   if (!fullyTranslated) {
