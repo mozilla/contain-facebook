@@ -1,9 +1,13 @@
 /* global browser */
 
 document.addEventListener("DOMContentLoaded", async () => {
-  if (document.querySelector("#panel1") !== null) {
+  const {PANEL_SHOWN} = await browser.storage.local.get("PANEL_SHOWN");
+  if (document.querySelector("#panel1") !== null && !PANEL_SHOWN) {
     await browser.storage.local.set({PANEL_SHOWN: true});
-    await browser.browserAction.setBadgeText({text: ""});
+    const tabs = await browser.tabs.query({});
+    tabs.map(tab => {
+      browser.browserAction.setBadgeText({tabId: tab.id, text: ""});
+    });
   }
 
   const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
