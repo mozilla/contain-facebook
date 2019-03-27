@@ -322,8 +322,20 @@ function stripFbclid(url) {
   return strippedUrl.href;
 }
 
-async function tabUpdateListener (tabId, changeInfo, tab) {
-  await updateBrowserActionIcon(tab);
+async function getActiveTab () {
+  const [activeTab] = await browser.tabs.query({currentWindow: true, active: true});
+  return activeTab;
+}
+
+async function windowFocusChangedListener (windowId) {
+  if (windowId !== browser.windows.WINDOW_ID_NONE) {
+    const activeTab = await getActiveTab();
+    updateBrowserActionIcon(activeTab);
+  }
+}
+
+function tabUpdateListener (tabId, changeInfo, tab) {
+  updateBrowserActionIcon(tab);
 }
 
 async function areAllStringsTranslated () {
@@ -375,7 +387,7 @@ async function updateBrowserActionIcon (tab) {
 
 async function containFacebook (options) {
   const tab = await browser.tabs.get(options.tabId);
-  await updateBrowserActionIcon(tab);
+  updateBrowserActionIcon(tab);
 
   const url = new URL(options.url);
   const urlSearchParm = new URLSearchParams(url.search);
@@ -460,5 +472,10 @@ async function containFacebook (options) {
 
   browser.tabs.onUpdated.addListener(tabUpdateListener);
 
+  browser.windows.onFocusChanged.addListener(windowFocusChangedListener);
+
   maybeReopenAlreadyOpenTabs();
+
+  const activeTab = await getActiveTab();
+  updateBrowserActionIcon(activeTab);
 })();

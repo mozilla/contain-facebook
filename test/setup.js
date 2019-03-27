@@ -19,7 +19,12 @@ global.loadWebExtension = async (options = {}) => {
     sinon: global.sinon,
     background: {
       jsdom: {
-        beforeParse: options.beforeParse
+        beforeParse: window => {
+          window.browser.tabs._create({});
+          if (options.beforeParse) {
+            options.beforeParse(window);
+          }
+        }
       }
     }
   });
