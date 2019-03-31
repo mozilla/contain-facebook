@@ -1,0 +1,34 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container isolerer din aktivitet på Facebook fra dine andre aktiviteter på nettet. Dette forhindrer Facebook i at spore dig uden for Facebooks websted ved hjælp af tredjeparts-cookies.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$ er i Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Dette ikon vises i adressefeltet, når du besøger websteder som Facebook.com, Instagram.com eller Messenger.com, der befinder sig i Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$ er ikke i Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Dette websted er ikke i Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
