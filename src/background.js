@@ -212,8 +212,24 @@ async function setupContainer () {
   }
 }
 
-function reopenTab ({url, tab, cookieStoreId}) {
-  browser.tabs.create({
+async function maybeReopenTab (url, tab, request) {
+  const macAssigned = await getMACAssignment(url);
+  if (macAssigned) {
+    // We don't reopen MAC assigned urls
+    return;
+  }
+  const cookieStoreId = shouldContainInto(url, tab);
+  if (!cookieStoreId) {
+    // Tab doesn't need to be contained
+    return;
+  }
+
+  if (request && shouldCancelEarly(tab, request)) {
+    // We need to cancel early to prevent multiple reopenings
+    return {cancel: true};
+  }
+
+  await browser.tabs.create({
     url,
     cookieStoreId,
     active: tab.active,
@@ -221,6 +237,8 @@ function reopenTab ({url, tab, cookieStoreId}) {
     windowId: tab.windowId
   });
   browser.tabs.remove(tab.id);
+
+  return {cancel: true};
 }
 
 function isFacebookURL (url) {
@@ -255,29 +273,11 @@ function shouldContainInto (url, tab) {
 }
 
 async function maybeReopenAlreadyOpenTabs () {
-  const maybeReopenTab = async tab => {
-    const macAssigned = await getMACAssignment(tab.url);
-    if (macAssigned) {
-      // We don't reopen MAC assigned urls
-      return;
-    }
-    const cookieStoreId = shouldContainInto(tab.url, tab);
-    if (!cookieStoreId) {
-      // Tab doesn't need to be contained
-      return;
-    }
-    reopenTab({
-      url: tab.url,
-      tab,
-      cookieStoreId
-    });
-  };
-
   const tabsOnUpdated = (tabId, changeInfo, tab) => {
     if (changeInfo.url && tabsWaitingToLoad[tabId]) {
       // Tab we're waiting for switched it's url, maybe we reopen
       delete tabsWaitingToLoad[tabId];
-      maybeReopenTab(tab);
+      maybeReopenTab(tab.url, tab);
     }
     if (tab.status === "complete" && tabsWaitingToLoad[tabId]) {
       // Tab we're waiting for completed loading
@@ -311,7 +311,7 @@ async function maybeReopenAlreadyOpenTabs () {
       }
     } else {
       // Tab already has an url, maybe we reopen
-      maybeReopenTab(tab);
+      maybeReopenTab(tab.url, tab);
     }
   });
 }
@@ -389,31 +389,24 @@ async function updateBrowserActionIcon (tab) {
   }
 }
 
-async function containFacebook (options) {
-  const tab = await browser.tabs.get(options.tabId);
+async function containFacebook (request) {
+  if (tabsWaitingToLoad[request.tabId]) {
+    // Cleanup just to make sure we don't get a race-condition with startup reopening
+    delete tabsWaitingToLoad[request.tabId];
+  }
+
+  const tab = await browser.tabs.get(request.tabId);
   updateBrowserActionIcon(tab);
 
-  const url = new URL(options.url);
+  const url = new URL(request.url);
   const urlSearchParm = new URLSearchParams(url.search);
   if (urlSearchParm.has("fbclid")) {
-    return {redirectUrl: stripFbclid(options.url)};
+    return {redirectUrl: stripFbclid(request.url)};
   }
   // Listen to requests and open Facebook into its Container,
   // open other sites into the default tab context
-  if (options.tabId === -1) {
+  if (request.tabId === -1) {
     // Request doesn't belong to a tab
-    return;
-  }
-  if (tabsWaitingToLoad[options.tabId]) {
-    // Cleanup just to make sure we don't get a race-condition with startup reopening
-    delete tabsWaitingToLoad[options.tabId];
-  }
-
-  // We have to check with every request if the requested URL is assigned with MAC
-  // because the user can assign URLs at any given time (needs MAC Events)
-  const macAssigned = await getMACAssignment(options.url);
-  if (macAssigned) {
-    // This URL is assigned with MAC, so we don't handle this request
     return;
   }
 
@@ -422,24 +415,7 @@ async function containFacebook (options) {
     return;
   }
 
-  // Check whether we should contain this request into another container
-  const cookieStoreId = shouldContainInto(options.url, tab);
-  if (!cookieStoreId) {
-    // Request doesn't need to be contained
-    return;
-  }
-
-  if (shouldCancelEarly(tab, options)) {
-    // We need to cancel early to prevent multiple reopenings
-    return {cancel: true};
-  }
-  // Decided to contain
-  reopenTab({
-    url: options.url,
-    tab,
-    cookieStoreId
-  });
-  return {cancel: true};
+  return maybeReopenTab(request.url, tab, request);
 }
 
 (async function init () {
