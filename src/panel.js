@@ -23,3 +23,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     el.textContent = browser.i18n.getMessage(el.id, currentActiveURL.hostname);
   }
 });
+
+
+browser.runtime.onMessage.addListener(message => {
+  console.log("message from background script: ", message);
+  return Promise.resolve({response: "panel.js onMessage listener"});
+});

@@ -373,7 +373,16 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.disable();
     return;
   }
-  if (isFacebookURL(url)) {
+
+  const onFacebook = isFacebookURL(url);
+
+  const message = {msg: "updateBrowserActionIcon", fullyTranslated, onFacebook};
+  // Send the message to the content_script
+  browser.tabs.sendMessage(tab.id, message);
+  // Send the message to the browser_action panel
+  browser.runtime.sendMessage(message);
+
+  if (onFacebook) {
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel1.html"});
     const fbcStorage = await browser.storage.local.get();
     if (fbcStorage.PANEL_SHOWN !== true) {
