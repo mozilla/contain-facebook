@@ -1,4 +1,8 @@
 {
+  "extensionDescription": {
+    "message": "Facebook Container isolerer Facebook-aktiviteten din frå resten av nettaktiviteten din for å hindre at Facebook sporar deg utanfor Facebook-nettstaden via tredjeparts infokapslar.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "onFacebookHeader": {
     "message": "$URL$ finst i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -9,6 +13,10 @@
       }
     }
   }, 
+  "onFacebookText": {
+    "message": "Dette ikonet blir vist i adressefeltet når du besøkjer nettsteder som Facebook.com, Instagram.com eller Messenger.com som er i Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ finst ikkje i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -18,6 +26,10 @@
         "example": "www.google.com"
       }
     }
+  }, 
+  "notOnFacebookText": {
+    "message": "Denne nettstaden er utanfor Facebook Container. Dette gjer det vanskelegare for Facebook å spore deg på nettet.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "onUnknownSiteHeader": {
     "message": "Denne nettsida finst ikkje i Facebook Container.", 
