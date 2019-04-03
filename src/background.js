@@ -374,15 +374,7 @@ async function updateBrowserActionIcon (tab) {
     return;
   }
 
-  const onFacebook = isFacebookURL(url);
-
-  const message = {msg: "updateBrowserActionIcon", fullyTranslated, onFacebook};
-  // Send the message to the content_script
-  browser.tabs.sendMessage(tab.id, message);
-  // Send the message to the browser_action panel
-  browser.runtime.sendMessage(message);
-
-  if (onFacebook) {
+  if (isFacebookURL(url)) {
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel1.html"});
     const fbcStorage = await browser.storage.local.get();
     if (fbcStorage.PANEL_SHOWN !== true) {
@@ -427,6 +419,37 @@ async function containFacebook (request) {
   return maybeReopenTab(request.url, tab, request);
 }
 
+// Lots of this is borrowed from old blok code:
+// https://github.com/mozilla/blok/blob/master/src/js/background.js
+async function blockFacebookSubResources (requestDetails) {
+  if (requestDetails.type === "main_frame") {
+    console.log("Allowing clicks to links.");
+    return {};
+  }
+
+  // Only handle requests that are NOT the top frame
+  /* TODO: (how) is this different from main_frame?
+  if (requestDetails.frameId === 0) {
+    return {};
+  }
+  */
+
+  if (typeof requestDetails.originUrl === "undefined") {
+    console.log("Allowing request from 'undefined' origin - a browser internal origin.");
+    return {};
+  }
+
+  if (isFacebookURL(requestDetails.url) && !isFacebookURL(requestDetails.originUrl)) {
+    const message = {msg: "blocked-facebook-subresources"};
+    // Send the message to the content_script
+    browser.tabs.sendMessage(requestDetails.tabId, message);
+    // Send the message to the browser_action panel
+    browser.runtime.sendMessage(message);
+
+    return {cancel: true};
+  }
+}
+
 (async function init () {
   await setupMACAddonListeners();
   macAddonEnabled = await isMACAddonEnabled();
@@ -456,8 +479,11 @@ async function containFacebook (request) {
     }
   },{urls: ["<all_urls>"], types: ["main_frame"]});
 
-  // Add the request listener
+  // Add the main_frame request listener
   browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
+
+  // Add the sub-resource request listener
+  browser.webRequest.onBeforeRequest.addListener(blockFacebookSubResources, {urls: ["<all_urls>"]}, ["blocking"]);
 
   browser.tabs.onUpdated.addListener(tabUpdateListener);
 
