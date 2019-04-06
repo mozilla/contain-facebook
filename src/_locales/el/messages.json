@@ -1,4 +1,8 @@
 {
+  "extensionDescription": {
+    "message": "Το Facebook Container απομονώνει τη δραστηριότητά σας στο Facebook από την υπόλοιπη δραστηριότητά σας στο διαδίκτυο, προκειμένου να εμποδίσετε την καταγραφή σας από το Facebook εκτός της ιστοσελίδας του Facebook, μέσω cookies τρίτων.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "onFacebookHeader": {
     "message": "Το $URL$ είναι στο Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -8,6 +12,10 @@
         "example": "www.facebook.com"
       }
     }
+  }, 
+  "onFacebookText": {
+    "message": "Αυτό το εικονίδιο εμφανίζεται στη γραμμή διευθύνσεων όταν επισκέπτεστε ιστοσελίδες, όπως το Facebook.com, το Instagram.com, ή το Messenger.com, που βρίσκονται στο Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "Το $URL$ δεν είναι στο Facebook Container.", 
