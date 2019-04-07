@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container ізолює вашу діяльність у Facebook від решти активності в Інтернеті, щоб запобігти стеженню Facebook за вами на інших сайтах через сторонні куки.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$ знаходиться у Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Цей значок з'являється в адресному рядку при відвідувані таких сайтів як Facebook.com, Instagram.com або Messenger.com, що знаходяться у Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$ не входить у Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Цей сайт знаходиться за межами Facebook Container. Це ускладнює Facebook стеження за вами у всьому Інтернеті.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Цей сайт не знаходиться в Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
