@@ -5,7 +5,14 @@
 
 
 
-function detectFacebookLogin () {
+function detectFacebookOnPage () {
+
+  // TODO: Loop through array of class names to test for
+  // Test for any element with facebook connect in class name (Example: Pinterest)
+  const loginButtonClass = document.querySelectorAll("[class*='FacebookConnectButton']");
+  for (let item of loginButtonClass) {
+    item.classList.add("fbc-overlay");
+  }
 
   // Test for anchor/facebook URL (Example: Imgur)
   const loginButtonHref = document.querySelectorAll("[href*='facebook']");
@@ -22,6 +29,10 @@ function detectFacebookLogin () {
   for (let item of loginButtonTitle) {
     item.classList.add("fbc-overlay");
   }
+  const loginButtonAriaLabel = document.querySelectorAll("[aria-label*='Facebook']");
+  for (let item of loginButtonAriaLabel) {
+    item.classList.add("fbc-overlay");
+  }
 
   // Test for standard implementation (Example: Facebook Docs)
   const loginButton = document.querySelectorAll(".fb-login-button");
@@ -33,7 +44,9 @@ function detectFacebookLogin () {
 browser.runtime.onMessage.addListener(message => {
   console.log("message from background script:", message);
   setTimeout(function(){
-    detectFacebookLogin();
+    detectFacebookOnPage();
   }, 10);
   return Promise.resolve({response: "content_script onMessage listener"});
 });
+
+setTimeout(detectFacebookOnPage, 150);
