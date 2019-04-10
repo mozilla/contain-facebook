@@ -16,13 +16,12 @@
 	width: 154px;
 }
 
-
 /* Overlay */
 .fbc-overlay {
 	position: relative;
 }
 
-.fbc-overlay:after {
+.fbc-overlay::after {
 	outline: 2px solid #3b5998;
 	content: "";
 	background-size: 100% 100%;
@@ -38,6 +37,6 @@
 	transition: opacity 0.2s ease-out;
 }
 
-.fbc-overlay:hover:after {
+.fbc-overlay:hover::after {
 	opacity: 0;
 }

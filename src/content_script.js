@@ -7,22 +7,27 @@
 
 function detectFacebookLogin () {
 
-  // TODO: Count instances of a match (Using [0] currently)
   // Test for anchor/facebook URL (Example: Imgur)
   const loginButtonHref = document.querySelectorAll("[href*='facebook']");
-  loginButtonHref[0].classList.add("fbc-overlay");
+  for (let item of loginButtonHref) {
+    item.classList.add("fbc-overlay");
+  }
 
-  // TODO: Grab each element attribute and search for "dialog/oauth" string
   const loginButtonDataOAuth = document.querySelectorAll("[data-oauthserver*='facebook']");
-  loginButtonDataOAuth[0].classList.add("fbc-overlay");
+  for (let item of loginButtonDataOAuth) {
+    item.classList.add("fbc-overlay");
+  }
 
-  // TODO: Grab each element attribute and search for "dialog/oauth" string
-  // const loginButtonTitle = document.querySelectorAll("[title='Share On Facebook']");
-  // loginButtonTitle[0].classList.add("fbc-overlay");
+  const loginButtonTitle = document.querySelectorAll("[title*='Share On Facebook']");
+  for (let item of loginButtonTitle) {
+    item.classList.add("fbc-overlay");
+  }
 
   // Test for standard implementation (Example: Facebook Docs)
   const loginButton = document.querySelectorAll(".fb-login-button");
-  loginButton[0].classList.add("fbc-loginButton");
+  for (let item of loginButton) {
+    item.classList.add("fbc-overlay");
+  }
 }
 
 browser.runtime.onMessage.addListener(message => {
