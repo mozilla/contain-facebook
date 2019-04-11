@@ -1,10 +1,5 @@
 "use strict";
 
-// Pattern
-// https://www.facebook.com/v2.3/dialog/oauth
-
-
-
 function detectFacebookOnPage () {
 
   // TODO: Loop through array of class names to test for
@@ -31,12 +26,6 @@ function detectFacebookOnPage () {
   }
   const loginButtonAriaLabel = document.querySelectorAll("[aria-label*='Facebook']");
   for (let item of loginButtonAriaLabel) {
-    item.classList.add("fbc-overlay");
-  }
-
-  // Test for standard implementation (Example: Facebook Docs)
-  const loginButton = document.querySelectorAll(".fb-login-button");
-  for (let item of loginButton) {
     item.classList.add("fbc-overlay");
   }
 }

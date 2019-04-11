@@ -1,21 +1,3 @@
-/* Button Replacement */
-.fbc-loginButton {
-	background: #4B72BB;
-}
-.fbc-loginButton.large {
-	height: 40px;
-	width: 253px;
-	max-width: 272px;
-}
-.fbc-loginButton.medium {
-	height: 28px;
-	width: 181px;
-}
-.fbc-loginButton.small {
-	height: 20px;
-	width: 154px;
-}
-
 /* Overlay */
 .fbc-overlay {
 	position: relative;
