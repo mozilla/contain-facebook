@@ -1,51 +1,239 @@
-.wrapper {
-  width: 380px;
-  height: 220px;
-  margin: 1em;
-}
-  
-.padding{
-  padding: 0;
-}
-
-.text{
-  padding: 0 25px 0 25px;
-  font-size: 14px;
+body {
+  --blue60: #0060df;
+  --blue70: #003eaa;
+  --primaryText: #0c0c0d;
+  --secondaryText: #737373;
+  --grey20: #ededf0;
+  --transition: all .15s cubic-bezier(.07,.95,0,1);
+  --borders: 1px solid #ededf0;
+  font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.userContext-icon {
-  padding-left: 25px;
-  padding-right: 45px;
+
+html,
+body {
+  overflow: hidden;
+  min-height: 200px;
+  min-width: 355px;
+  max-width: 355px;
+}
+
+h1,
+h2,
+div,
+p,
+a,
+body,
+span {
+  margin: 0;
+  font-size: 12px;
+}
+
+.main-content-wrapper {
+  padding: 1.5rem 1.65rem;
+}
+
+h2,
+.main-content-wrapper p,
+.main-content-wrapper div.img {
+  padding-bottom: 1rem;
+}
+
+.main-content-wrapper a:last-child {
+  padding-bottom: 0;
+}
+
+h1 { /* "Facebook Container" headline for all panels */
+  padding: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: var(--borders);
+  position: relative;
+}
+
+h1.btn-return::before {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url("/img/arrow-icon-left.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+h2 { /* panel sub-head for all panels */
   display: flex;
   align-items: center;
 }
 
-.userContext-label {
-  margin-inline-start: 0;
-  margin-inline-end: 3px;
-  color: #37adff;
+h2,
+.bold {
+  font-weight: 500;
 }
 
-.userContext-indicator {
-  width: 16px;
-  height: 16px;
-  background-image: url("briefcase.svg");
-  background-size: contain;
+.Facebook-text {
+  color: var(--secondaryText);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.Facebook-text::after { /* grey Facebook with fence */
+  content: "";
+  background-image: url("/img/fbc-icon2.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  width: 14px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 4px;
+  margin-bottom: -1px;
+}
+
+p,
+a {
+  font-weight: 400;
+  line-height: 140%;
+}
+
+a {
+  color: var(--blue60);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--blue70);
+  border-bottom: 1.5px solid var(--blue70);
+}
+
+.fw-bottom-btn { /* Full-width bottom bar "How Facebook Container Works" button. Only on non-onboarding panels. */
+  padding: .7rem 0;
+  background-color: transparent;
+  border-top: var(--borders);
+}
+
+.highlight-on-hover { /* Full-width element that wraps around the "How Faceook Container Works" span and arrow icon */
+  width: 100%;
+  padding: .45rem 1.65rem;
+  display: flex;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+
+.highlight-on-hover span,
+.highlight-on-hover img {
+  pointer-events: none;
+}
+
+.highlight-on-hover:hover {
+  background-color: var(--grey20);
+  transition: var(--transition);
+}
+
+.fw-bottom-btn,
+.bottom-btns {
+  display: flex;
+  justify-content: space-between;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.bottom-btns { /* Bottom "Cancel, Back, Next, Done" buttons - onboarding panels only */
+  width: 100%;
+}
+
+.bottom-btn {
+  line-height: 103%;
+  height: 3.35rem;
+  width: 50%;
+  color: var(--primaryText);
+  padding: 1.15rem 0;
+  text-align: center;
+}
+
+.bottom-btn:first-of-type { /* Onboarding Panels only: The first bottom button ("Cancel", "Back") is always gray */
+  border-top: 1px solid rgba(24, 25, 26, 0.14);
+  border-right: 1px solid rgba(24, 25, 26, 0.14);
+  background-color: rgba(12,12,13, 0.05);
+  left: 0;
+}
+
+.bottom-btn:first-of-type:hover {
+  background-color: rgba(204, 204, 204, 0.5);
+}
+
+.bottom-btn:last-of-type { /* Onboarding Panels only: The second bottom button on the onboarding panels is always blue */
+  border-top: 1px solid var(--blue70);
+  border-left: 1px solid var(--blue60);
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--blue60);
+  right: 0;
+}
+
+.bottom-btn:last-of-type:hover {
+  background-color: var(--blue70);
+}
+
+.bottom-btn,
+.bottom-btn:hover {
+  transition: var(--transition);
+}
+
+.trackers-detected-subhead::before {
+  content: "";
+  background-image: url("/img/fenced-badge.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 23px;
+  height: 19px;
+  display: inline-flex;
+  margin-right: 3px;
+}
+
+.img.trackers-detected {
+  background-image: url("/img/image-tracker-detected@2x(1).png");
+  height: 145px;
+  margin: 1.25rem 0 1.75rem -4px;
+  background-position: left, center;
+}
+
+.img.onboarding3 {
+  background-image: url("/img/image-example@2x.png");
+  height: 145px;
+  margin: 1rem auto 1.5rem auto;
   background-position: center center;
 }
 
 .img {
-  padding-right: 10px;
-  align-items: baseline;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-  
-.heading {
-  text-align: center;
-  border-bottom: 1px solid #CCC;
-  padding: 0 0 15px 0;
+
+/* Bottom button hacks until a more reasonable solution presents itself */
+/* These eliminate (The-Powers-That-Be-Willing) a strange little white gap between
+   the bottom edge of the 'bottom-btns' and the bottom edge of the panel. */
+
+#onboarding2 .bottom-btns {
+  min-height: 3.15rem;
 }
-  
-.display {
-  display: none;
+
+#onboarding2 .bottom-btn {
+  line-height: inherit;
+  height: auto;
+}
+
+#onboarding3 .bottom-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  line-height: 101%;
 }

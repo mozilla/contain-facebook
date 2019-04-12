@@ -373,9 +373,11 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.disable();
     return;
   }
+  // PANEL IDENTIFIERS ARE : "trackers-detected", "no-trackers", and "on-facebook"
 
   if (isFacebookURL(url)) {
-    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel1.html"});
+    browser.storage.local.set({"CURRENT_PANEL": "on-facebook"});
+    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     const fbcStorage = await browser.storage.local.get();
     if (fbcStorage.PANEL_SHOWN !== true) {
       await browser.browserAction.setBadgeBackgroundColor({
@@ -384,8 +386,9 @@ async function updateBrowserActionIcon (tab) {
       });
       browser.browserAction.setBadgeText({tabId: tab.id, text: " "});
     }
-  } else {
-    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel2.html"});
+  } else { 
+    browser.storage.local.set({"CURRENT_PANEL": "no-trackers"});
+    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     browser.browserAction.setBadgeText({tabId: tab.id, text: ""});
   }
 }
@@ -445,7 +448,8 @@ async function blockFacebookSubResources (requestDetails) {
     browser.tabs.sendMessage(requestDetails.tabId, message);
     // Send the message to the browser_action panel
     browser.runtime.sendMessage(message);
-
+    browser.storage.local.set({"CURRENT_PANEL": "trackers-detected"});
+    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     return {cancel: true};
   }
 }
