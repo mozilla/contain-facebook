@@ -21,7 +21,7 @@ function detectFacebookOnPage () {
   // TODO: Loop through array of class names to test for
   // Test for any element with facebook connect in class name (Example: Pinterest)
 
-  const loginButtonTitle = document.querySelectorAll("[title='Share On Facebook']");
+  const loginButtonTitle = document.querySelectorAll("[title*='Facebook']");
   console.log(loginButtonTitle);
   for (let item of loginButtonTitle) {
     // console.log("loginButtonTitle", item);
