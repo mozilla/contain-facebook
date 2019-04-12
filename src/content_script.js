@@ -28,7 +28,24 @@ function detectFacebookOnPage () {
     if ( !item.classList.contains("fbc-overlay") ) {
       item.classList.add(...itemWidthCheck(item));
     }
+  }
 
+  const loginButtonTitleLogin = document.querySelectorAll("[title='Log in with Facebook']");
+  console.log(loginButtonTitleLogin);
+  for (let item of loginButtonTitleLogin) {
+    // console.log("loginButtonTitle", item);
+    if ( !item.classList.contains("fbc-overlay") ) {
+      item.classList.add(...itemWidthCheck(item));
+    }
+  }
+
+  const loginButtonClass2 = document.querySelectorAll("[class*='fb-login']");
+  for (let item of loginButtonClass2) {
+
+    // console.log("loginButtonClass", item);
+    if ( !item.classList.contains("fbc-overlay") ) {
+      item.classList.add(...itemWidthCheck(item));
+    }
   }
 
   const loginButtonClass = document.querySelectorAll("[class*='FacebookConnectButton']");
@@ -42,6 +59,7 @@ function detectFacebookOnPage () {
 
   // Test for anchor/facebook URL (Example: Imgur)
   const loginButtonHref = document.querySelectorAll("[href*='facebook']");
+  console.log(loginButtonHref);
   for (let item of loginButtonHref) {
     // console.log("loginButtonHref", item);
     if ( !item.classList.contains("fbc-overlay") ) {
@@ -68,6 +86,14 @@ function detectFacebookOnPage () {
   const loginButtonAriaLabel = document.querySelectorAll("[aria-label*='Facebook']");
   for (let item of loginButtonAriaLabel) {
     // console.log("loginButtonAriaLabel", item);
+    if ( !item.classList.contains("fbc-overlay") ) {
+      item.classList.add(...itemWidthCheck(item));
+    }
+  }
+
+  const loginButtonDataDestination = document.querySelectorAll("[data-destination*='facebook']");
+  for (let item of loginButtonDataDestination) {
+    // console.log("loginButtonDataDestination", item);
     if ( !item.classList.contains("fbc-overlay") ) {
       item.classList.add(...itemWidthCheck(item));
     }

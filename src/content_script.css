@@ -54,17 +54,17 @@
 	border: 1px solid white;
 	box-shadow: 0 0 0 1px rgba(0,0,0,.15);
 	background-position: center center;
-	background-size: 18.5px auto, 100%;
+	background-size: 16px auto, 100%;
 	background-image: url(fence-large.svg), linear-gradient(-45deg, #6200A4, #D70022);
 	background-repeat: no-repeat;
 	border-radius: 100%;
-	width: 34px;
-	height: 34px;
+	width: 28px;
+	height: 28px;
 	position: absolute;
 	padding: 0;
 	z-index: 9;
-	right: -5px;
-	top: -5px;
+	right: -4px;
+	top: -4px;
 	overflow: hidden;
 	transition: opacity 0.2s ease-out;
 }
