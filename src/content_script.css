@@ -1,24 +1,80 @@
+/* Button Replacement */
+.fbc-loginButton {
+	background-size: contain;
+	background-position: center;
+	background-repeat: none;
+	cursor: pointer;
+}
+
+.fbc-loginButton.fbc-overlay::after {
+	outline: none;
+	border: 2px solid #3b5998;
+	border-radius: 4px;
+}
+
+.fbc-loginButton.fbc-size-large.fbc-button-type-continue_with {
+	height: 40px;
+	width: 252px;
+	background-image: url(../img/login_continue_large.png);
+}
+.fbc-loginButton.fbc-size-medium.fbc-button-type-continue_with {
+	height: 28px;
+	width: 180px;
+	background-image: url(../img/login_continue_medium.png);
+}
+.fbc-loginButton.fbc-size-small.fbc-button-type-continue_with {
+	height: 20px;
+	width: 154px;
+	background-image: url(../img/login_continue_small.png);
+}
+
+.fbc-loginButton.fbc-size-large.fbc-button-type-login_width {
+	height: 40px;
+	width: 236px;
+	background-image: url(../img/login_login_large.png);
+}
+.fbc-loginButton.fbc-size-medium.fbc-button-type-login_width {
+	height: 28px;
+	width: 166px;
+	background-image: url(../img/login_login_medium.png);
+}
+.fbc-loginButton.fbc-size-small.fbc-button-type-login_width {
+	height: 20px;
+	width: 62px;
+	background-image: url(../img/login_login_small.png);
+}
+
 /* Overlay */
 .fbc-overlay {
 	position: relative;
 }
 
 .fbc-overlay::after {
-	outline: 2px solid #3b5998;
 	content: "";
-	background-size: 100% 100%;
-	background-image: url(data:image/svg+xml,%3Csvg%20width%3D%22250%22%20height%3D%22250%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cline%20x1%3D%22250%22%20x2%3D%220%22%20y1%3D%220%22%20y2%3D%22250%22%20stroke%3D%22%233b5998%22%20stroke-width%3D%2210%22%2F%3E%0A%3C%2Fsvg%3E);
-	background-color: rgba(255, 255, 255, 0.3);
-	width: 100%;
-	height: 100%;
+	border: 1px solid white;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+	background-position: center center;
+	background-size: 18.5px auto, 100%;
+	background-image: url(fence-large.svg), linear-gradient(-45deg, #6200A4, #D70022);
+	background-repeat: no-repeat;
+	border-radius: 100%;
+	width: 34px;
+	height: 34px;
 	position: absolute;
+	padding: 0;
 	z-index: 9;
-	left: 0;
-	top: 0;
+	right: -4px;
+	top: -4px;
 	overflow: hidden;
 	transition: opacity 0.2s ease-out;
 }
 
-.fbc-overlay:hover::after {
-	opacity: 0;
+.fbc-overlay.fbc-overlay-small::after {
+	background-size: 7px auto, 100%;
+	background-image: url(fence-small.svg), linear-gradient(-45deg, #6200A4, #D70022);
+	width: 17px;
+	height: 17px;
+	right: -5px;
+	top: -5px;
+
 }
