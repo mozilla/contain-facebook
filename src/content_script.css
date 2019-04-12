@@ -63,8 +63,8 @@
 	position: absolute;
 	padding: 0;
 	z-index: 9;
-	right: -4px;
-	top: -4px;
+	right: -5px;
+	top: -5px;
 	overflow: hidden;
 	transition: opacity 0.2s ease-out;
 }
