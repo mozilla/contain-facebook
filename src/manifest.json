@@ -8,8 +8,8 @@
     "description": "__MSG_extensionDescription__",
 
     "icons": {
-        "48": "icon.svg",
-        "96": "icon.svg"
+        "48": "/img/icon.svg",
+        "96": "/img/icon.svg"
     },
 
     "applications": {
@@ -23,9 +23,9 @@
 
     "browser_action": {
         "browser_style": true,
-        "default_icon": "fbc-icon2.svg",
+        "default_icon": "/img/fbc-icon2.svg",
         "default_title": "Facebook Container",
-        "default_popup": "panel1.html",
+        "default_popup": "panel.html",
         "theme_icons": [
             {
                 "light": "fbc-icon.svg",
@@ -33,8 +33,8 @@
                 "size": 16
             },
             {
-                "light": "fbc-icon.svg",
-                "dark": "fbc-icon2.svg",
+                "light": "/img/fbc-icon.svg",
+                "dark": "/img/fbc-icon2.svg",
                 "size": 32
             }
         ]
@@ -49,7 +49,8 @@
         "storage",
         "tabs",
         "webRequestBlocking",
-        "webRequest"
+        "webRequest",
+        "notifications"
     ],
 
     "background": {
