@@ -7,6 +7,8 @@ const FACEBOOK_DOMAINS = [
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
 
+  "facebookcorewwwi.onion", "static.xx.fbcdn23dssr3jqnq.onion", "hscontent.xx.fbcdn23dssr3jqnq.onion",
+
   "instagram.com", 
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
 
