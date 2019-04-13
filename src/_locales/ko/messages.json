@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container는 Facebook이 제 3자 쿠키를 이용해 Facebook 이외의 사이트에서 여러분을 추적하는 활동을 방지하기 위해, 여러분의 Facebook 활동을 다른 웹 활동과 분리합니다.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$이 Facebook Container 안에 있습니다.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "주소창의 이 아이콘은 Facebook Container 안에서 Facebook.com, Instagram.com, 혹은 Messenger.com 에 접속할 때 나타납니다.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$이 Facebook Container 밖에 있습니다.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "이 웹사이트는 Facebook Container 밖에 있습니다. 이는 Facebook이 웹 환경에서 여러분을 추적하기 어렵게 만들어줄 것입니다.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "이 사이트는 Facebook Container 밖에 있습니다.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
