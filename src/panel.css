@@ -31,11 +31,12 @@ span {
 
 .main-content-wrapper {
   padding: 1.5rem 1.65rem;
+  min-height: 100px;
 }
 
 h2,
-.main-content-wrapper p,
-.main-content-wrapper div.img {
+p,
+div.img {
   padding-bottom: 1rem;
 }
 
@@ -44,25 +45,24 @@ h2,
 }
 
 h1 { /* "Facebook Container" headline for all panels */
-  padding: 1rem;
   font-weight: 600;
-  text-align: center;
   border-bottom: var(--borders);
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
 }
 
-h1.btn-return::before {
+.btn-return.arrow-left {
   position: absolute;
+  border: 0;
   left: 15px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  content: "";
+  top: 15px;
   width: 1.2rem;
   height: 1.2rem;
+  background-color: rgba(255, 255, 255, 1);
   background-image: url("/img/arrow-icon-left.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
   cursor: pointer;
 }
 
@@ -83,13 +83,10 @@ h2,
 }
 
 .Facebook-text::after { /* grey Facebook with fence */
-  content: "";
   background-image: url("/img/fbc-icon2.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: inline-block;
   width: 14px;
   height: 12px;
-  display: inline-block;
   margin-left: 4px;
   margin-bottom: -1px;
 }
@@ -119,14 +116,31 @@ a:hover {
 
 .highlight-on-hover { /* Full-width element that wraps around the "How Faceook Container Works" span and arrow icon */
   width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
   padding: .45rem 1.65rem;
+  position: relative;
   display: flex;
   justify-content: space-between;
   transition: var(--transition);
 }
 
-.highlight-on-hover span,
-.highlight-on-hover img {
+.highlight-on-hover::after {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 15px;
+  height: 100%;
+  width: .5rem;
+  background-image: url("/img/arrow-icon-right.svg");
+  background-position: center center;
+  transform: scale(1.3);
+}
+
+.highlight-on-hover span {
   pointer-events: none;
 }
 
@@ -148,8 +162,9 @@ a:hover {
 }
 
 .bottom-btn {
+  border-bottom: 0;
   line-height: 103%;
-  height: 3.35rem;
+  height: 3.37rem;
   width: 50%;
   color: var(--primaryText);
   padding: 1.15rem 0;
@@ -159,6 +174,7 @@ a:hover {
 .bottom-btn:first-of-type { /* Onboarding Panels only: The first bottom button ("Cancel", "Back") is always gray */
   border-top: 1px solid rgba(24, 25, 26, 0.14);
   border-right: 1px solid rgba(24, 25, 26, 0.14);
+  border-left: 0;
   background-color: rgba(12,12,13, 0.05);
   left: 0;
 }
@@ -170,6 +186,7 @@ a:hover {
 .bottom-btn:last-of-type { /* Onboarding Panels only: The second bottom button on the onboarding panels is always blue */
   border-top: 1px solid var(--blue70);
   border-left: 1px solid var(--blue60);
+  border-right: 0;
   color: rgba(255, 255, 255, 1);
   background-color: var(--blue60);
   right: 0;
@@ -185,11 +202,8 @@ a:hover {
 }
 
 .trackers-detected-subhead::before {
-  content: "";
   background-image: url("/img/fenced-badge.svg");
-  background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
   width: 23px;
   height: 19px;
   display: inline-flex;
@@ -211,29 +225,24 @@ a:hover {
 }
 
 .img {
-  content: "";
   display: block;
+  min-height: 100px;
+}
+
+.img,
+.highlight-on-hover::after,
+.Facebook-text::after,
+.trackers-detected-subhead::before,
+.btn-return.arrow-left {
+  content: "";
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 /* Bottom button hacks until a more reasonable solution presents itself */
-/* These eliminate (The-Powers-That-Be-Willing) a strange little white gap between
+/* This eliminates (The-Powers-That-Be-Willing) a strange little white gap between
    the bottom edge of the 'bottom-btns' and the bottom edge of the panel. */
 
-#onboarding2 .bottom-btns {
-  min-height: 3.15rem;
-}
-
-#onboarding2 .bottom-btn {
-  line-height: inherit;
-  height: auto;
-}
-
-#onboarding3 .bottom-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  line-height: 101%;
+.onboarding3 .bottom-btn {
+  height: 3.41rem;
 }

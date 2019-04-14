@@ -448,8 +448,11 @@ async function blockFacebookSubResources (requestDetails) {
     browser.tabs.sendMessage(requestDetails.tabId, message);
     // Send the message to the browser_action panel
     browser.runtime.sendMessage(message);
+    
+
+    // TODO MAYBE: Icon may need to change here?
     browser.storage.local.set({"CURRENT_PANEL": "trackers-detected"});
-    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
+    // browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     return {cancel: true};
   }
 }

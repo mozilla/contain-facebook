@@ -55,14 +55,6 @@ const addDiv = (wrapper, className) => {
 };
 
 
-// creates and appends image.
-const addImg = (wrapper, imgSrc) => {
-  let el = document.createElement("IMG");
-  el["src"] = imgSrc;
-  wrapper.appendChild(el);
-};
-
-
 // creates grey Facebook text. Grey fence icon is set in CSS.
 const addGreyFacebookAndFence = () => {
   // create grey facebook text with grey fence
@@ -74,13 +66,15 @@ const addGreyFacebookAndFence = () => {
 
 
 // adds bottom navigation buttons to onboarding panels
-const setNavButtons = (wrapper, button1Id, button2Id) => {
+const setNavButtons = (wrapper, button1Id, button2Id, panelId) => {
   let buttonWrapper = addDiv(wrapper, "bottom-btns");
+  buttonWrapper.classList.add(panelId);
 
   [button1Id, button2Id].forEach(id => {
-    let el = addDiv(buttonWrapper, "bottom-btn");
-    el.classList.add("uiMessage");
-    el["id"] = id;
+    let button = document.createElement("BUTTON");
+    button.classList.add("uiMessage", "bottom-btn");
+    button["id"] = id;
+    buttonWrapper.appendChild(button);
   });
 };
 
@@ -232,18 +226,16 @@ const buildPanel = (panelId) => {
   // add div.fw-bottom-btn (full-width button at the bottom of the panels).
   contentWrapper = addDiv(pageWrapper, "fw-bottom-btn");
 
-  // add div.highlight-on-hover that spans the full width of panel and highlights the 
-  // "How Facebook Container Works >" span and image elements
-  contentWrapper = addDiv(contentWrapper, "highlight-on-hover");
-  
-  // add .open-onboarding class to div.highlight-on-hover 
-  contentWrapper.classList.add("open-onboarding");
+  let button = document.createElement("BUTTON");
+  button.classList.add("highlight-on-hover", "open-onboarding");
+  contentWrapper.appendChild(button);
+
+  contentWrapper = button;
 
   // add span#how-fbc-works and arrow icon
   let span = document.createElement("SPAN");
   span["id"] = "how-fbc-works";
   setClassAndAppend(contentWrapper, span);
-  addImg(contentWrapper, "/img/arrow-icon.svg");
 
   getLocalizedStrings();
 
@@ -265,12 +257,12 @@ const buildOnboardingPanel = (panelId) => {
 
   // clear out existing panel elements (if there are any)
   clearPanel(page);
-  page["id"] = stringId;
 
   let el = addHeader(pageWrapper);
 
-  // returns user to origin panel
-  el.classList.add("btn-return");
+  el = document.createElement("BUTTON");
+  el.classList.add("btn-return", "arrow-left");
+  pageWrapper.appendChild(el);
 
   // add div.main-content-wrapper to wrap text and image elements
   const contentWrapper = addDiv(pageWrapper, "main-content-wrapper");
@@ -283,20 +275,20 @@ const buildOnboardingPanel = (panelId) => {
 
 
   if (panelId === 1) {
-    setNavButtons(pageWrapper, "btn-cancel", "btn-next");
+    setNavButtons(pageWrapper, "btn-cancel", "btn-next", stringId);
   }
 
   if (panelId === 2) {
     // create grey facebook text with grey fence
     el = addGreyFacebookAndFence();
     h2.parentNode.insertBefore(el, h2.nextSibling);
-    setNavButtons(pageWrapper, "btn-back", "btn-next");
+    setNavButtons(pageWrapper, "btn-back", "btn-next", stringId);
   }
 
   if (panelId === 3) {
     let imgDiv = addDiv(contentWrapper, stringId);
     imgDiv.classList.add("img");
-    setNavButtons(pageWrapper, "btn-back", "btn-done");
+    setNavButtons(pageWrapper, "btn-back", "btn-done", stringId);
   }
 
   // add second paragraph to all panels
