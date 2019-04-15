@@ -28,8 +28,8 @@
         "default_popup": "panel.html",
         "theme_icons": [
             {
-                "light": "fbc-icon.svg",
-                "dark": "fbc-icon2.svg",
+                "light": "/img/fbc-icon.svg",
+                "dark": "/img/fbc-icon2.svg",
                 "size": 16
             },
             {
