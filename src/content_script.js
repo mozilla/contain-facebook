@@ -15,19 +15,21 @@ function itemWidthCheck (target) {
   return iconClassArr;
 }
 
+// Use the following patterns to check for on-screen Facebook elements 
+
+const PATTERN_DETECTION_SELECTORS = [
+  "[title*='Facebook']",
+  "[title='Log in with Facebook']",
+  "[class*='fb-login']",
+  "[class*='FacebookConnectButton']",
+  "[href*='facebook']",
+  "[data-bfa-network*='facebook']",
+  "[data-oauthserver*='facebook']",
+  "[aria-label*='Facebook']",
+  "[data-destination*='facebook']"
+];
+
 function detectFacebookOnPage () {
-  // Test for any element with facebook connect in class name (Example: Pinterest)
-  const PATTERN_DETECTION_SELECTORS = [
-    "[title*='Facebook']",
-    "[title='Log in with Facebook']",
-    "[class*='fb-login']",
-    "[class*='FacebookConnectButton']",
-    "[href*='facebook']",
-    "[data-bfa-network*='facebook']",
-    "[data-oauthserver*='facebook']",
-    "[aria-label*='Facebook']",
-    "[data-destination*='facebook']"
-  ];
 
   for (let querySelector of PATTERN_DETECTION_SELECTORS) {
     for (let item of document.querySelectorAll(querySelector)) {
