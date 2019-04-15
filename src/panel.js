@@ -192,8 +192,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 const buildPanel = (panelId) => {
   console.log(`building ${panelId} panel...`);
 
-  let pageWrapper = document.body;
-  clearPanel(pageWrapper);
+  const page = document.body;
+  clearPanel(page);
+
+  const pageWrapper = document.createDocumentFragment();
 
   //add header
   addHeader(pageWrapper);
@@ -238,6 +240,9 @@ const buildPanel = (panelId) => {
   setClassAndAppend(contentWrapper, span);
 
   getLocalizedStrings();
+
+  // append document fragment to body
+  page.appendChild(pageWrapper);
 
   // add listeners to any link element (.open-onboarding) that should open the onboarding flow on click;
   const onboardingLinks = document.querySelectorAll(".open-onboarding");
@@ -300,5 +305,3 @@ const buildOnboardingPanel = (panelId) => {
   page.appendChild(pageWrapper);
   addOnboardingListeners(panelId);
 };
-
-document.addEventListener("click", (e) => console.log(e));
