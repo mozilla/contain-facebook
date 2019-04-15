@@ -13,7 +13,7 @@ const clearPanel = (wrapper) => {
 
 // adds "Facebook Container" to top of all panels
 const addHeader = (wrapper) => {
-  let el = document.createElement("H1");
+  let el = document.createElement("h1");
   el["id"] = "facebookContainer";
   setClassAndAppend(wrapper, el);
   return el;
@@ -30,7 +30,7 @@ const setClassAndAppend = (wrapper, el) => {
 // add "uiMessage" class to element and appends.
 const addSubhead = (wrapper, panelId) => {
   const elemId = `${panelId}-subhead`;
-  let el = document.createElement("H2");
+  let el = document.createElement("h2");
   el["id"] = elemId;
   setClassAndAppend(wrapper, el);
   el.classList.add(elemId);
@@ -40,7 +40,7 @@ const addSubhead = (wrapper, panelId) => {
 
 // adds a block of text to wrapper
 const addParagraph = (wrapper, stringId) => {
-  let el = document.createElement("P");
+  let el = document.createElement("p");
   el["id"] = stringId;
   setClassAndAppend(wrapper, el);
 };
@@ -48,7 +48,7 @@ const addParagraph = (wrapper, stringId) => {
 
 // create and append div to panel wrapper
 const addDiv = (wrapper, className) => {
-  let el = document.createElement("DIV");
+  let el = document.createElement("div");
   el.classList.add(className);
   wrapper.appendChild(el);
   return el;
@@ -71,7 +71,7 @@ const setNavButtons = (wrapper, button1Id, button2Id, panelId) => {
   buttonWrapper.classList.add(panelId);
 
   [button1Id, button2Id].forEach(id => {
-    let button = document.createElement("BUTTON");
+    let button = document.createElement("button");
     button.classList.add("uiMessage", "bottom-btn");
     button["id"] = id;
     buttonWrapper.appendChild(button);
@@ -129,14 +129,14 @@ const formatText = (text, el) => {
 
   const textChunks = text.split("*SPANSTART");
 
-  let span = document.createElement("SPAN");
+  let span = document.createElement("span");
   span.textContent = textChunks[0];
   el.appendChild(span);
 
   let nestedBoldText = textChunks[1];
   nestedBoldText = nestedBoldText.replace("*SPANEND", "");
 
-  span = document.createElement("SPAN");
+  span = document.createElement("span");
   span.textContent = nestedBoldText;
   span.classList.add("bold");
 
@@ -217,7 +217,7 @@ const buildPanel = (panelId) => {
   }
 
   if (panelId !== "on-facebook") {
-    let link = document.createElement("A");
+    let link = document.createElement("a");
     link["id"] = "learn-more";
     link.classList.add("open-sumo");
     link["href"] = "https://support.mozilla.org"; // need Facebook Container SUMO url. // need UTM params? // open in new or same window?
@@ -228,14 +228,14 @@ const buildPanel = (panelId) => {
   // add div.fw-bottom-btn (full-width button at the bottom of the panels).
   contentWrapper = addDiv(pageWrapper, "fw-bottom-btn");
 
-  let button = document.createElement("BUTTON");
+  let button = document.createElement("button");
   button.classList.add("highlight-on-hover", "open-onboarding");
   contentWrapper.appendChild(button);
 
   contentWrapper = button;
 
   // add span#how-fbc-works and arrow icon
-  let span = document.createElement("SPAN");
+  let span = document.createElement("span");
   span["id"] = "how-fbc-works";
   setClassAndAppend(contentWrapper, span);
 
@@ -265,7 +265,7 @@ const buildOnboardingPanel = (panelId) => {
 
   let el = addHeader(pageWrapper);
 
-  el = document.createElement("BUTTON");
+  el = document.createElement("button");
   el.classList.add("btn-return", "arrow-left");
   pageWrapper.appendChild(el);
 
