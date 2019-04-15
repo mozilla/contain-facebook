@@ -17,11 +17,13 @@
 	width: 252px;
 	background-image: url(../img/login_continue_large.png);
 }
+
 .fbc-loginButton.fbc-size-medium.fbc-button-type-continue_with {
 	height: 28px;
 	width: 180px;
 	background-image: url(../img/login_continue_medium.png);
 }
+
 .fbc-loginButton.fbc-size-small.fbc-button-type-continue_with {
 	height: 20px;
 	width: 154px;
@@ -33,11 +35,13 @@
 	width: 236px;
 	background-image: url(../img/login_login_large.png);
 }
+
 .fbc-loginButton.fbc-size-medium.fbc-button-type-login_width {
 	height: 28px;
 	width: 166px;
 	background-image: url(../img/login_login_medium.png);
 }
+
 .fbc-loginButton.fbc-size-small.fbc-button-type-login_width {
 	height: 20px;
 	width: 62px;
@@ -52,7 +56,7 @@
 .fbc-overlay::after {
 	content: "";
 	border: 1px solid white;
-	box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
 	background-position: center center;
 	background-size: 16px auto, 100%;
 	background-image: url(fence-large.svg), linear-gradient(-45deg, #6200A4, #D70022);
@@ -76,5 +80,4 @@
 	height: 17px;
 	right: -5px;
 	top: -5px;
-
 }
