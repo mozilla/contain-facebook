@@ -426,7 +426,6 @@ async function containFacebook (request) {
 // https://github.com/mozilla/blok/blob/master/src/js/background.js
 async function blockFacebookSubResources (requestDetails) {
   if (requestDetails.type === "main_frame") {
-    console.log("Allowing clicks to links.");
     return {};
   }
 
@@ -438,7 +437,6 @@ async function blockFacebookSubResources (requestDetails) {
   */
 
   if (typeof requestDetails.originUrl === "undefined") {
-    console.log("Allowing request from 'undefined' origin - a browser internal origin.");
     return {};
   }
 
@@ -468,7 +466,6 @@ async function blockFacebookSubResources (requestDetails) {
     // See https://github.com/mozilla/contain-facebook/issues/23
     // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
     // eslint-disable-next-line no-console
-    console.log(error);
     return;
   }
   clearFacebookCookies();

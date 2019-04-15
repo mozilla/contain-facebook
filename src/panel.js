@@ -65,6 +65,22 @@ const addGreyFacebookAndFence = () => {
 };
 
 
+const addLearnHowFBCWorksButton = (fragment) => {
+  let contentWrapper = addDiv(fragment, "fw-bottom-btn");
+
+  let button = document.createElement("button");
+  button.classList.add("highlight-on-hover", "open-onboarding");
+  contentWrapper.appendChild(button);
+
+  contentWrapper = button;
+
+  // add span#how-fbc-works and arrow icon
+  let span = document.createElement("span");
+  span["id"] = "how-fbc-works";
+  setClassAndAppend(contentWrapper, span);
+};
+
+
 // adds bottom navigation buttons to onboarding panels
 const setNavButtons = (wrapper, button1Id, button2Id, panelId) => {
   let buttonWrapper = addDiv(wrapper, "bottom-btns");
@@ -86,6 +102,17 @@ const addOnboardingListeners = (res) => {
       handleOnboardingClicks(e, res);
     });
   });
+};
+
+
+
+const addLearnMoreLink = (fragment) => {
+  let link = document.createElement("a");
+  link["id"] = "learn-more";
+  link.classList.add("open-sumo");
+  link["href"] = "https://support.mozilla.org"; // need Facebook Container SUMO url. // need UTM params? // open in new or same window?
+  setClassAndAppend(fragment, link);
+  link.addEventListener("click", () => window.close());
 };
 
 
@@ -167,7 +194,6 @@ const getLocalizedStrings = async() => {
     }
     let text = browser.i18n.getMessage(el.id, currentActiveURL.hostname);
     if (text.includes("*SPAN")) {
-      // text = formatText(text, el);
       formatText(text, el);
     } else {
       el.textContent = text;
@@ -190,26 +216,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // Build non-onboarding panel
 const buildPanel = (panelId) => {
-  console.log(`building ${panelId} panel...`);
-
   const page = document.body;
   clearPanel(page);
 
-  const pageWrapper = document.createDocumentFragment();
+  const fragment = document.createDocumentFragment();
 
-  //add header
-  addHeader(pageWrapper);
+  addHeader(fragment);
 
-  // add div.main-content-wrapper to wrap panel content
-  let contentWrapper = addDiv(pageWrapper, "main-content-wrapper");
+  let contentWrapper = addDiv(fragment, "main-content-wrapper");
 
-  // add subhead
   addSubhead(contentWrapper, panelId);
 
-  // build first pargraph
   addParagraph(contentWrapper, `${panelId}-p1`);
 
-  // add div.img if panelId === "trackers-detected"
   if (panelId === "trackers-detected") {
     let imgDiv = addDiv(contentWrapper, panelId);
     imgDiv.classList.add("img");
@@ -217,35 +236,15 @@ const buildPanel = (panelId) => {
   }
 
   if (panelId !== "on-facebook") {
-    let link = document.createElement("a");
-    link["id"] = "learn-more";
-    link.classList.add("open-sumo");
-    link["href"] = "https://support.mozilla.org"; // need Facebook Container SUMO url. // need UTM params? // open in new or same window?
-    setClassAndAppend(contentWrapper, link);
-    link.addEventListener("click", () => window.close());
+    addLearnMoreLink(contentWrapper);
   }
 
-  // add div.fw-bottom-btn (full-width button at the bottom of the panels).
-  contentWrapper = addDiv(pageWrapper, "fw-bottom-btn");
-
-  let button = document.createElement("button");
-  button.classList.add("highlight-on-hover", "open-onboarding");
-  contentWrapper.appendChild(button);
-
-  contentWrapper = button;
-
-  // add span#how-fbc-works and arrow icon
-  let span = document.createElement("span");
-  span["id"] = "how-fbc-works";
-  setClassAndAppend(contentWrapper, span);
-
+  addLearnHowFBCWorksButton(fragment);
   getLocalizedStrings();
+  page.appendChild(fragment);
 
-  // append document fragment to body
-  page.appendChild(pageWrapper);
-
-  // add listeners to any link element (.open-onboarding) that should open the onboarding flow on click;
   const onboardingLinks = document.querySelectorAll(".open-onboarding");
+
   onboardingLinks.forEach(link => {
     link.addEventListener("click", () => buildOnboardingPanel(1));
   });
@@ -253,55 +252,45 @@ const buildPanel = (panelId) => {
 
 
 const buildOnboardingPanel = (panelId) => {
-  console.log(`building onboarding panel no. ${panelId} `);
   let page = document.body;
-  // let pageWrapper = document.body;
-  let pageWrapper = document.createDocumentFragment();
-
-  let stringId = `onboarding${panelId}`;
-
-  // clear out existing panel elements (if there are any)
   clearPanel(page);
 
-  let el = addHeader(pageWrapper);
+  let fragment = document.createDocumentFragment();
+  let stringId = `onboarding${panelId}`;
+
+  let el = addHeader(fragment);
 
   el = document.createElement("button");
   el.classList.add("btn-return", "arrow-left");
-  pageWrapper.appendChild(el);
 
-  // add div.main-content-wrapper to wrap text and image elements
-  const contentWrapper = addDiv(pageWrapper, "main-content-wrapper");
+  fragment.appendChild(el);
 
-  // create subhead, save in h2 for use later
+  const contentWrapper = addDiv(fragment, "main-content-wrapper");
+
   const h2 = addSubhead(contentWrapper, stringId);
 
-  // create first paragraph
   addParagraph(contentWrapper, `${stringId}-p1`);
 
 
   if (panelId === 1) {
-    setNavButtons(pageWrapper, "btn-cancel", "btn-next", stringId);
+    setNavButtons(fragment, "btn-cancel", "btn-next", stringId);
   }
 
   if (panelId === 2) {
-    // create grey facebook text with grey fence
     el = addGreyFacebookAndFence();
     h2.parentNode.insertBefore(el, h2.nextSibling);
-    setNavButtons(pageWrapper, "btn-back", "btn-next", stringId);
+    setNavButtons(fragment, "btn-back", "btn-next", stringId);
   }
 
   if (panelId === 3) {
     let imgDiv = addDiv(contentWrapper, stringId);
     imgDiv.classList.add("img");
-    setNavButtons(pageWrapper, "btn-back", "btn-done", stringId);
+    setNavButtons(fragment, "btn-back", "btn-done", stringId);
   }
 
-  // add second paragraph to all panels
   addParagraph(contentWrapper, `${stringId}-p2`);
 
-  // get localized strings
   getLocalizedStrings();
-
-  page.appendChild(pageWrapper);
+  page.appendChild(fragment);
   addOnboardingListeners(panelId);
 };
