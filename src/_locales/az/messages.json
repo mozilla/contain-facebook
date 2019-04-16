@@ -1,0 +1,30 @@
+{
+  "extensionDescription": {
+    "message": "Firefox Container Facebook saytının sizi internetdə üçüncü-tərəf çərəzlərlə izləməsini əngəlləmək üçün Facebookdakı aktivliyinizi digər saytlardan izolə edir.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$ Facebook Container-dədir.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$ Facebook Container-də deyil.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Bu sayt Facebook Container-də deyil.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
