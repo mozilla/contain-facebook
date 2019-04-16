@@ -109,6 +109,7 @@ const addLearnMoreLink = (fragment) => {
   const link = document.createElement("a");
   link["id"] = "learn-more";
   link.classList.add("open-sumo");
+  link["rel"] = "noopener noreferrer";
   link["href"] = "https://support.mozilla.org/kb/facebook-container-prevent-facebook-tracking"; // need Facebook Container SUMO url. // need UTM params? // open in new or same window?
   setClassAndAppend(fragment, link);
   link.addEventListener("click", () => window.close());
