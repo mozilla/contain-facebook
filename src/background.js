@@ -373,9 +373,11 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.disable();
     return;
   }
+  // PANEL IDENTIFIERS ARE : "trackers-detected", "no-trackers", and "on-facebook"
 
   if (isFacebookURL(url)) {
-    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel1.html"});
+    browser.storage.local.set({"CURRENT_PANEL": "on-facebook"});
+    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     const fbcStorage = await browser.storage.local.get();
     if (fbcStorage.PANEL_SHOWN !== true) {
       await browser.browserAction.setBadgeBackgroundColor({
@@ -384,8 +386,9 @@ async function updateBrowserActionIcon (tab) {
       });
       browser.browserAction.setBadgeText({tabId: tab.id, text: " "});
     }
-  } else {
-    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel2.html"});
+  } else { 
+    browser.storage.local.set({"CURRENT_PANEL": "no-trackers"});
+    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     browser.browserAction.setBadgeText({tabId: tab.id, text: ""});
   }
 }
@@ -423,7 +426,6 @@ async function containFacebook (request) {
 // https://github.com/mozilla/blok/blob/master/src/js/background.js
 async function blockFacebookSubResources (requestDetails) {
   if (requestDetails.type === "main_frame") {
-    console.log("Allowing clicks to links.");
     return {};
   }
 
@@ -435,7 +437,6 @@ async function blockFacebookSubResources (requestDetails) {
   */
 
   if (typeof requestDetails.originUrl === "undefined") {
-    console.log("Allowing request from 'undefined' origin - a browser internal origin.");
     return {};
   }
 
@@ -445,7 +446,11 @@ async function blockFacebookSubResources (requestDetails) {
     browser.tabs.sendMessage(requestDetails.tabId, message);
     // Send the message to the browser_action panel
     browser.runtime.sendMessage(message);
+    
 
+    // TODO MAYBE: Icon may need to change here?
+    browser.storage.local.set({"CURRENT_PANEL": "trackers-detected"});
+    // browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     return {cancel: true};
   }
 }
@@ -461,7 +466,7 @@ async function blockFacebookSubResources (requestDetails) {
     // See https://github.com/mozilla/contain-facebook/issues/23
     // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
     // eslint-disable-next-line no-console
-    console.log(error);
+    console.error(error);
     return;
   }
   clearFacebookCookies();
