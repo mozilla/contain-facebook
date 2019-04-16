@@ -13,7 +13,7 @@ const clearPanel = (wrapper) => {
 
 // adds "Facebook Container" to top of all panels
 const addHeader = (wrapper) => {
-  let el = document.createElement("h1");
+  const el = document.createElement("h1");
   el["id"] = "facebookContainer";
   setClassAndAppend(wrapper, el);
   return el;
@@ -30,7 +30,7 @@ const setClassAndAppend = (wrapper, el) => {
 // add "uiMessage" class to element and appends.
 const addSubhead = (wrapper, panelId) => {
   const elemId = `${panelId}-subhead`;
-  let el = document.createElement("h2");
+  const el = document.createElement("h2");
   el["id"] = elemId;
   setClassAndAppend(wrapper, el);
   el.classList.add(elemId);
@@ -40,7 +40,7 @@ const addSubhead = (wrapper, panelId) => {
 
 // adds a block of text to wrapper
 const addParagraph = (wrapper, stringId) => {
-  let el = document.createElement("p");
+  const el = document.createElement("p");
   el["id"] = stringId;
   setClassAndAppend(wrapper, el);
 };
@@ -48,7 +48,7 @@ const addParagraph = (wrapper, stringId) => {
 
 // create and append div to panel wrapper
 const addDiv = (wrapper, className) => {
-  let el = document.createElement("div");
+  const el = document.createElement("div");
   el.classList.add(className);
   wrapper.appendChild(el);
   return el;
@@ -58,7 +58,7 @@ const addDiv = (wrapper, className) => {
 // creates grey Facebook text. Grey fence icon is set in CSS.
 const addGreyFacebookAndFence = () => {
   // create grey facebook text with grey fence
-  let el = document.createElement("p");
+  const el = document.createElement("p");
   el.classList.add("Facebook-text");
   el.innerText = "Facebook";
   return el;
@@ -66,16 +66,15 @@ const addGreyFacebookAndFence = () => {
 
 
 const addLearnHowFBCWorksButton = (fragment) => {
-  let contentWrapper = addDiv(fragment, "fw-bottom-btn");
-
-  let button = document.createElement("button");
+  const button = document.createElement("button");
   button.classList.add("highlight-on-hover", "open-onboarding");
-  contentWrapper.appendChild(button);
 
+  let contentWrapper = addDiv(fragment, "fw-bottom-btn");
+  contentWrapper.appendChild(button);
   contentWrapper = button;
 
   // add span#how-fbc-works and arrow icon
-  let span = document.createElement("span");
+  const span = document.createElement("span");
   span["id"] = "how-fbc-works";
   setClassAndAppend(contentWrapper, span);
 };
@@ -83,11 +82,11 @@ const addLearnHowFBCWorksButton = (fragment) => {
 
 // adds bottom navigation buttons to onboarding panels
 const setNavButtons = (wrapper, button1Id, button2Id, panelId) => {
-  let buttonWrapper = addDiv(wrapper, "bottom-btns");
+  const buttonWrapper = addDiv(wrapper, "bottom-btns");
   buttonWrapper.classList.add(panelId);
 
   [button1Id, button2Id].forEach(id => {
-    let button = document.createElement("button");
+    const button = document.createElement("button");
     button.classList.add("uiMessage", "bottom-btn");
     button["id"] = id;
     buttonWrapper.appendChild(button);
@@ -107,7 +106,7 @@ const addOnboardingListeners = (res) => {
 
 
 const addLearnMoreLink = (fragment) => {
-  let link = document.createElement("a");
+  const link = document.createElement("a");
   link["id"] = "learn-more";
   link.classList.add("open-sumo");
   link["href"] = "https://support.mozilla.org"; // need Facebook Container SUMO url. // need UTM params? // open in new or same window?
@@ -192,7 +191,7 @@ const getLocalizedStrings = async() => {
       el.textContent = browser.i18n.getMessage("onUnknownSiteHeader");
       continue;
     }
-    let text = browser.i18n.getMessage(el.id, currentActiveURL.hostname);
+    const text = browser.i18n.getMessage(el.id, currentActiveURL.hostname);
     if (text.includes("*SPAN")) {
       formatText(text, el);
     } else {
@@ -223,14 +222,14 @@ const buildPanel = (panelId) => {
 
   addHeader(fragment);
 
-  let contentWrapper = addDiv(fragment, "main-content-wrapper");
+  const contentWrapper = addDiv(fragment, "main-content-wrapper");
 
   addSubhead(contentWrapper, panelId);
 
   addParagraph(contentWrapper, `${panelId}-p1`);
 
   if (panelId === "trackers-detected") {
-    let imgDiv = addDiv(contentWrapper, panelId);
+    const imgDiv = addDiv(contentWrapper, panelId);
     imgDiv.classList.add("img");
     addParagraph(contentWrapper, `${panelId}-p2`);
   }
@@ -252,11 +251,11 @@ const buildPanel = (panelId) => {
 
 
 const buildOnboardingPanel = (panelId) => {
-  let page = document.body;
+  const page = document.body;
   clearPanel(page);
 
-  let fragment = document.createDocumentFragment();
-  let stringId = `onboarding${panelId}`;
+  const fragment = document.createDocumentFragment();
+  const stringId = `onboarding${panelId}`;
 
   let el = addHeader(fragment);
 
@@ -283,7 +282,7 @@ const buildOnboardingPanel = (panelId) => {
   }
 
   if (panelId === 3) {
-    let imgDiv = addDiv(contentWrapper, stringId);
+    const imgDiv = addDiv(contentWrapper, stringId);
     imgDiv.classList.add("img");
     setNavButtons(fragment, "btn-back", "btn-done", stringId);
   }

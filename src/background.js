@@ -466,6 +466,7 @@ async function blockFacebookSubResources (requestDetails) {
     // See https://github.com/mozilla/contain-facebook/issues/23
     // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
     // eslint-disable-next-line no-console
+    console.error(error);
     return;
   }
   clearFacebookCookies();
