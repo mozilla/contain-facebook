@@ -15,17 +15,21 @@ function itemWidthCheck (target) {
   return iconClassArr;
 }
 
-// Use the following patterns to check for on-screen Facebook elements 
+// Use the following patterns to check for on-screen Facebook elements
 
 const PATTERN_DETECTION_SELECTORS = [
   "[title*='Facebook']",
   "[title='Log in with Facebook']",
   "[class*='fb-login']",
   "[class*='FacebookConnectButton']",
-  "[href*='facebook']",
+  "[class*='facebook-connect-button']", // Twitch
+  "[href*='facebook.com/share']",
+  "[href*='facebook.com/dialog/share']",
   "[data-bfa-network*='facebook']",
-  "[data-oauthserver*='facebook']",
+  "[data-oauthserver*='facebook']", // Stackoverflow
+  "[id*='facebook_connect_button']", // Quora
   "[aria-label*='Facebook']",
+  "[aria-label*='share on facebook']", // MSN
   "[data-destination*='facebook']"
 ];
 
