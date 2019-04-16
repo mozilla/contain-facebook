@@ -5,7 +5,7 @@ function detectFacebookLoginButton() {
   const loginButton = document.querySelectorAll(".fb-login-button");
   for (let item of loginButton) {
     const fbcClassResetArr = ["fbc-overlay-small", "fbc-overlay"];
-    let replacementClassArr = ["fbc-loginButton"];
+    const replacementClassArr = ["fbc-loginButton"];
     replacementClassArr.push("fbc-size-" + item.getAttribute("data-size"));
     replacementClassArr.push("fbc-button-type-" + item.getAttribute("data-button-type"));
     // Remove previous detection classes
@@ -59,7 +59,7 @@ function detectFacebookOnPage () {
 
 browser.runtime.onMessage.addListener(message => {
   console.log("message from background script:", message);
-  setTimeout(function () {
+  setTimeout( () => {
     detectFacebookOnPage();
     detectFacebookLoginButton();
   }, 10);
