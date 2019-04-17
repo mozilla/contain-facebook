@@ -58,6 +58,44 @@
 	background-image: url(/img/like_button_large.png);
 }
 
+.fbc-likeButton.fbc-layout-button.fbc-size-small.fbc-action-like.fbc-share-true {
+	height: 20px;
+	width: 94px;
+	background-image: url(/img/like_button_small_share.png);
+}
+
+.fbc-likeButton.fbc-layout-button.fbc-size-large.fbc-action-like.fbc-share-true {
+	height: 28px;
+	width: 120px;
+	background-image: url(/img/like_button_large_share.png);
+}
+
+.fbc-likeButton.fbc-layout-button.fbc-size-small.fbc-action-recommend.fbc-share-false {
+	height: 20px;
+	width: 94px;
+	background-image: url(/img/like_button_small_recommend.png);
+}
+
+.fbc-likeButton.fbc-layout-button.fbc-size-large.fbc-action-recommend.fbc-share-false {
+	height: 28px;
+	width: 114px;
+	background-image: url(/img/like_button_large_recommend.png);
+}
+
+.fbc-likeButton.fbc-layout-button.fbc-size-small.fbc-action-recommend.fbc-share-true {
+	height: 20px;
+	width: 138px;
+	background-image: url(/img/like_button_small_recommend_share.png);
+}
+
+.fbc-likeButton.fbc-layout-button.fbc-size-large.fbc-action-recommend.fbc-share-true {
+	height: 28px;
+	width: 172px;
+	background-image: url(/img/like_button_large_recommend_share.png);
+}
+
+
+
 /* Overlay */
 .fbc-overlay {
 	position: relative;
