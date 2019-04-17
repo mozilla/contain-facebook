@@ -11,37 +11,37 @@
 .fbc-loginButton.fbc-size-large.fbc-button-type-continue_with {
 	height: 40px;
 	width: 252px;
-	background-image: url(/img/login_continue_large.png);
+	background-image: url(/img/login_continue_lg.svg);
 }
 
 .fbc-loginButton.fbc-size-medium.fbc-button-type-continue_with {
 	height: 28px;
 	width: 180px;
-	background-image: url(/img/login_continue_medium.png);
+	background-image: url(/img/login_continue_md.svg);
 }
 
 .fbc-loginButton.fbc-size-small.fbc-button-type-continue_with {
 	height: 20px;
 	width: 154px;
-	background-image: url(/img/login_continue_small.png);
+	background-image: url(/img/login_continue_sm.svg);
 }
 
 .fbc-loginButton.fbc-size-large.fbc-button-type-login_with {
 	height: 40px;
 	width: 236px;
-	background-image: url(/img/login_login_large.png);
+	background-image: url(/img/login_login_lg.svg);
 }
 
 .fbc-loginButton.fbc-size-medium.fbc-button-type-login_with {
 	height: 28px;
 	width: 166px;
-	background-image: url(/img/login_login_medium.png);
+	background-image: url(/img/login_login_md.svg);
 }
 
 .fbc-loginButton.fbc-size-small.fbc-button-type-login_with {
 	height: 20px;
 	width: 62px;
-	background-image: url(/img/login_login_small.png);
+	background-image: url(/img/login_login_sm.svg);
 }
 
 /* Like Buttons */
