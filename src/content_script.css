@@ -6,46 +6,40 @@
 	cursor: pointer;
 }
 
-.fbc-loginButton.fbc-overlay::after {
-	outline: none;
-	border: 2px solid #3b5998;
-	border-radius: 4px;
-}
-
 .fbc-loginButton.fbc-size-large.fbc-button-type-continue_with {
 	height: 40px;
 	width: 252px;
-	background-image: url(../img/login_continue_large.png);
+	background-image: url(/img/login_continue_large.png);
 }
 
 .fbc-loginButton.fbc-size-medium.fbc-button-type-continue_with {
 	height: 28px;
 	width: 180px;
-	background-image: url(../img/login_continue_medium.png);
+	background-image: url(/img/login_continue_medium.png);
 }
 
 .fbc-loginButton.fbc-size-small.fbc-button-type-continue_with {
 	height: 20px;
 	width: 154px;
-	background-image: url(../img/login_continue_small.png);
+	background-image: url(/img/login_continue_small.png);
 }
 
 .fbc-loginButton.fbc-size-large.fbc-button-type-login_width {
 	height: 40px;
 	width: 236px;
-	background-image: url(../img/login_login_large.png);
+	background-image: url(/img/login_login_large.png);
 }
 
 .fbc-loginButton.fbc-size-medium.fbc-button-type-login_width {
 	height: 28px;
 	width: 166px;
-	background-image: url(../img/login_login_medium.png);
+	background-image: url(/img/login_login_medium.png);
 }
 
 .fbc-loginButton.fbc-size-small.fbc-button-type-login_width {
 	height: 20px;
 	width: 62px;
-	background-image: url(../img/login_login_small.png);
+	background-image: url(/img/login_login_small.png);
 }
 
 /* Overlay */
@@ -59,7 +53,7 @@
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
 	background-position: center center;
 	background-size: 16px auto, 100%;
-	background-image: url(fence-large.svg), linear-gradient(-45deg, #6200A4, #D70022);
+	background-image: url(/img/fence-large.svg), linear-gradient(-45deg, #6200A4, #D70022);
 	background-repeat: no-repeat;
 	border-radius: 100%;
 	width: 28px;
@@ -75,7 +69,7 @@
 
 .fbc-overlay.fbc-overlay-small::after {
 	background-size: 7px auto, 100%;
-	background-image: url(fence-small.svg), linear-gradient(-45deg, #6200A4, #D70022);
+	background-image: url(/img/fence-small.svg), linear-gradient(-45deg, #6200A4, #D70022);
 	width: 17px;
 	height: 17px;
 	right: -5px;

@@ -1,5 +1,22 @@
 "use strict";
 
+function detectFacebookLoginButton() {
+  // Test for standard implementation (Example: Facebook Docs)
+  const loginButton = document.querySelectorAll(".fb-login-button");
+  for (let item of loginButton) {
+    const fbcClassResetArr = ["fbc-overlay-small", "fbc-overlay"];
+    const replacementClassArr = ["fbc-loginButton"];
+    replacementClassArr.push("fbc-size-" + item.getAttribute("data-size"));
+    replacementClassArr.push("fbc-button-type-" + item.getAttribute("data-button-type"));
+    // Remove previous detection classes
+    item.classList.remove(...fbcClassResetArr);
+    // Add declared size values
+    item.classList.add(...replacementClassArr);
+    // Remeasure elements and add correct badge size
+    item.classList.add(...itemWidthCheck(item));
+  }
+}
+
 function itemWidthCheck (target) {
   const itemHeight = target.offsetHeight;
   const itemWidth = target.offsetWidth;
@@ -15,7 +32,7 @@ function itemWidthCheck (target) {
   return iconClassArr;
 }
 
-// Use the following patterns to check for on-screen Facebook elements 
+// Use the following patterns to check for on-screen Facebook elements
 
 const PATTERN_DETECTION_SELECTORS = [
   "[title*='Facebook']",
@@ -42,10 +59,12 @@ function detectFacebookOnPage () {
 
 browser.runtime.onMessage.addListener(message => {
   console.log("message from background script:", message);
-  setTimeout(function () {
+  setTimeout( () => {
     detectFacebookOnPage();
+    detectFacebookLoginButton();
   }, 10);
   return Promise.resolve({response: "content_script onMessage listener"});
 });
 
 setTimeout(detectFacebookOnPage, 150);
+setTimeout(detectFacebookLoginButton, 150);
