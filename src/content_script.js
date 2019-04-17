@@ -1,6 +1,7 @@
 "use strict";
 
 function detectFacebookLoginButton() {
+
   // Test for standard implementation (Example: Facebook Docs)
   const loginButton = document.querySelectorAll(".fb-login-button");
   for (let item of loginButton) {
@@ -11,6 +12,29 @@ function detectFacebookLoginButton() {
     // Remove previous detection classes
     item.classList.remove(...fbcClassResetArr);
     // Add declared size values
+    item.classList.add(...replacementClassArr);
+    // Remeasure elements and add correct badge size
+    item.classList.add(...itemWidthCheck(item));
+  }
+}
+
+// <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+
+function detectFacebookLikeButton() {
+  const likeButton = document.querySelectorAll(".fb-like");
+  console.log('detectFacebookLikeButton', likeButton);
+  for (let item of likeButton) {
+    console.log(item);
+    const fbcClassResetArr = ["fbc-overlay-small", "fbc-overlay"];
+    const replacementClassArr = ["fbc-likeButton"];
+    replacementClassArr.push("fbc-size-" + item.getAttribute("data-size"));
+    replacementClassArr.push("fbc-action-" + item.getAttribute("data-action"));
+    replacementClassArr.push("fbc-layout-" + item.getAttribute("data-layout"));
+    replacementClassArr.push("fbc-share-" + item.getAttribute("data-share"));
+    // Remove previous detection classes
+    item.classList.remove(...fbcClassResetArr);
+    // Add declared size values
+    console.log(...replacementClassArr);
     item.classList.add(...replacementClassArr);
     // Remeasure elements and add correct badge size
     item.classList.add(...itemWidthCheck(item));
@@ -62,9 +86,11 @@ browser.runtime.onMessage.addListener(message => {
   setTimeout( () => {
     detectFacebookOnPage();
     detectFacebookLoginButton();
+    detectFacebookLikeButton();
   }, 10);
   return Promise.resolve({response: "content_script onMessage listener"});
 });
 
 setTimeout(detectFacebookOnPage, 150);
 setTimeout(detectFacebookLoginButton, 150);
+setTimeout(detectFacebookLikeButton, 150);
