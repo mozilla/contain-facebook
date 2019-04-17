@@ -1,5 +1,5 @@
 /* Button Replacement */
-.fbc-loginButton, .fbc-likeButton {
+.fbc-loginButton, .fbc-likeButton, .fbc-shareButton {
 	background-size: contain;
 	background-position: center;
 	background-repeat: none;
@@ -92,6 +92,25 @@
 	height: 28px;
 	width: 172px;
 	background-image: url(/img/like_button_large_recommend_share.png);
+}
+
+/* Share Button */
+
+
+.fbc-shareButton a {/* Hide nested anchor link*/
+	display: none;
+}
+
+.fbc-shareButton.fbc-layout-button.fbc-size-small {
+	height: 20px;
+	width: 58px;
+	background-image: url(/img/share_button_small.png);
+}
+
+.fbc-shareButton.fbc-layout-button.fbc-size-large {
+	height: 28px;
+	width: 72px;
+	background-image: url(/img/share_button_large.png);
 }
 
 
