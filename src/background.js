@@ -210,6 +210,11 @@ async function setupContainer () {
     });
     facebookCookieStoreId = context.cookieStoreId;
   }
+  // Initialize domainsAddedToFacebookContainer if needed
+  const fbcStorage = await browser.storage.local.get();
+  if (!fbcStorage.domainsAddedToFacebookContainer) {
+    await browser.storage.local.set({"domainsAddedToFacebookContainer": []});
+  }
 }
 
 async function maybeReopenTab (url, tab, request) {
@@ -218,7 +223,7 @@ async function maybeReopenTab (url, tab, request) {
     // We don't reopen MAC assigned urls
     return;
   }
-  const cookieStoreId = shouldContainInto(url, tab);
+  const cookieStoreId = await shouldContainInto(url, tab);
   if (!cookieStoreId) {
     // Tab doesn't need to be contained
     return;
@@ -251,13 +256,41 @@ function isFacebookURL (url) {
   return false;
 }
 
-function shouldContainInto (url, tab) {
+// TODO: refactor parsedUrl "up" so new URL doesn't have to be called so much
+// TODO: refactor fbcStorage "up" so browser.storage.local.get doesn't have to be called so much
+async function addDomainToFacebookContainer (url) {
+  const parsedUrl = new URL(url);
+  const fbcStorage = await browser.storage.local.get();
+  fbcStorage.domainsAddedToFacebookContainer.push(parsedUrl.host);
+  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+}
+
+async function removeDomainFromFacebookContainer (url) {
+  const parsedUrl = new URL(url);
+  const fbcStorage = await browser.storage.local.get();
+  const domainIndex = fbcStorage.domainsAddedToFacebookContainer.indexOf(parsedUrl.host);
+  fbcStorage.domainsAddedToFacebookContainer.splice(domainIndex, 1);
+  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+}
+
+async function isAddedToFacebookContainer (url) {
+  const parsedUrl = new URL(url);
+  const fbcStorage = await browser.storage.local.get();
+  if (fbcStorage.domainsAddedToFacebookContainer.includes(parsedUrl.host)) {
+    return true;
+  }
+  return false;
+}
+
+async function shouldContainInto (url, tab) {
   if (!url.startsWith("http")) {
     // we only handle URLs starting with http(s)
     return false;
   }
 
-  if (isFacebookURL(url)) {
+  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
+
+  if (isFacebookURL(url) || hasBeenAddedToFacebookContainer) {
     if (tab.cookieStoreId !== facebookCookieStoreId) {
       // Facebook-URL outside of Facebook Container Tab
       // Should contain into Facebook Container
@@ -425,34 +458,37 @@ async function containFacebook (request) {
 // Lots of this is borrowed from old blok code:
 // https://github.com/mozilla/blok/blob/master/src/js/background.js
 async function blockFacebookSubResources (requestDetails) {
-  if (requestDetails.type === "main_frame") {
+  if (!isFacebookURL(requestDetails.url)) {
     return {};
   }
 
-  // Only handle requests that are NOT the top frame
-  /* TODO: (how) is this different from main_frame?
-  if (requestDetails.frameId === 0) {
+  if (requestDetails.type === "main_frame") {
     return {};
   }
-  */
 
   if (typeof requestDetails.originUrl === "undefined") {
     return {};
   }
 
-  if (isFacebookURL(requestDetails.url) && !isFacebookURL(requestDetails.originUrl)) {
+  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(requestDetails.originUrl);
+
+  if (isFacebookURL(requestDetails.url) &&
+      !isFacebookURL(requestDetails.originUrl) &&
+      !hasBeenAddedToFacebookContainer
+  ) {
     const message = {msg: "blocked-facebook-subresources"};
     // Send the message to the content_script
     browser.tabs.sendMessage(requestDetails.tabId, message);
-    // Send the message to the browser_action panel
-    browser.runtime.sendMessage(message);
-    
 
+    // Set browser local storage for the panel UI
     // TODO MAYBE: Icon may need to change here?
     browser.storage.local.set({"CURRENT_PANEL": "trackers-detected"});
     // browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
+
     return {cancel: true};
   }
+  // default to non-blocking
+  return {};
 }
 
 (async function init () {
@@ -489,6 +525,11 @@ async function blockFacebookSubResources (requestDetails) {
 
   // Add the sub-resource request listener
   browser.webRequest.onBeforeRequest.addListener(blockFacebookSubResources, {urls: ["<all_urls>"]}, ["blocking"]);
+
+  browser.runtime.onMessage.addListener( (message, {url}) => {
+    console.log(`received ${message} from script at url: ${url}`);
+    addDomainToFacebookContainer(url);
+  });
 
   browser.tabs.onUpdated.addListener(tabUpdateListener);
 

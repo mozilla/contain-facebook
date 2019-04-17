@@ -55,9 +55,15 @@ function detectFacebookOnPage () {
 
   for (let querySelector of PATTERN_DETECTION_SELECTORS) {
     for (let item of document.querySelectorAll(querySelector)) {
+      // overlay the FBC icon badge on the item
       if (!item.classList.contains("fbc-overlay")) {
         item.classList.add(...itemWidthCheck(item));
       }
+
+      // add click handler to addDomainToFBC and refresh
+      item.addEventListener("click", () => {
+        browser.runtime.sendMessage("add-to-facebook-container");
+      });
     }
   }
 }
