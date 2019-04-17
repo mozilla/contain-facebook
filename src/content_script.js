@@ -58,14 +58,55 @@ function detectFacebookOnPage () {
       // overlay the FBC icon badge on the item
       if (!item.classList.contains("fbc-overlay")) {
         item.classList.add(...itemWidthCheck(item));
+        item.addEventListener("click", (e) => {
+          e.preventDefault();
+          addToolTipBlock(item);
+          // browser.runtime.sendMessage("add-to-facebook-container");
+        });
       }
 
       // add click handler to addDomainToFBC and refresh
-      item.addEventListener("click", () => {
-        browser.runtime.sendMessage("add-to-facebook-container");
-      });
+
     }
   }
+}
+
+
+function addToolTipBlock(item) {
+  // TODO: Make sure this only gets attached once per element
+  // TODO: Make sure there's enough width on the right/bottom side of the element, or you have to drop it the other way.
+  // On screen resize, dismiss the popup? (Or remap it to the element?)
+
+  // console.log( item );
+  const htmlBlock = document.createElement('div');
+  htmlBlock.className = "fbc-toolTip";
+  // htmlBlock.dataset.selector = item;
+  document.body.appendChild(htmlBlock);
+
+  const bodyRect = document.body.getBoundingClientRect();
+  const elemRect = item.getBoundingClientRect();
+  const itemPseudoStyle = window.getComputedStyle(item, ':after');
+  // console.log(itemPseudoStyle);
+  let offsetPosY   = elemRect.top - bodyRect.top;
+  let offsetPosX   = elemRect.left - bodyRect.left;
+  // console.log("Before: ", offsetPosY, offsetPosX);
+  offsetPosY += parseInt(itemPseudoStyle.top,10);
+  offsetPosX += parseInt(itemPseudoStyle.left,10);
+  // console.log("After: ", offsetPosY, offsetPosX);
+  const itemWidth = parseInt(itemPseudoStyle.width,10) + 16;
+  const itemHeight = parseInt(itemPseudoStyle.height,10) * .5;
+  const htmlBlockPosX = offsetPosX + itemWidth;
+  const htmlBlockPosY = offsetPosY + itemHeight;
+
+  // offsetX = offsetX + itemWidth;
+  // console.log(htmlBlockPos);
+
+  // console.log("offset: ", htmlBlockPosX, htmlBlockPosY);
+  htmlBlock.style.left = htmlBlockPosX + "px";
+  htmlBlock.style.top = htmlBlockPosY + "px";
+
+  // console.log(htmlBlock);
+
 }
 
 browser.runtime.onMessage.addListener(message => {
