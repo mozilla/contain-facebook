@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Tha Facebook Container a’ cumail na nì thu air Facebook fa leth on chòrr dhen ghnìomhachd air loidhne agad airson Facebook a chumail o bhith ’gad thracadh taobh a-muigh làrach-lìn Facebook le briosgaidean threas-phàrtaidhean.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "Tha $URL$ ann am Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Nochdaidh an ìomhaigheag seo ann am bàr an t-seòlaidh nuair a thadhlas tu air làraichean-lìn mar Facebook.com, Instagram.com no Messenger.com a tha am broinn Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "Chan eil $URL$ ann am Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Tha an làrach seo taobh a-muigh Facebook Container. Bidh e nas dorra dha Facebook do thracadh air feadh an lìn air an dòigh seo.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Chan eil an làrach seo am broinn Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
