@@ -39,10 +39,15 @@ const PATTERN_DETECTION_SELECTORS = [
   "[title='Log in with Facebook']",
   "[class*='fb-login']",
   "[class*='FacebookConnectButton']",
-  "[href*='facebook']",
+  "[class*='facebook-connect-button']", // Twitch
+  "[href*='facebook.com/share']", // Imgur Login
+  "[href*='signin/facebook']",
+  "[href*='facebook.com/dialog/share']",
   "[data-bfa-network*='facebook']",
-  "[data-oauthserver*='facebook']",
+  "[data-oauthserver*='facebook']", // Stackoverflow
+  "[id*='facebook_connect_button']", // Quora
   "[aria-label*='Facebook']",
+  "[aria-label*='share on facebook']", // MSN
   "[data-destination*='facebook']"
 ];
 
