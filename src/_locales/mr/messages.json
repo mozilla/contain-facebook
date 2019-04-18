@@ -1,0 +1,38 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container आपल्या Facebook क्रियाकलापांना आपल्या उर्वरित वेब क्रियाकलापांपासून वेगळे करते जेणेकरून Facebook वेबसाइटच्या बाहेर आपल्याला तृतीय पक्षाच्या कुकीजद्वारे मागोवा घेण्यापासून रोखू शकेल.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onFacebookHeader": {
+    "message": "$URL$ Facebook Container मध्ये आहे.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "onFacebookText": {
+    "message": "Facebook Container मध्ये असलेल्या Facebook.com, Instagram.com किंवा Messenger.com सारख्या वेबसाइटवर भेट देता तेव्हा हा चिन्ह पत्ता पट्टीमध्ये दिसून येतो.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "$URL$ Facebook Container मध्ये नाही.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "ही साइट Facebook Container च्या बाहेर आहे. ह्याने आपल्याला वेबवर ट्रॅक करण्यास Facebook साठी कठीण होते.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "ही साइट Facebook Container मध्ये नाही.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }
+}
