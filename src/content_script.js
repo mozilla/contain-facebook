@@ -32,6 +32,39 @@ function itemWidthCheck (target) {
   return iconClassArr;
 }
 
+function addFacebookBadge(target, targetClass){
+  console.log(targetClass);
+  const htmlBadgeDiv = document.createElement('div');
+  htmlBadgeDiv.className = "fbc-badge " + targetClass;
+  // htmlBlock.dataset.selector = item;
+  document.body.appendChild(htmlBadgeDiv);
+
+  const bodyRect = document.body.getBoundingClientRect();
+  const elemRect = target.getBoundingClientRect();
+  const itemPseudoStyle = window.getComputedStyle(target, ':after');
+  // console.log(itemPseudoStyle);
+  let offsetPosX   = elemRect.left - bodyRect.left;
+  let offsetPosY   = elemRect.top - bodyRect.top;
+
+  const itemWidth = parseInt(target.offsetWidth,10);
+  const itemHeight = parseInt(target.offsetHeight,10);
+
+  const ratioCheck = (itemWidth / itemHeight);
+
+  if (ratioCheck < 1.1) {
+    htmlBadgeDiv.classList.add("fbc-badge-small");
+  } else if (itemHeight < 39) {
+    htmlBadgeDiv.classList.add("fbc-badge-small");
+  }
+
+  const htmlBadgeDivPosX = (offsetPosX + itemWidth) - 30;
+  const htmlBadgeDivPosY = offsetPosY;
+
+  htmlBadgeDiv.style.left = htmlBadgeDivPosX + "px";
+  htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
+
+}
+
 // Use the following patterns to check for on-screen Facebook elements
 
 const PATTERN_DETECTION_SELECTORS = [
@@ -51,16 +84,34 @@ const PATTERN_DETECTION_SELECTORS = [
   "[data-destination*='facebook']"
 ];
 
+// List of badge-able in-page elements
+const facebookDetectedElementsArr = [];
+
 function detectFacebookOnPage () {
 
   for (let querySelector of PATTERN_DETECTION_SELECTORS) {
     for (let item of document.querySelectorAll(querySelector)) {
       // overlay the FBC icon badge on the item
-      if (!item.classList.contains("fbc-overlay")) {
-        item.classList.add(...itemWidthCheck(item));
+
+      if ( !item.classList.contains("fbc-badged") ) {
+        // console.log('true!');
+        // item.classList.add(...itemWidthCheck(item));
+        let itemUIDClassName = "fbc-badgeUID_" + (facebookDetectedElementsArr.length + 1);
+        let itemUIDClassTarget = "js-" + itemUIDClassName;
+        facebookDetectedElementsArr.push(itemUIDClassName);
+        addFacebookBadge(item, itemUIDClassTarget);
+        item.classList.add("fbc-badged");
+        item.classList.add(itemUIDClassName);
+        // console.log(...facebookDetectedElementsArr);
+
         item.addEventListener("click", (e) => {
           e.preventDefault();
-          addToolTipBlock(item);
+          // addToolTipBlock(item);
+          // browser.runtime.sendMessage("add-to-facebook-container");
+        });
+        item.addEventListener("mouseover", (e) => {
+          e.preventDefault();
+          // addToolTipBlock(item);
           // browser.runtime.sendMessage("add-to-facebook-container");
         });
       }
@@ -78,32 +129,33 @@ function addToolTipBlock(item) {
   // On screen resize, dismiss the popup? (Or remap it to the element?)
 
   // console.log( item );
-  const htmlBlock = document.createElement('div');
-  htmlBlock.className = "fbc-toolTip";
-  // htmlBlock.dataset.selector = item;
-  document.body.appendChild(htmlBlock);
+  const htmlModal = document.createElement('div');
+  htmlModal.clasName = "fbc-toolTip";
+  // htmlModal.classList.add("fbc-toolTip", targetClass);
+  // htmlModal.dataset.selector = item;
+  document.body.appendChild(htmlModal);
 
   const bodyRect = document.body.getBoundingClientRect();
   const elemRect = item.getBoundingClientRect();
   const itemPseudoStyle = window.getComputedStyle(item, ':after');
   // console.log(itemPseudoStyle);
-  let offsetPosY   = elemRect.top - bodyRect.top;
   let offsetPosX   = elemRect.left - bodyRect.left;
+  let offsetPosY   = elemRect.top - bodyRect.top;
   // console.log("Before: ", offsetPosY, offsetPosX);
   offsetPosY += parseInt(itemPseudoStyle.top,10);
   offsetPosX += parseInt(itemPseudoStyle.left,10);
   // console.log("After: ", offsetPosY, offsetPosX);
-  const itemWidth = parseInt(itemPseudoStyle.width,10) + 16;
+  const itemWidth = parseInt(itemPseudoStyle.width,10) + 8;
   const itemHeight = parseInt(itemPseudoStyle.height,10) * .5;
-  const htmlBlockPosX = offsetPosX + itemWidth;
-  const htmlBlockPosY = offsetPosY + itemHeight;
+  const htmlModalPosX = offsetPosX + itemWidth;
+  const htmlModalPosY = offsetPosY + itemHeight;
 
   // offsetX = offsetX + itemWidth;
-  // console.log(htmlBlockPos);
+  // console.log(htmlModalPos);
 
-  // console.log("offset: ", htmlBlockPosX, htmlBlockPosY);
-  htmlBlock.style.left = htmlBlockPosX + "px";
-  htmlBlock.style.top = htmlBlockPosY + "px";
+  // console.log("offset: ", htmlModalPosX, htmlModalPosY);
+  htmlModal.style.left = htmlModalPosX + "px";
+  htmlModal.style.top = htmlModalPosY + "px";
 
   // console.log(htmlBlock);
 

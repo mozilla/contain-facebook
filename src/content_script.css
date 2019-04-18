@@ -47,8 +47,7 @@
 	position: relative;
 }
 
-.fbc-overlay:after {
-	content: "";
+.fbc-badge {
 	border: 1px solid white;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
 	background-position: center center;
@@ -61,20 +60,47 @@
 	position: absolute;
 	padding: 0;
 	z-index: 9;
-	right: -4px;
-	top: -4px;
-	overflow: hidden;
 	transition: opacity 0.2s ease-out;
 }
 
-.fbc-overlay.fbc-overlay-small:after {
+/* .fbc-overlay:after, .fbc-badge {
+	border: 1px solid white;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+	background-position: center center;
+	background-size: 16px auto, 100%;
+	background-image: url(/img/fence-large.svg), linear-gradient(-45deg, #6200A4, #D70022);
+	background-repeat: no-repeat;
+	border-radius: 100%;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	padding: 0;
+	z-index: 9;
+	transition: opacity 0.2s ease-out;
+} */
+
+/* .fbc-overlay:after {
+	content: "";
+	right: -4px;
+	top: -4px;
+	overflow: hidden;
+} */
+
+.fbc-badge.fbc-badge-small {
+	background-size: 7px auto, 100%;
+	background-image: url(/img/fence-small.svg), linear-gradient(-45deg, #6200A4, #D70022);
+	width: 17px;
+	height: 17px;
+}
+
+/* .fbc-overlay.fbc-overlay-small:after {
 	background-size: 7px auto, 100%;
 	background-image: url(/img/fence-small.svg), linear-gradient(-45deg, #6200A4, #D70022);
 	width: 17px;
 	height: 17px;
 	right: -5px;
 	top: -5px;
-}
+} */
 
 /* Tooltip */
 .fbc-toolTip {
