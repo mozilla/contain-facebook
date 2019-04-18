@@ -32,36 +32,79 @@ function itemWidthCheck (target) {
   return iconClassArr;
 }
 
-function addFacebookBadge(target, targetClass){
-  console.log(targetClass);
-  const htmlBadgeDiv = document.createElement('div');
-  htmlBadgeDiv.className = "fbc-badge " + targetClass;
+let htmlBadgeDiv;
+
+function addFacebookBadge(target, badgeClassUId){
+  htmlBadgeDiv = document.createElement('div');
+  htmlBadgeDiv.className = "fbc-badge " + badgeClassUId;
   // htmlBlock.dataset.selector = item;
   document.body.appendChild(htmlBadgeDiv);
-
-  const bodyRect = document.body.getBoundingClientRect();
-  const elemRect = target.getBoundingClientRect();
-  const itemPseudoStyle = window.getComputedStyle(target, ':after');
-  // console.log(itemPseudoStyle);
-  let offsetPosX   = elemRect.left - bodyRect.left;
-  let offsetPosY   = elemRect.top - bodyRect.top;
 
   const itemWidth = parseInt(target.offsetWidth,10);
   const itemHeight = parseInt(target.offsetHeight,10);
 
   const ratioCheck = (itemWidth / itemHeight);
+  let badgeSmallSwitch = false;
 
   if (ratioCheck < 1.1) {
     htmlBadgeDiv.classList.add("fbc-badge-small");
+    badgeSmallSwitch = true;
   } else if (itemHeight < 39) {
     htmlBadgeDiv.classList.add("fbc-badge-small");
-  }
+    badgeSmallSwitch = true;
+}
 
-  const htmlBadgeDivPosX = (offsetPosX + itemWidth) - 30;
-  const htmlBadgeDivPosY = offsetPosY;
+  positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
+}
 
-  htmlBadgeDiv.style.left = htmlBadgeDivPosX + "px";
-  htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
+function positionFacebookBadge( target, badgeClassUId, targetWidth, smallSwitch ) {
+
+    console.log(typeof target);
+    console.log(target.constructor);
+
+    if (!badgeClassUId) {
+      badgeClassUId = "js-" + target;
+      console.log("badgeClassUId: ", badgeClassUId);
+    } else {
+      console.log("badgeClassUId-Else: ", badgeClassUId);
+    }
+
+    if ( target && typeof target === 'object' ) {
+      console.log('objectTest-true');
+    } else {
+      console.log('objectElse');
+      target = document.querySelector("." + target);
+    }
+
+    console.log("target: ", target);
+    // console.log("positionFacebookBadge: ",  target);
+
+
+
+    if (!targetWidth) {
+      targetWidth = parseInt(target.offsetWidth,10);
+      console.log("tagetWidth: ", targetWidth);
+    }
+
+    console.log(badgeClassUId);
+    htmlBadgeDiv = document.querySelector("." + badgeClassUId);
+    console.log("htmlBadgeDiv: ", htmlBadgeDiv);
+
+    const bodyRect = document.body.getBoundingClientRect();
+    const elemRect = target.getBoundingClientRect();
+    // const itemPseudoStyle = window.getComputedStyle(target, ':after');
+    // console.log(itemPseudoStyle);
+    let offsetPosX   = elemRect.left - bodyRect.left;
+    let offsetPosY   = elemRect.top - bodyRect.top;
+
+    const htmlBadgeDivPosX = (offsetPosX + targetWidth) - 20;
+    const htmlBadgeDivPosY = offsetPosY - 4;
+
+    console.log("XY POS: ", htmlBadgeDivPosX, htmlBadgeDivPosY);
+
+    // htmlBadgeDiv.style.cssText("left: " + htmlBadgeDivPosX + "px; top: " + htmlBadgeDivPosY + "px;" );
+    htmlBadgeDiv.style.left = htmlBadgeDivPosX + "px";
+    htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
 
 }
 
@@ -74,8 +117,10 @@ const PATTERN_DETECTION_SELECTORS = [
   "[class*='FacebookConnectButton']",
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/share']", // Imgur Login
+  "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
   "[href*='signin/facebook']",
   "[href*='facebook.com/dialog/share']",
+  "[href*='facebook.com/sharer']", // Buzzfeed
   "[data-bfa-network*='facebook']",
   "[data-oauthserver*='facebook']", // Stackoverflow
   "[id*='facebook_connect_button']", // Quora
@@ -92,7 +137,7 @@ function detectFacebookOnPage () {
   for (let querySelector of PATTERN_DETECTION_SELECTORS) {
     for (let item of document.querySelectorAll(querySelector)) {
       // overlay the FBC icon badge on the item
-
+      // TODO: Add fixed / fixed parent detection
       if ( !item.classList.contains("fbc-badged") ) {
         // console.log('true!');
         // item.classList.add(...itemWidthCheck(item));
@@ -111,7 +156,7 @@ function detectFacebookOnPage () {
         });
         item.addEventListener("mouseover", (e) => {
           e.preventDefault();
-          // addToolTipBlock(item);
+          addToolTipBlock(itemUIDClassName);
           // browser.runtime.sendMessage("add-to-facebook-container");
         });
       }
@@ -158,6 +203,23 @@ function addToolTipBlock(item) {
   htmlModal.style.top = htmlModalPosY + "px";
 
   // console.log(htmlBlock);
+
+}
+
+
+let resizeId;
+
+window.addEventListener('resize', function() {
+    clearTimeout(resizeId);
+    resizeId = setTimeout(doneResizing, 10);
+});
+
+function doneResizing(){
+  for (let item of facebookDetectedElementsArr) {
+    console.log(item);
+    positionFacebookBadge(item);
+  }
+  console.log('doneResizing');
 
 }
 
