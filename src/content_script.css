@@ -71,6 +71,10 @@
 	height: 17px;
 }
 
+.fbc-badge.fbc-badge-fixed {
+	position: fixed;
+}
+
 /* Tooltip */
 .fbc-toolTip {
 	display: block;
