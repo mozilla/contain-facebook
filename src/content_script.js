@@ -1,6 +1,7 @@
 "use strict";
 
 function detectFacebookLoginButton() {
+  // TODO: Refactor detectFacebookLoginButton to add HTML badge instead of class/psudeo element
   // Test for standard implementation (Example: Facebook Docs)
   const loginButton = document.querySelectorAll(".fb-login-button");
   for (let item of loginButton) {
@@ -155,10 +156,7 @@ function detectFacebookOnPage () {
   for (let querySelector of PATTERN_DETECTION_SELECTORS) {
     for (let item of document.querySelectorAll(querySelector)) {
       // overlay the FBC icon badge on the item
-      // TODO: Add fixed / fixed parent detection
       if ( !item.classList.contains("fbc-badged") ) {
-        // console.log('true!');
-        // item.classList.add(...itemWidthCheck(item));
         let itemUIDClassName = "fbc-badgeUID_" + (facebookDetectedElementsArr.length + 1);
         let itemUIDClassTarget = "js-" + itemUIDClassName;
         facebookDetectedElementsArr.push(itemUIDClassName);
@@ -174,7 +172,7 @@ function detectFacebookOnPage () {
         });
         item.addEventListener("mouseover", (e) => {
           e.preventDefault();
-          addToolTipBlock(itemUIDClassName);
+          // addToolTipBlock(itemUIDClassName);
           // browser.runtime.sendMessage("add-to-facebook-container");
         });
       }
