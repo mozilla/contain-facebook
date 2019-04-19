@@ -33,7 +33,7 @@ function itemWidthCheck (target) {
   return iconClassArr;
 }
 
-let htmlBadgeDiv;
+let htmlBadgeDiv, htmlBadgeFenceSpan, htmlBadgeHoverSpan, loginTextString
 
 function isFixed (elem) {
   do {
@@ -44,14 +44,21 @@ function isFixed (elem) {
 
 
 function addFacebookBadge(target, badgeClassUId){
-  htmlBadgeDiv = document.createElement('div');
+  // Detect if target is visible
+  htmlBadgeDiv = document.createElement("div");
+  htmlBadgeFenceSpan = document.createElement("span");
+  htmlBadgeFenceSpan.className = "fbc-badge-fence";
+  htmlBadgeHoverSpan = document.createElement("span");
+  htmlBadgeHoverSpan.className = "fbc-badge-hover";
+  loginTextString = document.createTextNode("Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.");
+  htmlBadgeHoverSpan.appendChild(loginTextString);
+  htmlBadgeDiv.appendChild(htmlBadgeFenceSpan);
+  htmlBadgeDiv.appendChild(htmlBadgeHoverSpan);
   htmlBadgeDiv.className = "fbc-badge " + badgeClassUId;
   document.body.appendChild(htmlBadgeDiv);
 
   const itemWidth = parseInt(target.offsetWidth,10);
   const itemHeight = parseInt(target.offsetHeight,10);
-
-  console.log("isFixed: ", isFixed(target) );
 
   const ratioCheck = (itemWidth / itemHeight);
   let badgeSmallSwitch = false;
@@ -65,6 +72,21 @@ function addFacebookBadge(target, badgeClassUId){
   }
 
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
+
+  htmlBadgeDiv.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("badge-click");
+    // addToolTipBlock(item);
+    // browser.runtime.sendMessage("add-to-facebook-container");
+  });
+
+  htmlBadgeDiv.addEventListener("mouseover", (e) => {
+    e.preventDefault();
+    console.log("badge-mouseover");
+    addToolTipBlock( htmlBadgeDiv );
+    // browser.runtime.sendMessage("add-to-facebook-container");
+  });
+
 }
 
 function positionFacebookBadge( target, badgeClassUId, targetWidth, smallSwitch ) {
@@ -165,13 +187,20 @@ function detectFacebookOnPage () {
         item.classList.add(itemUIDClassName);
         // console.log(...facebookDetectedElementsArr);
 
+        // let badge = document.querySelector(itemUIDClassTarget);
+        //
+
+
         item.addEventListener("click", (e) => {
           e.preventDefault();
+          console.log("item-click");
           // addToolTipBlock(item);
           // browser.runtime.sendMessage("add-to-facebook-container");
         });
+
         item.addEventListener("mouseover", (e) => {
           e.preventDefault();
+          console.log("item-mouseover");
           // addToolTipBlock(itemUIDClassName);
           // browser.runtime.sendMessage("add-to-facebook-container");
         });
@@ -189,36 +218,37 @@ function addToolTipBlock(item) {
   // TODO: Make sure there's enough width on the right/bottom side of the element, or you have to drop it the other way.
   // On screen resize, dismiss the popup? (Or remap it to the element?)
 
-  // console.log( item );
-  const htmlModal = document.createElement('div');
-  htmlModal.clasName = "fbc-toolTip";
+  console.log( "addToolTipBlock" );
+  const htmlHoverModal = document.createElement("div");
+  htmlHoverModal.className = "fbc-toolTip";
   // htmlModal.classList.add("fbc-toolTip", targetClass);
   // htmlModal.dataset.selector = item;
-  document.body.appendChild(htmlModal);
+  document.body.appendChild(htmlHoverModal);
 
   const bodyRect = document.body.getBoundingClientRect();
   const elemRect = item.getBoundingClientRect();
-  const itemPseudoStyle = window.getComputedStyle(item, ':after');
-  // console.log(itemPseudoStyle);
+  // const itemPseudoStyle = window.getComputedStyle(item, ":after");
+  console.log([bodyRect, elemRect]);
   let offsetPosX   = elemRect.left - bodyRect.left;
   let offsetPosY   = elemRect.top - bodyRect.top;
   // console.log("Before: ", offsetPosY, offsetPosX);
-  offsetPosY += parseInt(itemPseudoStyle.top,10);
-  offsetPosX += parseInt(itemPseudoStyle.left,10);
-  // console.log("After: ", offsetPosY, offsetPosX);
-  const itemWidth = parseInt(itemPseudoStyle.width,10) + 8;
-  const itemHeight = parseInt(itemPseudoStyle.height,10) * .5;
+  offsetPosY += parseInt(item.top,10);
+  offsetPosX += parseInt(item.left,10);
+  console.log("After: ", offsetPosY, offsetPosX);
+  const itemWidth = parseInt(item.width,10) + 8;
+  const itemHeight = parseInt(item.height,10) * .5;
   const htmlModalPosX = offsetPosX + itemWidth;
   const htmlModalPosY = offsetPosY + itemHeight;
+  console.log("After: ", htmlModalPosX, htmlModalPosY);
 
   // offsetX = offsetX + itemWidth;
   // console.log(htmlModalPos);
 
   // console.log("offset: ", htmlModalPosX, htmlModalPosY);
-  htmlModal.style.left = htmlModalPosX + "px";
-  htmlModal.style.top = htmlModalPosY + "px";
+  htmlHoverModal.style.left = htmlModalPosX + "px";
+  htmlHoverModal.style.top = htmlModalPosY + "px";
 
-  // console.log(htmlBlock);
+  console.log(htmlHoverModal);
 
 }
 
@@ -252,7 +282,7 @@ function doneScrolling() {
   }
 }
 
-window.addEventListener('scroll', function(e) {
+window.addEventListener("scroll", function(e) {
   last_known_scroll_position = window.scrollY;
 
   if (!ticking) {
