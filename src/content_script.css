@@ -82,6 +82,26 @@
 	display: block;
 }
 
+.fbc-badge.active:hover .fbc-badge-hover {
+	display: none;
+}
+
+.fbc-badge.active .fbc-badge-prompt {
+	display: block;
+}
+
+.fbc-badge-prompt {
+	display: none;
+	width: 345px;
+	height: 258px;
+	background: blue;
+	color: white;
+	position: absolute;
+	left: calc( 100% + 0.5em);
+	top: -110px;
+}
+
+
 /* Tooltip */
 .fbc-badge-hover {
 	display: none;
