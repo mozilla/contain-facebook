@@ -1,4 +1,8 @@
 {
+  "extensionDescription": {
+    "message": "Facebook Container eristää Facebook-toimintasi muusta verkkotoiminnastasi, jotta Facebook ei pystyisi seuraamaan tekemisiäsi Facebook-sivuston ulkopuolella kolmansien osapuolten evästeitä hyödyntämällä.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "onFacebookHeader": {
     "message": "$URL$ on Facebook-eristystilassa.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -8,6 +12,10 @@
         "example": "www.facebook.com"
       }
     }
+  }, 
+  "onFacebookText": {
+    "message": "Tämä kuvake ilmestyy osoitepalkkiin, kun käyt sivustoilla kuten Facebook.com, Instagram.com tai Messenger.com, jotka kuuluvat Facebook-eristystilaan.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ ei ole Facebook-eristystilassa.", 
