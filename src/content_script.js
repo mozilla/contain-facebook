@@ -43,7 +43,7 @@ function isFixed (elem) {
 }
 
 const fragmentClasses = ["fbc-badge-fence", "fbc-badge-hover", "fbc-badge-prompt"];
-const loginTextString = document.createTextNode("Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.");
+const loginTextString = "Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.";
 const htmlBadgeFragmentPromptParagraphStrings = ["Allow Facebook to track you here?", "If you want to use log in with Facebook then Facebook will then be able to track your activity on this site. This can helpthem build a fuller picture of your online life."];
 const htmlBadgeFragmentPromptCheckboxLabelString = "Don't show me this again";
 const htmlBadgeFragmentPromptButtonStrings = ["Cancel", "Allow"];
@@ -104,7 +104,8 @@ function createBadgeFragment () {
 
   htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
 
-  htmlBadgeFragmentHoverDiv.appendChild(loginTextString);
+  htmlBadgeFragmentHoverDiv.appendChild( document.createTextNode(loginTextString) );
+  console.log(htmlBadgeFragmentHoverDiv);
 
   htmlBadgeDiv = document.createElement("div");
   htmlBadgeDiv.appendChild(htmlBadgeFragment);
@@ -144,7 +145,8 @@ function addFacebookBadge (target, badgeClassUId) {
 
   htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
     e.preventDefault();
-    htmlBadgeDiv.classList.toggle("active");
+    e.target.parentElement.classList.toggle("active");
+    positionPrompt( badgeClassUId );
     // addToolTipBlock(item);
     // browser.runtime.sendMessage("add-to-facebook-container");
   });
@@ -158,8 +160,19 @@ function addFacebookBadge (target, badgeClassUId) {
 
   htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
     e.preventDefault();
-    htmlBadgeDiv.classList.toggle("active");
+    e.target.parentElement.parentNode.parentNode.classList.toggle("active");
   });
+}
+
+function positionPrompt ( target ) {
+  target = document.querySelector("." + target);
+  const targetPrompt = target.querySelector(".fbc-badge-prompt");
+  const elemRect = target.getBoundingClientRect();
+  if ( (window.innerWidth - elemRect.left) < 200  ) {
+    targetPrompt.classList.add("fbc-badge-prompt-align-right");
+  } else {
+    targetPrompt.classList.remove("fbc-badge-prompt-align-right");
+  }
 }
 
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
