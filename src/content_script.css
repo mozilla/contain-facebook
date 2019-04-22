@@ -65,6 +65,7 @@
 	height: 28px;
 	padding: 0;
 	border: 1px solid white;
+	cursor: pointer;
 }
 
 .fbc-badge.fbc-badge-small .fbc-badge-fence {
