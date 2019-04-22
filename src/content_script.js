@@ -44,6 +44,9 @@ function isFixed (elem) {
 
 const fragmentClasses = ["fbc-badge-fence", "fbc-badge-hover", "fbc-badge-prompt"];
 const loginTextString = document.createTextNode("Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.");
+const htmlBadgeFragmentPromptParagraphStrings = ["Allow Facebook to track you here?", "If you want to use log in with Facebook then Facebook will then be able to track your activity on this site. This can helpthem build a fuller picture of your online life."];
+const htmlBadgeFragmentPromptCheckboxLabelString = "Don't show me this again";
+const htmlBadgeFragmentPromptButtonStrings = ["Cancel", "Allow"];
 
 function createBadgeFragment () {
   const htmlBadgeFragment = document.createDocumentFragment();
@@ -55,8 +58,51 @@ function createBadgeFragment () {
   }
 
   const htmlBadgeFragmentHoverDiv = htmlBadgeFragment.querySelector(".fbc-badge-hover");
-  // const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
+  const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
   // const htmlBadgeFragmentFenceDiv = htmlBadgeFragment.querySelector(".fbc-badge-fence");
+
+  const htmlBadgeFragmentPromptH1 = document.createElement("h1");
+  htmlBadgeFragmentPromptH1.appendChild(document.createTextNode("Facebook Container"));
+  htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
+
+  const htmlBadgeFragmentPromptContents = document.createElement("div");
+  htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
+
+  for (let promptParagraphString of htmlBadgeFragmentPromptParagraphStrings) {
+    let paragraph = document.createElement("p");
+    paragraph.appendChild(document.createTextNode(promptParagraphString));
+    htmlBadgeFragmentPromptContents.appendChild(paragraph);
+  }
+
+  // <input type="checkbox" id="scales" name="scales" checked>
+  // <label for="scales">Scales</label>
+
+  const htmlBadgeFragmentPromptForm = document.createElement("form");
+  const htmlBadgeFragmentPromptCheckbox = document.createElement("input");
+  htmlBadgeFragmentPromptCheckbox.type = "checkbox";
+  htmlBadgeFragmentPromptCheckbox.id = "showHideToggle";
+  const htmlBadgeFragmentPromptCheckboxLabel = document.createElement("label");
+  htmlBadgeFragmentPromptCheckboxLabel.htmlFor = "showHideToggle";
+  htmlBadgeFragmentPromptCheckboxLabel.appendChild(document.createTextNode(htmlBadgeFragmentPromptCheckboxLabelString));
+
+  htmlBadgeFragmentPromptForm.appendChild(htmlBadgeFragmentPromptCheckbox);
+  htmlBadgeFragmentPromptForm.appendChild(htmlBadgeFragmentPromptCheckboxLabel);
+  htmlBadgeFragmentPromptContents.appendChild(htmlBadgeFragmentPromptForm);
+
+  htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
+
+  const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
+  htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
+  for (let buttonString of htmlBadgeFragmentPromptButtonStrings) {
+
+    let button = document.createElement("button");
+    let currentIndex = htmlBadgeFragmentPromptButtonStrings.indexOf(buttonString);
+    button.className = "fbc-badge-prompt-button-" + currentIndex;
+    button.appendChild(document.createTextNode(buttonString));
+    htmlBadgeFragmentPromptButtonDiv.appendChild(button);
+  }
+
+  htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
 
   htmlBadgeFragmentHoverDiv.appendChild(loginTextString);
 
@@ -71,7 +117,8 @@ function addFacebookBadge (target, badgeClassUId) {
 
   htmlBadgeDiv = createBadgeFragment();
 
-  const htmlBadgeFragmentPromptDiv = htmlBadgeDiv.querySelector(".fbc-badge-prompt");
+  const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-button-0");
+  const htmlBadgeFragmentPromptButtonAllow = htmlBadgeDiv.querySelector(".fbc-badge-prompt-button-1");
   // const htmlBadgeFragmentHoverDiv = htmlBadgeDiv.querySelector(".fbc-badge-hover");
   const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".fbc-badge-fence");
 
@@ -102,11 +149,16 @@ function addFacebookBadge (target, badgeClassUId) {
     // browser.runtime.sendMessage("add-to-facebook-container");
   });
 
-  htmlBadgeFragmentPromptDiv.addEventListener("click", (e) => {
+  htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
     e.preventDefault();
     // console.log("htmlBadgePrompt");
     browser.runtime.sendMessage("add-to-facebook-container");
     target.click();
+  });
+
+  htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
+    e.preventDefault();
+    htmlBadgeDiv.classList.toggle("active");
   });
 }
 
