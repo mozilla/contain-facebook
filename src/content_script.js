@@ -1,6 +1,6 @@
 "use strict";
 
-function detectFacebookLoginButton() {
+function detectFacebookLoginButton () {
   // TODO: Refactor detectFacebookLoginButton to add HTML badge instead of class/psudeo element
   // Test for standard implementation (Example: Facebook Docs)
   const loginButton = document.querySelectorAll(".fb-login-button");
@@ -33,43 +33,54 @@ function itemWidthCheck (target) {
   return iconClassArr;
 }
 
-let htmlBadgeDiv, htmlBadgeFenceSpan, htmlBadgeHoverSpan, htmlBadgePrompt, htmlBadgePromptSpan, loginTextString
+let htmlBadgeDiv;
 
 function isFixed (elem) {
   do {
     if (getComputedStyle(elem).position == "fixed") return true;
-  } while ( (elem = elem.offsetParent) );
+  } while ((elem = elem.offsetParent));
   return false;
 }
 
-// function createBadgeFragment(badgeClassUId) {
-//   //
-// }
+const fragmentClasses = ["fbc-badge-fence", "fbc-badge-hover", "fbc-badge-prompt"];
+const loginTextString = document.createTextNode("Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.");
 
-function addFacebookBadge(target, badgeClassUId){
-  // Detect if target is visible
+function createBadgeFragment () {
+  const htmlBadgeFragment = document.createDocumentFragment();
+
+  for (let className of fragmentClasses) {
+    let div = document.createElement("div");
+    div.className = className;
+    htmlBadgeFragment.appendChild(div);
+  }
+
+  const htmlBadgeFragmentHoverDiv = htmlBadgeFragment.querySelector(".fbc-badge-hover");
+  // const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
+  // const htmlBadgeFragmentFenceDiv = htmlBadgeFragment.querySelector(".fbc-badge-fence");
+
+  htmlBadgeFragmentHoverDiv.appendChild(loginTextString);
+
   htmlBadgeDiv = document.createElement("div");
+  htmlBadgeDiv.appendChild(htmlBadgeFragment);
 
-  htmlBadgeFenceSpan = document.createElement("span");
-  htmlBadgeFenceSpan.className = "fbc-badge-fence";
+  return htmlBadgeDiv;
+}
 
-  htmlBadgeHoverSpan = document.createElement("span");
-  htmlBadgeHoverSpan.className = "fbc-badge-hover";
-  loginTextString = document.createTextNode("Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.");
+function addFacebookBadge (target, badgeClassUId) {
+  // Detect if target is visible
 
-  htmlBadgePrompt = document.createElement("div");
-  htmlBadgePrompt.className = "fbc-badge-prompt";
+  htmlBadgeDiv = createBadgeFragment();
 
-  htmlBadgeHoverSpan.appendChild(loginTextString);
+  const htmlBadgeFragmentPromptDiv = htmlBadgeDiv.querySelector(".fbc-badge-prompt");
+  // const htmlBadgeFragmentHoverDiv = htmlBadgeDiv.querySelector(".fbc-badge-hover");
+  const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".fbc-badge-fence");
 
-  htmlBadgeDiv.appendChild(htmlBadgePrompt);
-  htmlBadgeDiv.appendChild(htmlBadgeFenceSpan);
-  htmlBadgeDiv.appendChild(htmlBadgeHoverSpan);
   htmlBadgeDiv.className = "fbc-badge " + badgeClassUId;
+
   document.body.appendChild(htmlBadgeDiv);
 
-  const itemWidth = parseInt(target.offsetWidth,10);
-  const itemHeight = parseInt(target.offsetHeight,10);
+  const itemWidth = parseInt(target.offsetWidth, 10);
+  const itemHeight = parseInt(target.offsetHeight, 10);
 
   const ratioCheck = (itemWidth / itemHeight);
   let badgeSmallSwitch = false;
@@ -84,26 +95,22 @@ function addFacebookBadge(target, badgeClassUId){
 
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
 
-  htmlBadgeFenceSpan.addEventListener("click", (e) => {
+  htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
     e.preventDefault();
     htmlBadgeDiv.classList.toggle("active");
     // addToolTipBlock(item);
     // browser.runtime.sendMessage("add-to-facebook-container");
   });
 
-  htmlBadgePrompt.addEventListener("click", (e) => {
+  htmlBadgeFragmentPromptDiv.addEventListener("click", (e) => {
     e.preventDefault();
     // console.log("htmlBadgePrompt");
     browser.runtime.sendMessage("add-to-facebook-container");
     target.click();
   });
-
-
-
 }
 
-function positionFacebookBadge( target, badgeClassUId, targetWidth, smallSwitch ) {
-
+function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
   // Check for Badge element and select it
   if (!badgeClassUId) {
     badgeClassUId = "js-" + target;
@@ -112,7 +119,7 @@ function positionFacebookBadge( target, badgeClassUId, targetWidth, smallSwitch 
   htmlBadgeDiv = document.querySelector("." + badgeClassUId);
 
   // Confirm target element is defined
-  if ( target && typeof target === "object" ) {
+  if (target && typeof target === "object") {
     // TODO: Reverse IF Statement
   } else {
     target = document.querySelector("." + target);
@@ -122,8 +129,8 @@ function positionFacebookBadge( target, badgeClassUId, targetWidth, smallSwitch 
   let elementSizeOffsetX = 20;
   let elementSizeOffsetY = 4;
 
-  if ( typeof smallSwitch == "undefined" ) {
-    if ( htmlBadgeDiv.classList.contains("fbc-badge-small") ) {
+  if (typeof smallSwitch === "undefined") {
+    if (htmlBadgeDiv.classList.contains("fbc-badge-small")) {
       smallSwitch = true;
     }
   }
@@ -135,7 +142,7 @@ function positionFacebookBadge( target, badgeClassUId, targetWidth, smallSwitch 
 
   // Define target element width
   if (!targetWidth) {
-    targetWidth = parseInt(target.offsetWidth,10);
+    targetWidth = parseInt(target.offsetWidth, 10);
   }
 
   // Get position coordinates
@@ -145,7 +152,7 @@ function positionFacebookBadge( target, badgeClassUId, targetWidth, smallSwitch 
   let offsetPosX = elemRect.left - bodyRect.left;
   let offsetPosY = elemRect.top - bodyRect.top;
 
-  if ( isFixed(target) ) {
+  if (isFixed(target)) {
     htmlBadgeDiv.classList.add("fbc-badge-fixed");
     offsetPosX = elemRect.left;
     offsetPosY = elemRect.top;
@@ -159,7 +166,6 @@ function positionFacebookBadge( target, badgeClassUId, targetWidth, smallSwitch 
   // Set badge position based on target coordinates/size
   htmlBadgeDiv.style.left = htmlBadgeDivPosX + "px";
   htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
-
 }
 
 // Use the following patterns to check for on-screen Facebook elements
@@ -187,11 +193,10 @@ const PATTERN_DETECTION_SELECTORS = [
 const facebookDetectedElementsArr = [];
 
 function detectFacebookOnPage () {
-
   for (let querySelector of PATTERN_DETECTION_SELECTORS) {
     for (let item of document.querySelectorAll(querySelector)) {
       // overlay the FBC icon badge on the item
-      if ( !item.classList.contains("fbc-badged") ) {
+      if (!item.classList.contains("fbc-badged")) {
         let itemUIDClassName = "fbc-badgeUID_" + (facebookDetectedElementsArr.length + 1);
         let itemUIDClassTarget = "js-" + itemUIDClassName;
         facebookDetectedElementsArr.push(itemUIDClassName);
@@ -202,7 +207,6 @@ function detectFacebookOnPage () {
 
         // let badge = document.querySelector(itemUIDClassTarget);
         //
-
 
         // item.addEventListener("click", (e) => {
         //   e.preventDefault();
@@ -220,60 +224,19 @@ function detectFacebookOnPage () {
       }
 
       // add click handler to addDomainToFBC and refresh
-
     }
   }
-}
-
-
-function addToolTipBlock(item) {
-  // TODO: Make sure this only gets attached once per element
-  // TODO: Make sure there's enough width on the right/bottom side of the element, or you have to drop it the other way.
-  // On screen resize, dismiss the popup? (Or remap it to the element?)
-
-  // console.log( "addToolTipBlock" );
-  const htmlHoverModal = document.createElement("div");
-  htmlHoverModal.className = "fbc-toolTip";
-  // htmlModal.classList.add("fbc-toolTip", targetClass);
-  // htmlModal.dataset.selector = item;
-  document.body.appendChild(htmlHoverModal);
-
-  const bodyRect = document.body.getBoundingClientRect();
-  const elemRect = item.getBoundingClientRect();
-  // const itemPseudoStyle = window.getComputedStyle(item, ":after");
-  // console.log([bodyRect, elemRect]);
-  let offsetPosX   = elemRect.left - bodyRect.left;
-  let offsetPosY   = elemRect.top - bodyRect.top;
-  // console.log("Before: ", offsetPosY, offsetPosX);
-  offsetPosY += parseInt(item.top,10);
-  offsetPosX += parseInt(item.left,10);
-  // console.log("After: ", offsetPosY, offsetPosX);
-  const itemWidth = parseInt(item.width,10) + 8;
-  const itemHeight = parseInt(item.height,10) * .5;
-  const htmlModalPosX = offsetPosX + itemWidth;
-  const htmlModalPosY = offsetPosY + itemHeight;
-  // console.log("After: ", htmlModalPosX, htmlModalPosY);
-
-  // offsetX = offsetX + itemWidth;
-  // console.log(htmlModalPos);
-
-  // console.log("offset: ", htmlModalPosX, htmlModalPosY);
-  htmlHoverModal.style.left = htmlModalPosX + "px";
-  htmlHoverModal.style.top = htmlModalPosY + "px";
-
-  // console.log(htmlHoverModal);
-
 }
 
 // Resize listener. Only fires after window stops resizing.
 let resizeId;
 
-window.addEventListener("resize", function() {
+window.addEventListener("resize", function () {
   clearTimeout(resizeId);
   resizeId = setTimeout(doneResizing, 25);
 });
 
-function doneResizing(){
+function doneResizing () {
   for (let item of facebookDetectedElementsArr) {
     positionFacebookBadge(item);
   }
@@ -283,7 +246,7 @@ function doneResizing(){
 let last_known_scroll_position = 0;
 let ticking = false;
 
-function doneScrolling() {
+function doneScrolling () {
   for (let item of facebookDetectedElementsArr) {
     positionFacebookBadge(item);
     // console.log("scrollCheckInit");
@@ -295,11 +258,11 @@ function doneScrolling() {
   }
 }
 
-window.addEventListener("scroll", function(e) {
+window.addEventListener("scroll", function () {
   last_known_scroll_position = window.scrollY;
 
   if (!ticking) {
-    window.requestAnimationFrame(function() {
+    window.requestAnimationFrame(function () {
       doneScrolling(last_known_scroll_position);
       ticking = false;
     });
@@ -308,10 +271,9 @@ window.addEventListener("scroll", function(e) {
   }
 });
 
-
 browser.runtime.onMessage.addListener(message => {
   console.log("message from background script:", message);
-  setTimeout( () => {
+  setTimeout(() => {
     detectFacebookOnPage();
     detectFacebookLoginButton();
   }, 10);

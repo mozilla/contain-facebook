@@ -43,14 +43,12 @@
 }
 
 /* Overlay */
-.fbc-overlay {
-	position: relative;
-}
 
 .fbc-badge {
 	position: absolute;
 	z-index: 9999;
 	transition: opacity 0.2s ease-out;
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .fbc-badge-fence {
