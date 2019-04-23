@@ -105,7 +105,6 @@ function createBadgeFragment () {
   htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
 
   htmlBadgeFragmentHoverDiv.appendChild( document.createTextNode(loginTextString) );
-  console.log(htmlBadgeFragmentHoverDiv);
 
   htmlBadgeDiv = document.createElement("div");
   htmlBadgeDiv.appendChild(htmlBadgeFragment);
@@ -168,7 +167,8 @@ function positionPrompt ( target ) {
   target = document.querySelector("." + target);
   const targetPrompt = target.querySelector(".fbc-badge-prompt");
   const elemRect = target.getBoundingClientRect();
-  if ( (window.innerWidth - elemRect.left) < 200  ) {
+  console.log( [window.innerWidth, elemRect.left, (window.innerWidth - elemRect.left)] );
+  if ( (window.innerWidth - elemRect.left) < 350  ) {
     targetPrompt.classList.add("fbc-badge-prompt-align-right");
   } else {
     targetPrompt.classList.remove("fbc-badge-prompt-align-right");

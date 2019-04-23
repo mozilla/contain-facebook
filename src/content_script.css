@@ -48,10 +48,12 @@
 	position: absolute;
 	z-index: 9999;
 	transition: opacity 0.2s ease-out;
-	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--fontFamily: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--transition: all .15s cubic-bezier(.07,.95,0,1);
 	--blue60: #0060df;
 	--blue70: #003eaa;
+	--black: #000000;
+	font-family: var(--fontFamily);
 }
 
 .fbc-badge-fence {
@@ -99,7 +101,7 @@
 	left: calc( 100% + 20px);
 	top: 50%;
   transform: translateY(-50%);
-	color: #000000;
+	color: var(--black);
 	box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2);
 	border: 1px solid rgba(0,0,0,0.2);
 	padding: 0 0 40px;
@@ -122,6 +124,7 @@
 	left: auto;
 	right: calc( 100% + 20px);
 }
+
 .fbc-badge-prompt.fbc-badge-prompt-align-right:after {
 	left: auto;
 	right: -10px;
@@ -130,6 +133,7 @@
 
 .fbc-badge-prompt h1 {
 	letter-spacing: -0.1px;
+	font-family: var(--fontFamily);
 	font-size: 13px;
 	font-weight: 700;
 	height: 40px;
@@ -139,8 +143,10 @@
 	padding: 0;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	border-bottom: 1px solid #E9E9E9;
 	background: white;
+	color: var(--black);
 }
 
 .fbc-badge-prompt-contents {
@@ -194,6 +200,11 @@
 	background-color: #F2F2F2;
 	border-top: 1px solid #E9E9E9;
 	transition: var(--transition);
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	border-radius: 0;
+	font-weight: normal;
 }
 
 .fbc-badge-prompt-buttons button:hover {
@@ -209,8 +220,6 @@
 .fbc-badge-prompt-buttons button:last-child:hover {
 	background: var(--blue70);
 }
-
-
 
 
 /* Tooltip */
