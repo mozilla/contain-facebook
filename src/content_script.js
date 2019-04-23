@@ -168,6 +168,15 @@ function addFacebookBadge (target, badgeClassUId) {
   });
 }
 
+function findActivePrompt() {
+  const allBadges = document.querySelectorAll(".fbc-badge");
+  for (let badge of allBadges) {
+    if ( badge.classList.contains("active") ){
+      return badge;
+    }
+  }
+}
+
 function closePrompt() {
   const allBadges = document.querySelectorAll(".fbc-badge");
   for (let badge of allBadges) {
@@ -357,6 +366,14 @@ function escapeKeyListener () {
   });
 }
 
+window.addEventListener("click", function(e){
+  if ( document.body.classList.contains("js-fbc-prompt-active") ) {
+    const activePrompt = findActivePrompt();
+    if ( !activePrompt.contains(e.target) ) {
+      closePrompt();
+    }
+  }
+});
 
 
 browser.runtime.onMessage.addListener(message => {
