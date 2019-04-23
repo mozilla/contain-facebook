@@ -198,9 +198,7 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   const htmlBadgeDiv = document.querySelector("." + badgeClassUId);
 
   // Confirm target element is defined
-  if (target && typeof target === "object") {
-    // TODO: Reverse IF Statement
-  } else {
+  if (!target || !(typeof target === "object")) {
     target = document.querySelector("." + target);
   }
 
@@ -219,7 +217,7 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
 
   // Set offset size based on large/small badge
   const [elementSizeOffsetX, elementSizeOffsetY] = elementSizeOffsetXY(smallSwitch);
-  
+
   // Define target element width
   if (!targetWidth) {
     targetWidth = parseInt(target.offsetWidth, 10);
