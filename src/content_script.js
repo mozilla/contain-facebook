@@ -112,19 +112,14 @@ function createBadgeFragment () {
   return htmlBadgeDiv;
 }
 
-// function shouldBadgeBeSmall(ratioCheck, itemHeight) {
-//   if (ratioCheck < 1.1) {
-//     return true;
-//   } else if (itemHeight < 39) {
-//     return true;
-//   }
-//   return false;
-// }
-//
-// const badgeSmallSwitch = shouldBadgeBeSmall(ratioCheck, itemHeight);
-// if (badgeSmallSwitch) {
-//   htmlBadgeDiv.classList.add("fbc-badge-small");
-// }
+function shouldBadgeBeSmall(ratioCheck, itemHeight) {
+  if (ratioCheck < 1.1) {
+    return true;
+  } else if (itemHeight < 39) {
+    return true;
+  }
+  return false;
+}
 
 function addFacebookBadge (target, badgeClassUId) {
   // Detect if target is visible
@@ -144,14 +139,10 @@ function addFacebookBadge (target, badgeClassUId) {
   const itemHeight = parseInt(target.offsetHeight, 10);
 
   const ratioCheck = (itemWidth / itemHeight);
-  let badgeSmallSwitch = false;
 
-  if (ratioCheck < 1.1) {
+  const badgeSmallSwitch = shouldBadgeBeSmall(ratioCheck, itemHeight);
+  if (badgeSmallSwitch) {
     htmlBadgeDiv.classList.add("fbc-badge-small");
-    badgeSmallSwitch = true;
-  } else if (itemHeight < 39) {
-    htmlBadgeDiv.classList.add("fbc-badge-small");
-    badgeSmallSwitch = true;
   }
 
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
