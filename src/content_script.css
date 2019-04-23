@@ -88,11 +88,11 @@
 	position: fixed;
 }
 
-.fbc-badge:hover .fbc-badge-hover {
+.fbc-badge:hover .fbc-badge-tooltip {
 	display: block;
 }
 
-.fbc-badge.active:hover .fbc-badge-hover {
+.fbc-badge.active:hover .fbc-badge-tooltip {
 	display: none;
 }
 
@@ -237,7 +237,7 @@
 
 
 /* Tooltip */
-.fbc-badge-hover {
+.fbc-badge-tooltip {
 	display: none;
 	padding: 5px 10px 10px;
 	width: 250px;

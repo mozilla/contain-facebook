@@ -61,7 +61,7 @@
     },
     "onboarding2-p1": {
       "message": "This icon appears in the Firefox address bar when you visit sites, like Facebook.com, that are in the Facebook Container boundary.",
-      "description": "This is the first paragraph of the second onboarding panel."    
+      "description": "This is the first paragraph of the second onboarding panel."
     },
     "onboarding2-p2": {
       "message": "These sites need to access to your Facebook identity (or know who you are) in order to work. *SPANSTART This also means that Facebook can track everything you do on these sites. *SPANEND",
@@ -83,9 +83,13 @@
       "message": "However, *SPANSTART if you click on any of these buttons Facebook will be able to track you. *SPANEND",
       "description": "This is the second paragraph on the third onboarding panel. '*SPANSTART' indicates the beginning of a block of bolded text and '*SPANEND' indicates the end. These should not be translated or modified in any way."
     },
+    "btn-allow": {
+      "message": "Allow",
+      "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    },
     "btn-cancel": {
       "message": "Cancel",
-      "description": "This is a button to cancel out of the onboarding panel."
+      "description": "This is a button to cancel out of the onboarding panel. This language is also used to close the in-page UI prompt when users click on the fence icon."
     },
     "btn-next": {
       "message": "Next",
@@ -105,7 +109,7 @@
     },
     "btn-arrow-forward": {
       "message": "Go to How Faceook Container Works",
-      "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link" 
+      "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
     },
     "no-trackers-subhead": {
       "message": "No Facebook Trackers Detected",
@@ -138,5 +142,25 @@
    "trackers-detected-fence-alt": {
      "message": "Facebook Container fence with shield.",
      "description": "This is alternative text."
-   }
+   },
+   "inPageUI-tooltip-share-button": {
+       "message": "Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.",
+       "description": "add_description"
+   },
+   "inPageUI-tooltip-login-button": {
+       "message": "Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.",
+       "description": "add_description"
+   },
+   "inPageUI-tooltip-prompt-p1": {
+       "message": "Allow Facebook to track you here?",
+       "description": "add_description"
+   },
+   "inPageUI-tooltip-prompt-p2": {
+       "message": "If you want to use log in with Facebook then Facebook will then be able to track your activity on this site. This can help them build a fuller picture of your online life.",
+       "description": "add_description"
+   },
+   "inPageUI-tooltip-prompt-checkbox": {
+       "message": "Don't show me this again",
+       "description": "add_description"
+   },
 }

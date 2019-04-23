@@ -40,11 +40,10 @@ function isFixed (elem) {
   return false;
 }
 
-const fragmentClasses = ["fbc-badge-fence", "fbc-badge-hover", "fbc-badge-prompt"];
-const loginTextString = "Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.";
+const fragmentClasses = ["fbc-badge-fence", "fbc-badge-tooltip", "fbc-badge-prompt"];
 const htmlBadgeFragmentPromptParagraphStrings = ["Allow Facebook to track you here?", "If you want to use log in with Facebook then Facebook will then be able to track your activity on this site. This can helpthem build a fuller picture of your online life."];
 const htmlBadgeFragmentPromptCheckboxLabelString = "Don't show me this again";
-const htmlBadgeFragmentPromptButtonStrings = ["Cancel", "Allow"];
+const htmlBadgeFragmentPromptButtonStrings = ["btn-cancel", "btn-allow"];
 
 function createBadgeFragment () {
   const htmlBadgeFragment = document.createDocumentFragment();
@@ -55,12 +54,13 @@ function createBadgeFragment () {
     htmlBadgeFragment.appendChild(div);
   }
 
-  const htmlBadgeFragmentHoverDiv = htmlBadgeFragment.querySelector(".fbc-badge-hover");
+  const htmlBadgeFragmentTooltipDiv = htmlBadgeFragment.querySelector(".fbc-badge-tooltip");
   const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
   // const htmlBadgeFragmentFenceDiv = htmlBadgeFragment.querySelector(".fbc-badge-fence");
 
   const htmlBadgeFragmentPromptH1 = document.createElement("h1");
-  htmlBadgeFragmentPromptH1.appendChild(document.createTextNode("Facebook Container"));
+
+  htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
   htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
 
   const htmlBadgeFragmentPromptContents = document.createElement("div");
@@ -92,17 +92,16 @@ function createBadgeFragment () {
   const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
   htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
   for (let buttonString of htmlBadgeFragmentPromptButtonStrings) {
-
     const button = document.createElement("button");
     const currentIndex = htmlBadgeFragmentPromptButtonStrings.indexOf(buttonString);
     button.className = "fbc-badge-prompt-button-" + currentIndex;
-    button.appendChild(document.createTextNode(buttonString));
+    button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
     htmlBadgeFragmentPromptButtonDiv.appendChild(button);
   }
 
   htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
 
-  htmlBadgeFragmentHoverDiv.appendChild( document.createTextNode(loginTextString) );
+  htmlBadgeFragmentTooltipDiv.appendChild( document.createTextNode( browser.i18n.getMessage("inPageUI-tooltip-share-button") ) );
 
   const htmlBadgeWrapperDiv = document.createElement("div");
   htmlBadgeWrapperDiv.appendChild(htmlBadgeFragment);
@@ -126,7 +125,6 @@ function addFacebookBadge (target, badgeClassUId) {
 
   const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-button-0");
   const htmlBadgeFragmentPromptButtonAllow = htmlBadgeDiv.querySelector(".fbc-badge-prompt-button-1");
-  // const htmlBadgeFragmentHoverDiv = htmlBadgeDiv.querySelector(".fbc-badge-hover");
   const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".fbc-badge-fence");
 
   htmlBadgeDiv.className = "fbc-badge " + badgeClassUId;
@@ -178,13 +176,9 @@ function findActivePrompt() {
 }
 
 function closePrompt() {
-  const allBadges = document.querySelectorAll(".fbc-badge");
-  for (let badge of allBadges) {
-    if ( badge.classList.contains("active") ){
-      badge.classList.remove("active");
-      document.body.classList.remove("js-fbc-prompt-active");
-    }
-  }
+  const activePrompt = findActivePrompt();
+  activePrompt.classList.remove("active");
+  document.body.classList.remove("js-fbc-prompt-active");
 }
 
 function positionPrompt ( target ) {
@@ -248,6 +242,7 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
     target = document.querySelector("." + target);
   }
 
+  // TODO: Check if target is null: target === null ||
   if ( isHidden(target) && !htmlBadgeDiv.classList.contains("fbc-badge-disabled") ) {
     htmlBadgeDiv.classList.add("fbc-badge-disabled");
   } else if ( !isHidden(target) && htmlBadgeDiv.classList.contains("fbc-badge-disabled") ) {
@@ -353,6 +348,7 @@ window.addEventListener("scroll", ()=> {
 
 // Fires on screen Resize or Scroll
 function screenUpdate () {
+  // console.log("screenUpdate");
   for (let item of facebookDetectedElementsArr) {
     positionFacebookBadge(item);
   }
@@ -372,6 +368,9 @@ window.addEventListener("click", function(e){
     if ( !activePrompt.contains(e.target) ) {
       closePrompt();
     }
+  } else {
+    // detectFacebookOnPage();
+    // screenUpdate();
   }
 });
 
@@ -380,7 +379,7 @@ browser.runtime.onMessage.addListener(message => {
   console.log("message from background script:", message);
   setTimeout(() => {
     detectFacebookOnPage();
-    detectFacebookLoginButton();
+    // detectFacebookLoginButton();
   }, 10);
   return Promise.resolve({response: "content_script onMessage listener"});
 });
