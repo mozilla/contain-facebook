@@ -149,6 +149,7 @@ function addFacebookBadge (target, badgeClassUId) {
   htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
     e.preventDefault();
     e.target.parentElement.classList.toggle("active");
+    document.body.classList.toggle("js-fbc-prompt-active");
     positionPrompt( badgeClassUId );
   });
 
@@ -162,8 +163,19 @@ function addFacebookBadge (target, badgeClassUId) {
   // Close prompt
   htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
     e.preventDefault();
-    e.target.parentElement.parentNode.parentNode.classList.toggle("active");
+    document.body.classList.remove("js-fbc-prompt-active");
+    e.target.parentElement.parentNode.parentNode.classList.remove("active");
   });
+}
+
+function closePrompt() {
+  const allBadges = document.querySelectorAll(".fbc-badge");
+  for (let badge of allBadges) {
+    if ( badge.classList.contains("active") ){
+      badge.classList.remove("active");
+      document.body.classList.remove("js-fbc-prompt-active");
+    }
+  }
 }
 
 function positionPrompt ( target ) {
@@ -227,7 +239,6 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
     target = document.querySelector("." + target);
   }
 
-  // console.log(htmlBadgeDiv);
   if ( isHidden(target) && !htmlBadgeDiv.classList.contains("fbc-badge-disabled") ) {
     htmlBadgeDiv.classList.add("fbc-badge-disabled");
   } else if ( !isHidden(target) && htmlBadgeDiv.classList.contains("fbc-badge-disabled") ) {
@@ -306,6 +317,7 @@ function detectFacebookOnPage () {
       }
     }
   }
+  escapeKeyListener();
 }
 
 // Resize listener. Only fires after window stops resizing.
@@ -336,6 +348,15 @@ function screenUpdate () {
     positionFacebookBadge(item);
   }
 }
+
+function escapeKeyListener () {
+  document.body.addEventListener("keydown", function(e) {
+    if(e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
+      closePrompt();
+    }
+  });
+}
+
 
 
 browser.runtime.onMessage.addListener(message => {
