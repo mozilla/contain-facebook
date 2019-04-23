@@ -33,7 +33,7 @@ function itemWidthCheck (target) {
   return iconClassArr;
 }
 
-let htmlBadgeDiv;
+// let htmlBadgeDiv;
 
 function isFixed (elem) {
   do {
@@ -106,10 +106,10 @@ function createBadgeFragment () {
 
   htmlBadgeFragmentHoverDiv.appendChild( document.createTextNode(loginTextString) );
 
-  htmlBadgeDiv = document.createElement("div");
-  htmlBadgeDiv.appendChild(htmlBadgeFragment);
+  const htmlBadgeWrapperDiv = document.createElement("div");
+  htmlBadgeWrapperDiv.appendChild(htmlBadgeFragment);
 
-  return htmlBadgeDiv;
+  return htmlBadgeWrapperDiv;
 }
 
 function shouldBadgeBeSmall(ratioCheck, itemHeight) {
@@ -124,7 +124,7 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
 function addFacebookBadge (target, badgeClassUId) {
   // Detect if target is visible
 
-  htmlBadgeDiv = createBadgeFragment();
+  const htmlBadgeDiv = createBadgeFragment();
 
   const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-button-0");
   const htmlBadgeFragmentPromptButtonAllow = htmlBadgeDiv.querySelector(".fbc-badge-prompt-button-1");
@@ -147,21 +147,21 @@ function addFacebookBadge (target, badgeClassUId) {
 
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
 
+  // Show/hide prompt
   htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
     e.preventDefault();
     e.target.parentElement.classList.toggle("active");
     positionPrompt( badgeClassUId );
-    // addToolTipBlock(item);
-    // browser.runtime.sendMessage("add-to-facebook-container");
   });
 
+  // Add to Container "Allow"
   htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
     e.preventDefault();
-    // console.log("htmlBadgePrompt");
     browser.runtime.sendMessage("add-to-facebook-container");
     target.click();
   });
 
+  // Close prompt
   htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
     e.preventDefault();
     e.target.parentElement.parentNode.parentNode.classList.toggle("active");
@@ -172,7 +172,6 @@ function positionPrompt ( target ) {
   target = document.querySelector("." + target);
   const targetPrompt = target.querySelector(".fbc-badge-prompt");
   const elemRect = target.getBoundingClientRect();
-  console.log( [window.innerWidth, elemRect.left, (window.innerWidth - elemRect.left)] );
   if ( (window.innerWidth - elemRect.left) < 350  ) {
     targetPrompt.classList.add("fbc-badge-prompt-align-right");
   } else {
@@ -180,7 +179,9 @@ function positionPrompt ( target ) {
   }
 }
 
-
+function isHidden(target) {
+  return (target.offsetParent === null);
+}
 
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
   // Check for Badge element and select it
@@ -188,13 +189,20 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
     badgeClassUId = "js-" + target;
   }
 
-  htmlBadgeDiv = document.querySelector("." + badgeClassUId);
+  const htmlBadgeDiv = document.querySelector("." + badgeClassUId);
 
   // Confirm target element is defined
   if (target && typeof target === "object") {
     // TODO: Reverse IF Statement
   } else {
     target = document.querySelector("." + target);
+  }
+
+  // console.log(htmlBadgeDiv);
+  if ( isHidden(target) && !htmlBadgeDiv.classList.contains("fbc-badge-disabled") ) {
+    htmlBadgeDiv.classList.add("fbc-badge-disabled");
+  } else if ( !isHidden(target) && htmlBadgeDiv.classList.contains("fbc-badge-disabled") ) {
+    htmlBadgeDiv.classList.remove("fbc-badge-disabled");
   }
 
   // Set offset size based on large/small badge
@@ -269,8 +277,8 @@ function detectFacebookOnPage () {
     for (let item of document.querySelectorAll(querySelector)) {
       // overlay the FBC icon badge on the item
       if (!item.classList.contains("fbc-badged")) {
-        let itemUIDClassName = "fbc-badgeUID_" + (facebookDetectedElementsArr.length + 1);
-        let itemUIDClassTarget = "js-" + itemUIDClassName;
+        const itemUIDClassName = "fbc-badgeUID_" + (facebookDetectedElementsArr.length + 1);
+        const itemUIDClassTarget = "js-" + itemUIDClassName;
         facebookDetectedElementsArr.push(itemUIDClassName);
         addFacebookBadge(item, itemUIDClassTarget);
         item.classList.add("fbc-badged");
@@ -283,39 +291,32 @@ function detectFacebookOnPage () {
 // Resize listener. Only fires after window stops resizing.
 let resizeId;
 
-window.addEventListener("resize", function () {
+window.addEventListener("resize", ()=> {
   clearTimeout(resizeId);
-  resizeId = setTimeout(doneResizing, 25);
+  resizeId = setTimeout(screenUpdate, 25);
 });
 
-function doneResizing () {
-  for (let item of facebookDetectedElementsArr) {
-    positionFacebookBadge(item);
-  }
-}
-
 // On Scroll, checking for position fixed on elements
-let last_known_scroll_position = 0;
 let ticking = false;
 
-function doneScrolling () {
-  for (let item of facebookDetectedElementsArr) {
-    positionFacebookBadge(item);
-  }
-}
-
-window.addEventListener("scroll", function () {
-  last_known_scroll_position = window.scrollY;
-
+window.addEventListener("scroll", ()=> {
   if (!ticking) {
-    window.requestAnimationFrame(function () {
-      doneScrolling(last_known_scroll_position);
+    window.requestAnimationFrame(()=> {
+      screenUpdate();
       ticking = false;
     });
 
     ticking = true;
   }
 });
+
+// Fires on screen Resize or Scroll
+function screenUpdate () {
+  for (let item of facebookDetectedElementsArr) {
+    positionFacebookBadge(item);
+  }
+}
+
 
 browser.runtime.onMessage.addListener(message => {
   console.log("message from background script:", message);

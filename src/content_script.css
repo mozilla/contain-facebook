@@ -56,6 +56,12 @@
 	font-family: var(--fontFamily);
 }
 
+.fbc-badge.fbc-badge-disabled {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
 .fbc-badge-fence {
 	display: block;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
