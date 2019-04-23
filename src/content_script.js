@@ -112,6 +112,20 @@ function createBadgeFragment () {
   return htmlBadgeDiv;
 }
 
+// function shouldBadgeBeSmall(ratioCheck, itemHeight) {
+//   if (ratioCheck < 1.1) {
+//     return true;
+//   } else if (itemHeight < 39) {
+//     return true;
+//   }
+//   return false;
+// }
+//
+// const badgeSmallSwitch = shouldBadgeBeSmall(ratioCheck, itemHeight);
+// if (badgeSmallSwitch) {
+//   htmlBadgeDiv.classList.add("fbc-badge-small");
+// }
+
 function addFacebookBadge (target, badgeClassUId) {
   // Detect if target is visible
 
@@ -174,6 +188,8 @@ function positionPrompt ( target ) {
     targetPrompt.classList.remove("fbc-badge-prompt-align-right");
   }
 }
+
+
 
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
   // Check for Badge element and select it
@@ -268,27 +284,7 @@ function detectFacebookOnPage () {
         addFacebookBadge(item, itemUIDClassTarget);
         item.classList.add("fbc-badged");
         item.classList.add(itemUIDClassName);
-        // console.log(...facebookDetectedElementsArr);
-
-        // let badge = document.querySelector(itemUIDClassTarget);
-        //
-
-        // item.addEventListener("click", (e) => {
-        //   e.preventDefault();
-        //   console.log("item-click");
-        //   // addToolTipBlock(item);
-        //   // browser.runtime.sendMessage("add-to-facebook-container");
-        // });
-        //
-        // item.addEventListener("mouseover", (e) => {
-        //   e.preventDefault();
-        //   console.log("item-mouseover");
-        //   // addToolTipBlock(itemUIDClassName);
-        //   // browser.runtime.sendMessage("add-to-facebook-container");
-        // });
       }
-
-      // add click handler to addDomainToFBC and refresh
     }
   }
 }
@@ -314,12 +310,6 @@ let ticking = false;
 function doneScrolling () {
   for (let item of facebookDetectedElementsArr) {
     positionFacebookBadge(item);
-    // console.log("scrollCheckInit");
-    // let badgeClassUId = "js-" + item;
-    // htmlBadgeDiv = document.querySelector("." + badgeClassUId);
-    // if ( htmlBadgeDiv.classList.contains("fbc-badge-fixed") ) {
-    //   positionFacebookBadge(item);
-    // }
   }
 }
 
