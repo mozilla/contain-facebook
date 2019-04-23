@@ -33,8 +33,6 @@ function itemWidthCheck (target) {
   return iconClassArr;
 }
 
-// let htmlBadgeDiv;
-
 function isFixed (elem) {
   do {
     if (getComputedStyle(elem).position == "fixed") return true;
@@ -52,7 +50,7 @@ function createBadgeFragment () {
   const htmlBadgeFragment = document.createDocumentFragment();
 
   for (let className of fragmentClasses) {
-    let div = document.createElement("div");
+    const div = document.createElement("div");
     div.className = className;
     htmlBadgeFragment.appendChild(div);
   }
@@ -69,7 +67,7 @@ function createBadgeFragment () {
   htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
 
   for (let promptParagraphString of htmlBadgeFragmentPromptParagraphStrings) {
-    let paragraph = document.createElement("p");
+    const paragraph = document.createElement("p");
     paragraph.appendChild(document.createTextNode(promptParagraphString));
     htmlBadgeFragmentPromptContents.appendChild(paragraph);
   }
@@ -95,8 +93,8 @@ function createBadgeFragment () {
   htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
   for (let buttonString of htmlBadgeFragmentPromptButtonStrings) {
 
-    let button = document.createElement("button");
-    let currentIndex = htmlBadgeFragmentPromptButtonStrings.indexOf(buttonString);
+    const button = document.createElement("button");
+    const currentIndex = htmlBadgeFragmentPromptButtonStrings.indexOf(buttonString);
     button.className = "fbc-badge-prompt-button-" + currentIndex;
     button.appendChild(document.createTextNode(buttonString));
     htmlBadgeFragmentPromptButtonDiv.appendChild(button);
@@ -183,6 +181,14 @@ function isHidden(target) {
   return (target.offsetParent === null);
 }
 
+function elementSizeOffsetXY(smallSwitch) {
+  // [X, Y]
+  if (smallSwitch) {
+    return [12, 5];
+  }
+  return [20, 4];
+}
+
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
   // Check for Badge element and select it
   if (!badgeClassUId) {
@@ -205,21 +211,15 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
     htmlBadgeDiv.classList.remove("fbc-badge-disabled");
   }
 
-  // Set offset size based on large/small badge
-  let elementSizeOffsetX = 20;
-  let elementSizeOffsetY = 4;
-
   if (typeof smallSwitch === "undefined") {
     if (htmlBadgeDiv.classList.contains("fbc-badge-small")) {
       smallSwitch = true;
     }
   }
 
-  if (smallSwitch) {
-    elementSizeOffsetX = 12;
-    elementSizeOffsetY = 5;
-  }
-
+  // Set offset size based on large/small badge
+  const [elementSizeOffsetX, elementSizeOffsetY] = elementSizeOffsetXY(smallSwitch);
+  
   // Define target element width
   if (!targetWidth) {
     targetWidth = parseInt(target.offsetWidth, 10);
@@ -236,7 +236,7 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
     htmlBadgeDiv.classList.add("fbc-badge-fixed");
     offsetPosX = elemRect.left;
     offsetPosY = elemRect.top;
-  } else {
+  } else if ( !isFixed(target) && htmlBadgeDiv.classList.contains("fbc-badge-fixed") ) {
     htmlBadgeDiv.classList.remove("fbc-badge-fixed");
   }
 
