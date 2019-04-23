@@ -189,6 +189,31 @@ function elementSizeOffsetXY(smallSwitch) {
   return [20, 4];
 }
 
+function getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv) {
+  if ( !isFixed(target) && htmlBadgeDiv.classList.contains("fbc-badge-fixed") ) {
+    htmlBadgeDiv.classList.remove("fbc-badge-fixed");
+  } else if ( isFixed(target) ) {
+    htmlBadgeDiv.classList.add("fbc-badge-fixed");
+    return {offsetPosX: elemRect.left, offsetPosY: elemRect.top};
+  } else {
+    return {offsetPosX: elemRect.left - bodyRect.left, offsetPosY: elemRect.top - bodyRect.top};
+  }
+}
+
+function calcZindex(target) {
+  const targetParents = [];
+
+  while (target) {
+    targetParents.unshift(target);
+    target = target.parentNode;
+    const parentZindex = window.getComputedStyle(target).getPropertyValue("z-index");
+    if ( parentZindex !== "auto" ) {
+      return parseInt(parentZindex, 10) + 1;
+    }
+  }
+  return 0;
+}
+
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
   // Check for Badge element and select it
   if (!badgeClassUId) {
@@ -227,21 +252,18 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   const bodyRect = document.body.getBoundingClientRect();
   const elemRect = target.getBoundingClientRect();
 
-  let offsetPosX = elemRect.left - bodyRect.left;
-  let offsetPosY = elemRect.top - bodyRect.top;
-
-  if (isFixed(target)) {
-    htmlBadgeDiv.classList.add("fbc-badge-fixed");
-    offsetPosX = elemRect.left;
-    offsetPosY = elemRect.top;
-  } else if ( !isFixed(target) && htmlBadgeDiv.classList.contains("fbc-badge-fixed") ) {
-    htmlBadgeDiv.classList.remove("fbc-badge-fixed");
-  }
+  // Determine if target element is fixed, will resets or applies class and set appor offset.
+  const {offsetPosX, offsetPosY} = getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv);
 
   const htmlBadgeDivPosX = (offsetPosX + targetWidth) - elementSizeOffsetX;
   const htmlBadgeDivPosY = offsetPosY - elementSizeOffsetY;
 
+  // TODO: Add Zindex Targeting
+  // const targetZindex = calcZindex(target);
+  // console.log(targetZindex);
+
   // Set badge position based on target coordinates/size
+  // htmlBadgeDiv.style.zIndex = targetZindex;
   htmlBadgeDiv.style.left = htmlBadgeDivPosX + "px";
   htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
 }

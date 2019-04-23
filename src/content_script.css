@@ -177,6 +177,13 @@
 
 .fbc-badge-prompt input {
 	margin: 0;
+	appearance: checkbox;
+	-moz-appearance: checkbox;
+	cursor: pointer;
+	width: 13px;
+	height: 13px;
+	line-height: 14px;
+	display: inline-block;
 }
 
 .fbc-badge-prompt label {
@@ -185,6 +192,7 @@
 	color: #0C0C0D;
 	margin-left: 5px;
 	font-weight: normal;
+	cursor: pointer;
 }
 
 .fbc-badge-prompt-buttons {
