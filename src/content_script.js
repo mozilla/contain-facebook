@@ -215,10 +215,6 @@ function positionPrompt ( target ) {
   }
 }
 
-function isHidden(target) {
-  return (target.offsetParent === null);
-}
-
 function elementSizeOffsetXY(smallSwitch) {
   // [X, Y]
   if (smallSwitch) {
@@ -236,6 +232,34 @@ function getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv) {
   } else {
     return {offsetPosX: elemRect.left - bodyRect.left, offsetPosY: elemRect.top - bodyRect.top};
   }
+}
+
+function checkVisibilityAndAppleClass(target, htmlBadgeDiv) {
+
+  // console.log("checkVisibilityAndAppleClass");
+
+  const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
+  const targetIsNull = (target === null);
+
+  if ( targetIsNull && !htmlBadgeDivHasDisabledClass ) {
+    // Element no longer exists and its badge needs to be hidden
+    htmlBadgeDiv.classList.add("fbc-badge-disabled");
+    return;
+  }
+
+  const parentIsHidden = (target.offsetParent === null);
+
+  // console.log([parentIsHidden, targetIsNull]);
+
+  if ( parentIsHidden && !htmlBadgeDivHasDisabledClass ) {
+    // Parent isnt visible and its badge needs to be hidden
+    htmlBadgeDiv.classList.add("fbc-badge-disabled");
+  }
+
+  if ( !parentIsHidden && !targetIsNull && htmlBadgeDivHasDisabledClass ||  !parentIsHidden && htmlBadgeDivHasDisabledClass ) {
+    htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+  }
+
 }
 
 function calcZindex(target) {
@@ -265,12 +289,7 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
     target = document.querySelector("." + target);
   }
 
-  // TODO: Check if target is null: target === null ||
-  if ( isHidden(target) && !htmlBadgeDiv.classList.contains("fbc-badge-disabled") ) {
-    htmlBadgeDiv.classList.add("fbc-badge-disabled");
-  } else if ( !isHidden(target) && htmlBadgeDiv.classList.contains("fbc-badge-disabled") ) {
-    htmlBadgeDiv.classList.remove("fbc-badge-disabled");
-  }
+  checkVisibilityAndAppleClass(target, htmlBadgeDiv);
 
   if (typeof smallSwitch === "undefined") {
     if (htmlBadgeDiv.classList.contains("fbc-badge-small")) {
@@ -338,6 +357,7 @@ window.addEventListener("resize", ()=> {
 let ticking = false;
 
 window.addEventListener("scroll", ()=> {
+  console.log("scrolling");
   if (!ticking) {
     window.requestAnimationFrame(()=> {
       screenUpdate();
@@ -350,7 +370,7 @@ window.addEventListener("scroll", ()=> {
 
 // Fires on screen Resize or Scroll
 function screenUpdate () {
-  // console.log("screenUpdate");
+  console.log("screenUpdate");
   for (let item of facebookDetectedElementsArr) {
     positionFacebookBadge(item);
   }
