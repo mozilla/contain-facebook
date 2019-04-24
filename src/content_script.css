@@ -49,13 +49,12 @@
 	position: absolute;
 	z-index: 9999;
 	transition: opacity 0.2s ease-out;
-	--fontFamily: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	--transition: all .15s cubic-bezier(.07,.95,0,1);
 	--blue60: #0060df;
 	--blue70: #003eaa;
 	--black: #000000;
 	--white: #ffffff;
-	font-family: var(--fontFamily);
 }
 
 .fbc-badge.fbc-badge-disabled {
@@ -140,8 +139,9 @@
 }
 
 .fbc-badge-prompt h1 {
+	all: unset;
 	letter-spacing: -0.1px;
-	font-family: var(--fontFamily);
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	font-size: 13px;
 	font-weight: 700;
 	height: 40px;
@@ -164,6 +164,7 @@
 
 .fbc-badge-prompt p {
 	all: unset;
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	display: block;
 	padding: 0 0 20px;
 	margin: 0;
@@ -197,6 +198,7 @@
 
 .fbc-badge-prompt label {
 	all: unset;
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	font-size: 12px;
 	line-height: 16px;
 	color: #0C0C0D;
@@ -215,6 +217,7 @@
 }
 
 .fbc-badge-prompt-buttons button {
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	all: unset;
 	display: inline-block;
 	height: 40px;
@@ -265,5 +268,5 @@
 	line-height: 17px;
 	border: 1px solid #BEBEBF;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
