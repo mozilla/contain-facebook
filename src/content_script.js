@@ -370,8 +370,8 @@ window.addEventListener("click", function(e){
       closePrompt();
     }
   } else {
-    // detectFacebookOnPage();
-    // screenUpdate();
+    detectFacebookOnPage();
+    screenUpdate();
   }
 });
 
