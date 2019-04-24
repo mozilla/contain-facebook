@@ -45,6 +45,7 @@
 /* Overlay */
 
 .fbc-badge {
+	all: initial;
 	position: absolute;
 	z-index: 9999;
 	transition: opacity 0.2s ease-out;
@@ -53,6 +54,7 @@
 	--blue60: #0060df;
 	--blue70: #003eaa;
 	--black: #000000;
+	--white: #ffffff;
 	font-family: var(--fontFamily);
 }
 
@@ -123,7 +125,7 @@
 	height: 0;
 	border-style: solid;
 	border-width: 10px 10px 10px 0;
-	border-color: transparent #ffffff transparent;
+	border-color: transparent var(--white) transparent;
 }
 
 .fbc-badge-prompt.fbc-badge-prompt-align-right {
@@ -157,14 +159,17 @@
 
 .fbc-badge-prompt-contents {
 	padding: 20px;
-	background: white;
+	background: var(--white);
 }
 
 .fbc-badge-prompt p {
+	all: unset;
+	display: block;
 	padding: 0 0 20px;
 	margin: 0;
 	font-size: 13px;
 	line-height: 17px;
+	color: var(--black);
 }
 
 .fbc-badge-prompt p:first-of-type {
@@ -172,11 +177,15 @@
 }
 
 .fbc-badge-prompt form {
-	display: block;
+	all: unset;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .fbc-badge-prompt input {
-	margin: 0;
+	all: unset;
+	margin: 0 5px 0 0;
 	appearance: checkbox;
 	-moz-appearance: checkbox;
 	cursor: pointer;
@@ -187,12 +196,14 @@
 }
 
 .fbc-badge-prompt label {
+	all: unset;
 	font-size: 12px;
 	line-height: 16px;
 	color: #0C0C0D;
-	margin-left: 5px;
+	margin: 0;
 	font-weight: normal;
 	cursor: pointer;
+	line-height: 20px;
 }
 
 .fbc-badge-prompt-buttons {
@@ -204,6 +215,8 @@
 }
 
 .fbc-badge-prompt-buttons button {
+	all: unset;
+	display: inline-block;
 	height: 40px;
 	width: 50%;
 	appearance: none;
@@ -214,25 +227,25 @@
 	background-color: #F2F2F2;
 	border-top: 1px solid #E9E9E9;
 	transition: var(--transition);
-	padding: 0;
-	margin: 0;
+	color: var(--black);
+	cursor: pointer;
 	text-align: center;
-	border-radius: 0;
-	font-weight: normal;
 }
 
 .fbc-badge-prompt-buttons button:hover {
 	background: #E9E9E9;
+	color: var(--black);
 }
 
 .fbc-badge-prompt-buttons button:last-child {
 	border-top: 1px solid var(--blue70);
 	background: var(--blue60);
-	color: #FFFFFF;
+	color: var(--white);
 }
 
 .fbc-badge-prompt-buttons button:last-child:hover {
 	background: var(--blue70);
+	color: var(--white);
 }
 
 
@@ -242,7 +255,7 @@
 	padding: 5px 10px 10px;
 	width: 250px;
 	max-width: 250px;
-	background: #FFF;
+	background: var(--white);
 	z-index: 9999;
 	position: absolute;
 	left: calc( 100% + 0.5em);
