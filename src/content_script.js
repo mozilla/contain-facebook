@@ -19,7 +19,8 @@ const PATTERN_DETECTION_SELECTORS = [
   "[id*='facebook_connect_button']", // Quora
   "[aria-label*='Facebook']",
   "[aria-label*='share on facebook']", // MSN
-  "[data-destination*='facebook']"
+  "[data-destination*='facebook']",
+  "[data-partner*='facebook']" // AliExpress
 ];
 
 function detectFacebookLoginButton () {
