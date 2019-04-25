@@ -329,6 +329,9 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
 const facebookDetectedElementsArr = [];
 
 function detectFacebookOnPage () {
+  if (!checkForTrackers) {
+    return;
+  }
   for (let querySelector of PATTERN_DETECTION_SELECTORS) {
     for (let item of document.querySelectorAll(querySelector)) {
       // overlay the FBC icon badge on the item
@@ -357,7 +360,7 @@ window.addEventListener("resize", ()=> {
 let ticking = false;
 
 window.addEventListener("scroll", ()=> {
-  console.log("scrolling");
+  // console.log("scrolling");
   if (!ticking) {
     window.requestAnimationFrame(()=> {
       screenUpdate();
@@ -370,9 +373,10 @@ window.addEventListener("scroll", ()=> {
 
 // Fires on screen Resize or Scroll
 function screenUpdate () {
-  console.log("screenUpdate");
-  for (let item of facebookDetectedElementsArr) {
-    positionFacebookBadge(item);
+  if (checkForTrackers) {
+    for (let item of facebookDetectedElementsArr) {
+      positionFacebookBadge(item);
+    }
   }
 }
 
@@ -396,15 +400,23 @@ window.addEventListener("click", function(e){
   }
 });
 
+let checkForTrackers = true;
 
 browser.runtime.onMessage.addListener(message => {
-  console.log("message from background script:", message);
-  setTimeout(() => {
-    detectFacebookOnPage();
-    // detectFacebookLoginButton();
-  }, 10);
+  if ( message["msg"] == "allowe-facebook-subresources" || message["msg"] == "facebook-domain" ) {
+    checkForTrackers = false;
+  } else {
+    checkForTrackers = true;
+    setTimeout(() => {
+      detectFacebookOnPage();
+    }, 10);
+  }
+
   return Promise.resolve({response: "content_script onMessage listener"});
 });
 
-setTimeout(detectFacebookOnPage, 150);
-setTimeout(detectFacebookLoginButton, 150);
+setTimeout(()=> {
+  if (checkForTrackers){
+    detectFacebookOnPage();
+  }
+}, 200);
