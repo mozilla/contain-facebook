@@ -3,14 +3,14 @@ const FACEBOOK_CONTAINER_NAME = "Facebook";
 const FACEBOOK_CONTAINER_COLOR = "blue";
 const FACEBOOK_CONTAINER_ICON = "briefcase";
 const FACEBOOK_DOMAINS = [
-  "facebook.com", "www.facebook.com", "facebook.net", "fb.com", 
+  "facebook.com", "www.facebook.com", "facebook.net", "fb.com",
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
 
-  "instagram.com", 
+  "instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
 
-  "messenger.com", "m.me", "messengerdevelopers.com", 
+  "messenger.com", "m.me", "messengerdevelopers.com",
 
   "atdmt.com",
 
@@ -419,7 +419,7 @@ async function updateBrowserActionIcon (tab) {
       });
       browser.browserAction.setBadgeText({tabId: tab.id, text: " "});
     }
-  } else { 
+  } else {
     browser.storage.local.set({"CURRENT_PANEL": "no-trackers"});
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     browser.browserAction.setBadgeText({tabId: tab.id, text: ""});
@@ -458,10 +458,6 @@ async function containFacebook (request) {
 // Lots of this is borrowed from old blok code:
 // https://github.com/mozilla/blok/blob/master/src/js/background.js
 async function blockFacebookSubResources (requestDetails) {
-  if (!isFacebookURL(requestDetails.url)) {
-    return {};
-  }
-
   if (requestDetails.type === "main_frame") {
     return {};
   }
@@ -470,23 +466,42 @@ async function blockFacebookSubResources (requestDetails) {
     return {};
   }
 
-  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(requestDetails.originUrl);
+  const urlIsFacebook = isFacebookURL(requestDetails.url);
+  const originUrlIsFacebook = isFacebookURL(requestDetails.originUrl);
 
-  if (isFacebookURL(requestDetails.url) &&
-      !isFacebookURL(requestDetails.originUrl) &&
-      !hasBeenAddedToFacebookContainer
-  ) {
-    const message = {msg: "blocked-facebook-subresources"};
+  if (!urlIsFacebook) {
+    return {};
+  }
+
+  if (originUrlIsFacebook) {
+    const message = {msg: "facebook-domain"};
     // Send the message to the content_script
     browser.tabs.sendMessage(requestDetails.tabId, message);
-
-    // Set browser local storage for the panel UI
-    // TODO MAYBE: Icon may need to change here?
-    browser.storage.local.set({"CURRENT_PANEL": "trackers-detected"});
-    // browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
-
-    return {cancel: true};
+    return {};
   }
+
+  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(requestDetails.originUrl);
+
+  if ( urlIsFacebook && !originUrlIsFacebook ) {
+    if (!hasBeenAddedToFacebookContainer ) {
+      const message = {msg: "blocked-facebook-subresources"};
+      // Send the message to the content_script
+      browser.tabs.sendMessage(requestDetails.tabId, message);
+
+      // Set browser local storage for the panel UI
+      // TODO MAYBE: Icon may need to change here?
+      browser.storage.local.set({"CURRENT_PANEL": "trackers-detected"});
+      // browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
+
+      return {cancel: true};
+    } else {
+      const message = {msg: "allowed-facebook-subresources"};
+      // Send the message to the content_script
+      browser.tabs.sendMessage(requestDetails.tabId, message);
+      return {};
+    }
+  }
+
   // default to non-blocking
   return {};
 }
