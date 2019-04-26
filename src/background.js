@@ -500,6 +500,10 @@ async function blockFacebookSubResources (requestDetails) {
       browser.tabs.sendMessage(requestDetails.tabId, message);
       return {};
     }
+  } else {
+    const message = {msg: "other-domain"};
+    // Send the message to the content_script
+    browser.tabs.sendMessage(requestDetails.tabId, message);
   }
 
   // default to non-blocking

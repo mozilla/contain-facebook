@@ -47,7 +47,7 @@
 .fbc-badge {
 	all: initial;
 	position: absolute;
-	z-index: 9999;
+	z-index: 100;
 	transition: opacity 0.2s ease-out;
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	--transition: all .15s cubic-bezier(.07,.95,0,1);
