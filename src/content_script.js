@@ -176,20 +176,6 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
   return false;
 }
 
-// function clickActiveBadge(htmlBadgeFragmentFenceDiv, badgeClassUId){
-//   console.log("clickActiveBadge: ", htmlBadgeFragmentFenceDiv);
-//   console.log("badgeClassUId: ", badgeClassUId);
-//   console.log( htmlBadgeFragmentFenceDiv.parentElement.classList );
-//   htmlBadgeFragmentFenceDiv.parentElement.classList.add("active");
-//   console.log( htmlBadgeFragmentFenceDiv.parentElement.classList );
-//   // htmlBadgeFragmentFenceDiv.parentElement.classList.toggle("active");
-//   document.body.classList.toggle("js-fbc-prompt-active");
-//   positionPrompt( badgeClassUId );
-//   // docuemtn.querySelector(".")
-//   // htmlBadgeFragmentFenceDiv.click();
-// }
-//
-
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
 
@@ -219,22 +205,17 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
 
   // Show/hide prompt if login element
   if (socialAction === "login"){
-
     target.addEventListener("click", (e) => {
-      console.log(`allowClickSwitch: `, allowClickSwitch);
       if (allowClickSwitch) {
+        // Button disabled. Either will trigger new HTTP request or page will refresh.
         setTimeout(()=>{
-          console.log("Nothing happened!");
-        }, 250)
+          location.reload(true);
+        }, 250);
         return;
       } else {
+        // Click badge, button disabled
         e.preventDefault();
         htmlBadgeFragmentFenceDiv.click();
-        // simulatedClickToggle = true;
-        // console.log(htmlBadgeFragmentFenceDiv.parentElement);
-        // htmlBadgeFragmentFenceDiv.parentElement.classList.toggle("active");
-        // positionPrompt( badgeClassUId );
-        // document.body.classList.toggle("js-fbc-prompt-active");
       }
     });
 
@@ -243,9 +224,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       e.target.parentElement.classList.toggle("active");
       positionPrompt( badgeClassUId );
       target.classList.toggle("js-fbc-prompt-active");
-      console.log( "target.classList: ", target.classList );
       document.body.classList.toggle("js-fbc-prompt-active");
-      // console.log("241:htmlBadgeFragmentFenceDiv-click---simulatedClickToggle: ", simulatedClickToggle);
     });
 
     // Add to Container "Allow"
@@ -274,15 +253,10 @@ function findActivePrompt() {
 }
 
 function closePrompt() {
-  // console.log("closePrompt()---simulatedClickToggle: ", simulatedClickToggle);
-  // if (!simulatedClickToggle) {
-    const activePrompt = findActivePrompt();
-    activePrompt.classList.remove("active");
-    document.body.classList.remove("js-fbc-prompt-active");
-    document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
-  // } else {
-  //   simulatedClickToggle = false;
-  // }
+  const activePrompt = findActivePrompt();
+  activePrompt.classList.remove("active");
+  document.body.classList.remove("js-fbc-prompt-active");
+  document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
 }
 
 function positionPrompt ( target ) {
@@ -316,9 +290,6 @@ function getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv) {
 }
 
 function checkVisibilityAndAppleClass(target, htmlBadgeDiv) {
-
-  // console.log("checkVisibilityAndAppleClass");
-
   const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
   const targetIsNull = (target === null);
 
@@ -329,8 +300,6 @@ function checkVisibilityAndAppleClass(target, htmlBadgeDiv) {
   }
 
   const parentIsHidden = (target.offsetParent === null);
-
-  // console.log([parentIsHidden, targetIsNull]);
 
   if ( parentIsHidden && !htmlBadgeDivHasDisabledClass ) {
     // Parent isnt visible and its badge needs to be hidden
@@ -398,7 +367,6 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
 
   // TODO: Add Zindex Targeting
   // const targetZindex = calcZindex(target);
-  // console.log(targetZindex);
 
   // Set badge position based on target coordinates/size
   // htmlBadgeDiv.style.zIndex = targetZindex;
@@ -456,7 +424,6 @@ window.addEventListener("resize", ()=> {
 let ticking = false;
 
 window.addEventListener("scroll", ()=> {
-  // console.log("scrolling");
   if (!ticking) {
     window.requestAnimationFrame(()=> {
       screenUpdate();
@@ -489,11 +456,7 @@ window.addEventListener("click", function(e){
   if ( document.body.classList.contains("js-fbc-prompt-active") ) {
     const activePrompt = findActivePrompt();
     const activePromptTarget = document.querySelector(".fbc-has-badge.js-fbc-prompt-active");
-    // console.log( "activePrompt: ", activePrompt.contains(e.target) );
-    // console.log( "activePromptTarget: ", activePromptTarget.contains(e.target) );
-
     if ( !activePrompt.contains(e.target) && !activePromptTarget.contains(e.target) ) {
-      // simulatedClickToggle = false;
       closePrompt();
     }
   } else {
@@ -519,6 +482,7 @@ browser.runtime.onMessage.addListener(message => {
   return Promise.resolve({response: "content_script onMessage listener"});
 });
 
+// For non-triggered pages
 setTimeout(()=> {
   if (checkForTrackers){
     detectFacebookOnPage();
