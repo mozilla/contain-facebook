@@ -1,7 +1,7 @@
 // Param values from https://developer.mozilla.org/Add-ons/WebExtensions/API/contextualIdentities/create
 const FACEBOOK_CONTAINER_NAME = "Facebook";
-const FACEBOOK_CONTAINER_COLOR = "blue";
-const FACEBOOK_CONTAINER_ICON = "briefcase";
+const FACEBOOK_CONTAINER_COLOR = "toolbar";
+const FACEBOOK_CONTAINER_ICON = "fence";
 const FACEBOOK_DOMAINS = [
   "facebook.com", "www.facebook.com", "facebook.net", "fb.com", 
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
@@ -201,7 +201,17 @@ async function setupContainer () {
   // Use existing Facebook container, or create one
   const contexts = await browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME});
   if (contexts.length > 0) {
-    facebookCookieStoreId = contexts[0].cookieStoreId;
+    const facebookContext = contexts[0];
+    facebookCookieStoreId = facebookContext.cookieStoreId;
+    // Make existing Facebook container the "fence" icon if needed
+    if (facebookContext.color !== FACEBOOK_CONTAINER_COLOR ||
+        facebookContext.icon !== FACEBOOK_CONTAINER_ICON
+    ) {
+      await browser.contextualIdentities.update(
+        facebookCookieStoreId,
+        { color: FACEBOOK_CONTAINER_COLOR, icon: FACEBOOK_CONTAINER_ICON }
+      );
+    }
   } else {
     const context = await browser.contextualIdentities.create({
       name: FACEBOOK_CONTAINER_NAME,
