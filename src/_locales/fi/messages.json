@@ -27,6 +27,10 @@
       }
     }
   }, 
+  "notOnFacebookText": {
+    "message": "Tämä sivusto on Facebook-eristystilan ulkopuolella. Sen vuoksi Facebookin on hankalampaa seurata sinua verkossa.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "onUnknownSiteHeader": {
     "message": "Tämä sivusto ei ole Facebook-eristystilassa.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
