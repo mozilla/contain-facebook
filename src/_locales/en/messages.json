@@ -141,13 +141,13 @@
 	},
 	"trackers-detected-fence-alt": {
 		"message": "Facebook Container fence with shield.",
-		"description": "This is alternative text."
+		"description": "This is alternative text describing the container fence icon."
 	},
-	"inPageUI-tooltip-share-button": {
-		"message": "Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.",
+	"inPageUI-tooltip-button-share": {
+		"message": "Facebook Container has disabled this button and blocked Facebook from tracking your visit to this page.",
 		"description": ""
 	},
-	"inPageUI-tooltip-login-button": {
+	"inPageUI-tooltip-button-login": {
 		"message": "Facebook Container has blocked Facebook trackers. If you use Log in with Facebook on this site, Facebook will be able to track you.",
 		"description": ""
 	},
