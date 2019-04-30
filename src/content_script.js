@@ -69,8 +69,7 @@ function isFixed (elem) {
 }
 
 const fragmentClasses = ["fbc-badge-fence", "fbc-badge-tooltip", "fbc-badge-prompt"];
-const htmlBadgeFragmentPromptParagraphStrings = ["Allow Facebook to track you here?", "If you want to use log in with Facebook then Facebook will then be able to track your activity on this site. This can help them build a fuller picture of your online life."];
-const htmlBadgeFragmentPromptCheckboxLabelString = "Don't show me this again";
+const htmlBadgeFragmentPromptParagraphStrings = [ browser.i18n.getMessage("inPageUI-tooltip-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-prompt-p2") ];
 const htmlBadgeFragmentPromptButtonStrings = ["btn-cancel", "btn-allow"];
 
 function getTooltipFragmentStrings (socialAction) {
