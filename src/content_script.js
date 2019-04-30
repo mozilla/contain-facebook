@@ -201,7 +201,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       e.preventDefault();
       e.target.parentElement.classList.toggle("active");
-      positionPrompt( badgeClassUId );
+      positionPrompt( htmlBadgeDiv );
       target.classList.toggle("js-fbc-prompt-active");
       document.body.classList.toggle("js-fbc-prompt-active");
     });
@@ -238,14 +238,13 @@ function closePrompt() {
   document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
 }
 
-function positionPrompt ( target ) {
-  target = document.querySelector("." + target);
-  const targetPrompt = target.querySelector(".fbc-badge-prompt");
-  const elemRect = target.getBoundingClientRect();
+function positionPrompt ( activeBadge ) {
+  const activeBadgePrompt = activeBadge.querySelector(".fbc-badge-prompt");
+  const elemRect = activeBadge.getBoundingClientRect();
   if ( (window.innerWidth - elemRect.left) < 350  ) {
-    targetPrompt.classList.add("fbc-badge-prompt-align-right");
+    activeBadgePrompt.classList.add("fbc-badge-prompt-align-right");
   } else {
-    targetPrompt.classList.remove("fbc-badge-prompt-align-right");
+    activeBadgePrompt.classList.remove("fbc-badge-prompt-align-right");
   }
 }
 
