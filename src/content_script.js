@@ -18,6 +18,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[id*='facebook_connect_button']", // Quora
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
+  ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
   "[action*='oauth_connect?from=facebook_login&service=facebook']" // Airbnb
 ];
 
