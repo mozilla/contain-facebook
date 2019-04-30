@@ -1,7 +1,9 @@
-// Param values from https://developer.mozilla.org/Add-ons/WebExtensions/API/contextualIdentities/create
-const FACEBOOK_CONTAINER_NAME = "Facebook";
-const FACEBOOK_CONTAINER_COLOR = "toolbar";
-const FACEBOOK_CONTAINER_ICON = "fence";
+const FACEBOOK_CONTAINER_DETAILS = {
+  name: "Facebook",
+  color: "toolbar",
+  icon: "fence"
+};
+
 const FACEBOOK_DOMAINS = [
   "facebook.com", "www.facebook.com", "facebook.net", "fb.com", 
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
@@ -199,25 +201,28 @@ async function clearFacebookCookies () {
 
 async function setupContainer () {
   // Use existing Facebook container, or create one
-  const contexts = await browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME});
+
+  const info = await browser.runtime.getBrowserInfo();
+  if (parseInt(info.version) < 67) {
+    FACEBOOK_CONTAINER_DETAILS.color = "blue";
+    FACEBOOK_CONTAINER_DETAILS.icon = "briefcase";
+  }
+
+  const contexts = await browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_DETAILS.name});
   if (contexts.length > 0) {
     const facebookContext = contexts[0];
     facebookCookieStoreId = facebookContext.cookieStoreId;
     // Make existing Facebook container the "fence" icon if needed
-    if (facebookContext.color !== FACEBOOK_CONTAINER_COLOR ||
-        facebookContext.icon !== FACEBOOK_CONTAINER_ICON
+    if (facebookContext.color !== FACEBOOK_CONTAINER_DETAILS.color ||
+        facebookContext.icon !== FACEBOOK_CONTAINER_DETAILS.icon
     ) {
       await browser.contextualIdentities.update(
         facebookCookieStoreId,
-        { color: FACEBOOK_CONTAINER_COLOR, icon: FACEBOOK_CONTAINER_ICON }
+        { color: FACEBOOK_CONTAINER_DETAILS.color, icon: FACEBOOK_CONTAINER_DETAILS.icon }
       );
     }
   } else {
-    const context = await browser.contextualIdentities.create({
-      name: FACEBOOK_CONTAINER_NAME,
-      color: FACEBOOK_CONTAINER_COLOR,
-      icon: FACEBOOK_CONTAINER_ICON
-    });
+    const context = await browser.contextualIdentities.create(FACEBOOK_CONTAINER_DETAILS);
     facebookCookieStoreId = context.cookieStoreId;
   }
 }
