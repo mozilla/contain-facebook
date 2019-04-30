@@ -23,8 +23,11 @@ const MAC_ADDON_ID = "@testpilot-containers";
 let macAddonEnabled = false;
 let facebookCookieStoreId = null;
 
+// TODO: refactor canceledRequests and tabsWaitingToLoad into tabStates
 const canceledRequests = {};
 const tabsWaitingToLoad = {};
+const tabStates = {};
+
 const facebookHostREs = [];
 
 async function isMACAddonEnabled () {
@@ -406,9 +409,10 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.disable();
     return;
   }
-  // PANEL IDENTIFIERS ARE : "trackers-detected", "no-trackers", and "on-facebook"
 
   if (isFacebookURL(url)) {
+    // TODO: change panel logic from browser.storage to browser.runtime.onMessage
+    // so the panel.js can "ask" background.js which panel it should show
     browser.storage.local.set({"CURRENT_PANEL": "on-facebook"});
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     const fbcStorage = await browser.storage.local.get();
@@ -419,8 +423,10 @@ async function updateBrowserActionIcon (tab) {
       });
       browser.browserAction.setBadgeText({tabId: tab.id, text: " "});
     }
-  } else {
-    browser.storage.local.set({"CURRENT_PANEL": "no-trackers"});
+  } else { 
+    const tabState = tabStates[tab.id];
+    const panelToShow = (tabState && tabState.trackersDetected) ? "trackers-detected" : "no-trackers";
+    browser.storage.local.set({"CURRENT_PANEL": panelToShow});
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     browser.browserAction.setBadgeText({tabId: tab.id, text: ""});
   }
@@ -488,11 +494,7 @@ async function blockFacebookSubResources (requestDetails) {
       // Send the message to the content_script
       browser.tabs.sendMessage(requestDetails.tabId, message);
 
-      // Set browser local storage for the panel UI
-      // TODO MAYBE: Icon may need to change here?
-      browser.storage.local.set({"CURRENT_PANEL": "trackers-detected"});
-      // browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
-
+      tabStates[requestDetails.tabId] = { trackersDetected: true };
       return {cancel: true};
     } else {
       const message = {msg: "allowed-facebook-subresources"};
@@ -500,13 +502,7 @@ async function blockFacebookSubResources (requestDetails) {
       browser.tabs.sendMessage(requestDetails.tabId, message);
       return {};
     }
-  } else {
-    const message = {msg: "other-domain"};
-    // Send the message to the content_script
-    browser.tabs.sendMessage(requestDetails.tabId, message);
   }
-
-  // default to non-blocking
   return {};
 }
 
@@ -527,6 +523,8 @@ async function blockFacebookSubResources (requestDetails) {
   clearFacebookCookies();
   generateFacebookHostREs();
 
+  // TODO: group the below addListener calls into functions.
+  // e.g., setupWebRequestListeners, setupRunTimeListeners, setupWindowAndTabListeners
   // Clean up canceled requests
   browser.webRequest.onCompleted.addListener((options) => {
     if (canceledRequests[options.tabId]) {
@@ -546,11 +544,11 @@ async function blockFacebookSubResources (requestDetails) {
   browser.webRequest.onBeforeRequest.addListener(blockFacebookSubResources, {urls: ["<all_urls>"]}, ["blocking"]);
 
   browser.runtime.onMessage.addListener( (message, {url}) => {
-    console.log(`received ${message} from script at url: ${url}`);
     addDomainToFacebookContainer(url);
   });
 
   browser.tabs.onUpdated.addListener(tabUpdateListener);
+  browser.tabs.onRemoved.addListener(tabId => delete tabStates[tabId] );
 
   browser.windows.onFocusChanged.addListener(windowFocusChangedListener);
 
