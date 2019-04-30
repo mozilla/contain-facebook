@@ -267,7 +267,7 @@ function getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv) {
   }
 }
 
-function checkVisibilityAndAppleClass(target, htmlBadgeDiv) {
+function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
   const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
   const targetIsNull = (target === null);
 
@@ -317,7 +317,7 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
     target = document.querySelector("." + target);
   }
 
-  checkVisibilityAndAppleClass(target, htmlBadgeDiv);
+  checkVisibilityAndApplyClass(target, htmlBadgeDiv);
 
   if (typeof smallSwitch === "undefined") {
     if (htmlBadgeDiv.classList.contains("fbc-badge-small")) {
