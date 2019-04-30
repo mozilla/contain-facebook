@@ -131,8 +131,7 @@ function createBadgeFragment (socialAction) {
 
     for (let buttonString of htmlBadgeFragmentPromptButtonStrings) {
       const button = document.createElement("button");
-      const currentIndex = htmlBadgeFragmentPromptButtonStrings.indexOf(buttonString);
-      button.className = "fbc-badge-prompt-button-" + currentIndex;
+      button.className = "fbc-badge-prompt-" + buttonString;
       button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
       htmlBadgeFragmentPromptButtonDiv.appendChild(button);
     }
@@ -161,8 +160,8 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
 
   const htmlBadgeDiv = createBadgeFragment(socialAction);
 
-  const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-button-0");
-  const htmlBadgeFragmentPromptButtonAllow = htmlBadgeDiv.querySelector(".fbc-badge-prompt-button-1");
+  const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel");
+  const htmlBadgeFragmentPromptButtonAllow = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-allow");
   const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".fbc-badge-fence");
 
   htmlBadgeDiv.className = "fbc-badge " + badgeClassUId;
