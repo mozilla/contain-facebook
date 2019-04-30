@@ -1,28 +1,9 @@
 "use strict";
 
 // Use the following patterns to check for on-screen Facebook elements
-
-const PATTERN_DETECTION_SELECTORS = [
-  "[title*='Facebook']",
-  "[title='Log in with Facebook']",
-  "[class*='fb-login']",
-  "[class*='FacebookConnectButton']",
-  "[class*='signup-provider-facebook']", // Fandom
-  "[class*='facebook-connect-button']", // Twitch
-  "[href*='facebook.com/share']", // Imgur Login
-  "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
-  "[href*='signin/facebook']",
-  "[href*='facebook.com/dialog/share']",
-  "[href*='facebook.com/sharer']", // Buzzfeed
-  "[data-bfa-network*='facebook']",
-  "[data-oauthserver*='facebook']", // Stackoverflow
-  "[id*='facebook_connect_button']", // Quora
-  "[aria-label*='Facebook']",
-  "[aria-label*='share on facebook']", // MSN
-  "[data-destination*='facebook']",
-  "[data-partner*='facebook']", // AliExpress
-  "[action*='oauth_connect?from=facebook_login&service=facebook']" // Airbnb
-];
+// Unused Patterns from previous mixed set of selectors
+// "[title*='Facebook']",
+// "[aria-label*='Facebook']",
 
 const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[title='Log in with Facebook']",
