@@ -43,13 +43,28 @@
 }
 
 /* Overlay */
-.fbc-overlay {
-	position: relative;
+
+.fbc-badge {
+	all: initial;
+	position: absolute;
+	z-index: 100;
+	transition: opacity 0.2s ease-out;
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	--transition: all .15s cubic-bezier(.07,.95,0,1);
+	--blue60: #0060df;
+	--blue70: #003eaa;
+	--black: #000000;
+	--white: #ffffff;
 }
 
-.fbc-overlay::after {
-	content: "";
-	border: 1px solid white;
+.fbc-badge.fbc-badge-disabled {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.fbc-badge-fence {
+	display: block;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
 	background-position: center center;
 	background-size: 16px auto, 100%;
@@ -58,20 +73,200 @@
 	border-radius: 100%;
 	width: 28px;
 	height: 28px;
-	position: absolute;
 	padding: 0;
-	z-index: 9;
-	right: -4px;
-	top: -4px;
-	overflow: hidden;
-	transition: opacity 0.2s ease-out;
+	border: 1px solid white;
+	cursor: pointer;
 }
 
-.fbc-overlay.fbc-overlay-small::after {
+.fbc-badge.fbc-badge-small .fbc-badge-fence {
 	background-size: 7px auto, 100%;
 	background-image: url(/img/fence-small.svg), linear-gradient(-45deg, #6200A4, #D70022);
 	width: 17px;
 	height: 17px;
-	right: -5px;
-	top: -5px;
+}
+
+.fbc-badge.fbc-badge-fixed {
+	position: fixed;
+}
+
+.fbc-badge:hover .fbc-badge-tooltip {
+	display: block;
+}
+
+.fbc-badge.active:hover .fbc-badge-tooltip {
+	display: none;
+}
+
+.fbc-badge.active .fbc-badge-prompt {
+	display: block;
+}
+
+.fbc-badge-prompt {
+	display: none;
+	width: 345px;
+	position: absolute;
+	left: calc( 100% + 20px);
+	top: 50%;
+  transform: translateY(-50%);
+	color: var(--black);
+	box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2);
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 0 0 40px;
+}
+
+.fbc-badge-prompt:after {
+	content: " ";
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	margin-top: -10px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent var(--white) transparent;
+}
+
+.fbc-badge-prompt.fbc-badge-prompt-align-right {
+	left: auto;
+	right: calc( 100% + 20px);
+}
+
+.fbc-badge-prompt.fbc-badge-prompt-align-right:after {
+	left: auto;
+	right: -10px;
+	border-width: 10px 0 10px 10px;
+}
+
+.fbc-badge-prompt h1 {
+	all: unset;
+	letter-spacing: -0.1px;
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	font-size: 13px;
+	font-weight: 700;
+	height: 40px;
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-bottom: 1px solid #E9E9E9;
+	background: white;
+	color: var(--black);
+}
+
+.fbc-badge-prompt-contents {
+	padding: 20px;
+	background: var(--white);
+}
+
+.fbc-badge-prompt p {
+	all: unset;
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	display: block;
+	padding: 0 0 20px;
+	margin: 0;
+	font-size: 13px;
+	line-height: 17px;
+	color: var(--black);
+}
+
+.fbc-badge-prompt p:first-of-type {
+	font-weight: 600;
+}
+
+.fbc-badge-prompt form {
+	all: unset;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.fbc-badge-prompt input {
+	all: unset;
+	margin: 0 5px 0 0;
+	appearance: checkbox;
+	-moz-appearance: checkbox;
+	cursor: pointer;
+	width: 13px;
+	height: 13px;
+	line-height: 14px;
+	display: inline-block;
+}
+
+.fbc-badge-prompt label {
+	all: unset;
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	font-size: 12px;
+	line-height: 16px;
+	color: #0C0C0D;
+	margin: 0;
+	font-weight: normal;
+	cursor: pointer;
+	line-height: 20px;
+}
+
+.fbc-badge-prompt-buttons {
+	position: absolute;
+	bottom: 0.15px;
+	height: 40px;
+	width: 100%;
+	z-index: 0;
+}
+
+.fbc-badge-prompt-buttons button {
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	all: unset;
+	display: inline-block;
+	height: 40px;
+	width: 50%;
+	appearance: none;
+	border: 0;
+	letter-spacing: -0.1px;
+	font-size: 13px;
+	line-height: 17px;
+	background-color: #F2F2F2;
+	border-top: 1px solid #E9E9E9;
+	transition: var(--transition);
+	color: var(--black);
+	cursor: pointer;
+	text-align: center;
+}
+
+.fbc-badge-prompt-buttons button:hover {
+	background: #E9E9E9;
+	color: var(--black);
+}
+
+.fbc-badge-prompt-buttons button:last-child {
+	border-top: 1px solid var(--blue70);
+	background: var(--blue60);
+	color: var(--white);
+}
+
+.fbc-badge-prompt-buttons button:last-child:hover {
+	background: var(--blue70);
+	color: var(--white);
+}
+
+
+/* Tooltip */
+.fbc-badge-tooltip {
+	display: none;
+	padding: 5px 10px 10px;
+	width: 250px;
+	max-width: 250px;
+	background: var(--white);
+	z-index: 9999;
+	position: absolute;
+	left: calc( 100% + 0.5em);
+	top: 50%;
+	color: black;
+	font-size: 13px;
+	line-height: 17px;
+	border: 1px solid #BEBEBF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
