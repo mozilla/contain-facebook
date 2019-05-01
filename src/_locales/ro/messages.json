@@ -1,4 +1,8 @@
 {
+  "extensionDescription": {
+    "message": "Facebook Container îți izolează activitatea pe Facebook de restul activității web pentru a împiedica Facebook să te urmărească în afara site-ului Facebook prin intermediul cookie-urilor de la terți.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "onFacebookHeader": {
     "message": "$URL$ este în containerul Facebook.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -9,6 +13,10 @@
       }
     }
   }, 
+  "onFacebookText": {
+    "message": "Această pictogramă apare în bara de adrese când intri pe site-uri web precum Facebook.com, Instagram.com sau Messenger.com care sunt în Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ nu este în containerul Facebook.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -18,6 +26,10 @@
         "example": "www.google.com"
       }
     }
+  }, 
+  "notOnFacebookText": {
+    "message": "Acest site este în afara Facebook Container, ceea ce face mai dificil pentru Facebook să te urmărească pe web.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "onUnknownSiteHeader": {
     "message": "Acest site nu este în containerul Facebook.", 
