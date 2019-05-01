@@ -143,6 +143,12 @@
      "message": "Facebook Container fence with shield.",
      "description": "This is alternative text describing the container fence icon."
    },
+   "sites-added-subhead": {
+     "message": "Sites allowed in Facebook Container"
+   },
+   "sites-added-p1": {
+     "message": "Facebook Container puts Facebook-owned sites within the boundary. You can allow other sites into the boundary, but this will allow Facebook to track more of your web browsing."
+   },
    "inPageUI-tooltip-button-share": {
      "message": "Facebook Container has disabled this button and blocked Facebook from tracking your visit to this page.",
      "description": ""

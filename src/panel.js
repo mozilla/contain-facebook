@@ -65,7 +65,7 @@ const addGreyFacebookAndFence = () => {
 };
 
 
-const addLearnHowFBCWorksButton = (fragment) => {
+const addLearnHowFBCWorksButton = async (fragment) => {
   const button = document.createElement("button");
   button.classList.add("highlight-on-hover", "open-onboarding");
 
@@ -77,6 +77,22 @@ const addLearnHowFBCWorksButton = (fragment) => {
   const span = document.createElement("span");
   span["id"] = "how-fbc-works";
   setClassAndAppend(contentWrapper, span);
+
+  addSubhead(fragment, "sites-added");
+  addParagraph(fragment, "sites-added-p1");
+
+  // TODO: refactor to pull fbcStorage straight from browser.storage.local.get()
+  const sitesAdded = await browser.runtime.sendMessage("what-sites-are-added");
+
+  for (const site of sitesAdded) {
+    const siteSpan = document.createElement("span");
+    siteSpan.classList = "site-added";
+    siteSpan.dataset = {};
+    siteSpan.dataset.domain = site;
+    siteSpan.textContent = site;
+    setClassAndAppend(contentWrapper, siteSpan);
+  }
+
 };
 
 
@@ -104,6 +120,15 @@ const addOnboardingListeners = (res) => {
 };
 
 
+// attaches click listeners to all ".site-added" elements.
+const addDeleteSiteListeners = () => {
+  document.querySelectorAll(".site-added").forEach(btn => {
+    btn.addEventListener("click", async (e) => {
+      // TODO: refactor to remove the domain straight from browser.storage.local?
+      await browser.runtime.sendMessage({removeDomain: e.dataset.domain});
+    });
+  });
+};
 
 const addLearnMoreLink = (fragment) => {
   const link = document.createElement("a");
@@ -293,4 +318,5 @@ const buildOnboardingPanel = (panelId) => {
   getLocalizedStrings();
   page.appendChild(fragment);
   addOnboardingListeners(panelId);
+  addDeleteSiteListeners();
 };
