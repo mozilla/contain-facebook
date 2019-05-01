@@ -356,38 +356,31 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
 // List of badge-able in-page elements
 const facebookDetectedElementsArr = [];
 
+function patternDetection(selectionArray, socialActionIntent){
+  for (let querySelector of selectionArray) {
+    for (let item of document.querySelectorAll(querySelector)) {
+      // overlay the FBC icon badge on the item
+      if (!item.classList.contains("fbc-has-badge")) {
+        const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
+        const itemUIDClassTarget = "js-" + itemUIDClassName;
+        const socialAction = socialActionIntent;
+        facebookDetectedElementsArr.push(itemUIDClassName);
+        addFacebookBadge(item, itemUIDClassTarget, socialAction);
+        item.classList.add("fbc-has-badge");
+        item.classList.add(itemUIDClassName);
+      }
+    }
+  }
+}
+
 function detectFacebookOnPage () {
   if (!checkForTrackers) {
     return;
   }
-  for (let querySelector of SHARE_PATTERN_DETECTION_SELECTORS) {
-    for (let item of document.querySelectorAll(querySelector)) {
-      // overlay the FBC icon badge on the item
-      if (!item.classList.contains("fbc-has-badge")) {
-        const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
-        const itemUIDClassTarget = "js-" + itemUIDClassName;
-        const socialAction = "share";
-        facebookDetectedElementsArr.push(itemUIDClassName);
-        addFacebookBadge(item, itemUIDClassTarget, socialAction);
-        item.classList.add("fbc-has-badge");
-        item.classList.add(itemUIDClassName);
-      }
-    }
-  }
-  for (let querySelector of LOGIN_PATTERN_DETECTION_SELECTORS) {
-    for (let item of document.querySelectorAll(querySelector)) {
-      // overlay the FBC icon badge on the item
-      if (!item.classList.contains("fbc-has-badge")) {
-        const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
-        const itemUIDClassTarget = "js-" + itemUIDClassName;
-        const socialAction = "login";
-        facebookDetectedElementsArr.push(itemUIDClassName);
-        addFacebookBadge(item, itemUIDClassTarget, socialAction);
-        item.classList.add("fbc-has-badge");
-        item.classList.add(itemUIDClassName);
-      }
-    }
-  }
+
+  patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
+  patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
+
   escapeKeyListener();
 }
 
