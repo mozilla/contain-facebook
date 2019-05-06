@@ -5,9 +5,23 @@
 
 // removes elements (if there are any) from the panel;
 const clearPanel = (wrapper) => {
+  const wrapperHeight = wrapper.clientHeight;
+  wrapper.style.minHeight = wrapperHeight;
+
   while (wrapper.firstChild) {
     wrapper.removeChild(wrapper.firstChild);
   }
+};
+
+
+const setUpPanel = (panelId) => {
+  const page = document.body;
+  clearPanel(page);
+
+  const fragment = document.createDocumentFragment();
+  fragment["id"] = panelId;
+
+  return { page, fragment };
 };
 
 
@@ -38,6 +52,15 @@ const addSubhead = (wrapper, panelId) => {
 };
 
 
+// makes lighter weight sub-heads for sites allowed and sites included lists
+const addLightSubhead = (wrapper, stringId) => {
+  const el = document.createElement("h3");
+  el["id"] = stringId;
+  setClassAndAppend(wrapper, el);
+  return el;
+};
+
+
 // adds a block of text to wrapper
 const addParagraph = (wrapper, stringId) => {
   const el = document.createElement("p");
@@ -64,35 +87,29 @@ const addGreyFacebookAndFence = () => {
   return el;
 };
 
-
-const addLearnHowFBCWorksButton = async (fragment) => {
+const addFullWidthButton = (fragment, listenerClass) => {
   const button = document.createElement("button");
-  button.classList.add("highlight-on-hover", "open-onboarding");
+  button.classList.add("highlight-on-hover", listenerClass);
 
   let contentWrapper = addDiv(fragment, "fw-bottom-btn");
   contentWrapper.appendChild(button);
-  contentWrapper = button;
+  return button;
+};
 
-  // add span#how-fbc-works and arrow icon
+
+const addSpan = (wrapper, stringId) => {
   const span = document.createElement("span");
-  span["id"] = "how-fbc-works";
-  setClassAndAppend(contentWrapper, span);
+  span["id"] = stringId;
+  setClassAndAppend(wrapper, span);
+};
 
-  addSubhead(fragment, "sites-added");
-  addParagraph(fragment, "sites-added-p1");
 
-  // TODO: refactor to pull fbcStorage straight from browser.storage.local.get()
-  const sitesAdded = await browser.runtime.sendMessage("what-sites-are-added");
+const addLearnHowFBCWorksButton = async (fragment) => {
+  let button = addFullWidthButton (fragment, "open-onboarding");
+  addSpan(button, "how-fbc-works");
 
-  for (const site of sitesAdded) {
-    const siteSpan = document.createElement("span");
-    siteSpan.classList = "site-added";
-    siteSpan.dataset = {};
-    siteSpan.dataset.domain = site;
-    siteSpan.textContent = site;
-    setClassAndAppend(contentWrapper, siteSpan);
-  }
-
+  button = addFullWidthButton(fragment, "open-allowed-sites");
+  addSpan(button, "sites-added-subhead");
 };
 
 
@@ -172,13 +189,18 @@ const handleOnboardingClicks = async(e, res) => {
 };
 
 
+const appendFragmentAndSetHeight = (page, fragment) => {
+  page.appendChild(fragment);
+  page.style.minHeight = 0;
+};
+
+
 // Breaks strings with nested bold words out into separate spans
 // and appends these to the wrapping paragraph element so that we
 // don't have to use .innerHTML.
 
 // Bold text must extend to the end of the string.
 const formatText = (text, el) => {
-
   const textChunks = text.split("*SPANSTART");
 
   let span = document.createElement("span");
@@ -191,7 +213,6 @@ const formatText = (text, el) => {
   span = document.createElement("span");
   span.textContent = nestedBoldText;
   span.classList.add("bold");
-
   el.appendChild(span);
 };
 
@@ -241,17 +262,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // Build non-onboarding panel
 const buildPanel = (panelId) => {
-  const page = document.body;
-  clearPanel(page);
-
-  const fragment = document.createDocumentFragment();
+  const { page, fragment } = setUpPanel(panelId);
 
   addHeader(fragment);
 
   const contentWrapper = addDiv(fragment, "main-content-wrapper");
-
   addSubhead(contentWrapper, panelId);
-
   addParagraph(contentWrapper, `${panelId}-p1`);
 
   if (panelId === "trackers-detected") {
@@ -260,15 +276,20 @@ const buildPanel = (panelId) => {
     addParagraph(contentWrapper, `${panelId}-p2`);
   }
 
-  if (panelId !== "on-facebook") {
-    addLearnMoreLink(contentWrapper);
+  addLearnMoreLink(contentWrapper);
+
+  if (panelId === "on-facebook") {
+    const onFacebookImgDiv = addDiv(contentWrapper, "on-facebook-img");
+    onFacebookImgDiv.classList.add("img");
   }
 
   addLearnHowFBCWorksButton(fragment);
   getLocalizedStrings();
-  page.appendChild(fragment);
+  appendFragmentAndSetHeight(page, fragment);
 
   const onboardingLinks = document.querySelectorAll(".open-onboarding");
+  const allowedSitesLink = document.querySelector(".open-allowed-sites");
+  allowedSitesLink.addEventListener("click", () => buildAllowedSitesPanel("sites-allowed"));
 
   onboardingLinks.forEach(link => {
     link.addEventListener("click", () => buildOnboardingPanel(1));
@@ -277,32 +298,21 @@ const buildPanel = (panelId) => {
 
 
 const buildOnboardingPanel = (panelId) => {
-  const page = document.body;
-  clearPanel(page);
-
-  const fragment = document.createDocumentFragment();
   const stringId = `onboarding${panelId}`;
-
-  let el = addHeader(fragment);
-
-  el = document.createElement("button");
-  el.classList.add("btn-return", "arrow-left");
-
-  fragment.appendChild(el);
+  const { page, fragment } = setUpPanel(stringId);
+  
+  addHeaderWithBackArrow(fragment);
 
   const contentWrapper = addDiv(fragment, "main-content-wrapper");
-
   const h2 = addSubhead(contentWrapper, stringId);
-
   addParagraph(contentWrapper, `${stringId}-p1`);
-
 
   if (panelId === 1) {
     setNavButtons(fragment, "btn-cancel", "btn-next", stringId);
   }
 
   if (panelId === 2) {
-    el = addGreyFacebookAndFence();
+    let el = addGreyFacebookAndFence();
     h2.parentNode.insertBefore(el, h2.nextSibling);
     setNavButtons(fragment, "btn-back", "btn-next", stringId);
   }
@@ -316,7 +326,121 @@ const buildOnboardingPanel = (panelId) => {
   addParagraph(contentWrapper, `${stringId}-p2`);
 
   getLocalizedStrings();
-  page.appendChild(fragment);
+
+  appendFragmentAndSetHeight(page, fragment);
   addOnboardingListeners(panelId);
   addDeleteSiteListeners();
+};
+
+
+const addHeaderWithBackArrow = (fragment) => {
+  let el = addHeader(fragment);
+  el = document.createElement("button");
+  el.classList.add("btn-return", "arrow-left");
+  fragment.appendChild(el);
+  return fragment;
+};
+
+
+const defaultAllowedSites = [
+  "instagram.com",
+  "facebook.com",
+  "messenger.com",
+];
+
+
+const makeSiteList = async(fragment, siteList, sitesAllowed=false, addX=false) => {
+  for (const site of siteList) {
+    const allowedSiteWrapper = addDiv(fragment, "allowed-site-wrapper");
+    if (!addX) {
+      allowedSiteWrapper.classList.add("default-allowed-site");
+    }
+    let iconDiv = addDiv(allowedSiteWrapper, "allowed-site-icon");
+
+    // should we repeatedly grab these images or download and save them?
+    // need a different place to scoop them up, wondering where activity stream gets their favicons?
+    if (sitesAllowed){
+      iconDiv.style.backgroundImage = `url(https://api.faviconkit.com/${site}/192`;
+    }
+    if (!sitesAllowed) {
+      const domainClass = site.replace(".com", "");
+      iconDiv.classList.add(`favi-${domainClass}`);
+    }
+    const siteSpan = document.createElement("span");
+    siteSpan.classList.add("site-name");
+    siteSpan.textContent = site;
+    if (addX) {
+      const button = document.createElement("button");
+      button.dataset["sitename"] = site;
+      button.classList.add("remove-site");
+      allowedSiteWrapper.appendChild(button);
+      // add aria labeling for button;
+    }
+    allowedSiteWrapper.appendChild(siteSpan);
+  }
+};
+
+
+const buildAllowedSitesPanel = async(panelId) => {
+  const { page, fragment } = setUpPanel(panelId);
+
+  addHeaderWithBackArrow(fragment);
+
+  const contentWrapper = addDiv(fragment, "main-content-wrapper");
+
+  addSubhead(contentWrapper, "sites-added");
+  addParagraph(contentWrapper, "sites-added-p1");
+
+  const listsWrapper = addDiv(fragment, "site-lists-wrapper");
+  addLightSubhead(listsWrapper, "sites-included");
+  makeSiteList(listsWrapper, defaultAllowedSites);
+
+  const siteList = await browser.runtime.sendMessage("what-sites-are-added");
+  if (siteList.length > 1) {
+    const sitesAllowedSubhead = addLightSubhead(listsWrapper, "sites-allowed");
+    sitesAllowedSubhead.classList.add("sites-allowed");
+    makeSiteList(listsWrapper, siteList, true, true); // (...sitesAllowed=true, addX=true)
+  }
+
+  appendFragmentAndSetHeight(page, fragment);
+  page.classList.add("remove-site-list");
+
+  const removeSiteButtons = document.querySelectorAll(".remove-site");
+  removeSiteButtons.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      const removeButton = e.target;
+      buildRemoveSitePanel(removeButton.dataset.sitename);
+    });
+  });
+
+  addOnboardingListeners(panelId);
+  getLocalizedStrings();
+};
+
+
+const buildRemoveSitePanel = (siteName) => {
+  const panelId = "remove-site";
+  const { page, fragment } = setUpPanel(panelId);
+
+  addHeaderWithBackArrow(fragment);
+
+  const contentWrapper = addDiv(fragment, "main-content-wrapper");
+  contentWrapper.classList.add("remove-site-panel");
+
+  addSubhead(contentWrapper, "remove-site");
+  makeSiteList(contentWrapper, [siteName], true, false); // (..., sitesAllowed=true, addX=false )
+  addParagraph(contentWrapper, `${panelId}-p1`);
+  addParagraph(contentWrapper, `${panelId}-p2`);
+  let blueRemoveButton = document.createElement("button");
+  blueRemoveButton.classList.add("uiMessage", "remove-btn");
+  blueRemoveButton.id = "remove";
+  blueRemoveButton.addEventListener("click", () => {
+    // do something with remove click
+  });
+  fragment.appendChild(blueRemoveButton);
+
+  getLocalizedStrings();
+
+  appendFragmentAndSetHeight(page, fragment);
+  addOnboardingListeners(siteName);
 };
