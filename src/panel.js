@@ -350,16 +350,24 @@ const defaultAllowedSites = [
 
 
 const makeSiteList = async(fragment, siteList, sitesAllowed=false, addX=false) => {
+
+  // if no sites have been added to the container, show "None"
+  if (siteList.length === 0) {
+    const allowedSiteWrapper = addDiv(fragment, "allowed-site-wrapper");
+    addSpan(allowedSiteWrapper, "no-sites-added");
+    return; 
+  }
+
   for (const site of siteList) {
     const allowedSiteWrapper = addDiv(fragment, "allowed-site-wrapper");
     if (!addX) {
       allowedSiteWrapper.classList.add("default-allowed-site");
     }
-    let iconDiv = addDiv(allowedSiteWrapper, "allowed-site-icon");
 
-    // should we repeatedly grab these images or download and save them?
-    // need a different place to scoop them up, wondering where activity stream gets their favicons?
-    if (sitesAllowed){
+    let iconDiv = addDiv(allowedSiteWrapper, "allowed-site-icon");
+    if (sitesAllowed) {
+        // should we repeatedly grab these images or download and save them?
+        // need a different place to scoop them up, wondering where activity stream gets their favicons?
       iconDiv.style.backgroundImage = `url(https://api.faviconkit.com/${site}/192`;
     }
     if (!sitesAllowed) {
@@ -396,11 +404,9 @@ const buildAllowedSitesPanel = async(panelId) => {
   makeSiteList(listsWrapper, defaultAllowedSites);
 
   const siteList = await browser.runtime.sendMessage("what-sites-are-added");
-  if (siteList.length > 1) {
-    const sitesAllowedSubhead = addLightSubhead(listsWrapper, "sites-allowed");
-    sitesAllowedSubhead.classList.add("sites-allowed");
-    makeSiteList(listsWrapper, siteList, true, true); // (...sitesAllowed=true, addX=true)
-  }
+  const sitesAllowedSubhead = addLightSubhead(listsWrapper, "sites-allowed");
+  sitesAllowedSubhead.classList.add("sites-allowed");
+  makeSiteList(listsWrapper, siteList, true, true); // (...sitesAllowed=true, addX=true)
 
   appendFragmentAndSetHeight(page, fragment);
   page.classList.add("remove-site-list");
