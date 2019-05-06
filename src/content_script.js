@@ -13,9 +13,9 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
   "[href*='signin/facebook']",
-  "[data-bfa-network*='facebook']",
   "[data-oauthserver*='facebook']", // Stackoverflow
   "[id*='facebook_connect_button']", // Quora
+  "[data-action*='facebook-auth']", //Medium
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
@@ -26,8 +26,14 @@ const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/share']", // Imgur Login
   "[href*='facebook.com/dialog/share']",
   "[href*='facebook.com/sharer']", // Buzzfeed
-  "[aria-label*='share on facebook']" // MSN
+  "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
+  "[aria-label*='share on facebook']", // MSN
+  "[title='Share on Facebook']" // Medium
 ];
+
+// const SHARE_DISABLE_DETECTION_SELECTORS = [
+//   "[class*='js-share-button--facebook']" // Buzzfeed
+// ];
 
 function detectFacebookLoginButton () {
   // TODO: Refactor detectFacebookLoginButton to add HTML badge instead of class/psudeo element
@@ -222,8 +228,14 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
       e.target.parentElement.parentNode.parentNode.classList.remove("active");
     });
+  } else if (socialAction === "share") {
+    target.addEventListener("click", (e) => {
+      e.preventDefault();
+      return false;
+    });
   }
 }
+
 
 function findActivePrompt() {
   const allBadges = document.querySelectorAll(".fbc-badge.active");
