@@ -183,7 +183,6 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   } else if (socialAction === "share") {
     target.addEventListener("click", (e) => {
       e.preventDefault();
-      return false;
     });
   }
 }
