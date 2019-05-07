@@ -366,9 +366,9 @@ const makeSiteList = async(fragment, siteList, sitesAllowed=false, addX=false) =
 
     let iconDiv = addDiv(allowedSiteWrapper, "allowed-site-icon");
     if (sitesAllowed) {
-        // should we repeatedly grab these images or download and save them?
-        // need a different place to scoop them up, wondering where activity stream gets their favicons?
-      iconDiv.style.backgroundImage = `url(https://api.faviconkit.com/${site}/192`;
+      // should we repeatedly grab these images or download and save them?
+      // need a different place to scoop them up, wondering where activity stream gets their favicons?
+      iconDiv.style.backgroundImage = `url(https://${site}/favicon.ico`;
     }
     if (!sitesAllowed) {
       const domainClass = site.replace(".com", "");
@@ -440,8 +440,8 @@ const buildRemoveSitePanel = (siteName) => {
   let blueRemoveButton = document.createElement("button");
   blueRemoveButton.classList.add("uiMessage", "remove-btn");
   blueRemoveButton.id = "remove";
-  blueRemoveButton.addEventListener("click", () => {
-    // do something with remove click
+  blueRemoveButton.addEventListener("click", async() => {
+    await browser.runtime.sendMessage( {removeDomain: siteName} );
   });
   fragment.appendChild(blueRemoveButton);
 
