@@ -380,8 +380,7 @@ window.addEventListener("click", function(e){
       closePrompt();
     }
   } else {
-    detectFacebookOnPage();
-    screenUpdate();
+    contentScriptInit(true, "window.addEventListener.click");
   }
 });
 
@@ -395,16 +394,41 @@ browser.runtime.onMessage.addListener(message => {
   } else {
     checkForTrackers = true;
     setTimeout(() => {
-      detectFacebookOnPage();
+      contentScriptInit(true, "browser.runtime.onMessage");
     }, 10);
   }
 
   return Promise.resolve({response: "content_script onMessage listener"});
 });
 
-// For non-triggered pages
-setTimeout(()=> {
-  if (checkForTrackers){
-    detectFacebookOnPage();
+// let callCount = 0;
+let contentScriptDelay = 999;
+
+function contentScriptInit(resetSwitch) {
+  // Second arg is for debugging to see which contentScriptInit fires
+  // Call count tracks number of times contentScriptInit has been called
+  // callCount = callCount + 1;
+  // console.log(call, callCount);
+  if (resetSwitch) {
+    contentScriptDelay = 999;
+    contentScriptSetTimeout();
   }
-}, 1000);
+
+  detectFacebookOnPage();
+  screenUpdate();
+}
+
+
+document.addEventListener("DOMContentLoaded", contentScriptInit(false, "DOMContentLoaded"));
+window.onload = contentScriptInit(false, "window.onload");
+
+function contentScriptSetTimeout() {
+  contentScriptDelay = Math.ceil(contentScriptDelay * 2);
+  contentScriptInit(false, "setInterval");
+  if ( contentScriptDelay > 999999 ) {
+    return false;
+  }
+  setTimeout(contentScriptSetTimeout, contentScriptDelay);
+}
+
+contentScriptSetTimeout();
