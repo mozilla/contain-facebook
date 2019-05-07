@@ -239,7 +239,7 @@ const getLocalizedStrings = async() => {
       continue;
     }
     const text = browser.i18n.getMessage(el.id, currentActiveURL.hostname);
-    if (text.includes("*SPAN")) {
+    if (text && text.includes("*SPAN")) {
       formatText(text, el);
     } else {
       el.textContent = text;
