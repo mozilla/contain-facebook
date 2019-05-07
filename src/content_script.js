@@ -13,54 +13,24 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
   "[href*='signin/facebook']",
-  "[data-bfa-network*='facebook']",
   "[data-oauthserver*='facebook']", // Stackoverflow
   "[id*='facebook_connect_button']", // Quora
+  "[data-action*='facebook-auth']", //Medium
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
   "[action*='oauth_connect?from=facebook_login&service=facebook']" // Airbnb
 ];
 
+// TODO: Disarm click events on detected elements
 const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/share']", // Imgur Login
   "[href*='facebook.com/dialog/share']",
   "[href*='facebook.com/sharer']", // Buzzfeed
-  "[aria-label*='share on facebook']" // MSN
+  "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
+  "[aria-label*='share on facebook']", // MSN
+  "[title='Share on Facebook']" // Medium
 ];
-
-function detectFacebookLoginButton () {
-  // TODO: Refactor detectFacebookLoginButton to add HTML badge instead of class/psudeo element
-  // Test for standard implementation (Example: Facebook Docs)
-  const loginButton = document.querySelectorAll(".fb-login-button");
-  for (let item of loginButton) {
-    const fbcClassResetArr = ["fbc-overlay-small", "fbc-overlay"];
-    const replacementClassArr = ["fbc-loginButton"];
-    replacementClassArr.push("fbc-size-" + item.getAttribute("data-size"));
-    replacementClassArr.push("fbc-button-type-" + item.getAttribute("data-button-type"));
-    // Remove previous detection classes
-    item.classList.remove(...fbcClassResetArr);
-    // Add declared size values
-    item.classList.add(...replacementClassArr);
-    // Remeasure elements and add correct badge size
-    item.classList.add(...itemWidthCheck(item));
-  }
-}
-
-function itemWidthCheck (target) {
-  const itemHeight = target.offsetHeight;
-  const itemWidth = target.offsetWidth;
-  const iconClassArr = ["fbc-overlay"];
-
-  const ratioCheck = (itemWidth / itemHeight);
-
-  if (ratioCheck < 1.1) {
-    iconClassArr.push("fbc-overlay-small");
-  } else if (itemHeight < 39) {
-    iconClassArr.push("fbc-overlay-small");
-  }
-  return iconClassArr;
-}
 
 function isFixed (elem) {
   do {
@@ -112,18 +82,6 @@ function createBadgeFragment (socialAction) {
       paragraph.appendChild(document.createTextNode(promptParagraphString));
       htmlBadgeFragmentPromptContents.appendChild(paragraph);
     }
-
-    // TODO: Add checkbox to not prompt dialog box again
-    // const htmlBadgeFragmentPromptForm = document.createElement("form");
-    // const htmlBadgeFragmentPromptCheckbox = document.createElement("input");
-    // htmlBadgeFragmentPromptCheckbox.type = "checkbox";
-    // htmlBadgeFragmentPromptCheckbox.id = "showHideToggle";
-    // const htmlBadgeFragmentPromptCheckboxLabel = document.createElement("label");
-    // htmlBadgeFragmentPromptCheckboxLabel.htmlFor = "showHideToggle";
-    // htmlBadgeFragmentPromptCheckboxLabel.appendChild(document.createTextNode(htmlBadgeFragmentPromptCheckboxLabelString));
-    // htmlBadgeFragmentPromptForm.appendChild(htmlBadgeFragmentPromptCheckbox);
-    // htmlBadgeFragmentPromptForm.appendChild(htmlBadgeFragmentPromptCheckboxLabel);
-    // htmlBadgeFragmentPromptContents.appendChild(htmlBadgeFragmentPromptForm);
 
     htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
 
@@ -222,8 +180,13 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
       e.target.parentElement.parentNode.parentNode.classList.remove("active");
     });
+  } else if (socialAction === "share") {
+    target.addEventListener("click", (e) => {
+      e.preventDefault();
+    });
   }
 }
+
 
 function findActivePrompt() {
   const allBadges = document.querySelectorAll(".fbc-badge.active");
@@ -289,20 +252,6 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
     htmlBadgeDiv.classList.remove("fbc-badge-disabled");
   }
 
-}
-
-function calcZindex(target) {
-  const targetParents = [];
-
-  while (target) {
-    targetParents.unshift(target);
-    target = target.parentNode;
-    const parentZindex = window.getComputedStyle(target).getPropertyValue("z-index");
-    if ( parentZindex !== "auto" ) {
-      return parseInt(parentZindex, 10) + 1;
-    }
-  }
-  return 0;
 }
 
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
@@ -418,7 +367,6 @@ function screenUpdate () {
 function escapeKeyListener () {
   document.body.addEventListener("keydown", function(e) {
     if(e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
-      simulatedClickToggle = false;
       closePrompt();
     }
   });
@@ -440,8 +388,8 @@ window.addEventListener("click", function(e){
 let checkForTrackers = true;
 
 browser.runtime.onMessage.addListener(message => {
-  console.log("browser.runtime.onMessage");
-  console.log(message["msg"]);
+  // console.log("browser.runtime.onMessage");
+  // console.log(message["msg"]);
   if ( message["msg"] == "allowed-facebook-subresources" || message["msg"] == "facebook-domain" ) {
     checkForTrackers = false;
   } else {
