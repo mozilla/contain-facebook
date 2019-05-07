@@ -9,17 +9,17 @@ body {
   font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
 html,
 body {
   overflow: hidden;
   min-height: 200px;
   min-width: 355px;
   max-width: 355px;
+  transition: all .25s ease-in-out;
 }
 
-h1,
 h2,
+h3,
 div,
 p,
 a,
@@ -46,6 +46,8 @@ div.img {
 
 h1 { /* "Facebook Container" headline for all panels */
   font-weight: 600;
+  margin: 0;
+  font-size: 13px;
   border-bottom: var(--borders);
   position: relative;
   display: flex;
@@ -74,6 +76,10 @@ h2 { /* panel sub-head for all panels */
 h2,
 .bold {
   font-weight: 500;
+}
+
+h3 {
+  font-weight: 300;
 }
 
 .Facebook-text {
@@ -134,7 +140,7 @@ a:hover {
   margin: auto;
   right: 15px;
   height: 100%;
-  width: .5rem;
+  width: .35rem;
   background-image: url("/img/arrow-icon-right.svg");
   background-position: center center;
   transform: scale(1.3);
@@ -144,6 +150,55 @@ a:hover {
   pointer-events: none;
 }
 
+.allowed-site-wrapper {
+  display: block;
+  position: relative;
+  margin: .25rem 0;
+  padding: .25rem 1.65rem;
+  display: flex;
+  align-items: center;
+  min-height: 1.25rem;
+  transition: var(--transition);
+}
+
+.remove-btn {
+  background-color: var(--blue60);
+  border: 1px solid var(--blue60);
+  border-top: 1px solid var(--blue70);
+  cursor: pointer;
+  line-height: 41px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 13px;
+}
+
+.remove-btn:hover {
+  background-color: var(--blue70);
+}
+
+.remove-site {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 1.65rem;
+  height: 1.1rem;
+  width: 1.1rem;
+  background-image: url("/img/x-close.svg");
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.remove-site-panel .allowed-site-wrapper {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.remove-site-panel .allowed-site-wrapper:hover {
+  background-color: transparent;
+}
+
+.allowed-site-wrapper:hover,
 .highlight-on-hover:hover {
   background-color: var(--grey20);
   transition: var(--transition);
@@ -196,6 +251,8 @@ a:hover {
   background-color: var(--blue70);
 }
 
+.remove-btn,
+.remove-btn:hover,
 .bottom-btn,
 .bottom-btn:hover {
   transition: var(--transition);
@@ -206,8 +263,25 @@ a:hover {
   background-position: center center;
   width: 23px;
   height: 19px;
-  display: inline-flex;
+  display: block;
   margin-right: 3px;
+}
+
+.on-facebook-subhead::before {
+  background-image: url("/img/fenced-badge.svg");
+  width: 23px;
+  height: 19px;
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.on-facebook-img {
+  background-image: url("/img/image-inFBC@2x.png");
+  height: 170px;
+  background-repeat: no-repeat;
+  display: block;
+  background-position: bottom center;
 }
 
 .img.trackers-detected {
@@ -230,6 +304,7 @@ a:hover {
 }
 
 .img,
+.on-facebook-subbhead::before,
 .highlight-on-hover::after,
 .Facebook-text::after,
 .trackers-detected-subhead::before,
@@ -245,4 +320,54 @@ a:hover {
 
 .onboarding3 .bottom-btn {
   height: 3.41rem;
+}
+
+h3 {
+  margin-bottom: .5rem;
+  padding: 0 1.65rem;
+}
+
+h3.sites-allowed {
+  margin-top: 2rem;
+}
+
+/* allowed site flows */
+
+.site-name {
+  min-height: 13px;
+}
+
+.allowed-site-icon {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 1.1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.site-lists-wrapper {
+  min-height: 100px;
+  padding-bottom: 1.65rem;
+}
+
+.allowed-site-wrapper.default-allowed-site:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.allowed-site-wrapper.default-allowed-site {
+  pointer-events: none;
+}
+
+.favi-facebook {
+  background-image: url("/img/favi-facebook.png");
+}
+
+.favi-instagram {
+  background-image: url("/img/favi-instagram.png");
+}
+
+.favi-messenger {
+  background-image: url("/img/favi-messenger.png");
 }

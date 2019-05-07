@@ -283,10 +283,9 @@ async function addDomainToFacebookContainer (url) {
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
 }
 
-async function removeDomainFromFacebookContainer (url) {
-  const parsedUrl = new URL(url);
+async function removeDomainFromFacebookContainer (domain) {
   const fbcStorage = await browser.storage.local.get();
-  const domainIndex = fbcStorage.domainsAddedToFacebookContainer.indexOf(parsedUrl.host);
+  const domainIndex = fbcStorage.domainsAddedToFacebookContainer.indexOf(domain);
   fbcStorage.domainsAddedToFacebookContainer.splice(domainIndex, 1);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
 }
@@ -521,26 +520,7 @@ async function blockFacebookSubResources (requestDetails) {
   return {};
 }
 
-(async function init () {
-  await setupMACAddonListeners();
-  macAddonEnabled = await isMACAddonEnabled();
-
-  try {
-    await setupContainer();
-  } catch (error) {
-    // TODO: Needs backup strategy
-    // See https://github.com/mozilla/contain-facebook/issues/23
-    // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
-    // eslint-disable-next-line no-console
-    console.error(error);
-    return;
-  }
-  clearFacebookCookies();
-  generateFacebookHostREs();
-
-  // TODO: group the below addListener calls into functions.
-  // e.g., setupWebRequestListeners, setupRunTimeListeners, setupWindowAndTabListeners
-  // Clean up canceled requests
+function setupWebRequestListeners() {
   browser.webRequest.onCompleted.addListener((options) => {
     if (canceledRequests[options.tabId]) {
       delete canceledRequests[options.tabId];
@@ -557,15 +537,42 @@ async function blockFacebookSubResources (requestDetails) {
 
   // Add the sub-resource request listener
   browser.webRequest.onBeforeRequest.addListener(blockFacebookSubResources, {urls: ["<all_urls>"]}, ["blocking"]);
+}
 
-  browser.runtime.onMessage.addListener( (message, {url}) => {
-    addDomainToFacebookContainer(url);
-  });
-
+function setupWindowsAndTabsListeners() {
   browser.tabs.onUpdated.addListener(tabUpdateListener);
   browser.tabs.onRemoved.addListener(tabId => delete tabStates[tabId] );
-
   browser.windows.onFocusChanged.addListener(windowFocusChangedListener);
+}
+
+(async function init () {
+  await setupMACAddonListeners();
+  macAddonEnabled = await isMACAddonEnabled();
+
+  try {
+    await setupContainer();
+  } catch (error) {
+    // TODO: Needs backup strategy
+    // See https://github.com/mozilla/contain-facebook/issues/23
+    // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
+    // eslint-disable-next-line no-console
+    console.error(error);
+    return;
+  }
+  clearFacebookCookies();
+  generateFacebookHostREs();
+  setupWebRequestListeners();
+  setupWindowsAndTabsListeners();
+
+  browser.runtime.onMessage.addListener( (message, {url}) => {
+    if (message === "what-sites-are-added") {
+      return browser.storage.local.get().then(fbcStorage => fbcStorage.domainsAddedToFacebookContainer);
+    } else if (message.removeDomain) {
+      removeDomainFromFacebookContainer(message.removeDomain).then( results => results );
+    } else {
+      addDomainToFacebookContainer(url).then( results => results);
+    }
+  });
 
   maybeReopenAlreadyOpenTabs();
 
