@@ -267,15 +267,6 @@ a:hover {
   margin-right: 3px;
 }
 
-.on-facebook-subhead::before {
-  background-image: url("/img/fenced-badge.svg");
-  width: 23px;
-  height: 19px;
-  display: block;
-  content: "";
-  background-repeat: no-repeat;
-}
-
 .on-facebook-img {
   background-image: url("/img/image-inFBC@2x.png");
   height: 170px;
@@ -285,7 +276,7 @@ a:hover {
 }
 
 .img.trackers-detected {
-  background-image: url("/img/image-tracker-detected@2x(1).png");
+  background-image: url("/img/image-tracker-detected@2x.png");
   height: 145px;
   margin: 1.25rem 0 1.75rem -4px;
   background-position: left, center;
@@ -370,4 +361,8 @@ h3.sites-allowed {
 
 .favi-messenger {
   background-image: url("/img/favi-messenger.png");
+}
+
+#no-trackers .fw-bottom-btn:last-of-type {
+  display: none;
 }
