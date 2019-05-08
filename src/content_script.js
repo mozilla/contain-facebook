@@ -19,7 +19,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
-  "[action*='oauth_connect?from=facebook_login&service=facebook']" // Airbnb
+  "[action*='facebook_login']" // Airbnb
 ];
 
 // TODO: Disarm click events on detected elements
@@ -380,21 +380,30 @@ window.addEventListener("click", function(e){
       closePrompt();
     }
   } else {
-    contentScriptInit(true, "window.addEventListener.click");
+    contentScriptInit(true);
   }
 });
+
+function removeBadges() {
+  for (let itemClass of facebookDetectedElementsArr) {
+    // positionFacebookBadge(item);
+    const target = document.querySelector("." + itemClass);
+    target.classList.remove("fbc-has-badge");
+    target.classList.remove(itemClass);
+    const badge = document.querySelector(".js-" + itemClass);
+    badge.parentNode.removeChild(badge);
+  }
+}
 
 let checkForTrackers = true;
 
 browser.runtime.onMessage.addListener(message => {
-  // console.log("browser.runtime.onMessage");
-  // console.log(message["msg"]);
   if ( message["msg"] == "allowed-facebook-subresources" || message["msg"] == "facebook-domain" ) {
+    // Flags function to not add badges to page
     checkForTrackers = false;
   } else {
-    checkForTrackers = true;
     setTimeout(() => {
-      contentScriptInit(true, "browser.runtime.onMessage");
+      contentScriptInit(true, message["msg"]);
     }, 10);
   }
 
@@ -404,31 +413,51 @@ browser.runtime.onMessage.addListener(message => {
 // let callCount = 0;
 let contentScriptDelay = 999;
 
-function contentScriptInit(resetSwitch) {
+function contentScriptInit(resetSwitch, msg) {
   // Second arg is for debugging to see which contentScriptInit fires
   // Call count tracks number of times contentScriptInit has been called
   // callCount = callCount + 1;
   // console.log(call, callCount);
+  // console.log(source, ": ", checkForTrackers);
+  console.log(msg);
+
   if (resetSwitch) {
     contentScriptDelay = 999;
     contentScriptSetTimeout();
   }
 
-  detectFacebookOnPage();
-  screenUpdate();
+  // Resource call is not in FBC/FB Domain and is a FB resource
+  if (checkForTrackers && msg !== "other-domain") {
+    detectFacebookOnPage();
+    screenUpdate();
+  }
 }
 
+checkIfURLShouldBeBlocked(){
+  // TODO: Send current URL (or request directly from background.js) to check
+  // if the page needs to be searched for facebook elements. This fires BEFORE
+  // the background.js can check if the site is in the FBC.
 
-document.addEventListener("DOMContentLoaded", contentScriptInit(false, "DOMContentLoaded"));
-window.onload = contentScriptInit(false, "window.onload");
+  if (true) {
+    checkForTrackers = false;
+  } else {
+    contentScriptInit(false);
+  }
+
+}
+
+window.onload = checkIfURLShouldBeBlocked();
+
+
+// document.addEventListener("DOMContentLoaded", contentScriptInit(false, "DOMContentLoaded"));
+// window.onload = contentScriptInit(false, "window.onload");
+// contentScriptSetTimeout();
 
 function contentScriptSetTimeout() {
   contentScriptDelay = Math.ceil(contentScriptDelay * 2);
-  contentScriptInit(false, "setInterval");
+  contentScriptInit(false);
   if ( contentScriptDelay > 999999 ) {
     return false;
   }
   setTimeout(contentScriptSetTimeout, contentScriptDelay);
 }
-
-contentScriptSetTimeout();
