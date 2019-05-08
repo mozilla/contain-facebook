@@ -263,29 +263,36 @@ document.addEventListener("DOMContentLoaded", async () => {
 // Build non-onboarding panel
 const buildPanel = (panelId) => {
   const { page, fragment } = setUpPanel(panelId);
-
   addHeader(fragment);
 
   const contentWrapper = addDiv(fragment, "main-content-wrapper");
   addSubhead(contentWrapper, panelId);
+
+  if (panelId === "on-facebook") {
+    let el = addGreyFacebookAndFence(contentWrapper);
+    contentWrapper.appendChild(el);
+  }
+
   addParagraph(contentWrapper, `${panelId}-p1`);
 
-  if (panelId === "trackers-detected") {
-    const imgDiv = addDiv(contentWrapper, panelId);
-    imgDiv.classList.add("img");
+  if (panelId === "on-facebook") {
     addParagraph(contentWrapper, `${panelId}-p2`);
   }
 
-  addLearnMoreLink(contentWrapper);
+  if (panelId === "trackers-detected") {
+    addLearnMoreLink(contentWrapper);
+    const imgDiv = addDiv(contentWrapper, panelId);
+    imgDiv.classList.add("img");
+  }
 
-  if (panelId === "on-facebook") {
-    const onFacebookImgDiv = addDiv(contentWrapper, "on-facebook-img");
-    onFacebookImgDiv.classList.add("img");
+  if (panelId === "no-trackers") {
+    addLearnMoreLink(contentWrapper);
   }
 
   addLearnHowFBCWorksButton(fragment);
   getLocalizedStrings();
   appendFragmentAndSetHeight(page, fragment);
+  page.id = panelId;
 
   const onboardingLinks = document.querySelectorAll(".open-onboarding");
   const allowedSitesLink = document.querySelector(".open-allowed-sites");
@@ -328,6 +335,8 @@ const buildOnboardingPanel = (panelId) => {
   getLocalizedStrings();
 
   appendFragmentAndSetHeight(page, fragment);
+  page.id = panelId;
+
   addOnboardingListeners(panelId);
   addDeleteSiteListeners();
 };
@@ -410,6 +419,7 @@ const buildAllowedSitesPanel = async(panelId) => {
 
   appendFragmentAndSetHeight(page, fragment);
   page.classList.add("remove-site-list");
+  page.id = panelId;
 
   const removeSiteButtons = document.querySelectorAll(".remove-site");
   removeSiteButtons.forEach(btn => {
