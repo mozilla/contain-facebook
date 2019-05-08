@@ -424,6 +424,8 @@ async function updateBrowserActionIcon (tab) {
     return;
   }
 
+  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
+
   if (isFacebookURL(url)) {
     // TODO: change panel logic from browser.storage to browser.runtime.onMessage
     // so the panel.js can "ask" background.js which panel it should show
@@ -437,6 +439,8 @@ async function updateBrowserActionIcon (tab) {
       });
       browser.browserAction.setBadgeText({tabId: tab.id, text: " "});
     }
+  } else if (hasBeenAddedToFacebookContainer) {
+    browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
   } else { 
     const tabState = tabStates[tab.id];
     const panelToShow = (tabState && tabState.trackersDetected) ? "trackers-detected" : "no-trackers";
