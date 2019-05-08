@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 // Build non-onboarding panel
-const buildPanel = (panelId) => {
+const buildPanel = async(panelId) => {
   const { page, fragment } = setUpPanel(panelId);
   addHeader(fragment);
 
@@ -279,7 +279,7 @@ const buildPanel = (panelId) => {
     addParagraph(contentWrapper, `${panelId}-p2`);
   }
 
-  if (panelId === "trackers-detected") {
+  if (["trackers-detected", "in-fbc"].includes(panelId)) {
     addLearnMoreLink(contentWrapper);
     const imgDiv = addDiv(contentWrapper, panelId);
     imgDiv.classList.add("img");

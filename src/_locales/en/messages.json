@@ -3,6 +3,19 @@
         "message": "Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies.",
         "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
     },
+    "in-fbc-subhead": {
+      "message": "$URL$ is in the Facebook Container.",
+      "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+      "placeholders": {
+          "url": {
+              "content": "$1",
+              "example": "www.facebook.com"
+          }
+      }
+    },
+    "in-fbc-p1": {
+      "message": "Facebook can now track you on this site. To remove this site from Facebook Container, select Sites Allowed in Facebook Container and remove it from the list."
+    },
     "on-facebook-subhead": {
         "message": "On Facebook and Sites in the Facebook Container Boundary",
         "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
