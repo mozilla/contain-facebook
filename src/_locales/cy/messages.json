@@ -3,8 +3,8 @@
     "message": "Mae Facebook Container yn ynysu eich gweithgaredd Facebook rhag gweddill eich gweithgaredd gwe er mwyn rhwystro Facebook rhag eich tracio chi y tu allan i wefan Facebook drwy gwcis trydydd parti.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "Mae $URL$ o fewn y Facebook Container.", 
+  "in-fbc-subhead": {
+    "message": "Mae $URL$ yn y Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
@@ -12,10 +12,6 @@
         "example": "www.facebook.com"
       }
     }
-  }, 
-  "onFacebookText": {
-    "message": "Mae'r eicon yma'n ymddangos yn y bar cyfeiriad pan fyddwch yn ymweld â gwefannau fel Facebook.com, Instagram.com neu Messenger.com sydd o fewn y Facebook Container.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "Nid yw $URL$ o fewn y Facebook Container.", 
