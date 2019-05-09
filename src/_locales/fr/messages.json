@@ -70,6 +70,54 @@
     "message": "L’icône de barrière de Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
+  "onboarding2-p1": {
+    "message": "Cette icône apparaît dans la barre d’adresse de Firefox lorsque vous visitez des sites, comme Facebook.com, situés dans la limite du conteneur Facebook.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Ces sites ont besoin d’accéder à votre identité Facebook (ou de savoir qui vous êtes) pour fonctionner. Cela signifie également que Facebook peut pister tout ce que vous faites sur ces sites.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "Comment savoir si Facebook Container fonctionne ?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Les boutons vous permettant d’aimer ou de partager des éléments sur Facebook ou de vous connecter à des sites web à l’aide de votre compte Facebook contiennent des traqueurs. Facebook Container bloquera ces traqueurs et affichera l’icône de barrière pour vous indiquer où les traqueurs ont été supprimés.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Cette image montre comment l’icône de barrière de Facebook Container apparaît sur la page à côté d’un bouton J’aime de Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Toutefois, si vous cliquez sur l’un de ces boutons, Facebook pourra vous pister.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Autoriser", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Annuler", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Suivant", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Retour", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Terminé", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Revenir au panneau précédent.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
   "btn-arrow-forward": {
     "message": "Aller à Fonctionnement de Facebook Container", 
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
@@ -102,13 +150,25 @@
     "message": "Facebook Container bloque ces traqueurs. Toutefois, si vous cliquez sur l’un de ces boutons, Facebook pourra vous suivre.", 
     "description": ""
   }, 
+  "trackers-detected-fence-alt": {
+    "message": "Barrière de Facebook Container avec bouclier", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
   "sites-added-subhead": {
     "message": "Sites autorisés dans Facebook Container", 
     "description": "This is a panel subhead."
   }, 
+  "sites-included": {
+    "message": "SITES INCLUS", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
   "no-sites-added": {
     "message": "Aucun", 
     "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "SITES QUE VOUS AVEZ AUTORISÉS", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
   "remove": {
     "message": "Retirer", 
@@ -132,6 +192,10 @@
   }, 
   "inPageUI-tooltip-button-login": {
     "message": "Facebook Container a bloqué les traqueurs de Facebook. Si vous utilisez la connexion avec Facebook sur ce site, Facebook sera en mesure de vous suivre.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Ne plus afficher ce message", 
     "description": ""
   }
 }
