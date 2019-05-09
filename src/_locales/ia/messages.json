@@ -3,6 +3,16 @@
     "message": "Facebook Container isola tu activitate de Facebook ab le resto de tu activitate pro impedir a Facebook de traciar te foras de su sito via le cookies de tertie partes.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "in-fbc-subhead": {
+    "message": "$URL$ es gerite in Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ non es in le Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
