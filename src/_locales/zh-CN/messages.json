@@ -13,6 +13,21 @@
       }
     }
   }, 
+  "in-fbc-p1": {
+    "message": "Facebook Container 会在此网站跟踪您。若要从 Facebook Container 移除，请选择「Facebook Container 中允许的网站」并将其从列表中移除。"
+  }, 
+  "on-facebook-subhead": {
+    "message": "在 Facebook 与 Facebook Container 边界上的网站", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "当您访问 Facebook 相关网站，或添加到 Facebook Container 的网站时，Firefox 的地址栏将出现此图标。", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "这些网站需要使用您的 Facebook 身份（或需知道你是谁）才能正常工作。这也代表 Facebook 可以跟踪您在这些网站的任何行为。", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ 不在 Facebook Container 中。", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -39,9 +54,29 @@
     "message": "使用 Facebook Container", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding1-p1": {
+    "message": "Facebook 不仅能跟踪您在 Facebook.com 上的浏览​​行为，更可通过其他各网站上的 Facebook “赞”与“分享”按钮，跟踪您曾经去过哪里。就算没有真正点过赞或分享过也会知晓。", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container 可为 Facebook 的各网站与网络上的其他网站建立界线，使 Facebook 更难在网上跟踪您。", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "在 Facebook 与 Facebook Container 边界上的网站", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
   "onboarding2-alt": {
     "message": "Facebook Container 篱笆图标", 
     "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "当您访问 Facebook Container 中的相关网站时，例如 Facebook.com 时，将会在 Firefox 地址栏显示此图标。", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "这些网站需要使用您的 Facebook 身份（或需知道你是谁）才能正常工作。这也代表 Facebook 可以跟踪您在这些网站的任何行为。", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
   }, 
   "onboarding3-subhead": {
     "message": "我如何确定 Facebook Container 正在工作？", 
