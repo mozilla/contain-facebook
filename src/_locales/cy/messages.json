@@ -53,5 +53,109 @@
   "onboarding1-subhead": {
     "message": "Defnyddio Facebook Container", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p1": {
+    "message": "Gall Facebook dracio eich pori ymhell y tu hwnt i Facebook.com. Gall botymau Hoffi a Rhannu Facebook, er enghraifft, dracio lle rydych chi wedi bod - hyd yn oed ar dudalennau nad ydych byth yn eu hoffi na'u rhannu.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Mae Facebook Container yn creu ffin rhwng gwefannau Facebook a gweddill y we, felly mae'n anoddach i Facebook eich tracio ar-lein.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Ar Facebook a Gwefannau ar Ffin Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Eicon ffens Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Mae'r eicon hwn yn ymddangos ym mar cyfeiriad Firefox pan fyddwch chi'n ymweld â gwefannau, fel Facebook.com, sydd o fewn ffin Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Mae angen i'r gwefannau hyn gael mynediad i'ch hunaniaeth Facebook (neu wybod pwy ydych chi) er mwyn gweithio. Mae hyn hefyd yn golygu y gall Facebook dracio popeth fyddwch chi'n ei wneud ar y gwefannau hyn.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "Sut ydw i'n gwybod bod Facebook Container yn gweithio?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Mae botymau sy'n gadael i chi hoffi neu rannu pethau i Facebook neu adael i chi fewngofnodi i wefannau sy'n defnyddio'ch cyfrif Facebook yn cynnwys tracwyr. Bydd Facebook Container yn atal y tracwyr hyn ac yn dangos yr eicon ffens i ddangos i chi ble cafodd tracwyr eu tynnu.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Mae'r ddelwedd hon yn dangos sut y bydd eicon ffens Facebook Container yn ymddangos ar y dudalen wrth ochr botwm Hoffi Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Fodd bynnag, os cliciwch ar unrhyw un o'r botymau hyn bydd Facebook yn gallu eich tracio.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Caniatáu", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Diddymu", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Nesaf", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Nôl", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Gorffen", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Ewch nôl i'r panel blaenorol.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Ewch i Sut mae Facebook Container yn Gweithio", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Heb Ganfod Tracwyr Facebook", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Nid yw Facebook Container wedi canfod unrhyw traciwr Facebook ar y dudalen hon. Fodd bynnag, gall y dudalen gynnwys mathau eraill o dracwyr o hyd.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Dysgu rhagor", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Sut mae Facebook Container yn Gweithio", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Rydym wedi eich diogelu rhag Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Mae'r botymau Facebook sy'n ymddangos ar wefannau siopa, newyddion, a mannau eraill yn cynnwys tracwyr sy'n dweud wrth Facebook lle rydych chi wedi bod ar y we. Hyd yn oed os nad ydych chi byth yn defnyddio'r botymau hyn i hoffi neu rannu, gall y tracwyr gasglu data am eich pori o hyd. Mae Facebook Container yn rhwystro'r traciau hyn.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Mae Facebook Container yn rhwystro'r tracwyr hyn. Fodd bynnag, os cliciwch ar unrhyw un o'r botymau hyn bydd Facebook yn gallu eich tracio.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Ffens Facebook Container gyda tharian.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Gwefannau a Ganiateir yn Facebook Container", 
+    "description": "This is a panel subhead."
   }
 }
