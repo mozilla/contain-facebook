@@ -86,6 +86,14 @@
     "message": "Botões que permitem curtir ou compartilhar coisas no Facebook, ou acessar contas em sites usando sua conta do Facebook, contêm rastreadores. O Facebook Container bloqueia esses rastreadores e exibe o ícone de cerca para mostrar onde esses rastreadores foram removidos.", 
     "description": "This is the first paragraph of the third onboarding panel."
   }, 
+  "onboarding3-img": {
+    "message": "Esta imagem demonstra como o ícone de cerca do Facebook Containers aparece dentro de páginas, junto a um botão de curtir do Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Entretanto, se você clicar em qualquer desses botões, o Facebook consegue rastrear você.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "Permitir", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -118,6 +126,10 @@
     "message": "Nenhum rastreador do Facebook foi detectado", 
     "description": ""
   }, 
+  "no-trackers-p1": {
+    "message": "O Facebook Container não detectou nenhum rastreador do Facebook nesta página. No entanto, a página pode ainda conter outros tipos de rastreadores.", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Saiba mais", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -129,6 +141,14 @@
   "trackers-detected-subhead": {
     "message": "Protegemos você do Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Os botões do Facebook que aparecem em sites de compras, notícias e outros, contêm rastreadores que contam ao Facebook por onde você esteve na web. Mesmo que você nunca use esses botões para curtir ou compartilhar, os rastreadores ainda conseguem coletar dados sobre sua navegação. O Facebook Container bloqueia esses rastreadores.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "O Facebook Container bloqueia esses rastreadores. No entanto, se você clicar em qualquer desses botões, o Facebook consegue rastrear você.", 
+    "description": ""
   }, 
   "trackers-detected-fence-alt": {
     "message": "Cerca com escudo do Facebook Container.", 
