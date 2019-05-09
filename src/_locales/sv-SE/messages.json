@@ -3,6 +3,19 @@
     "message": "Facebook Container isolerar din Facebook-aktivitet från resten av din webbaktivitet för att förhindra att Facebook spårar dig utanför Facebook-webbplatsen via kakor från tredje part.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "in-fbc-subhead": {
+    "message": "$URL$ finns i Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "in-fbc-p1": {
+    "message": "Facebook kan nu följa dig på denna sida. Om du vill ta bort den här webbplatsen från Facebook Container väljer du \"Webbplatser tillåtna i Facebook Container\" och tar bort den från listan."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ finns inte i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
