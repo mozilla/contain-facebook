@@ -64,7 +64,7 @@
     },
     "onboarding2-subhead": {
       "message": "On Facebook and Sites in the Facebook Container Boundary",
-      "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+      "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
     },
     "onboarding2-alt": {
       "message": "The Facebook Container fence icon",
@@ -76,7 +76,7 @@
     },
     "onboarding2-p2": {
       "message": "These sites need to access your Facebook identity (or know who you are) in order to work. This also means that Facebook can track everything you do on these sites.",
-      "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+      "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
     },
     "onboarding3-subhead": {
       "message": "How do I know Facebook Container is working?",
@@ -119,7 +119,7 @@
       "description": "This is alternative text for the back arrow button."
     },
     "btn-arrow-forward": {
-      "message": "Go to How Faceook Container Works",
+      "message": "Go to How Facebook Container Works",
       "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
     },
     "no-trackers-subhead": {
