@@ -54,5 +54,9 @@
   "onboarding2-subhead": {
     "message": "Sur Facebook et sur les sites dans la limite de Facebook Container", 
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "L’icône de barrière de Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
   }
 }
