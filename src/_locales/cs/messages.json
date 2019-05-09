@@ -3,7 +3,7 @@
     "message": "Facebook Container odděluje vaše prohlížení Facebooku od prohlížení zbytku webu a brání tím Facebooku, aby vás sledoval pomocí mechanismu cookies třetích stran.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
+  "in-fbc-subhead": {
     "message": "Stránka $URL$ je otevřena ve Facebook Containeru.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
@@ -12,10 +12,6 @@
         "example": "www.facebook.com"
       }
     }
-  }, 
-  "onFacebookText": {
-    "message": "Tato ikona se objeví v adresním řádku při každé návštěvě serverů Facebook.com, Instagram.com nebo Messenger.com, které se otevírají ve Facebook Containeru.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "Stránka $URL$ není otevřena ve Facebook Containeru.", 
@@ -34,5 +30,45 @@
   "onUnknownSiteHeader": {
     "message": "Tato stránka není otevřena ve Facebook Containeru.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "btn-allow": {
+    "message": "Povolit", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Zrušit", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Další", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Zpět", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Hotovo", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "learn-more": {
+    "message": "Zjistit více", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "no-sites-added": {
+    "message": "Žádné", 
+    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "Odebrat", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Příště už nezobrazovat", 
+    "description": ""
   }
 }
