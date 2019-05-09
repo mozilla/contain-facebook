@@ -91,7 +91,7 @@
     "description": "This is alternative text for the image shown in the third onboarding panel."
   }, 
   "onboarding3-p2": {
-    "message": "Entretanto, se você clicar em qualquer desses botões, o Facebook consegue rastrear você.", 
+    "message": "Entretanto, se você clicar em qualquer desses botões, o Facebook conseguirá rastrear você.", 
     "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
@@ -147,7 +147,7 @@
     "description": ""
   }, 
   "trackers-detected-p2": {
-    "message": "O Facebook Container bloqueia esses rastreadores. No entanto, se você clicar em qualquer desses botões, o Facebook consegue rastrear você.", 
+    "message": "O Facebook Container bloqueia esses rastreadores. No entanto, se você clicar em qualquer desses botões, o Facebook conseguirá rastrear você.", 
     "description": ""
   }, 
   "trackers-detected-fence-alt": {
@@ -181,8 +181,32 @@
     "message": "Remover site do Facebook Container?", 
     "description": ""
   }, 
+  "remove-site-p1": {
+    "message": "Remover este site do Facebook Container significa que o recurso 'Entrar com o Facebook' não funcionará mais e os cookies de rastreamento do Facebook serão excluídos.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Se quiser usar 'Entrar com o Facebook' novamente, precisará adicionar de volta ao Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "O Facebook Container desativou este botão e bloqueou o Facebook, impedindo que rastreasse sua visita a esta página.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "O Facebook Container bloqueou rastreadores do Facebook. Se você usar 'Entrar com o Facebook' neste site, o Facebook conseguirá rastrear você.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Permitir que o Facebook rastreie você aqui?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Se quiser acessar sua conta usando o Facebook, então o Facebook conseguirá rastrear sua atividade neste site. Isso pode ajudá-los a montar um quadro mais completo da sua vida online.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Não mostrar novamente", 
     "description": ""
   }
 }
