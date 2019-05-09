@@ -3,6 +3,16 @@
     "message": "Facebook Container, se encarga de aislar tu actividad en Facebook del resto de tu actividad web para evitar ser rastreado fuera de Facebook a través de cookies de terceros.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "in-fbc-subhead": {
+    "message": "$URL$ está abierta en el contenedor de Facebook.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
   "in-fbc-p1": {
     "message": "Ahora, Facebook puede rastrearte en este sitio. Para eliminarlo del contenedor de Facebook, selecciona Sitios permitidos en el contenedor de Facebook y elimínalo de la lista."
   }, 
@@ -43,6 +53,10 @@
   "onboarding1-p1": {
     "message": "Facebook puede rastrearte más allá de su propia página. Por ejemplo, los botones 'Me gusta' y 'Compartir' pueden rastrear dónde has estado: incluso en páginas que nunca hayas compartido.", 
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-p2": {
+    "message": "Para poder funcionar, estos sitios necesitan que accedas con tu identidad de Facebook, lo que también signfica que Facebook podrá rastrear todo lo que hagas en ellos.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
   }, 
   "onboarding3-subhead": {
     "message": "¿Cómo sé si el contenedor de Facebook funciona correctamente?", 
@@ -103,6 +117,10 @@
   "trackers-detected-subhead": {
     "message": "Te hemos protegido frente a Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Los botones de Facebook que aparecen en las páginas de compras, noticias, etc. incluyen rastreadores que le comunican a Facebook qué páginas has visitado. Aunque nunca selecciones esos botones, pueden recopilar información sobre tu navegación. El contenedor de Facebook bloquea esos rastreadores.", 
+    "description": ""
   }, 
   "trackers-detected-p2": {
     "message": "El contenedor de Facebook bloquea esos rastreadores. Pero si seleccionas alguno de esos botones, Facebook podrá rastrearte.", 
