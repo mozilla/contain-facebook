@@ -25,6 +25,10 @@
     "message": "Cancellar", 
     "description": "This is a button to cancel out of the onboarding panel."
   }, 
+  "btn-next": {
+    "message": "Sequente", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
   "btn-back": {
     "message": "Retro", 
     "description": "This is a button that returns the user to the previous onboarding panel."
@@ -33,8 +37,24 @@
     "message": "Facte", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "learn-more": {
+    "message": "Saper plus", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "sites-included": {
+    "message": "SITOS INCLUDITE", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
   "no-sites-added": {
     "message": "Nihil", 
     "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "Remover", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Non me lo monstrar de novo", 
+    "description": ""
   }
 }
