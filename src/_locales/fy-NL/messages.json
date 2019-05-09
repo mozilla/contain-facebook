@@ -58,6 +58,22 @@
     "message": "Facebook kin jo sneupjen fierder as Facebook.com folgje. Bygelyks de Facebook Mei-'k-wol-oer- en Diele-knoppen, kinne jo folgje wêr't jo west binne – sels op siden dêr't jo net oer meie of diele.", 
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-alt": {
+    "message": "It Facebook Container-stekpiktogram", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Dit piktogram ferskynt yn de Firefox-adresbalke as jo websiden besykje lykas Facebook.com, dy't binnen it Facebook Container-stek stean.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Dizze siden moatte tagong krije ta jo Facebook-identiteit (of witte wa't jo binne) om te wurkjen. Dit betsjut ek dat Facebook alles folgje kin wat jo dogge op dizze websiden.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "Hoe witt ik dat Facebook Container wurket?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "Tastean", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -106,6 +122,14 @@
     "message": "Wy hawwe jo beskerme tsjin Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-fence-alt": {
+    "message": "Facebook Container-stek mei skyld.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Sites tastien yn Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
   "sites-included": {
     "message": "TAFOEGE SIDEN", 
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
@@ -120,6 +144,30 @@
   }, 
   "remove": {
     "message": "Fuortsmite", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Side fan side út Facebook Container fuortsmite?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "It fuortsmiten fan dizze side út Facebook Container betsjut dat de oanmelding mei Facebook-funksje net mear wurket en Facebook-trackcookies fuortsmiten wurde.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " As jo opnij oanmelde wolle mei Facebook, moatte jo it wer tafoegje oan de Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container hat dizze knop útskeakele en blokkearre dat Facebook jo besite fan dizze side folget.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container hat Facebook-trackers blokkearre. As jo op dizze side oanmelde mei Facebook, sil Facebook jo folgje kinne.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Tastean dat Facebook jo hjir folget?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
