@@ -17,7 +17,7 @@
     "message": "Facebook Container 会在此网站跟踪您。若要从 Facebook Container 移除，请选择“Facebook Container 中允许的网站”并将其从列表中移除。"
   }, 
   "on-facebook-subhead": {
-    "message": "在 Facebook 与 Facebook Container 边界上的网站", 
+    "message": "Facebook 与 Facebook Container 边界上的网站", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "on-facebook-p1": {
@@ -63,7 +63,7 @@
     "description": "Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-subhead": {
-    "message": "在 Facebook 与 Facebook Container 边界上的网站", 
+    "message": "Facebook 与 Facebook Container 边界上的网站", 
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
   }, 
   "onboarding2-alt": {
@@ -181,8 +181,28 @@
     "message": "要将网站从 Facebook Container 移除？", 
     "description": ""
   }, 
+  "remove-site-p1": {
+    "message": "将此网站从 Facebook Container 移除，意味着“使用 Facebook 账号登录”功能将不再有效，也将清除 Facebook 的跟踪 Cookie。", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " 若您想再次使用“使用 Facebook 账号登录”功能，则需将其添加回 Facebook Container。", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container 已禁用此按钮，并阻止 Facebook 跟踪您对此页面的访问。", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container 已拦截来自 Facebook 的跟踪器。若您使用此网站的“使用 Facebook 账号登录”功能，Facebook 还是能够跟踪您。", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "要允许 Facebook 在此跟踪您？", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "若您想要使用 Facebook 账号登录此网站，Facebook 就可以跟踪您在此网站的活动。这样会导致他们对您的网络生活了如指掌。", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
