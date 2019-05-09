@@ -3,7 +3,7 @@
     "message": "Facebook Container isoliert Ihre Facebook-Aktivitäten von Ihren übrigen Internet-Aktivitäten und verhindert so, dass Facebook Sie über Cookies von Dritt-Anbietern außerhalb der Facebook-Website verfolgt.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
+  "in-fbc-subhead": {
     "message": "$URL$ befindet sich im Facebook-Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
@@ -13,9 +13,20 @@
       }
     }
   }, 
-  "onFacebookText": {
-    "message": "Dieses Symbol wird in der Adressleiste angezeigt, wenn Sie Websites wie Facebook.com, Instagram.com oder Messenger.com besuchen, die sich im Facebook-Container befinden.", 
+  "in-fbc-p1": {
+    "message": "Facebook kann Sie jetzt auf dieser Website verfolgen. Um diese Website aus dem Facebook-Container zu entfernen, wählen Sie „Im Facebook-Container zugelassene Websites“ aus und entfernen Sie diese aus der Liste."
+  }, 
+  "on-facebook-subhead": {
+    "message": "Auf Facebook und Websites in der Facebook-Containergrenze", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Dieses Symbol wird in der Firefox-Adressleiste angezeigt, wenn Sie Facebook-Websites oder Websites besuchen, die Sie zu Facebook-Container hinzugefügt haben.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "Diese Websites müssen auf Ihre Facebook-Identität zugreifen (oder wissen, wer Sie sind), um funktionieren zu können. Dies bedeutet auch, dass Facebook Ihre Aktivitäten auf diesen Websites verfolgen kann.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ befindet sich nicht im Facebook-Container.", 
@@ -34,5 +45,152 @@
   "onUnknownSiteHeader": {
     "message": "Diese Website befindet sich nicht im Facebook-Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "Facebook Container verwenden", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p1": {
+    "message": "Facebook kann Ihr Surfen weit über Facebook.com hinaus verfolgen. Mit den Schaltflächen „Gefällt mir“ und „Teilen“ von Facebook können sie beispielsweise verfolgen, wo Sie sich bereits befunden haben – sogar auf Seiten, auf denen Sie nie auf „Gefällt mir“ oder „Teilen“ klicken.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container schafft eine Grenze zwischen Facebook-Websites und dem Rest des Internets, sodass es für Facebook schwieriger ist, Sie im Internet zu verfolgen.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Auf Facebook und Websites in der Facebook-Containergrenze", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Grafik: Das Zaunsymbol von Facebook-Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Dieses Symbol wird in der Firefox-Adressleiste angezeigt, wenn Sie Websites wie Facebook.com besuchen, die sich in der Facebook-Container-Grenze befinden.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Diese Websites müssen auf Ihre Facebook-Identität zugreifen (oder wissen, wer Sie sind), um funktionieren zu können. Dies bedeutet auch, dass Facebook Ihre Aktivitäten auf diesen Websites verfolgen kann.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "Woher weiß ich, dass Facebook Container funktioniert?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Schaltflächen, mit denen Sie Dinge „liken“, zu Facebook teilen oder sich über Ihr Facebook-Konto bei Websites anmelden können, enthalten Tracker. Facebook Container blockiert diese Tracker und zeigt das Zaunsymbol an, um anzuzeigen, wo die Tracker entfernt wurden.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Grafik: Diese Grafik zeigt, wie das Zaunsymbol von Facebook Container neben einer „Gefällt mir“-Schaltfläche von Facebook angezeigt wird.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Wenn Sie jedoch auf eine dieser Schaltflächen klicken, kann Facebook Sie verfolgen.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Erlauben", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Abbrechen", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Weiter", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Zurück", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Fertig", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Zurück zum vorherigen Bereich.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Zurück zu „Wie Facebook Container funktioniert“", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Es wurden keine Facebook-Tracker gefunden", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container hat auf dieser Seite keine Facebook-Tracker gefunden. Die Seite kann jedoch noch andere Arten von Trackern enthalten.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Weitere Informationen", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Wie Facebook Container funktioniert", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Wir haben Sie vor Facebook geschützt.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Die Facebook-Schaltflächen, die auf Einkaufs-, Nachrichten- und anderen Websites angezeigt werden, enthalten Tracker, die Facebook mitteilen, wo Sie sich im Internet befinden. Selbst wenn Sie diese Schaltflächen niemals zum „Liken“ oder teilen verwenden, können die Tracker trotzdem Daten über Ihre Surf-Aktivitäten sammeln. Facebook Container blockiert diese Tracker.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container blockiert diese Tracker. Wenn Sie jedoch auf eine dieser Schaltflächen klicken, kann Facebook Sie verfolgen.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Grafik: Zaunsymbol von Facebook Container mit Schild.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Im Facebook-Container zugelassene Websites", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "SEITEN AUF DER LISTE", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Keine", 
+    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "WEBSITES, DIE SIE ERLAUBT HABEN", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container schließt Facebook-Websites in den Schutzbereich ein. Sie können andere Websites in diesen Bereich aufnehmen, Facebook kann dann jedoch mehr von Ihrem Web-Browsing verfolgen."
+  }, 
+  "remove": {
+    "message": "Entfernen", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Website aus Facebook-Container entfernen?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Wenn Sie diese Seite aus dem Facebook-Container entfernen, funktioniert die Funktion „Mit Facebook anmelden“ nicht mehr und die Facebook-Tracking-Cookies werden gelöscht.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": "Wenn Sie sich erneut bei Facebook anmelden möchten, müssen Sie sie wieder in den Facebook-Container aufnehmen.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container hat diese Schaltfläche deaktiviert und verhindert, dass Facebook Ihren Besuch auf dieser Seite verfolgt.", 
+    "description": ""
   }
 }
