@@ -43,6 +43,10 @@
     "message": "Facebook Container 篱笆图标", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
+  "onboarding3-subhead": {
+    "message": "我如何确定 Facebook Container 正在工作？", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "允许", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
