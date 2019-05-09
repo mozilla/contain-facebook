@@ -70,9 +70,29 @@
     "message": "Facebook Container 籬笆圖示", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
+  "onboarding2-p1": {
+    "message": "當您造訪 Facebook Container 中的相關網站時，例如 Facebook.com 時，將會於 Firefox 網址列顯示此圖示。", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "這些網站需要使用您的 Facebook 身分（或是需要知道你是誰）才能正常運作。這也代表 Facebook 可追蹤您在這些網站作的任何事情。", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
   "onboarding3-subhead": {
     "message": "我要怎麼知道 Facebook Container 正在運作中？", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "網頁中讓您按讚、分享到 Facebook 或以 Facebook 帳號登入的按鈕都包含追蹤器。Facebook Container 會封鎖這些追蹤器，並顯示籬笆圖示，讓您知道我們已移除這些追蹤器。", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "此圖片展示了 Facebook Container 的籬笆圖示會如何出現在網頁中的 Facebook「讚」按鈕旁邊。", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "但若您點擊了任一按鈕，Facebook 還是能追蹤您。", 
+    "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
     "message": "允許", 
@@ -122,6 +142,14 @@
     "message": "我們保護您不受 Facebook 追蹤。", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p1": {
+    "message": "顯示於線上購物、新聞等網站的 Facebook 按鈕都包含追蹤器，可告訴 Facebook 您曾經去過這些網站，就算您從未點擊或使用這些按鈕，追蹤器還是會收集您的上網資料。Facebook Container 會封鎖這些追蹤器。", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container 會封鎖這些追蹤器，可是若您點擊了任一按鈕，Facebook 還是可以追蹤您。", 
+    "description": ""
+  }, 
   "trackers-detected-fence-alt": {
     "message": "Facebook Container 盾牌籬笆圖示。", 
     "description": "This is alternative text describing the container fence icon."
@@ -151,6 +179,22 @@
   }, 
   "remove-site-subhead": {
     "message": "要將網站從 Facebook Container 移除？", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "將此網站從 Facebook Container 移除，代表將無法使用「使用 Facebook 帳號登入」功能，也將清除 Facebook 的追蹤 Cookie。", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": "若您想要再次使用「使用 Facebook 帳號登入」功能，需要將其再加回 Facebook Container。", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container 已停用此按鈕，並封鎖 Facebook，不讓其追蹤您造訪此頁面的紀錄。", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container 已封鎖來自 Facebook 的追蹤器。若您使用此網站的「使用 Facebook 帳號登入」功能，Facebook 還是能追蹤您。", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
