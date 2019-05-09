@@ -3,7 +3,7 @@
     "message": "Facebook Container tách biệt Facebook của bạn với phần còn lại của hoạt động web của bạn để ngăn Facebook theo dõi bạn bên ngoài trang web Facebook thông qua cookie của bên thứ ba.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
+  "in-fbc-subhead": {
     "message": "$URL$ nằm trong Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
@@ -13,9 +13,8 @@
       }
     }
   }, 
-  "onFacebookText": {
-    "message": "Biểu tượng này xuất hiện trên thanh địa chỉ khi bạn truy cập các trang web như Facebook.com, Instagram.com hoặc Messenger.com mà nó được chỉ định trong Facebook Container.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "in-fbc-p1": {
+    "message": "Facebook hiện có thể theo dõi bạn trên trang web này. Để xóa trang web này khỏi Facebook Container, chọn Trang web được phép trong Facebook Container và xóa nó khỏi danh sách."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ không nằm trong Facebook Container.", 
@@ -34,5 +33,112 @@
   "onUnknownSiteHeader": {
     "message": "Trang web này không nằm trong Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "Sử dụng Facebook Container", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "btn-allow": {
+    "message": "Cho phép", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Hủy bỏ", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Tiếp", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Quay lại", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Xong", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Quay trở lại bảng điều khiển trước.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Chuyển đến cách hoạt động của Facebook Container", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Không phát hiện trình theo dõi Facebook nào", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container không phát hiện bất kỳ trình theo dõi Facebook nào trên trang này. Tuy nhiên, trang vẫn có thể chứa các loại trình theo dõi khác.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Tìm hiểu thêm", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Cách hoạt động của Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Chúng tôi đã bảo vệ bạn khỏi Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container chặn các trình theo dõi này. Tuy nhiên, nếu bạn nhấp vào bất kỳ nút nào trong số này, Facebook sẽ có thể theo dõi bạn.", 
+    "description": ""
+  }, 
+  "sites-added-subhead": {
+    "message": "Các trang được phép trong Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "BAO GỒM TRANG WEB", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Không có", 
+    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "TRANG WEB BẠN ĐÃ CHO PHÉP", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container đặt các trang web thuộc sở hữu của Facebook trong ranh giới. Bạn có thể cho phép các trang web khác vào ranh giới, nhưng điều này sẽ cho phép Facebook theo dõi nhiều hơn trình duyệt web của bạn."
+  }, 
+  "remove": {
+    "message": "Xóa", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Xóa trang web khỏi Facebook Container?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Xóa trang web này khỏi Facebook Container. có nghĩa là tính năng đăng nhập bằng Facebook sẽ không còn hoạt động và cookie theo dõi Facebook sẽ bị xóa.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Nếu bạn muốn sử dụng lại đăng nhập bằng Facebook, bạn sẽ cần thêm lại vào Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container đã vô hiệu hóa nút này và chặn Facebook theo dõi lượt truy cập của bạn vào trang này.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container đã chặn trình theo dõi Facebook. Nếu bạn sử dụng đăng nhập bằng Facebook trên trang web này, Facebook sẽ có thể theo dõi bạn.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Cho phép Facebook theo dõi bạn ở đây?", 
+    "description": ""
   }
 }
