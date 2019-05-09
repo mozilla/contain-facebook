@@ -3,20 +3,6 @@
     "message": "Facebook Container მიჯნავს თქვენს Facebook-ვინაობას დანარჩენი ვებგვერდებისგან, რაც ხელს შეუშლის Facebook-ს თვალი ადევნოს თქვენს მოქმედებებს სხვა საიტებზე, თავიანთი ფუნთუშების მეშვეობით.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$URL$ განთავსებულია Facebook-Container-ში.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
-    "placeholders": {
-      "url": {
-        "content": "$1", 
-        "example": "www.facebook.com"
-      }
-    }
-  }, 
-  "onFacebookText": {
-    "message": "ეს ნიშანი მისამართების ველში ჩნდება, როდესაც ეწვევით საიტებს Facebook.com, Instagram.com ან Messenger.com განთავსებულს Facebook-Container-ში.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ არაა განთავსებული Facebook-Container-ში.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -34,5 +20,9 @@
   "onUnknownSiteHeader": {
     "message": "ეს საიტი არაა განთავსებული Facebook-Container-ში.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
   }
 }
