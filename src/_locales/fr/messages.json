@@ -58,5 +58,69 @@
   "onboarding2-alt": {
     "message": "L’icône de barrière de Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "btn-arrow-forward": {
+    "message": "Aller à Fonctionnement de Facebook Container", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Aucun traqueur de Facebook n’a été détecté", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container n’a détecté aucun traqueur de Facebook sur cette page. La page pourrait cependant toujours contenir d'autres types de traqueurs.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "En savoir plus", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Fonctionnement de Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Vous êtes à l’abri de Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Les boutons Facebook apparaissant sur les sites d’achats, d’actualités et d’autres sites contiennent des traqueurs indiquant à Facebook ce que vous avez visité. Même si vous n’utilisez jamais ces boutons pour aimer ou partager, les traqueurs peuvent toujours collecter des données sur votre navigation. Facebook Container bloque ces traqueurs.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container bloque ces traqueurs. Toutefois, si vous cliquez sur l’un de ces boutons, Facebook pourra vous suivre.", 
+    "description": ""
+  }, 
+  "sites-added-subhead": {
+    "message": "Sites autorisés dans Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "no-sites-added": {
+    "message": "Aucun", 
+    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "Retirer", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Retirer le site de Facebook Container ?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Si vous retirez ce site de Facebook Container, la fonction de connexion avec Facebook ne fonctionnera plus et les cookies de suivi de Facebook seront supprimés.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Si vous souhaitez utiliser à nouveau la connexion avec Facebook, vous devrez le rajouter à Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container a désactivé ce bouton et a empêché Facebook de suivre votre visite sur cette page.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container a bloqué les traqueurs de Facebook. Si vous utilisez la connexion avec Facebook sur ce site, Facebook sera en mesure de vous suivre.", 
+    "description": ""
   }
 }
