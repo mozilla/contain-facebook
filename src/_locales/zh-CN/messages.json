@@ -17,7 +17,7 @@
     "message": "Facebook Container 会在此网站跟踪您。若要从 Facebook Container 移除，请选择“Facebook Container 中允许的网站”并将其从列表中移除。"
   }, 
   "on-facebook-subhead": {
-    "message": "Facebook 与 Facebook Container 边界上的网站", 
+    "message": "Facebook 与 Facebook Container 边界内的网站", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "on-facebook-p1": {
@@ -63,7 +63,7 @@
     "description": "Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-subhead": {
-    "message": "Facebook 与 Facebook Container 边界上的网站", 
+    "message": "Facebook 与 Facebook Container 边界内的网站", 
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
   }, 
   "onboarding2-alt": {
