@@ -3,8 +3,8 @@
     "message": "Facebook Container isolearret jo Facebook-aktiviteiten fan jo oare ynternetaktiviteiten en foarkomt dat Facebook jo mei cookies fan tredden bûten de Facebook-website folget.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$URL$ stiet yn de Facebook-kontener.", 
+  "in-fbc-subhead": {
+    "message": "$URL$ stiet yn de Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
@@ -13,9 +13,12 @@
       }
     }
   }, 
-  "onFacebookText": {
-    "message": "Dit symboal wurdt yn de adresbalke toand, wannear't jo websites lykas Facebook.com, Instagram.com of Messenger.com besykje, dy't yn in Facebook-kontener steane.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "in-fbc-p1": {
+    "message": "Facebook kin jo no op dizze side folgje. Om dizze side út Facebook Container fuort te smiten, selektearje Websiden tastien yn Facebook Container en wiskje it fan de list."
+  }, 
+  "on-facebook-subhead": {
+    "message": "Op Facebook en Siden yn de Facebook Container Boundary", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ stiet net yn de Facebook-kontener.", 
