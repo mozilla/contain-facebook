@@ -384,6 +384,7 @@ window.addEventListener("click", function(e){
   }
 });
 
+/*
 function removeBadges() {
   for (let itemClass of facebookDetectedElementsArr) {
     // positionFacebookBadge(item);
@@ -394,6 +395,7 @@ function removeBadges() {
     badge.parentNode.removeChild(badge);
   }
 }
+*/
 
 let checkForTrackers = true;
 
@@ -419,7 +421,7 @@ function contentScriptInit(resetSwitch, msg) {
   // callCount = callCount + 1;
   // console.log(call, callCount);
   // console.log(source, ": ", checkForTrackers);
-  console.log(msg);
+  // console.log(msg);
 
   if (resetSwitch) {
     contentScriptDelay = 999;
@@ -433,12 +435,10 @@ function contentScriptInit(resetSwitch, msg) {
   }
 }
 
-checkIfURLShouldBeBlocked(){
-  // TODO: Send current URL (or request directly from background.js) to check
-  // if the page needs to be searched for facebook elements. This fires BEFORE
-  // the background.js can check if the site is in the FBC.
+async function checkIfURLShouldBeBlocked() {
+  const siteList = await browser.runtime.sendMessage("what-sites-are-added");
 
-  if (true) {
+  if (siteList.includes(window.location.host)) {
     checkForTrackers = false;
   } else {
     contentScriptInit(false);
