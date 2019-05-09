@@ -3,8 +3,29 @@
     "message": "Facebook Container მიჯნავს თქვენს Facebook-ვინაობას დანარჩენი ვებგვერდებისგან, რაც ხელს შეუშლის Facebook-ს თვალი ადევნოს თქვენს მოქმედებებს სხვა საიტებზე, თავიანთი ფუნთუშების მეშვეობით.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "in-fbc-subhead": {
+    "message": "$URL$ არის Facebook Container-ში.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "in-fbc-p1": {
+    "message": "Facebook-ს შეუძლია თვალი გადევნოთ ამ საიტზე. თუ გსურთ მოცილდეს Facebook Container-იდან, აირჩიეთ დაშვებული საიტები Facebook Container-ში და მოაცილეთ ჩამონათვალიდან."
+  }, 
+  "on-facebook-p1": {
+    "message": "ეს ნიშანი გამოჩნდება Firefox-ის მისამართების ველში, როცა ეწვევით Facebook-ის კუთვნილ საიტებს ან იმ საიტებს, რომლებიც დამატებული გაქვთ Facebook Container-ში.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "აღნიშნული საიტები წვდომას ითხოვს თქვენს Facebook-ვინაობაზე (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
-    "message": "$URL$ არაა განთავსებული Facebook-Container-ში.", 
+    "message": "$URL$ არაა Facebook-Container-ში.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
@@ -24,5 +45,45 @@
   "facebookContainer": {
     "message": "Facebook Container", 
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "btn-allow": {
+    "message": "დაშვება", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "გაუქმება", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "შემდეგ", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "უკან", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "მზადაა", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "წინა არეზე დაბრუნება.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "no-trackers-subhead": {
+    "message": "Facebook-მეთვალყურეები არ აღმოჩენილა", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "ვრცლად", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "როგორ მუშაობს Facebook-Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "ჩვენ გიცავთ Facebook-ისგან.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }
 }
