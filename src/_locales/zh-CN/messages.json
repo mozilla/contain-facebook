@@ -14,14 +14,14 @@
     }
   }, 
   "in-fbc-p1": {
-    "message": "Facebook Container 会在此网站跟踪您。若要从 Facebook Container 移除，请选择「Facebook Container 中允许的网站」并将其从列表中移除。"
+    "message": "Facebook Container 会在此网站跟踪您。若要从 Facebook Container 移除，请选择“Facebook Container 中允许的网站”并将其从列表中移除。"
   }, 
   "on-facebook-subhead": {
     "message": "在 Facebook 与 Facebook Container 边界上的网站", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "on-facebook-p1": {
-    "message": "当您访问 Facebook 相关网站，或添加到 Facebook Container 的网站时，Firefox 的地址栏将出现此图标。", 
+    "message": "当您访问 Facebook 相关网站，或添加到 Facebook Container 的网站时，此图标会显示于 Firefox 地址栏。", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "on-facebook-p2": {
@@ -39,7 +39,7 @@
     }
   }, 
   "notOnFacebookText": {
-    "message": "此网站位于 Facebook Container 之外。这使得 Facebook 更难以在网上跟踪您。", 
+    "message": "此网站位于 Facebook Container 之外，这使得 Facebook 更难以在网上跟踪您。", 
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "onUnknownSiteHeader": {
@@ -59,7 +59,7 @@
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
   "onboarding1-p2": {
-    "message": "Facebook Container 可为 Facebook 的各网站与网络上的其他网站建立界线，使 Facebook 更难在网上跟踪您。", 
+    "message": "Facebook Container 可为 Facebook 的各网站与网络上的其他网站建立界线，使 Facebook 更难以在网上跟踪您。", 
     "description": "Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-subhead": {
@@ -82,6 +82,18 @@
     "message": "我如何确定 Facebook Container 正在工作？", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
+  "onboarding3-p1": {
+    "message": "网页中让您点赞、分享到 Facebook 或以 Facebook 账号登陆的按钮都包含跟踪器。Facebook Container 会拦截这些跟踪器，并显示篱笆图标，让您知道我们已移除这些跟踪器。", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "此图片演示了 Facebook Container 的篱笆图标会如何出现于网页中的 Facebook “赞”按钮旁边。", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "但若您点击了任一按钮，Facebook 还是能够跟踪您。", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "允许", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -102,12 +114,20 @@
     "message": "完成", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "btn-arrow-back": {
+    "message": "回到上一个面板。", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
   "btn-arrow-forward": {
     "message": "前往 Facebook Container 工作原理", 
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
   }, 
   "no-trackers-subhead": {
     "message": "未检测到 Facebook 跟踪器", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container 未在此页面检测到任何 Facebook 跟踪器。但该页面可能仍有其他类型的跟踪器。", 
     "description": ""
   }, 
   "learn-more": {
@@ -121,6 +141,14 @@
   "trackers-detected-subhead": {
     "message": "我们保护您不受 Facebook 跟踪。", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "显示在电商、新闻等网站的 Facebook 按钮都包含跟踪器，可告诉 Facebook 您曾经去过这些网站，就算您从未点击或使用这些按钮，跟踪器还是会收集您的浏览数据。 Facebook Container 会拦截这些跟踪器。", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container 会拦截这些跟踪器，可是若您点击了任一按钮，Facebook 还是可以跟踪您。", 
+    "description": ""
   }, 
   "trackers-detected-fence-alt": {
     "message": "Facebook Container 盾牌篱笆图标。", 
@@ -141,6 +169,9 @@
   "sites-allowed": {
     "message": "您允许的网站", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container 会将 Facebook 拥有的相关网站置于边界内。您可以允许其他网站进入该边界，但也会使 Facebook 更易跟踪您的网络浏览。"
   }, 
   "remove": {
     "message": "移除", 
