@@ -258,6 +258,7 @@ a:hover {
   transition: var(--transition);
 }
 
+.in-fbc-subhead::before,
 .trackers-detected-subhead::before {
   background-image: url("/img/fenced-badge.svg");
   background-position: center center;
@@ -267,12 +268,10 @@ a:hover {
   margin-right: 3px;
 }
 
-.on-facebook-img {
+.img.in-fbc {
   background-image: url("/img/image-inFBC@2x.png");
-  height: 170px;
-  background-repeat: no-repeat;
-  display: block;
   background-position: bottom center;
+  height: 170px;
 }
 
 .img.trackers-detected {
@@ -296,6 +295,7 @@ a:hover {
 
 .img,
 .on-facebook-subbhead::before,
+.in-fbc-subhead::before,
 .highlight-on-hover::after,
 .Facebook-text::after,
 .trackers-detected-subhead::before,
