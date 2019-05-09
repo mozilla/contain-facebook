@@ -1,16 +1,18 @@
-// Param values from https://developer.mozilla.org/Add-ons/WebExtensions/API/contextualIdentities/create
-const FACEBOOK_CONTAINER_NAME = "Facebook";
-const FACEBOOK_CONTAINER_COLOR = "blue";
-const FACEBOOK_CONTAINER_ICON = "briefcase";
+const FACEBOOK_CONTAINER_DETAILS = {
+  name: "Facebook",
+  color: "toolbar",
+  icon: "fence"
+};
+
 const FACEBOOK_DOMAINS = [
-  "facebook.com", "www.facebook.com", "facebook.net", "fb.com", 
+  "facebook.com", "www.facebook.com", "facebook.net", "fb.com",
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
 
-  "instagram.com", 
+  "instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
 
-  "messenger.com", "m.me", "messengerdevelopers.com", 
+  "messenger.com", "m.me", "messengerdevelopers.com",
 
   "atdmt.com",
 
@@ -23,8 +25,11 @@ const MAC_ADDON_ID = "@testpilot-containers";
 let macAddonEnabled = false;
 let facebookCookieStoreId = null;
 
+// TODO: refactor canceledRequests and tabsWaitingToLoad into tabStates
 const canceledRequests = {};
 const tabsWaitingToLoad = {};
+const tabStates = {};
+
 const facebookHostREs = [];
 
 async function isMACAddonEnabled () {
@@ -199,16 +204,34 @@ async function clearFacebookCookies () {
 
 async function setupContainer () {
   // Use existing Facebook container, or create one
-  const contexts = await browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_NAME});
+
+  const info = await browser.runtime.getBrowserInfo();
+  if (parseInt(info.version) < 67) {
+    FACEBOOK_CONTAINER_DETAILS.color = "blue";
+    FACEBOOK_CONTAINER_DETAILS.icon = "briefcase";
+  }
+
+  const contexts = await browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_DETAILS.name});
   if (contexts.length > 0) {
-    facebookCookieStoreId = contexts[0].cookieStoreId;
+    const facebookContext = contexts[0];
+    facebookCookieStoreId = facebookContext.cookieStoreId;
+    // Make existing Facebook container the "fence" icon if needed
+    if (facebookContext.color !== FACEBOOK_CONTAINER_DETAILS.color ||
+        facebookContext.icon !== FACEBOOK_CONTAINER_DETAILS.icon
+    ) {
+      await browser.contextualIdentities.update(
+        facebookCookieStoreId,
+        { color: FACEBOOK_CONTAINER_DETAILS.color, icon: FACEBOOK_CONTAINER_DETAILS.icon }
+      );
+    }
   } else {
-    const context = await browser.contextualIdentities.create({
-      name: FACEBOOK_CONTAINER_NAME,
-      color: FACEBOOK_CONTAINER_COLOR,
-      icon: FACEBOOK_CONTAINER_ICON
-    });
+    const context = await browser.contextualIdentities.create(FACEBOOK_CONTAINER_DETAILS);
     facebookCookieStoreId = context.cookieStoreId;
+  }
+  // Initialize domainsAddedToFacebookContainer if needed
+  const fbcStorage = await browser.storage.local.get();
+  if (!fbcStorage.domainsAddedToFacebookContainer) {
+    await browser.storage.local.set({"domainsAddedToFacebookContainer": []});
   }
 }
 
@@ -218,7 +241,7 @@ async function maybeReopenTab (url, tab, request) {
     // We don't reopen MAC assigned urls
     return;
   }
-  const cookieStoreId = shouldContainInto(url, tab);
+  const cookieStoreId = await shouldContainInto(url, tab);
   if (!cookieStoreId) {
     // Tab doesn't need to be contained
     return;
@@ -251,13 +274,40 @@ function isFacebookURL (url) {
   return false;
 }
 
-function shouldContainInto (url, tab) {
+// TODO: refactor parsedUrl "up" so new URL doesn't have to be called so much
+// TODO: refactor fbcStorage "up" so browser.storage.local.get doesn't have to be called so much
+async function addDomainToFacebookContainer (url) {
+  const parsedUrl = new URL(url);
+  const fbcStorage = await browser.storage.local.get();
+  fbcStorage.domainsAddedToFacebookContainer.push(parsedUrl.host);
+  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+}
+
+async function removeDomainFromFacebookContainer (domain) {
+  const fbcStorage = await browser.storage.local.get();
+  const domainIndex = fbcStorage.domainsAddedToFacebookContainer.indexOf(domain);
+  fbcStorage.domainsAddedToFacebookContainer.splice(domainIndex, 1);
+  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+}
+
+async function isAddedToFacebookContainer (url) {
+  const parsedUrl = new URL(url);
+  const fbcStorage = await browser.storage.local.get();
+  if (fbcStorage.domainsAddedToFacebookContainer.includes(parsedUrl.host)) {
+    return true;
+  }
+  return false;
+}
+
+async function shouldContainInto (url, tab) {
   if (!url.startsWith("http")) {
     // we only handle URLs starting with http(s)
     return false;
   }
 
-  if (isFacebookURL(url)) {
+  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
+
+  if (isFacebookURL(url) || hasBeenAddedToFacebookContainer) {
     if (tab.cookieStoreId !== facebookCookieStoreId) {
       // Facebook-URL outside of Facebook Container Tab
       // Should contain into Facebook Container
@@ -373,8 +423,14 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.disable();
     return;
   }
+
+  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
+
   if (isFacebookURL(url)) {
-    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel1.html"});
+    // TODO: change panel logic from browser.storage to browser.runtime.onMessage
+    // so the panel.js can "ask" background.js which panel it should show
+    browser.storage.local.set({"CURRENT_PANEL": "on-facebook"});
+    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     const fbcStorage = await browser.storage.local.get();
     if (fbcStorage.PANEL_SHOWN !== true) {
       await browser.browserAction.setBadgeBackgroundColor({
@@ -383,8 +439,13 @@ async function updateBrowserActionIcon (tab) {
       });
       browser.browserAction.setBadgeText({tabId: tab.id, text: " "});
     }
-  } else {
-    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel2.html"});
+  } else if (hasBeenAddedToFacebookContainer) {
+    browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
+  } else { 
+    const tabState = tabStates[tab.id];
+    const panelToShow = (tabState && tabState.trackersDetected) ? "trackers-detected" : "no-trackers";
+    browser.storage.local.set({"CURRENT_PANEL": panelToShow});
+    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
     browser.browserAction.setBadgeText({tabId: tab.id, text: ""});
   }
 }
@@ -418,24 +479,52 @@ async function containFacebook (request) {
   return maybeReopenTab(request.url, tab, request);
 }
 
-(async function init () {
-  await setupMACAddonListeners();
-  macAddonEnabled = await isMACAddonEnabled();
-
-  try {
-    await setupContainer();
-  } catch (error) {
-    // TODO: Needs backup strategy
-    // See https://github.com/mozilla/contain-facebook/issues/23
-    // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
-    // eslint-disable-next-line no-console
-    console.log(error);
-    return;
+// Lots of this is borrowed from old blok code:
+// https://github.com/mozilla/blok/blob/master/src/js/background.js
+async function blockFacebookSubResources (requestDetails) {
+  if (requestDetails.type === "main_frame") {
+    return {};
   }
-  clearFacebookCookies();
-  generateFacebookHostREs();
 
-  // Clean up canceled requests
+  if (typeof requestDetails.originUrl === "undefined") {
+    return {};
+  }
+
+  const urlIsFacebook = isFacebookURL(requestDetails.url);
+  const originUrlIsFacebook = isFacebookURL(requestDetails.originUrl);
+
+  if (!urlIsFacebook) {
+    return {};
+  }
+
+  if (originUrlIsFacebook) {
+    const message = {msg: "facebook-domain"};
+    // Send the message to the content_script
+    browser.tabs.sendMessage(requestDetails.tabId, message);
+    return {};
+  }
+
+  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(requestDetails.originUrl);
+
+  if ( urlIsFacebook && !originUrlIsFacebook ) {
+    if (!hasBeenAddedToFacebookContainer ) {
+      const message = {msg: "blocked-facebook-subresources"};
+      // Send the message to the content_script
+      browser.tabs.sendMessage(requestDetails.tabId, message);
+
+      tabStates[requestDetails.tabId] = { trackersDetected: true };
+      return {cancel: true};
+    } else {
+      const message = {msg: "allowed-facebook-subresources"};
+      // Send the message to the content_script
+      browser.tabs.sendMessage(requestDetails.tabId, message);
+      return {};
+    }
+  }
+  return {};
+}
+
+function setupWebRequestListeners() {
   browser.webRequest.onCompleted.addListener((options) => {
     if (canceledRequests[options.tabId]) {
       delete canceledRequests[options.tabId];
@@ -447,12 +536,47 @@ async function containFacebook (request) {
     }
   },{urls: ["<all_urls>"], types: ["main_frame"]});
 
-  // Add the request listener
+  // Add the main_frame request listener
   browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
 
-  browser.tabs.onUpdated.addListener(tabUpdateListener);
+  // Add the sub-resource request listener
+  browser.webRequest.onBeforeRequest.addListener(blockFacebookSubResources, {urls: ["<all_urls>"]}, ["blocking"]);
+}
 
+function setupWindowsAndTabsListeners() {
+  browser.tabs.onUpdated.addListener(tabUpdateListener);
+  browser.tabs.onRemoved.addListener(tabId => delete tabStates[tabId] );
   browser.windows.onFocusChanged.addListener(windowFocusChangedListener);
+}
+
+(async function init () {
+  await setupMACAddonListeners();
+  macAddonEnabled = await isMACAddonEnabled();
+
+  try {
+    await setupContainer();
+  } catch (error) {
+    // TODO: Needs backup strategy
+    // See https://github.com/mozilla/contain-facebook/issues/23
+    // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
+    // eslint-disable-next-line no-console
+    console.error(error);
+    return;
+  }
+  clearFacebookCookies();
+  generateFacebookHostREs();
+  setupWebRequestListeners();
+  setupWindowsAndTabsListeners();
+
+  browser.runtime.onMessage.addListener( (message, {url}) => {
+    if (message === "what-sites-are-added") {
+      return browser.storage.local.get().then(fbcStorage => fbcStorage.domainsAddedToFacebookContainer);
+    } else if (message.removeDomain) {
+      removeDomainFromFacebookContainer(message.removeDomain).then( results => results );
+    } else {
+      addDomainToFacebookContainer(url).then( results => results);
+    }
+  });
 
   maybeReopenAlreadyOpenTabs();
 

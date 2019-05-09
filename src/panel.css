@@ -1,51 +1,368 @@
-.wrapper {
-  width: 380px;
-  height: 220px;
-  margin: 1em;
-}
-  
-.padding{
-  padding: 0;
-}
-
-.text{
-  padding: 0 25px 0 25px;
-  font-size: 14px;
+body {
+  --blue60: #0060df;
+  --blue70: #003eaa;
+  --primaryText: #0c0c0d;
+  --secondaryText: #737373;
+  --grey20: #ededf0;
+  --transition: all .15s cubic-bezier(.07,.95,0,1);
+  --borders: 1px solid #ededf0;
+  font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.userContext-icon {
-  padding-left: 25px;
-  padding-right: 45px;
+html,
+body {
+  overflow: hidden;
+  min-height: 200px;
+  min-width: 355px;
+  max-width: 355px;
+  transition: all .25s ease-in-out;
+}
+
+h2,
+h3,
+div,
+p,
+a,
+body,
+span {
+  margin: 0;
+  font-size: 12px;
+}
+
+.main-content-wrapper {
+  padding: 1.5rem 1.65rem;
+  min-height: 100px;
+}
+
+h2,
+p,
+div.img {
+  padding-bottom: 1rem;
+}
+
+.main-content-wrapper a:last-child {
+  padding-bottom: 0;
+}
+
+h1 { /* "Facebook Container" headline for all panels */
+  font-weight: 600;
+  margin: 0;
+  font-size: 13px;
+  border-bottom: var(--borders);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+}
+
+.btn-return.arrow-left {
+  position: absolute;
+  border: 0;
+  left: 15px;
+  top: 15px;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url("/img/arrow-icon-left.svg");
+  cursor: pointer;
+}
+
+h2 { /* panel sub-head for all panels */
   display: flex;
   align-items: center;
 }
 
-.userContext-label {
-  margin-inline-start: 0;
-  margin-inline-end: 3px;
-  color: #37adff;
+h2,
+.bold {
+  font-weight: 500;
 }
 
-.userContext-indicator {
-  width: 16px;
-  height: 16px;
-  background-image: url("briefcase.svg");
+h3 {
+  font-weight: 300;
+}
+
+.Facebook-text {
+  color: var(--secondaryText);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.Facebook-text::after { /* grey Facebook with fence */
+  background-image: url("/img/fbc-icon2.svg");
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-left: 4px;
+  margin-bottom: -1px;
+}
+
+p,
+a {
+  font-weight: 400;
+  line-height: 140%;
+}
+
+a {
+  color: var(--blue60);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--blue70);
+  border-bottom: 1.5px solid var(--blue70);
+}
+
+.fw-bottom-btn { /* Full-width bottom bar "How Facebook Container Works" button. Only on non-onboarding panels. */
+  padding: .7rem 0;
+  background-color: transparent;
+  border-top: var(--borders);
+}
+
+.highlight-on-hover { /* Full-width element that wraps around the "How Faceook Container Works" span and arrow icon */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  padding: .45rem 1.65rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+
+.highlight-on-hover::after {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 15px;
+  height: 100%;
+  width: .35rem;
+  background-image: url("/img/arrow-icon-right.svg");
+  background-position: center center;
+  transform: scale(1.3);
+}
+
+.highlight-on-hover span {
+  pointer-events: none;
+}
+
+.allowed-site-wrapper {
+  display: block;
+  position: relative;
+  margin: .25rem 0;
+  padding: .25rem 1.65rem;
+  display: flex;
+  align-items: center;
+  min-height: 1.25rem;
+  transition: var(--transition);
+}
+
+.remove-btn {
+  background-color: var(--blue60);
+  border: 1px solid var(--blue60);
+  border-top: 1px solid var(--blue70);
+  cursor: pointer;
+  line-height: 41px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 13px;
+}
+
+.remove-btn:hover {
+  background-color: var(--blue70);
+}
+
+.remove-site {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 1.65rem;
+  height: 1.1rem;
+  width: 1.1rem;
+  background-image: url("/img/x-close.svg");
+  background-position: center center;
   background-size: contain;
-  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.remove-site-panel .allowed-site-wrapper {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.remove-site-panel .allowed-site-wrapper:hover {
+  background-color: transparent;
+}
+
+.allowed-site-wrapper:hover,
+.highlight-on-hover:hover {
+  background-color: var(--grey20);
+  transition: var(--transition);
+}
+
+.fw-bottom-btn,
+.bottom-btns {
+  display: flex;
+  justify-content: space-between;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.bottom-btns { /* Bottom "Cancel, Back, Next, Done" buttons - onboarding panels only */
+  width: 100%;
+}
+
+.bottom-btn {
+  border-bottom: 0;
+  line-height: 103%;
+  height: 3.37rem;
+  width: 50%;
+  color: var(--primaryText);
+  padding: 1.15rem 0;
+  text-align: center;
+}
+
+.bottom-btn:first-of-type { /* Onboarding Panels only: The first bottom button ("Cancel", "Back") is always gray */
+  border-top: 1px solid rgba(24, 25, 26, 0.14);
+  border-right: 1px solid rgba(24, 25, 26, 0.14);
+  border-left: 0;
+  background-color: rgba(12,12,13, 0.05);
+  left: 0;
+}
+
+.bottom-btn:first-of-type:hover {
+  background-color: rgba(204, 204, 204, 0.5);
+}
+
+.bottom-btn:last-of-type { /* Onboarding Panels only: The second bottom button on the onboarding panels is always blue */
+  border-top: 1px solid var(--blue70);
+  border-left: 1px solid var(--blue60);
+  border-right: 0;
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--blue60);
+  right: 0;
+}
+
+.bottom-btn:last-of-type:hover {
+  background-color: var(--blue70);
+}
+
+.remove-btn,
+.remove-btn:hover,
+.bottom-btn,
+.bottom-btn:hover {
+  transition: var(--transition);
+}
+
+.in-fbc-subhead::before,
+.trackers-detected-subhead::before {
+  background-image: url("/img/fenced-badge.svg");
+  background-position: center center;
+  width: 23px;
+  height: 19px;
+  display: block;
+  margin-right: 3px;
+}
+
+.img.in-fbc {
+  background-image: url("/img/image-inFBC@2x.png");
+  background-position: bottom center;
+  height: 170px;
+}
+
+.img.trackers-detected {
+  background-image: url("/img/image-tracker-detected@2x.png");
+  height: 145px;
+  margin: 1.25rem 0 1.75rem -4px;
+  background-position: left, center;
+}
+
+.img.onboarding3 {
+  background-image: url("/img/image-example@2x.png");
+  height: 145px;
+  margin: 1rem auto 1.5rem auto;
   background-position: center center;
 }
 
 .img {
-  padding-right: 10px;
-  align-items: baseline;
+  display: block;
+  min-height: 100px;
 }
-  
-.heading {
-  text-align: center;
-  border-bottom: 1px solid #CCC;
-  padding: 0 0 15px 0;
+
+.img,
+.on-facebook-subbhead::before,
+.in-fbc-subhead::before,
+.highlight-on-hover::after,
+.Facebook-text::after,
+.trackers-detected-subhead::before,
+.btn-return.arrow-left {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-  
-.display {
+
+/* Bottom button hacks until a more reasonable solution presents itself */
+/* This eliminates (The-Powers-That-Be-Willing) a strange little white gap between
+   the bottom edge of the 'bottom-btns' and the bottom edge of the panel. */
+
+.onboarding3 .bottom-btn {
+  height: 3.41rem;
+}
+
+h3 {
+  margin-bottom: .5rem;
+  padding: 0 1.65rem;
+}
+
+h3.sites-allowed {
+  margin-top: 2rem;
+}
+
+/* allowed site flows */
+
+.site-name {
+  min-height: 13px;
+}
+
+.allowed-site-icon {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 1.1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.site-lists-wrapper {
+  min-height: 100px;
+  padding-bottom: 1.65rem;
+}
+
+.allowed-site-wrapper.default-allowed-site:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.allowed-site-wrapper.default-allowed-site {
+  pointer-events: none;
+}
+
+.favi-facebook {
+  background-image: url("/img/favi-facebook.png");
+}
+
+.favi-instagram {
+  background-image: url("/img/favi-instagram.png");
+}
+
+.favi-messenger {
+  background-image: url("/img/favi-messenger.png");
+}
+
+#no-trackers .fw-bottom-btn:last-of-type {
   display: none;
 }
