@@ -3,20 +3,6 @@
     "message": "Facebook Container isolerer Facebook-aktiviteten din frå resten av nettaktiviteten din for å hindre at Facebook sporar deg utanfor Facebook-nettstaden via tredjeparts infokapslar.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$URL$ finst i Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
-    "placeholders": {
-      "url": {
-        "content": "$1", 
-        "example": "www.facebook.com"
-      }
-    }
-  }, 
-  "onFacebookText": {
-    "message": "Dette ikonet blir vist i adressefeltet når du besøkjer nettsteder som Facebook.com, Instagram.com eller Messenger.com som er i Facebook Container.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ finst ikkje i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -34,5 +20,65 @@
   "onUnknownSiteHeader": {
     "message": "Denne nettsida finst ikkje i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding2-alt": {
+    "message": "Gjerde-ikonet til Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding3-subhead": {
+    "message": "Korleis veit eg at Facebook Container fungerer?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Tillat", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Avbryt", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Neste", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Tilbake", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Ferdig", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "learn-more": {
+    "message": "Les meir", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Korleis Facebook Container fungerer", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "sites-added-subhead": {
+    "message": "Tillatne nettstadar i Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "no-sites-added": {
+    "message": "Ingen", 
+    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "NETTSTADAR DU HAR TILLATE", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Tillate Facebook å spore deg her?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Ikkje vis meg dette meir", 
+    "description": ""
   }
 }
