@@ -90,9 +90,21 @@
     "message": "Gå tillbaka till föregående panel.", 
     "description": "This is alternative text for the back arrow button."
   }, 
+  "btn-arrow-forward": {
+    "message": "Gå till \"Hur Facebook Container fungerar\"", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Inga Facebook-trackers upptäckta", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Läs mer", 
     "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Hur Facebook Container fungerar", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
   "sites-added-subhead": {
     "message": "Webbplatser tillåtna i Facebook Container", 
