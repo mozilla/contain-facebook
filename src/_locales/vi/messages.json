@@ -16,6 +16,18 @@
   "in-fbc-p1": {
     "message": "Facebook hiện có thể theo dõi bạn trên trang web này. Để xóa trang web này khỏi Facebook Container, chọn Trang web được phép trong Facebook Container và xóa nó khỏi danh sách."
   }, 
+  "on-facebook-subhead": {
+    "message": "Trên Facebook và các trang web trong ranh giới Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Biểu tượng này xuất hiện trên thanh địa chỉ Firefox khi bạn truy cập các trang web do Facebook sở hữu hoặc các trang web bạn đã thêm vào Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "Các trang web này cần truy cập vào danh tính Facebook của bạn (hoặc biết bạn là ai) để hoạt động. Điều này cũng có nghĩa là Facebook có thể theo dõi mọi thứ bạn làm trên các trang này.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ không nằm trong Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -41,6 +53,46 @@
   "onboarding1-subhead": {
     "message": "Sử dụng Facebook Container", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p1": {
+    "message": "Facebook có thể theo dõi trình duyệt của bạn vượt xa Facebook.com. Ví dụ, các nút Like và Share của Facebook có thể theo dõi nơi bạn đã từng ở — ngay cả trên các trang bạn không bao giờ thích hoặc chia sẻ.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container tạo ra một ranh giới giữa các trang web Facebook và phần còn lại của trang web để Facebook khó theo dõi bạn trực tuyến hơn.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Trên Facebook và các trang web trong ranh giới Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Biểu tượng hàng rào của Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Biểu tượng này xuất hiện trên thanh địa chỉ Firefox khi bạn truy cập các trang web, như Facebook.com, hoặc nằm trong ranh giới Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Các trang web này cần truy cập vào danh tính Facebook của bạn (hoặc biết bạn là ai) để hoạt động. Điều này cũng có nghĩa là Facebook có thể theo dõi mọi thứ bạn làm trên các trang này.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "Làm thế nào để biết Facebook Container đang hoạt động?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Các nút cho phép bạn thích hoặc chia sẻ mọi thứ với Facebook hoặc cho phép bạn đăng nhập vào các trang web bằng tài khoản Facebook của bạn có chứa trình theo dõi. Facebook Container sẽ chặn các trình theo dõi này và hiển thị biểu tượng hàng rào để hiển thị cho bạn nơi trình theo dõi đã bị xóa.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Hình ảnh này cho thấy biểu tượng hàng rào Facebook Container sẽ xuất hiện trong trang bên cạnh nút Like trên Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Tuy nhiên, nếu bạn nhấp vào bất kỳ nút nào trong số này, Facebook sẽ có thể theo dõi bạn.", 
+    "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
     "message": "Cho phép", 
@@ -90,9 +142,17 @@
     "message": "Chúng tôi đã bảo vệ bạn khỏi Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p1": {
+    "message": "Các nút Facebook xuất hiện khi mua sắm, tin tức và các trang web khác chứa trình theo dõi cho Facebook biết bạn đã ở đâu trên web. Ngay cả khi bạn không bao giờ sử dụng các nút này để thích hoặc chia sẻ, trình theo dõi vẫn có thể thu thập dữ liệu về trình duyệt của bạn. Facebook Container chặn các trình theo dõi này.", 
+    "description": ""
+  }, 
   "trackers-detected-p2": {
     "message": "Facebook Container chặn các trình theo dõi này. Tuy nhiên, nếu bạn nhấp vào bất kỳ nút nào trong số này, Facebook sẽ có thể theo dõi bạn.", 
     "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Hàng rào Facebook Container với lá chắn.", 
+    "description": "This is alternative text describing the container fence icon."
   }, 
   "sites-added-subhead": {
     "message": "Các trang được phép trong Facebook Container", 
@@ -139,6 +199,14 @@
   }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Cho phép Facebook theo dõi bạn ở đây?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Nếu bạn muốn sử dụng đăng nhập bằng Facebook thì Facebook sẽ có thể theo dõi hoạt động của bạn trên trang web này. Điều này có thể giúp họ xây dựng một bức tranh đầy đủ hơn về cuộc sống trực tuyến của bạn.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Đừng hỏi lại tôi điều này", 
     "description": ""
   }
 }
