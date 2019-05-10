@@ -223,7 +223,7 @@ function closePrompt() {
 function positionPrompt ( activeBadge ) {
   // console.log(activeBadge);
   // const activeBadge = document.querySelector(".fbc-badge-prompt");
-  const activeBadgePrompt = activeBadge.querySelector(".fbc-badge-prompt");
+  // const activeBadgePrompt = activeBadge.querySelector(".fbc-badge-prompt");
   const elemRect = activeBadge.getBoundingClientRect();
   if ( (window.innerWidth - elemRect.left) < 350  ) {
     activeBadge.classList.add("fbc-badge-prompt-align-right");
