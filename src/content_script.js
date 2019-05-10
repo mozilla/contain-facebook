@@ -10,6 +10,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='fb-login']",
   "[class*='FacebookConnectButton']",
   "[class*='signup-provider-facebook']", // Fandom
+  "[class*='facebook_login_click']", // Hi5
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
   "[href*='signin/facebook']",
