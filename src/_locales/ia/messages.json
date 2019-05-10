@@ -78,6 +78,26 @@
     "message": "Iste sitos besonia, pro functionar, de acceder a tu identitate de Facebook (o de saper qui es tu). Isto significa alsi que Facebook pote traciar toto lo que tu face sur iste sitos.", 
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding3-subhead": {
+    "message": "Como sape io si Facebook Container functiona?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Le buttones que te consenti de marcar Me place o Compartir cosas in Facebook, o que te lassa acceder a sitos web per tu conto Facebook, contine traciatores. Facebook Container blocara iste traciatores e monstra le icone barriera pro te monstrar ubi le traciatores era eliminate.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Iste imagine demonstra como le icone barriera de Facebook Container parera in le pagina a latere del button Me place de Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Comocunque, si tu clicca sur ulle de iste buttones Facebook potera te traciar.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Consentir", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
   "btn-cancel": {
     "message": "Cancellar", 
     "description": "This is a button to cancel out of the onboarding panel."
@@ -93,6 +113,22 @@
   "btn-done": {
     "message": "Facte", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Receder al quadro precedente.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Ir a Como functiona Facebook Container", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Nulle traciatores de Facebook disvelate", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container non disvelava ulle traciatores Facebook sur iste pagina. Comocunque, le pagina pote ancora continer altere typos de traciatores.", 
+    "description": ""
   }, 
   "learn-more": {
     "message": "Saper plus", 
