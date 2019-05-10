@@ -16,6 +16,10 @@
   "in-fbc-p1": {
     "message": "Facebook pote ora traciar te sur iste sito. Pro remover iste sito ex Facebook Container, elige Sitos consentite in Facebook Container e remove lo del lista."
   }, 
+  "on-facebook-subhead": {
+    "message": "Sur Facebook e sitos in le dominio de Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ non es in le Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -60,7 +64,7 @@
   }, 
   "no-sites-added": {
     "message": "Nihil", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "remove": {
     "message": "Remover", 
