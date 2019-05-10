@@ -21,7 +21,7 @@
         "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
     },
     "on-facebook-p1": {
-        "message": "This icon appears in the Firefox address bar when you visit Facebook-owned sites or sites you've added to Facebook Container.",
+        "message": "This icon appears in the Firefox address bar when you visit Facebook-owned sites or sites you’ve added to Facebook Container.",
         "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
     },
     "on-facebook-p2": {
@@ -120,7 +120,7 @@
     },
     "btn-arrow-forward": {
       "message": "Go to How Facebook Container Works",
-      "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+      "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
     },
     "no-trackers-subhead": {
       "message": "No Facebook Trackers Detected",
@@ -139,11 +139,11 @@
      "description": "This is a button that opens the Facebook Container onboarding flow."
    },
    "trackers-detected-subhead": {
-     "message": "We've protected you from Facebook.",
+     "message": "We’ve protected you from Facebook.",
      "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
    },
    "trackers-detected-p1": {
-    "message": "The Facebook buttons that appear on shopping, news, and other sites contain trackers that tell Facebook where you've been on the web. Even if you never use these buttons to like or share, the trackers can still collect data about your browsing. Facebook Container blocks these trackers.",
+    "message": "The Facebook buttons that appear on shopping, news, and other sites contain trackers that tell Facebook where you’ve been on the web. Even if you never use these buttons to like or share, the trackers can still collect data about your browsing. Facebook Container blocks these trackers.",
     "description": ""
    },
    "trackers-detected-p2": {
@@ -164,10 +164,10 @@
    },
    "no-sites-added": {
     "message": "None",
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
    },
    "sites-allowed": {
-    "message": "SITES YOU'VE ALLOWED",
+    "message": "SITES YOU’VE ALLOWED",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
    },
    "sites-added-p1": {
@@ -206,7 +206,7 @@
      "description": ""
    },
    "inPageUI-tooltip-prompt-checkbox": {
-     "message": "Don't show me this again",
+     "message": "Don’t show me this again",
      "description": ""
    }
 }
