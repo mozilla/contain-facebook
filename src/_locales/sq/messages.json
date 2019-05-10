@@ -122,9 +122,21 @@
     "message": "Mësoni më tepër", 
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
+  "how-fbc-works": {
+    "message": "Si Funksionon Faceook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
   "trackers-detected-subhead": {
     "message": "Ju kemi mbrojtur nga Facebook-u.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Gardh Facebook Container me mburojë.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Sajte të Lejuar në Facebook Container", 
+    "description": "This is a panel subhead."
   }, 
   "sites-included": {
     "message": "SAJTE TË PËRFSHIRË", 
@@ -133,5 +145,25 @@
   "no-sites-added": {
     "message": "Asnjë", 
     "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "SAJTE QË KENI LEJUAR", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "remove": {
+    "message": "Hiqe", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Të hiqet sajti nga Facebook Container?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Të lejohet Facebook-u t’ju gjurmojë këtu?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Mos ma shfaq më këtë", 
+    "description": ""
   }
 }
