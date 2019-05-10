@@ -180,5 +180,21 @@
   "remove-site-subhead": {
     "message": "მოცილდეს საიტი Facebook Container-იდან?", 
     "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "ამ საიტის Facebook Container-იდან მოცილება ნიშნავს, რომ Facebook-ის ანგარიშით შესვლა აღარ იმუშავებს და Facebook-ის თვალყურის მდევნელი ფუნთუშები წაიშლება.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " თუ გსურთ, გამოიყენოთ Facebook კვლავ, დაგჭირდებათ მისი უკან დამატება Facebook Container-ში.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container-მა გამორთო ეს ღილაკი და შეუზღუდა Facebook-ს ამ გვერდზე თქვენი მოქმედებებისთვის თვალის მიდევნების საშუალება.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container-მა შეზღუდა Facebook-ის მეთვალყურეები. თუ თქვენ Facebook-ის ანგარიშით შეხვალთ ამ საიტზე, Facebook შეძლებს თვალი მოგადევნოთ.", 
+    "description": ""
   }
 }
