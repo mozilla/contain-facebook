@@ -25,7 +25,8 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
 // TODO: Disarm click events on detected elements
 const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/share']", // Imgur Login
-  "[href*='facebook.com/dialog/share']",
+  "[href*='facebook.com/dialog/share']", // Share dialog
+  "[href*='facebook.com/dialog/feed']", // Feed dialog
   "[href*='facebook.com/sharer']", // Buzzfeed
   "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
   "[aria-label*='share on facebook']", // MSN
