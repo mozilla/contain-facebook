@@ -89,5 +89,33 @@
   "onboarding3-img": {
     "message": "Esta imagen muestra cómo aparecerá el ícono de la cerca de Contenedor de Facebook en la página junto al botón \"Me gusta\" de Facebook.", 
     "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Sin embargo, si hace clic en alguno de estos botones, Facebook podrá rastrearlo.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Permitir", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Cancelar", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Siguiente", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Retroceder", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Listo", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Volver al panel anterior.", 
+    "description": "This is alternative text for the back arrow button."
   }
 }
