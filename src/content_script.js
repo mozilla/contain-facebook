@@ -24,11 +24,14 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
 
 // TODO: Disarm click events on detected elements
 const SHARE_PATTERN_DETECTION_SELECTORS = [
-  "[href*='facebook.com/share']", // Imgur Login
-  "[href*='facebook.com/dialog/share']",
+  "[href*='facebook.com/share']",
+  "[href*='facebook.com/dialog/share']", // Share dialog
+  "[href*='facebook.com/dialog/feed']", // Feed dialog
   "[href*='facebook.com/sharer']", // Buzzfeed
   "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
   "[aria-label*='share on facebook']", // MSN
+  "[data-tracking*='facebook|share']", // football.london
+  ".post-action-options + .right > .social-icon.icon-f", // Imgur share
   "[title='Share on Facebook']" // Medium
 ];
 
@@ -116,6 +119,7 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
+  console.log("addFacebookBadge", target);
 
   const htmlBadgeDiv = createBadgeFragment(socialAction);
 
@@ -265,6 +269,19 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
 }
 
+function determineContainerClientRect() {
+  const htmlHeight = document.querySelector("html").offsetHeight;
+  const bodyHeight = document.querySelector("body").offsetHeight;
+  // console.log([htmlHeight, bodyHeight]);
+  if (htmlHeight === bodyHeight) {
+    return document.body.getBoundingClientRect();
+  } else if ( htmlHeight > bodyHeight ) {
+    return document.querySelector("html").getBoundingClientRect();
+  } else {
+    return document.body.getBoundingClientRect();
+  }
+}
+
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
   // Check for Badge element and select it
   if (!badgeClassUId) {
@@ -295,7 +312,8 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   }
 
   // Get position coordinates
-  const bodyRect = document.body.getBoundingClientRect();
+  const bodyRect = determineContainerClientRect();
+  // const bodyRect = determineContainerClientRect();
   const elemRect = target.getBoundingClientRect();
 
   // Determine if target element is fixed, will resets or applies class and set appor offset.
