@@ -116,6 +116,7 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
+  console.log("addFacebookBadge", target);
 
   const htmlBadgeDiv = createBadgeFragment(socialAction);
 
@@ -254,6 +255,19 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
 }
 
+function getBodyBoundingClientRect() {
+  const htmlHeight = document.querySelector("html").offsetHeight;
+  const bodyHeight = document.querySelector("body").offsetHeight;
+  // console.log([htmlHeight, bodyHeight]);
+  if (htmlHeight === bodyHeight) {
+    return document.body.getBoundingClientRect();
+  } else if ( htmlHeight > bodyHeight ) {
+    return document.querySelector("html").getBoundingClientRect();
+  } else {
+    return document.body.getBoundingClientRect();
+  }
+}
+
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
   // Check for Badge element and select it
   if (!badgeClassUId) {
@@ -284,7 +298,8 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   }
 
   // Get position coordinates
-  const bodyRect = document.body.getBoundingClientRect();
+  const bodyRect = getBodyBoundingClientRect();
+  // const bodyRect = getBodyBoundingClientRect();
   const elemRect = target.getBoundingClientRect();
 
   // Determine if target element is fixed, will resets or applies class and set appor offset.
