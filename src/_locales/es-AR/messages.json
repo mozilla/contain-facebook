@@ -117,5 +117,57 @@
   "btn-arrow-back": {
     "message": "Volver al panel anterior.", 
     "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Ir a Cómo funciona el Contenedor de Facebook", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "No se detectaron rastreadores de Facebook", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container no detectó ningún rastreador de Facebook en esta página. Sin embargo, la página puede contener otros tipos de rastreadores.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Conocer más", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Ir a Cómo funciona el Contenedor de Facebook", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Te protegimos de Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Los botones de Facebook que aparecen en las páginas de compras, noticias, etc. incluyen rastreadores que le comunican a Facebook las páginas que visitó. Aunque nunca use estos botones, los rastreadores pueden recopilar información sobre su navegación. El Contenedor de Facebook bloquea esos rastreadores.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "El Contenedor de Facebook bloquea estos rastreadores. Pero si hace clic en alguno de los botones, Facebook podrá rastrearlo.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Cerca de Contenedor de Facebook con escudo.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Sitios permitidos en el Contenedor de Facebook", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "SITESINCLUDED", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Ninguno", 
+    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "SITES YOU ALLOWED", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }
 }
