@@ -50,6 +50,50 @@
     "message": "Facebook Container", 
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
   }, 
+  "onboarding1-subhead": {
+    "message": "Facebook Container-ის გამოყენება", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p1": {
+    "message": "Facebook-ს შეუძლია თვალი ადევნოს თქვენს მოქმედებებს, Facebook.com საიტის მიღმაც. მაგალითად, Facebook-ის მოწონებისა და გაზიარების ღილაკებს, შეუძლია აღრიცხოს სად იყავით — მაშინაც კი თუ არაფერს მოიწონებთ ან გააზიარებთ.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container კი მიჯნავს Facebook-ის გვერდებსა და დანარჩენ ვებსივრცეს, რაც ურთულებს მას ინტერნეტში თქვენს მოქმედებებზე თვალის მიდევნებას.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Facebook-სა და საიტებზე, Facebook Container-ის საზღვრებში", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Facebook Container-ის ზღუდის ნიშანი", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "ეს ნიშანი გამოჩნდება Firefox-ის მისამართების ველში, როცა ეწვევით საიტებს, დაბოლოებით Facebook.com, რომლებიც მოთავსებულია Facebook Container-ის საზღვრებში.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "აღნიშნული საიტები წვდომას ითხოვს თქვენს Facebook-ვინაობაზე (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "როგორ გავიგო, მუშაობს თუ არა Facebook Container?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "ღილაკები, რომლებიც საშუალებას გაძლევთ მოიწონოთ და გააზიაროთ რამე Facebook-ზე ან შეხვიდეთ საიტზე Facebook-ის ანგარიშით, შეიცავს მეთვალყურეებს. Facebook Container შეზღუდავს ამ მეთვალყურეებს და გამოაჩენს შესაბამის ნიშანს, რომლითაც ნახავთ, თუ საიდან მოცილდა მეთვალყურეები.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "ამ სურათზე გამოსახულია, თუ როგორ გამოჩნდება Facebook Container-ის ზღუდის ნიშანი ვებგვერდზე, Facebook-ის მოწონების ღილაკის გვერდით.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "თუმცაღა, თუ დააჭერთ რომელიმე ამ ღილაკს, Facebook-ს შეეძლება თვალი მოგადევნოთ.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "დაშვება", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -74,8 +118,16 @@
     "message": "წინა არეზე დაბრუნება.", 
     "description": "This is alternative text for the back arrow button."
   }, 
+  "btn-arrow-forward": {
+    "message": "იხილეთ, როგორ მუშაობს Faceook Container", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+  }, 
   "no-trackers-subhead": {
     "message": "Facebook-მეთვალყურეები არ აღმოჩენილა", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container-ს არ აღმოუჩენია Facebook-ის მეთვალყურეები ამ გვერდზე. თუმცაღა, ეს გვერდი მაინც შეიძლება შეიცავდეს სხვა სახის მეთვალყურეებს.", 
     "description": ""
   }, 
   "learn-more": {
@@ -83,7 +135,7 @@
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
   "how-fbc-works": {
-    "message": "როგორ მუშაობს Facebook-Container", 
+    "message": "როგორ მუშაობს Facebook Container", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
   "trackers-detected-subhead": {
@@ -98,9 +150,17 @@
     "message": "Facebook Container ზღუდავს ამ მეთვალყურეებს. თუმცაღა, თუ დააჭერთ რომელიმე ამ ღილაკს, Facebook-ს შეეძლება თვალი მოგადევნოთ.", 
     "description": ""
   }, 
+  "trackers-detected-fence-alt": {
+    "message": "Facebook Container-ის ზღუდე ნიშნით.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
   "sites-added-subhead": {
     "message": "დაშვებული საიტები Facebook Container-ში", 
     "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "შემოზღუდული საიტები", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   }, 
   "no-sites-added": {
     "message": "არცერთი", 
