@@ -3,20 +3,6 @@
     "message": "Facebook Container oddeľuje vaše surfovanie na Facebooku od ostatného surfovania na internete, čím vás chráni pred sledovaním zo strany Facebooku mimo jeho stránok.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "Stránka $URL$ je otvorená vo Facebook Containeri.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
-    "placeholders": {
-      "url": {
-        "content": "$1", 
-        "example": "www.facebook.com"
-      }
-    }
-  }, 
-  "onFacebookText": {
-    "message": "Táto ikona sa objaví v paneli s adresou pri každej návšteve stránok Facebook.com, Instagram.com alebo Messenger.com, ktoré sa otvárajú vo Facebook Containeri.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
   "notOnFacebookHeader": {
     "message": "Stránka $URL$ nie je otvorená vo Facebook Containeri.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -34,5 +20,41 @@
   "onUnknownSiteHeader": {
     "message": "Táto stránka nie je otvorená vo Facebook Containeri.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "btn-allow": {
+    "message": "Povoliť", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Zrušiť", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Ďalej", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Naspäť", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Hotovo", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "learn-more": {
+    "message": "Ďalšie informácie", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "remove": {
+    "message": "Odstrániť", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Nabudúce nezobrazovať", 
+    "description": ""
   }
 }
