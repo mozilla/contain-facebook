@@ -120,7 +120,7 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
-  console.log("addFacebookBadge", target);
+  // console.log("addFacebookBadge", target);
 
   const htmlBadgeDiv = createBadgeFragment(socialAction);
 
@@ -217,7 +217,7 @@ function closePrompt() {
 }
 
 function positionPrompt ( activeBadge ) {
-  console.log(activeBadge);
+  // console.log(activeBadge);
   // const activeBadge = document.querySelector(".fbc-badge-prompt");
   const activeBadgePrompt = activeBadge.querySelector(".fbc-badge-prompt");
   const elemRect = activeBadge.getBoundingClientRect();
