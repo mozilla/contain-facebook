@@ -16,6 +16,10 @@
   "in-fbc-p1": {
     "message": "Facebook-ს შეუძლია თვალი გადევნოთ ამ საიტზე. თუ გსურთ მოცილდეს Facebook Container-იდან, აირჩიეთ დაშვებული საიტები Facebook Container-ში და მოაცილეთ ჩამონათვალიდან."
   }, 
+  "on-facebook-subhead": {
+    "message": "Facebook-სა და საიტებზე, Facebook Container-ის საზღვრებში", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "on-facebook-p1": {
     "message": "ეს ნიშანი გამოჩნდება Firefox-ის მისამართების ველში, როცა ეწვევით Facebook-ის კუთვნილ საიტებს ან იმ საიტებს, რომლებიც დამატებული გაქვთ Facebook Container-ში.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
