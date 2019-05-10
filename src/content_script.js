@@ -21,7 +21,8 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-partner*='facebook']", // AliExpress
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
   ".fb-start .ybtn--social.ybtn--facebook", // Yelp
-  "[action*='facebook_login']" // Airbnb
+  "[action*='facebook_login']", // Airbnb
+  "[action*='facebook_signup']" // Airbnb
 ];
 
 // TODO: Disarm click events on detected elements
@@ -159,6 +160,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       } else {
         // Click badge, button disabled
         e.preventDefault();
+        e.stopPropagation();
         htmlBadgeFragmentFenceDiv.click();
       }
     });
@@ -191,6 +193,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   } else if (socialAction === "share") {
     target.addEventListener("click", (e) => {
       e.preventDefault();
+      e.stopPropagation();
     });
   }
 
