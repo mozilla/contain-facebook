@@ -157,6 +157,8 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       }
     });
 
+
+
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       e.preventDefault();
       e.target.parentElement.classList.toggle("active");
@@ -185,7 +187,14 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       e.preventDefault();
     });
   }
+
+  // Applies to both!
+  htmlBadgeFragmentFenceDiv.addEventListener("mouseenter", () => {
+    positionPrompt( htmlBadgeDiv );
+  });
+
 }
+
 
 
 function findActivePrompt() {
@@ -203,12 +212,14 @@ function closePrompt() {
 }
 
 function positionPrompt ( activeBadge ) {
+  console.log(activeBadge);
+  // const activeBadge = document.querySelector(".fbc-badge-prompt");
   const activeBadgePrompt = activeBadge.querySelector(".fbc-badge-prompt");
   const elemRect = activeBadge.getBoundingClientRect();
   if ( (window.innerWidth - elemRect.left) < 350  ) {
-    activeBadgePrompt.classList.add("fbc-badge-prompt-align-right");
+    activeBadge.classList.add("fbc-badge-prompt-align-right");
   } else {
-    activeBadgePrompt.classList.remove("fbc-badge-prompt-align-right");
+    activeBadge.classList.remove("fbc-badge-prompt-align-right");
   }
 }
 

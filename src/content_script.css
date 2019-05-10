@@ -127,12 +127,12 @@
 	border-color: transparent var(--white) transparent;
 }
 
-.fbc-badge-prompt.fbc-badge-prompt-align-right {
+.fbc-badge-prompt-align-right .fbc-badge-prompt {
 	left: auto;
 	right: calc( 100% + 20px);
 }
 
-.fbc-badge-prompt.fbc-badge-prompt-align-right:after {
+.fbc-badge-prompt-align-right .fbc-badge-prompt:after {
 	left: auto;
 	right: -10px;
 	border-width: 10px 0 10px 10px;
@@ -270,3 +270,19 @@
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
+
+.fbc-badge-prompt-align-right .fbc-badge-tooltip {
+	left: auto;
+	right: calc( 100% + 20px );
+}
+
+/* .fbc-badge-prompt-align-right .fbc-badge-prompt {
+	left: auto;
+	right: calc( 100% + 20px);
+}
+
+.fbc-badge-prompt-align-right .fbc-badge-prompt:after {
+	left: auto;
+	right: -10px;
+	border-width: 10px 0 10px 10px;
+} */
