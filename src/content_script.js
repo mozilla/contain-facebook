@@ -20,6 +20,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
+  ".fb-start .ybtn--social.ybtn--facebook", // Yelp
   "[action*='facebook_login']" // Airbnb
 ];
 
