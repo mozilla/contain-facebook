@@ -29,7 +29,7 @@
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   }, 
   "notOnFacebookHeader": {
-    "message": "$URL$ არაა Facebook-Container-ში.", 
+    "message": "$URL$ არაა Facebook Container-ში.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
@@ -39,11 +39,11 @@
     }
   }, 
   "notOnFacebookText": {
-    "message": "საიტი Facebook-Container-ის გარეთაა. ეს ურთულებს Facebook-ს, თვალი გადევნოთ ვებსივრცეში.", 
+    "message": "საიტი Facebook Container-ის გარეთაა. ეს ურთულებს Facebook-ს, თვალი გადევნოთ ვებსივრცეში.", 
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "onUnknownSiteHeader": {
-    "message": "ეს საიტი არაა განთავსებული Facebook-Container-ში.", 
+    "message": "ეს საიტი არაა განთავსებული Facebook Container-ში.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "facebookContainer": {
@@ -195,6 +195,18 @@
   }, 
   "inPageUI-tooltip-button-login": {
     "message": "Facebook Container-მა შეზღუდა Facebook-ის მეთვალყურეები. თუ თქვენ Facebook-ის ანგარიშით შეხვალთ ამ საიტზე, Facebook შეძლებს თვალი მოგადევნოთ.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "გსურთ Facebook-მა თვალი გადევნოთ აქ?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "თუ გსურთ შეხვიდეთ Facebook-ით, მაშინ Facebook შეძლებს თვალი ადევნოს თქვენს მოქმედებებს ამ საიტზე. ეს საშუალებას მისცემს მათ, სრული სურათი შეიქმნან, თქვენი ინტერნეტ-ცხოვრების შესახებ.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "მომავალში ჩვენების გარეშე", 
     "description": ""
   }
 }
