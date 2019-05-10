@@ -120,7 +120,7 @@ a:hover {
   border-top: var(--borders);
 }
 
-.highlight-on-hover { /* Full-width element that wraps around the "How Faceook Container Works" span and arrow icon */
+.highlight-on-hover { /* Full-width element that wraps around the "How Facebook Container Works" span and arrow icon */
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
