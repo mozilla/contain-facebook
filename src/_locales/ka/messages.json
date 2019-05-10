@@ -85,5 +85,36 @@
   "trackers-detected-subhead": {
     "message": "ჩვენ გიცავთ Facebook-ისგან.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Facebook-ის ღილაკები, რომლებიც ჩნდება საყიდლების, სიახლეებისა და სხვა სახის საიტებზე, შეიცავს მეთვალყურეებს, რომელთა დახმარებითაც Facebook იგებს, თუ რომელი გვერდები მოინახულეთ. მიუხედავად იმისა, გამოიყენებთ თუ არა ამ ღილაკებს მოწონებისთვის ან გაზიარებისთვის, მეთვალყურეებს მაინც შეუძლია აღრიცხოს, მონახულებული გვერდები. Facebook Container კი ზღუდავს ამ მეთვალყურეებს.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container ზღუდავს ამ მეთვალყურეებს. თუმცაღა, თუ დააჭერთ რომელიმე ამ ღილაკს, Facebook-ს შეეძლება თვალი მოგადევნოთ.", 
+    "description": ""
+  }, 
+  "sites-added-subhead": {
+    "message": "დაშვებული საიტები Facebook Container-ში", 
+    "description": "This is a panel subhead."
+  }, 
+  "no-sites-added": {
+    "message": "არცერთი", 
+    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "დაშვებული საიტები", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container აქცევს Facebook-ის კუთვნილ საიტებს ჩარჩოებში. შეგიძლიათ სხვა საიტებიც მოაქციოთ ამავე ჩარჩოებში, თუმცა ეს საშუალებას მისცემს Facebook-ს, თვალი მიადევნოს თქვენს მოქმედებებს ვებსივრცეში."
+  }, 
+  "remove": {
+    "message": "მოცილება", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "მოცილდეს საიტი Facebook Container-იდან?", 
+    "description": ""
   }
 }
