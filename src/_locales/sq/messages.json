@@ -64,7 +64,7 @@
   }, 
   "onboarding2-subhead": {
     "message": "Mbi Facebook-un dhe Sajte në Vijën Facebook Container", 
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-alt": {
     "message": "Ikona e gardhit Facebook Container", 
@@ -76,7 +76,7 @@
   }, 
   "onboarding2-p2": {
     "message": "Që të mund të funksionojnë, këtyre sajteve u duhet të hyjnë në identitetin tuaj Facebook (ose të dinë se cili jeni). Kjo do të thotë gjithashtu se Facebook-u mund të gjurmojë gjithçka që bëni në këto sajte.", 
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding3-subhead": {
     "message": "Si ta di se Facebook Container po funksionon?", 
@@ -107,7 +107,7 @@
     "description": "This is alternative text for the back arrow button."
   }, 
   "btn-arrow-forward": {
-    "message": "Kaloni te pjesa Si Funksionon Faceook Container", 
+    "message": "Kaloni te pjesa Si Funksionon Facebook Container", 
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
   }, 
   "no-trackers-subhead": {
@@ -123,7 +123,7 @@
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
   "how-fbc-works": {
-    "message": "Si Funksionon Faceook Container", 
+    "message": "Si Funksionon Facebook Container", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
   "trackers-detected-subhead": {
