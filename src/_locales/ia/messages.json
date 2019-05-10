@@ -13,6 +13,9 @@
       }
     }
   }, 
+  "in-fbc-p1": {
+    "message": "Facebook pote ora traciar te sur iste sito. Pro remover iste sito ex Facebook Container, elige Sitos consentite in Facebook Container e remove lo del lista."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ non es in le Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
