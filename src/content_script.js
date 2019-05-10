@@ -29,6 +29,7 @@ const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/sharer']", // Buzzfeed
   "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
   "[aria-label*='share on facebook']", // MSN
+  "[data-tracking*='facebook|share']", // football.london
   "[title='Share on Facebook']" // Medium
 ];
 
@@ -255,7 +256,7 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
 }
 
-function getBodyBoundingClientRect() {
+function determineContainerClientRect() {
   const htmlHeight = document.querySelector("html").offsetHeight;
   const bodyHeight = document.querySelector("body").offsetHeight;
   // console.log([htmlHeight, bodyHeight]);
@@ -298,8 +299,8 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   }
 
   // Get position coordinates
-  const bodyRect = getBodyBoundingClientRect();
-  // const bodyRect = getBodyBoundingClientRect();
+  const bodyRect = determineContainerClientRect();
+  // const bodyRect = determineContainerClientRect();
   const elemRect = target.getBoundingClientRect();
 
   // Determine if target element is fixed, will resets or applies class and set appor offset.
