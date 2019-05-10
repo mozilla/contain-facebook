@@ -77,5 +77,25 @@
   "btn-arrow-back": {
     "message": "Visszaugrás az előző panelre.", 
     "description": "This is alternative text for the back arrow button."
+  }, 
+  "no-sites-added": {
+    "message": "Nincs", 
+    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "Eltávolítás", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Eltávolítja a webhelyet a Facebook Containerből?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Hagyja, hogy a Facebook követhesse Önt itt?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Ne mutassa ezt újra", 
+    "description": ""
   }
 }
