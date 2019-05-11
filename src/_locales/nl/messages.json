@@ -85,5 +85,96 @@
   "onboarding3-p1": {
     "message": "Knoppen, waarmee u dingen ‘liket’, naar Facebook deelt of waar u met uw Facebook-account op websites aanmeldt, bevatten trackers. Facebook Container blokkeert deze trackers en toont het hekpictogram om aan te geven waar de trackers verwijderd zijn.", 
     "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Deze afbeelding laat zien hoe het hekpictogram van Facebook Container naast een ‘Leuk’-knop van Facebook wordt getoond.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Als u toch op een van deze knoppen klikt, kan Facebook u volgen.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Toestaan", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Annuleren", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Volgende", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Terug", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Gereed", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Terug gaan naar het vorige paneel.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Ga naar hoe Facebook Container werkt", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Geen Facebook-trackers gedetecteerd", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container heeft gen Facebook-trackers op deze pagina gedetecteerd. De pagina kan echter nog andere typen trackers bevatten.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Meer info", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Hoe Facebook Container werkt", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "We hebben u beschermd tegen Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "De Facebook-knoppen, die op winkel-, nieuws- en andere websites worden getoond, bevatten trackers, die Facebook mededelen, waar u op internet bent geweest. Zelfs wanneer u deze knoppen nooit voor ‘Liken’ of delen gebruikt, kunnen die trackers toch gegevens over uw browse-aktiviteiten verzamelen. Facebook Container blokkeert deze trackers.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container blokkeert deze trackers. Wanneer u toch op een van deze knoppen klikt, kan Facebook u volgen.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Facebook Container-hek met schild.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Websites toegestaan in Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "WEBSITES OP DE LIJST", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Geen", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "WEBSITES, DIE U HEEFT TOEGESTAAN", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container stopt Facebook-websites in de begrenzing. U kunt andere websites in deze begrenzing opnemen, Facebook kan dan echter meer van uw browse-activiteiten volgen."
+  }, 
+  "remove": {
+    "message": "Verwijderen", 
+    "description": ""
   }
 }
