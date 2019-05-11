@@ -176,5 +176,37 @@
   "remove": {
     "message": "Verwijderen", 
     "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Website uit Facebook Container verwijderen?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Het verwijderen van deze website uit Facebook Container betekent dat de aanmelding met Facebook-functie niet meer werkt en Facebook-trackcookies worden verwijderd.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Als u opnieuw wilt aanmelden met Facebook, dient u het weer toe te voegen aan de Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container heeft deze knop uitgeschakeld en geblokkeerd dat Facebook uw bezoek aan deze pagina volgt.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container heeft Facebook-trackers geblokkeerd. Als u zich op deze website met Facebook aanmeldt, zal Facebook u kunnen volgen.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Toestaan dat Facebook u hier volgt?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Wanneer u zich met Facebook aanmeldt, kan Facebook uw activiteiten op deze website volgen. Dit kan hen helpen een uitgebreid beeld van uw online-leven samen te stellen.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Dit niet meer tonen", 
+    "description": ""
   }
 }
