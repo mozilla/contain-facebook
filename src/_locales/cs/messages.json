@@ -74,9 +74,25 @@
     "message": "Tato ikona se objeví v adresním řádku Firefoxu když navštívíte Facebook.com nebo jiný server oddělený pomocí Facebook Containeru.", 
     "description": "This is the first paragraph of the second onboarding panel."
   }, 
+  "onboarding2-p2": {
+    "message": "Tyto servery potřebují pro fungování přístup k vaší Facebookové identitě (nebo k informacím, kdo jste). To znamená, že i Facebook může naopak sledovat vše, co na tomto serveru děláte.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding3-subhead": {
     "message": "Jak poznám, že Facebook Container funguje?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Stránky pro lajkování a sdílení na Facebook nebo funkce přihlašování pomocí Facebooku obsahují sledovací prvky. Facebook Container tyto prvky blokuje a zobrazuje místo nich ikonu plotu pro zobrazení, co a kde zablokoval.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Toto je náhled, jak můžete ikona Facebook Containeru vypadat na stránce s tlačítkem pro lajkování.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Nicméně pokud na jakékoliv z těchto tlačítek klepnete, Facebook vás může vysledovat.", 
+    "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
     "message": "Povolit", 
@@ -98,9 +114,45 @@
     "message": "Hotovo", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "btn-arrow-back": {
+    "message": "Zpět na předchozí panel.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Podívat se, jak Facebook Container funguje", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Nenalezeny žádné sledovací prvky Facebooku", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container na této stránce nenašel žádné sledovací prvky Facebooku. Mohou tu být ale jiné sledovací prvky.", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Zjistit více", 
     "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Jak Facebook Container funguje", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Ochránili jsme vás před Facebookem.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Tlačítka Facebooku, která se objevují v e-shopech nebo na zpravodajských a dalších serverech obsahují sledovací prvky, díky kterým Facebook ví, které stránky navštívíte. I pokud žádné z těchto tlačítek pro lajkování nebo sdílení nepoužijete, sledovací prvky sbírají data o vašem prohlížení. Facebook Container blokuje přesně tyto sledovací prvky.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container tyto sledovací prvky blokuje. Nicméně pokud na jakékoliv z těchto tlačítek klepnete, Facebook vás může vysledovat.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Ikona plotu Facebook Containeru se štítem.", 
+    "description": "This is alternative text describing the container fence icon."
   }, 
   "sites-added-subhead": {
     "message": "Servery povolené ve Facebook Containeru", 
@@ -142,7 +194,7 @@
     "description": ""
   }, 
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container zablokoval sledovací prvky Facebooku. Pokud se na tomto serveru pomocí Facebooku přihlašujete, Facebook vás bude moci sledovat.", 
+    "message": "Facebook Container zablokoval sledovací prvky Facebooku. Pokud se ale na tomto serveru pomocí Facebooku přihlásíte, Facebook vás bude moci vysledovat.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
