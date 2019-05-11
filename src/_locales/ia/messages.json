@@ -134,6 +134,30 @@
     "message": "Saper plus", 
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
+  "how-fbc-works": {
+    "message": "Como functiona Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Nos te ha protegite de Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Le buttones de Facebook que pare sur compras, novas e altere sitos contine traciatores que conta a Facebook ubi tu ha essite sur le web. Mesmo si tu jammais usa iste buttones pro marcar Me place o Compartir, le traciatores pote ancora colliger datos re tu exploration. Facebook Container bloca iste traciatores.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container bloca iste traciatores. Comocunque, si tu clicca sur ulle de iste buttones Facebook potera te traciar.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Barriera de Facebook Container con escudo.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Sitos consentite in Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
   "sites-included": {
     "message": "SITOS INCLUDITE", 
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
@@ -142,8 +166,31 @@
     "message": "Nihil", 
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
+  "sites-allowed": {
+    "message": "SITOS QUE TU HA CONSENTITE", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container pone sitos gerite per Facebook intra le limite. Tu pote consentir altere sitos in le limite, ma isto consentira a Facebook de traciar plus de tu exploration web."
+  }, 
   "remove": {
     "message": "Remover", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Remover sito ex Facebook Container?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Le remotion de iste sito ab Facebook Container significa que le accesso con functionalitate Facebook non functionara plus e le cookies de traciamento de Facebook sera delite.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container ha disactivate iste button e blocate Facebook de traciar tu visita a iste pagina.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Consenti a Facebook de te traciar ci?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
