@@ -3,8 +3,8 @@
     "message": "Facebook Container isola l’attività su Facebook dalla navigazione su altri siti. In questo modo Facebook non può tracciarti, utilizzando cookie di terze parti, al di fuori dei siti web di loro proprietà.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$URL$ è in Facebook Container.", 
+  "in-fbc-subhead": {
+    "message": "$URL$ è gestito in Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
@@ -13,8 +13,8 @@
       }
     }
   }, 
-  "onFacebookText": {
-    "message": "Questa icona viene visualizzata nella barra degli indirizzi quando visiti siti come Facebook.com, Instagram.com o Messenger.com che vengono isolati in Facebook Container.", 
+  "on-facebook-p1": {
+    "message": "Questa icona compare nella barra degli indirizzi di Firefox quando visiti siti di proprietà di Facebook o aggiunti da te a Facebook Container.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
