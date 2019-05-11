@@ -73,7 +73,7 @@
   }, 
   "no-sites-added": {
     "message": "ไม่มี", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "sites-allowed": {
     "message": "ไซต์ที่คุณได้อนุญาต", 
@@ -89,6 +89,10 @@
   }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "อนุญาตให้ Facebook ติดตามคุณที่นี่?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "ไม่ต้องแสดงสิ่งนี้ให้ฉันเห็นอีก", 
     "description": ""
   }
 }
