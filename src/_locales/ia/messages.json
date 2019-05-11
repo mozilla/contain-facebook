@@ -185,12 +185,24 @@
     "message": "Le remotion de iste sito ab Facebook Container significa que le accesso con functionalitate Facebook non functionara plus e le cookies de traciamento de Facebook sera delite.", 
     "description": ""
   }, 
+  "remove-site-p2": {
+    "message": " Si tu vole usar de novo le accesso per Facebook, tu debera lo re-adder a Facebook Container.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container ha disactivate iste button e blocate Facebook de traciar tu visita a iste pagina.", 
     "description": ""
   }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container ha blocate traciatores de Facebook. Si tu usa le accesso per Facebook sur iste sito, illo potera traciar te.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Consenti a Facebook de te traciar ci?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Si tu vole usar le accesso per Facebook, pois illo potera traciar tu activitate sur iste sito. Isto pote les adjutar a construer un imagine plus complete de tu vita online.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
