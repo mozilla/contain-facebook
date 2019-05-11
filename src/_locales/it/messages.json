@@ -34,5 +34,37 @@
   "onUnknownSiteHeader": {
     "message": "Questo sito non è in Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-p1": {
+    "message": "Facebook può tracciare la tua navigazione anche oltre Facebook.com. I tasti Mi Piace e Condividi, ad esempio, possono tracciarti anche su pagine che non condividi mai, o a cui non hai mai messo Mi Piace.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "L’icona del recinto di Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "btn-allow": {
+    "message": "Consenti", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Annulla", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Avanti", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Indietro", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Fine", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }
 }
