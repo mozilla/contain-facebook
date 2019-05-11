@@ -3,7 +3,7 @@
     "message": "Расширение Фейсбук-контейнер изолирует вашу деятельность в Фейсбуке от остального Интернета, чтобы предотвратить отслеживание вас Фейсбуком вне сайта социальной сети через сторонние куки.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
+  "in-fbc-subhead": {
     "message": "$URL$ в Фейсбук-контейнере.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
@@ -12,10 +12,6 @@
         "example": "www.facebook.com"
       }
     }
-  }, 
-  "onFacebookText": {
-    "message": "Этот значок появляется в адресной строке, когда вы посещаете сайты, наподобие Facebook.com, Instagram.com или Messenger.com, которые находятся в Фейсбук-контейнере.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ не в Фейсбук-контейнере.", 
@@ -34,5 +30,89 @@
   "onUnknownSiteHeader": {
     "message": "Этот сайт не в Фейсбук-контейнере.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Фейсбук-контейнер", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "Использование Фейсбук-контейнера", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "Как я узнаю, что Фейсбук-контейнер работает?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Разрешить", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Отмена", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Далее", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Назад", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Завершить", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Вернуться к предыдущей панели.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "no-trackers-subhead": {
+    "message": "Трекеров Фейсбука не обнаружено", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Подробнее", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Как работает Фейсбук-контейнер", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Мы защитили от Фейсбука.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "sites-added-subhead": {
+    "message": "Сайты, разрешённые в Фейсбук-контейнере", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "САЙТЫ ПО УМОЛЧАНИЮ", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Нет сайтов", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "САЙТЫ, ДОБАВЛЕННЫЕ ВАМИ", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "remove": {
+    "message": "Удалить", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Удалить сайт из Фейсбук-контейнера?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Разрешить Фейсбуку отслеживать вас здесь?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Не показывать в следующий раз", 
+    "description": ""
   }
 }
