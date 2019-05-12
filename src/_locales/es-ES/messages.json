@@ -66,6 +66,14 @@
     "message": "En Facebook y en sitios dentro del límite de Facebook Container", 
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-alt": {
+    "message": "Icono de valla de Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Este icono aparece en la barra de direcciones de Firefox cuando visita sitios, como Facebook.com, que se encuentran dentro del límite de Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
   "onboarding2-p2": {
     "message": "Para poder funcionar, estos sitios necesitan que accedas con tu identidad de Facebook, lo que también signfica que Facebook podrá rastrear todo lo que hagas en ellos.", 
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
@@ -77,6 +85,10 @@
   "onboarding3-p1": {
     "message": "Los botones 'Me gusta' y 'Compartir' de Facebook o los que te dejan acceder iniciando sesión en tu cuenta de Facebook incluyen rastreadores. Facebook Container los bloquea y te muestra un icono de cierre para que sepas en qué sitios se bloquearon rastreadores.", 
     "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Esta imagen muestra cómo aparecerá el ícono de la valla de Facebook Container en una página junto al botón \"Me gusta\" de Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
   }, 
   "onboarding3-p2": {
     "message": "Sin embargo, si seleccionas alguno de esos botones, Facebook podrá rastrearte.", 
@@ -138,6 +150,10 @@
     "message": "Facebook Container bloquea esos rastreadores. Pero si seleccionas alguno de esos botones, Facebook podrá rastrearte.", 
     "description": ""
   }, 
+  "trackers-detected-fence-alt": {
+    "message": "Valla de Facebook Container con escudo.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
   "sites-added-subhead": {
     "message": "Sitios permitidos en Facebook Container", 
     "description": "This is a panel subhead."
@@ -153,6 +169,9 @@
   "sites-allowed": {
     "message": "SITIOS QUE HAS PERMITIDO", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container sitúa a los sitios de Facebook dentro de un recinto. Puede añadir otros sitios dentro de este recinto, pero esto permitirá que Facebook le rastree más mientras navega."
   }, 
   "remove": {
     "message": "Eliminar", 
