@@ -71,7 +71,7 @@
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
   "onboarding2-p1": {
-    "message": "Den här ikonen visas i adressfältet i Firefox när du besöker webbplatser, t.ex. Facebook.com, som finns inom gränsen för Facebook Container.", 
+    "message": "Den här ikonen visas i adressfältet i Firefox när du besöker webbplatser, t.ex. Facebook.com, som finns inom ramen för Facebook Container.", 
     "description": "This is the first paragraph of the second onboarding panel."
   }, 
   "onboarding2-p2": {
@@ -87,7 +87,7 @@
     "description": "This is the first paragraph of the third onboarding panel."
   }, 
   "onboarding3-img": {
-    "message": "Den här bilden visar hur Facebook Containers staketikonen kommer att visas på sidan bredvid en Facebook Like-knapp.", 
+    "message": "Den här bilden visar hur Facebook Containers staketikonen kommer att visas på sidan bredvid en knappen Dela på Facebook.", 
     "description": "This is alternative text for the image shown in the third onboarding panel."
   }, 
   "onboarding3-p2": {
@@ -171,7 +171,7 @@
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
   "sites-added-p1": {
-    "message": "Facebook Container sätter Facebook-ägda webbplatser inom gränser. Du kan tillåta andra webbplatser inom gränsen, men det gör det möjligt för Facebook att spåra mer av din webbläsning."
+    "message": "Facebook Container sätter Facebook-ägda webbplatser inom ramen. Du kan tillåta andra webbplatser inom ramen, men det gör det möjligt för Facebook att spåra mer av din webbläsning."
   }, 
   "remove": {
     "message": "Ta bort", 
