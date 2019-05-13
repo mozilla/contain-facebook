@@ -138,6 +138,10 @@
     "message": "Come funziona Facebook Container", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
+  "trackers-detected-subhead": {
+    "message": "Elemento tracciante di Facebook bloccato.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
   "trackers-detected-p1": {
     "message": "I pulsanti di Facebook utilizzati sui siti di shopping, notizie e altro ancora contengono traccianti che comunicano a Facebook dove sei stato sul Web. Anche se non utilizzi mai questi pulsanti per mettere “Mi piace” o condividere la pagina, i traccianti possono comunque raccogliere dati sulla tua navigazione. Facebook Container blocca tutti questi elementi.", 
     "description": ""
