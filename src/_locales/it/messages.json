@@ -115,9 +115,17 @@
     "message": "Come funziona Facebook Container", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
+  "trackers-detected-p1": {
+    "message": "I pulsanti di Facebook utilizzati sui siti di shopping, notizie e altro ancora contengono traccianti che comunicano a Facebook dove sei stato sul Web. Anche se non utilizzi mai questi pulsanti per mettere “Mi piace” o condividere la pagina, i traccianti possono comunque raccogliere dati sulla tua navigazione. Facebook Container blocca tutti questi elementi.", 
+    "description": ""
+  }, 
   "trackers-detected-p2": {
     "message": "Facebook Container blocca questi traccianti. Tuttavia, se utilizzi uno qualsiasi di questi pulsanti, Facebook sarà in grado di tracciarti.", 
     "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Recinto con scudo di Facebook Container", 
+    "description": "This is alternative text describing the container fence icon."
   }, 
   "sites-added-subhead": {
     "message": "Siti consentiti in Facebook Container", 
@@ -130,5 +138,17 @@
   "no-sites-added": {
     "message": "Nessuno", 
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "SITI AGGIUNTI", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "remove": {
+    "message": "Rimuovi", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Rimuovere questo sito da Facebook Container?", 
+    "description": ""
   }
 }
