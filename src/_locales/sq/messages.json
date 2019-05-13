@@ -181,8 +181,28 @@
     "message": "Të hiqet sajti nga Facebook Container?", 
     "description": ""
   }, 
+  "remove-site-p1": {
+    "message": "Heqja e këtij sajti nga Facebook Container do të thotë që Hyrja përmes llogarisë Facebook s’do të funksionojë më dhe cookie-t e gjurmimit nga Facebook-u do të fshihen.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Nëse doni të përdorni sërish Hyrje me Facebook, do t’ju duhet ta shtoni sërish te Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container e ka çaktivizuar këtë buton dhe ia ka bllokuar Facebook-ut gjurmimin e vizitës tuaj në këtë faqe.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container i ka bllokuar gjurmuesit Facebook. Nëse përdorni Hyrje me Facebook në këtë sajt, Facebook-u do të jetë në gjendje t’ju gjurmojë.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Të lejohet Facebook-u t’ju gjurmojë këtu?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Nëse doni të përdorni hyrje me Facebook,  Facebook-u do të jetë në gjendje të gjurmojë veprimtarinë tuaj në këtë sajt. Kjo mund t’i ndihmojë ata të krijojnë një pamje më të plotë të jetës tuaj internetore.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
