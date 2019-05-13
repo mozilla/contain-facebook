@@ -13,9 +13,20 @@
       }
     }
   }, 
+  "in-fbc-p1": {
+    "message": "Ora Facebook può tracciarti su questo sito. Per rimuovere il sito da Facebook Container, eliminalo dalla lista Siti web con permesso, che trovi nelle impostazioni del componente aggiuntivo."
+  }, 
+  "on-facebook-subhead": {
+    "message": "Su Facebook e sui siti nel recinto di Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "on-facebook-p1": {
     "message": "Questa icona compare nella barra degli indirizzi di Firefox quando visiti siti di proprietà di Facebook o aggiunti da te a Facebook Container.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "Per funzionare, questi siti richiedono l’accesso alla tua identità Facebook (in altre parole, ti identificano). Di conseguenza Facebook è in grado di tracciare ogni tua attività su tali siti.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ non è in Facebook Container.", 
@@ -51,9 +62,21 @@
     "message": "Facebook Container crea una barriera tra i siti di Facebook e il resto del Web, rendendo più difficile per Facebook tracciarti online.", 
     "description": "Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-subhead": {
+    "message": "Su Facebook e sui siti nel recinto di Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-alt": {
     "message": "L’icona del recinto di Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Questa icona compare nella barra degli indirizzi di Firefox quando visiti siti, come facebook.com, che sono nel “recinto” di Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Per funzionare, questi siti richiedono l’accesso alla tua identità Facebook (in altre parole, ti identificano). Di conseguenza Facebook è in grado di tracciare ogni tua attività su tali siti.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding3-subhead": {
     "message": "Come capisco se Facebook Container è attivo?", 
@@ -143,12 +166,27 @@
     "message": "SITI AGGIUNTI", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook Container confina le attività dei siti di proprietà di Facebook all’interno di un “recinto”. Puoi aggiungere ulteriori siti a questo spazio, ma a quel punto Facebook sarà in grado di tracciare la tua navigazione in modo più esteso."
+  }, 
   "remove": {
     "message": "Rimuovi", 
     "description": ""
   }, 
   "remove-site-subhead": {
     "message": "Rimuovere questo sito da Facebook Container?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Rimuovendo questo sito da Facebook Container, la funzione “Accedi con Facebook” non funzionerà più e i cookie traccianti di Facebook verranno rimossi.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container ha bloccato i traccianti di Facebook. Se utilizzi “Accedi con Facebook” in questo sito, Facebook sarà in grado di tracciarti.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Non visualizzare più questo messaggio", 
     "description": ""
   }
 }
