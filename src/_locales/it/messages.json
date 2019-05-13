@@ -181,8 +181,24 @@
     "message": "Rimuovendo questo sito da Facebook Container, la funzione “Accedi con Facebook” non funzionerà più e i cookie traccianti di Facebook verranno rimossi.", 
     "description": ""
   }, 
+  "remove-site-p2": {
+    "message": " Per utilizzare “Accedi con Facebook” in futuro, sarà necessario aggiungere nuovamente il sito a Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container ha disattivato questo pulsante per impedire a Facebook di tracciare la tua visita a questa pagina.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-button-login": {
     "message": "Facebook Container ha bloccato i traccianti di Facebook. Se utilizzi “Accedi con Facebook” in questo sito, Facebook sarà in grado di tracciarti.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Consentire il tracciamento di Facebook in questa pagina?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Se utilizzi ”Accedi con Facebook”, Facebook sarà in grado di tracciare le tua attività su questo sito. Questo gli permette di elaborare un quadro più accurato della tua vita online.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
