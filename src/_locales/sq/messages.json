@@ -82,6 +82,18 @@
     "message": "Si ta di se Facebook Container po funksionon?", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
+  "onboarding3-p1": {
+    "message": "Butona që ju lejojnë të pëlqeni ose ndani gjëra me të tjerët në Facebook, ose që ju lejojnë të bëni hyrje në llogari në sajte duke përdorur llogarinë tuaj Facebook, përmbajnë gjurmues. Facebook Container do t’i bllokojë këta gjurmues dhe do të shfaqë ikonën gardh për t’ju treguar se janë hequr gjurmues.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Kjo figurë ilustron se si do të shfaqet ikona gardh e Facebook Containers brenda faqes, në krah të një butoni Facebook Like.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Sidoqoftë, nëse klikoni në cilindo nga këta butona, Facebook-u do të jetë në gjendje t’ju gjurmojë.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "Lejoje", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -108,7 +120,7 @@
   }, 
   "btn-arrow-forward": {
     "message": "Kaloni te pjesa Si Funksionon Facebook Container", 
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   }, 
   "no-trackers-subhead": {
     "message": "S’u Pikasën Gjurmues Facebook", 
@@ -130,6 +142,14 @@
     "message": "Ju kemi mbrojtur nga Facebook-u.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p1": {
+    "message": "Butonat nga Facebook-u që shfaqen në sajte blerjesh, lajmesh, etj, përmbajnë gjurmues që i tregojnë Facebook-ut se ku keni qenë në web. Edhe pse s’i përdorni kurrë këta butona për të pëlqyer apo ndarë diçka me të tjerë, gjurmuesit prapëseprapë mund të grumbullojnë të dhëna rreth shfletimit tuaj. Facebook Container i bllokon këta gjurmues.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container i bllokon këta gjurmues. Sidoqoftë, nëse klikoni në cilindo nga këta butona, Facebook-u do të jetë në gjendje t’ju ndjekë.", 
+    "description": ""
+  }, 
   "trackers-detected-fence-alt": {
     "message": "Gardh Facebook Container me mburojë.", 
     "description": "This is alternative text describing the container fence icon."
@@ -144,11 +164,14 @@
   }, 
   "no-sites-added": {
     "message": "Asnjë", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "sites-allowed": {
     "message": "SAJTE QË KENI LEJUAR", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container i vendos brenda cakut sajtet pronë e Facebook-ut. Mund të lejoni sajte të tjerë brenda tij, por kjo do ta lejojë Facebook-un të gjurmojë më tepër nga shfletimi juaj."
   }, 
   "remove": {
     "message": "Hiqe", 
