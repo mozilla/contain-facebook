@@ -10,6 +10,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='fb-login']",
   "[class*='FacebookConnectButton']",
   "[class*='signup-provider-facebook']", // Fandom
+  "[class*='facebook_login_click']", // Hi5
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
   "[href*='signin/facebook']",
@@ -19,16 +20,21 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
-  "[action*='facebook_login']" // Airbnb
+  ".fb-start .ybtn--social.ybtn--facebook", // Yelp
+  "[action*='facebook_login']", // Airbnb
+  "[action*='facebook_signup']" // Airbnb
 ];
 
 // TODO: Disarm click events on detected elements
 const SHARE_PATTERN_DETECTION_SELECTORS = [
-  "[href*='facebook.com/share']", // Imgur Login
-  "[href*='facebook.com/dialog/share']",
+  "[href*='facebook.com/share']",
+  "[href*='facebook.com/dialog/share']", // Share dialog
+  "[href*='facebook.com/dialog/feed']", // Feed dialog
   "[href*='facebook.com/sharer']", // Buzzfeed
   "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
   "[aria-label*='share on facebook']", // MSN
+  "[data-tracking*='facebook|share']", // football.london
+  ".post-action-options + .right > .social-icon.icon-f", // Imgur share
   "[title='Share on Facebook']" // Medium
 ];
 
@@ -116,6 +122,7 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
+  // console.log("addFacebookBadge", target);
 
   const htmlBadgeDiv = createBadgeFragment(socialAction);
 
@@ -153,9 +160,12 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       } else {
         // Click badge, button disabled
         e.preventDefault();
+        e.stopPropagation();
         htmlBadgeFragmentFenceDiv.click();
       }
     });
+
+
 
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       e.preventDefault();
@@ -183,9 +193,17 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   } else if (socialAction === "share") {
     target.addEventListener("click", (e) => {
       e.preventDefault();
+      e.stopPropagation();
     });
   }
+
+  // Applies to both!
+  htmlBadgeFragmentFenceDiv.addEventListener("mouseenter", () => {
+    positionPrompt( htmlBadgeDiv );
+  });
+
 }
+
 
 
 function findActivePrompt() {
@@ -203,12 +221,14 @@ function closePrompt() {
 }
 
 function positionPrompt ( activeBadge ) {
-  const activeBadgePrompt = activeBadge.querySelector(".fbc-badge-prompt");
+  // console.log(activeBadge);
+  // const activeBadge = document.querySelector(".fbc-badge-prompt");
+  // const activeBadgePrompt = activeBadge.querySelector(".fbc-badge-prompt");
   const elemRect = activeBadge.getBoundingClientRect();
   if ( (window.innerWidth - elemRect.left) < 350  ) {
-    activeBadgePrompt.classList.add("fbc-badge-prompt-align-right");
+    activeBadge.classList.add("fbc-badge-prompt-align-right");
   } else {
-    activeBadgePrompt.classList.remove("fbc-badge-prompt-align-right");
+    activeBadge.classList.remove("fbc-badge-prompt-align-right");
   }
 }
 
@@ -254,6 +274,19 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
 }
 
+function determineContainerClientRect() {
+  const htmlHeight = document.querySelector("html").offsetHeight;
+  const bodyHeight = document.querySelector("body").offsetHeight;
+  // console.log([htmlHeight, bodyHeight]);
+  if (htmlHeight === bodyHeight) {
+    return document.body.getBoundingClientRect();
+  } else if ( htmlHeight > bodyHeight ) {
+    return document.querySelector("html").getBoundingClientRect();
+  } else {
+    return document.body.getBoundingClientRect();
+  }
+}
+
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
   // Check for Badge element and select it
   if (!badgeClassUId) {
@@ -284,7 +317,8 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   }
 
   // Get position coordinates
-  const bodyRect = document.body.getBoundingClientRect();
+  const bodyRect = determineContainerClientRect();
+  // const bodyRect = determineContainerClientRect();
   const elemRect = target.getBoundingClientRect();
 
   // Determine if target element is fixed, will resets or applies class and set appor offset.
