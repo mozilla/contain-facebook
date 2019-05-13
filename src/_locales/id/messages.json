@@ -25,6 +25,10 @@
     "message": "Izinkan", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
   }, 
+  "btn-cancel": {
+    "message": "Batal", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
   "btn-next": {
     "message": "Lanjut", 
     "description": "This is a button to continue to the next onboarding panel."
@@ -44,5 +48,17 @@
   "learn-more": {
     "message": "Pelajari lebih lanjut", 
     "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Kami melindungi Anda dari Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "remove": {
+    "message": "Hapus", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Jangan tampilkan lagi", 
+    "description": ""
   }
 }
