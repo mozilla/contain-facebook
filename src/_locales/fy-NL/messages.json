@@ -58,6 +58,14 @@
     "message": "Facebook kin jo sneupjen fierder as Facebook.com folgje. Bygelyks de Facebook Mei-'k-wol-oer- en Diele-knoppen, kinne jo folgje wêr't jo west binne – sels op siden dêr't jo net oer meie of diele.", 
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container makket in beheining tusken Facebook-websites en de rest fan it ynternet, sadat it foar Facebook swierder is jou online te folgjen.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Op Facebook en websites binnen de beheining fan Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-alt": {
     "message": "It Facebook Container-stekpiktogram", 
     "description": "This is alternative text for the icon in the second onboarding panel"
@@ -68,11 +76,23 @@
   }, 
   "onboarding2-p2": {
     "message": "Dizze siden moatte tagong krije ta jo Facebook-identiteit (of witte wa't jo binne) om te wurkjen. Dit betsjut ek dat Facebook alles folgje kin wat jo dogge op dizze websiden.", 
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding3-subhead": {
     "message": "Hoe witt ik dat Facebook Container wurket?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Knoppen wêrmei't jo dingen ‘wol oer meie’, neiFacebook diele of wêrmei't jo jo mei jo Facebook-account op websites oanmelde, befetsje trackers. Facebook Container blokkearret dizze trackers en toant it stekpiktogram om oan te jaan wêr't trackers fuortsmiten binne.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Dizze ôfbylding lit sjen hoe't it stekpiktogram fan Facebook Container neist in ‘Mei-'k-wol-oer’-knop fan Facebook toand wurdt.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "As jo dochs op ien fan dizze knoppen klikke, kin Facebook jo folgje.", 
+    "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
     "message": "Tastean", 
@@ -100,7 +120,7 @@
   }, 
   "btn-arrow-forward": {
     "message": "Gean nei hoe Facebook Container wurket", 
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   }, 
   "no-trackers-subhead": {
     "message": "Gjin Facebook-trackers detektearre", 
@@ -122,6 +142,14 @@
     "message": "Wy hawwe jo beskerme tsjin Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p1": {
+    "message": "De Facebook-knoppen, dy't op winkel-, nijs- en oare websites toand wurde, befetsje trackers, dy Facebook litte witte wêr't jo op ynternet west binne. Sels wannear't jo dizze knoppen nea foar ‘Liken’ of dielen brûke, kinne dy trackers dochs gegevens oer jo sneupgedrach sammelje. Facebook Container blokkearret dizze trackers.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container blokkearret dizze trackers. Wannear jo dochs op ien fan dizze knoppen klikke, kin Facebook jo folgje.", 
+    "description": ""
+  }, 
   "trackers-detected-fence-alt": {
     "message": "Facebook Container-stek mei skyld.", 
     "description": "This is alternative text describing the container fence icon."
@@ -136,11 +164,14 @@
   }, 
   "no-sites-added": {
     "message": "Gjin", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "sites-allowed": {
     "message": "SIDEN DY'T JO TASTIEN HAWWE", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container stoppet Facebook-websites binnen de beheining. Jo kinne oare websites yn dizze beheining opnimme, Facebook kin dan lykwol mear fan jo sneupgedrach folgje."
   }, 
   "remove": {
     "message": "Fuortsmite", 
@@ -168,6 +199,10 @@
   }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Tastean dat Facebook jo hjir folget?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Wannear't jo jo mei Facebook oanmelde, kin Facebook jo aktiviteiten op dizze website folgje. Dit kin harren helpe in wiidweidich byld fan jo online-libben gear te stellen.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
