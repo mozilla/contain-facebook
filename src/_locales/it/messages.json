@@ -63,6 +63,14 @@
     "message": "I tasti che ti permettono di mettere Mi piace, condividere contenuti su Facebook o accedere ai siti usando il tuo profilo Facebook, contengono elementi traccianti. Facebook Container blocca questi elementi traccianti e segnala i punti in cui sono stati rimossi con l’icona del recinto.", 
     "description": "This is the first paragraph of the third onboarding panel."
   }, 
+  "onboarding3-img": {
+    "message": "Questa immagine mostra in che modo verrà visualizzata l’icona del recinto di Facebook Container accanto a un pulsante “Mi piace” di Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Tuttavia, se utilizzi uno qualsiasi di questi pulsanti, Facebook sarà in grado di tracciarti.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "Consenti", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -82,5 +90,45 @@
   "btn-done": {
     "message": "Fine", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Torna al pannello precedente.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Vai a “Come funziona Facebook Container”", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Nessun tracciante di Facebook rilevato", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Non è stato rilevato alcun elemento tracciante appartenente a Facebook in questa pagina. La pagina potrebbe comunque contenere altri tipi di elementi traccianti.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Ulteriori informazioni", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Come funziona Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container blocca questi traccianti. Tuttavia, se utilizzi uno qualsiasi di questi pulsanti, Facebook sarà in grado di tracciarti.", 
+    "description": ""
+  }, 
+  "sites-added-subhead": {
+    "message": "Siti consentiti in Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "SITI INCLUSI", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Nessuno", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }
 }
