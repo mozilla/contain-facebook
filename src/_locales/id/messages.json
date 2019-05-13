@@ -3,20 +3,6 @@
     "message": "Kontainer Facebook mengisolasi aktivitas Facebook Anda dari aktivitas web Anda yang lain untuk mencegah Facebook melacak Anda di luar situs web Facebook melalui kuki pihak ketiga.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$URL$ ada dalam Kontainer Facebook.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
-    "placeholders": {
-      "url": {
-        "content": "$1", 
-        "example": "www.facebook.com"
-      }
-    }
-  }, 
-  "onFacebookText": {
-    "message": "Ikon ini muncul di bilah alamat ketika Anda mengunjungi situs web seperti Facebook.com, Instagram.com, atau Messenger.com yang ada di Kontainer Facebook.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ tidak ada dalam Kontainer Facebook.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -34,5 +20,29 @@
   "onUnknownSiteHeader": {
     "message": "Situs ini tidak ada dalam Kontainer Facebook.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "btn-allow": {
+    "message": "Izinkan", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-next": {
+    "message": "Lanjut", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Kembali", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Selesai", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Kembali ke panel sebelumnya.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "learn-more": {
+    "message": "Pelajari lebih lanjut", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
   }
 }
