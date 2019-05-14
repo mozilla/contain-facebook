@@ -221,14 +221,27 @@ function closePrompt() {
 }
 
 function positionPrompt ( activeBadge ) {
-  // console.log(activeBadge);
+  console.log(activeBadge);
   // const activeBadge = document.querySelector(".fbc-badge-prompt");
   // const activeBadgePrompt = activeBadge.querySelector(".fbc-badge-prompt");
   const elemRect = activeBadge.getBoundingClientRect();
+  console.log( [window.innerHeight,elemRect.top,  elemRect.bottom, (window.innerHeight - elemRect.bottom)] );
+  console.log( elemRect.top < 140 );
+
   if ( (window.innerWidth - elemRect.left) < 350  ) {
     activeBadge.classList.add("fbc-badge-prompt-align-right");
+  }
+
+  const modifierClassList = ["fbc-badge-prompt-align-top", "fbc-badge-prompt-align-bottom", "fbc-badge-prompt-align-right"];
+
+  if ( elemRect.top < 140 ) {
+    activeBadge.classList.add("fbc-badge-prompt-align-top");
+  } else if ( (window.innerHeight - elemRect.bottom) < 130 ) {
+    activeBadge.classList.add("fbc-badge-prompt-align-bottom");
+  } else if ( (window.innerWidth - elemRect.left) < 350  ) {
+    activeBadge.classList.add("fbc-badge-prompt-align-right");
   } else {
-    activeBadge.classList.remove("fbc-badge-prompt-align-right");
+    activeBadge.classList.remove(...modifierClassList);
   }
 }
 
