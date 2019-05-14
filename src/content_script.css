@@ -138,6 +138,25 @@
 	border-width: 10px 0 10px 10px;
 }
 
+.fbc-badge-prompt-align-top .fbc-badge-prompt {
+	top: -7px;
+	transform: none;
+}
+
+.fbc-badge-prompt-align-top .fbc-badge-prompt:after {
+	top: 16px;
+}
+
+.fbc-badge-prompt-align-bottom .fbc-badge-prompt {
+	top: auto;
+	bottom: -20px;
+	transform: none;
+}
+
+.fbc-badge-prompt-align-bottom .fbc-badge-prompt:after {
+	display: none;
+}
+
 .fbc-badge-prompt h1 {
 	all: unset;
 	letter-spacing: -0.1px;
