@@ -388,6 +388,7 @@ function tabUpdateListener (tabId, changeInfo, tab) {
   updateBrowserActionIcon(tab);
 }
 
+/*
 async function areAllStringsTranslated () {
   const browserUILanguage = browser.i18n.getUILanguage();
   if (browserUILanguage && browserUILanguage.startsWith("en")) {
@@ -397,6 +398,8 @@ async function areAllStringsTranslated () {
   const resp = await fetch(enMessagesPath);
   const enMessages = await resp.json();
 
+  // TODO: Check Pontoon for available translations instead of checking
+  // messages files
   for (const key of Object.keys(enMessages)){
     // TODO: this doesn't check if the add-on messages are translated into
     // any other browser.i18n.getAcceptedLanguages() options ... but then,
@@ -411,19 +414,15 @@ async function areAllStringsTranslated () {
   }
   return true;
 }
+*/
 
 async function updateBrowserActionIcon (tab) {
   if (tab.incognito) {
     browser.browserAction.disable(tab.id);
     return;
   }
-  const url = tab.url;
-  const fullyTranslated = await areAllStringsTranslated();
-  if (!fullyTranslated) {
-    browser.browserAction.disable();
-    return;
-  }
 
+  const url = tab.url;
   const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
 
   if (isFacebookURL(url)) {
