@@ -88,8 +88,23 @@ h3 {
   font-size: 14px;
 }
 
-.Facebook-text::after { /* grey Facebook with fence */
+.Facebook-text::after {
   background-image: url("/img/fbc-icon2.svg");
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-left: 4px;
+  margin-bottom: -1px;
+}
+
+.Facebook-blue-text {
+  color: var(--blue60);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.Facebook-blue-text::after {
+  background-image: url("/img/briefcase.svg");
   display: inline-block;
   width: 14px;
   height: 12px;

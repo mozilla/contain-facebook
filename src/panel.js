@@ -79,11 +79,15 @@ const addDiv = (wrapper, className) => {
 
 
 // creates grey Facebook text. Grey fence icon is set in CSS.
-const addGreyFacebookAndFence = () => {
-  // create grey facebook text with grey fence
+const addFacebookAndIcon = async () => {
   const el = document.createElement("p");
-  el.classList.add("Facebook-text");
   el.innerText = "Facebook";
+  const browserInfo = await browser.runtime.getBrowserInfo();
+  if (parseInt(browserInfo.version) < 67) {
+    el.classList.add("Facebook-blue-text");
+    return el;
+  }
+  el.classList.add("Facebook-text");
   return el;
 };
 
@@ -269,7 +273,7 @@ const buildPanel = async(panelId) => {
   addSubhead(contentWrapper, panelId);
 
   if (panelId === "on-facebook") {
-    let el = addGreyFacebookAndFence(contentWrapper);
+    let el = await addFacebookAndIcon(contentWrapper);
     contentWrapper.appendChild(el);
   }
 
@@ -304,7 +308,7 @@ const buildPanel = async(panelId) => {
 };
 
 
-const buildOnboardingPanel = (panelId) => {
+const buildOnboardingPanel = async (panelId) => {
   const stringId = `onboarding${panelId}`;
   const { page, fragment } = setUpPanel(stringId);
   
@@ -319,7 +323,7 @@ const buildOnboardingPanel = (panelId) => {
   }
 
   if (panelId === 2) {
-    let el = addGreyFacebookAndFence();
+    let el = await addFacebookAndIcon();
     h2.parentNode.insertBefore(el, h2.nextSibling);
     setNavButtons(fragment, "btn-back", "btn-next", stringId);
   }
