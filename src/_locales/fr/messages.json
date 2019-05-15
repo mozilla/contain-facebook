@@ -170,6 +170,9 @@
     "message": "SITES QUE VOUS AVEZ AUTORISÉS", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook Container isole les sites appartenant à Facebook dans une zone délimitée. Vous pouvez ajouter d’autres sites au conteneur, mais vous permettez alors à Facebook de vous pister davantage."
+  }, 
   "remove": {
     "message": "Retirer", 
     "description": ""
