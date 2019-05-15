@@ -1,6 +1,6 @@
 /* global browser */
 
-// TODO 
+// TODO
 // Send message to background.js the first time that onboarding "Done" button is clicked and onboarding has been completed.
 
 // removes elements (if there are any) from the panel;
@@ -152,9 +152,16 @@ const addLearnMoreLink = (fragment) => {
   link["id"] = "learn-more";
   link.classList.add("open-sumo");
   link["rel"] = "noopener noreferrer";
-  link["href"] = "https://support.mozilla.org/kb/facebook-container-prevent-facebook-tracking"; // need Facebook Container SUMO url. // need UTM params? // open in new or same window?
+  link["href"] = "https://support.mozilla.org/kb/facebook-container-prevent-facebook-tracking";
+  // need Facebook Container SUMO url. // need UTM params? // open in new or same window?
   setClassAndAppend(fragment, link);
-  link.addEventListener("click", () => window.close());
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    browser.tabs.create({
+      url: "https://support.mozilla.org/kb/facebook-container-prevent-facebook-tracking"
+    });
+    window.close();
+  });
 };
 
 
@@ -307,7 +314,7 @@ const buildPanel = async(panelId) => {
 const buildOnboardingPanel = (panelId) => {
   const stringId = `onboarding${panelId}`;
   const { page, fragment } = setUpPanel(stringId);
-  
+
   addHeaderWithBackArrow(fragment);
 
   const contentWrapper = addDiv(fragment, "main-content-wrapper");
@@ -364,7 +371,7 @@ const makeSiteList = async(fragment, siteList, sitesAllowed=false, addX=false) =
   if (siteList.length === 0) {
     const allowedSiteWrapper = addDiv(fragment, "allowed-site-wrapper");
     addSpan(allowedSiteWrapper, "no-sites-added");
-    return; 
+    return;
   }
 
   for (const site of siteList) {
