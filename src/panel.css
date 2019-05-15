@@ -89,27 +89,30 @@ h3 {
 }
 
 .Facebook-text::after {
-  background-image: url("/img/fbc-icon2.svg");
+  background: url("/img/fbc-icon2.svg") center no-repeat;
+  background-size: 14px auto;
   display: inline-block;
   width: 14px;
   height: 12px;
   margin-left: 4px;
   margin-bottom: -1px;
+  content: "";
 }
 
 .Facebook-blue-text {
-  color: var(--blue60);
+  color: var(--secondaryText);
   font-weight: 500;
   font-size: 14px;
 }
 
 .Facebook-blue-text::after {
-  background-image: url("/img/briefcase.svg");
+  background: url("/img/briefcase.svg") center no-repeat;
+  background-size: 17px auto;
   display: inline-block;
-  width: 14px;
-  height: 12px;
-  margin-left: 4px;
-  margin-bottom: -1px;
+  width: 16px;
+  height: 13px;
+  margin-left: 6px;
+  content: "";
 }
 
 p,
