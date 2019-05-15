@@ -3,8 +3,8 @@
     "message": "Amagbar Facebook ad iεzel armud-inek n Facebook ɣef urmud-inek web akken ur ittaǧǧa ara Facebook ad ak-iḍfer beṛṛa n usmel-ines s ttawil n inagan n tuqqna tis kraḍ.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$ URL $ atan deg umagbar Facebook.", 
+  "in-fbc-subhead": {
+    "message": "$URL$ deg umagbar Facebook.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
@@ -12,10 +12,6 @@
         "example": "www.facebook.com"
       }
     }
-  }, 
-  "onFacebookText": {
-    "message": "Tagnit-a ad d-teban deg ufeggag n tansa mi ara ad terzuḍ ɣer ismal web am Facebook.com, Instagram.com neɣ Messenger.com i yellan deg umagbar Facebook.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ ulac-it deg umagbar Facebook.", 
@@ -34,5 +30,33 @@
   "onUnknownSiteHeader": {
     "message": "Asmel-agi ulac deg umagbar Facebook.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "btn-allow": {
+    "message": "Sireg", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Sefsex", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Γer zdat", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Ɣer deffir", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Immed", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "learn-more": {
+    "message": "Issin ugar", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Amek iteddu Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
   }
 }
