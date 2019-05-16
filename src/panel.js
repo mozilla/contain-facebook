@@ -229,15 +229,6 @@ const formatText = (text, el) => {
 
 
 const getLocalizedStrings = async() => {
-  const {PANEL_SHOWN} = await browser.storage.local.get("PANEL_SHOWN");
-  if (document.querySelector(".panel") !== null && !PANEL_SHOWN) {
-    await browser.storage.local.set({PANEL_SHOWN: true});
-    const tabs = await browser.tabs.query({});
-    tabs.map(tab => {
-      browser.browserAction.setBadgeText({tabId: tab.id, text: ""});
-    });
-  }
-
   const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
   const currentActiveTab = tabsQueryResult[0];
   const currentActiveURL = new URL(currentActiveTab.url);

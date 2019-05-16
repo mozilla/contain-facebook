@@ -430,14 +430,6 @@ async function updateBrowserActionIcon (tab) {
     // so the panel.js can "ask" background.js which panel it should show
     browser.storage.local.set({"CURRENT_PANEL": "on-facebook"});
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
-    const fbcStorage = await browser.storage.local.get();
-    if (fbcStorage.PANEL_SHOWN !== true) {
-      await browser.browserAction.setBadgeBackgroundColor({
-        tabId: tab.id,
-        color: "#3B5998"
-      });
-      browser.browserAction.setBadgeText({tabId: tab.id, text: " "});
-    }
   } else if (hasBeenAddedToFacebookContainer) {
     browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
   } else { 
@@ -445,7 +437,6 @@ async function updateBrowserActionIcon (tab) {
     const panelToShow = (tabState && tabState.trackersDetected) ? "trackers-detected" : "no-trackers";
     browser.storage.local.set({"CURRENT_PANEL": panelToShow});
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
-    browser.browserAction.setBadgeText({tabId: tab.id, text: ""});
   }
 }
 
