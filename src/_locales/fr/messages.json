@@ -83,7 +83,7 @@
     "description": "This is the subhead for the third onboarding panel."
   }, 
   "onboarding3-p1": {
-    "message": "Les boutons vous permettant d’aimer ou de partager des éléments sur Facebook ou de vous connecter à des sites web à l’aide de votre compte Facebook contiennent des traqueurs. Facebook Container bloquera ces traqueurs et affichera l’icône de barrière pour vous indiquer où les traqueurs ont été supprimés.", 
+    "message": "Les boutons vous permettant d’aimer ou de partager des éléments sur Facebook ou de vous connecter à des sites web à l’aide de votre compte Facebook contiennent des traqueurs. Facebook Container bloque ces traqueurs et affiche l’icône de barrière pour vous indiquer où les traqueurs ont été supprimés.", 
     "description": "This is the first paragraph of the third onboarding panel."
   }, 
   "onboarding3-img": {
@@ -127,7 +127,7 @@
     "description": ""
   }, 
   "no-trackers-p1": {
-    "message": "Facebook Container n’a détecté aucun traqueur de Facebook sur cette page. La page pourrait cependant toujours contenir d'autres types de traqueurs.", 
+    "message": "Facebook Container n’a détecté aucun traqueur de Facebook sur cette page. La page pourrait cependant toujours contenir d’autres types de traqueurs.", 
     "description": ""
   }, 
   "learn-more": {
