@@ -358,11 +358,11 @@ function hasSomeParentTheClass(element, classname) {
 }
 
 function isPinterest(target) {
-  const { parentNode } = target;
-  if (parentNode) {
-    const { previousSibling } = parentNode;
-    if (previousSibling) {
-      return previousSibling.classList.includes("fbc-has-badge");
+  const { parentElement } = target;
+  if (parentElement) {
+    const { previousElementSibling } = parentElement;
+    if (previousElementSibling) {
+      return previousElementSibling.classList.contains("fbc-has-badge");
     }
   }
   return false;
