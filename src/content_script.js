@@ -15,6 +15,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
   "[href*='/sign_in/Facebook']", // bazqux.com
   "[href*='signin/facebook']",
+  "[href*='accounts/facebook/login']", // premierleague.com
   "[data-oauthserver*='facebook']", // Stackoverflow
   "[id*='facebook_connect_button']", // Quora
   "[data-action*='facebook-auth']", //Medium
