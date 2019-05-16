@@ -351,12 +351,6 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
 }
 
-function hasSomeParentTheClass(element, classname) {
-  console.log(element, classname);
-  if (element.className.split(" ").indexOf(classname)>=0) return true;
-  return false;
-}
-
 function isPinterest(target) {
   const { parentElement } = target;
   if (parentElement) {
