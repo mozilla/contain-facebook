@@ -20,6 +20,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-action*='facebook-auth']", //Medium
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
+  ".social-login .button--facebook", // noovie.com
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
   ".fb-start .ybtn--social.ybtn--facebook", // Yelp
   "[aria-label*='Log in with Facebook']", // Tinder
