@@ -17,7 +17,7 @@
     "message": "Facebook peut à présent vous pister sur ce site. Pour retirer le site de Facebook Container, sélectionnez Sites autorisés dans Facebook Container et retirez-le de la liste."
   }, 
   "on-facebook-subhead": {
-    "message": "Sur Facebook ou l’un des sites limités au Facebook Container", 
+    "message": "Sur Facebook ou l’un des sites isolés par Facebook Container", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "on-facebook-p1": {
@@ -63,7 +63,7 @@
     "description": "Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-subhead": {
-    "message": "Sur Facebook ou sur les sites limités au Facebook Container", 
+    "message": "Sur Facebook ou sur les sites isolés par Facebook Container", 
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-alt": {
@@ -71,7 +71,7 @@
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
   "onboarding2-p1": {
-    "message": "Cette icône apparaît dans la barre d’adresse de Firefox lorsque vous visitez des sites, comme Facebook.com, situés dans la limite du conteneur Facebook.", 
+    "message": "Cette icône apparaît dans la barre d’adresse de Firefox lorsque vous visitez des sites, comme Facebook.com, situés dans le conteneur Facebook.", 
     "description": "This is the first paragraph of the second onboarding panel."
   }, 
   "onboarding2-p2": {
