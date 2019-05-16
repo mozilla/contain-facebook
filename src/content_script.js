@@ -13,6 +13,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='facebook_login_click']", // Hi5
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
+  "[href*='/sign_in/Facebook']", // bazqux.com
   "[href*='signin/facebook']",
   "[data-oauthserver*='facebook']", // Stackoverflow
   "[id*='facebook_connect_button']", // Quora
@@ -445,6 +446,7 @@ function removeBadges() {
 let checkForTrackers = true;
 
 browser.runtime.onMessage.addListener(message => {
+
   if ( message["msg"] == "allowed-facebook-subresources" || message["msg"] == "facebook-domain" ) {
     // Flags function to not add badges to page
     checkForTrackers = false;
@@ -480,7 +482,7 @@ function contentScriptInit(resetSwitch, msg) {
   }
 }
 
-async function checkIfURLShouldBeBlocked() {
+async function CheckIfURLShouldBeBlocked() {
   const siteList = await browser.runtime.sendMessage("what-sites-are-added");
 
   if (siteList.includes(window.location.host)) {
@@ -491,10 +493,7 @@ async function checkIfURLShouldBeBlocked() {
 
 }
 
-window.onload = checkIfURLShouldBeBlocked();
-
-
-// document.addEventListener("DOMContentLoaded", contentScriptInit(false, "DOMContentLoaded"));
+document.addEventListener("DOMContentLoaded", CheckIfURLShouldBeBlocked);
 // window.onload = contentScriptInit(false, "window.onload");
 // contentScriptSetTimeout();
 
