@@ -13,6 +13,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='facebook_login_click']", // Hi5
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
+  "[href*='/sign_in/Facebook']", // bazqux.com
   "[href*='signin/facebook']",
   "[data-oauthserver*='facebook']", // Stackoverflow
   "[id*='facebook_connect_button']", // Quora
@@ -446,8 +447,6 @@ let checkForTrackers = true;
 
 browser.runtime.onMessage.addListener(message => {
 
-  console.log("browser.runtime.onMessage: ", message["msg"]);
-
   if ( message["msg"] == "allowed-facebook-subresources" || message["msg"] == "facebook-domain" ) {
     // Flags function to not add badges to page
     checkForTrackers = false;
@@ -493,16 +492,6 @@ async function CheckIfURLShouldBeBlocked() {
   }
 
 }
-
-console.log("test");
-
-document.addEventListener('load', function() {
-  console.log('DOC: All assets are loaded');
-});
-
-window.addEventListener('load', function() {
-  console.log('All assets are loaded');
-});
 
 document.addEventListener("DOMContentLoaded", CheckIfURLShouldBeBlocked);
 // window.onload = contentScriptInit(false, "window.onload");
