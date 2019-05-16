@@ -88,13 +88,31 @@ h3 {
   font-size: 14px;
 }
 
-.Facebook-text::after { /* grey Facebook with fence */
-  background-image: url("/img/fbc-icon2.svg");
+.Facebook-text::after {
+  background: url("/img/fbc-icon2.svg") center no-repeat;
+  background-size: 14px auto;
   display: inline-block;
   width: 14px;
   height: 12px;
   margin-left: 4px;
   margin-bottom: -1px;
+  content: "";
+}
+
+.Facebook-blue-text {
+  color: #37ADFF;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.Facebook-blue-text::after {
+  background: url("/img/briefcase.svg") center no-repeat;
+  background-size: 17px auto;
+  display: inline-block;
+  width: 16px;
+  height: 13px;
+  margin-left: 6px;
+  content: "";
 }
 
 p,
