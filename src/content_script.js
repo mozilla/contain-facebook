@@ -445,6 +445,9 @@ function removeBadges() {
 let checkForTrackers = true;
 
 browser.runtime.onMessage.addListener(message => {
+
+  console.log("browser.runtime.onMessage: ", message["msg"]);
+
   if ( message["msg"] == "allowed-facebook-subresources" || message["msg"] == "facebook-domain" ) {
     // Flags function to not add badges to page
     checkForTrackers = false;
@@ -480,7 +483,7 @@ function contentScriptInit(resetSwitch, msg) {
   }
 }
 
-async function checkIfURLShouldBeBlocked() {
+async function CheckIfURLShouldBeBlocked() {
   const siteList = await browser.runtime.sendMessage("what-sites-are-added");
 
   if (siteList.includes(window.location.host)) {
@@ -491,10 +494,17 @@ async function checkIfURLShouldBeBlocked() {
 
 }
 
-window.onload = checkIfURLShouldBeBlocked();
+console.log("test");
 
+document.addEventListener('load', function() {
+  console.log('DOC: All assets are loaded');
+});
 
-// document.addEventListener("DOMContentLoaded", contentScriptInit(false, "DOMContentLoaded"));
+window.addEventListener('load', function() {
+  console.log('All assets are loaded');
+});
+
+document.addEventListener("DOMContentLoaded", CheckIfURLShouldBeBlocked);
 // window.onload = contentScriptInit(false, "window.onload");
 // contentScriptSetTimeout();
 
