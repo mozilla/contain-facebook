@@ -198,11 +198,11 @@
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Permettre à Facebook de vous suivre ici ?", 
+    "message": "Autoriser Facebook à vous suivre ici ?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Si vous souhaitez utiliser la connexion avec Facebook, Facebook sera alors en mesure de suivre votre activité sur ce site. Cela peut les aider à construire une image plus complète de votre vie en ligne.", 
+    "message": "Si vous souhaitez utiliser la connexion avec Facebook, Facebook sera alors en mesure de suivre votre activité sur ce site. Cela peut les aider à élaborer une image plus complète de votre vie en ligne.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
