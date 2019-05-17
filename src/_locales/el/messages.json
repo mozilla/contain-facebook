@@ -3,7 +3,7 @@
     "message": "Το Facebook Container απομονώνει τη δραστηριότητά σας στο Facebook από την υπόλοιπη δραστηριότητά σας στο διαδίκτυο, προκειμένου να εμποδίσετε την καταγραφή σας από το Facebook εκτός της ιστοσελίδας του Facebook, μέσω cookies τρίτων.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
+  "in-fbc-subhead": {
     "message": "Το $URL$ είναι στο Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
@@ -12,10 +12,6 @@
         "example": "www.facebook.com"
       }
     }
-  }, 
-  "onFacebookText": {
-    "message": "Αυτό το εικονίδιο εμφανίζεται στη γραμμή διευθύνσεων όταν επισκέπτεστε ιστοσελίδες, όπως το Facebook.com, το Instagram.com, ή το Messenger.com, που βρίσκονται στο Facebook Container.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "Το $URL$ δεν είναι στο Facebook Container.", 
@@ -34,5 +30,33 @@
   "onUnknownSiteHeader": {
     "message": "Αυτή η ιστοσελίδα δεν είναι στο Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "learn-more": {
+    "message": "Μάθετε περισσότερα", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "sites-included": {
+    "message": "ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Καμία", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "ΕΠΙΤΡΕΠΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "remove": {
+    "message": "Αφαίρεση", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Να μην εμφανιστεί ξανά", 
+    "description": ""
   }
 }
