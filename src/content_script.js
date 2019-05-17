@@ -7,7 +7,6 @@
 
 const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[title='Log in with Facebook']",
-  "[class*='fb-login']",
   "[class*='FacebookConnectButton']",
   "[class*='signup-provider-facebook']", // Fandom
   "[class*='facebook_login_click']", // Hi5
@@ -20,10 +19,14 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-action*='facebook-auth']", //Medium
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
+  ".social-login .button--facebook", // noovie.com
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
   ".fb-start .ybtn--social.ybtn--facebook", // Yelp
+  "[aria-label*='Log in with Facebook']", // Tinder
   "[action*='facebook_login']", // Airbnb
-  "[action*='facebook_signup']" // Airbnb
+  "[action*='facebook_signup']", // Airbnb
+  "[class*='fb-login']" // Default FB class name "fbc-login-button"
+
 ];
 
 // TODO: Disarm click events on detected elements
@@ -348,14 +351,26 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
 }
 
+function isPinterest(target) {
+  const { parentElement } = target;
+  if (parentElement) {
+    const { previousElementSibling } = parentElement;
+    if (previousElementSibling) {
+      return previousElementSibling.classList.contains("fbc-has-badge");
+    }
+  }
+  return false;
+}
+
 // List of badge-able in-page elements
 const facebookDetectedElementsArr = [];
 
 function patternDetection(selectionArray, socialActionIntent){
+  // console.log("patternDetection");
   for (let querySelector of selectionArray) {
     for (let item of document.querySelectorAll(querySelector)) {
       // overlay the FBC icon badge on the item
-      if (!item.classList.contains("fbc-has-badge")) {
+      if (!item.classList.contains("fbc-has-badge") && !isPinterest(item)) {
         const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
         const itemUIDClassTarget = "js-" + itemUIDClassName;
         const socialAction = socialActionIntent;
