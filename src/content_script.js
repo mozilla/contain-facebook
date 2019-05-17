@@ -302,6 +302,24 @@ function determineContainerClientRect() {
   }
 }
 
+function calcZindex(target) {
+  // Loop through each parent, getting Zindex (if its a number).
+  // As it finds them, it grabs the highest/largest.
+  let zIndexLevel = 0;
+  for ( ; target && target !== document; target = target.parentNode ) {
+    const zindex = document.defaultView.getComputedStyle(target).getPropertyValue("z-index");
+    if ( !isNaN(zindex) ) {
+      if (zIndexLevel < zindex) {
+        zIndexLevel = zindex;
+      }
+    }
+  }
+
+  // Take highest zindex in parent tree and adds one more.
+  zIndexLevel = zIndexLevel + 1;
+  return zIndexLevel;
+}
+
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
   // Check for Badge element and select it
   if (!badgeClassUId) {
@@ -343,10 +361,12 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   const htmlBadgeDivPosY = offsetPosY - elementSizeOffsetY;
 
   // TODO: Add Zindex Targeting
-  // const targetZindex = calcZindex(target);
+  const targetZindex = calcZindex(target);
+
+  // console.log( calcZindex(target) );
 
   // Set badge position based on target coordinates/size
-  // htmlBadgeDiv.style.zIndex = targetZindex;
+  htmlBadgeDiv.style.zIndex = targetZindex;
   htmlBadgeDiv.style.left = htmlBadgeDivPosX + "px";
   htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
 }
@@ -461,7 +481,6 @@ function removeBadges() {
 let checkForTrackers = true;
 
 browser.runtime.onMessage.addListener(message => {
-
   if ( message["msg"] == "allowed-facebook-subresources" || message["msg"] == "facebook-domain" ) {
     // Flags function to not add badges to page
     checkForTrackers = false;
@@ -508,7 +527,8 @@ async function CheckIfURLShouldBeBlocked() {
 
 }
 
-document.addEventListener("DOMContentLoaded", CheckIfURLShouldBeBlocked);
+CheckIfURLShouldBeBlocked();
+
 // window.onload = contentScriptInit(false, "window.onload");
 // contentScriptSetTimeout();
 
