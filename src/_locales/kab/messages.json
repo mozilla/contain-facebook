@@ -13,6 +13,21 @@
       }
     }
   }, 
+  "in-fbc-p1": {
+    "message": "Facebook yezmer tura ad k-yeḍfeṛ deg usmel-a. Akken ad tekkseḍ asmel-a seg Facebook Container, fren ismal deg Facebook Container sakin kkes-it seg tebdert."
+  }, 
+  "on-facebook-subhead": {
+    "message": "Deg Facebook akked ismal i d-yeɛzel Facebook Container. ", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Tignit-a ad tban deg ufeggag n tensa n Firefox ticki terziḍ ɣer yismal yessefrak Facebook neɣ ismal i terniḍ ɣer Facebook container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "Ismal-a ḥwaǧen ad kecmen ɣer tmagit-ik Facebook (neɣ akken ad ẓren anwa-k) akken ad lḥun. Ayagi yemmal-d dakken daɣen ula d Facebook yezmer ad yeḍfeṛ meṛṛa ayen i txeddmeḍ deg yismal-a.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ ulac-it deg umagbar Facebook.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -30,6 +45,14 @@
   "onUnknownSiteHeader": {
     "message": "Asmel-agi ulac deg umagbar Facebook.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "Aseqdec n Facebook Container", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
   "btn-allow": {
     "message": "Sireg", 
