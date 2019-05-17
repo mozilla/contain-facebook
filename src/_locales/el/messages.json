@@ -35,9 +35,41 @@
     "message": "Facebook Container", 
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
   }, 
+  "onboarding2-alt": {
+    "message": "Το εικονίδιο φράχτη του Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding3-subhead": {
+    "message": "Πώς ξέρω ότι το Facebook Container λειτουργεί;", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Αποδοχή", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Ακύρωση", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Επόμενο", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Πίσω", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Τέλος", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
   "learn-more": {
     "message": "Μάθετε περισσότερα", 
     "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Πώς λειτουργεί το Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
   "sites-included": {
     "message": "ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ", 
