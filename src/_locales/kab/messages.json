@@ -126,6 +126,10 @@
     "message": "Ulac aneḍfaṛ n Facebook i d-yettwafen", 
     "description": ""
   }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container ur d-yufi ara ineḍfaṛen n Facebook ɣef usebter-a. Maca asebter yezmer ad yegber anawen-nniḍen n yineḍfaṛen.", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Issin ugar", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -133,6 +137,18 @@
   "how-fbc-works": {
     "message": "Amek iteddu Facebook Container", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Nemmesten-ik mgal Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Tiqeffalin Facebook i d-yettbanen deg yismal n tiɣin, isallen, d yismal-nniḍen gebrent inedfaṛen i d-yemmalen ayen wiɣer i trezzuḍ. Ɣas ma yella ur tseqdaceḍ ara tiqeffalin-a i uḥemmel neɣ i beṭṭu, ineḍfaṛen zemren yal tikkelt ad leqḍen isefka ɣef tunigin-ik. Facebook Container yessewḥal ineḍfaṛen-a.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container yessewḥel ineḍfaṛen-a. Maca, ma tettekkaḍ ɣef yiwet seg tqeffalin-a, Facebook ad yizmir ad k-yeḍfeṛ.", 
+    "description": ""
   }, 
   "trackers-detected-fence-alt": {
     "message": "Talast n Facebook Container s waɣer ", 
@@ -154,12 +170,39 @@
     "message": "ISMAL I TQEBLEḌ", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook Container ad yeɛzel ismal ittekkan ɣer Facebook deg temnaḍt s talast. Tzemreḍ ad ternuḍ ismal-nniḍen ɣer umagbar, maca ad teǧǧeḍ Facebook ad k-yeḍfeṛ ugar."
+  }, 
   "remove": {
     "message": "KKES", 
     "description": ""
   }, 
   "remove-site-subhead": {
     "message": "Kkes asmel seg Facebook Container?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Ma tekkseḍ asmel-a seg Facebook Container ayagi ur k-yettaǧǧa ara ad teqqneḍ ɣer-s ɣer zdat s tmahilt n Facebook daɣen inagan n tuqqna Facebook ad ttwakksen.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": "Ma tebɣiḍ ad teqqneḍ s Facebook tikkelt-nniḍen, ilaq ad ternuḍ asmel-a ɣer Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container yessens taqeffalt ihi yessewḥel Facebook seg uḍfaṛ n tirza deg usebter-a.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container yessewḥel ineḍfaṛen n Facebook. MA tesqedceḍ tuqqna s Facebook deg usmel-a, Facebook ad yizmir ad k-yeḍfeṛ.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Eǧǧ Facebook akken ad k-yeḍfeṛ dagi?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Ma tebɣiḍ ad tesqedceḍ tuqqna s Facebook, Facebook ad yizmir ad yeḍfeṛ armud-ik ɣef usmel-a. Ayagi yezmer ad imudd tallelt ɣef wudem-ik deg tudert-ik srid.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
