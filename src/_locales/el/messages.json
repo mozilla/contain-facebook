@@ -43,6 +43,10 @@
     "message": "Πώς ξέρω ότι το Facebook Container λειτουργεί;", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
+  "onboarding3-p2": {
+    "message": "Ωστόσο, αν κάνετε κλικ σε οποιοδήποτε από αυτά τα κουμπιά, το Facebook θα μπορεί να σας καταγράφει.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "Αποδοχή", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -71,6 +75,10 @@
     "message": "Πώς λειτουργεί το Facebook Container", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
+  "trackers-detected-subhead": {
+    "message": "Σας προστατεύουμε από το Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
   "sites-included": {
     "message": "ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ", 
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
@@ -85,6 +93,10 @@
   }, 
   "remove": {
     "message": "Αφαίρεση", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Αφαίρεση ιστοσελίδας από το Facebook Container;", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
