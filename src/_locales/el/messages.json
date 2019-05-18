@@ -13,6 +13,9 @@
       }
     }
   }, 
+  "in-fbc-p1": {
+    "message": "Το Facebook μπορεί πλέον να σας καταγράφει σε αυτή την ιστοσελίδα. Για να αφαιρέσετε αυτή την ιστοσελίδα από το Facebook Container, επιλέξτε το \"Επιτρεπόμενες ιστοσελίδες\" στο Facebook Container και αφαιρέστε την από τη λίστα."
+  }, 
   "notOnFacebookHeader": {
     "message": "Το $URL$ δεν είναι στο Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -67,6 +70,18 @@
     "message": "Τέλος", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "btn-arrow-back": {
+    "message": "Επιστροφή στην προηγούμενη σελίδα.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Μετάβαση στο \"Πώς λειτουργεί το Facebook Container\"", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Δεν ανιχνεύθηκαν ιχνηλάτες Facebook", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Μάθετε περισσότερα", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -78,6 +93,14 @@
   "trackers-detected-subhead": {
     "message": "Σας προστατεύουμε από το Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Φράχτης Facebook Container με ασπίδα.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Επιτρεπόμενες ιστοσελίδες στο Facebook Container", 
+    "description": "This is a panel subhead."
   }, 
   "sites-included": {
     "message": "ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ", 
@@ -97,6 +120,10 @@
   }, 
   "remove-site-subhead": {
     "message": "Αφαίρεση ιστοσελίδας από το Facebook Container;", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Να επιτρέπεται στο Facebook να σας καταγράφει εδώ;", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
