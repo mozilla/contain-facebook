@@ -39,6 +39,10 @@
     "message": "การใช้ Facebook Container", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding3-subhead": {
+    "message": "ฉันจะรู้ได้อย่างไรว่า Facebook Container กำลังทำงานอยู่?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "อนุญาต", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
