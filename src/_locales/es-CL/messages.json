@@ -82,6 +82,18 @@
     "message": "¿Cómo sé que Facebook Container está funcionando?", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
+  "onboarding3-p1": {
+    "message": "Botones que te permiten poner me gusta o compartir en Facebook o que te permiten conectarte a sitios web usando tu cuenta de Facebook pueden contener rastreadores. Facebook Container bloqueará estos rastreadores y mostrará un ícono de cerco para indicarte donde se están removiendo rastreadores.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Esta imagen demuestra cómo el ícono de cerca de Facebook Cainter aparece dentro de una página junto al botón de me gusta de Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Sin embargo, si aprietas en cualquiera de estos botones Facebook será capaz de rastrearte.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "Permitir", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -130,6 +142,14 @@
     "message": "Te hemos protegido de Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p1": {
+    "message": "Los botones de Facebook que aparecen al comprar, en las noticias y en otros sitios contienen rastreadores que le dicen a Facebook dónde has estado dentro de la web. Incluso si nunca usas estos botones para dar me gusta o compartir, los rastreadores pueden recolectar datos acerca de tu navegación. Facebook Container bloquea estos rastreadores.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container bloquea estos rastreadores. Sin embargo, si aprietas en cualquiera de estos botones Facebook será capaz de rastrearte.", 
+    "description": ""
+  }, 
   "trackers-detected-fence-alt": {
     "message": "Cerco con escudo de Facebook Container.", 
     "description": "This is alternative text describing the container fence icon."
@@ -150,6 +170,9 @@
     "message": "SITIOS QUE HAS PERMITIDO", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook Container coloca los sitios pertenecientes a Facebook dentro de una frontera. Puedes permitir que ciertos sitios crucen la frontera, pero esto permitirá a Facebook rastrear más de tu navegación web."
+  }, 
   "remove": {
     "message": "Eliminar", 
     "description": ""
@@ -158,8 +181,28 @@
     "message": "¿Eliminar sitio de Facebook Container?", 
     "description": ""
   }, 
+  "remove-site-p1": {
+    "message": "Eliminar este sitio de Facebook Container se traduce en que la opción de conectarse con Facebook dejará de funcionar y que las cookies de rastreo de FAcebook serán eliminadas.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": "Si deseas usar la opción de conectarse usando Facebook nuevamente, tendrás que reañadirla a Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container ha desactivado este botón y bloqueado a Facebook de rastrear tu visita a esta página.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container ha bloqueado los rastreadores de Facebook. Si usas la opción de conectarse usando Facebook en este sitio, Facebook será capaz de rastrearte.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "¿Permitir que Facebook te rastree aquí?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Si deseas usar la opción de conectarte usando Facebook, entonces Facebook podrá rastrear tu actividad en este sitio. Esto puede ayudarles a producir una imagen más clara de tu vida en línea.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
