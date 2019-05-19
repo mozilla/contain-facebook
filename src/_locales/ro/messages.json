@@ -16,6 +16,10 @@
   "in-fbc-p1": {
     "message": "Facebook te poate urmări acum pe acest site. Pentru a elimina site-ul din Facebook Container, selectează Site-uri permise în Facebook Container și elimină-l din listă."
   }, 
+  "on-facebook-subhead": {
+    "message": "Despre Facebook și site-uri din bariera Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "on-facebook-p1": {
     "message": "Această pictogramă apare în bara de adrese Firefox când intri pe site-uri deținute de Firefox sau pe site-uri pe care le-ai adăugat în Facebook Container.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
@@ -58,6 +62,10 @@
     "message": "Facebook Container creează o graniță între site-urile Facebook și restul webului ca să facă mai dificil pentru Facebook să te urmărească online.", 
     "description": "Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-subhead": {
+    "message": "Despre Facebook și site-uri din bariera Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-alt": {
     "message": "Pictograma de barieră din Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
@@ -69,5 +77,69 @@
   "onboarding2-p2": {
     "message": "Aceste site-uri trebuie să îți acceseze identitatea Facebook (sau să știe cine ești) ca să funcționeze. Înseamnă și că Facebook poate urmări tot ce faci pe aceste site-uri.", 
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "Cum știu că Facebook Container funcționează?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Butoanele care îți permit să apreciezi sau să partajezi pe Facebook sau care te lasă să te autentifici pe site-uri folosind contul de Facebook conțin elemente de urmărire. Facebook Container va bloca aceste elemente de urmărire și va afișa pictograma de barieră pentru a-ți indica unde au fost eliminate elemente de urmărire.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Această imagine demonstrează cum va apărea pictograma de barieră Facebook Container în pagină, alături de un buton de apreciere Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Însă, dacă dai clic pe oricare dintre aceste butoane, Facebook va putea să te urmărească.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Permite", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Anulează", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Înainte", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Înapoi", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Terminat", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Revenire în panoul anterior.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Mergi la Cum funcționează Facebook Container", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Niciun element de urmărire Facebook depistat", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container nu a depistat niciun element de urmărire Facebook pe această pagină. Însă pagina poate conține alte tipuri de elemente de urmărire.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Află mai multe", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Cum funcționează Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Te-am protejat de Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }
 }
