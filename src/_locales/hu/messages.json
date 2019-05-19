@@ -78,9 +78,25 @@
     "message": "Visszaugrás az előző panelre.", 
     "description": "This is alternative text for the back arrow button."
   }, 
+  "learn-more": {
+    "message": "További tudnivalók", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Hogyan működik a Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Megvédtük Önt a Facebooktól.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "A vásárló-, hír- és más oldalakon megjelenő Facebook gombok olyan nyomkövetőket tartalmaznak, amelyek megmondják a Facebooknak, hogy hol volt az interneten. Még akkor is, ha soha nem használja ezeket a gombokat, hogy tetszését fejezze ki vagy tartalmakat osszon meg, a nyomkövetők akkor is böngészési adatokat gyűjthetnek. A Facebook Container blokkolja ezeket a nyomkövetőket.", 
+    "description": ""
+  }, 
   "no-sites-added": {
     "message": "Nincs", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "remove": {
     "message": "Eltávolítás", 
