@@ -141,5 +141,72 @@
   "trackers-detected-subhead": {
     "message": "Te-am protejat de Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Butoanele de Facebook care apar pe site-uri de cumpărături, de știri și de alte tipuri conțin elemente de urmărire care transmit către Facebook unde ai fost pe web. Chiar dacă nu folosești niciodată aceste butoane pentru aprecieri sau partajare, elementele de urmărire pot oricum colecta date despre navigarea ta. Facebook Container blochează aceste elemente de urmărire.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container blochează aceste elemente de urmărire. Însă, dacă dai clic pe oricare dintre aceste butoane, Facebook va putea să te urmărească.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Barieră Facebook Container cu scut.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Site-uri permise în Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "SITE-URI INCLUSE", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Niciunul", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "SITE-URI PE CARE LE-AI AUTORIZAT", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container plasează site-urile deținute de Facebook la interiorul unei bariere. Poți permite și adăugarea altor site-uri la interiorul barierei, numai că aceasta va permite Facebook să urmărească și mai multe din activitatea ta de navigare pe web."
+  }, 
+  "remove": {
+    "message": "Elimină", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Elimini site-ul din Facebook Container?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Eliminarea acestui site din Facebook Container înseamnă că autentificarea cu funcționalitatea Facebook nu va mai funcționa și cookie-urile de urmărire Facebook vor fi șterse.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Dacă vrei să folosești din nou autentificarea cu Facebook, va trebui să îl adaugi din nou în Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container a dezactivat acest buton și a blocat urmărirea de către Facebook a vizitei tale pe această pagină.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container a blocat elementele de urmărire Facebook. Dacă folosești autentificarea cu Facebook pe acest site, Facebook va putea să te urmărească.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Permiți Facebook să te urmărească aici?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Dacă vrei să folosești autentificarea cu Facebook, atunci Facebook va putea să îți urmărească activitatea pe acest site. Aceasta le poate permite să construiască un profil mai detaliat al vieții tale online.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Nu mai afișa", 
+    "description": ""
   }
 }
