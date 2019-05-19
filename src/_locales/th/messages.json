@@ -39,6 +39,10 @@
     "message": "การใช้ Facebook Container", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-alt": {
+    "message": "ไอคอนรูปรั้วของ Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
   "onboarding3-subhead": {
     "message": "ฉันจะรู้ได้อย่างไรว่า Facebook Container กำลังทำงานอยู่?", 
     "description": "This is the subhead for the third onboarding panel."
@@ -71,6 +75,10 @@
     "message": "เรียนรู้เพิ่มเติม", 
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
+  "trackers-detected-subhead": {
+    "message": "พวกเราปกป้องคุณจาก Facebook", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
   "sites-added-subhead": {
     "message": "ไซต์ที่อนุญาตใน Facebook Container", 
     "description": "This is a panel subhead."
@@ -83,6 +91,9 @@
     "message": "ไซต์ที่คุณได้อนุญาต", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook Container ทำให้ไซต์ที่เป็นของ Facebook อยู่ภายในขอบเขต คุณสามารถอนุญาตให้ไซต์อื่น ๆ เข้ามาในขอบเขตได้ แต่จะทำให้ Facebook ติดตามการท่องเว็บของคุณได้มากขึ้น"
+  }, 
   "remove": {
     "message": "เอาออก", 
     "description": ""
@@ -91,8 +102,28 @@
     "message": "เอาไซต์ออกจาก Facebook Container?", 
     "description": ""
   }, 
+  "remove-site-p1": {
+    "message": "การลบไซต์นี้ออกจากคอนเทนเนอร์ Facebook หมายความว่าฟีเจอร์การลงชื่อเข้าใช้ด้วย Facebook จะไม่ทำงานอีกต่อไป และคุกกี้การติดตามของ Facebook จะถูกลบ", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " หากคุณต้องการใช้การลงชื่อเข้าใช้ด้วย Facebook อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container ได้ปิดการใช้งานปุ่มนี้ และปิดกั้น Facebook จากการติดตามคุณในการเข้าชมหน้านี้", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container ได้ปิดกั้นตัวติดตั้งของ Facebook แล้ว ถ้าคุณใช้การลงชื่อเข้าใช้ด้วย Facebook บนไซต์นี้ Facebook จะสามารถติดตามคุณได้", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "อนุญาตให้ Facebook ติดตามคุณที่นี่?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "หากคุณต้องการใช้การเข้าสู่ระบบด้วย Facebook แล้ว Facebook จะสามารถติดตามกิจกรรมของคุณบนไซต์นี้ได้ สิ่งนี้ช่วยให้พวกเขาสร้างภาพชีวิตออนไลน์ของคุณได้สมบูรณ์ยิ่งขึ้น", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
