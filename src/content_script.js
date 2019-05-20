@@ -528,17 +528,17 @@ async function CheckIfURLShouldBeBlocked() {
 }
 
 // Cross-browser implementation of element.addEventListener()
-function passiveEventListener() {
+function addPassiveWindowOnloadListener() {
   const activeOnloadFunction = window.onload;
   window.onload = function () {
-    if (typeof activeOnloadFunction == "function") {
+    if (typeof activeOnloadFunction === "function") {
       activeOnloadFunction();
     }
     CheckIfURLShouldBeBlocked();
   };
 }
 
-passiveEventListener();
+addPassiveWindowOnloadListener();
 // window.onload = contentScriptInit(false, "window.onload");
 // contentScriptSetTimeout();
 
