@@ -503,7 +503,6 @@ function contentScriptInit(resetSwitch, msg) {
   // callCount = callCount + 1;
   // console.log(call, callCount);
   // console.log(source, ": ", checkForTrackers);
-  // console.log(msg);
 
   if (resetSwitch) {
     contentScriptDelay = 999;
