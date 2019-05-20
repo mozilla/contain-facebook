@@ -20,6 +20,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
   ".social-login .button--facebook", // noovie.com
+  "#home_account_fb.unlogged-btn-facebook", // Deezer
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
   ".fb-start .ybtn--social.ybtn--facebook", // Yelp
   "[aria-label*='Log in with Facebook']", // Tinder
@@ -502,7 +503,6 @@ function contentScriptInit(resetSwitch, msg) {
   // callCount = callCount + 1;
   // console.log(call, callCount);
   // console.log(source, ": ", checkForTrackers);
-  // console.log(msg);
 
   if (resetSwitch) {
     contentScriptDelay = 999;
@@ -527,8 +527,18 @@ async function CheckIfURLShouldBeBlocked() {
 
 }
 
-CheckIfURLShouldBeBlocked();
+// Cross-browser implementation of element.addEventListener()
+function addPassiveWindowOnloadListener() {
+  const activeOnloadFunction = window.onload;
+  window.onload = function () {
+    if (typeof activeOnloadFunction === "function") {
+      activeOnloadFunction();
+    }
+    CheckIfURLShouldBeBlocked();
+  };
+}
 
+addPassiveWindowOnloadListener();
 // window.onload = contentScriptInit(false, "window.onload");
 // contentScriptSetTimeout();
 
