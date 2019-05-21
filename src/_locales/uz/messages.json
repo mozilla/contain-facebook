@@ -3,20 +3,6 @@
     "message": "Facebook Container Facebook tarmogʻidagi faoliyatingizni begona kuki fayllar orqali tashqaridan kuzatishlaridan himoya qiladi.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$URL$ Facebook Container ichida.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
-    "placeholders": {
-      "url": {
-        "content": "$1", 
-        "example": "www.facebook.com"
-      }
-    }
-  }, 
-  "onFacebookText": {
-    "message": "Bu nishoncha siz Facebook.com, Instagram.com yoki Messenger.com kabi Facebook Container ichiga kiritilgan saytlarga kirganingizda manzil panelida chiqadi.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ Facebook Container ichida emas.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -34,5 +20,37 @@
   "onUnknownSiteHeader": {
     "message": "Bu sayt Facebook Container ichida emas.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "btn-allow": {
+    "message": "Ruxsat berish", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Bekor qilish", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Keyingi", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Orqaga", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Tayyor", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Oldingi panelga qaytish", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Facebook Container ishlashi haqida sahifasiga oʻtish", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Facebook orqali kuzatuvchilar aniqlanmadi", 
+    "description": ""
   }
 }
