@@ -64,7 +64,7 @@
   }, 
   "onboarding2-subhead": {
     "message": "Facebook 与 Facebook Container 边界内的网站", 
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-alt": {
     "message": "Facebook Container 篱笆图标", 
@@ -76,14 +76,14 @@
   }, 
   "onboarding2-p2": {
     "message": "这些网站需要使用您的 Facebook 身份（或需知道你是谁）才能正常工作。这也代表 Facebook 可以跟踪您在这些网站的任何行为。", 
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding3-subhead": {
     "message": "我如何确定 Facebook Container 正在工作？", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
   "onboarding3-p1": {
-    "message": "网页中让您点赞、分享到 Facebook 或以 Facebook 账号登陆的按钮都包含跟踪器。Facebook Container 会拦截这些跟踪器，并显示篱笆图标，让您知道我们已移除这些跟踪器。", 
+    "message": "网页中让您点赞、分享到 Facebook 或以 Facebook 账号登录的按钮都包含跟踪器。Facebook Container 会拦截这些跟踪器，并显示篱笆图标，让您知道我们已移除这些跟踪器。", 
     "description": "This is the first paragraph of the third onboarding panel."
   }, 
   "onboarding3-img": {
@@ -120,7 +120,7 @@
   }, 
   "btn-arrow-forward": {
     "message": "前往 Facebook Container 工作原理", 
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   }, 
   "no-trackers-subhead": {
     "message": "未检测到 Facebook 跟踪器", 
@@ -164,7 +164,7 @@
   }, 
   "no-sites-added": {
     "message": "无", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "sites-allowed": {
     "message": "您允许的网站", 
