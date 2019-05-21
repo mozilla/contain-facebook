@@ -21,6 +21,10 @@
     "message": "Bu sayt Facebook Container ichida emas.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "onboarding3-p2": {
+    "message": "Bu tugmalardan birortasini bossangiz, Facebook sizni kuzata oladi.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "Ruxsat berish", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -52,5 +56,17 @@
   "no-trackers-subhead": {
     "message": "Facebook orqali kuzatuvchilar aniqlanmadi", 
     "description": ""
+  }, 
+  "learn-more": {
+    "message": "Batafsil", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Facebook Container ishlashi haqida", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Biz sizni Facebookdan himoya qilamiz.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }
 }
