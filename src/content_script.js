@@ -21,6 +21,9 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-partner*='facebook']", // AliExpress
   ".social-login .button--facebook", // noovie.com
   "#home_account_fb.unlogged-btn-facebook", // Deezer
+  "[class*='meetup-signupModal-facebook']", // Meetup Signup Homepage
+  "#register-form--creds .button--facebook", // Meetup Signup Static Page
+  "#modal--register .button--facebook", // Meetup Signup Non-homepage
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
   ".fb-start .ybtn--social.ybtn--facebook", // Yelp
   "[aria-label*='Log in with Facebook']", // Tinder
@@ -383,6 +386,14 @@ function isPinterest(target) {
   return false;
 }
 
+function parentIsBadged(target) {
+  const { parentElement } = target;
+  if (parentElement) {
+    return parentElement.classList.contains("fbc-has-badge");
+  }
+  return false;
+}
+
 // List of badge-able in-page elements
 const facebookDetectedElementsArr = [];
 
@@ -391,7 +402,8 @@ function patternDetection(selectionArray, socialActionIntent){
   for (let querySelector of selectionArray) {
     for (let item of document.querySelectorAll(querySelector)) {
       // overlay the FBC icon badge on the item
-      if (!item.classList.contains("fbc-has-badge") && !isPinterest(item)) {
+      if (!item.classList.contains("fbc-has-badge") && !isPinterest(item) && !parentIsBadged(item)) {
+        // console.log([querySelector, item]);
         const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
         const itemUIDClassTarget = "js-" + itemUIDClassName;
         const socialAction = socialActionIntent;
