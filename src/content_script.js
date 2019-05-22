@@ -530,12 +530,13 @@ async function CheckIfURLShouldBeBlocked() {
 // Cross-browser implementation of element.addEventListener()
 function addPassiveWindowOnloadListener() {
   const activeOnloadFunction = window.onload;
-  window.onload = function () {
+  window.addEventListener("load", function() {
+  // window.onload = function () {
     if (typeof activeOnloadFunction === "function") {
       activeOnloadFunction();
     }
     CheckIfURLShouldBeBlocked();
-  };
+  }, false);
 }
 
 addPassiveWindowOnloadListener();
