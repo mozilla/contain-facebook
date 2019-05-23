@@ -200,5 +200,13 @@
   "inPageUI-tooltip-prompt-p1": {
     "message": "Pozwolić Facebookowi śledzić Cię na tej stronie?", 
     "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Jeśli chcesz użyć funkcji logowania za pomocą konta Facebooka, to Facebook będzie mógł śledzić Twoje działania na tej witrynie. To może pomóc im zbudować pełniejszy obraz Twojego życia w Internecie.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Nie pokazuj ponownie", 
+    "description": ""
   }
 }
