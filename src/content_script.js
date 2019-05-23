@@ -16,6 +16,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
   "[href*='/sign_in/Facebook']", // bazqux.com
   "[href*='signin/facebook']",
+  "[href*='/auth/facebook']", // Producthunt
   "[data-oauthserver*='facebook']", // Stackoverflow
   "[id*='facebook_connect_button']", // Quora
   "[data-action*='facebook-auth']", //Medium
@@ -45,6 +46,7 @@ const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
   "[aria-label*='share on facebook']", // MSN
   "[data-tracking*='facebook|share']", // football.london
+  "[class*='facebookShare']", // Producthunt share
   ".post-action-options + .right > .social-icon.icon-f", // Imgur share
   "[title='Share on Facebook']" // Medium
 ];
