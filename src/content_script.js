@@ -8,6 +8,7 @@
 const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[title='Log in with Facebook']",
   "[class*='FacebookConnectButton']",
+  "[class*='js-facebook-login']", // kickstarter
   "[class*='btn-facebook-signin']", // estadao.com.br
   "[class*='signup-provider-facebook']", // Fandom
   "[class*='facebook_login_click']", // Hi5
