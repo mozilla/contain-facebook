@@ -137,5 +137,68 @@
   "how-fbc-works": {
     "message": "Jak działa Facebook Container", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Ochroniliśmy Cię przed Facebookiem.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Przyciski Facebooka pojawiające się w sklepach, na stronach z aktualnościami i innych witrynach zawierają elementy śledzące, które informują Facebooka, gdzie jesteś w Internecie. Nawet jeśli nigdy ich nie używasz do polubienia lub udostępniania, nadal mogą one zbierać dane o Twoich działaniach. Facebook Container blokuje te elementy.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container blokuje te elementy. Jeśli jednak klikniesz któryś z tych przycisków, to Facebook będzie mógł Cię śledzić.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Ogrodzenie Facebook Container z tarczą.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Witryny dozwolone w Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "Domyślne witryny", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Brak", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "Witryny dozwolone przez użytkownika", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container umieszcza witryny należące do Facebooka w swoich granicach. Można dodać inne witryny do tej granicy, ale umożliwi to Facebookowi śledzenie więcej Twoich działań w Internecie."
+  }, 
+  "remove": {
+    "message": "Usuń", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Usunąć witrynę z Facebook Container?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Usunięcie tej witryny z Facebook Container oznacza, że funkcja logowania za pomocą konta Facebooka przestanie działać, a śledzące ciasteczka Facebooka zostaną usunięte.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Jeśli chcesz znowu korzystać z funkcji logowania za pomocą konta Facebooka, musisz dodać ją z powrotem do Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container wyłączył ten przycisk i zablokował Facebookowi możliwość śledzenia Twojej wizyty na tej stronie.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container zablokował elementy śledzące Facebooka. Jeśli użyjesz funkcji logowania za pomocą konta Facebooka na tej witrynie, to Facebook będzie mógł Cię śledzić.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Pozwolić Facebookowi śledzić Cię na tej stronie?", 
+    "description": ""
   }
 }
