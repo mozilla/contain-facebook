@@ -24,6 +24,10 @@
     "message": "Ta ikona pojawia się na pasku adresu Firefoksa podczas odwiedzania witryn należących do Facebooka i witryn dodanych do Facebook Container przez użytkownika.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "on-facebook-p2": {
+    "message": "Te witryny do działania potrzebują dostępu do Twojej tożsamości na Facebooku (lub wiedzieć, kim jesteś). Oznacza to, że Facebook może śledzić wszystko, co robisz na tych witrynach.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "Witryna $URL$ nie jest otwarta w ramach rozszerzenia Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -41,5 +45,97 @@
   "onUnknownSiteHeader": {
     "message": "Ta witryna nie jest otwarta w ramach rozszerzenia Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "Korzystanie z Facebook Container", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p1": {
+    "message": "Facebook może śledzić, co przeglądasz daleko poza samą stroną Facebook.com. Przyciski „Lubię to” i „Udostępnij”, na przykład, mogą śledzić gdzie jesteś — nawet na stronach, których nigdy nie polubiono ani nie udostępniono.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container tworzy granicę między witrynami Facebooka a resztą sieci, aby utrudnić mu śledzenie Cię.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Na Facebooku i witrynach w granicach Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Ikona ogrodzenia Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Ta ikona pojawia się na pasku adresu Firefoksa podczas odwiedzania witryn, takich jak Facebook.com, które są w granicach Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Te witryny do działania potrzebują dostępu do Twojej tożsamości na Facebooku (lub wiedzieć, kim jesteś). Oznacza to, że Facebook może śledzić wszystko, co robisz na tych witrynach.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "Jak mogę sprawdzić, czy Facebook Container działa?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Przyciski pozwalające polubić i udostępniać rzeczy na Facebooku lub umożliwiające zalogowanie się na witrynach za pomocą konta Facebooka zawierają elementy śledzące. Facebook Container zablokuje je i wyświetli ikonę ogrodzenia, aby pokazać, skąd zostały usunięte.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Obraz pokazujący, jak ikona ogrodzenia Facebook Container pojawi się na stronie obok przycisku „Lubię to” Facebooka.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Jeśli jednak klikniesz któryś z tych przycisków, to Facebook będzie mógł Cię śledzić.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Zezwól", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Anuluj", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Dalej", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Wstecz", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Gotowe", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Wróć do poprzedniego panelu.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Przejdź do „Jak działa Facebook Container”", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Nie wykryto elementów śledzących Facebooka", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container nie wykrył żadnych elementów śledzących Facebooka na tej stronie. Strona nadal może zawierać inne rodzaje elementów śledzących.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Więcej informacji", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Jak działa Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
   }
 }
