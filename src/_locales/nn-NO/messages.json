@@ -81,11 +81,19 @@
   }, 
   "no-sites-added": {
     "message": "Ingen", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "sites-allowed": {
     "message": "NETTSTADAR DU HAR TILLATE", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "remove": {
+    "message": "Fjern", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Fjerne nettstad frå Facebook Container?", 
+    "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Tillate Facebook å spore deg her?", 
