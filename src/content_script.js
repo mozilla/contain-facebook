@@ -8,12 +8,15 @@
 const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[title='Log in with Facebook']",
   "[class*='FacebookConnectButton']",
+  "[class*='js-facebook-login']", // kickstarter
+  "[class*='btn-facebook-signin']", // estadao.com.br
   "[class*='signup-provider-facebook']", // Fandom
   "[class*='facebook_login_click']", // Hi5
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
   "[href*='/sign_in/Facebook']", // bazqux.com
   "[href*='signin/facebook']",
+  "[href*='/auth/facebook']", // Producthunt
   "[data-oauthserver*='facebook']", // Stackoverflow
   "[id*='facebook_connect_button']", // Quora
   "[data-action*='facebook-auth']", //Medium
@@ -21,6 +24,10 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-partner*='facebook']", // AliExpress
   ".social-login .button--facebook", // noovie.com
   "#home_account_fb.unlogged-btn-facebook", // Deezer
+  "[class*='_1HC-DxGDAHiEbG3x6-vzL9']", // Match UK Login
+  "[class*='meetup-signupModal-facebook']", // Meetup Signup Homepage
+  "#register-form--creds .button--facebook", // Meetup Signup Static Page
+  "#modal--register .button--facebook", // Meetup Signup Non-homepage
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
   ".fb-start .ybtn--social.ybtn--facebook", // Yelp
   "[aria-label*='Log in with Facebook']", // Tinder
@@ -39,6 +46,7 @@ const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
   "[aria-label*='share on facebook']", // MSN
   "[data-tracking*='facebook|share']", // football.london
+  "[class*='facebookShare']", // Producthunt share
   ".post-action-options + .right > .social-icon.icon-f", // Imgur share
   "[title='Share on Facebook']" // Medium
 ];
@@ -383,6 +391,14 @@ function isPinterest(target) {
   return false;
 }
 
+function parentIsBadged(target) {
+  const { parentElement } = target;
+  if (parentElement) {
+    return parentElement.classList.contains("fbc-has-badge");
+  }
+  return false;
+}
+
 // List of badge-able in-page elements
 const facebookDetectedElementsArr = [];
 
@@ -391,7 +407,8 @@ function patternDetection(selectionArray, socialActionIntent){
   for (let querySelector of selectionArray) {
     for (let item of document.querySelectorAll(querySelector)) {
       // overlay the FBC icon badge on the item
-      if (!item.classList.contains("fbc-has-badge") && !isPinterest(item)) {
+      if (!item.classList.contains("fbc-has-badge") && !isPinterest(item) && !parentIsBadged(item)) {
+        // console.log([querySelector, item]);
         const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
         const itemUIDClassTarget = "js-" + itemUIDClassName;
         const socialAction = socialActionIntent;
@@ -530,12 +547,13 @@ async function CheckIfURLShouldBeBlocked() {
 // Cross-browser implementation of element.addEventListener()
 function addPassiveWindowOnloadListener() {
   const activeOnloadFunction = window.onload;
-  window.onload = function () {
+  window.addEventListener("load", function() {
+  // window.onload = function () {
     if (typeof activeOnloadFunction === "function") {
       activeOnloadFunction();
     }
     CheckIfURLShouldBeBlocked();
-  };
+  }, false);
 }
 
 addPassiveWindowOnloadListener();
