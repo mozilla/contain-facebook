@@ -46,6 +46,10 @@
     "message": "Facebook Container çit simgesi", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
+  "onboarding3-subhead": {
+    "message": "Facebook Container’ın çalıştığını nasıl anlayabilirim?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "İzin ver", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -70,6 +74,30 @@
     "message": "Önceki panele dön.", 
     "description": "This is alternative text for the back arrow button."
   }, 
+  "btn-arrow-forward": {
+    "message": "Facebook Container nasıl çalışır sayfasına git", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Hiç Facebook takipçisi algılanmadı", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Daha fazla bilgi al", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Facebook Container nasıl çalışır?", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Sizi Facebook’tan koruduk.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Kalkanlı Facebook Container çiti.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
   "sites-added-subhead": {
     "message": "Facebook Container’da izin verilen siteler", 
     "description": "This is a panel subhead."
@@ -88,6 +116,10 @@
   }, 
   "remove": {
     "message": "Kaldır", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Site Facebook Container’dan çıkarılsın mı?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
