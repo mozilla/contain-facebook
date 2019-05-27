@@ -1,4 +1,33 @@
 {
+  "extensionDescription": {
+    "message": "ਫੇਸਬੁੱਕ ਨੂੰ ਕਿਸੇ ਤੀਜੀ ਧਿਰ ਦੇ ਕੂਕੀਜ਼ ਰਾਹੀਂ ਤੁਹਾਡੇ 'ਤੇ ਫੇਸਬੁੱਕ ਵੈੱਬਸਾਈਟ ਤੋਂ ਬਾਹਰ ਨਜ਼ਰ ਰੱਖਣ ਤੋਂ ਰੋਕਣ ਲਈ Facebook Container ਤੁਹਾਡੀ ਵੈੱਬ ਸਰਗਰਮੀ ਨੂੰ ਤੁਹਾਡੀ ਫੇਸਬੁੱਕ ਸਰਗਰਮੀ ਤੋਂ ਅਲਹਿਦਾ ਕਰ ਦਿੰਦਾ ਹੈ।", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "in-fbc-subhead": {
+    "message": "$URL$ Facebook Container ਅੰਦਰ ਹੈ।", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "in-fbc-p1": {
+    "message": "ਫੇਸਬੁੱਕ ਹੁਣ ਇਸ ਸਾਈਟ 'ਤੇ ਤੁਹਾਡੇ 'ਤੇ ਨਜ਼ਰ ਰੱਖ ਸਕਦੀ ਹੈ। ਇਸ ਸਾਈਟ ਨੂੰ Facebook Container ਤੋਂ ਹਟਾਉਣ ਲਈ, Facebook Container ਵਿੱਚ 'ਇਜਾਜ਼ਤਸ਼ੁਦਾ ਸਾਈਟਾਂ' ਵਿਕਲਪ ਚੁਣ ਕੇ ਇਸਨੂੰ ਸੂਚੀ ਵਿੱਚੋਂ ਹਟਾਓ।"
+  }, 
+  "on-facebook-subhead": {
+    "message": "ਫੇਸਬੁੱਕ ਸਮੇਤ Facebook Container ਵਿਚਲੀਆਂ ਸਾਈਟਾਂ ਦੀ ਹੱਦਬੰਦੀ ਅੰਦਰ", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "ਫੇਸਬੁੱਕ ਦੀਆਂ ਸਾਈਟਾਂ ਜਾਂ Facebook Container ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤੀਆਂ ਸਾਈਟਾਂ 'ਤੇ ਜਾਣ ਵੇਲੇ ਇਹ ਪ੍ਰਤੀਕ ਫਾਇਰਫਾਕਸ ਪਤਾ ਪੱਟੀ ਵਿੱਚ ਦਿਸਦਾ ਹੈ।", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "ਇਹਨਾਂ ਸਾਈਟਾਂ ਨੂੰ ਕੰਮ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਫੇਸਬੁੱਕ ਪਛਾਣ (ਜਾਂ ਤੁਹਾਡੀ ਪਛਾਣ) ਦੀ ਲੋੜ ਪੈਂਦੀ ਹੈ। ਇਸਦਾ ਮਤਲਬ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਇਹਨਾਂ ਸਾਈਟਾਂ 'ਤੇ ਤੁਹਾਡੀ ਸਾਰੀ ਸਰਗਰਮੀ 'ਤੇ ਨਜ਼ਰ ਰੱਖ ਸਕਦੀ ਹੈ।", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ Facebook Container ਵਿੱਚ ਨਹੀਂ ਹੈ।", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -16,5 +45,13 @@
   "onUnknownSiteHeader": {
     "message": "ਇਹ ਸਾਈਟ Facebook Container ਵਿੱਚ ਨਹੀਂ ਹੈ।", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "Facebook Container ਵਰਤੋਂ", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }
 }
