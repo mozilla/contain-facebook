@@ -1,22 +1,4 @@
 {
-  "extensionDescription": {
-    "message": "ਫੇਸਬੁੱਕ ਨੂੰ ਕਿਸੇ ਤੀਜੀ ਧਿਰ ਦੇ ਕੂਕੀਜ਼ ਰਾਹੀ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਵੈੱਬਸਾਈਟ ਤੋਂ ਬਾਹਰ ਟਰੈਕ ਕਰਨ ਤੋਂ ਰੋਕਣ ਲਈ Facebook Container ਤੁਹਾਡੀ ਵੈੱਬ ਸਰਗਰਮੀ ਨੂੰ ਤੁਹਾਡੀ ਫੇਸਬੁੱਕ ਸਰਗਰਮੀ ਤੋਂ ਅਲਹਿਦਾ ਕਰ ਦਿੰਦਾ ਹੈ।", 
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
-  "onFacebookHeader": {
-    "message": "$URL$ Facebook Container ਵਿੱਚ ਹੈ।", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
-    "placeholders": {
-      "url": {
-        "content": "$1", 
-        "example": "www.facebook.com"
-      }
-    }
-  }, 
-  "onFacebookText": {
-    "message": "ਜਦੋਂ ਤੁਸੀਂ Facebook.com, Instagram.com, ਜਾਂ Messenger.com ਵਰਗੀਆਂ ਵੈੱਬਸਾਈਟਾਂ, ਜੋ ਕਿ Facebook Container ਵਿੱਚ ਹਨ, ਨੂੰ ਖੋਲ੍ਹਦੇ ਹੋ ਤਾਂ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਵਿੱਚ ਇਹ ਆਈਕਾਨ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ।", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ Facebook Container ਵਿੱਚ ਨਹੀਂ ਹੈ।", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
