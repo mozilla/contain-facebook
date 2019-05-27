@@ -74,6 +74,14 @@
     "message": "Nazaj na prejšnjo ploščo.", 
     "description": "This is alternative text for the back arrow button."
   }, 
+  "no-trackers-subhead": {
+    "message": "Ni zaznanih Facebookovih sledilcev", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container na tej strani ni zaznal nobenih Facebookovih sledilcev. Kljub temu pa lahko stran vsebuje druge vrste sledilcev.", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Več o tem", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -86,8 +94,20 @@
     "message": "Strani, dovoljene v Facebook Containerju", 
     "description": "This is a panel subhead."
   }, 
+  "no-sites-added": {
+    "message": "Brez", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "STRANI, KI STE JIH DOVOLILI", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
   "remove": {
     "message": "Odstrani", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container je onemogočil ta gumb in preprečil Facebooku, da bi spremljal vaš obisk te strani.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
