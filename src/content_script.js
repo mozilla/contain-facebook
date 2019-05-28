@@ -340,7 +340,7 @@ function calcZindex(target) {
   }
 
   // Take highest zindex in parent tree and adds one more.
-  zIndexLevel = zIndexLevel + 1;
+  zIndexLevel = zIndexLevel + 2;
   return zIndexLevel;
 }
 
