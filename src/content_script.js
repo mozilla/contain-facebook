@@ -212,18 +212,15 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     });
 
     target.addEventListener("mouseover", () => {
+      // console.log(["mouseover", target, htmlBadgeDiv]);
       target.classList.add("fbc-badge-tooltip-active");
       htmlBadgeDiv.classList.add("fbc-badge-tooltip-active");
-      // console.log(["mouseover", target, htmlBadgeDiv]);
-      // positionPrompt( htmlBadgeDiv );
     });
 
     target.addEventListener("mouseout", () => {
       // console.log(["mouseout", target, htmlBadgeDiv]);
       target.classList.remove("fbc-badge-tooltip-active");
       htmlBadgeDiv.classList.remove("fbc-badge-tooltip-active");
-
-      // positionPrompt( htmlBadgeDiv );
     });
 
   }
