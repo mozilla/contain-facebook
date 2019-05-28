@@ -204,10 +204,28 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       e.target.parentElement.parentNode.parentNode.classList.remove("active");
     });
   } else if (socialAction === "share") {
+    htmlBadgeDiv.classList.add("fbc-badge-share");
+
     target.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
     });
+
+    target.addEventListener("mouseover", () => {
+      target.classList.add("fbc-badge-tooltip-active");
+      htmlBadgeDiv.classList.add("fbc-badge-tooltip-active");
+      // console.log(["mouseover", target, htmlBadgeDiv]);
+      // positionPrompt( htmlBadgeDiv );
+    });
+
+    target.addEventListener("mouseout", () => {
+      // console.log(["mouseout", target, htmlBadgeDiv]);
+      target.classList.remove("fbc-badge-tooltip-active");
+      htmlBadgeDiv.classList.remove("fbc-badge-tooltip-active");
+
+      // positionPrompt( htmlBadgeDiv );
+    });
+
   }
 
   // Applies to both!
