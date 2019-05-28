@@ -101,6 +101,21 @@
 	display: block;
 }
 
+/* Only show first Share badge   */
+
+.fbc-badge-share ~ .fbc-badge-share, .fbc-badge-share.fbc-badge-disabled, .fbc-badge-share:not(.fbc-badge-disabled) ~ .fbc-badge-share:not(.fbc-badge-disabled) {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.fbc-badge-share:not(.fbc-badge-disabled) {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+
+
 .fbc-badge-prompt {
 	display: none;
 	width: 345px;
