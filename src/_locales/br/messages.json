@@ -89,5 +89,41 @@
   "onboarding3-img": {
     "message": "Ar skeudenn-se a ziskouez penaos ez eo skrammet an arlun kloued er pajennoù e-kichen un afell Facebook Like.", 
     "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Ma klikit war unan eus an afelloù-se avat e vo gouest Facebook da heuliaén ac'hanoc'h.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Aotren", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Nullañ", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Da-heul", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Distreiñ", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Graet", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Mont d'ar penel kent", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Mont d'ar bajenn \"Mont en-dro an endalc'her Facebook\"", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "N'eus bet dinoer heulier Facebook ebet", 
+    "description": ""
   }
 }
