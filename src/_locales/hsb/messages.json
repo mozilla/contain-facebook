@@ -43,6 +43,10 @@
     "message": "Płótkowy symbol Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
+  "onboarding3-subhead": {
+    "message": "Zwotkel wěm, zo Facebook Container funguje?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "Dowolić", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -66,6 +70,10 @@
   "learn-more": {
     "message": "Dalše informacije", 
     "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "sites-included": {
+    "message": "ZAPŘIJATE SYDŁA", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   }, 
   "no-sites-added": {
     "message": "Žadyn", 
