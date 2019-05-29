@@ -306,15 +306,17 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
     return;
   }
 
-  const parentIsHidden = (target.offsetParent === null);
-
-  if ( parentIsHidden && !htmlBadgeDivHasDisabledClass ) {
-    // Parent isnt visible and its badge needs to be hidden
-    htmlBadgeDiv.classList.add("fbc-badge-disabled");
-  }
-
-  if ( !parentIsHidden && !targetIsNull && htmlBadgeDivHasDisabledClass ||  !parentIsHidden && htmlBadgeDivHasDisabledClass ) {
-    htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+  const { offsetParent } = target;
+  if (offsetParent) {
+    const styleTransform = ( window.getComputedStyle(offsetParent, false).getPropertyValue("transform") === "matrix(1, 0, 0, 0, 0, 0)" );
+    // console.log(styleTransform);
+    if (styleTransform && !htmlBadgeDivHasDisabledClass) {
+      htmlBadgeDiv.classList.add("fbc-badge-disabled");
+    }
+  } else {
+    if ( htmlBadgeDivHasDisabledClass ) {
+      htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+    }
   }
 
 }
