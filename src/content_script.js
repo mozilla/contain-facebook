@@ -286,7 +286,9 @@ function getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv) {
     htmlBadgeDiv.classList.add("fbc-badge-fixed");
     return {offsetPosX: elemRect.left, offsetPosY: elemRect.top};
   } else {
-    return {offsetPosX: elemRect.left - bodyRect.left, offsetPosY: elemRect.top - bodyRect.top};
+    // Removed left body offset calc as it doesn't apply
+    // return {offsetPosX: elemRect.left - bodyRect.left, offsetPosY: elemRect.top - bodyRect.top};
+    return {offsetPosX: elemRect.left, offsetPosY: elemRect.top + window.scrollY};
   }
 }
 
@@ -316,10 +318,10 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 function determineContainerClientRect() {
   const htmlHeight = document.querySelector("html").offsetHeight;
   const bodyHeight = document.querySelector("body").offsetHeight;
-  // console.log([htmlHeight, bodyHeight]);
+  // console.log([htmlHeight, bodyHeight, (htmlHeight > bodyHeight)]);
   if (htmlHeight === bodyHeight) {
     return document.body.getBoundingClientRect();
-  } else if ( htmlHeight > bodyHeight ) {
+  } else if ( htmlHeight < bodyHeight ) {
     return document.querySelector("html").getBoundingClientRect();
   } else {
     return document.body.getBoundingClientRect();
