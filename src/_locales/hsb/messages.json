@@ -67,9 +67,29 @@
     "message": "Hotowo", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "btn-arrow-forward": {
+    "message": "Wróćo ke „Kak Facebook Container funguje“", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Žane přesćěhowaki Facebook namakane", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Dalše informacije", 
     "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Kak Facebook Container funguje", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Sće was před Facebook škitali.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "sites-added-subhead": {
+    "message": "Sydła, kotrež su dowolene w Facebook Container", 
+    "description": "This is a panel subhead."
   }, 
   "sites-included": {
     "message": "ZAPŘIJATE SYDŁA", 
@@ -79,8 +99,20 @@
     "message": "Žadyn", 
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
+  "sites-allowed": {
+    "message": "SYDŁA, KOTREŽ SĆE DOWOLIŁ", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
   "remove": {
     "message": "Wotstronić", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Sydło z Facebook Container wotstronić?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Facebook dowolić, wam slědować?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
