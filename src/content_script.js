@@ -215,6 +215,9 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       // console.log(["mouseover", target, htmlBadgeDiv]);
       target.classList.add("fbc-badge-tooltip-active");
       htmlBadgeDiv.classList.add("fbc-badge-tooltip-active");
+      setTimeout( ()=> {
+        positionPrompt( htmlBadgeDiv );
+      }, 50 );
     });
 
     target.addEventListener("mouseout", () => {
@@ -253,6 +256,7 @@ function positionPrompt ( activeBadge ) {
   // const activeBadge = document.querySelector(".fbc-badge-prompt");
   // const activeBadgePrompt = activeBadge.querySelector(".fbc-badge-prompt");
   const elemRect = activeBadge.getBoundingClientRect();
+  // console.log(elemRect);
 
   if ( (window.innerWidth - elemRect.left) < 350  ) {
     activeBadge.classList.add("fbc-badge-prompt-align-right");
