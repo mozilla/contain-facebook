@@ -3,6 +3,16 @@
     "message": "Facebook Container omoha’eño ne rembiapo Facebook pegua ambue mba’e ñandutípe rejapóvagui, omboyke hag̃ua Facebook ohapykuehóvo okápe oikóva  iñanduti rendágui kookie mbohapyháva rupive.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "in-fbc-subhead": {
+    "message": "$URL$ oĩ Facebook Container-pe.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ ndaipóri Facebook Container ryepýpe.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -28,6 +38,14 @@
   "onboarding1-subhead": {
     "message": "Mba'éicha eipurúta Facebook Container", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Facebook Container korajere ra’ãnga’i", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding3-subhead": {
+    "message": "¿Mba’éicha aikuaáta Facebook Container oikoha?", 
+    "description": "This is the subhead for the third onboarding panel."
   }, 
   "btn-allow": {
     "message": "Moneĩ", 
@@ -110,6 +128,14 @@
   }, 
   "remove-site-subhead": {
     "message": "¿Emboguete tenda Facebook Container-gui?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "¿ Emoneĩ Facebook-pe nde rapykuehóvo ápe?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Anive ehechauka", 
     "description": ""
   }
 }
