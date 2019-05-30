@@ -13,6 +13,9 @@
       }
     }
   }, 
+  "in-fbc-p1": {
+    "message": "Facebook móže wam nětko na tutym sydle slědować. Zo byšće tute sydko z Facebook Container wotstronił, wubjerće „Sydła, kotrež su dowolene w Facebook Container“, zo byšće jo z lisćiny wotstronił."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ w Facebook Container njeje.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
