@@ -77,6 +77,18 @@
     "message": "Ore romo’ã ndéve Facebook-gui.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container ojoko ko’ã jehapykuehoha. Hákatu eikutúramo oimeraẽva votõ, Facebook ikatu ohapykueho.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Kora ñemboty Facebook Container ndive.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Tenda moneĩmbyre Facebook Container-pe", 
+    "description": "This is a panel subhead."
+  }, 
   "sites-included": {
     "message": "TENDA MOINGEPYRE", 
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
@@ -89,8 +101,15 @@
     "message": "TENDA EMONEĨVA’EKUE", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook Container omohenda Facebook mba’etee kora jerépe. Ikatu omoneĩ ambue tenda kora jerépe, hákatu kóva omoneĩta Facebook-pe ohapykuehovévo ne kundaha ñandutípe."
+  }, 
   "remove": {
     "message": "Mboguete", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "¿Emboguete tenda Facebook Container-gui?", 
     "description": ""
   }
 }
