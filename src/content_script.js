@@ -204,10 +204,28 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       e.target.parentElement.parentNode.parentNode.classList.remove("active");
     });
   } else if (socialAction === "share") {
+    htmlBadgeDiv.classList.add("fbc-badge-share");
+
     target.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
     });
+
+    target.addEventListener("mouseover", () => {
+      // console.log(["mouseover", target, htmlBadgeDiv]);
+      target.classList.add("fbc-badge-tooltip-active");
+      htmlBadgeDiv.classList.add("fbc-badge-tooltip-active");
+      setTimeout( ()=> {
+        positionPrompt( htmlBadgeDiv );
+      }, 50 );
+    });
+
+    target.addEventListener("mouseout", () => {
+      // console.log(["mouseout", target, htmlBadgeDiv]);
+      target.classList.remove("fbc-badge-tooltip-active");
+      htmlBadgeDiv.classList.remove("fbc-badge-tooltip-active");
+    });
+
   }
 
   // Applies to both!
@@ -238,6 +256,7 @@ function positionPrompt ( activeBadge ) {
   // const activeBadge = document.querySelector(".fbc-badge-prompt");
   // const activeBadgePrompt = activeBadge.querySelector(".fbc-badge-prompt");
   const elemRect = activeBadge.getBoundingClientRect();
+  // console.log(elemRect);
 
   if ( (window.innerWidth - elemRect.left) < 350  ) {
     activeBadge.classList.add("fbc-badge-prompt-align-right");
@@ -271,7 +290,9 @@ function getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv) {
     htmlBadgeDiv.classList.add("fbc-badge-fixed");
     return {offsetPosX: elemRect.left, offsetPosY: elemRect.top};
   } else {
-    return {offsetPosX: elemRect.left - bodyRect.left, offsetPosY: elemRect.top - bodyRect.top};
+    // Removed left body offset calc as it doesn't apply
+    // return {offsetPosX: elemRect.left - bodyRect.left, offsetPosY: elemRect.top - bodyRect.top};
+    return {offsetPosX: elemRect.left, offsetPosY: elemRect.top + window.scrollY};
   }
 }
 
@@ -285,15 +306,17 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
     return;
   }
 
-  const parentIsHidden = (target.offsetParent === null);
-
-  if ( parentIsHidden && !htmlBadgeDivHasDisabledClass ) {
-    // Parent isnt visible and its badge needs to be hidden
-    htmlBadgeDiv.classList.add("fbc-badge-disabled");
-  }
-
-  if ( !parentIsHidden && !targetIsNull && htmlBadgeDivHasDisabledClass ||  !parentIsHidden && htmlBadgeDivHasDisabledClass ) {
-    htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+  const { offsetParent } = target;
+  if (offsetParent) {
+    const styleTransform = ( window.getComputedStyle(offsetParent, false).getPropertyValue("transform") === "matrix(1, 0, 0, 0, 0, 0)" );
+    // console.log(styleTransform);
+    if (styleTransform && !htmlBadgeDivHasDisabledClass) {
+      htmlBadgeDiv.classList.add("fbc-badge-disabled");
+    }
+  } else {
+    if ( htmlBadgeDivHasDisabledClass ) {
+      htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+    }
   }
 
 }
@@ -301,10 +324,10 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 function determineContainerClientRect() {
   const htmlHeight = document.querySelector("html").offsetHeight;
   const bodyHeight = document.querySelector("body").offsetHeight;
-  // console.log([htmlHeight, bodyHeight]);
+  // console.log([htmlHeight, bodyHeight, (htmlHeight > bodyHeight)]);
   if (htmlHeight === bodyHeight) {
     return document.body.getBoundingClientRect();
-  } else if ( htmlHeight > bodyHeight ) {
+  } else if ( htmlHeight < bodyHeight ) {
     return document.querySelector("html").getBoundingClientRect();
   } else {
     return document.body.getBoundingClientRect();
@@ -325,7 +348,7 @@ function calcZindex(target) {
   }
 
   // Take highest zindex in parent tree and adds one more.
-  zIndexLevel = zIndexLevel + 1;
+  zIndexLevel = zIndexLevel + 2;
   return zIndexLevel;
 }
 
