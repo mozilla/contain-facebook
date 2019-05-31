@@ -83,7 +83,7 @@
     "description": "This is the subhead for the third onboarding panel."
   }, 
   "onboarding3-p1": {
-    "message": "Stránky pro lajkování a sdílení na Facebook nebo funkce přihlašování pomocí Facebooku obsahují sledovací prvky. Facebook Container tyto prvky blokuje a zobrazuje místo nich ikonu plotu pro zobrazení, co a kde zablokoval.", 
+    "message": "Tlačítka pro lajkování a sdílení na Facebook nebo funkce přihlašování pomocí Facebooku obsahují sledovací prvky. Facebook Container tyto prvky blokuje a zobrazuje místo nich ikonu plotu pro zobrazení, co a kde zablokoval.", 
     "description": "This is the first paragraph of the third onboarding panel."
   }, 
   "onboarding3-img": {
