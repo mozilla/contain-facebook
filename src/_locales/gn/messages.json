@@ -50,6 +50,10 @@
     "message": "Mba'éicha eipurúta Facebook Container", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container omoheñói peteĩ opaha tendakuéra Facebook ha ambue ñandutigua, péicha Facebook-pe hasyve nderapykueho hag̃ua eikundaha jave.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-subhead": {
     "message": "Facebook ha tenda oĩ Facebook Container mboypýri", 
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
@@ -65,6 +69,10 @@
   "onboarding3-subhead": {
     "message": "¿Mba’éicha aikuaáta Facebook Container oikoha?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Ko ta’ãnga ohechauka mba’échapa ojehecháta Facebook Guerekoha kora kuatiaroguépe pe votõ “Me gusta” Facebook pegua.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
   }, 
   "onboarding3-p2": {
     "message": "Upéicharamo, eikutúrõ oimeraẽva ko’ã votõ, Facebook ikatu ohapykueho.", 
