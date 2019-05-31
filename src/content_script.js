@@ -60,7 +60,6 @@ function isFixed (elem) {
 
 function isDisplayNone (elem) {
   do {
-    const displayStyle = getComputedStyle(elem).getPropertyValue("display");
     if (getComputedStyle(elem).getPropertyValue("display") == "none") return true;
   } while ((elem = elem.offsetParent));
   return false;
@@ -320,7 +319,7 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
   const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
 
   if (isDisplayNone(target) && !htmlBadgeDivHasDisabledClass) {
-    console.log("isDisplayNone");
+    // console.log("isDisplayNone");
     htmlBadgeDiv.classList.add("fbc-badge-disabled");
     return false;
   }
@@ -403,13 +402,9 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
     target = document.querySelector("." + target);
   }
 
-  // checkVisibilityAndApplyClass(target, htmlBadgeDiv);
-
   if (!checkVisibilityAndApplyClass(target, htmlBadgeDiv)) {
     return;
   }
-
-  console.log("past-visibility-check");
 
   if (typeof smallSwitch === "undefined") {
     if (htmlBadgeDiv.classList.contains("fbc-badge-small")) {
