@@ -13,9 +13,16 @@
       }
     }
   }, 
+  "in-fbc-p1": {
+    "message": "Facebook ikatu ohapykueho ko tenda ko’ág̃a. Emboguesérõ Facebook guerekohágui, eiporavo “Tenda Facebook guerekoha moneĩmbyre” ha emboguete tysýigui."
+  }, 
   "on-facebook-subhead": {
     "message": "Facebook ha tenda oĩ Facebook Container mboypýri", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Ko ta'ãngachu'i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com mba’épe térã embojuajúramo Facebook Container rehe.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ ndaipóri Facebook Container ryepýpe.", 
@@ -51,9 +58,17 @@
     "message": "Facebook Container korajere ra’ãnga’i", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
+  "onboarding2-p1": {
+    "message": "Ko ta'ãngachu'i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com-pe, oĩva Facebook Container mboypýri.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
   "onboarding3-subhead": {
     "message": "¿Mba’éicha aikuaáta Facebook Container oikoha?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Upéicharamo, eikutúrõ oimeraẽva ko’ã votõ, Facebook ikatu ohapykueho.", 
+    "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
     "message": "Moneĩ", 
