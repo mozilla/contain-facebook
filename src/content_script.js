@@ -293,6 +293,16 @@ function getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv) {
   }
 }
 
+function isVisible(target) {
+  const styleTransform = ( window.getComputedStyle(target, false).getPropertyValue("transform") === "matrix(1, 0, 0, 0, 0, 0)" );
+  const styleHidden = ( window.getComputedStyle(target, false).getPropertyValue("visibility") === "hidden" );
+  const styleDisplayNone = ( window.getComputedStyle(target, false).getPropertyValue("display") === "none" );
+  if (styleTransform || styleHidden || styleDisplayNone){
+    return false;
+  }
+  return true;
+}
+
 function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
   if ( target === null ) {
@@ -302,11 +312,10 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
   const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
 
-  const { offsetParent } = target;
-  if (offsetParent) {
-    const styleTransform = ( window.getComputedStyle(offsetParent, false).getPropertyValue("transform") === "matrix(1, 0, 0, 0, 0, 0)" );
-    // console.log(styleTransform);
-    if (styleTransform && !htmlBadgeDivHasDisabledClass) {
+  const { parentElement } = target;
+
+  if (parentElement) {
+    if ( !isVisible(parentElement) && !htmlBadgeDivHasDisabledClass) {
       htmlBadgeDiv.classList.add("fbc-badge-disabled");
       return false;
     }
@@ -315,6 +324,19 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
       htmlBadgeDiv.classList.remove("fbc-badge-disabled");
     }
   }
+
+  const { offsetParent } = target;
+  if (offsetParent) {
+    if ( !isVisible(parentElement) && !htmlBadgeDivHasDisabledClass) {
+      htmlBadgeDiv.classList.add("fbc-badge-disabled");
+      return false;
+    }
+  } else {
+    if ( htmlBadgeDivHasDisabledClass ) {
+      htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+    }
+  }
+
   return true;
 
 }
