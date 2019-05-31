@@ -253,7 +253,6 @@ function closePrompt() {
 
 function positionPrompt ( activeBadge ) {
   const elemRect = activeBadge.getBoundingClientRect();
-  // console.log(elemRect);
 
   if ( (window.innerWidth - elemRect.left) < 350  ) {
     activeBadge.classList.add("fbc-badge-prompt-align-right");
@@ -313,7 +312,6 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
   const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
 
   const { parentElement } = target;
-
   if (parentElement) {
     if ( !isVisible(parentElement) && !htmlBadgeDivHasDisabledClass) {
       htmlBadgeDiv.classList.add("fbc-badge-disabled");
