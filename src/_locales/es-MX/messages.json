@@ -37,16 +37,24 @@
     "message": "Atrás", 
     "description": "This is a button that returns the user to the previous onboarding panel."
   }, 
+  "btn-done": {
+    "message": "Listo", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
   "learn-more": {
     "message": "Saber más", 
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
   "no-sites-added": {
     "message": "Ninguno", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "remove": {
     "message": "Eliminar", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "No volver a mostrar", 
     "description": ""
   }
 }
