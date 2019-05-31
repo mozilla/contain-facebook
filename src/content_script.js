@@ -320,35 +320,40 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
   const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
 
   if (isDisplayNone(target) && !htmlBadgeDivHasDisabledClass) {
+    console.log("isDisplayNone");
     htmlBadgeDiv.classList.add("fbc-badge-disabled");
     return false;
   }
 
   const { parentElement } = target;
   if (parentElement) {
-    if ( !isVisible(parentElement) && !htmlBadgeDivHasDisabledClass) {
-      htmlBadgeDiv.classList.add("fbc-badge-disabled");
+    if ( !isVisible(parentElement) ) {
+      if (!htmlBadgeDivHasDisabledClass) {
+        htmlBadgeDiv.classList.add("fbc-badge-disabled");
+      }
       return false;
-    }
-  } else {
-    if ( htmlBadgeDivHasDisabledClass ) {
-      htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+    } else {
+      if ( htmlBadgeDivHasDisabledClass ) {
+        htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+        return true;
+      }
     }
   }
 
   const { offsetParent } = target;
   if (offsetParent) {
-    if ( !isVisible(parentElement) && !htmlBadgeDivHasDisabledClass) {
-      htmlBadgeDiv.classList.add("fbc-badge-disabled");
+    if ( !isVisible(parentElement)) {
+      if (!htmlBadgeDivHasDisabledClass) {
+        htmlBadgeDiv.classList.add("fbc-badge-disabled");
+      }
       return false;
-    }
-  } else {
-    if ( htmlBadgeDivHasDisabledClass ) {
-      htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+    } else {
+      if ( htmlBadgeDivHasDisabledClass ) {
+        htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+        return true;
+      }
     }
   }
-
-  return true;
 
 }
 
@@ -403,6 +408,8 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   if (!checkVisibilityAndApplyClass(target, htmlBadgeDiv)) {
     return;
   }
+
+  console.log("past-visibility-check");
 
   if (typeof smallSwitch === "undefined") {
     if (htmlBadgeDiv.classList.contains("fbc-badge-small")) {
