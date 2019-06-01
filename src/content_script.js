@@ -12,6 +12,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='btn-facebook-signin']", // estadao.com.br
   "[class*='signup-provider-facebook']", // Fandom
   "[class*='facebook_login_click']", // Hi5
+  "[class*='facebook-signup-button']", // Strava
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
   "[href*='/sign_in/Facebook']", // bazqux.com
@@ -319,7 +320,6 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
   const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
 
   if (isDisplayNone(target) && !htmlBadgeDivHasDisabledClass) {
-    // console.log("isDisplayNone");
     htmlBadgeDiv.classList.add("fbc-badge-disabled");
     return false;
   }
@@ -334,8 +334,8 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
     } else {
       if ( htmlBadgeDivHasDisabledClass ) {
         htmlBadgeDiv.classList.remove("fbc-badge-disabled");
-        return true;
       }
+      return true;
     }
   }
 
@@ -349,11 +349,11 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
     } else {
       if ( htmlBadgeDivHasDisabledClass ) {
         htmlBadgeDiv.classList.remove("fbc-badge-disabled");
-        return true;
       }
+      return true;
     }
   }
-
+  return true;
 }
 
 function determineContainerClientRect() {
