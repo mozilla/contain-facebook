@@ -14,7 +14,7 @@
     }
   }, 
   "in-fbc-p1": {
-    "message": "Facebook móže wam nětko na tutym sydle slědować. Zo byšće tute sydko z Facebook Container wotstronił, wubjerće „Sydła, kotrež su dowolene w Facebook Container“, zo byšće jo z lisćiny wotstronił."
+    "message": "Facebook móže wam nětko na tutym sydle slědować. Zo byšće tute sydło z Facebook Container wotstronił, wubjerće „Sydła, kotrež su dowolene w Facebook Container“, zo byšće jo z lisćiny wotstronił."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ w Facebook Container njeje.", 
@@ -87,7 +87,7 @@
     "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
   "trackers-detected-subhead": {
-    "message": "Sće was před Facebook škitali.", 
+    "message": "Smy was před Facebook škitali.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
   "sites-added-subhead": {
