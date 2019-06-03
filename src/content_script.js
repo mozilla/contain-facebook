@@ -59,11 +59,6 @@ function isFixed (elem) {
   return false;
 }
 
-function isDisplayNone (target) {
-  if ( getComputedStyle(target, null).display === "none" ) return true;
-  return false;
-}
-
 const fragmentClasses = ["fbc-badge-fence", "fbc-badge-tooltip", "fbc-badge-prompt"];
 const htmlBadgeFragmentPromptParagraphStrings = [ browser.i18n.getMessage("inPageUI-tooltip-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-prompt-p2") ];
 const htmlBadgeFragmentPromptButtonStrings = ["btn-cancel", "btn-allow"];
@@ -318,7 +313,7 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
 
 
-  if (isDisplayNone(target)) {
+  if (!isVisible(target)) {
     if (!htmlBadgeDivHasDisabledClass) {
       htmlBadgeDiv.classList.add("fbc-badge-disabled");
     }
