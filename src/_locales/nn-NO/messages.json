@@ -75,6 +75,10 @@
     "message": "Gå til ‹‹Korleis Facebook Container fungerer››", 
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   }, 
+  "no-trackers-subhead": {
+    "message": "Ingen Facebook-sporfølgjarar oppdaga", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Les meir", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -82,6 +86,10 @@
   "how-fbc-works": {
     "message": "Korleis Facebook Container fungerer", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Facebook Container-gjerde med skjold.", 
+    "description": "This is alternative text describing the container fence icon."
   }, 
   "sites-added-subhead": {
     "message": "Tillatne nettstadar i Facebook Container", 
