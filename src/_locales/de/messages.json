@@ -64,19 +64,19 @@
   }, 
   "onboarding2-subhead": {
     "message": "Auf Facebook und Websites im Schutzbereich von Facebook Container", 
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-alt": {
     "message": "Grafik: Das Zaunsymbol von Facebook-Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
   "onboarding2-p1": {
-    "message": "Dieses Symbol wird in der Firefox-Adressleiste angezeigt, wenn Sie Websites wie Facebook.com besuchen, die sich in der Schutzbereich von Facebook Container befinden.", 
+    "message": "Dieses Symbol wird in der Firefox-Adressleiste angezeigt, wenn Sie Websites wie Facebook.com besuchen, die sich im Schutzbereich von Facebook Container befinden.", 
     "description": "This is the first paragraph of the second onboarding panel."
   }, 
   "onboarding2-p2": {
     "message": "Diese Websites müssen auf Ihre Facebook-Identität zugreifen (oder wissen, wer Sie sind), um funktionieren zu können. Dies bedeutet auch, dass Facebook Ihre Aktivitäten auf diesen Websites verfolgen kann.", 
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding3-subhead": {
     "message": "Woher weiß ich, dass Facebook Container funktioniert?", 
@@ -120,7 +120,7 @@
   }, 
   "btn-arrow-forward": {
     "message": "Zurück zu „Wie Facebook Container funktioniert“", 
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   }, 
   "no-trackers-subhead": {
     "message": "Es wurden keine Facebook-Tracker gefunden", 
@@ -164,7 +164,7 @@
   }, 
   "no-sites-added": {
     "message": "Keine", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "sites-allowed": {
     "message": "WEBSITES, DIE SIE ERLAUBT HABEN", 
