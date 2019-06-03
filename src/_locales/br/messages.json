@@ -125,5 +125,21 @@
   "no-trackers-subhead": {
     "message": "N'eus bet dinoer heulier Facebook ebet", 
     "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "N'eus bet dinoet heulier Facebook ebet war ar bajenn-mañ gant an endalc'her Facebook. Doareoù heulier all a c'hall bezañ war ar bajenn-mañ avat.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Gouzout hiroc'h", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Penaos ec'h a en-dro an endalc'her Facebook", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Gwareziñ a reomp ac'hanoc'h diouzh Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }
 }
