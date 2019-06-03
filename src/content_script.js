@@ -59,10 +59,8 @@ function isFixed (elem) {
   return false;
 }
 
-function isDisplayNone (elem) {
-  do {
-    if (getComputedStyle(elem).getPropertyValue("display") == "none") return true;
-  } while ((elem = elem.offsetParent));
+function isDisplayNone (target) {
+  if ( getComputedStyle(target, null).display === "none" ) return true;
   return false;
 }
 
@@ -319,8 +317,12 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
   const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
 
-  if (isDisplayNone(target) && !htmlBadgeDivHasDisabledClass) {
-    htmlBadgeDiv.classList.add("fbc-badge-disabled");
+
+
+  if (isDisplayNone(target)) {
+    if (!htmlBadgeDivHasDisabledClass) {
+      htmlBadgeDiv.classList.add("fbc-badge-disabled");
+    }
     return false;
   }
 
