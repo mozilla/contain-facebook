@@ -299,12 +299,11 @@ function getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv) {
 }
 
 function isVisible(target) {
-  const styleTransform = ( window.getComputedStyle(target, false).getPropertyValue("transform") === "matrix(1, 0, 0, 0, 0, 0)" );
-  const styleHidden = ( window.getComputedStyle(target, false).getPropertyValue("visibility") === "hidden" );
-  const styleDisplayNone = ( window.getComputedStyle(target, false).getPropertyValue("display") === "none" );
-  if (styleTransform || styleHidden || styleDisplayNone){
-    return false;
-  }
+  const currentComputedStyle = window.getComputedStyle(target, false);
+  const styleTransform = ( currentComputedStyle.getPropertyValue("transform") === "matrix(1, 0, 0, 0, 0, 0)" );
+  const styleHidden = ( currentComputedStyle.getPropertyValue("visibility") === "hidden" );
+  const styleDisplayNone = ( currentComputedStyle.getPropertyValue("display") === "none" );
+  if (styleTransform || styleHidden || styleDisplayNone) return false;
   return true;
 }
 
