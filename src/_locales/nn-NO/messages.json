@@ -67,6 +67,14 @@
     "message": "Ferdig", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "btn-arrow-back": {
+    "message": "Gå tilbake til det føregåande panelet.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Gå til ‹‹Korleis Facebook Container fungerer››", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
   "learn-more": {
     "message": "Les meir", 
     "description": "This is a link that opens a page with more information about Facebook Container."
