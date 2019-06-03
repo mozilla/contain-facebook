@@ -161,6 +161,18 @@
     "message": "¿Emboguete tenda Facebook Container-gui?", 
     "description": ""
   }, 
+  "remove-site-p1": {
+    "message": "Emboguévo ko tenda Facebook Container-gui Tembiapo Ñepyrũ rembiapoite Facebook pegua ndoikomo’ãvéima ha umi kookie tapykuehoha Facebook rehegua oguepáta.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": "Emoñepyrũjey hag̃ua tembiapo Facebook ndive ipyahúva, eikotevẽta embojuajujey Facebook Container rehe.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container oipe’a ko votõ ha ojoko og̃uahẽva jehapykueho ko kuatiarogue pegua Facebook guive.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "¿ Emoneĩ Facebook-pe nde rapykuehóvo ápe?", 
     "description": ""
