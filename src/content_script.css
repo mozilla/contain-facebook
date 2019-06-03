@@ -313,7 +313,12 @@
 
 .fbc-badge-prompt-align-right .fbc-badge-tooltip {
 	left: auto;
-	right: calc( 100% + 20px );
+	right: calc( 100% + 0.5em );
+}
+
+.fbc-badge-prompt-align-bottom .fbc-badge-tooltip {
+	top: auto;
+	bottom: 25%;
 }
 
 /* .fbc-badge-prompt-align-right .fbc-badge-prompt {
