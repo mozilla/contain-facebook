@@ -64,7 +64,7 @@
   }, 
   "onboarding2-subhead": {
     "message": "No Facebook e sites na fronteira do Facebook Container", 
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-alt": {
     "message": "O ícone de cerca do Facebook Container", 
@@ -76,14 +76,14 @@
   }, 
   "onboarding2-p2": {
     "message": "Estes sites precisam de aceder à sua identidade do Facebook (ou saber quem é) de maneira a poderem trabalhar. Isto também significa que o Facebook pode monitorizar tudo o que faz nestes sites.", 
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding3-subhead": {
     "message": "Como sei que o Facebook Container está a funcionar?", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
   "onboarding3-p1": {
-    "message": "Os botões que permitem que goste ou partilhe coisas no Facebook ou que inicie sessão em websites utilizando a sua conta do Facebook contêm trackers. O Facebook Container irá bloquear estes trackers e mostrar o ícone de cerca para lhe mostrar onde os trackers foram removidos.", 
+    "message": "Os botões que lhe permitem que goste ou partilhe coisas no Facebook ou que inicie sessão em websites utilizando a sua conta do Facebook contêm trackers. O Facebook Container irá bloquear estes trackers e mostrar o ícone de cerca para lhe mostrar onde os trackers foram removidos.", 
     "description": "This is the first paragraph of the third onboarding panel."
   }, 
   "onboarding3-img": {
@@ -120,7 +120,7 @@
   }, 
   "btn-arrow-forward": {
     "message": "Ir para Como funciona o Facebook Container", 
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   }, 
   "no-trackers-subhead": {
     "message": "Nenhum tracker do Facebook detetado", 
@@ -164,7 +164,7 @@
   }, 
   "no-sites-added": {
     "message": "Nenhum", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "sites-allowed": {
     "message": "SITES QUE PERMITIU", 
