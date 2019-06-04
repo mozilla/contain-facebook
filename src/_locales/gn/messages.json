@@ -74,6 +74,10 @@
     "message": "Ko ta'ãngachu'i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com-pe, oĩva Facebook Container mboypýri.", 
     "description": "This is the first paragraph of the second onboarding panel."
   }, 
+  "onboarding2-p2": {
+    "message": "Oiko porã hag̃ua, ko’ã tenda oikotevẽ oike heratee Facebook pegua ndive, he’iséva avei Facebook ikatu nde rapykueho ejapóva guivépe.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding3-subhead": {
     "message": "¿Mba’éicha aikuaáta Facebook Container oikoha?", 
     "description": "This is the subhead for the third onboarding panel."
@@ -187,6 +191,10 @@
   }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "¿ Emoneĩ Facebook-pe nde rapykuehóvo ápe?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Eipurúramo tembiapo ñepyrũ Facebook ndive, Facebook ikatu ohapykueho ne rembiapo ko tendápe. Kóva ikatu ne pytyvõ ehechauka hag̃ua nde rekove porãha eikundahávo ñandutípe.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
