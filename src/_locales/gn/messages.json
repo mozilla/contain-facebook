@@ -82,6 +82,10 @@
     "message": "¿Mba’éicha aikuaáta Facebook Container oikoha?", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
+  "onboarding3-p1": {
+    "message": "Umi votõ 'Ahayhu' ha 'Moherakuã' Facebook pegua térã umi ohejáva oike omoñepyrũvo tembiapo ne mba’ete Facebook pegua oguereko tapykuehoha. Facebook Container ojoko ha ohechauka ndéve peteĩ ta'ãngachu'i ñembotyha eikua hag̃ua mba’e tendápe ojejoko tapykuehoha.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
   "onboarding3-img": {
     "message": "Ko ta’ãnga ohechauka mba’échapa ojehecháta Facebook Guerekoha kora kuatiaroguépe pe votõ “Me gusta” Facebook pegua.", 
     "description": "This is alternative text for the image shown in the third onboarding panel."
@@ -137,6 +141,10 @@
   "trackers-detected-subhead": {
     "message": "Ore romo’ã ndéve Facebook-gui.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Umi votõ Facebook pegua ojehecháva kuatiarogue jejoguaha, marandu, ha ambue, oguereko tapykuehoha omombe’úva Facebook-pe umi kuatiarogue eike hague. Ndereipurúiramo jepe ko’ã votõ, umi tapykuehoha ikatu ombyaty marandu ne kundahakue rehegua. Facebook Container ojoko umi tapykuehoha.", 
+    "description": ""
   }, 
   "trackers-detected-p2": {
     "message": "Facebook Container ojoko ko’ã jehapykuehoha. Hákatu eikutúramo oimeraẽva votõ, Facebook ikatu ohapykueho.", 
