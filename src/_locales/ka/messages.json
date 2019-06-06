@@ -111,7 +111,7 @@
     "description": "This is a button that returns the user to the previous onboarding panel."
   }, 
   "btn-done": {
-    "message": "მზადაა", 
+    "message": "დასრულება", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
   "btn-arrow-back": {
