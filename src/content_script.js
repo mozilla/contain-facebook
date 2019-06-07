@@ -9,6 +9,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[title='Log in with Facebook']",
   "[class*='FacebookConnectButton']",
   "[class*='js-facebook-login']", // kickstarter
+  ".signup__button.button--facebook", // massdrop
   "[class*='signinInitialStep_fbButton']", // soundcloud
   "[class*='facebookV2Login']", // emag.ro
   "[class*='btn-facebook-signin']", // estadao.com.br
