@@ -46,6 +46,10 @@
     "message": "Facebook-eristystila", 
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
   }, 
+  "onboarding2-alt": {
+    "message": "Facebook-eristystilan kuvake", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
   "btn-allow": {
     "message": "Salli", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
