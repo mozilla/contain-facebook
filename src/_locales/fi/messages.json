@@ -3,6 +3,27 @@
     "message": "Facebook Container eristää Facebook-toimintasi muusta verkkotoiminnastasi, jotta Facebook ei pystyisi seuraamaan tekemisiäsi Facebook-sivuston ulkopuolella kolmansien osapuolten evästeitä hyödyntämällä.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "in-fbc-subhead": {
+    "message": "$URL$ on Facebook-eristystilassa.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "in-fbc-p1": {
+    "message": "Facebook voi nyt seurata sinua tällä sivustolla. Poista tämä sivusto Facebook-eristystilasta valitsemalla ”Sallitut sivustot” Facebook-eristystilasta ja poistamalla sivusto listalta."
+  }, 
+  "on-facebook-subhead": {
+    "message": "Facebookissa ja sivustoissa, jotka kuuluvat Facebook-eristystilaan", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Tämä kuvake ilmestyy Firefoxin osoitepalkkiin, kun käyt Facebookin omistamilla sivustoilla tai sivustoilla, jotka olet lisännyt Facebook-eristystilaan.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ ei ole Facebook-eristystilassa.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -20,6 +41,10 @@
   "onUnknownSiteHeader": {
     "message": "Tämä sivusto ei ole Facebook-eristystilassa.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook-eristystila", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
   }, 
   "btn-allow": {
     "message": "Salli", 
