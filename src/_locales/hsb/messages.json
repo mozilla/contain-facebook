@@ -54,6 +54,10 @@
     "message": "Facebook Container wužiwać", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-subhead": {
+    "message": "Na Facebook a sydłach w mjezach Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-alt": {
     "message": "Płótkowy symbol Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
