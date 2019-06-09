@@ -16,6 +16,18 @@
   "in-fbc-p1": {
     "message": "Facebook móže wam nětko na tutym sydle slědować. Zo byšće tute sydło z Facebook Container wotstronił, wubjerće „Sydła, kotrež su dowolene w Facebook Container“, zo byšće jo z lisćiny wotstronił."
   }, 
+  "on-facebook-subhead": {
+    "message": "Na Facebook a sydłach w mjezach Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Tutón symbol so w adresowym polu Firefox jewi, hdyž sydła wopytujeće, kotrež Facebook słušeja, abo sydła, kotrež sće Facebook Container přidał.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "Tute sydła trjebaja přistup na wašu identitu Facebook (abo dyrbja wědźeć, štó sće), zo bychu fungowali. To tež rěka, zo Facebook móže wšemu slědować, štož na tutych sydłach činiće.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ w Facebook Container njeje.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
