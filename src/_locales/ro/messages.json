@@ -115,7 +115,7 @@
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
   "btn-arrow-back": {
-    "message": "Revenire în panoul anterior.", 
+    "message": "Întoarce-te la panoul anterior.", 
     "description": "This is alternative text for the back arrow button."
   }, 
   "btn-arrow-forward": {
