@@ -54,6 +54,10 @@
     "message": "Facebook Container wužiwać", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container škitany wobłuk mjez sydłami a zbytkom interneta wutworja, zo by je ćešo za Facebook, wam online slědować.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-subhead": {
     "message": "Na Facebook a sydłach w mjezach Facebook Container", 
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
@@ -62,9 +66,17 @@
     "message": "Płótkowy symbol Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
+  "onboarding2-p1": {
+    "message": "Tutón symbol so w adresowym polu Firefox jewi, hdyž sydła kaž Facebook.com wopytujeće, kotrež su w škitanym wobłuku Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
   "onboarding3-subhead": {
     "message": "Zwotkel wěm, zo Facebook Container funguje?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Jeli wšak na někajki z tutych tłóčatkow kliknjeće, móže wam Facebook slědować.", 
+    "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
     "message": "Dowolić", 
@@ -86,6 +98,10 @@
     "message": "Hotowo", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "btn-arrow-back": {
+    "message": "Wróćo k předchadnemu wobłukej.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
   "btn-arrow-forward": {
     "message": "Wróćo ke „Kak Facebook Container funguje“", 
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
@@ -105,6 +121,10 @@
   "trackers-detected-subhead": {
     "message": "Smy was před Facebook škitali.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Płoćikowy symbol Facebook Container ze škitom.", 
+    "description": "This is alternative text describing the container fence icon."
   }, 
   "sites-added-subhead": {
     "message": "Sydła, kotrež su dowolene w Facebook Container", 
