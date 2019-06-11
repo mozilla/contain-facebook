@@ -3,8 +3,8 @@
     "message": "Facebook Container isola vòstra activitat Facebook de la rèsta de vòstra activitat web per dire d’empachar Facebook de vos pistar defòra del site Facebook via de cookies tèrces.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$URL$ se tròba dins Facebook Container.", 
+  "in-fbc-subhead": {
+    "message": "$URL$ es dins Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
@@ -12,10 +12,6 @@
         "example": "www.facebook.com"
       }
     }
-  }, 
-  "onFacebookText": {
-    "message": "Aquesa icòna apareis dins la barra d’adreça quand visitatz de sites web coma Facebook.com, Instagram.com, o Messenger.com que se tròban dins Facebook Container.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ se tròba pas dins Facebook Container.", 
@@ -34,5 +30,49 @@
   "onUnknownSiteHeader": {
     "message": "Aqueste site es pas dins Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "Utilizacion de Facebook Container", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "btn-allow": {
+    "message": "Autorizar", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Anullar", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Seguent", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Tornar", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Acabat", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "learn-more": {
+    "message": "Ne saber mai", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "no-sites-added": {
+    "message": "Pas cap", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "Suprimir", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Me mostrar pas mai aquò", 
+    "description": ""
   }
 }
