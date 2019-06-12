@@ -16,6 +16,14 @@
   "in-fbc-p1": {
     "message": "Facebook móžo wam něnto na toś tom sedle slědowaś. Aby toś to sedło z Facebook Container wótwónoźeł, wubjeŕśo „Sedła, kótarež su dowólone w Facebook Container“, aby jo z lisćiny wótwónoźeł."
   }, 
+  "on-facebook-subhead": {
+    "message": "Na Facebook a sedłach w šćitanem wobcerku Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Toś ten symbol se w adresowem pólu Firefox pokazujo, gaž k sedłam woglědujośo, kótarež Facebook słušaju, abo k sedłam, kótarež sćo Facebook Container pśidał.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ njejo w Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
