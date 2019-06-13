@@ -66,9 +66,25 @@
     "message": "Płośikowy symbol Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
+  "onboarding2-p1": {
+    "message": "Toś ten symbol se w adresowem pólu Firefox pokazujo, gaž se k sedłam ako Facebook.com woglědujośo, kótarež su w šćitanem wobcerku Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Toś te sedła trjebaju pśistup k wašej identiśe Facebook (abo muse wěźeś, chto sćo), aby funkcioněrowali. To teke groni, až Facebook móžo wšymu slědowaś, což na toś tych sedłach cyniśo.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding3-subhead": {
     "message": "Wótkul wěm, až Facebook Container funkcioněrujo?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Toś ten wobraz demonstrěrujo, kak se płośikowy symbol Facebook Container na boku pódla tłocaška „Spódoba se“ Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Jolic pak na někaki z toś tych tłocaškow kliknjośo, móžo wam Facebook slědowaś.", 
+    "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
     "message": "Dowóliś", 
