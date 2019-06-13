@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container แยกกิจกรรม Facebook ของคุณออกจากกิจกรรมเว็บที่เหลือเพื่อป้องกันไม่ให้ Facebook ติดตามคุณนอกเว็บไซต์ Facebook ผ่านคุกกี้ของบุคคลที่สาม", 
+    "message": "Facebook Container แยกกิจกรรม Facebook ของคุณออกจากกิจกรรมเว็บที่เหลือ เพื่อป้องกันไม่ให้ Facebook ติดตามคุณนอกเว็บไซต์ Facebook ผ่านคุกกี้ของบุคคลที่สาม", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "in-fbc-subhead": {
