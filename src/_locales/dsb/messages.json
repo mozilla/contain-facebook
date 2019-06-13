@@ -158,6 +158,10 @@
     "message": "Sedło z Facebook Container wótwónoźeś?", 
     "description": ""
   }, 
+  "remove-site-p2": {
+    "message": "Jolic cośo se zasej pla Facebook pśizjawiś, musyśo jen zasej Facebook Container pśidaś.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Facebook dowóliś, wam slědowaś?", 
     "description": ""
