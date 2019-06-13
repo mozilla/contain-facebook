@@ -118,6 +118,10 @@
     "message": "Žane přesćěhowaki Facebook namakane", 
     "description": ""
   }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container njeje žane přesćěhowaki Facebook na tutej stronje namakał. Ale strona móže hišće druhe typy přesćěhowakow wobsahować.", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Dalše informacije", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -129,6 +133,10 @@
   "trackers-detected-subhead": {
     "message": "Smy was před Facebook škitali.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container tute přesćěhowaki blokuje. Jeli wšak na tute tłóčatka kliknjeće, móže wam Facebook slědować.", 
+    "description": ""
   }, 
   "trackers-detected-fence-alt": {
     "message": "Płoćikowy symbol Facebook Container ze škitom.", 
@@ -160,6 +168,14 @@
   }, 
   "remove-site-p2": {
     "message": "Jeli chceće so zaso pola Facebook přizjewić, dyrbiće jón zaso Facebook Container přidać.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container je tute tłóčatko znjemóžnił a Facebook při tym haćił, wašemu wopytej na tutej stronje slědować.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container je přesćěhowaki Facebook zablokował. Jeli „Z Facebook na tutym sydle přizjewić“ wužiwaće, móže wam Facebook slědować.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
