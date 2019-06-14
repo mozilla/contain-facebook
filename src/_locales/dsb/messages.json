@@ -54,6 +54,10 @@
     "message": "Facebook Container wužywaś", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding1-p1": {
+    "message": "Facebook móžo wěcej ako Facebook.com slědowaś. Tłocaška „Spódoba se“ a „Źěliś“ na pśikład móžotej wam wšuźi slědowaś, źož sćo był - samo na bokach, na kótarychž njejsćo nigda kliknuł na „Spódoba sr“ abo „Źěliś“.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding1-p2": {
     "message": "Facebook Container šćitany wobcerk mjazy sedłami a zbytkom interneta napórajo, aby jo śěžej za Facebook, wam online slědowaś.", 
     "description": "Please do not translate \"Facebook Container\""
@@ -77,6 +81,10 @@
   "onboarding3-subhead": {
     "message": "Wótkul wěm, až Facebook Container funkcioněrujo?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Tłocaški, kótarež wam zmóžnjaju, wěcy ze „Spódoba se“ markěrowaś abo z Facebook źěliś abo se pla websedłow z pomocu wašogo konta Facebook pśizjawiś, pśeslědowaki wopśimuju. Facebook Container buźo toś te pśeslědowaki blokěrowaś a płośikowy symbol zwobrazniś, aby wam pokazał, źož pśeslědowaki su se wótwónoźili.", 
+    "description": "This is the first paragraph of the third onboarding panel."
   }, 
   "onboarding3-img": {
     "message": "Toś ten wobraz demonstrěrujo, kak se płośikowy symbol Facebook Container na boku pódla tłocaška „Spódoba se“ Facebook.", 
@@ -118,6 +126,10 @@
     "message": "Žedne pśeslědowaki Facebook namakane", 
     "description": ""
   }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container njejo namakał žedne pśeslědowaki Facebook na toś tom boku. Ale bok móžo hyšći druge typy pśeslědowakow wopśimjeś.", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Dalšne informacije", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -129,6 +141,10 @@
   "trackers-detected-subhead": {
     "message": "Smy was šćitali pśed Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container toś te pśeslědowaki blokěrujo. Jolic pak na toś te tłocaški kliknjośo, móžo wam Facebook slědowaś.", 
+    "description": ""
   }, 
   "trackers-detected-fence-alt": {
     "message": "Płośikowy symbol Facebook Container ze šćitom.", 
@@ -150,6 +166,9 @@
     "message": "SEDŁA, KÓTAREŽ SĆO DOWÓLIŁ", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook Container sedła Facebbok do šćitanego wobcerka zamka. Móžośo dalšne websedła do šćitanego wobcerka zapśimjeś, ale to Facebook zmóžnja, wěcej wašogo webpśeglědowanja slědowaś."
+  }, 
   "remove": {
     "message": "Wótwónoźeś", 
     "description": ""
@@ -158,12 +177,28 @@
     "message": "Sedło z Facebook Container wótwónoźeś?", 
     "description": ""
   }, 
+  "remove-site-p1": {
+    "message": "Gaž toś to sedło z Facebook Container wótwónoźujośo, to groni, až funkcija „Z Facebook pśizjawiś“ wěcej njefunkcioněrujo a se slědujuce cookieje Facebook wulašuju.", 
+    "description": ""
+  }, 
   "remove-site-p2": {
     "message": "Jolic cośo se zasej pla Facebook pśizjawiś, musyśo jen zasej Facebook Container pśidaś.", 
     "description": ""
   }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container jo znjemóžnił toś ten tłocašk a Facebook zawoborał, wašomu woglědoju na toś tom boku slědowaś.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container jo zablokěrował pśeslědowaki Facebook. Jolic „Z Facebook na toś tom sedle pśizjawiś“ wužywaśo, móžo wam Facebook slědowaś.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Facebook dowóliś, wam slědowaś?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Jolic cośo funkciju „Z Facebook pśizjawiś“ wužywaś, móžo Facebook wašej aktiwiśe na toś tom sedle slědowaś. To móžo jomu pomagaś, wašo žywjenje online lěpjej póznaś.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
