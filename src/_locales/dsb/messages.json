@@ -142,6 +142,10 @@
     "message": "Smy was šćitali pśed Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p1": {
+    "message": "Tłocaški Facebook, kótarež se na nakupowańskich, powěsćowych a drugich sedłach pokazuju, pśeslědowaki wopśimuju, kótarež Facebook k wěsći daju, źož sćo był we webje. Samo gaby wy toś te tłocaški nigda njewužywał, aby ze „Spódoba se“ markěrował abo źělił, mógu pśeslědowaki hyšći daty wó wašom pśeglědowanju zběraś. Facebook Container toś te pśeslědowaki blokěrujo.", 
+    "description": ""
+  }, 
   "trackers-detected-p2": {
     "message": "Facebook Container toś te pśeslědowaki blokěrujo. Jolic pak na toś te tłocaški kliknjośo, móžo wam Facebook slědowaś.", 
     "description": ""
