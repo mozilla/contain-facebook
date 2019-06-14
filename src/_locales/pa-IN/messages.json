@@ -53,5 +53,29 @@
   "onboarding1-subhead": {
     "message": "Facebook Container ਵਰਤੋਂ", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Facebook Container ਵਾੜ ਆਈਕਾਨ", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "btn-allow": {
+    "message": "ਮਨਜ਼ੂਰ", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "ਰੱਦ ਕਰੋ", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "ਅੱਗੇ", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "ਪਿੱਛੇ", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "ਮੁਕੰਮਲ", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }
 }
