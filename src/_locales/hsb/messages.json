@@ -166,6 +166,9 @@
     "message": "SYDŁA, KOTREŽ SĆE DOWOLIŁ", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook Container sydła Facebbok do škitaneho wobłuka zamka. Móžeće dalše websydła do škitaneho wobłuka zapřijeć, ale to Facebook zmóžnja, wjace wašeho webpřehladowanja slědować."
+  }, 
   "remove": {
     "message": "Wotstronić", 
     "description": ""
