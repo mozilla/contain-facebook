@@ -177,6 +177,10 @@
     "message": "Sydło z Facebook Container wotstronić?", 
     "description": ""
   }, 
+  "remove-site-p1": {
+    "message": "Hdyž tute sydło z Facebook Container wotstronjeće, to rěka, zo funkcija „Z Facebook přizjewić“ hižo njefunguje a so slědowace placki Facebook zhašeja.", 
+    "description": ""
+  }, 
   "remove-site-p2": {
     "message": "Jeli chceće so zaso pola Facebook přizjewić, dyrbiće jón zaso Facebook Container přidać.", 
     "description": ""
@@ -191,6 +195,10 @@
   }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Facebook dowolić, wam slědować?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Jeli chceće funkciju „Z Facebook přizjewić“ wužiwać, móže Facebook wašej aktiwiće na tutym sydle slědować. To móže jemu pomhać, so z wašim žiwjenjom online lěpje zeznać.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
