@@ -16,6 +16,18 @@
   "in-fbc-p1": {
     "message": "Facebook artık bu sitede sizi izleyebilir. Bu siteyi Facebook Container’dan kaldırmak isterseniz “Facebook Container’da izin verilen siteler”i seçip listeden silin."
   }, 
+  "on-facebook-subhead": {
+    "message": "Facebook Container kapsamındaki siteler hakkında", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Facebook’a ait sitelere veya Facebook Container’a eklediğiniz sitelere girdiğinizde Firefox adres çubuğunda bu simge görünür.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "Bu sitelerin çalışması için Facebook kimliğinize erişmeleri (veya kim olduğunuzu bilmeleri) gerekir. Ayrıca Facebook, bu sitelerde yaptığınız her şeyi takip edebilir.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ Facebook Container’da değil.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -41,6 +53,10 @@
   "onboarding1-subhead": {
     "message": "Facebook Container’ı kullanma", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Facebook Container kapsamındaki siteler hakkında", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-alt": {
     "message": "Facebook Container çit simgesi", 
