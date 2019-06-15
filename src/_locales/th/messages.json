@@ -75,6 +75,10 @@
     "message": "เรียนรู้เพิ่มเติม", 
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
+  "how-fbc-works": {
+    "message": "Facebook Container ทำงานอย่างไร", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
   "trackers-detected-subhead": {
     "message": "พวกเราปกป้องคุณจาก Facebook", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
