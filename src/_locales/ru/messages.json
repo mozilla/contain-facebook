@@ -67,6 +67,10 @@
     "message": "Вернуться к предыдущей панели.", 
     "description": "This is alternative text for the back arrow button."
   }, 
+  "btn-arrow-forward": {
+    "message": "Вернуться к описанию работы Фейсбук-контейнера", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
   "no-trackers-subhead": {
     "message": "Трекеров Фейсбука не обнаружено", 
     "description": ""
