@@ -69,5 +69,136 @@
   "onboarding2-alt": {
     "message": "Піктограма паркану Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Ця піктограма з'являється у адресному рядку Firefox, коли ви відвідуєте сайти, такі як Facebook.com, або ті, що внесені у Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Ці сайти повинні мати доступ до вашого ідентифікатора Facebook (або знати, хто ви є), щоб працювати. Це також означає, що Facebook може відстежувати все, що ви робите на цих сайтах.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "Як мені знати, що Facebook Container працює?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Кнопки, які дозволяють вам вподобати або поділитися даними на Facebook, чи дозволяти вам входити на вебсайти за допомогою облікового запису Facebook, містять трекери. Facebook Container блокує ці трекери і відображатиме значок паркану, щоб показати вам, де були вилучені трекери.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Це зображення демонструє, як піктограма паркану Facebook Containers розміщується на сторінці поруч із кнопкою Facebook Like.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Однак, якщо натиснути на будь-яку з цих кнопок, Facebook зможе відслідкувати вас.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Дозволити", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Відхилити", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Далі", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Назад", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Готово", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "no-trackers-subhead": {
+    "message": "Не виявлено трекерів Facebook", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container не виявив жодних трекерів Facebook на цій сторінці. Однак сторінка може містити інші типи трекерів.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Дізнатись більше", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Як працює Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Ми захистили вас від Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Кнопки Facebook, які відображаються на сайтах магазинів, новин та інших, містять трекери, які повідомляють Facebook про те, де ви знаходитеся в Інтернеті. Навіть якщо ви ніколи не користуєтеся цими кнопками, щоби вподобати або поділитися даними, трекери все ще можуть збирати дані про ваш перегляд. Facebook Container блокує ці трекери.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container блокує ці трекери. Однак, якщо натиснути на будь-яку з цих кнопок, Facebook зможе відслідкувати вас.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Паркан Facebook Container з щитом.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Сайти, дозволені у Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "ДОДАНІ САЙТИ", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Жодного", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "ДОДАНІ ВАМИ САЙТИ", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container розміщує всередині сайти, які належать Facebook. Ви можете дозволити іншим сайтам вийти за паркан, але це дозволить Facebook більше відстежувати вас."
+  }, 
+  "remove": {
+    "message": "Вилучити", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Вилучити сайт з Facebook Container?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Видалення цього сайту з Facebook Container означає, що функція Вхід з Facebook більше не буде працювати, а куки Facebook будуть видалені.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Якщо ви хочете знову ввійти у Facebook, вам доведеться додати його у Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container вимкнув цю кнопку і заблокував для Facebook відстеження вашого відвідування цієї сторінки.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container заблокував трекери Facebook. Він знову зможе відстежувати вас, якщо ви використаєте на цьому сайті функцію Вхід з Facebook.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Дозволити Facebook відстежувати вас на цьому сайті?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Якщо ви хочете скористатися функцією Вхід у Facebook, то Facebook зможе відстежувати вашу діяльність на цьому сайті. Це допоможе їм створити більш повну картину вашого онлайн-життя.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Не показувати це знову", 
+    "description": ""
   }
 }
