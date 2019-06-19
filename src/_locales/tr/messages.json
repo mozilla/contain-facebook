@@ -66,6 +66,10 @@
     "message": "Facebook Container’ın çalıştığını nasıl anlayabilirim?", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
+  "onboarding3-p2": {
+    "message": "Ama bu düğmelerden herhangi birine tıklarsanız Facebook sizi izleyebilir.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "İzin ver", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -98,6 +102,10 @@
     "message": "Hiç Facebook takipçisi algılanmadı", 
     "description": ""
   }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container bu sayfada herhangi bir Facebook takipçisi bulamadı. Bununla birlikte, sayfada başka takipçi türleri bulunuyor olabilir.", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Daha fazla bilgi al", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -109,6 +117,10 @@
   "trackers-detected-subhead": {
     "message": "Sizi Facebook’tan koruduk.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container bu takipçileri engeller, ama bu düğmelerden herhangi birine tıklarsanız Facebook sizi izleyebilir.", 
+    "description": ""
   }, 
   "trackers-detected-fence-alt": {
     "message": "Kalkanlı Facebook Container çiti.", 
