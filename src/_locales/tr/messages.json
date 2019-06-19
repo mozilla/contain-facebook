@@ -138,8 +138,20 @@
     "message": "Site Facebook Container’dan çıkarılsın mı?", 
     "description": ""
   }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container bu düğmeyi devre dışı bıraktı ve Facebook’un bu sayfayı ziyaretinizi izlemesini engelledi.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container, Facebook takipçilerini engelledi. Bu siteye Facebook ile giriş yaparsanız Facebook sizi takip edebilir.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Facebook sizi burada izleyebilsin mi?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Facebook ile giriş yapmayı tercih ederseniz Facebook bu sitede yaptıklarınızı takip edebilecektir. Facebook bu sayede internette yaşamınıza dair daha fazla bilgi sahibi olabilir.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
