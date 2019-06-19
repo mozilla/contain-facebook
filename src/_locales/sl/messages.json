@@ -94,6 +94,10 @@
     "message": "Nazaj na prejšnjo ploščo.", 
     "description": "This is alternative text for the back arrow button."
   }, 
+  "btn-arrow-forward": {
+    "message": "Pojdi na Kako deluje Facebook Container", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
   "no-trackers-subhead": {
     "message": "Ni zaznanih Facebookovih sledilcev", 
     "description": ""
