@@ -46,9 +46,41 @@
     "message": "Facebook-eristystila", 
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
   }, 
+  "onboarding1-p1": {
+    "message": "Facebook voi seurata selaamistasi myös Facebook.comin ulkopuolella. Esimerkiksi Facebookin Tykkää- ja Jaa-painikkeet voivat seurata selaushistoriaasi – myös niillä sivuilla, joista et ole tykännyt tai jakanut muille.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Facebook-eristystila luo rajan Facebook-sivustojen ja muun verkon välille, jotta Facebookin olisi aiempaa vaikeampaa seurata tekemisiäsi verkossa.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Facebookissa ja sivustoissa, jotka kuuluvat Facebook-eristystilaan", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-alt": {
     "message": "Facebook-eristystilan kuvake", 
     "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Tämä kuvake ilmestyy Firefoxin osoitepalkkiin käydessäsi sivustoilla, kuten Facebook.com, jotka ovat Facebook-eristystilan sisällä.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding3-subhead": {
+    "message": "Mistä tiedän Facebook-eristystilan toimivan?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Facebook-tykkäyksen ja -jaon mahdollistavat painikkeet ja sivustot, jotka mahdollistavat kirjautumisen Facebook-tilillä, sisältävät seuraimia. Facebook-eristystila estää nämä seuraimet, ja näyttää aitakuvakkeen niillä alueilla sivuja, joista seuraimet poistettiin.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Tämä kuva osoittaa, miten Facebook-eristystilan aitakuvake ilmestyy sivun sisään Facebookin Tykkää-painikkeen viereen.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Jos napsautat mitä tahansa näistä painikkeista, Facebook kykenee seuraamaan sinua.", 
+    "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
     "message": "Salli", 
@@ -70,6 +102,10 @@
     "message": "Valmis", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "btn-arrow-back": {
+    "message": "Takaisin edelliselle sivulle.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
   "no-trackers-subhead": {
     "message": "Facebook-seuraimia ei havaittu", 
     "description": ""
@@ -78,16 +114,75 @@
     "message": "Lue lisää", 
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
+  "how-fbc-works": {
+    "message": "Miten Facebook-eristystila toimii", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Olemme suojanneet sinut Facebookilta.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Facebook-painikkeet, jotka ovat näkyvissä verkkokaupoissa, uutissivuilla ja muilla sivustoilla, sisältävät seuraimia, jotka kertovat Facebookille mitä sivuja olet selannut verkossa. Vaikka et koskaan käyttäisi näitä painikkeita tykkäämiseen tai jakamiseen, seuraimet keräävät tietoja selaamiseesi liittyen. Facebook-eristystila estää nämä seuraimet.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook-eristystila estää nämä seuraimet. Jos kuitenkin napsautat mitä tahansa näistä painikkeista, Facebook kykenee seuraamaan sinua.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Facebook-eristystilan aita kilven kera.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Facebook-eristystilassa sallitut sivustot", 
+    "description": "This is a panel subhead."
+  }, 
   "sites-included": {
     "message": "SISÄLLYTETYT SIVUSTOT", 
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Ei mitään", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "sites-allowed": {
     "message": "SALLIMASI SIVUSTOT", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook-eristystila asettaa Facebookin omistamat sivustot eristystilaan. Voit sallia sivustoja eristystilan sisään, mutta tämä sallii Facebookin seurata tekemisiäsi verkossa aiempaa enemmän."
+  }, 
   "remove": {
     "message": "Poista", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Sivuston poistaminen Facebook-eristystilasta", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Tämän sivuston poistaminen Facebook-eristystilasta tarkoittaa, ettei ”Kirjaudu Facebookilla” -ominaisuus enää toimi ja Facebookin seurainevästeet poistetaan.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Jos haluat käyttää ”Kirjaudu Facebookilla” -ominaisuutta uudestaan, sinun tulee lisätä takaisin se Facebook-eristystilaan.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook-eristystila on poistanut tämän painikkeen käytöstä ja estänyt Facebookia seuraamasta vierailuasi tälle sivustolle.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook-eristystila on estänyt Facebook-seuraimet. Jos käytät ”Kirjaudu Facebookilla” -ominaisuutta tällä sivustolla, Facebook kykenee seuraamaan sinua.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Haluatko sallia Facebookin seuraavan sinua täällä?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Jos haluat käyttää ”Kirjaudu Facebookilla” -ominaisuutta, Facebook kykenee seuraamaan tekemisiäsi tällä sivustolla. Seuranta mahdollistaa Facebookin rakentavan aiempaa kattavamman profiilin verkossa tekemistäsi asioista.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
