@@ -125,5 +125,45 @@
   "sites-included": {
     "message": "SITES INCLUDED", 
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "कुछ नहीं", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "हटाएँ", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Facebook Container से साइट हटाएँ?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Facebook Container से इस साइट को हटाने का मतलब है कि लॉग इन Facebook फ़ीचर अब काम नहीं करेगा और Facebook ट्रैकिंग कुकीज़ मिटा दी जाएंगी।", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " अगर आप Facebook के साथ फिर से लॉग इन करना चाहते हैं, तो आपको इसे Facebook Container में वापस जोड़ना होगा।", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container ने इस बटन को निष्क्रिय कर दिया है और इस पृष्ठ पर आपके दौरे को ट्रैक करने से Facebbok को ब्लॉक कर दिया है।", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container ने Facebook ट्रैकर्स को ब्लॉक कर दिया है। यदि आप इस साइट पर Facebook के साथ लॉग इन करते हैं, तो Facebook आपको ट्रैक करने में सक्षम होगा।", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Facebook को आपको यहां ट्रैक करने की अनुमति दें?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "अगर आप Facebook के साथ लॉग इन करना चाहते हैं तो Facebook इस साइट पर आपकी गतिविधि को ट्रैक कर सकेगा। इससे उन्हें आपके ऑनलाइन जीवन की एक पूरी तस्वीर बनाने में मदद मिल सकती है।", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "मुझे यह फिर से मत दिखाना", 
+    "description": ""
   }
 }
