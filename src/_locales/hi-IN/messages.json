@@ -3,8 +3,8 @@
     "message": "Facebook Container आपके Facebook गतिविधि को आपके बाकी वेब गतिविधि से अलग रखता है ताकि तृतीय पार्टी कूकीज़ के जरिए Facebook द्वारा Facebook के बाहर किसी वेबसाइट पर आपके ऊपर नज़र रखने से रोका जा सके।", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$URL$ Facebook Container में है।", 
+  "in-fbc-subhead": {
+    "message": "$URL$ Facebook Container में है.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
@@ -13,9 +13,12 @@
       }
     }
   }, 
-  "onFacebookText": {
-    "message": "यह आइकॉन पता बार में तब दिखाई देता है जब आप Facebook.com, Instagram.com या Messenger.com जैसी वेबसाइटों पर जाते हैं जो Facebook Container में होती हैं।", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "in-fbc-p1": {
+    "message": "Facebook अब आपको इस साइट पर ट्रैक कर सकता है। इस साइट को Facebook Container से हटाने के लिए, Facebook Container में अनुमत साइटें को चुनें और इसे सूची से हटा दें।"
+  }, 
+  "on-facebook-subhead": {
+    "message": "Facebook पर और Facebook Container बाउंड्री की साइटों में", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ Facebook Container में नहीं है।", 
@@ -34,5 +37,93 @@
   "onUnknownSiteHeader": {
     "message": "यह साइट Facebook Container में नहीं है।", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "Facebook Container का उपयोग करना", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Facebook पर और Facebook Container बाउंड्री की साइटों में", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Facebook Container का फेस आइकॉन", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p2": {
+    "message": "इन साइटों को काम करने के लिए आपकी Facebook पहचान (या पता है कि आप कौन हैं) का उपयोग करने की आवश्यकता है। इसका ये भी मतलब है कि Facebook इन साइटों पर आपके द्वारा किए जाने वाले हर काम को ट्रैक कर सकता है।", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "मुझे कैसे पता चलेगा कि Facebook Container काम कर रहा है?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "हालाँकि, यदि आप इनमें से किसी भी बटन को दबाते हैं तो Facebook आपको ट्रैक करने में सक्षम होगा।", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "अनुमति दें", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "रद्द करें", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "अगला", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "पीछे", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "संपन्न", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "पिछले पैनल में वापस जाएँ.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Facebook Container कैसे काम करता है उस पर जाएँ", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "कोई Facebook ट्रैकर नहीं मिला", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container को इस पृष्ठ में एक भी Facebook ट्रैकर नहीं मिला। हालाँकि, पृष्ठ में अभी भी अन्य प्रकार के ट्रैकर्स हो सकते हैं.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "अधिक जानें", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Facebook Container कैसे काम करता है", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "हमने आपको Facebook से सुरक्षित रखा है.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container इन ट्रैकर्स को ब्लॉक करता है। हालाँकि, यदि आप इनमें से किसी भी बटन को दबाते हैं तो Facebook आपको ट्रैक करने में सक्षम होगा।", 
+    "description": ""
+  }, 
+  "sites-added-subhead": {
+    "message": "Facebook Container में अनुमत साइटें", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "SITES INCLUDED", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   }
 }
