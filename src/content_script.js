@@ -54,6 +54,7 @@ const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[aria-label*='share on facebook']", // MSN
   "[data-tracking*='facebook|share']", // football.london
   "[class*='facebookShare']", // Producthunt share
+  "[class*='social-tray__link--facebook']", // Vice
   ".post-action-options + .right > .social-icon.icon-f", // Imgur share
   "[title='Share on Facebook']" // Medium
 ];
