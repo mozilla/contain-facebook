@@ -14,6 +14,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='facebookV2Login']", // emag.ro
   "[class*='btn-facebook-signin']", // estadao.com.br
   "[class*='signup-provider-facebook']", // Fandom
+  ".socialContainer-0-131 .mainFacebook-0-150", // Honey
   "[class*='facebook_login_click']", // Hi5
   "[class*='facebook-signup-button']", // Strava
   "[class*='facebook-connect-button']", // Twitch
