@@ -274,6 +274,15 @@ function isFacebookURL (url) {
   return false;
 }
 
+// TODO: Consider users if accounts.spotify.com already in FBC
+async function supportSiteSubdomainCheck (url) {
+  if (url === "accounts.spotify.com") {
+    await addDomainToFacebookContainer("https://spotify.com");
+    await addDomainToFacebookContainer("https://open.spotify.com");
+  }
+  return;
+}
+
 // TODO: refactor parsedUrl "up" so new URL doesn't have to be called so much
 // TODO: refactor fbcStorage "up" so browser.storage.local.get doesn't have to be called so much
 async function addDomainToFacebookContainer (url) {
@@ -281,6 +290,7 @@ async function addDomainToFacebookContainer (url) {
   const fbcStorage = await browser.storage.local.get();
   fbcStorage.domainsAddedToFacebookContainer.push(parsedUrl.host);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+  await supportSiteSubdomainCheck(parsedUrl.host);
 }
 
 async function removeDomainFromFacebookContainer (domain) {
@@ -290,6 +300,7 @@ async function removeDomainFromFacebookContainer (domain) {
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
 }
 
+// TODO: Add PSL Subdomain Check against current list
 async function isAddedToFacebookContainer (url) {
   const parsedUrl = new URL(url);
   const fbcStorage = await browser.storage.local.get();
@@ -432,7 +443,7 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
   } else if (hasBeenAddedToFacebookContainer) {
     browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
-  } else { 
+  } else {
     const tabState = tabStates[tab.id];
     const panelToShow = (tabState && tabState.trackersDetected) ? "trackers-detected" : "no-trackers";
     browser.storage.local.set({"CURRENT_PANEL": panelToShow});
