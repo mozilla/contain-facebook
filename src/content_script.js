@@ -26,6 +26,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-oauthserver*='facebook']", // Stackoverflow
   "[id*='facebook_connect_button']", // Quora
   "[data-action*='facebook-auth']", //Medium
+  "[data-login-with-facebook='']", // etsy
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
   ".social-login .button--facebook", // noovie.com
