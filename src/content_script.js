@@ -11,6 +11,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='js-facebook-login']", // kickstarter
   ".signup__button.button--facebook", // massdrop
   "[class*='signinInitialStep_fbButton']", // soundcloud
+  "[id*='signin_fb_btn']", // Ebay
   "[class*='facebookV2Login']", // emag.ro
   "[class*='btn-facebook-signin']", // estadao.com.br
   "[class*='signup-provider-facebook']", // Fandom
