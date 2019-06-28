@@ -58,6 +58,10 @@
     "message": "Facebook Container ustvari mejo med Facebookovimi stranmi in preostalim spletom, kar Facebooku oteži sledenje vaši spletni dejavnosti.", 
     "description": "Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-subhead": {
+    "message": "Na Facebooku in straneh v Facebook Containerju", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-alt": {
     "message": "Ikona ograje Facebook Containerja", 
     "description": "This is alternative text for the icon in the second onboarding panel"
