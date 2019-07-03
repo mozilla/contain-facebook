@@ -9,14 +9,14 @@ const FACEBOOK_DOMAINS = [
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
 
-  "workplace.com", "www.workplace.com", "work.facebook.com",
-
   "instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
 
   "messenger.com", "m.me", "messengerdevelopers.com",
 
   "atdmt.com",
+
+  "workplace.com", "www.workplace.com", "work.facebook.com",
 
   "onavo.com",
   "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com"
