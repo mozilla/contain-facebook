@@ -1,7 +1,17 @@
 {
   "extensionDescription": {
-    "message": "Kontainer Facebook mengisolasi aktivitas Facebook Anda dari aktivitas web Anda yang lain untuk mencegah Facebook melacak Anda di luar situs web Facebook melalui kuki pihak ketiga.", 
+    "message": "Facebook Container mengisolasi aktivitas Facebook Anda dari aktivitas web Anda yang lain untuk mencegah Facebook melacak Anda di luar situs web Facebook melalui kuki pihak ketiga.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "in-fbc-subhead": {
+    "message": "$URL$ ada dalam Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ tidak ada dalam Kontainer Facebook.", 
