@@ -9,8 +9,13 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[title='Log in with Facebook']",
   "[class*='FacebookConnectButton']",
   "[class*='js-facebook-login']", // kickstarter
+  ".signup__button.button--facebook", // massdrop
+  "[class*='signinInitialStep_fbButton']", // soundcloud
+  "[id*='signin_fb_btn']", // Ebay
+  "[class*='facebookV2Login']", // emag.ro
   "[class*='btn-facebook-signin']", // estadao.com.br
   "[class*='signup-provider-facebook']", // Fandom
+  ".socialContainer-0-131 .mainFacebook-0-150", // Honey
   "[class*='facebook_login_click']", // Hi5
   "[class*='facebook-signup-button']", // Strava
   "[class*='facebook-connect-button']", // Twitch
@@ -21,6 +26,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-oauthserver*='facebook']", // Stackoverflow
   "[id*='facebook_connect_button']", // Quora
   "[data-action*='facebook-auth']", //Medium
+  "[data-login-with-facebook='']", // etsy
   "[data-destination*='facebook']",
   "[data-partner*='facebook']", // AliExpress
   ".social-login .button--facebook", // noovie.com
@@ -48,6 +54,7 @@ const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[aria-label*='share on facebook']", // MSN
   "[data-tracking*='facebook|share']", // football.london
   "[class*='facebookShare']", // Producthunt share
+  "[class*='social-tray__link--facebook']", // Vice
   ".post-action-options + .right > .social-icon.icon-f", // Imgur share
   "[title='Share on Facebook']" // Medium
 ];

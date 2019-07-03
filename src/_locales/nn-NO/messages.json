@@ -13,6 +13,10 @@
       }
     }
   }, 
+  "on-facebook-subhead": {
+    "message": "På Facebook og nettstadar innanfor ramma av Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ er ikkje i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -38,6 +42,10 @@
   "onboarding1-subhead": {
     "message": "Bruke Facebook Container", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "På Facebook og nettstadar innanfor ramma av Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-alt": {
     "message": "Gjerde-ikonet til Facebook Container", 
@@ -87,6 +95,10 @@
     "message": "Korleis Facebook Container fungerer", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
+  "trackers-detected-subhead": {
+    "message": "Vi har beskytta deg frå Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
   "trackers-detected-fence-alt": {
     "message": "Facebook Container-gjerde med skjold.", 
     "description": "This is alternative text describing the container fence icon."
@@ -94,6 +106,10 @@
   "sites-added-subhead": {
     "message": "Tillatne nettstadar i Facebook Container", 
     "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "INKLUDERTE NETTSTADAR", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   }, 
   "no-sites-added": {
     "message": "Ingen", 

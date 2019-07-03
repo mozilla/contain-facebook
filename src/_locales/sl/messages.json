@@ -20,6 +20,10 @@
     "message": "Na Facebooku in straneh v Facebook Containerju", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "on-facebook-p1": {
+    "message": "Ta ikona se pojavi v Firefoxovi naslovni vrstici, ko obiščete Facebookove strani ali strani, ki ste jih dodali v Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "on-facebook-p2": {
     "message": "Te strani potrebujejo dostop do vaše identitete na Facebooku (vedeti morajo, kdo ste), da bi lahko delovale. To pomeni tudi, da lahko Facebook sledi vaši dejavnosti na teh straneh.", 
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
@@ -58,6 +62,10 @@
     "message": "Facebook Container ustvari mejo med Facebookovimi stranmi in preostalim spletom, kar Facebooku oteži sledenje vaši spletni dejavnosti.", 
     "description": "Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-subhead": {
+    "message": "Na Facebooku in straneh v Facebook Containerju", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-alt": {
     "message": "Ikona ograje Facebook Containerja", 
     "description": "This is alternative text for the icon in the second onboarding panel"
@@ -73,6 +81,10 @@
   "onboarding3-subhead": {
     "message": "Kako vem, da Facebook Container deluje?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Gumbi, ki vam omogočajo všečkanje in deljenje vsebine na Facebooku, ter omogočajo prijavo z računom Facebook, vsebujejo sledilce. Facebook Container zavrača te sledilce in prikaže ikono ograje, kjer so bili sledilci odstranjeni.", 
+    "description": "This is the first paragraph of the third onboarding panel."
   }, 
   "onboarding3-img": {
     "message": "Ta slika prikazuje, kako se ikona ograje Facebook Containerja prikaže ob Facebookovem gumbu Všeč mi je.", 
@@ -162,6 +174,14 @@
     "message": "Odstranim stran iz Facebook Containerja?", 
     "description": ""
   }, 
+  "remove-site-p1": {
+    "message": "Če odstranite to stran iz Facebook Containerja, možnost prijave z računom Facebook ne bo več delovala, Facebookovi sledilni piškotki pa bodo izbrisani.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": "Če želite ponovno uporabiti možnost prijave z računom Facebook, boste morali stran dodati nazaj v Facebook Container.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container je onemogočil ta gumb in preprečil Facebooku, da bi spremljal vaš obisk te strani.", 
     "description": ""
@@ -172,6 +192,10 @@
   }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Dovolite Facebooku, da vas spremlja na tej strani?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Če želite uporabiti možnost prijave z računom Facebook, bo Facebook lahko spremljal vašo dejavnost na tej strani. To lahko Facebooku pomaga, da si ustvari popolnejšo sliko o vašem spletnem življenju.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
