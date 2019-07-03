@@ -279,7 +279,7 @@ function isFacebookURL (url) {
 // TODO: Consider users if accounts.spotify.com already in FBC
 async function supportSiteSubdomainCheck (url) {
   if (url === "accounts.spotify.com") {
-    await addDomainToFacebookContainer("https://spotify.com");
+    await addDomainToFacebookContainer("https://www.spotify.com");
     await addDomainToFacebookContainer("https://open.spotify.com");
   }
   return;
