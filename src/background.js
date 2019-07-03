@@ -16,6 +16,8 @@ const FACEBOOK_DOMAINS = [
 
   "atdmt.com",
 
+  "workplace.com", "www.workplace.com", "work.facebook.com",
+
   "onavo.com",
   "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com"
 ];
