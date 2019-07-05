@@ -1,7 +1,28 @@
 {
   "extensionDescription": {
-    "message": "Kontainer Facebook mengisolasi aktivitas Facebook Anda dari aktivitas web Anda yang lain untuk mencegah Facebook melacak Anda di luar situs web Facebook melalui kuki pihak ketiga.", 
+    "message": "Facebook Container mengisolasi aktivitas Facebook Anda dari aktivitas web Anda yang lain untuk mencegah Facebook melacak Anda di luar situs web Facebook melalui kuki pihak ketiga.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "in-fbc-subhead": {
+    "message": "$URL$ ada dalam Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "in-fbc-p1": {
+    "message": "Facebook sekarang dapat melacak Anda di situs ini. Untuk menghapus situs ini dari Facebook Container, pilih Situs yang Dibolehkan dalam Facebook Container lalu hapus dari daftar."
+  }, 
+  "on-facebook-p1": {
+    "message": "Ikon ini muncul dalam bilah alamat Firefox ketika Anda mengunjungi situs yang dimiliki oleh Facebook atau situs yang telah Anda tambahkan ke Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "Agar bisa berfungsi, situs ini perlu mengakses identitas Facebook Anda (atau mengetahui siapa Anda). Ini juga berarti bahwa Facebook dapat melacak semua yang Anda lakukan di situs ini.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ tidak ada dalam Kontainer Facebook.", 
@@ -14,12 +35,20 @@
     }
   }, 
   "notOnFacebookText": {
-    "message": "Situs ini berada di luar Kontainer Facebook. Ini membuat Facebook semakin sulit melacak Anda di web.", 
+    "message": "Situs ini berada di luar Facebook Container. Ini membuat Facebook semakin sulit melacak Anda di web.", 
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "onUnknownSiteHeader": {
-    "message": "Situs ini tidak ada dalam Kontainer Facebook.", 
+    "message": "Situs ini tidak ada dalam Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "Menggunakan Facebook Container", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
   "btn-allow": {
     "message": "Izinkan", 
@@ -49,9 +78,17 @@
     "message": "Pelajari lebih lanjut", 
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
+  "how-fbc-works": {
+    "message": "Bagaimana Facebook Container Bekerja", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
   "trackers-detected-subhead": {
     "message": "Kami melindungi Anda dari Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "sites-added-subhead": {
+    "message": "Situs yang Diizinkan dalam Facebook Container", 
+    "description": "This is a panel subhead."
   }, 
   "no-sites-added": {
     "message": "Tidak Ada", 
@@ -63,6 +100,10 @@
   }, 
   "remove": {
     "message": "Hapus", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Hapus situs dari Facebook Container?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
