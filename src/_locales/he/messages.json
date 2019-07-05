@@ -1,7 +1,31 @@
 {
+  "extensionDescription": {
+    "message": "‏Facebook Container מבודדת את הפעילות שלך ב־Facebook משאר הפעילות המקוונת שלך כדי למנוע מ־Facebook לעקוב אחריך מחוץ לאתר Facebook באמצעות עוגיות צד־שלישי.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "notOnFacebookText": {
+    "message": "אתר זה נמצא מחוץ ל־Facebook Container. זה מקשה על Facebook לעקוב אחריך ברחבי הרשת.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "אתר זה אינו נמצא ב־Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "facebookContainer": {
     "message": "Facebook Container", 
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "שימוש ב־Facebook Container", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "סמל הגדר של Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding3-subhead": {
+    "message": "איך אוכל לדעת ש־Facebook Container עובד?", 
+    "description": "This is the subhead for the third onboarding panel."
   }, 
   "btn-cancel": {
     "message": "ביטול", 
@@ -22,5 +46,29 @@
   "btn-arrow-back": {
     "message": "חזרה לחלונית הקודמת.", 
     "description": "This is alternative text for the back arrow button."
+  }, 
+  "learn-more": {
+    "message": "מידע נוסף", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "איך Facebook Container עובד", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "no-sites-added": {
+    "message": "ללא", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "הסרה", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "להסיר את האתר מ־Facebook Container?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "לא להציג הודעה זו שוב", 
+    "description": ""
   }
 }
