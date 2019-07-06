@@ -3,6 +3,16 @@
     "message": "‏Facebook Container מבודדת את הפעילות שלך ב־Facebook משאר הפעילות המקוונת שלך כדי למנוע מ־Facebook לעקוב אחריך מחוץ לאתר Facebook באמצעות עוגיות צד־שלישי.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "notOnFacebookHeader": {
+    "message": "‏$URL$ אינו נמצא ב־Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
   "notOnFacebookText": {
     "message": "אתר זה נמצא מחוץ ל־Facebook Container. זה מקשה על Facebook לעקוב אחריך ברחבי הרשת.", 
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
