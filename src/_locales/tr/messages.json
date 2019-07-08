@@ -155,7 +155,7 @@
     "description": ""
   }, 
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container, Facebook takipçilerini engelledi. Bu siteye Facebook ile giriş yaparsanız Facebook sizi takip edebilir.", 
+    "message": "Facebook Container, Facebook takipçilerini engelledi. Bu sitede Facebook ile oturum açarsanız Facebook sizi takip edebilir.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
@@ -163,7 +163,7 @@
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Facebook ile giriş yapmayı tercih ederseniz Facebook bu sitede yaptıklarınızı takip edebilecektir. Facebook bu sayede internette yaşamınıza dair daha fazla bilgi sahibi olabilir.", 
+    "message": "Facebook ile oturum açarsanız Facebook bu sitede yaptıklarınızı takip edebilir. Facebook bu sayede internetteki yaşamınıza dair daha fazla bilgi sahibi olabilir.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
