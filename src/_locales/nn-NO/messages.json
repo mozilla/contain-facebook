@@ -142,6 +142,14 @@
     "message": "Vi har beskytta deg frå Facebook.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p1": {
+    "message": "Facebook-knappar som visest på nettbutikkar, nyhende-, og andre nettstadar inneheld sporfølgjarar som fortel Facebook kvar du har vore på nettet. Til og med viss du aldri brukar desse knappeane til å like eller dele, kan sporfølgjarane framleis samle data om nettlesinga di. Facebook Container blokkerer desse sporfølgjarane.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container blokkerer desse sporfølgjarane. Viss du derimot trykkjer på ein av desse knappane vil Facebook ha moglegheit til å spore deg.", 
+    "description": ""
+  }, 
   "trackers-detected-fence-alt": {
     "message": "Facebook Container-gjerde med skjold.", 
     "description": "This is alternative text describing the container fence icon."
@@ -162,12 +170,19 @@
     "message": "NETTSTADAR DU HAR TILLATE", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook Container puttar Facebook-eigde nettstadar innanfor ramma. Du kan tillate andre nettstadar innanfor grensa, men dette vil gi Facebook moglegheit til å spore meir av nettlesinga di."
+  }, 
   "remove": {
     "message": "Fjern", 
     "description": ""
   }, 
   "remove-site-subhead": {
     "message": "Fjerne nettstad frå Facebook Container?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Å ta bort denne nettstaden frå Facebook Container inneber at det å logge inn med Facebook-funksjonen ikkje lenger vil verke og Facebooks-infokapslane vil bli sletta.", 
     "description": ""
   }, 
   "remove-site-p2": {
@@ -178,12 +193,16 @@
     "message": "Facebook Container har deaktivert denne knappen og blokkert Facebook frå å spore deg når du besøkjer denne nettsida.", 
     "description": ""
   }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container har blokkert Facebook-sporfølgjarar. Viss du brukar Logg inn med Facebook på denne nettsida vil Facebook ha moglegheita til å spore deg.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Tillate Facebook å spore deg her?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Viss du vil bruke logg inn med Facebook så vil Facebook ha mogelegheit til å spore aktiviteten din på denne nettstaden. Dette kan hjelpe dei med å byggje eit meir detaljert bilde av livet ditt på nettet.", 
+    "message": "Viss du vil bruke logg inn med Facebook så vil Facebook ha moglegheit til å spore aktiviteten din på denne nettstaden. Dette kan hjelpe dei med å byggje eit meir detaljert bilde av livet ditt på nettet.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
