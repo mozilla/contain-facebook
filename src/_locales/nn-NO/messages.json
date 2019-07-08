@@ -24,6 +24,10 @@
     "message": "Dette ikonet vert vist i adressefeltet til Firefox når du besøkjer Facebook-eigde nettstadar eller nettstadar du har lagt til i Facebook Container.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "on-facebook-p2": {
+    "message": "Disse nettstadane treng tilgang til Facebook-identiteten din (eller vite kven du er) for å fungere. Dette betyr også at Facebook kan spore alt du gjer på desse nettstadane.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ er ikkje i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -50,6 +54,14 @@
     "message": "Bruke Facebook Container", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding1-p1": {
+    "message": "Facebook kan spore nettsurfinga di langt utanfor Facebook.com. Facebook sine Likar- og Dele-knappar kan til dømes spore kvar du har vore — til og med på nettsider du aldri likar eller deler.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container lagar ei ramme mellom Facebook-nettstadar og resten av nettet slik at det blir vanskelegare for Facebook å spore deg.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-subhead": {
     "message": "På Facebook og nettstadar innanfor ramma av Facebook Container", 
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
@@ -58,9 +70,21 @@
     "message": "Gjerde-ikonet til Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
+  "onboarding2-p1": {
+    "message": "Dette ikonet vert vist i adressefeltet til Firefox når du besøkjer nettstadar, som Facebook.com, som er innanfor ramma til Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Desse nettstadane treng tilgang til Facebook-identiteten din (eller å vite kven du er) for å fungere. Dette betyr også at Facebook kan spore alt du gjer på desse nettstadane.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding3-subhead": {
     "message": "Korleis veit eg at Facebook Container fungerer?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Knappar som lèt deg like eller dele ting til Facebook eller lèt deg logge inn på nettstadar med Facebook-kontoen din inneheld sporfølgjarar. Facebook Container kjem til å blokkere desse sporfølgjarane og vise gjerdeikonet for å vise deg kvar sporfølgjarar er fjerna.", 
+    "description": "This is the first paragraph of the third onboarding panel."
   }, 
   "onboarding3-img": {
     "message": "Dette bildet demonstrerer korleis gjerdeikonet til Facebook Container vil visast på nettsida ved sidan av ein Facebook Likar-knapp.", 
@@ -146,12 +170,20 @@
     "message": "Fjerne nettstad frå Facebook Container?", 
     "description": ""
   }, 
+  "remove-site-p2": {
+    "message": " Viss du vil bruke Logg inn med Facebook igjen må du leggje den tilbake til Facebook Container.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container har deaktivert denne knappen og blokkert Facebook frå å spore deg når du besøkjer denne nettsida.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Tillate Facebook å spore deg her?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Viss du vil bruke logg inn med Facebook så vil Facebook ha mogelegheit til å spore aktiviteten din på denne nettstaden. Dette kan hjelpe dei med å byggje eit meir detaljert bilde av livet ditt på nettet.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
