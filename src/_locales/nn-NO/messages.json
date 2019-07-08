@@ -62,6 +62,10 @@
     "message": "Korleis veit eg at Facebook Container fungerer?", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
+  "onboarding3-img": {
+    "message": "Dette bildet demonstrerer korleis gjerdeikonet til Facebook Container vil visast på nettsida ved sidan av ein Facebook Likar-knapp.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
   "onboarding3-p2": {
     "message": "Viss du derimot klikkar på ein av desse knappane, vil Facebook kunne spore deg.", 
     "description": "This is the second paragraph on the third onboarding panel."
@@ -96,6 +100,10 @@
   }, 
   "no-trackers-subhead": {
     "message": "Ingen Facebook-sporfølgjarar oppdaga", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container fann ingen Facebook-sporfølgjarar på denne nettsida. Men, nettsida kan framleis innehalde andre typar sporfølgjarar.", 
     "description": ""
   }, 
   "learn-more": {
@@ -136,6 +144,10 @@
   }, 
   "remove-site-subhead": {
     "message": "Fjerne nettstad frå Facebook Container?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container har deaktivert denne knappen og blokkert Facebook frå å spore deg når du besøkjer denne nettsida.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
