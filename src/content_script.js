@@ -19,6 +19,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='facebook_login_click']", // Hi5
   "[class*='facebook-signup-button']", // Strava
   "[class*='facebook-connect-button']", // Twitch
+  "[class*='AuthenticationModal__FacebookButtonWrapper']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
   "[href*='/sign_in/Facebook']", // bazqux.com
   "[href*='signin/facebook']",
