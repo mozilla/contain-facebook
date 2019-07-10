@@ -1,0 +1,34 @@
+{
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "btn-allow": {
+    "message": "अनुमति दिनुहोस्", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "रद्द गर्नुहोस्", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "अर्को", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "पछाडि", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "भयो", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "अघिल्लो प्यानलमा फर्कनुहोस्।", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "कसरी Facebook Container काम गर्दछ", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }
+}
