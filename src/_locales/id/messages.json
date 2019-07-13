@@ -82,6 +82,10 @@
     "message": "Kembali ke panel sebelumnya.", 
     "description": "This is alternative text for the back arrow button."
   }, 
+  "no-trackers-subhead": {
+    "message": "Tidak Ada Pelacak Facebook Terdeteksi", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Pelajari lebih lanjut", 
     "description": "This is a link that opens a page with more information about Facebook Container."
