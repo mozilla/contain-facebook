@@ -13,6 +13,9 @@
       }
     }
   }, 
+  "in-fbc-p1": {
+    "message": "Ara el Facebook us pot fer el seguiment en aquest lloc. Per eliminar aquest lloc del Facebook Container, seleccioneu «Llocs permesos en el Facebook Container» i elimineu-lo de la llista."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ no està dins del Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -67,8 +70,20 @@
     "message": "Més informació", 
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
+  "how-fbc-works": {
+    "message": "Com funciona el Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Els botons del Facebook que apareixen en el llocs web de compres, de notícies, etc. contenen elements de seguiment que informen al Facebook dels llocs que heu visitat. Encara que no utilitzeu mai els botons «M'agrada» i «Comparteix», igualment poden recopilar dades sobre la vostra navegació. El Facebook Container bloca aquests elements de seguiment.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "El Facebook Container està blocant aquests elements de seguiment. Però si feu clic en qualsevol d'aquests botons, el Facebook us podrà fer el seguiment.", 
+    "description": ""
+  }, 
   "sites-added-subhead": {
-    "message": "Llocs permesos al Facebook Container", 
+    "message": "Llocs permesos en el Facebook Container", 
     "description": "This is a panel subhead."
   }, 
   "sites-included": {
