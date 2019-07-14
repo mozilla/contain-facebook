@@ -24,6 +24,10 @@
     "message": "Aquesta icona apareix a la barra d'adreces del Firefox quan visiteu llocs que són propietat del Facebook o llocs que heu afegit al Facebook Container.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "on-facebook-p2": {
+    "message": "Aquests llocs han d'accedir a la vostra identitat del Facebook (o saber qui sou) per poder funcionar. Això també significa que el Facebook pot fer el seguiment de tot allò que feu en aquests llocs.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ no està dins del Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -82,6 +86,14 @@
     "message": "Els botons «M'agrada» o «Comparteix» del Facebook o els que us permeten iniciar la sessió en llocs web amb el vostre compte del Facebook contenen elements de seguiment. El Facebook Container els blocarà i mostrarà una icona de tanca perquè veieu on s'han eliminat aquests elements de seguiment.", 
     "description": "This is the first paragraph of the third onboarding panel."
   }, 
+  "onboarding3-img": {
+    "message": "En aquesta imatge es mostra com es veurà la icona de tanca del Facebook Container al costat del botó «M'agrada» del Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Però si feu clic en qualsevol d'aquests botons, el Facebook us podrà fer el seguiment.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "Permet", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -102,9 +114,21 @@
     "message": "Fet", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "btn-arrow-back": {
+    "message": "Torna a la subfinestra anterior.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
   "btn-arrow-forward": {
     "message": "Vés a «Com funciona el Facebook Container»", 
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "No s'ha detectat cap element de seguiment del Facebook", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "El Facebook Container no ha detectat cap element de seguiment del Facebook en aquesta pàgina. Tanmateix, és possible que la pàgina contingui altres tipus d'elements de seguiment.", 
+    "description": ""
   }, 
   "learn-more": {
     "message": "Més informació", 
@@ -114,8 +138,12 @@
     "message": "Com funciona el Facebook Container", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
+  "trackers-detected-subhead": {
+    "message": "Us hem protegit del Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
   "trackers-detected-p1": {
-    "message": "Els botons del Facebook que apareixen en el llocs web de compres, de notícies, etc. contenen elements de seguiment que informen al Facebook dels llocs que heu visitat. Encara que no utilitzeu mai els botons «M'agrada» i «Comparteix», igualment poden recopilar dades sobre la vostra navegació. El Facebook Container bloca aquests elements de seguiment.", 
+    "message": "Els botons del Facebook que apareixen en els llocs de compres, de notícies, etc. contenen elements de seguiment que informen el Facebook dels llocs que heu visitat. Encara que no utilitzeu mai els botons «M'agrada» i «Comparteix», igualment poden recopilar dades sobre la vostra navegació. El Facebook Container bloca aquests elements de seguiment.", 
     "description": ""
   }, 
   "trackers-detected-p2": {
@@ -171,6 +199,10 @@
   }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Voleu permetre que el Facebook us faci el seguiment en aquesta pàgina?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Si voleu utilitzar «Inicia la sessió amb el Facebook», llavors el Facebook podrà fer el seguiment de la vostra activitat en aquest lloc. Això els pot ajudar a elaborar un perfil més complet de la vostra vida en línia.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
