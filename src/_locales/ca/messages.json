@@ -16,6 +16,14 @@
   "in-fbc-p1": {
     "message": "Ara el Facebook us pot fer el seguiment en aquest lloc. Per eliminar aquest lloc del Facebook Container, seleccioneu «Llocs permesos en el Facebook Container» i elimineu-lo de la llista."
   }, 
+  "on-facebook-subhead": {
+    "message": "Quant al Facebook i als llocs inclosos dins del Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Aquesta icona apareix a la barra d’adreces del Firefox quan visiteu llocs que són propietat del Facebook o llocs que heu afegit al Facebook Container.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ no està dins del Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -42,6 +50,18 @@
     "message": "Ús del Facebook Container", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-subhead": {
+    "message": "Quant al Facebook i als llocs inclosos dins del Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Icona de tanca del Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Aquesta icona apareix a la barra d'adreces del Firefox quan visiteu llocs, com Facebook.com, que el Facebook Container manté aïllats.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
   "onboarding3-subhead": {
     "message": "Com puc saber si el Facebook Container funciona?", 
     "description": "This is the subhead for the third onboarding panel."
@@ -66,6 +86,10 @@
     "message": "Fet", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "btn-arrow-forward": {
+    "message": "Vés a «Com funciona el Facebook Container»", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
   "learn-more": {
     "message": "Més informació", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -81,6 +105,10 @@
   "trackers-detected-p2": {
     "message": "El Facebook Container està blocant aquests elements de seguiment. Però si feu clic en qualsevol d'aquests botons, el Facebook us podrà fer el seguiment.", 
     "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Tanca del Facebook Container amb un escut.", 
+    "description": "This is alternative text describing the container fence icon."
   }, 
   "sites-added-subhead": {
     "message": "Llocs permesos en el Facebook Container", 
