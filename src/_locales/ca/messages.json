@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "El Facebook Container aïlla la vostra activitat al Facebook de la vostra activitat a la resta del web per impedir que el Facebook us faci el seguiment en llocs que no són del Facebook mitjançant galetes de tercers.", 
+    "message": "El Facebook Container aïlla la vostra activitat al Facebook de la vostra activitat a la resta del web per impedir que el Facebook utilitzi galetes de tercers per fer-vos el seguiment en llocs que no són del Facebook.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "in-fbc-subhead": {
@@ -78,6 +78,10 @@
     "message": "Com puc saber si el Facebook Container funciona?", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
+  "onboarding3-p1": {
+    "message": "Els botons «M'agrada» o «Comparteix» del Facebook o els que us permeten iniciar la sessió en llocs web amb el vostre compte del Facebook contenen elements de seguiment. El Facebook Container els blocarà i mostrarà una icona de tanca perquè veieu on s'han eliminat aquests elements de seguiment.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
   "btn-allow": {
     "message": "Permet", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -138,12 +142,31 @@
     "message": "LLOCS QUE HEU PERMÈS", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "El Facebook Container manté aïllats els llocs que són propietat del Facebook. Podeu incloure altres llocs dins d'aquest entorn aïllat, però això farà que el Facebook pugui fer el seguiment de la vostra navegació web."
+  }, 
   "remove": {
     "message": "Elimina", 
     "description": ""
   }, 
   "remove-site-subhead": {
     "message": "Voleu eliminar aquest lloc del Facebook Container?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Si elimineu aquest lloc del Facebook Container, la funció «Inicia la sessió amb el Facebook» deixarà de funcionar i se suprimiran les galetes de seguiment del Facebook.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Si voleu tornar a utilitzar «Inicia la sessió amb el Facebook», haureu d'afegir-lo de nou al Facebook Container.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "El Facebook Container ha desactivat aquest botó i ha blocat el Facebook per tal que no sàpiga que heu visitat aquesta pàgina.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "El Facebook Container ha blocat els elements de seguiment del Facebook. Si utilitzeu «Inicia la sessió amb el Facebook» en aquest lloc, el Facebook us podrà fer el seguiment.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
