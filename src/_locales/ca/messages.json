@@ -67,6 +67,10 @@
     "message": "Més informació", 
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
+  "sites-added-subhead": {
+    "message": "Llocs permesos al Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
   "sites-included": {
     "message": "LLOCS INCLOSOS", 
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
