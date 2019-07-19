@@ -20,5 +20,25 @@
   "onUnknownSiteHeader": {
     "message": "Ang site na ito ay wala sa Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "btn-done": {
+    "message": "Tapos na", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "learn-more": {
+    "message": "Matuto ng higit pa", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "sites-included": {
+    "message": "SITES INCLUDED", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Wala", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "Alisin", 
+    "description": ""
   }
 }
