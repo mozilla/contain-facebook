@@ -77,5 +77,17 @@
   "btn-done": {
     "message": "ਮੁਕੰਮਲ", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "no-sites-added": {
+    "message": "ਕੋਈ ਨਹੀਂ", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "ਹਟਾਓ", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "ਇਹ ਮੁੜ ਨਾ ਦਿਖਾਓ", 
+    "description": ""
   }
 }
