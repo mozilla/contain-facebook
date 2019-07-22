@@ -1,0 +1,38 @@
+{
+  "btn-allow": {
+    "message": "ಅನುಮತಿಸು", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "ರದ್ದುಗೊಳಿಸು", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "ಮುಂದೆ", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "ಹಿಂದೆ", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "ಆಗಿದೆ", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "learn-more": {
+    "message": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "sites-included": {
+    "message": "SITES INCLUDED", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "ಯಾವುದೂ ಇಲ್ಲ", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "ತೆಗೆದು ಹಾಕು", 
+    "description": ""
+  }
+}
