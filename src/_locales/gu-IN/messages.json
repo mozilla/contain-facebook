@@ -1,4 +1,18 @@
 {
+  "extensionDescription": {
+    "message": "ફેસબુક કંટેનર તમારી Facebook પ્રવૃત્તિને તમારી બાકીની વેબ પ્રવૃત્તિથી અલગ કરે છે જેથી Facebook ને તૃતીય પક્ષ કૂકીઝ દ્વારા તમારી વેબસાઇટ પર ટ્રૅક કરવાથી અટકાવી શકાય.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "in-fbc-subhead": {
+    "message": "$URL$ Facebook Container માં છે.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
   "facebookContainer": {
     "message": "ફેસબુક કન્ટેનર", 
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
