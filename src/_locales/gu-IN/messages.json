@@ -24,6 +24,10 @@
     "message": "આ ચિન્હ ફાયરફોક્સ ના એડ્રેસ બાર માં આવશે જયારે તમે ફેસબૂક માલિકી ની સાઈટ અથવા ફેસબૂક Container માં ઉમેરેલી સાઇટ્સ છે તેની મુલાકાત લેશો ત્યારે.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "on-facebook-p2": {
+    "message": "આ સાઇટ્સને કામ કરવા માટે તમારી Facebook ઓળખ (અથવા તમે કોણ છો તે) સુધી પહોંચવાની જરૂર છે. આનો અર્થ એ પણ છે કે આ સાઇટ્સ પર તમે કરો છો તે બધું જ Facebook ટ્રૅક કરી શકે છે.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ Facebook કંટેનરમાં નથી.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
