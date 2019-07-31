@@ -44,6 +44,8 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[aria-label*='Log in with Facebook']", // Tinder
   "[action*='facebook_login']", // Airbnb
   "[action*='facebook_signup']", // Airbnb
+  "button[color='facebookBlue']", // Patreon
+  "[class*='btn-facebook']", // Mixcloud
   "[class*='fb-login']" // Default FB class name "fbc-login-button"
 
 ];
