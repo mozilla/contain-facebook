@@ -145,5 +145,68 @@
   "trackers-detected-p1": {
     "message": "ប៊ូតុង Facebook ដែល​បង្ហាញ​នៅ​លើ​ការទិញ ដំណឹង និង​គេហទំព័រ​ផ្សេងៗ​មាន​កម្មវិធី​តាមដាន ដែល​ប្រាប់ Facebook កន្លែង​ណា​ដែល​អ្នក​ស្ថិត​នៅ​លើ​បណ្ដាញ។ ទោះបីជា​អ្នក​មិន​ដែល​ប្រើប្រាស់​ប៊ូតុង​ទាំងនេះ​ ដើម្បី​ចូលចិត្ត ឬ​ចែករំលែក​ក៏​ដោយ កម្មវិធី​តាមដាន​នៅតែ​អាច​ប្រមូល​ទិន្នន័យ​អំពី​ការរុករក​របស់​អ្នក។ Facebook Container ទប់ស្កាត់​កម្មវិធី​តាមដាន​ទាំងនេះ។", 
     "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container ទប់ស្កាត់​កម្មវិធី​តាមដាន​ទាំងនេះ។ ទោះជាយ៉ាងណាក៏ដោយ ប្រសិនបើ​អ្នក​ចុច​លើ​ប៊ូតុង​ណា​មួយ​ក្នុង​ចំណោម​ប៊ូតុង​ទាំងនេះ Facebook នឹង​អាច​តាមដាន​អ្នកបាន។", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "របង Facebook Container ជាមួយ​របាំង​ការពារ", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "គេហទំព័រ​ដែល​អនុញ្ញាត​នៅ​ក្នុង Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "គេហទំព័រ​ដែល​បាន​បញ្ចូល", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "គ្មាន", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "គេហទំព័រ​ដែល​អ្នក​បាន​អនុញ្ញាត", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container ដាក់​គេហទំព័រ​ដែល​គ្រប់គ្រង​ដោយ Facebook នៅ​ក្នុង​ព្រំដែន​មួយ។ អ្នក​អាច​អនុញ្ញាត​គេហទំព័រ​ផ្សេងៗ​​នៅ​ក្នុង​ព្រំដែន​នោះ ប៉ុន្តែ​វា​នឹង​អនុញ្ញាត​ឲ្យ Facebook តាមដាន​ការរុករក​នៅ​លើ​បណ្ដាញ​របស់​អ្នក​កាន់តែ​ច្រើន​ជាង​មុន។"
+  }, 
+  "remove": {
+    "message": "យក​ចេញ", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "យក​គេហទំព័រ​ចេញ​ពី Facebook Container ដែរ​ឬ​ទេ?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "ការយក​គេហទំព័រ​នេះ​ចេញ​ពី Facebook Container មានន័យ​ថា ការចូល​តាមរយៈ​​មុខងារ Facebook នឹង​លែង​ដំណើរការ​ ហើយ​ខូគី​តាមដាន Facebook នឹង​ត្រូវ​លុបចេញ។", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " ប្រសិនបើ​អ្នក​ចង់​ប្រើប្រាស់​ការចូល​តាមរយៈ Facebook ម្ដងទៀត អ្នក​នឹង​ត្រូវ​បញ្ចូល​វា​ទៅ​ក្នុង Facebook Container ឡើងវិញ។", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container បាន​បិទ​ប៊ូតុង​នេះ និង​បាន​ទប់ស្កាត់ Facebook មិន​ឲ្យ​តាមដាន​ការចូល​មើល​​ទំព័រ​នេះ​របស់​អ្នក។", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container បាន​ទប់ស្កាត់​កម្មវិធី​តាមដាន Facebook ។ ប្រសិនបើ​អ្នក​ប្រើប្រាស់​ការ​ចូល​តាមរយៈ Facebook នៅ​លើ​គេហទំព័រ​នេះ Facebook នឹង​អាច​តាមដាន​អ្នក។", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "អនុញ្ញាតឲ្យ Facebook តាមដាន​អ្នក​នៅ​ទីនេះ​ដែរ​ឬ​ទេ?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "ប្រសិនបើ​អ្នក​ចង់​ប្រើប្រាស់​ការចូល​តាមរយៈ Facebook នោះ Facebook នឹង​អាច​តាមដាន​សកម្មភាព​របស់​អ្នក​នៅលើ​គេហទំព័រ​នេះ។ វា​អាច​ជួយ​ពួកគេ​បង្កើត​រូបភាព​ពេញលេញ​នៃ​ជីវិត​របស់​អ្នក​នៅ​លើ​អ៊ីនធឺណិត។", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "កុំបង្ហាញ​វា​ដល់​ខ្ញុំ​ម្ដង​ទៀត", 
+    "description": ""
   }
 }
