@@ -78,12 +78,44 @@
     "message": "ਮੁਕੰਮਲ", 
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
+  "btn-arrow-back": {
+    "message": "ਪਿਛਲੇ ਪੈਨਲ ‘ਤੇ ਵਾਪਸ ਜਾਓ।", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "ਫੇਸੁਬੱਕ ਕਨਟੇਨਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ ‘ਤੇ ਜਾਓ", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "ਕੋਈ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨਹੀਂ ਖੋਜੇ ਗਏ", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "ਹੋਰ ਜਾਣੋ", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "ਅਸੀਂ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਤੋਂ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਹੈ।", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
   "no-sites-added": {
     "message": "ਕੋਈ ਨਹੀਂ", 
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "remove": {
     "message": "ਹਟਾਓ", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "ਸਾਈਟ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਤੋਂ ਹਟਾਉਣੀ ਹੈ?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "ਕੀ ਫੇਸਬੁੱਕ ਨੂੰ ਇੱਥੇ ਤੁਹਾਨੂੰ ਟਰੈਕ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦੇਣੀ ਹੈ?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
