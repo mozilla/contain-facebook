@@ -102,6 +102,10 @@
     "message": "ਅਸੀਂ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਤੋਂ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਹੈ।", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-fence-alt": {
+    "message": "ਢਾਲ ਨਾਲ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਾੜ।", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
   "no-sites-added": {
     "message": "ਕੋਈ ਨਹੀਂ", 
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
