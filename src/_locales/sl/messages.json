@@ -142,6 +142,10 @@
     "message": "Zaščitili smo vas pred Facebookom.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p1": {
+    "message": "Facebookovi gumbi, ki se pojavljajo na različnih straneh (kot so spletne trgovine, portali z novicami ...), vsebujejo sledilce, ki Facebooku sporočajo vašo dejavnost na spletu. Tudi če teh gumbov nikoli ne uporabljate, lahko sledilci zbirajo podatke o vašem brskanju. Facebook Container te sledilce zavrača.", 
+    "description": ""
+  }, 
   "trackers-detected-p2": {
     "message": "Facebook Container zavrača te sledilce. Če pa kliknete na kateregakoli od teh gumbov, vam bo Facebook lahko sledil.", 
     "description": ""
@@ -165,6 +169,9 @@
   "sites-allowed": {
     "message": "STRANI, KI STE JIH DOVOLILI", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container ustvari mejo za Facebookove strani. V to mejo lahko dodate tudi druge strani, vendar bo to Facebooku omogočilo, da lahko bolje spremlja vaše brskanje po spletu."
   }, 
   "remove": {
     "message": "Odstrani", 
