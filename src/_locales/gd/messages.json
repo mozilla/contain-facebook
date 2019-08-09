@@ -69,5 +69,13 @@
   "onboarding2-alt": {
     "message": "Ìomhaigheag feansa Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p2": {
+    "message": "Feumaidh na làraichean seo cothrom air do dhearbh-aithne Facebook (no fiosrachadh cò thusa) mus obraich iad. Tha seo a’ ciallachadh cuideachd gun urrainn dha Facebook rud sam bith a thracadh a nì thu air na làraichean seo.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding3-subhead": {
+    "message": "Ciamar a bhios fios agam gu bheil Facebook Container ag obair?", 
+    "description": "This is the subhead for the third onboarding panel."
   }
 }
