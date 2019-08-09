@@ -3,8 +3,8 @@
     "message": "Tha Facebook Container a’ cumail na nì thu air Facebook fa leth on chòrr dhen ghnìomhachd air loidhne agad airson Facebook a chumail o bhith ’gad thracadh taobh a-muigh làrach-lìn Facebook le briosgaidean threas-phàrtaidhean.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "Tha $URL$ ann am Facebook Container.", 
+  "in-fbc-subhead": {
+    "message": "Tha $URL$ sa Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
@@ -13,9 +13,20 @@
       }
     }
   }, 
-  "onFacebookText": {
-    "message": "Nochdaidh an ìomhaigheag seo ann am bàr an t-seòlaidh nuair a thadhlas tu air làraichean-lìn mar Facebook.com, Instagram.com no Messenger.com a tha am broinn Facebook Container.", 
+  "in-fbc-p1": {
+    "message": "’S urrainn dha Facebook do thracadh air an làrach seo a-nis. Gus an làrach seo a thoirt air falbh o Facebook Container, tagh “Làraichean ceadaichte ann am Facebook Container” is thoir air falbh on liosta e."
+  }, 
+  "on-facebook-subhead": {
+    "message": "Air Facebook agus làraichean air crìoch Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Nochdaidh an ìomhaigheag seo ann am bàr-seòlaidh Firefox nuair a thadhlas tu air làraichean a tha aig Facebook no làraichean a chuir thu ri Facebook Container.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "Feumaidh na làraichean seo cothrom air do dhearbh-aithne Facebook (no fiosrachadh cò thusa) mus obraich iad. Tha seo a’ ciallachadh cuideachd gun urrainn dha Facebook rud sam bith a thracadh a nì thu air na làraichean seo.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   }, 
   "notOnFacebookHeader": {
     "message": "Chan eil $URL$ ann am Facebook Container.", 
@@ -34,5 +45,29 @@
   "onUnknownSiteHeader": {
     "message": "Chan eil an làrach seo am broinn Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "A’ cleachdadh Facebook Container", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p1": {
+    "message": "Nì Facebook tracadh air do bhrasadh fada o Facebook.com fhèin. Mar eisimpleir, ma chleachdas tu putanan Facebook Like agus Share, bidh fios aca càit an robh thu – fiù air duilleagan nach duirt thu gur toil leat iad no feadhainn nach do cho-roinn thu.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Cruthaichidh Facebook Container crìoch eadar làraichean Facebook is an còrr dhen eadar-lìon airson ’s gum bi e nas dorra dha Facebook do thracadh air loidhne.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Air Facebook agus làraichean air crìoch Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Ìomhaigheag feansa Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
   }
 }
