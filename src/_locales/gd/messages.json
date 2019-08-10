@@ -17,7 +17,7 @@
     "message": "’S urrainn dha Facebook do thracadh air an làrach seo a-nis. Gus an làrach seo a thoirt air falbh o Facebook Container, tagh “Làraichean ceadaichte ann am Facebook Container” is thoir air falbh on liosta e."
   }, 
   "on-facebook-subhead": {
-    "message": "Air Facebook agus làraichean air crìoch Facebook Container", 
+    "message": "Air Facebook agus làraichean ann an crò Facebook Container", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "on-facebook-p1": {
@@ -63,12 +63,16 @@
     "description": "Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-subhead": {
-    "message": "Air Facebook agus làraichean air crìoch Facebook Container", 
+    "message": "Air Facebook agus làraichean ann an crò Facebook Container", 
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding2-alt": {
     "message": "Ìomhaigheag feansa Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Nochdaidh an ìomhaigheag seo ann am bàr-seòlaidh Firefox nuair a thadhlas tu air làraichean mar Facebook.com a tha ann an crò Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
   }, 
   "onboarding2-p2": {
     "message": "Feumaidh na làraichean seo cothrom air do dhearbh-aithne Facebook (no fiosrachadh cò thusa) mus obraich iad. Tha seo a’ ciallachadh cuideachd gun urrainn dha Facebook rud sam bith a thracadh a nì thu air na làraichean seo.", 
@@ -77,5 +81,100 @@
   "onboarding3-subhead": {
     "message": "Ciamar a bhios fios agam gu bheil Facebook Container ag obair?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Bidh tracaichean ann am putanan leis an innis thu gur toil leat rud no leis an urrainn dhut rudan a cho-roinneadh air Facebook no a bheir comas dhut clàradh a-steach leis a’ chunntas Facebook agad. Bacaidh Facebook Container na tracaichean seo ’s nochaidh e ìomhaigheag feansa ach am bi fios agad gun deach tracaichean a thoirt air falbh.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Tha an dealbh seo a’ sealltainn mar a nochdas ìomhaigheag feansa Facebook Container ri taobh putan Like le Facebook air duilleagan.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Ge-tà, ma bhriogas tu air gin dhe na putanan seo, bidh e comasach dha Facebook do thracadh.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Ceadaich", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Sguir dheth", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Air adhart", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Air ais", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Deiseil", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Till dhan phanail roimhe.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Tadhail air “Mar a dh’obraicheas Facebook Container”", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Cha do mhothaich sinn do thracaiche Facebook sam bith", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Cha do mhothaich Facebook Container do thracaiche Facebook sam bith air an duilleag seo. Ge-tà, dh’fhaoidte gu bheil tracaichean eile air an duilleag fhathast.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Barrachd fiosrachaidh", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Mar a dh’obraicheas Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Dhìon sinn thu o Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Feansa Facebook Container le sgiath.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Làraichean ceadaichte ann am Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "LÀRAICHEAN ’GAN GABHAIL A-STAIGH", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Chan eil gin", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "LÀRAICHEAN A CHEADAICH THU", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Cuiridh Facebook Container làraichean le Facebook ann an crò. ’S urrainn dhut làraichean eile a leigeil a-steach dhan chrò ach bheir seo comas dha Facebook barrachd dhe na nì thu air loidhne a thracadh."
+  }, 
+  "remove": {
+    "message": "Thoir air falbh", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "A bheil thu airson an làrach a thoirt air falbh o Facebook Container?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Na seall seo dhomh a-rithist", 
+    "description": ""
   }
 }
