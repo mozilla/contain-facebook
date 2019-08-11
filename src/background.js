@@ -26,7 +26,7 @@ const FACEBOOK_DOMAINS = [
 // Oculus
   "oculus.com", "oculusbrand.com", "oculusforbusiness.com", "oculusrift.com", "oculusvr.com",
 // Facebook Design
-  "facebook.design", "facebookbrand.com"
+  "facebook.design", "facebookbrand.com",
 // Zuckerberg
   "chanzuckerberg.com", "markzuckerberg.com", "tellmarkzuckerberg.com", "tellzuck.com", "zuckerberg.com", "zuckerberg.net",
 // Facebook Careers
