@@ -20,6 +20,10 @@
     "message": "Facebook पर और Facebook Container बाउंड्री की साइटों में", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "on-facebook-p1": {
+    "message": "जब आप फ़ेसबुक के स्वामित्व वाली साइटों या उन साइट्स पर जाते हैं, जिन्हें आपने फेसबुक कंटेनर में जोड़ा है, तो यह अनुसंकेत Firefox पता बार में दिखाई देता है।", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ Facebook Container में नहीं है।", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
