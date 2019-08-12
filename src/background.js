@@ -4,6 +4,9 @@ const FACEBOOK_CONTAINER_DETAILS = {
   icon: "fence"
 };
 
+// Comments in the constant need two spaces before "//".
+// Only use the most basic domain because all sub domains are captured. "facebook.com" covers work.facebook.com in the container tab.
+// "www.facebook.com" is required for a cookie test in build checks.
 const FACEBOOK_DOMAINS = [
   // Facebook
   "www.facebook.com", "facebook.com", "facebook.net", "facebookmail.com", "fb.com", "fb.me",
@@ -20,7 +23,7 @@ const FACEBOOK_DOMAINS = [
   // Libra
   "calibra.com",
   // CDN Static, Tracking, Back-end
-  "atdmt.com", "cdninstagram.com", "connect.facebook.net.edgekey.net", "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbcdn.com", "fbcdn.net", "fbsbx.com", "fbsbx.com.online-metrix.net", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net", "tfbnw.net", "fbaddins.com",
+  "atdmt.com", "cdninstagram.com", "facebook.net.edgekey.net", "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbcdn.com", "fbcdn.net", "fbsbx.com", "fbsbx.com.online-metrix.net", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net", "tfbnw.net", "fbaddins.com",
   // Onavo
   "onavo.com", "onavo.net", "onavo.org",
   // Oculus
