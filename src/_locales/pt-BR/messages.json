@@ -71,7 +71,7 @@
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
   "onboarding2-p1": {
-    "message": "Este ícone aparece na barra de endereços do Firefox quando você visita sites, como Facebook.com, que estão dentro da fronteira do Facebook Container.", 
+    "message": "Este ícone aparece na barra de endereços do Firefox quando você visita sites como facebook.com que estão dentro da fronteira do Facebook Container.", 
     "description": "This is the first paragraph of the second onboarding panel."
   }, 
   "onboarding2-p2": {
@@ -167,11 +167,11 @@
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
   "sites-allowed": {
-    "message": "SITES QUE VOCÊ PERMITIU", 
+    "message": "SITES QUE VOCÊ ADICIONOU", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
   "sites-added-p1": {
-    "message": "O Facebook Container coloca sites pertencentes ao Facebook dentro da fronteira. Você pode permitir outros sites dentro da fronteira, mas isso permite que o Facebook rastreie mais da sua navegação na web."
+    "message": "O Facebook Container confina as atividades de sites pertencentes ao Facebook no interior de uma fronteira. Você pode adicionar outros sites dentro dessa fronteira, mas isso permitirá que o Facebook rastreie mais da sua navegação na web."
   }, 
   "remove": {
     "message": "Remover", 
