@@ -82,6 +82,10 @@
     "message": "ਮੈਨੂੰ ਕਿਵੇਂ ਪਤਾ ਲੱਗੇਗਾ ਕਿ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਕੰਮ ਕਰ ਰਿਹਾ ਹੈ?", 
     "description": "This is the subhead for the third onboarding panel."
   }, 
+  "onboarding3-p1": {
+    "message": "ਜੋ ਬਟਨ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ‘ਤੇ ਚੀਜ਼ਾਂ ਨੂੰ ਲਾਈਕ ਜਾਂ ਸ਼ੇਅਰ ਕਰਨ ਦਿੰਦੇ ਹਨ ਜਾਂ ਤੁਹਾਨੂੰ ਵੈਬਸਾਈਟ ਵਿੱਚ ਤੁਹਾਡਾ ਫੇਸਬੁੱਕ ਖਾਤਾ ਇਸਤੇਮਾਲ ਕਰ ਕੇ ਲਾਗਇਨ ਕਰਨ ਦਿੰਦੇ ਹਨ ਤਾਂ ਉਨ੍ਹਾਂ ਵਿੱਚ ਟਰੈਕਰ ਹੁੰਦੇ ਹਨ। ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਇਨ੍ਹਾਂ ਟਰੈਕਰਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾ ਦੇਵੇਗਾ ਅਤੇ ਜਿੱਥੇ ਟਰੈਕਰ ਹਟਾਏ ਗਏ ਹਨ, ਉੱਥੇ ਵਾੜ ਦਾ ਆਈਕਾਨ ਦਿਖਾਏਗਾ।", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
   "onboarding3-img": {
     "message": "ਇਹ ਤਸਵੀਰ ਵਿਖਾਉਂਦੀ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਦਾ ਵਾੜ ਆਈਕਾਨ ਸਫ਼ੇ ਵਿ‘ਚ ਫੇਸਬੁੱਕ ਤਰ੍ਹਾਂ ਬਟਨ ਦੇ ਨੇੜੇ ਕਿਵੇਂ ਪ੍ਰਗਟ ਹੋਵੇਗਾ।", 
     "description": "This is alternative text for the image shown in the third onboarding panel."
@@ -122,6 +126,10 @@
     "message": "ਕੋਈ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨਹੀਂ ਖੋਜੇ ਗਏ", 
     "description": ""
   }, 
+  "no-trackers-p1": {
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨੇ ਇਸ ਸਫ਼ੇ ‘ਤੇ ਕਿਸੇ ਵੀ ਫੇਸਬੁੱਕ ਟਰੈਕਰਾਂ ਦਾ ਪਤਾ ਨਹੀਂ ਲਗਾਇਆ। ਹਾਲਾਂਕਿ, ਸਫ਼ੇ ਵਿੱਚ ਅਜੇ ਵੀ ਹੋਰ ਕਿਸਮ ਦੇ ਟਰੈਕਰ ਹੋ ਸਕਦੇ ਹਨ।", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "ਹੋਰ ਜਾਣੋ", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -134,9 +142,21 @@
     "message": "ਅਸੀਂ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਤੋਂ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਹੈ।", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p1": {
+    "message": "ਖਰੀਦਦਾਰੀ, ਖ਼ਬਰਾਂ ਅਤੇ ਹੋਰ ਸਾਈਟਾਂ ‘ਤੇ ਆਉਣ ਵਾਲੇ ਫੇਸਬੁੱਕ ਬਟਨ ਖ਼ਤਰੇ ਵਿਚ ਸ਼ਾਮਲ ਹਨ, ਜੋ ਫੇਸਬੁੱਕ ਨੂੰ ਦੱਸਦੇ ਹਨ ਕਿ ਤੁਸੀਂ ਵੈਬ ‘ਤੇ ਕਿੱਥੇ ਹੋ। ਭਾਵੇਂ ਤੁਸੀਂ ਇਹਨਾਂ ਬਟਨ ਨੂੰ ਪਸੰਦ ਜਾਂ ਸਾਂਝਾ ਕਰਨ ਲਈ ਕਦੇ ਵੀ ਨਹੀਂ ਵਰਤਦੇ, ਟਰੈਕ-ਕਰਤਾ ਅਜੇ ਵੀ ਤੁਹਾਡੀ ਬਰਾਊਜ਼ਿੰਗ ਬਾਰੇ ਡਾਟਾ ਇਕੱਠਾ ਕਰ ਸਕਦੇ ਹਨ। ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਇਨ੍ਹਾਂ ਟਰੈਕਰ ਉੱਤੇ ਪਾਬੰਦੀ ਲਗਾਉਂਦਾ ਹੈ।", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਇਨ੍ਹਾਂ ਟਰੈਕਰ ‘ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਂਦਾ ਹੈ। ਹਾਲਾਂਕਿ, ਜੇ ਤੁਸੀਂ ਇਹਨਾਂ ਵਿਚੋਂ ਕਿਸੇ ਵੀ ਬਟਨ ‘ਤੇ ਕਲਿੱਕ ਕਰਦੇ ਹੋ ਤਾਂ ਤੁਹਾਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋਣਗੇ।", 
+    "description": ""
+  }, 
   "trackers-detected-fence-alt": {
     "message": "ਢਾਲ ਨਾਲ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਾੜ।", 
     "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ‘ਚ ਆਗਿਆ ਦਿੱਤੀਆਂ ਸਾਈਟਾਂ", 
+    "description": "This is a panel subhead."
   }, 
   "sites-included": {
     "message": "ਸਾਈਟਾਂ ਸ਼ਾਮਲ ਹਨ", 
@@ -146,12 +166,35 @@
     "message": "ਕੋਈ ਨਹੀਂ", 
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   }, 
+  "sites-allowed": {
+    "message": "ਤੁਹਾਡੇ ਵਲੋਂ ਆਗਿਆ ਦਿੱਤੀਆਂ ਸਾਈਟਾਂ", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਹੱਦ ਦੇ ਅੰਦਰ ਫੇਸਬੁੱਕ-ਮਲਕੀਅਤ ਵਾਲੀਆਂ ਸਾਈਟਾਂ ਨੂੰ ਰੱਖਦਾ ਹੈ। ਤੁਸੀਂ ਦੂਜੀ ਸਾਈਟਾਂ ਨੂੰ ਹੱਦ ਵਿੱਚ ਮਨਜ਼ੂਰ ਕਰ ਸਕਦੇ ਹੋ, ਪਰ ਇਹ ਫੇਸਬੁੱਕ ਨੂੰ ਤੁਹਾਡੇ ਵੈਬ ਬਰਾਊਜ਼ਿੰਗ ਦਾ ਵੱਧ ਤੋਂ ਵੱਧ ਟਰੈਕ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦੇਵੇਗਾ।"
+  }, 
   "remove": {
     "message": "ਹਟਾਓ", 
     "description": ""
   }, 
   "remove-site-subhead": {
     "message": "ਸਾਈਟ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਤੋਂ ਹਟਾਉਣੀ ਹੈ?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਤੋਂ ਇਸ ਸਾਈਟ ਨੂੰ ਹਟਾਉਣ ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਦੇ ਫੀਚਰ ਨਾਲ ਲਾਗ ਇਨ ਕਰੋ ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ ਅਤੇ ਫੇਸਬੁੱਕ ਟਰੈਕਿੰਗ ਕੂਕੀਜ਼ ਹਟਾ ਦਿੱਤੇ ਜਾਣਗੇ।", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " ਜੇ ਤੁਸੀਂ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗਇਨ ਕਰਨਾ ਮੁੜ ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਤੁਹਾਨੂੰ ਇਸ ਨੂੰ ਵਾਪਸ ਫੇਸਬੁੱਕ ਕੰਟੇਨਰ ਨਾਲ ਜੋੜਨ ਦੀ ਜ਼ਰੂਰਤ ਹੋਵੇਗੀ।", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨੇ ਇਹ ਬਟਨ ਅਸਮਰੱਥ ਕਰ ਦਿੱਤਾ ਹੈ ਅਤੇ ਫੇਸਬੁੱਕ ਨੂੰ ਇਸ ਸਫ਼ੇ ‘ਤੇ ਤੁਹਾਡੀ ਫੇਰੀ ਦਾ ਪਤਾ ਲਗਾਉਣ ਤੋਂ ਪਾਬੰਦੀ ਲਗਾਈ ਹੈ।", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨੇ ਫੇਸਬੁੱਕ ਟਰੈਕਰਾਂ ਨੂੰ ਰੋਕ ਦਿੱਤਾ ਹੈ। ਜੇ ਤੁਸੀਂ ਇਸ ਸਾਈਟ ‘ਤੇ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗਇਨ ਕਰੋਗੇ ਤਾਂ ਫੇਸਬੁੱਕ ਤੁਹਾਡੇ ਲਈ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋਵੇਗਾ।", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
