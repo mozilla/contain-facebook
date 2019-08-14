@@ -106,6 +106,10 @@
     "message": "ਢਾਲ ਨਾਲ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਾੜ।", 
     "description": "This is alternative text describing the container fence icon."
   }, 
+  "sites-included": {
+    "message": "ਸਾਈਟਾਂ ਸ਼ਾਮਲ ਹਨ", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
   "no-sites-added": {
     "message": "ਕੋਈ ਨਹੀਂ", 
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
