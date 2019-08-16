@@ -29,7 +29,7 @@
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   }, 
   "notOnFacebookHeader": {
-    "message": "$URL$ tidak ada dalam Kontainer Facebook.", 
+    "message": "$URL$ tidak ada dalam Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
