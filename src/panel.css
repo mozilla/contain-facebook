@@ -89,7 +89,7 @@ h3 {
 }
 
 .Facebook-text::after {
-  background: url("/img/fbc-icon2.svg") center no-repeat;
+  background: url("/img/fbc-icon-dark.svg") center no-repeat;
   background-size: 14px auto;
   display: inline-block;
   width: 14px;
