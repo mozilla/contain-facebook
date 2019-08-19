@@ -29,12 +29,12 @@
         "theme_icons": [
             {
                 "light": "/img/fbc-icon.svg",
-                "dark": "/img/fbc-icon2.svg",
+                "dark": "/img/fbc-icon-dark.svg",
                 "size": 16
             },
             {
                 "light": "/img/fbc-icon.svg",
-                "dark": "/img/fbc-icon2.svg",
+                "dark": "/img/fbc-icon-dark.svg",
                 "size": 32
             }
         ]
