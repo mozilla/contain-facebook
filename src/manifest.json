@@ -23,18 +23,18 @@
 
     "browser_action": {
         "browser_style": true,
-        "default_icon": "/img/fbc-icon2.svg",
+        "default_icon": "/img/fbc-icon-dark.svg",
         "default_title": "Facebook Container",
         "default_popup": "panel.html",
         "theme_icons": [
             {
                 "light": "/img/fbc-icon.svg",
-                "dark": "/img/fbc-icon2.svg",
+                "dark": "/img/fbc-icon-dark.svg",
                 "size": 16
             },
             {
                 "light": "/img/fbc-icon.svg",
-                "dark": "/img/fbc-icon2.svg",
+                "dark": "/img/fbc-icon-dark.svg",
                 "size": 32
             }
         ]
