@@ -41,8 +41,8 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[action*='facebook_login']", // Airbnb
   "[action*='facebook_signup']", // Airbnb
   "[data-tag='login-form'] ~ span button[color='facebookBlue']", // Patreon
-  ".welcome-buttons .btn-facebook", // Mixcloud homepage
-  ".auth-form .btn-facebook", // Mixcloud login modal
+  ".homepage-photo-leader .welcome-buttons div.btn-facebook", // Mixcloud homepage
+  ".modal-content .auth-form div.btn-facebook", // Mixcloud login modal
   "[class*='fb-login']" // Default FB class name "fbc-login-button"
 
 ];
