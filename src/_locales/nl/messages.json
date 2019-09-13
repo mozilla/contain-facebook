@@ -127,7 +127,7 @@
     "description": ""
   }, 
   "no-trackers-p1": {
-    "message": "Facebook Container heeft gen Facebook-trackers op deze pagina gedetecteerd. De pagina kan echter nog andere typen trackers bevatten.", 
+    "message": "Facebook Container heeft geen Facebook-trackers op deze pagina gedetecteerd. De pagina kan echter nog andere typen trackers bevatten.", 
     "description": ""
   }, 
   "learn-more": {
