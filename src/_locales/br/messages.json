@@ -188,5 +188,25 @@
   "remove-site-p2": {
     "message": " Ma fell deoc'h kennaskañ gant Facebbok en-dro e rankot e ouzhpennañ adarre d'an endalc'her Facebook.", 
     "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Diweredekaet eo bet an afell-mañ gant endalc'her Facebook hag harzhet eo bet Facebook da heuliañ ac'hanoc'h war ar bajenn-mañ.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Stanket eo bet heulierien Facebook gant Facebook Container. Ma arverit Facebook war al lec'hienn-mañ e vo gouest da heuliañ ac'hanoc'h.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Aotren Facebook da heuliañ ac'hanoc'h?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Ma fell deoc'h kennaskañ gant Facebook e vo gouest da heuliañ hoc'h oberiantiz war al lec'hienn-mañ. Gallout a ra sikour anezho da sevel ur skeudenn resisoc'h eus ho puhez.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Na ziskouez din an dra-se en-dro", 
+    "description": ""
   }
 }
