@@ -169,5 +169,24 @@
   "sites-allowed": {
     "message": "LEC'HIENNOÙ AOTREET GANEOC'H", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container a vir al lec'hiennoù perc'hennet gant Facebook da vont dreist o harzhoù. Gallout a rit aotren lec'hiennoù all da vezañ e-barzh an harzhoù-se, met aotren a raio Facebook da heuliañ hoc'h oberiantiz merdeiñ."
+  }, 
+  "remove": {
+    "message": "Dilemel", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Dilemel al lec'hienn-mañ eus endalc'her Facebook ?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "Dilemel al lec'hienn-mañ eus an endalc'her Facebook a denno ar c'hennask dre Facebook ha dilamet e vo toupinoù heuliañ Facebook.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Ma fell deoc'h kennaskañ gant Facebbok en-dro e rankot e ouzhpennañ adarre d'an endalc'her Facebook.", 
+    "description": ""
   }
 }
