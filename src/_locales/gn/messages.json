@@ -119,7 +119,7 @@
     "description": "This is alternative text for the back arrow button."
   }, 
   "btn-arrow-forward": {
-    "message": "Eho Mba’éichapa omba’apo Facebook Container", 
+    "message": "Ehecha mba’éicha oiko Facebook Container", 
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   }, 
   "no-trackers-subhead": {
@@ -135,7 +135,7 @@
     "description": "This is a link that opens a page with more information about Facebook Container."
   }, 
   "how-fbc-works": {
-    "message": "Mba’éichapa omba’apo Facebook Container", 
+    "message": "Mba’éicha oiko Facebook Container", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
   "trackers-detected-subhead": {
