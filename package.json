@@ -1,6 +1,6 @@
 {
   "name": "contain-facebook",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies. ",
   "main": "background.js",
   "scripts": {
