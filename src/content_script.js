@@ -17,6 +17,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='signup-provider-facebook']", // Fandom
   ".socialContainer-0-131 .mainFacebook-0-150", // Honey
   "[class*='facebook_login_click']", // Hi5
+  "[data-test-id*='facebook-create-button']", // Doordash
   "[class*='facebook-signup-button']", // Strava
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
