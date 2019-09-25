@@ -33,6 +33,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   ".social-login .button--facebook", // noovie.com
   "#home_account_fb.unlogged-btn-facebook", // Deezer
   "[class*='_1HC-DxGDAHiEbG3x6-vzL9']", // Match UK Login
+  ".social-login > button.btn-facebook", // GroupMe
   "[class*='meetup-signupModal-facebook']", // Meetup Signup Homepage
   "#register-form--creds .button--facebook", // Meetup Signup Static Page
   "#modal--register .button--facebook", // Meetup Signup Non-homepage
