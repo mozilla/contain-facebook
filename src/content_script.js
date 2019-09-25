@@ -24,6 +24,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[href*='signin/facebook']",
   "[href*='/auth/facebook']", // Producthunt
   "[data-oauthserver*='facebook']", // Stackoverflow
+  "[class*='ModalLoginSignup-facebook-connect']", // Quora
   "[id*='facebook_connect_button']", // Quora
   "[data-action*='facebook-auth']", //Medium
   "[data-login-with-facebook='']", // etsy
