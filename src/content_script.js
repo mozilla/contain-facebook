@@ -24,7 +24,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[href*='signin/facebook']",
   "[href*='/auth/facebook']", // Producthunt
   "[data-oauthserver*='facebook']", // Stackoverflow
-  "[class*='ModalLoginSignup-facebook-connect']", // Quora
+  "[class*='ModalLoginSignup-facebook-connect']", // Freelancer.com
   "[id*='facebook_connect_button']", // Quora
   "[data-action*='facebook-auth']", //Medium
   "[data-login-with-facebook='']", // etsy
@@ -38,6 +38,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "#modal--register .button--facebook", // Meetup Signup Non-homepage
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
   ".fb-start .ybtn--social.ybtn--facebook", // Yelp
+  "form > .c-btn.c-btn--facebook.c-btn--icon.c-btn--full", // komoot
   "[aria-label*='Log in with Facebook']", // Tinder
   "[action*='facebook_login']", // Airbnb
   "[action*='facebook_signup']", // Airbnb
