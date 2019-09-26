@@ -31,6 +31,10 @@
     "message": "Man k'o ta pa Facebook Container re ruxaq re'.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
   "btn-allow": {
     "message": "Tiya' q'ij", 
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
