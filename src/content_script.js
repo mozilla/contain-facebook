@@ -17,6 +17,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='signup-provider-facebook']", // Fandom
   ".socialContainer-0-131 .mainFacebook-0-150", // Honey
   "[class*='facebook_login_click']", // Hi5
+  "[data-test-id*='facebook-create-button']", // Doordash
   "[class*='facebook-signup-button']", // Strava
   "[class*='facebook-connect-button']", // Twitch
   "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
@@ -24,6 +25,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[href*='signin/facebook']",
   "[href*='/auth/facebook']", // Producthunt
   "[data-oauthserver*='facebook']", // Stackoverflow
+  "[class*='ModalLoginSignup-facebook-connect']", // Freelancer.com
   "[id*='facebook_connect_button']", // Quora
   "[data-action*='facebook-auth']", //Medium
   "[data-login-with-facebook='']", // etsy
@@ -32,11 +34,13 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   ".social-login .button--facebook", // noovie.com
   "#home_account_fb.unlogged-btn-facebook", // Deezer
   "[class*='_1HC-DxGDAHiEbG3x6-vzL9']", // Match UK Login
+  ".social-login > button.btn-facebook", // GroupMe
   "[class*='meetup-signupModal-facebook']", // Meetup Signup Homepage
   "#register-form--creds .button--facebook", // Meetup Signup Static Page
   "#modal--register .button--facebook", // Meetup Signup Non-homepage
   ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
   ".fb-start .ybtn--social.ybtn--facebook", // Yelp
+  "form > .c-btn.c-btn--facebook.c-btn--icon.c-btn--full", // komoot
   "[aria-label*='Log in with Facebook']", // Tinder
   "[action*='facebook_login']", // Airbnb
   "[action*='facebook_signup']", // Airbnb
