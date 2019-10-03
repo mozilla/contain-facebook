@@ -3,6 +3,8 @@
     "name": "Facebook Container",
     "version": "2.0.3",
 
+    "incognito": "not_allowed",
+    
     "default_locale": "en",
 
     "description": "__MSG_extensionDescription__",
