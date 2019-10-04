@@ -143,7 +143,7 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
   "trackers-detected-p1": {
-    "message": "Facebookovi gumbi koji se pojavljuju na web stranicama za kupovinu, vijesti i drugo, sadrže programe za praćenje, koji obavještavaju Facebooku o tvojim posjećenim web stranicama. Čak i ako te gumbe nikad ne upotrijebiš za lajkanje ili dijeljenje, programi za praćenje ipak mogu prikupljati podatke o tvom pregledavanju. Facebook Container blokira te programe za praćenje.", 
+    "message": "Facebookovi gumbi koji se pojavljuju na web stranicama za kupovinu, vijesti i drugo, sadrže programe za praćenje, koji obavještavaju Facebook o tvojim posjećenim web stranicama. Čak i ako te gumbe nikad ne upotrijebiš za lajkanje ili dijeljenje, programi za praćenje ipak mogu prikupljati podatke o tvom pregledavanju. Facebook Container blokira te programe za praćenje.", 
     "description": ""
   }, 
   "trackers-detected-p2": {
