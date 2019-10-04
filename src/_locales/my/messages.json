@@ -54,6 +54,42 @@
     "message": "ဖေ့ဘုတ်ကွန်တိန်နာအသုံးပြုခြင်း", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-alt": {
+    "message": "Facebook Container စည်းရိုးရုပ်ပုံငယ်", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "btn-allow": {
+    "message": "ခွင့်ပြုပါ", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "မလုပ်ဆောင်တော့ပါ", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "ရှေ့သို့", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "နောက်သို့", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "ပြီးပြီ", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "လွန်ခဲ့သော စာမျက်နှာကို ပြန်သွားပါ။", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Facebook Container အလုပ်လုပ်ပုံသို့ သွားပါ", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Facebook နောက်ယောင်ခံ ကိရိယာများကို မတွေ့ရှိပါ", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "ပိုမိုလေ့လာရန်", 
     "description": "This is a link that opens a page with more information about Facebook Container."
