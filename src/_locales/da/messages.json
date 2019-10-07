@@ -185,6 +185,10 @@
     "message": "At fjerne dette websted fra Facebook Container betyder, at funktionen til at logge ind med Facebook ikke længere virker, og sporings-cookies fra Facebook vil blive slettet.", 
     "description": ""
   }, 
+  "remove-site-p2": {
+    "message": " Hvis du vil logge ind med Facebook, skal du føje webstedet til Facebook Container igen.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container har deaktiveret denne knap og forhindret Facebook i at spore dit besøg på denne side.", 
     "description": ""
