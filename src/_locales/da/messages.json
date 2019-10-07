@@ -3,7 +3,7 @@
     "message": "Facebook Container isolerer din aktivitet på Facebook fra dine andre aktiviteter på nettet. Dette forhindrer Facebook i at spore dig uden for Facebooks websted ved hjælp af tredjeparts-cookies.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
+  "in-fbc-subhead": {
     "message": "$URL$ er i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
@@ -13,8 +13,15 @@
       }
     }
   }, 
-  "onFacebookText": {
-    "message": "Dette ikon vises i adressefeltet, når du besøger websteder som Facebook.com, Instagram.com eller Messenger.com, der befinder sig i Facebook Container.", 
+  "in-fbc-p1": {
+    "message": "Facebook kan nu spore dig på dette websted. For at fjerne dette websted fra Facebook Container, vælg “Websteder tilladt i Facebook Container“, og fjern det fra listen."
+  }, 
+  "on-facebook-subhead": {
+    "message": "På Facebook og på websteder inden for rammen af Facebook Container", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Dette ikon vises i Firefox' adressefelt, når du besøger websteder ejet af Facebook, eller websteder du har føjet til Facebook Container.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
@@ -34,5 +41,89 @@
   "onUnknownSiteHeader": {
     "message": "Dette websted er ikke i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding1-subhead": {
+    "message": "Brug af Facebook Container", 
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p1": {
+    "message": "Facebook kan spore din aktivitet på nettet langt ud over Facebook.com. Fx kan Facebook-knapperne “Synes godt om” og ”Del” spore, hvor du har været — selv på sider, hvor du ikke har klikket på knapperne.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container opretter en ramme mellem Facebook-websteder og resten af internettet, så det er sværere for Facebook at spore dig rundt på nettet.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "På Facebook og på websteder inden for rammen af Facebook Container", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-alt": {
+    "message": "Stakit-ikon til Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Dette ikon vises i Firefox' adressefelt, når du besøger websteder, som fx Facebook.com, der er inden for rammen af Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding3-subhead": {
+    "message": "Hvordan kan jeg se, at Facebook Container virker?", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Knapper, der giver dig mulighed for at \"synes om\" noget, dele ting på Facebook eller lade dig logge ind på webstedet ved hjælp af din Facebook-konto, indeholder sporings-mekanismer. Facebook Container blokerer disse mekanismer og viser stakit-ikonet, så du kan se, at sporings-mekanismerne blev blokeret.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Dette billede viser, hvordan stakit-ikonet fra Facebook Container ser ud på et websted ved siden af en \"Synes om\"-knap fra Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Hvis du klikker på en af Facebook-knapperne, vil Facebook dog være i stand til at spore dig.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Tillad", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Annuller", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Næste", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Tilbage", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Færdig", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Gå tilbage til forrige panel.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Gå til “Sådan virker Facebook Container“", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Ingen sporings-elementer fra Facebook fundet", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container fandt ikke nogen sporings-elementer fra Facebook på denne side. Siden kan dog stadig indeholde andre typer af sporings-elementer.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Læs mere", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
   }
 }
