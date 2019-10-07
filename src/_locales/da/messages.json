@@ -24,6 +24,10 @@
     "message": "Dette ikon vises i Firefox' adressefelt, når du besøger websteder ejet af Facebook, eller websteder du har føjet til Facebook Container.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
+  "on-facebook-p2": {
+    "message": "Disse websteder skal have adgang til din Facebook-identitet (eller vide hvem du er) for at virke. Det betyder også, at Facebook kan spore, hvad du foretager dig på disse websteder.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ er ikke i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -69,6 +73,10 @@
   "onboarding2-p1": {
     "message": "Dette ikon vises i Firefox' adressefelt, når du besøger websteder, som fx Facebook.com, der er inden for rammen af Facebook Container.", 
     "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Disse websteder skal have adgang til din Facebook-identitet (eller vide hvem du er) for at fungere. Det betyder også, at Facebook kan spore, hvad du foretager dig på disse websteder.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding3-subhead": {
     "message": "Hvordan kan jeg se, at Facebook Container virker?", 
