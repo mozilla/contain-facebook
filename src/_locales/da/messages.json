@@ -125,5 +125,76 @@
   "learn-more": {
     "message": "Læs mere", 
     "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Sådan virker Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Vi har beskyttet dig mod Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Facebook-knapper, der vises på netbutikker, nyheds-websteder og andre websteder indeholder sporings-mekanismer, der fortæller Facebook, hvor du har været på nettet. Selv hvis du aldrig klikker på nogen af knapperne, så kan Facebooks sporings-mekanismer stadig indsamle data om dine vaner på nettet. Facebook Container blokerer disse sporings-mekanismer.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container blokerer disse sporings-elementer. Hvis du klikker på en af Facebook-knapperne, vil Facebook dog være i stand til at spore dig.", 
+    "description": ""
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Facebook Container-stakit med skjold.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Websteder tilladt i Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "INKLUDEREDE WEBSTEDER", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Ingen", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "WEBSTEDER, DU HAR TILLADT", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container placerer websteder ejet af Facebook inden for rammen. Du kan tillade, at andre websteder kommer inden for rammen - men dette tillader Facebook at følge med i din adfærd på de pågældende websteder."
+  }, 
+  "remove": {
+    "message": "Fjern", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Fjern websted fra Facebook Container?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "At fjerne dette websted fra Facebook Container betyder, at funktionen til at logge ind med Facebook ikke længere virker, og sporings-cookies fra Facebook vil blive slettet.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container har deaktiveret denne knap og forhindret Facebook i at spore dit besøg på denne side.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container har blokeret sporings-elementer fra Facebook. Hvis du bruger “Log ind med Facebook“ på dette websted, vil Facebook være i stand til at spore dig.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Tillad Facebook at spore dig her?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Hvis du vil logge ind med Facebook, så kan Facebook følge med i din aktivitet på dette websted. Dette kan sætte Facebook i stand til at tegne et mere komplet billede af dit liv på nettet.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Vis mig ikke dette igen", 
+    "description": ""
   }
 }
