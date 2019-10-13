@@ -21,7 +21,7 @@
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "on-facebook-p1": {
-    "message": "આ ચિન્હ ફાયરફોક્સ ના એડ્રેસ બાર માં આવશે જયારે તમે ફેસબૂક માલિકી ની સાઈટ અથવા ફેસબૂક Container માં ઉમેરેલી સાઇટ્સ છે તેની મુલાકાત લેશો ત્યારે.", 
+    "message": "આ ચિન્હ Firefox ના એડ્રેસ બાર માં આવશે જયારે તમે Facebook માલિકી ની સાઈટ અથવા Facebook Container માં ઉમેરેલી સાઇટ્સ છે તેની મુલાકાત લેશો ત્યારે.", 
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "on-facebook-p2": {
@@ -153,6 +153,10 @@
   "no-sites-added": {
     "message": "કંઈ નહીં", 
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "SITES YOU’VE ALLOWED", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
   "sites-added-p1": {
     "message": "Facebook Container સીમામાં Facebookની માલિકીની સાઇટ્સ મૂકે છે. તમે અન્ય સાઇટ્સને સીમામાં મંજૂરી આપી શકો છો, પરંતુ આ Facebook ને તમારી વેબ બ્રાઉઝિંગને વધુ ટ્રૅક કરવાની મંજૂરી આપશે."
