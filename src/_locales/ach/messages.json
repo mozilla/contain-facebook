@@ -3,8 +3,8 @@
     "message": "Facebook Container koyo tic mamegi me Facebook ki ii tic mamegi me kakube mukene ni me weki ogeng Facebook ki i lubo kor in woko ki i kakube me Facebook kun woto ki angija pa ngat mukene.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$URL$ tye ii Facebook Container.", 
+  "in-fbc-subhead": {
+    "message": "$URL$ tye i Facebook Container.", 
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
     "placeholders": {
       "url": {
@@ -12,10 +12,6 @@
         "example": "www.facebook.com"
       }
     }
-  }, 
-  "onFacebookText": {
-    "message": "Cal man nyute i gitic me kanonge ka ilimo kakube calo Facebook.com, Instagram.com, onyo Messenger.com ma gi tye ii Facebook Container.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "notOnFacebookHeader": {
     "message": "$URL$ pe tye ii Facebook Container.", 
