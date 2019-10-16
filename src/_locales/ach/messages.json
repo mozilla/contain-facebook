@@ -61,5 +61,13 @@
   "onboarding2-alt": {
     "message": "Cal me cel Facebook Container", 
     "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding2-p1": {
+    "message": "Cal man nyute i lanyut me kanonge pa Facebook ka ilimo kakube, calo Facebook.com, ma tye i wang kigingi me Facebook Container.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding3-subhead": {
+    "message": "Angeyo nining ni Facebook Container tye katic?", 
+    "description": "This is the subhead for the third onboarding panel."
   }
 }
