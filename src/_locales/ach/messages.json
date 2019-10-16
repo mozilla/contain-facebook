@@ -69,5 +69,89 @@
   "onboarding3-subhead": {
     "message": "Angeyo nining ni Facebook Container tye katic?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Jarara ma weko i maro onyo nywako jami bot Facebook onyo weko i donyo iyie kakube ma tiyo ki akaunt mamegi me Facebook tye ki lulub kor. Facebook Container bigengo lulub kor magi ka nyuto cal me cel me nyuto boti ka ma kikwanyo lulub kor ma gi.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Cal man nyuto kit ma cal me cel pa Facebook Container binyute ii potbuk inget jarara me mar i Facebook.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Ento, Facebook bi bedo ki kero me lubo kori kacce i diyo jarara mo ikin magi.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Yee", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Juki", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Malubo", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Cen", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Otum", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Dok cen i dirica mukato.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Cit ii Kit ma Facebook Container Tiyo kwede", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Pe kinongo Lulub kor me Facebook", 
+    "description": ""
+  }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container pe onongo lulub kor mo me Facebook i potbuk man. Ento, potbuk ne pud twero bedo ki lulub kor mukene.", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Nong ngec mapol", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Kit ma Facebook Container Tiyo kwede", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Wagwoki ki ikom Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Cel me Facebook Container ki kwot.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Kakube ma ki yee i Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "KAKUBE MA KIKETO", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Pe", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "KAKUBE MA I YEE", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "remove": {
+    "message": "Kwany", 
+    "description": ""
   }
 }
