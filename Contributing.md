@@ -29,7 +29,9 @@ Check first if the bug might already exist: https://github.com/mozilla/contain-f
 ## Running
 After you make changes to your local copy. You can test to see your changes in two ways
 1. Install `web-ext` tool and run to see your changes
-2. go to `about:debugging` in your browser and select `load temporary Add-on`, you can `reload` after you make new changes to see them in effect.
+2. go to `about:debugging` in your browser and select `load temporary Add-on`
+3. Select `container-facebook` from your source dir and then select the `manifest.json` file to load the extension
+4. you can `reload` after you make new changes to see them in effect.
 
 ## Testing
 
