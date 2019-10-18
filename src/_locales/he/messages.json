@@ -57,6 +57,10 @@
     "message": "חזרה לחלונית הקודמת.", 
     "description": "This is alternative text for the back arrow button."
   }, 
+  "btn-arrow-forward": {
+    "message": "מעבר אל איך Facebook Container עובד", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
   "learn-more": {
     "message": "מידע נוסף", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -65,9 +69,17 @@
     "message": "איך Facebook Container עובד", 
     "description": "This is a button that opens the Facebook Container onboarding flow."
   }, 
+  "sites-included": {
+    "message": "אתרים כלולים", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
   "no-sites-added": {
     "message": "ללא", 
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "אתרים שאישרת", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
   "remove": {
     "message": "הסרה", 
