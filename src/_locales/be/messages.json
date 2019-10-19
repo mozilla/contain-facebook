@@ -36,5 +36,17 @@
   "no-sites-added": {
     "message": "Нічога", 
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "remove": {
+    "message": "Выдаліць", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Дазволіць Facebook высочваць вас тут?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Не паказваць мне гэта зноў", 
+    "description": ""
   }
 }
