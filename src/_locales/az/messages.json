@@ -35,6 +35,38 @@
     "message": "Facebook Konteyneri istifadəsi", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "btn-allow": {
+    "message": "İcazə ver", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Ləğv et", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Sonrakı", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Geri", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Hazır", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Əvvəlki panelə qayıt.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Facebook Konteynerinin necə işlədiyinə get", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Facebook izləyiciləri aşkarlanmadı", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Ətraflı öyrən", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -69,6 +101,10 @@
   }, 
   "remove-site-subhead": {
     "message": "Sayt Facebook Konteynerindən silinsin?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Facebook sizi burada izləməyə bilsin?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
