@@ -3,20 +3,6 @@
     "message": "Facebook Container आपल्या Facebook क्रियाकलापांना आपल्या उर्वरित वेब क्रियाकलापांपासून वेगळे करते जेणेकरून Facebook वेबसाइटच्या बाहेर आपल्याला तृतीय पक्षाच्या कुकीजद्वारे मागोवा घेण्यापासून रोखू शकेल.", 
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
-  "onFacebookHeader": {
-    "message": "$URL$ Facebook Container मध्ये आहे.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
-    "placeholders": {
-      "url": {
-        "content": "$1", 
-        "example": "www.facebook.com"
-      }
-    }
-  }, 
-  "onFacebookText": {
-    "message": "Facebook Container मध्ये असलेल्या Facebook.com, Instagram.com किंवा Messenger.com सारख्या वेबसाइटवर भेट देता तेव्हा हा चिन्ह पत्ता पट्टीमध्ये दिसून येतो.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ Facebook Container मध्ये नाही.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -34,5 +20,53 @@
   "onUnknownSiteHeader": {
     "message": "ही साइट Facebook Container मध्ये नाही.", 
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "btn-allow": {
+    "message": "सहमती द्या", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "रद्द करा", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "पुढे", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "मागे", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "झाले", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "आधीच्या पॅनल वर जाण्यासाठी मागे जा.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "learn-more": {
+    "message": "अधिक जाणा", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "sites-included": {
+    "message": "SITES INCLUDED", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "काहीच नाही", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "आपण परवानगी दिलेल्या साइट्स", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "remove": {
+    "message": "काढा", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "हे परत दाखवू नका", 
+    "description": ""
   }
 }
