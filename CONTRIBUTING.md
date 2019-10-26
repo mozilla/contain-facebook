@@ -1,13 +1,13 @@
 # CONTRIBUTING
 
-Everyone is welcome to contribute to Facebook-Containers. Reach out to team members if you have questions:
+Everyone is welcome to contribute to Facebook Containers. Reach out to team members if you have questions:
 
 - IRC: #containers on irc.mozilla.org
 - Email: containers@mozilla.com
 
 ## Filing bugs
 
-If you find a bug with Facebook-Container, please file a issue.
+If you find a bug with Facebook Container, please file a issue.
 
 Check first if the bug might already exist: https://github.com/mozilla/contain-facebook/issues
 
