@@ -1,4 +1,4 @@
-
+/* eslint-disable indent */
 function getStyle(themeInfo) 
 {
   if (themeInfo.colors) {
