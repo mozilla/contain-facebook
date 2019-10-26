@@ -49,7 +49,8 @@
         "storage",
         "tabs",
         "webRequestBlocking",
-        "webRequest"
+        "webRequest",
+        "theme"
     ],
 
     "background": {
