@@ -25,7 +25,7 @@
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   }, 
   "on-facebook-p2": {
-    "message": "Iste sitos besonia, pro functionar, de acceder a tu identitate de Facebook (o de saper qui es tu). Isto significa alsi que Facebook pote traciar toto lo que tu face sur iste sitos.", 
+    "message": "Iste sitos debe acceder a tu identitate de Facebook (o saper qui tu es) pro poter functionar. Isto significa etiam que Facebook pote traciar tote lo que tu face sur iste sitos.", 
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   }, 
   "notOnFacebookHeader": {
@@ -75,7 +75,7 @@
     "description": "This is the first paragraph of the second onboarding panel."
   }, 
   "onboarding2-p2": {
-    "message": "Iste sitos besonia, pro functionar, de acceder a tu identitate de Facebook (o de saper qui es tu). Isto significa alsi que Facebook pote traciar toto lo que tu face sur iste sitos.", 
+    "message": "Iste sitos debe acceder a tu identitate de Facebook (o saper qui tu es) pro poter functionar. Isto significa etiam que Facebook pote traciar tote lo que tu face sur iste sitos.", 
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   }, 
   "onboarding3-subhead": {
