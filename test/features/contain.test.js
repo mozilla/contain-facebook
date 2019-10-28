@@ -105,25 +105,6 @@ describe("Contain", () => {
     });
   });
 
-  describe("Incoming requests that belong to an incognito tab", () => {
-    const responses = {};
-    beforeEach(async () => {
-      await background.browser.tabs._create({
-        url: "https://www.facebook.com",
-        incognito: true
-      }, {
-        responses
-      });
-    });
-
-    it("should be ignored", async () => {
-      expect(background.browser.tabs.create).to.not.have.been.called;
-      const [promise] = responses.webRequest.onBeforeRequest;
-      const result = await promise;
-      expect(result).to.be.undefined;
-    });
-  });
-
 
   describe("Incoming requests that don't belong to a tab", () => {
     const responses = {};

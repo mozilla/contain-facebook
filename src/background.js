@@ -355,9 +355,6 @@ async function maybeReopenAlreadyOpenTabs () {
   // Query for already open Tabs
   const tabs = await browser.tabs.query({});
   tabs.map(async tab => {
-    if (tab.incognito) {
-      return;
-    }
     if (tab.url === "about:blank") {
       if (tab.status !== "loading") {
         return;
@@ -433,11 +430,6 @@ async function updateBrowserActionIcon (tab) {
 
   browser.browserAction.setBadgeText({text: ""});
 
-  if (tab.incognito) {
-    browser.browserAction.disable(tab.id);
-    return;
-  }
-
   const url = tab.url;
   const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
 
@@ -480,11 +472,6 @@ async function containFacebook (request) {
   // open other sites into the default tab context
   if (request.tabId === -1) {
     // Request doesn't belong to a tab
-    return;
-  }
-
-  if (tab.incognito) {
-    // We don't handle incognito tabs
     return;
   }
 
