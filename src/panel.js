@@ -32,8 +32,9 @@ const addHeader = (wrapper) => {
   const el = document.createElement("h1");
   el["id"] = "facebookContainer";
   setClassAndAppend(wrapper, el);
+  /* eslint-disable indent */
   list_sizeable.push(el);
-  var sliderValues=document.getElementById('fontRange');
+  var sliderValues=document.getElementById("fontRange");
   sliderValues.oninput=function(){
   for(var i=0;i<list_sizeable.length;i++){
     list_sizeable[i].style.fontSize= this.value +"px";
@@ -57,8 +58,9 @@ const addSubhead = (wrapper, panelId) => {
   el["id"] = elemId;
   setClassAndAppend(wrapper, el);
   el.classList.add(elemId);
+  /* eslint-disable indent */
   list_sizeable.push(el);
-  var sliderValues=document.getElementById('fontRange');
+  var sliderValues=document.getElementById("fontRange");
   sliderValues.oninput=function(){
   for(var i=0;i<list_sizeable.length;i++){
     list_sizeable[i].style.fontSize= this.value +"px";
@@ -73,8 +75,9 @@ const addLightSubhead = (wrapper, stringId) => {
   const el = document.createElement("h3");
   el["id"] = stringId;
   setClassAndAppend(wrapper, el);
+  /* eslint-disable indent */
   list_sizeable.push(el);
-  var sliderValues=document.getElementById('fontRange');
+  var sliderValues=document.getElementById("fontRange");
   sliderValues.oninput=function(){
   for(var i=0;i<list_sizeable.length;i++){
     list_sizeable[i].style.fontSize= this.value +"px";
@@ -88,8 +91,9 @@ const addLightSubhead = (wrapper, stringId) => {
 const addParagraph = (wrapper, stringId) => {
   const el = document.createElement("p");
   el["id"] = stringId;
+  /* eslint-disable indent */
   list_sizeable.push(el);
-  var sliderValues=document.getElementById('fontRange');
+  var sliderValues=document.getElementById("fontRange");
   sliderValues.oninput=function(){
   for(var i=0;i<list_sizeable.length;i++){
     list_sizeable[i].style.fontSize= this.value +"px";
