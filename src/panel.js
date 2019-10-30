@@ -20,16 +20,25 @@ const setUpPanel = (panelId) => {
 
   const fragment = document.createDocumentFragment();
   fragment["id"] = panelId;
-
+  page.innerHTML=`<div class="slidecontainer">
+  <input type="range" min="12" max="16" value="12" class="slider" id="fontRange">
+  </div>`;
   return { page, fragment };
 };
-
+const list_sizeable=[];
 
 // adds "Facebook Container" to top of all panels
 const addHeader = (wrapper) => {
   const el = document.createElement("h1");
   el["id"] = "facebookContainer";
   setClassAndAppend(wrapper, el);
+  list_sizeable.push(el);
+  var sliderValues=document.getElementById('fontRange');
+  sliderValues.oninput=function(){
+  for(var i=0;i<list_sizeable.length;i++){
+    list_sizeable[i].style.fontSize= this.value +"px";
+     }
+  }
   return el;
 };
 
@@ -48,6 +57,13 @@ const addSubhead = (wrapper, panelId) => {
   el["id"] = elemId;
   setClassAndAppend(wrapper, el);
   el.classList.add(elemId);
+  list_sizeable.push(el);
+  var sliderValues=document.getElementById('fontRange');
+  sliderValues.oninput=function(){
+  for(var i=0;i<list_sizeable.length;i++){
+    list_sizeable[i].style.fontSize= this.value +"px";
+     }
+  }
   return el;
 };
 
@@ -57,6 +73,13 @@ const addLightSubhead = (wrapper, stringId) => {
   const el = document.createElement("h3");
   el["id"] = stringId;
   setClassAndAppend(wrapper, el);
+  list_sizeable.push(el);
+  var sliderValues=document.getElementById('fontRange');
+  sliderValues.oninput=function(){
+  for(var i=0;i<list_sizeable.length;i++){
+    list_sizeable[i].style.fontSize= this.value +"px";
+     }
+  }
   return el;
 };
 
@@ -65,6 +88,13 @@ const addLightSubhead = (wrapper, stringId) => {
 const addParagraph = (wrapper, stringId) => {
   const el = document.createElement("p");
   el["id"] = stringId;
+  list_sizeable.push(el);
+  var sliderValues=document.getElementById('fontRange');
+  sliderValues.oninput=function(){
+  for(var i=0;i<list_sizeable.length;i++){
+    list_sizeable[i].style.fontSize= this.value +"px";
+     }
+  }
   setClassAndAppend(wrapper, el);
 };
 
