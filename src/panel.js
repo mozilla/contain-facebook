@@ -39,7 +39,7 @@ const addHeader = (wrapper) => {
   for(var i=0;i<list_sizeable.length;i++){
     list_sizeable[i].style.fontSize= this.value +"px";
      }
-  }
+  };
   return el;
 };
 
@@ -65,7 +65,7 @@ const addSubhead = (wrapper, panelId) => {
   for(var i=0;i<list_sizeable.length;i++){
     list_sizeable[i].style.fontSize= this.value +"px";
      }
-  }
+  };
   return el;
 };
 
@@ -82,7 +82,7 @@ const addLightSubhead = (wrapper, stringId) => {
   for(var i=0;i<list_sizeable.length;i++){
     list_sizeable[i].style.fontSize= this.value +"px";
      }
-  }
+  };
   return el;
 };
 
@@ -98,7 +98,7 @@ const addParagraph = (wrapper, stringId) => {
   for(var i=0;i<list_sizeable.length;i++){
     list_sizeable[i].style.fontSize= this.value +"px";
      }
-  }
+  };
   setClassAndAppend(wrapper, el);
 };
 
