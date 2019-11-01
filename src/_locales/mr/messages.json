@@ -29,6 +29,10 @@
     "message": "Facebook कंटेनर वापरणे", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding2-alt": {
+    "message": "Facebook कंटेनर कुंपण चिन्ह", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
   "onboarding3-subhead": {
     "message": "Facebook कंटेनर कार्य करीत आहे हे मला कसे कळेल?", 
     "description": "This is the subhead for the third onboarding panel."
@@ -57,6 +61,10 @@
     "message": "आधीच्या पॅनल वर जाण्यासाठी मागे जा.", 
     "description": "This is alternative text for the back arrow button."
   }, 
+  "btn-arrow-forward": {
+    "message": "Facebook कंटेनर कसे कार्य करते यावर जा", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
   "no-trackers-subhead": {
     "message": "कोणतेही Facebook ट्रॅकर आढळले नाहीत", 
     "description": ""
@@ -73,6 +81,14 @@
     "message": "आम्ही Facebook पासून आपले रक्षण केले आहे.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-fence-alt": {
+    "message": "ढाल सह Facebook कंटेनर कुंपण.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Facebook कंटेनरमध्ये अनुमत साइट", 
+    "description": "This is a panel subhead."
+  }, 
   "sites-included": {
     "message": "SITES INCLUDED", 
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
@@ -87,6 +103,14 @@
   }, 
   "remove": {
     "message": "काढा", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Facebook कंटेनरमधून साइट काढायची?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "आपल्याला येथे ट्रॅक करण्यास Facebook ला अनुमती द्यावी?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
