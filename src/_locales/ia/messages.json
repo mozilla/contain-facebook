@@ -91,7 +91,7 @@
     "description": "This is alternative text for the image shown in the third onboarding panel."
   }, 
   "onboarding3-p2": {
-    "message": "Comocunque, si tu clicca sur ulle de iste buttones Facebook potera te traciar.", 
+    "message": "Nonobstante, si tu clicca sur alcun de iste buttones, Facebook potera traciar te.", 
     "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
@@ -147,7 +147,7 @@
     "description": ""
   }, 
   "trackers-detected-p2": {
-    "message": "Facebook Container bloca iste traciatores. Comocunque, si tu clicca sur ulle de iste buttones Facebook potera te traciar.", 
+    "message": "Facebook Container bloca iste traciatores. Nonobstante, si tu clicca sur alcun de iste buttones, Facebook potera traciar te.", 
     "description": ""
   }, 
   "trackers-detected-fence-alt": {
@@ -202,7 +202,7 @@
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Si tu vole usar le accesso per Facebook, pois illo potera traciar tu activitate sur iste sito. Isto pote les adjutar a construer un imagine plus complete de tu vita online.", 
+    "message": "Si tu usa \"Aperir session con Facebook\", Facebook potera traciar tu activitate sur iste sito. Isto pote adjutar les a elaborar un imagine plus complete de tu vita in linea.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
