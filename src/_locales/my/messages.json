@@ -142,6 +142,14 @@
     "message": "Facebook ထံကနေ ကာကွယ်ထားပါသည်။", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }, 
+  "trackers-detected-p1": {
+    "message": "စျေးဝယ်ခြင်း၊ သတင်းများ နှင့် အခြားသောဆိုဒ် များတွင် Facebook ၏ ခလုပ်များ ပါလာ သောကြောင့် ထို‌ နောက်ယောင်ခံများ က Facebook ကို သင်ဘယ် ကွန်ယက်လိပ်စာ များတွင် ရှိနေသည်ကို ပြောလိမ့်မည်။ သင် တစ်ခါမှ ကြိုက်ခြင်း သို့မဟုတ် မျှဝေခြင်း ခလုတ်များကို မသုံးသော်လည်း trackers သည်သင်၏ browsing နှင့် ပတ်သက်သော အချက်အလက်များ ကို စုဆောင်း နိုင်သည်။ Facebook Container သည် ထို နောက်ယောင်ခံများ ကို ပိတ်ဆို့ထားသည်။", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container သည် ထို ခြေရာခံများ ကို ပိတ်ဆို့ထားသည်။ သို့ပါသော်လည်း သင်သာ အဆိုပါ ခလုတ်တစ်ခုခုကို နှိပ်လိုက်လျှင် Facebook က သင့်ကို နောက်ယောင်ခံမိ သွား လိမ့်မည်။", 
+    "description": ""
+  }, 
   "trackers-detected-fence-alt": {
     "message": "အကာအကွယ်နှင့် Facebook Container စည်းရိုး", 
     "description": "This is alternative text describing the container fence icon."
@@ -161,6 +169,9 @@
   "sites-allowed": {
     "message": "ခွင့်ပြုထားသည့် ဝဘ်ဆိုက်များ", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "sites-added-p1": {
+    "message": "Facebook Container မှ Facebook ပိုင်ဆိုက်များကို စည်းရိုးအတွင်း ထားရှိသည်။ အခြားသောဆိုက်များကို စည်းရိုးအတွင်းသို့ သင် ခွင့်ပြုနိုင်သည်၊ သို့သော် ထိုလုပ်ရပ်ကြောင့် Facebook က သင်၏ ကွန်ယက်လှုပ်ရှားမှုများကို ပိုခြေရာခံနိုင်သွားလိမ့်မည်။"
   }, 
   "remove": {
     "message": "ဖယ်ရှားပါ", 
