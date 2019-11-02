@@ -99,7 +99,7 @@
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
   }, 
   "btn-cancel": {
-    "message": "မလုပ်ဆောင်တော့ပါ", 
+    "message": "ပယ်​ဖျက်", 
     "description": "This is a button to cancel out of the onboarding panel."
   }, 
   "btn-next": {
@@ -115,7 +115,7 @@
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   }, 
   "btn-arrow-back": {
-    "message": "လွန်ခဲ့သော စာမျက်နှာကို ပြန်သွားပါ။", 
+    "message": "ပြီးခဲ့သည့် စာမျက်နှာ ကိုပြန်သွားရန်။", 
     "description": "This is alternative text for the back arrow button."
   }, 
   "btn-arrow-forward": {
@@ -123,7 +123,7 @@
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   }, 
   "no-trackers-subhead": {
-    "message": "Facebook နောက်ယောင်ခံ ကိရိယာများကို မတွေ့ရှိပါ", 
+    "message": "Facebook ၏ ‌ခြေရာခံခြင်းများ မရှိသေးပါ", 
     "description": ""
   }, 
   "no-trackers-p1": {
@@ -151,7 +151,7 @@
     "description": ""
   }, 
   "trackers-detected-fence-alt": {
-    "message": "အကာအကွယ်နှင့် Facebook Container စည်းရိုး", 
+    "message": "Facebook Container ၏ အကာအကွယ်နှင့် စည်ရိုး။", 
     "description": "This is alternative text describing the container fence icon."
   }, 
   "sites-added-subhead": {
@@ -178,11 +178,27 @@
     "description": ""
   }, 
   "remove-site-subhead": {
-    "message": "Facebook Container ထဲမှ ဖယ်ရှားမည် ဟုတ်ပါသလား။", 
+    "message": "Facebook Container မှ ဆိုက်ကို ဖယ်ရှား မှာလား?", 
+    "description": ""
+  }, 
+  "remove-site-p1": {
+    "message": "ဤဆိုက် ကို Facebook Container မှဖယ်ရှားခြင်းကြောင့် Facebook ဖြင့် Log in ဝင်ရောက်နိုင်မှုသည် မလုပ်ဆောင်နိုင်တော့ဘဲFacebook ‌၏ ‌ခြေရာခံကွတ်ကီးများလဲ အဖျက်ခံရ ပါလိမ့်မည်။", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " အကယ်၍ သင်သည် Facebook ဝင်‌ရောက်ရန် ထပ်မံလိုအပ်ပါက ၎င်းကို Facebook Container ထဲသို့ပြန်ထည့်ရန် လိုအပ်မည်။", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container မှ ဒီ ခလုတ်ကို ပိတ်ထား လိုက်ပြီး ဒီ စာမျက်နှာ သို့ သင်လည်ပတ် ခြင်းကို Facebook မှ နောက်ယောင်မခံနိုင်တော့ပါ။", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook ၏ နောက်ယောင်ခံများကို Facebook Container မှပိတ်ဆို့လိုက်ပြီ။ အကယ်၍ သင်သာဒီဆိုက်သို့ Facebookဝင်လိုက်ပါက သင့်ကို နောက်ယောင်ခံမိသွားလိမ့်မည်။", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Facebook က သင့်ကို နောက်ယောင်ခံရန် ခွင့်ပြုပါမည်လား။", 
+    "message": "Facebook မှ သင့်ကို နောက်ယောင်ခံခွင့် ပြုတော့မှာလား?", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-p2": {
