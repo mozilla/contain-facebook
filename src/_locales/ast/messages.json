@@ -1,38 +1,41 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container aislla l'actividá de Facebook del restu pa evitar que Facebook te rastrexe fuera del so sitiu pente cookies de terceros.", 
+    "message": "Facebook Container aislla l'actividá de Facebook del restu pa evitar que Facebook te rastrexe fuera del so sitiu pente cookies de terceros.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
-  "onFacebookHeader": {
-    "message": "$URL$ ta nel Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+  },
+  "in-fbc-subhead": {
+    "message": "$URL ta en Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
-  "onFacebookText": {
-    "message": "Esti iconu apaez na barra de direiciones cuando visites sitios web como Facebook.com, Instagram.com o Messenger.com que tán en Facebook Container.", 
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
+  "in-fbc-p1": {
+    "message": "Agora Facebook pue rastrexate nesti sitiu. Pa quitalu de Facebook Container. esbilla Sitios permitíos en Facebook Container. y desanícialu de la llista."
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ nun ta nel Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ nun ta nel Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Esti sitiu ta fuera de Facebook Container. Esto dificulta a Facebook el rastrexate pente la rede.", 
+    "message": "Esti sitiu ta fuera de Facebook Container. Esto dificulta a Facebook el rastrexate pente la rede.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Esti sitiu nun ta en Facebook Container.", 
+    "message": "Esti sitiu nun ta en Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "facebookContainer": {
+    "message": "Facebook Container",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
   }
 }
