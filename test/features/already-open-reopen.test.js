@@ -74,27 +74,6 @@ describe("Already Open Reopen", () => {
     });
   });
 
-  describe("Add-on initializes with already open but incognito Tab", () => {
-    beforeEach(async () => {
-      webExtension = await loadWebExtension({
-        async beforeParse(window) {
-          facebookContainer = await window.browser.contextualIdentities._create({
-            name: "Facebook"
-          });
-          await window.browser.tabs._create({
-            url: "https://dontreopenincognito.me",
-            cookieStoreId: facebookContainer.cookieStoreId,
-            incognito: true
-          });
-        }
-      });
-      background = webExtension.background;
-    });
-
-    it("should not reopen", async () => {
-      expect(background.browser.tabs.create).to.not.have.been.calledOnce;
-    });
-  });
 
   describe("Add-on initializes with already open complete about:blank Tab", () => {
     beforeEach(async () => {
