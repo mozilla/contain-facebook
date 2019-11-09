@@ -1,212 +1,212 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container isola tu activitate de Facebook ab le resto de tu activitate pro impedir a Facebook de traciar te foras de su sito via le cookies de tertie partes.", 
+    "message": "Facebook Container isola tu activitate de Facebook ab le resto de tu activitate pro impedir a Facebook de traciar te foras de su sito via le cookies de tertie partes.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ es gerite in Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ es gerite in Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook pote ora traciar te sur iste sito. Pro remover iste sito ex Facebook Container, elige Sitos consentite in Facebook Container e remove lo del lista."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Sur Facebook e sitos in le dominio de Facebook Container", 
+    "message": "Sur Facebook e sitos in le dominio de Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Iste icone appare in le barra de adresse de Firefox quando tu visita sitos gerite per Facebook o sitos que tu ha addite a Facebook Container.", 
+    "message": "Iste icone appare in le barra de adresse de Firefox quando tu visita sitos gerite per Facebook o sitos que tu ha addite a Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Iste sitos debe acceder a tu identitate de Facebook (o saper qui tu es) pro poter functionar. Isto significa etiam que Facebook pote traciar tote lo que tu face sur iste sitos.", 
+    "message": "Iste sitos debe acceder a tu identitate de Facebook (o saper qui tu es) pro poter functionar. Isto significa etiam que Facebook pote traciar tote lo que tu face sur iste sitos.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ non es in le Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ non es in le Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Iste sito es foras de Facebook Container. Isto rende plus difficile a Facebook traciar te tra le Web.", 
+    "message": "Iste sito es foras de Facebook Container. Isto rende plus difficile a Facebook traciar te tra le Web.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Iste sito non es in le Facebook Container.", 
+    "message": "Iste sito non es in le Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Utilisation de Facebook Container", 
+    "message": "Utilisation de Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook pote traciar tu navigation ben ultra Facebook.com. Per exemplo, le buttones \"Me place\" e \"Compartir\" de Facebook pote traciar le paginas que tu visita — mesmo paginas que tu non ha jammais compartite o marcate como \"Me place\".", 
+    "message": "Facebook pote traciar tu navigation ben ultra Facebook.com. Per exemplo, le buttones \"Me place\" e \"Compartir\" de Facebook pote traciar le paginas que tu visita — mesmo paginas que tu non ha jammais compartite o marcate como \"Me place\".",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container crea un limite inter le sitos Facebook e le resto del web, assi il es plus difficile pro Facebook traciar te online.", 
+    "message": "Facebook Container crea un limite inter le sitos Facebook e le resto del web, assi il es plus difficile pro Facebook traciar te online.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Sur Facebook e sitos in le dominio de Facebook Container", 
+    "message": "Sur Facebook e sitos in le dominio de Facebook Container",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Le icone barriera de Facebook Container", 
+    "message": "Le icone barriera de Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Iste icone appare in le barra de adresse de Firefox quando tu visita sitos, como Facebook.com, que es gerite per Facebook Container.", 
+    "message": "Iste icone appare in le barra de adresse de Firefox quando tu visita sitos, como Facebook.com, que es gerite per Facebook Container.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Iste sitos debe acceder a tu identitate de Facebook (o saper qui tu es) pro poter functionar. Isto significa etiam que Facebook pote traciar tote lo que tu face sur iste sitos.", 
+    "message": "Iste sitos debe acceder a tu identitate de Facebook (o saper qui tu es) pro poter functionar. Isto significa etiam que Facebook pote traciar tote lo que tu face sur iste sitos.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "Como sape io si Facebook Container functiona?", 
+    "message": "Como sape io si Facebook Container functiona?",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "Le buttones que te consenti de marcar Me place o Compartir cosas in Facebook, o que te lassa acceder a sitos web per tu conto Facebook, contine traciatores. Facebook Container blocara iste traciatores e monstra le icone barriera pro te monstrar ubi le traciatores era eliminate.", 
+    "message": "Le buttones que te consenti de marcar Me place o Compartir cosas in Facebook, o que te lassa acceder a sitos web per tu conto Facebook, contine traciatores. Facebook Container blocara iste traciatores e monstra le icone barriera pro te monstrar ubi le traciatores era eliminate.",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "Iste imagine demonstra como le icone barriera de Facebook Container parera in le pagina a latere del button Me place de Facebook.", 
+    "message": "Iste imagine demonstra como le icone barriera de Facebook Container parera in le pagina a latere del button Me place de Facebook.",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "Nonobstante, si tu clicca sur alcun de iste buttones, Facebook potera traciar te.", 
+    "message": "Nonobstante, si tu clicca sur alcun de iste buttones, Facebook potera traciar te.",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "Consentir", 
+    "message": "Consentir",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Cancellar", 
+    "message": "Cancellar",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Sequente", 
+    "message": "Sequente",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Retro", 
+    "message": "Retro",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Facte", 
+    "message": "Facte",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Receder al quadro precedente.", 
+    "message": "Receder al quadro precedente.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Ir a Como functiona Facebook Container", 
+    "message": "Ir a Como functiona Facebook Container",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Nulle traciatores de Facebook detegite", 
+    "message": "Nulle traciatores de Facebook detegite",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container non ha detegite traciatores de Facebook sur iste pagina. Nonobstante, le pagina poterea continer altere typos de traciatores.", 
+    "message": "Facebook Container non ha detegite traciatores de Facebook sur iste pagina. Nonobstante, le pagina poterea continer altere typos de traciatores.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Saper plus", 
+    "message": "Saper plus",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Como functiona Facebook Container", 
+    "message": "Como functiona Facebook Container",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Nos te ha protegite de Facebook.", 
+    "message": "Nos te ha protegite de Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Le buttones de Facebook que appare sur sitos de compras, novas, etc. contine traciatores que divulga a Facebook ubi tu ha essite sur le web. Mesmo si tu non usa jammais iste buttones \"Me place\" o \"Compartir\", le traciatores pote totevia colliger datos sur tu navigation. Facebook Container bloca iste traciatores.", 
+    "message": "Le buttones de Facebook que appare sur sitos de compras, novas, etc. contine traciatores que divulga a Facebook ubi tu ha essite sur le web. Mesmo si tu non usa jammais iste buttones \"Me place\" o \"Compartir\", le traciatores pote totevia colliger datos sur tu navigation. Facebook Container bloca iste traciatores.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container bloca iste traciatores. Nonobstante, si tu clicca sur alcun de iste buttones, Facebook potera traciar te.", 
+    "message": "Facebook Container bloca iste traciatores. Nonobstante, si tu clicca sur alcun de iste buttones, Facebook potera traciar te.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Barriera de Facebook Container con escudo.", 
+    "message": "Barriera de Facebook Container con scuto.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Sitos consentite in Facebook Container", 
+    "message": "Sitos consentite in Facebook Container",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "SITOS INCLUDITE", 
+    "message": "SITOS INCLUDITE",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Nihil", 
+    "message": "Nihil",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "SITOS QUE TU HA CONSENTITE", 
+    "message": "SITOS QUE TU HA CONSENTITE",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container confina le sitos pertinente a Facebook in un zona delimitate. Tu pote permitter que altere sitos entra in iste zona, ma isto permittera a Facebook de traciar plus de tu navigation web."
-  }, 
+  },
   "remove": {
-    "message": "Remover", 
+    "message": "Remover",
     "description": ""
-  }, 
+  },
   "remove-site-subhead": {
-    "message": "Remover sito ex Facebook Container?", 
+    "message": "Remover sito ex Facebook Container?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Le remotion de iste sito ab Facebook Container significa que le accesso con functionalitate Facebook non functionara plus e le cookies de traciamento de Facebook sera delite.", 
+    "message": "Le remotion de iste sito ab Facebook Container significa que le accesso con functionalitate Facebook non functionara plus e le cookies de traciamento de Facebook sera delite.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Si tu vole usar de novo le accesso per Facebook, tu debera lo re-adder a Facebook Container.", 
+    "message": " Si tu vole usar de novo le accesso per Facebook, tu debera lo re-adder a Facebook Container.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container ha disactivate iste button e blocate Facebook de traciar tu visita a iste pagina.", 
+    "message": "Facebook Container ha disactivate iste button e blocate Facebook de traciar tu visita a iste pagina.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container ha blocate traciatores de Facebook. Si tu usa le accesso per Facebook sur iste sito, illo potera traciar te.", 
+    "message": "Facebook Container ha blocate traciatores de Facebook. Si tu usa le accesso per Facebook sur iste sito, illo potera traciar te.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Consenti a Facebook de te traciar ci?", 
+    "message": "Consenti a Facebook de te traciar ci?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Si tu usa \"Aperir session con Facebook\", Facebook potera traciar tu activitate sur iste sito. Isto pote adjutar les a elaborar un imagine plus complete de tu vita in linea.", 
+    "message": "Si tu usa \"Aperir session con Facebook\", Facebook potera traciar tu activitate sur iste sito. Isto pote adjutar les a elaborar un imagine plus complete de tu vita in linea.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Non me lo monstrar de novo", 
+    "message": "Non me lo monstrar de novo",
     "description": ""
   }
 }
