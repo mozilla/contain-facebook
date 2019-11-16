@@ -1,74 +1,78 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container yerujech'uj ri taq asamaj richin Facebook chi kiwa ri ajk'amaya'l asamaj richin nichajïx chi ri Facebook man kerojqaj toq man k'o ta ri Facebook pa ajk'amaya'l ruxaq rik'in taq kikuki aj rox winäq.", 
+    "message": "Facebook Container yerujech'uj ri taq asamaj richin Facebook chi kiwa ri ajk'amaya'l asamaj richin nichajïx chi ri Facebook man kerojqaj toq man k'o ta ri Facebook pa ajk'amaya'l ruxaq rik'in taq kikuki aj rox winäq.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ k'o pa Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ k'o pa Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "Man k'o ta ri $URL$ pa Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "Man k'o ta ri $URL$ pa Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Man k'o ta pa Facebook Container re ruxaq re'. Re re' nub'än k'ayew chuwäch ri Facebook richin nrojqaj pa ri ajk'amaya'l.", 
+    "message": "Man k'o ta pa Facebook Container re ruxaq re'. Re re' nub'än k'ayew chuwäch ri Facebook richin nrojqaj pa ri ajk'amaya'l.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Man k'o ta pa Facebook Container re ruxaq re'.", 
+    "message": "Man k'o ta pa Facebook Container re ruxaq re'.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
+  "onboarding1-subhead": {
+    "message": "Nokisäx Facebook Container",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
   "btn-allow": {
-    "message": "Tiya' q'ij", 
+    "message": "Tiya' q'ij",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Tiq'at", 
+    "message": "Tiq'at",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Jun chik", 
+    "message": "Jun chik",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Chi rij", 
+    "message": "Chi rij",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Xk'is", 
+    "message": "Xk'is",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "learn-more": {
-    "message": "Tetamäx ch'aqa' chik", 
+    "message": "Tetamäx ch'aqa' chik",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "sites-included": {
-    "message": "SITES INCLUDED", 
+    "message": "SITES INCLUDED",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Majun", 
+    "message": "Majun",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "remove": {
-    "message": "Tiyuj", 
+    "message": "Tiyuj",
     "description": ""
   }
 }
