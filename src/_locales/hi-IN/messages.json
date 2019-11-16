@@ -82,6 +82,10 @@
     "message": "मुझे कैसे पता चलेगा कि Facebook Container काम कर रहा है?",
     "description": "This is the subhead for the third onboarding panel."
   },
+  "onboarding3-p1": {
+    "message": "बटन जो आपको Facebook पर चीजें पसंद या साझा करते हैं या आपको अपने Facebook खाते का उपयोग करने वाली वेबसाइटों में लॉग इन करने देते हैं, जिसमें ट्रैकर शामिल हैं। Facebook Container इन ट्रैकर्स को ब्लॉक करेगा और आपको दिखाने के लिए बाड़ आइकन प्रदर्शित करेगा जहाँ ट्रैकर्स हटाए गए थे।",
+    "description": "This is the first paragraph of the third onboarding panel."
+  },
   "onboarding3-p2": {
     "message": "हालाँकि, यदि आप इनमें से किसी भी बटन को दबाते हैं तो Facebook आपको ट्रैक करने में सक्षम होगा।",
     "description": "This is the second paragraph on the third onboarding panel."
@@ -134,6 +138,10 @@
     "message": "हमने आपको Facebook से सुरक्षित रखा है.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
+  "trackers-detected-p1": {
+    "message": "खरीदारी, समाचार और अन्य साइटों पर दिखाई देने वाले फेसबुक बटन में ट्रैकर्स होते हैं जो Facebook को बताते हैं कि आप वेब पर कहां हैं। यहां तक कि अगर आप इन बटनों का उपयोग कभी भी पसंद या साझा करने के लिए नहीं करते हैं, तब भी ट्रैकर आपके ब्राउज़िंग के बारे में डेटा एकत्र कर सकते हैं। Facebook Container इन ट्रैकर्स को ब्लॉक करता है।",
+    "description": ""
+  },
   "trackers-detected-p2": {
     "message": "Facebook Container इन ट्रैकर्स को ब्लॉक करता है। हालाँकि, यदि आप इनमें से किसी भी बटन को दबाते हैं तो Facebook आपको ट्रैक करने में सक्षम होगा।",
     "description": ""
@@ -149,6 +157,9 @@
   "no-sites-added": {
     "message": "कुछ नहीं",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-added-p1": {
+    "message": "Facebook Container Facebook के स्वामित्व वाली साइटों को सीमा के भीतर रखता है। आप अन्य साइटों को सीमा में रखने की अनुमति दे सकते हैं, लेकिन इससे Facebook आपके वेब ब्राउजिंग को और अधिक ट्रैक कर सकेगा।"
   },
   "remove": {
     "message": "हटाएँ",
