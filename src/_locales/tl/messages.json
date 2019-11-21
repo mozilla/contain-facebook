@@ -13,6 +13,13 @@
       }
     }
   },
+  "in-fbc-p1": {
+    "message": "Maaari nang i-track ng Facebook ang site na ito. Para alisin sa Facebook Container ang site na ito, piliin ang Sites Allowed sa Facebook Container at alisin ito mula sa listahan."
+  },
+  "on-facebook-subhead": {
+    "message": "Nasa Facebook at Sites na sakop ng Facebook Container",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "notOnFacebookHeader": {
     "message": "$URL$ ay wala sa Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
@@ -31,9 +38,37 @@
     "message": "Ang site na ito ay wala sa Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "onboarding3-subhead": {
+    "message": "Paano ko malalaman na gumagana ang Facebook Container?",
+    "description": "This is the subhead for the third onboarding panel."
+  },
+  "btn-allow": {
+    "message": "Payagan",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "Kanselahin",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "Sunod",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "Bumalik",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
   "btn-done": {
     "message": "Tapos na",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "Bumalik sa naunang panel.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Pumunta sa Kung paano gamitin ang Facebook Container",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   },
   "learn-more": {
     "message": "Matuto ng higit pa",
