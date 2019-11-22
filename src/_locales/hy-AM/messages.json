@@ -1,0 +1,188 @@
+{
+  "extensionDescription": {
+    "message": "Facebook պարունակը մեկուսացնում է ձեր Facebook֊ի գործունեությունը ձեր վեբ գործունեության մնացած մասից, որպեսզի թույլ չտաք Facebook֊ին Facebook֊ի կայքից դուրս հետևել երրորդ անձանց թխուկների միջոցով։",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ գտնվում է Facebook բեռնարկղում։",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "in-fbc-p1": {
+    "message": "Facebook֊ն այժմ կարող է ձեզ հետևել այս կայքում։Այս կայքը Facebook պարունակից հանելու համար ընտրեք Facebook պարունակում թույլատրված կայքերը և հանեք այն ցուցակից։"
+  },
+  "on-facebook-subhead": {
+    "message": "Facebook֊ում և կայքերում Facebook բեռնարկղի սահմանագծում",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "Աշխատելու համար այս կայքերը պետք է մուտք գործեն ձեր Facebook֊ի ինքնությունը (կամ իմանան, թե ով եք դուք)։Սա նաև նշանակում է, որ  Facebook֊ը կարող է հետևել այն ամենին, ինչ անում եք այս կայքերում։",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
+  "notOnFacebookHeader": {
+    "message": "$URL$  չունի Facebook բեռնարկղում։",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.google.com"
+      }
+    }
+  },
+  "notOnFacebookText": {
+    "message": "Այս կայքը գտնվում է Facebook բեռնարկղի սահմաններից դուրս։Սա Facebook֊ի համար դժվարացնում է ձեզ համացանցով հետևելը։",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "onUnknownSiteHeader": {
+    "message": "Այս կայքը Facebook բեռնարկղում չէ։",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "facebookContainer": {
+    "message": "Facebook֊ի պարունակ",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "onboarding1-subhead": {
+    "message": "Օգտագործեք Facebook բեռնարկղը",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p1": {
+    "message": "Facebook-ը կարող է հետևել ձեր զննարկմանը Facebook․com֊ից շատ հեռու։Օրինակ՝ «Like» և «Share» կոճակները կարող են հետևել, թե որտեղ եք եղել, նույնիսկ այն էջերում, որոնք դուք երբեք չեք հավանում կամ համօգտագործում։",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "Facebook պարունակը սահման է ստեղծում Facebook֊ի կայքերի և մնացած ցանցի միջև, այնպես որ Facebook֊ի համար ավելի դժվար է ձեզ առցանց հետևել։",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "Facebook բեռնարկղի ցանկապատի պատկերակը",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "Այս պատկերակը հայտնվում է  Firefox֊ի հասցեների բարում, երբ այցելում եք այնպիսի կայքեր, ինչպիսք են Facebook.com֊ը, որոնք գտնվում են Facebook բեռնարկղի սահմանում։",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "Աշխատելու համար այս կայքերը պետք է մուտք ունենան ձեր  Facebook֊ի ինքնությունը (կամ իմանան,թե ով եք դուք)։Սա նաև նշանակում է, որ  Facebook֊ը կարող է հետևել այն ամենին ինչ անում եք այս կայքերում։",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding3-subhead": {
+    "message": "Ինչպե՞ս գիտեմ, որ  Facebook բեռնարկղը աշխատում է։",
+    "description": "This is the subhead for the third onboarding panel."
+  },
+  "onboarding3-img": {
+    "message": "Այս պատկերը ցույց  է տալիս, թե ինչպես  Facebook բեռնարկղի ցանկապատի պատկերակը կհայտնվի ներդիրում՝  Facebook like կոճակի կողքին։",
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  },
+  "onboarding3-p2": {
+    "message": "Այնուամենայնիվ, եթե դուք սեղմեք այս կոճակներից որևէ մեկին,  Facebook֊ը կկարողանա հետևել ձեզ։",
+    "description": "This is the second paragraph on the third onboarding panel."
+  },
+  "btn-allow": {
+    "message": "Թույլատրել",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "Չեղարկել",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "Հաջորդը",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "Նախորդը",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "Պատրաստ է",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "Վերադառնալ նախորդ վահանակին։",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Գնալ դեպի«Ինչպե՞ս է աշխատում Facebook բեռնարկղը»",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "Facebook֊ի հետքեր չեն հայտնաբերվել",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook պարունակը այս էջում չի հայտնաբերել որևէ Facebook֊ի հետևորդ։ Այնուամենայնիվ, էջը կարող է պարունակել հետախուզիչների այլ տեսակներ։",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "Իմանալ ավելին",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Ինչպես է աշխատում Facebook բեռնարկղը",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "Մենք ձեզ պաշտպանել ենք Facebook֊ից։",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook պարունակը արգելափակում է այս հետքերը։ Այնուամենայնիվ, եթե դուք սեղմեք այս կոճակներից որևէ մեկին, Facebook֊ը կկարողանա հետևել ձեզ։",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "Facebook պարունակը ցանկապատ վահանով։",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "Facebook֊ի բեռնարկղում թույլատրված կայքեր",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "SITESINCLUDED",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "Չկա",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "SITESYOUALLOWED",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "sites-added-p1": {
+    "message": "Facebook պարունակը Facebook֊ին պատկանող կայքերը սահմանի սահմաններում է դնում։ Կարող եք այլ կայքեր թույլ տալ սահմանի մեջ, բայց դա թույլ կտա Facebook֊ին ավելի շատ հետևել ձեր վեբ զննարկմանը։"
+  },
+  "remove": {
+    "message": "Հեռացնել",
+    "description": ""
+  },
+  "remove-site-subhead": {
+    "message": "Հեռացրեք կայքը Facebook բեռնարկղից։",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "Facebook֊ի բեռնարկղից այս կայքը հեռացնելը նշանակում է, որ «Ֆեյսբուք» գործառույթով մուտքն այլևս չի աշխատի, և Facebook֊ի հետևելու թխուկները կջնջվեն։",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": " Եթե ցանկանում եք կրկին օգտագործել մուտք գործել Facebook ապա հարկավոր է այն կրկին ավելացնել Facebook պարունակում։",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook բեռնարկղը անջատել է այս կոճակը և արգելափակել է Facebook֊ին հետևելու ձեր այցը այս էջ։",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Թույլ տվեք  Facebook֊ին հետևել ձեզ այստեղ։",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Այլևս չցուցադրել",
+    "description": ""
+  }
+}
