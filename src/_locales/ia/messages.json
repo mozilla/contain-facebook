@@ -83,7 +83,7 @@
     "description": "This is the subhead for the third onboarding panel."
   },
   "onboarding3-p1": {
-    "message": "Le buttones que te consenti de marcar Me place o Compartir cosas in Facebook, o que te lassa acceder a sitos web per tu conto Facebook, contine traciatores. Facebook Container blocara iste traciatores e monstra le icone barriera pro te monstrar ubi le traciatores era eliminate.",
+    "message": "Le buttones que te permitte de amar o compartir cosas in Facebook, o que te lassa acceder a sitos web per tu conto Facebook, contine traciatores. Facebook Container bloca iste traciatores e monstra le icone de barriera pro monstrar te ubi le traciatores ha essite eliminate.",
     "description": "This is the first paragraph of the third onboarding panel."
   },
   "onboarding3-img": {
@@ -95,7 +95,7 @@
     "description": "This is the second paragraph on the third onboarding panel."
   },
   "btn-allow": {
-    "message": "Consentir",
+    "message": "Permitter",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
   },
   "btn-cancel": {
@@ -155,7 +155,7 @@
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Sitos consentite in Facebook Container",
+    "message": "Sitos permittite in Facebook Container",
     "description": "This is a panel subhead."
   },
   "sites-included": {
@@ -167,7 +167,7 @@
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   },
   "sites-allowed": {
-    "message": "SITOS QUE TU HA CONSENTITE",
+    "message": "SITOS QUE TU HA PERMITTITE",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
@@ -198,7 +198,7 @@
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Consenti a Facebook de te traciar ci?",
+    "message": "Permitter que Facebook te tracia hic?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
