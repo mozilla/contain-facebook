@@ -13,6 +13,17 @@
       }
     }
   },
+  "in-fbc-p1": {
+    "message": "Wakami ri Facebook nitikïr yatrojqaj pa re ruxaq re'. Richin nayüj re ruxaq re' pa Facebook Container, tacha' Taq Ruxaq Ya'on Q'ij Chi Ke Pa Facebook Container richin nayüj el pa ri rucholajem."
+  },
+  "on-facebook-subhead": {
+    "message": "Pa Facebook chuqa' Taq Ruxaq pa Ruk'ulb'a't Facebook Container",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p1": {
+    "message": "Re wachib'äl re' k'o pa ri kikajtz'ik rochochib'al Firefox toq ye'atz'ët taq ruxaq Facebook o e'atz'aqatisan pa Facebook Container.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "notOnFacebookHeader": {
     "message": "Man k'o ta ri $URL$ pa Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
@@ -38,6 +49,26 @@
   "onboarding1-subhead": {
     "message": "Nokisäx Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "Pa Facebook chuqa' Taq Ruxaq pa Ruk'ulb'a't Facebook Container",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "Ruwachib'l rukokal ri Facebook Container",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "Re wachib'äl re' niwachin pa rukajtz'ik rochochib'al Firefox toq natz'ët jun ajk'amaya'l ruxaq, achi'el Facebook.com, ri k'o pa ruk'ulb'a't ri Facebook Container.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "Re taq ruxaq re' nik'atzin chi ke ye'ok pa ri ab'anikil pa Facebook (o nrajo' nretamaj at achike rat) richin nitikïr nisamäj. Ri nuq'ajuj chuqa' chi ri Facebook nitikïr nrojqaj ronojel ri nab'än pa ri taq ruxaq ri'.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding3-subhead": {
+    "message": "¿Achike rub'eyal ninwetamaj chi nisamäj ri Facebook Container?",
+    "description": "This is the subhead for the third onboarding panel."
   },
   "btn-allow": {
     "message": "Tiya' q'ij",
