@@ -70,6 +70,10 @@
     "message": "¿Achike rub'eyal ninwetamaj chi nisamäj ri Facebook Container?",
     "description": "This is the subhead for the third onboarding panel."
   },
+  "onboarding3-p2": {
+    "message": "We napïtz pa xab'achike re taq pitz'b'äl re', ri Facebook xtitikïr xkatrojqaj.",
+    "description": "This is the second paragraph on the third onboarding panel."
+  },
   "btn-allow": {
     "message": "Tiya' q'ij",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -90,9 +94,41 @@
     "message": "Xk'is",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   },
+  "btn-arrow-back": {
+    "message": "Titzolin pa ri jun kan pas.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Tib'e pa Achike Rub'eyal Nisamäj ri Facebook Container",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "Majun Rojqanela' Facebook Xe'ilitäj",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Majun rojqanel Facebook xrïl ri Facebook Container pa re ruxaq re'. Xa xe chi rik'in jub'a' ri ruxaq ruk'wan juley chik ruwäch taq ojqanela'.",
+    "description": ""
+  },
   "learn-more": {
     "message": "Tetamäx ch'aqa' chik",
     "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Achike Rub'eyal Nisamäj ri Facebook Container",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "Xatqachajij chuwäch ri Facebook.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-fence-alt": {
+    "message": "Facebook Container rik'in Pokob'.",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "Taq Ruxaq Ya'on Q'ij pa Facebook Container",
+    "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "SITES INCLUDED",
@@ -102,8 +138,24 @@
     "message": "Majun",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   },
+  "sites-allowed": {
+    "message": "RI TAQ RUXAQ YA'ON Q'IJ CHI KE",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
   "remove": {
     "message": "Tiyuj",
+    "description": ""
+  },
+  "remove-site-subhead": {
+    "message": "¿La nawelesaj ri ruxaq pa Facebook Container?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "¿La nya' q'ij richin yatrojqaj wawe' ri Facebook?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Man tik'ut chik pe chwe",
     "description": ""
   }
 }
