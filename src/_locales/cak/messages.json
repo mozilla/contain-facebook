@@ -24,6 +24,10 @@
     "message": "Re wachib'äl re' k'o pa ri kikajtz'ik rochochib'al Firefox toq ye'atz'ët taq ruxaq Facebook o e'atz'aqatisan pa Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "on-facebook-p2": {
+    "message": "Re taq ruxaq re' nik'atzin chi ke ye'ok pa ri ab'anikil richin Facebook (o nrajo' nretamaj at achike rat) richin nitikïr nisamäj. Ri nuq'ajuj chuqa' chi ri Facebook nitikïr nrojqaj ronojel ri nab'än pa ri taq ruxaq ri'.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
   "notOnFacebookHeader": {
     "message": "Man k'o ta ri $URL$ pa Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
