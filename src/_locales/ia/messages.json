@@ -67,7 +67,7 @@
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding2-alt": {
-    "message": "Le icone barriera de Facebook Container",
+    "message": "Le icone de barriera de Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
@@ -206,7 +206,7 @@
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Non me lo monstrar de novo",
+    "message": "Non monstrar me isto de novo",
     "description": ""
   }
 }
