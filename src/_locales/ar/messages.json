@@ -1,1 +1,38 @@
-{}
+{
+  "btn-allow": {
+    "message": "اسمح",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "ألغِ",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "التالي",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-done": {
+    "message": "تمّ",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "ارجع إلى اللوحة السابقة.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "learn-more": {
+    "message": "اطّلع على المزيد",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "no-sites-added": {
+    "message": "لا مواقع",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "remove": {
+    "message": "أزِل",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "لا تعرض لي هذا ثانيةً",
+    "description": ""
+  }
+}
