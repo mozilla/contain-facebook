@@ -1,96 +1,153 @@
 {
   "extensionDescription": {
-    "message": "‏Facebook Container מבודדת את הפעילות שלך ב־Facebook משאר הפעילות המקוונת שלך כדי למנוע מ־Facebook לעקוב אחריך מחוץ לאתר Facebook באמצעות עוגיות צד־שלישי.", 
+    "message": "‏Facebook Container מבודדת את הפעילות שלך ב־Facebook משאר הפעילות המקוונת שלך כדי למנוע מ־Facebook לעקוב אחריך מחוץ לאתר Facebook באמצעות עוגיות צד־שלישי.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
-  "notOnFacebookHeader": {
-    "message": "‏$URL$ אינו נמצא ב־Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ נמצא ב־Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "in-fbc-p1": {
+    "message": "Facebook יכולה כעת לעקוב אחריך באתר זה. כדי להסיר את אתר זה מ־Facebook Container, יש לבחור אתרים מותרים ולהסיר אותו מהרשימה."
+  },
+  "on-facebook-subhead": {
+    "message": "על Facebook ואתרים ברשימה של Facebook Container",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p1": {
+    "message": "סמל זה מופיע בסרגל הכתובות של Firefox עבור אתרים השייכים ל־Facebook ואתרים שהוספת אל Facebook Container.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "אתרים אלה צריכים גישה לזהות שלך ב־Facebook כדי לעבוד. המשמעות היא ש־Facebook יכולה לעקוב אחריך באתרים אלה.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
+  "notOnFacebookHeader": {
+    "message": "‏$URL$ אינו נמצא ב־Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "אתר זה נמצא מחוץ ל־Facebook Container. זה מקשה על Facebook לעקוב אחריך ברחבי הרשת.", 
+    "message": "אתר זה נמצא מחוץ ל־Facebook Container. זה מקשה על Facebook לעקוב אחריך ברחבי הרשת.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "אתר זה אינו נמצא ב־Facebook Container.", 
+    "message": "אתר זה אינו נמצא ב־Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "שימוש ב־Facebook Container", 
+    "message": "שימוש ב־Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
+  "onboarding1-p1": {
+    "message": "Facebook יכולה לעקוב אחר הגלישה שלך הרבה מעבר ל־Facebook.com. כפתורי ”אהבתי” ו־”שיתוף” של Facebook, למשל, יכולים לעקוב אחריך – גם באתרים שלא אהבת או שיתפת.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "Facebook Container מציב גבול בין אתרי Facebook ושאר הרשת, ובכך מקשה על Facebook לעקוב אחריך ברשת.",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "על Facebook ואתרים ברשימה של Facebook Container",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding2-alt": {
-    "message": "סמל הגדר של Facebook Container", 
+    "message": "סמל הגדר של Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "איך אוכל לדעת ש־Facebook Container עובד?", 
+    "message": "איך אוכל לדעת ש־Facebook Container עובד?",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
+  "btn-allow": {
+    "message": "לאפשר",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
   "btn-cancel": {
-    "message": "ביטול", 
+    "message": "ביטול",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "הבא", 
+    "message": "הבא",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "חזרה", 
+    "message": "חזרה",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "סיום", 
+    "message": "סיום",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "חזרה לחלונית הקודמת.", 
+    "message": "חזרה לחלונית הקודמת.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "מעבר אל איך Facebook Container עובד", 
+    "message": "מעבר אל איך Facebook Container עובד",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
+  "no-trackers-subhead": {
+    "message": "לא אותרו עוקבים של Facebook",
+    "description": ""
+  },
   "learn-more": {
-    "message": "מידע נוסף", 
+    "message": "מידע נוסף",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "איך Facebook Container עובד", 
+    "message": "איך Facebook Container עובד",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
+  "trackers-detected-subhead": {
+    "message": "שמרנו עליך מפני Facebook.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "sites-added-subhead": {
+    "message": "אתרים מותרים ב־Facebook Container",
+    "description": "This is a panel subhead."
+  },
   "sites-included": {
-    "message": "אתרים כלולים", 
+    "message": "אתרים כלולים",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "ללא", 
+    "message": "ללא",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "אתרים שאישרת", 
+    "message": "אתרים שאישרת",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "remove": {
-    "message": "הסרה", 
+    "message": "הסרה",
     "description": ""
-  }, 
+  },
   "remove-site-subhead": {
-    "message": "להסיר את האתר מ־Facebook Container?", 
+    "message": "להסיר את האתר מ־Facebook Container?",
     "description": ""
-  }, 
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "האם לאפשר ל־Facebook לעקוב אחריך כאן?",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "לא להציג הודעה זו שוב", 
+    "message": "לא להציג הודעה זו שוב",
     "description": ""
   }
 }
