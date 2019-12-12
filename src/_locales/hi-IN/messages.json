@@ -86,6 +86,10 @@
     "message": "बटन जो आपको Facebook पर चीजें पसंद या साझा करते हैं या आपको अपने Facebook खाते का उपयोग करने वाली वेबसाइटों में लॉग इन करने देते हैं, जिसमें ट्रैकर शामिल हैं। Facebook Container इन ट्रैकर्स को ब्लॉक करेगा और आपको दिखाने के लिए बाड़ आइकन प्रदर्शित करेगा जहाँ ट्रैकर्स हटाए गए थे।",
     "description": "This is the first paragraph of the third onboarding panel."
   },
+  "onboarding3-img": {
+    "message": "यह छवि दिखाती है कि फेसबुक लाइक बटन के बगल में फेसबुक कंटेनर फेंस आइकन इन-पेज कैसे दिखाई देगा।",
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  },
   "onboarding3-p2": {
     "message": "हालाँकि, यदि आप इनमें से किसी भी बटन को दबाते हैं तो Facebook आपको ट्रैक करने में सक्षम होगा।",
     "description": "This is the second paragraph on the third onboarding panel."
