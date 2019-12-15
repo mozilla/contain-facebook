@@ -150,6 +150,10 @@
     "message": "Facebook Container इन ट्रैकर्स को ब्लॉक करता है। हालाँकि, यदि आप इनमें से किसी भी बटन को दबाते हैं तो Facebook आपको ट्रैक करने में सक्षम होगा।",
     "description": ""
   },
+  "trackers-detected-fence-alt": {
+    "message": "Facebook Container कवच से घिरा।",
+    "description": "This is alternative text describing the container fence icon."
+  },
   "sites-added-subhead": {
     "message": "Facebook Container में अनुमत साइटें",
     "description": "This is a panel subhead."
@@ -161,6 +165,10 @@
   "no-sites-added": {
     "message": "कुछ नहीं",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "जिन साइटों को आपने स्वीकृति दी है",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
     "message": "Facebook Container Facebook के स्वामित्व वाली साइटों को सीमा के भीतर रखता है। आप अन्य साइटों को सीमा में रखने की अनुमति दे सकते हैं, लेकिन इससे Facebook आपके वेब ब्राउजिंग को और अधिक ट्रैक कर सकेगा।"
