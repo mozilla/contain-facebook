@@ -20,6 +20,14 @@
     "message": "Nasa Facebook at Sites na sakop ng Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "on-facebook-p1": {
+    "message": "Ang icon na ito ay makikita sa address bar ng Firefox kung ikaw ay bibisita ng mga site na pag-aari ng Facebook o mga site na dinagdag mo sa Facebook Container.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "Ang mga site na ito ay nangangailangan ng access sa iyong pagkakakilanlan sa Facebook (o kung sino ikaw) para gumana. Nangangahulugan din ito na pwedeng subaybayan ng Facebook ang lahat ng ginagawa mo sa mga site na ito.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
   "notOnFacebookHeader": {
     "message": "$URL$ ay wala sa Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
@@ -37,6 +45,38 @@
   "onUnknownSiteHeader": {
     "message": "Ang site na ito ay wala sa Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "facebookContainer": {
+    "message": "Facebook Container",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "onboarding1-subhead": {
+    "message": "Paggamit ng Facebook Container",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p1": {
+    "message": "Maaaring subaybayan ng Facebook ang iyong browsing lampas pa sa loob ng Facebook.com. Sa pamamagitan ng Facebook Like at Share buttons, halimbawa, ay maaring masubaybayan kung nasaan ka — kahit sa mga pahinang hindi mo nai-like or share.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "Ang Facebook Container ay gumagawa ng hangganan sa paggitan ng mga Facebook site at iba pang nasa web para mahirapan ang Facebook na subaybayan ka online.",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "Nasa Facebook at Sites na sakop ng Facebook Container",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "Ang bakod na icon ng Facebook Container",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "Ang icon na ito ay lilitaw sa Firefox address bar kapag binisita mo ang mga sites, tulad ng Facebook.com, na nasa hangganan ng Facebook Container.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "Ang mga site na ito ay nangangailangan ng access sa iyong pakakakilanlan sa Facebook (o malaman kung sino ka) upang gumana. Nangangahulugan din ito na maaaring nakasubaybay ang Facebook sa lahat ng ginagawa mo sa mga site na ito.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding3-subhead": {
     "message": "Paano ko malalaman na gumagana ang Facebook Container?",
