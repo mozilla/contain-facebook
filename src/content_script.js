@@ -227,48 +227,12 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   } else if (socialAction === "share-passive") {
     htmlBadgeDiv.classList.add("fbc-badge-share-passive", "fbc-badge-share");
 
-    target.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-    });
-
-    target.addEventListener("mouseover", () => {
-      // console.log(["mouseover", target, htmlBadgeDiv]);
-      target.classList.add("fbc-badge-tooltip-active");
-      htmlBadgeDiv.classList.add("fbc-badge-tooltip-active");
-      setTimeout( ()=> {
-        positionPrompt( htmlBadgeDiv );
-      }, 50 );
-    });
-
-    target.addEventListener("mouseout", () => {
-      // console.log(["mouseout", target, htmlBadgeDiv]);
-      target.classList.remove("fbc-badge-tooltip-active");
-      htmlBadgeDiv.classList.remove("fbc-badge-tooltip-active");
-    });
+    shareBadgeEventListenerInit(target, htmlBadgeDiv);
 
   } else if (socialAction === "share")  {
     htmlBadgeDiv.classList.add("fbc-badge-share");
 
-    target.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-    });
-
-    target.addEventListener("mouseover", () => {
-      // console.log(["mouseover", target, htmlBadgeDiv]);
-      target.classList.add("fbc-badge-tooltip-active");
-      htmlBadgeDiv.classList.add("fbc-badge-tooltip-active");
-      setTimeout( ()=> {
-        positionPrompt( htmlBadgeDiv );
-      }, 50 );
-    });
-
-    target.addEventListener("mouseout", () => {
-      // console.log(["mouseout", target, htmlBadgeDiv]);
-      target.classList.remove("fbc-badge-tooltip-active");
-      htmlBadgeDiv.classList.remove("fbc-badge-tooltip-active");
-    });
+    shareBadgeEventListenerInit(target, htmlBadgeDiv);
 
   }
 
@@ -277,6 +241,29 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     positionPrompt( htmlBadgeDiv );
   });
 
+}
+
+// Add Event Listener actions/hooks to share badges
+function shareBadgeEventListenerInit(target, htmlBadgeDiv) {
+  target.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+  });
+
+  target.addEventListener("mouseover", () => {
+    // console.log(["mouseover", target, htmlBadgeDiv]);
+    target.classList.add("fbc-badge-tooltip-active");
+    htmlBadgeDiv.classList.add("fbc-badge-tooltip-active");
+    setTimeout( ()=> {
+      positionPrompt( htmlBadgeDiv );
+    }, 50 );
+  });
+
+  target.addEventListener("mouseout", () => {
+    // console.log(["mouseout", target, htmlBadgeDiv]);
+    target.classList.remove("fbc-badge-tooltip-active");
+    htmlBadgeDiv.classList.remove("fbc-badge-tooltip-active");
+  });
 }
 
 function findActivePrompt() {
