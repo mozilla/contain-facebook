@@ -54,7 +54,6 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
 // TODO: Disarm click events on detected elements
 const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/share']",
-  "[href*='facebook.com/dialog/share']", // Share dialog
   "[href*='facebook.com/dialog/feed']", // Feed dialog
   "[href*='facebook.com/sharer']", // Buzzfeed
   "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
@@ -64,6 +63,11 @@ const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[class*='social-tray__link--facebook']", // Vice
   ".post-action-options + .right > .social-icon.icon-f", // Imgur share
   "[title='Share on Facebook']" // Medium
+];
+
+// TODO: Disarm click events on detected elements
+const PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS = [
+  "[href*='facebook.com/dialog/share']", // Share dialog
 ];
 
 function isFixed (elem) {
@@ -83,6 +87,8 @@ function getTooltipFragmentStrings (socialAction) {
     return browser.i18n.getMessage("inPageUI-tooltip-button-login");
   case "share":
     return browser.i18n.getMessage("inPageUI-tooltip-button-share");
+  case "share-passive":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-share-passive");
   }
 }
 
@@ -218,7 +224,30 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
       e.target.parentElement.parentNode.parentNode.classList.remove("active");
     });
-  } else if (socialAction === "share") {
+  } else if (socialAction === "share-passive") {
+    htmlBadgeDiv.classList.add("fbc-badge-share-passive", "fbc-badge-share");
+
+    target.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+    });
+
+    target.addEventListener("mouseover", () => {
+      // console.log(["mouseover", target, htmlBadgeDiv]);
+      target.classList.add("fbc-badge-tooltip-active");
+      htmlBadgeDiv.classList.add("fbc-badge-tooltip-active");
+      setTimeout( ()=> {
+        positionPrompt( htmlBadgeDiv );
+      }, 50 );
+    });
+
+    target.addEventListener("mouseout", () => {
+      // console.log(["mouseout", target, htmlBadgeDiv]);
+      target.classList.remove("fbc-badge-tooltip-active");
+      htmlBadgeDiv.classList.remove("fbc-badge-tooltip-active");
+    });
+
+  } else if (socialAction === "share")  {
     htmlBadgeDiv.classList.add("fbc-badge-share");
 
     target.addEventListener("click", (e) => {
@@ -249,8 +278,6 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   });
 
 }
-
-
 
 function findActivePrompt() {
   const allBadges = document.querySelectorAll(".fbc-badge.active");
@@ -324,8 +351,6 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
   }
 
   const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
-
-
 
   if (!isVisible(target)) {
     if (!htmlBadgeDivHasDisabledClass) {
@@ -500,6 +525,7 @@ function detectFacebookOnPage () {
   }
 
   patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
+  patternDetection(PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS, "share-passive");
   patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
 
   escapeKeyListener();
