@@ -106,14 +106,13 @@
 }
 
 /* Only show first Share badge   */
-
-.fbc-badge-share.fbc-badge-disabled, .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) ~ .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) {
+.fbc-badge-share-passive, .fbc-badge-share.fbc-badge-disabled, .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) ~ .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) {
 	display: none;
 	visibility: hidden;
 	opacity: 0;
 }
 
-.fbc-badge-share:not(.fbc-badge-disabled), .fbc-badge-share.fbc-badge-tooltip-active:not(.fbc-badge-disabled) {
+.fbc-badge-share-passive:not(.fbc-badge-disabled), .fbc-badge-share:not(.fbc-badge-disabled), .fbc-badge-share.fbc-badge-tooltip-active:not(.fbc-badge-disabled) {
 	display: block;
 	visibility: visible;
 	opacity: 1;
