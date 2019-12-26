@@ -177,6 +177,18 @@
      "message": "Remove",
      "description": ""
    },
+   "button-allow-site": {
+     "message": "Allow Site in Facebook Container",
+     "description": "Button text that allows sites to be added to the Facebook Container"
+   },
+   "button-remove-site": {
+     "message": "Remove Site from Facebook Container",
+     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+   },
+   "button-remove-site-tooltip": {
+     "message": "Because this is a Facebook-owned site, it cannot be removed from Facebook Container.",
+     "description": "Tooltip that is displayed when hovering over the remove site button"
+   },
    "remove-site-subhead": {
       "message": "Remove site from Facebook Container?",
       "description": ""
