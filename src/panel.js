@@ -527,8 +527,10 @@ const buildRemoveSitePanel = (siteName) => {
   blueRemoveButton.id = "remove";
   blueRemoveButton.addEventListener("click", async() => {
     await browser.runtime.sendMessage( {removeDomain: siteName} );
+    browser.tabs.reload();
     window.close();
   });
+
   fragment.appendChild(blueRemoveButton);
 
   getLocalizedStrings();
