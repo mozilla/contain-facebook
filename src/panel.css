@@ -164,6 +164,16 @@ a:hover {
   transform: scale(1.3);
 }
 
+.highlight-on-hover.add-site-to-container::after {
+  width: 16px;
+  background-image: url("/img/site-add-icon.svg");
+}
+
+.highlight-on-hover.remove-site-from-container::after {
+  width: 16px;
+  background-image: url("/img/site-remove-icon.svg");
+}
+
 .highlight-on-hover span {
   pointer-events: none;
 }
