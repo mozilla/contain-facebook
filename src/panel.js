@@ -21,6 +21,9 @@ const setUpPanel = (panelId) => {
   const fragment = document.createDocumentFragment();
   fragment["id"] = panelId;
 
+  // Clear Panel Notification Dot
+  browser.browserAction.setBadgeText({text: ""});
+
   return { page, fragment };
 };
 
