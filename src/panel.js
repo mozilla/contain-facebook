@@ -107,6 +107,24 @@ const addSpan = (wrapper, stringId) => {
   setClassAndAppend(wrapper, span);
 };
 
+const getActiveHostname = async() => {
+  const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
+  const currentActiveTab = tabsQueryResult[0];
+  const currentActiveURL = new URL(currentActiveTab.url);
+  const thisHostname = currentActiveURL.hostname;
+  return thisHostname;
+};
+
+const isSiteInContainer = async() => {
+  const addedSitesList = await browser.runtime.sendMessage("what-sites-are-added");
+  const hostname = await getActiveHostname();
+
+  if (addedSitesList.includes(hostname)) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 const addLearnHowFBCWorksButton = async (fragment) => {
   let button = addFullWidthButton (fragment, "open-onboarding");
@@ -435,6 +453,27 @@ const buildAllowedSitesPanel = async(panelId) => {
   getLocalizedStrings();
 };
 
+const removeSiteFromContainer = async () => {
+
+  const thisHostname = await getActiveHostname();
+
+  await browser.runtime.sendMessage( {removeDomain: thisHostname} );
+  browser.tabs.reload();
+  window.close();
+
+};
+
+const addSiteToContainer = async () => {
+
+  const thisHostname = await getActiveHostname();
+
+  const fbcStorage = await browser.storage.local.get();
+  fbcStorage.domainsAddedToFacebookContainer.push(thisHostname);
+  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+  //await browser.runtime.sendMessage(thisHostname);
+  browser.tabs.reload();
+  window.close();
+};
 
 const buildRemoveSitePanel = (siteName) => {
   const panelId = "remove-site";
