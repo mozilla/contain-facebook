@@ -134,6 +134,30 @@ const addLearnHowFBCWorksButton = async (fragment) => {
   addSpan(button, "sites-added-subhead");
 };
 
+const addCustomSiteButton = async (fragment) => {
+  const shouldShowRemoveSiteButton = await isSiteInContainer();
+  let button;
+  if (shouldShowRemoveSiteButton) {
+    button = addFullWidthButton(fragment, "remove-site-from-container");
+    addSpan(button, "button-remove-site");
+  } else {
+    button = addFullWidthButton(fragment, "add-site-to-container");
+    addSpan(button, "button-allow-site");
+  }
+};
+
+
+const setCustomSiteButtonEvent = async () => {
+  const shouldShowRemoveSiteButton = await isSiteInContainer();
+
+  if (shouldShowRemoveSiteButton) {
+    const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
+    removeSiteFromContainerLink.addEventListener("click", async () => removeSiteFromContainer());
+  } else {
+    const addSiteToContainerLink = document.querySelector(".add-site-to-container");
+    addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
+  }
+};
 
 // adds bottom navigation buttons to onboarding panels
 const setNavButtons = (wrapper, button1Id, button2Id, panelId) => {
@@ -309,20 +333,30 @@ const buildPanel = async(panelId) => {
     addLearnMoreLink(contentWrapper);
   }
 
-  addLearnHowFBCWorksButton(fragment);
+  await addLearnHowFBCWorksButton(fragment);
+
+  if (panelId === "no-trackers") {
+    await addCustomSiteButton(fragment);
+  }
+
+  // FIXME: Don't show add/remove buttons on default FB sites.
+  await addCustomSiteButton(fragment);
+
   getLocalizedStrings();
   appendFragmentAndSetHeight(page, fragment);
   page.id = panelId;
 
   const onboardingLinks = document.querySelectorAll(".open-onboarding");
   const allowedSitesLink = document.querySelector(".open-allowed-sites");
+
   allowedSitesLink.addEventListener("click", () => buildAllowedSitesPanel("sites-allowed"));
+
+  await setCustomSiteButtonEvent();
 
   onboardingLinks.forEach(link => {
     link.addEventListener("click", () => buildOnboardingPanel(1));
   });
 };
-
 
 const buildOnboardingPanel = async (panelId) => {
   const stringId = `onboarding${panelId}`;
