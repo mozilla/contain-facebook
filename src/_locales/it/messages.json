@@ -185,6 +185,10 @@
     "message": "Rimuovi sito da Facebook Container",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
+  "button-remove-site-tooltip": {
+    "message": "Questo sito è di proprietà di Facebook, pertanto non può essere rimosso da Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
     "message": "Rimuovere questo sito da Facebook Container?",
     "description": ""
