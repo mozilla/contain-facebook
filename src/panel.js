@@ -237,7 +237,7 @@ const handleOnboardingClicks = async(e, res) => {
   if (el.classList.contains("btn-return")) {
     let currentPanel = await browser.storage.local.get("CURRENT_PANEL");
     currentPanel = currentPanel["CURRENT_PANEL"];
-    buildPanel(currentPanel);
+    await buildPanel(currentPanel);
   }
 };
 
@@ -298,7 +298,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const onboarding = (currentPanel.includes("onboarding"));
   if (!onboarding) {
-    return buildPanel(currentPanel);
+    return await buildPanel(currentPanel);
   }
   buildOnboardingPanel(1);
 });
