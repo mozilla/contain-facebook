@@ -1,212 +1,224 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container odděluje vaše prohlížení Facebooku od prohlížení zbytku webu a brání tím Facebooku, aby vás sledoval pomocí mechanismu cookies třetích stran.", 
+    "message": "Facebook Container odděluje vaše prohlížení Facebooku od prohlížení zbytku webu a brání tím Facebooku, aby vás sledoval pomocí mechanismu cookies třetích stran.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "Stránka $URL$ je otevřena ve Facebook Containeru.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "Stránka $URL$ je otevřena ve Facebook Containeru.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook vás nyní může na tomto serveru sledovat. Pro odebrání serveru z Facebook Containeru vyberte „Povolené servery“ a odeberte ho ze seznamu."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Na Facebooku a serverech oddělených ve Facebook Containeru", 
+    "message": "Na Facebooku a serverech oddělených ve Facebook Containeru",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Tato ikona se objeví v adresním řádku Firefoxu když navštívíte Facebookem vlastněný server nebo server, který jste přidali do Facebook Containeru.", 
+    "message": "Tato ikona se objeví v adresním řádku Firefoxu když navštívíte Facebookem vlastněný server nebo server, který jste přidali do Facebook Containeru.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Tyto servery potřebují pro fungování přístup k vaší Facebookové identitě (nebo k informacím, kdo jste). To znamená, že i Facebook může naopak sledovat vše, co na tomto serveru děláte.", 
+    "message": "Tyto servery potřebují pro fungování přístup k vaší Facebookové identitě (nebo k informacím, kdo jste). To znamená, že i Facebook může naopak sledovat vše, co na tomto serveru děláte.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "Stránka $URL$ není otevřena ve Facebook Containeru.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "Stránka $URL$ není otevřena ve Facebook Containeru.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Tato stránka není otevřena ve Facebook Containeru. To znamená, že je pro Facebook těžší vás na ní vysledovat.", 
+    "message": "Tato stránka není otevřena ve Facebook Containeru. To znamená, že je pro Facebook těžší vás na ní vysledovat.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Tato stránka není otevřena ve Facebook Containeru.", 
+    "message": "Tato stránka není otevřena ve Facebook Containeru.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Používání Facebook Containeru", 
+    "message": "Používání Facebook Containeru",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook může vás může sledovat i mimo server Facebook.com, např. pomocí tlačítek pro lajkování a sdílení. Ta mu poví, které stránky jste navštívili, i pokud jste je neolajkovali ani nesdíleli.", 
+    "message": "Facebook může vás může sledovat i mimo server Facebook.com, např. pomocí tlačítek pro lajkování a sdílení. Ta mu poví, které stránky jste navštívili, i pokud jste je neolajkovali ani nesdíleli.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container odděluje servery vlastněné Facebookem od ostatních. Pro Facebook je tak těžší vás na internetu sledovat.", 
+    "message": "Facebook Container odděluje servery vlastněné Facebookem od ostatních. Pro Facebook je tak těžší vás na internetu sledovat.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Na Facebooku a serverech oddělených pomocí Facebook Containeru", 
+    "message": "Na Facebooku a serverech oddělených pomocí Facebook Containeru",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Ikona plotu označující Facebook Container", 
+    "message": "Ikona plotu označující Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Tato ikona se objeví v adresním řádku Firefoxu když navštívíte Facebook.com nebo jiný server oddělený pomocí Facebook Containeru.", 
+    "message": "Tato ikona se objeví v adresním řádku Firefoxu když navštívíte Facebook.com nebo jiný server oddělený pomocí Facebook Containeru.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Tyto servery potřebují pro fungování přístup k vaší Facebookové identitě (nebo k informacím, kdo jste). To znamená, že i Facebook může naopak sledovat vše, co na tomto serveru děláte.", 
+    "message": "Tyto servery potřebují pro fungování přístup k vaší Facebookové identitě (nebo k informacím, kdo jste). To znamená, že i Facebook může naopak sledovat vše, co na tomto serveru děláte.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "Jak poznám, že Facebook Container funguje?", 
+    "message": "Jak poznám, že Facebook Container funguje?",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "Tlačítka pro lajkování a sdílení na Facebook nebo funkce přihlašování pomocí Facebooku obsahují sledovací prvky. Facebook Container tyto prvky blokuje a zobrazuje místo nich ikonu plotu pro zobrazení, co a kde zablokoval.", 
+    "message": "Tlačítka pro lajkování a sdílení na Facebook nebo funkce přihlašování pomocí Facebooku obsahují sledovací prvky. Facebook Container tyto prvky blokuje a zobrazuje místo nich ikonu plotu pro zobrazení, co a kde zablokoval.",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "Toto je náhled, jak můžete ikona Facebook Containeru vypadat na stránce s tlačítkem pro lajkování.", 
+    "message": "Toto je náhled, jak můžete ikona Facebook Containeru vypadat na stránce s tlačítkem pro lajkování.",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "Nicméně pokud na jakékoliv z těchto tlačítek klepnete, Facebook vás může vysledovat.", 
+    "message": "Nicméně pokud na jakékoliv z těchto tlačítek klepnete, Facebook vás může vysledovat.",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "Povolit", 
+    "message": "Povolit",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Zrušit", 
+    "message": "Zrušit",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Další", 
+    "message": "Další",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Zpět", 
+    "message": "Zpět",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Hotovo", 
+    "message": "Hotovo",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Zpět na předchozí panel.", 
+    "message": "Zpět na předchozí panel.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Podívat se, jak Facebook Container funguje", 
+    "message": "Podívat se, jak Facebook Container funguje",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Nenalezeny žádné sledovací prvky Facebooku", 
+    "message": "Nenalezeny žádné sledovací prvky Facebooku",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container na této stránce nenašel žádné sledovací prvky Facebooku. Mohou tu být ale jiné sledovací prvky.", 
+    "message": "Facebook Container na této stránce nenašel žádné sledovací prvky Facebooku. Mohou tu být ale jiné sledovací prvky.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Zjistit více", 
+    "message": "Zjistit více",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Jak Facebook Container funguje", 
+    "message": "Jak Facebook Container funguje",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Ochránili jsme vás před Facebookem.", 
+    "message": "Ochránili jsme vás před Facebookem.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Tlačítka Facebooku, která se objevují v e-shopech nebo na zpravodajských a dalších serverech obsahují sledovací prvky, díky kterým Facebook ví, které stránky navštívíte. I pokud žádné z těchto tlačítek pro lajkování nebo sdílení nepoužijete, sledovací prvky sbírají data o vašem prohlížení. Facebook Container blokuje přesně tyto sledovací prvky.", 
+    "message": "Tlačítka Facebooku, která se objevují v e-shopech nebo na zpravodajských a dalších serverech obsahují sledovací prvky, díky kterým Facebook ví, které stránky navštívíte. I pokud žádné z těchto tlačítek pro lajkování nebo sdílení nepoužijete, sledovací prvky sbírají data o vašem prohlížení. Facebook Container blokuje přesně tyto sledovací prvky.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container tyto sledovací prvky blokuje. Nicméně pokud na jakékoliv z těchto tlačítek klepnete, Facebook vás může vysledovat.", 
+    "message": "Facebook Container tyto sledovací prvky blokuje. Nicméně pokud na jakékoliv z těchto tlačítek klepnete, Facebook vás může vysledovat.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Ikona plotu Facebook Containeru se štítem.", 
+    "message": "Ikona plotu Facebook Containeru se štítem.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Servery povolené ve Facebook Containeru", 
+    "message": "Servery povolené ve Facebook Containeru",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "ZAHRNUTÉ SERVERY", 
+    "message": "ZAHRNUTÉ SERVERY",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Žádné", 
+    "message": "Žádné",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "VÁMI POVOLENÉ SERVERY", 
+    "message": "VÁMI POVOLENÉ SERVERY",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container odděluje servery vlastněné Facebookem od ostatních. Můžete k nim přidat další servery, ale tím Facebooku umožníte vás na nich sledovat a získávat více dat."
-  }, 
+  },
   "remove": {
-    "message": "Odebrat", 
+    "message": "Odebrat",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Povolit server ve Facebook Containeru",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Odebrat server z Facebook Containeru",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Tento server je vlastněn Facebookem a proto ho z Facebook Containeru nelze odebrat.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Chcete odebrat server z Facebook Containeru?", 
+    "message": "Chcete odebrat server z Facebook Containeru?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Odebrání tohoto serveru z Facebook Containeru na něm znemožní další přihlašování pomocí Facebooku a sledovací cookies Facebooku budou smazány.", 
+    "message": "Odebrání tohoto serveru z Facebook Containeru na něm znemožní další přihlašování pomocí Facebooku a sledovací cookies Facebooku budou smazány.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Pokud se chcete nadále přihlašovat pomocí Facebooku, přidejte server zpět do Facebook Containeru.", 
+    "message": " Pokud se chcete nadále přihlašovat pomocí Facebooku, přidejte server zpět do Facebook Containeru.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container zakázal toho tlačítko a zabránil Facebooku, aby vás na této stránce sledoval.", 
+    "message": "Facebook Container zakázal toho tlačítko a zabránil Facebooku, aby vás na této stránce sledoval.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container zablokoval sledovací prvky Facebooku. Pokud se ale na tomto serveru pomocí Facebooku přihlásíte, Facebook vás bude moci vysledovat.", 
+    "message": "Facebook Container zablokoval sledovací prvky Facebooku. Pokud se ale na tomto serveru pomocí Facebooku přihlásíte, Facebook vás bude moci vysledovat.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Chcete povolit Facebooku vás sledovat?", 
+    "message": "Chcete povolit Facebooku vás sledovat?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Pokud se chcete přihlašovat pomocí Facebooku, umožníte mu tak sledovat vaše aktivity na tomto serveru. To mu pomůže udělat si ucelený obrázek o vašem online životě.", 
+    "message": "Pokud se chcete přihlašovat pomocí Facebooku, umožníte mu tak sledovat vaše aktivity na tomto serveru. To mu pomůže udělat si ucelený obrázek o vašem online životě.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Příště už nezobrazovat", 
+    "message": "Příště už nezobrazovat",
     "description": ""
   }
 }
