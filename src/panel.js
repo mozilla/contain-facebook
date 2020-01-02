@@ -103,6 +103,12 @@ const addFullWidthButton = (fragment, listenerClass) => {
   return button;
 };
 
+const addTooltip = (wrapper, stringId) => {
+  const div = document.createElement("div");
+  div["id"] = stringId;
+  setClassAndAppend(wrapper, div);
+};
+
 
 const addSpan = (wrapper, stringId) => {
   const span = document.createElement("span");
@@ -118,7 +124,13 @@ const getActiveHostname = async() => {
   return thisHostname;
 };
 
-const isSiteInContainer = async() => {
+const isSiteInContainer = async(panelId) => {
+
+  if (panelId === "on-facebook") {
+    // Site is on default FBC domain. Show the "remove site" button, in a disabled state.
+    return true;
+  }
+
   const addedSitesList = await browser.runtime.sendMessage("what-sites-are-added");
   const hostname = await getActiveHostname();
 
@@ -137,12 +149,13 @@ const addLearnHowFBCWorksButton = async (fragment) => {
   addSpan(button, "sites-added-subhead");
 };
 
-const addCustomSiteButton = async (fragment) => {
-  const shouldShowRemoveSiteButton = await isSiteInContainer();
+const addCustomSiteButton = async (fragment, panelId) => {
+  const shouldShowRemoveSiteButton = await isSiteInContainer(panelId);
   let button;
   if (shouldShowRemoveSiteButton) {
     button = addFullWidthButton(fragment, "remove-site-from-container");
     addSpan(button, "button-remove-site");
+    addTooltip(button, "button-remove-site-tooltip");
   } else {
     button = addFullWidthButton(fragment, "add-site-to-container");
     addSpan(button, "button-allow-site");
@@ -150,8 +163,14 @@ const addCustomSiteButton = async (fragment) => {
 };
 
 
-const setCustomSiteButtonEvent = async () => {
-  const shouldShowRemoveSiteButton = await isSiteInContainer();
+const setCustomSiteButtonEvent = async (panelId) => {
+  const shouldShowRemoveSiteButton = await isSiteInContainer(panelId);
+
+  if (panelId === "on-facebook") {
+    const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
+    removeSiteFromContainerLink.classList.add("disabled-button");
+    return;
+  }
 
   if (shouldShowRemoveSiteButton) {
     const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
@@ -339,11 +358,10 @@ const buildPanel = async(panelId) => {
   await addLearnHowFBCWorksButton(fragment);
 
   if (panelId === "no-trackers") {
-    await addCustomSiteButton(fragment);
+    await addCustomSiteButton(fragment, panelId);
   }
 
-  // FIXME: Don't show add/remove buttons on default FB sites.
-  await addCustomSiteButton(fragment);
+  await addCustomSiteButton(fragment, panelId);
 
   getLocalizedStrings();
   appendFragmentAndSetHeight(page, fragment);
@@ -354,7 +372,7 @@ const buildPanel = async(panelId) => {
 
   allowedSitesLink.addEventListener("click", () => buildAllowedSitesPanel("sites-allowed"));
 
-  await setCustomSiteButtonEvent();
+  await setCustomSiteButtonEvent(panelId);
 
   onboardingLinks.forEach(link => {
     link.addEventListener("click", () => buildOnboardingPanel(1));
