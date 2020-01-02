@@ -252,7 +252,12 @@ const handleOnboardingClicks = async(e, res) => {
   }
 
   if (buttonId === "btn-back") {
-    buildOnboardingPanel(res - 1);
+    if (res === 4) {
+      // This accounts for the skipped Panel #3
+      buildOnboardingPanel(2);
+    } else {
+      buildOnboardingPanel(res - 1);
+    }
   }
 
   // go back to origin panel
@@ -380,6 +385,14 @@ const buildPanel = async(panelId) => {
 };
 
 const buildOnboardingPanel = async (panelId) => {
+
+  if (panelId === 3) {
+    // This panel has been depricated, but due to the pagination logic and localization
+    // string ID naming conventions, this number is preserved and skipped over.
+    panelId++;
+  }
+
+
   const stringId = `onboarding${panelId}`;
   const { page, fragment } = setUpPanel(stringId);
 
@@ -399,13 +412,21 @@ const buildOnboardingPanel = async (panelId) => {
     setNavButtons(fragment, "btn-back", "btn-next", stringId);
   }
 
-  if (panelId === 3) {
+  if (panelId === 4) {
+    const imgDiv = addDiv(contentWrapper, stringId);
+    imgDiv.classList.add("img");
+    setNavButtons(fragment, "btn-back", "btn-next", stringId);
+  }
+
+  if (panelId === 5) {
     const imgDiv = addDiv(contentWrapper, stringId);
     imgDiv.classList.add("img");
     setNavButtons(fragment, "btn-back", "btn-done", stringId);
   }
 
-  addParagraph(contentWrapper, `${stringId}-p2`);
+  if (panelId !== 4) {
+    addParagraph(contentWrapper, `${stringId}-p2`);
+  }
 
   getLocalizedStrings();
 

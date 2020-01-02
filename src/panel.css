@@ -75,7 +75,7 @@ h2 { /* panel sub-head for all panels */
 
 h2,
 .bold {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h3 {
@@ -341,9 +341,16 @@ a:hover {
   background-position: left, center;
 }
 
-.img.onboarding3 {
+.img.onboarding4 {
   background-image: url("/img/image-example@2x.png");
   height: 145px;
+  margin: 1rem auto 1.5rem auto;
+  background-position: center center;
+}
+
+.img.onboarding5 {
+  background-image: url("/img/image-addsite@2x.png");
+  height: 179px;
   margin: 1rem auto 1.5rem auto;
   background-position: center center;
 }
@@ -369,7 +376,7 @@ a:hover {
 /* This eliminates (The-Powers-That-Be-Willing) a strange little white gap between
    the bottom edge of the 'bottom-btns' and the bottom edge of the panel. */
 
-.onboarding3 .bottom-btn {
+.onboarding5 .bottom-btn {
   height: 3.41rem;
 }
 
