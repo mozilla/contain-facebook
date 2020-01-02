@@ -1,212 +1,224 @@
 {
   "extensionDescription": {
-    "message": "A Facebook Container elkülöníti a Facebook tevékenységét a többi webes tevékenységtől annak érdekében, hogy megakadályozza, hogy a Facebook a webhelyén kívül is követhesse Önt a harmadik féltől származó sütik révén.", 
+    "message": "A Facebook Container elkülöníti a Facebook tevékenységét a többi webes tevékenységtől annak érdekében, hogy megakadályozza, hogy a Facebook a webhelyén kívül is követhesse Önt a harmadik féltől származó sütik révén.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "A $URL$ a Facebook Containerben található.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "A $URL$ a Facebook Containerben található.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "A Facebook most nyomon tudja követni Önt ezen az oldalon. Az oldal eltávolításához a Facebook Containerből válassza az engedélyezett webhelyek lehetőséget a Facebook Containerben, és távolítsa el a listáról."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "A Facebookon és a Facebook Container által körülhatárolt webhelyeken", 
+    "message": "A Facebookon és a Facebook Container által körülhatárolt webhelyeken",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Ez az ikon a Firefox címsorában jelenik meg, ha a Facebook tulajdonában lévő webhelyeket látogat meg, vagy olyan webhelyeket, melyeket a Facebook Containerhez adott.", 
+    "message": "Ez az ikon a Firefox címsorában jelenik meg, ha a Facebook tulajdonában lévő webhelyeket látogat meg, vagy olyan webhelyeket, melyeket a Facebook Containerhez adott.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Ezen webhelyek működéséhez hozzá kell férniük a Facebook-azonosítójához (vagy tudniuk kell, hogy ki Ön). Ez azt is jelenti, hogy a Facebook nyomon tudja követni mindazt, amit ezeken a webhelyeken tesz.", 
+    "message": "Ezen webhelyek működéséhez hozzá kell férniük a Facebook-azonosítójához (vagy tudniuk kell, hogy ki Ön). Ez azt is jelenti, hogy a Facebook nyomon tudja követni mindazt, amit ezeken a webhelyeken tesz.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "A $URL$ nem a Facebook Containerben található.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "A $URL$ nem a Facebook Containerben található.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Ez a webhely a Facebook Containeren kívül található. Ez megnehezíti a Facebook számára, hogy követhesse Önt a weben.", 
+    "message": "Ez a webhely a Facebook Containeren kívül található. Ez megnehezíti a Facebook számára, hogy követhesse Önt a weben.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Ez a webhely nem a Facebook Containerben található.", 
+    "message": "Ez a webhely nem a Facebook Containerben található.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "A Facebook Container használata", 
+    "message": "A Facebook Container használata",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "A Facebook közel sem csak a Facebook.com weboldalon tudja követni a böngészését. A Facebook Tetszik és Megosztás gombjai például bárhol nyomon követhetik, bárhová is megy – még akkor is, ha sosem használja ezeket a gombokat.", 
+    "message": "A Facebook közel sem csak a Facebook.com weboldalon tudja követni a böngészését. A Facebook Tetszik és Megosztás gombjai például bárhol nyomon követhetik, bárhová is megy – még akkor is, ha sosem használja ezeket a gombokat.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "A Facebook Container elhatárolja a facebookos oldalakat a web többi részétől, így megnehezíti a Facebooknak az online nyomkövetést.", 
+    "message": "A Facebook Container elhatárolja a facebookos oldalakat a web többi részétől, így megnehezíti a Facebooknak az online nyomkövetést.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "A Facebookon és a Facebook Container által körülhatárolt webhelyeken", 
+    "message": "A Facebookon és a Facebook Container által körülhatárolt webhelyeken",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "A Facebook Container kerítés ikonja", 
+    "message": "A Facebook Container kerítés ikonja",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Ez az ikon a Firefox címsorában jelenik meg, ha olyan webhelyeket látogat meg, mint a Facebook.com, melyeket a Facebook Container elkülönít.", 
+    "message": "Ez az ikon a Firefox címsorában jelenik meg, ha olyan webhelyeket látogat meg, mint a Facebook.com, melyeket a Facebook Container elkülönít.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Ezen webhelyek működéséhez hozzá kell férniük a Facebook-azonosítójához (vagy tudniuk kell, hogy ki Ön). Ez azt is jelenti, hogy a Facebook nyomon tudja követni mindazt, amit ezeken a webhelyeken tesz.", 
+    "message": "Ezen webhelyek működéséhez hozzá kell férniük a Facebook-azonosítójához (vagy tudniuk kell, hogy ki Ön). Ez azt is jelenti, hogy a Facebook nyomon tudja követni mindazt, amit ezeken a webhelyeken tesz.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "Hogyan tudom, hogy működik-e a Facebook Container?", 
+    "message": "Hogyan tudom, hogy működik-e a Facebook Container?",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "A Tetszik és Megosztás gombok, melyekkel a Facebookon lehet tartalmakat megosztani, vagy amelyekkel a webhelyekre lehet Facebook-azonosítóval belépni, nyomkövetőket tartalmaznak. A Facebook Container blokkolja ezeket a nyomkövetőket, és egy kerítés ikont jelenít meg, jelezve, hogy a nyomkövetők el lettek távolítva.", 
+    "message": "A Tetszik és Megosztás gombok, melyekkel a Facebookon lehet tartalmakat megosztani, vagy amelyekkel a webhelyekre lehet Facebook-azonosítóval belépni, nyomkövetőket tartalmaznak. A Facebook Container blokkolja ezeket a nyomkövetőket, és egy kerítés ikont jelenít meg, jelezve, hogy a nyomkövetők el lettek távolítva.",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "Ez a kép azt mutatja, hogy a Facebook Container kerítés ikonja megjelenik az oldalon belül a Facebook Tetszik gombja mellett.", 
+    "message": "Ez a kép azt mutatja, hogy a Facebook Container kerítés ikonja megjelenik az oldalon belül a Facebook Tetszik gombja mellett.",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "Ha azonban bármelyik gombra kattint, a Facebook képes lesz nyomon követni Önt.", 
+    "message": "Ha azonban bármelyik gombra kattint, a Facebook képes lesz nyomon követni Önt.",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "Engedélyezés", 
+    "message": "Engedélyezés",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Mégse", 
+    "message": "Mégse",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Tovább", 
+    "message": "Tovább",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Vissza", 
+    "message": "Vissza",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Kész", 
+    "message": "Kész",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Visszaugrás az előző panelre.", 
+    "message": "Visszaugrás az előző panelre.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Ugrás ide: Hogyan működik a Facebook Container", 
+    "message": "Ugrás ide: Hogyan működik a Facebook Container",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Nem találhatóak facebookos nyomkövetők", 
+    "message": "Nem találhatóak facebookos nyomkövetők",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "A Facebook Container nem talált facebookos nyomkövetőt ezen az oldalon. Viszont az oldal tartalmazhat más típusú nyomkövetőket is.", 
+    "message": "A Facebook Container nem talált facebookos nyomkövetőt ezen az oldalon. Viszont az oldal tartalmazhat más típusú nyomkövetőket is.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "További tudnivalók", 
+    "message": "További tudnivalók",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Hogyan működik a Facebook Container", 
+    "message": "Hogyan működik a Facebook Container",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Megvédtük Önt a Facebooktól.", 
+    "message": "Megvédtük Önt a Facebooktól.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "A vásárló-, hír- és más oldalakon megjelenő Facebook gombok olyan nyomkövetőket tartalmaznak, amelyek megmondják a Facebooknak, hogy hol volt az interneten. Még akkor is, ha soha nem használja ezeket a gombokat, hogy tetszését fejezze ki vagy tartalmakat osszon meg, a nyomkövetők akkor is böngészési adatokat gyűjthetnek. A Facebook Container blokkolja ezeket a nyomkövetőket.", 
+    "message": "A vásárló-, hír- és más oldalakon megjelenő Facebook gombok olyan nyomkövetőket tartalmaznak, amelyek megmondják a Facebooknak, hogy hol volt az interneten. Még akkor is, ha soha nem használja ezeket a gombokat, hogy tetszését fejezze ki vagy tartalmakat osszon meg, a nyomkövetők akkor is böngészési adatokat gyűjthetnek. A Facebook Container blokkolja ezeket a nyomkövetőket.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "A Facebook Container blokkolja ezeket a nyomkövetőket. Viszont ha bármelyik gombra kattint, akkor a Facebook továbbra is képes lesz nyomon követni Önt.", 
+    "message": "A Facebook Container blokkolja ezeket a nyomkövetőket. Viszont ha bármelyik gombra kattint, akkor a Facebook továbbra is képes lesz nyomon követni Önt.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Facebook Container kerítés pajzzsal.", 
+    "message": "Facebook Container kerítés pajzzsal.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "A Facebook Containerben engedélyezett webhelyek", 
+    "message": "A Facebook Containerben engedélyezett webhelyek",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "HATÁROLT OLDALOK", 
+    "message": "HATÁROLT OLDALOK",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Nincs", 
+    "message": "Nincs",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "ENGEDÉLYEZETT OLDALAK", 
+    "message": "ENGEDÉLYEZETT OLDALAK",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "A Facebook Container a Facebook tulajdonában lévő webhelyeket a határon belül helyezi el. Ön több oldalt is elhelyezhet a határon belül, de ez lehetővé teszi a Facebook számára, hogy nagyobb mértékben kövesse a webböngészést."
-  }, 
+  },
   "remove": {
-    "message": "Eltávolítás", 
+    "message": "Eltávolítás",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Webhely engedélyezése a Facebook konténerben",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Webhely eltávolítása a Facebook konténerből",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Mivel ez egy a Facebook tulajdonában lévő webhely, ezért nem távolítható el a Facebook konténerből.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Eltávolítja a webhelyet a Facebook Containerből?", 
+    "message": "Eltávolítja a webhelyet a Facebook Containerből?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "A webhely eltávolítása a Facebook Containerből azt jelenti, hogy a Facebook azonosítóval történő bejelentkezés többé már nem fog működni, és a Facebook nyomkövető sütijei törlődnek.", 
+    "message": "A webhely eltávolítása a Facebook Containerből azt jelenti, hogy a Facebook azonosítóval történő bejelentkezés többé már nem fog működni, és a Facebook nyomkövető sütijei törlődnek.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Ha újra szeretné használni a facebookos bejelentkezést, akkor újra hozzá kell adnia a Facebook Containerhez.", 
+    "message": " Ha újra szeretné használni a facebookos bejelentkezést, akkor újra hozzá kell adnia a Facebook Containerhez.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "A Facebook Container letiltotta ezt a gombot, és blokkolta a Facebookot a látogatásának nyomon követésében.", 
+    "message": "A Facebook Container letiltotta ezt a gombot, és blokkolta a Facebookot a látogatásának nyomon követésében.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "A Facebook Container letiltotta a facebookos nyomkövetőket. Ha ezen a webhelyen facebookos bejelentkezést használ, akkor a Facebook képes lesz nyomon követni Önt.", 
+    "message": "A Facebook Container letiltotta a facebookos nyomkövetőket. Ha ezen a webhelyen facebookos bejelentkezést használ, akkor a Facebook képes lesz nyomon követni Önt.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Hagyja, hogy a Facebook követhesse Önt itt?", 
+    "message": "Hagyja, hogy a Facebook követhesse Önt itt?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Ha a facebookos bejelentkezést szeretné használni, akkor a Facebook nyomon tudja követni tevékenységét ezen az oldalon. Ez segíthet nekik, hogy teljesebb képet alkossanak az Ön online életéről.", 
+    "message": "Ha a facebookos bejelentkezést szeretné használni, akkor a Facebook nyomon tudja követni tevékenységét ezen az oldalon. Ez segíthet nekik, hogy teljesebb képet alkossanak az Ön online életéről.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Ne mutassa ezt újra", 
+    "message": "Ne mutassa ezt újra",
     "description": ""
   }
 }
