@@ -1,212 +1,224 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container izolira vašo dejavnost na Facebooku od preostale spletne dejavnosti, s čimer Facebooku prepreči, da bi vas spremljal izven spletnega mesta Facebook preko piškotkov tretjih oseb.", 
+    "message": "Facebook Container izolira vašo dejavnost na Facebooku od preostale spletne dejavnosti, s čimer Facebooku prepreči, da bi vas spremljal izven spletnega mesta Facebook preko piškotkov tretjih oseb.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ je v Facebook Containerju.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ je v Facebook Containerju.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook vam lahko odslej na tej strani sledi. Da odstranite to stran iz Facebook Containerja, izberite \"Strani, dovoljene v Facebook Containerju\" in jo odstranite s seznama."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Na Facebooku in straneh v Facebook Containerju", 
+    "message": "Na Facebooku in straneh v Facebook Containerju",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Ta ikona se pojavi v Firefoxovi naslovni vrstici, ko obiščete Facebookove strani ali strani, ki ste jih dodali v Facebook Container.", 
+    "message": "Ta ikona se pojavi v Firefoxovi naslovni vrstici, ko obiščete Facebookove strani ali strani, ki ste jih dodali v Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Te strani potrebujejo dostop do vaše identitete na Facebooku (vedeti morajo, kdo ste), da bi lahko delovale. To pomeni tudi, da lahko Facebook sledi vaši dejavnosti na teh straneh.", 
+    "message": "Te strani potrebujejo dostop do vaše identitete na Facebooku (vedeti morajo, kdo ste), da bi lahko delovale. To pomeni tudi, da lahko Facebook sledi vaši dejavnosti na teh straneh.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ ni v Facebook Containerju.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ ni v Facebook Containerju.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Ta stran je izven Facebook Containerja. To Facebooku otežuje sledenje vaši spletni dejavnosti.", 
+    "message": "Ta stran je izven Facebook Containerja. To Facebooku otežuje sledenje vaši spletni dejavnosti.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Ta stran ni v Facebook Containerju.", 
+    "message": "Ta stran ni v Facebook Containerju.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Uporaba Facebook Containerja", 
+    "message": "Uporaba Facebook Containerja",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook lahko sledi vašemu brskanju tudi izven strani Facebook.com. Facebookova gumba Všeč mi je in Deli lahko spremljata vašo dejavnost tudi, če ju ne uporabljate.", 
+    "message": "Facebook lahko sledi vašemu brskanju tudi izven strani Facebook.com. Facebookova gumba Všeč mi je in Deli lahko spremljata vašo dejavnost tudi, če ju ne uporabljate.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container ustvari mejo med Facebookovimi stranmi in preostalim spletom, kar Facebooku oteži sledenje vaši spletni dejavnosti.", 
+    "message": "Facebook Container ustvari mejo med Facebookovimi stranmi in preostalim spletom, kar Facebooku oteži sledenje vaši spletni dejavnosti.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Na Facebooku in straneh v Facebook Containerju", 
+    "message": "Na Facebooku in straneh v Facebook Containerju",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Ikona ograje Facebook Containerja", 
+    "message": "Ikona ograje Facebook Containerja",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Ta ikona se pojavi v naslovni vrstici Firefoxa, ko obiščete strani, kot je Facebook.com, ki so v Facebook Containerju.", 
+    "message": "Ta ikona se pojavi v naslovni vrstici Firefoxa, ko obiščete strani, kot je Facebook.com, ki so v Facebook Containerju.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Te strani potrebujejo dostop do vaše identitete na Facebooku (vedeti morajo, kdo ste), da bi lahko delovale. To pomeni tudi, da lahko Facebook sledi vaši dejavnosti na teh straneh.", 
+    "message": "Te strani potrebujejo dostop do vaše identitete na Facebooku (vedeti morajo, kdo ste), da bi lahko delovale. To pomeni tudi, da lahko Facebook sledi vaši dejavnosti na teh straneh.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "Kako vem, da Facebook Container deluje?", 
+    "message": "Kako vem, da Facebook Container deluje?",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "Gumbi, ki vam omogočajo všečkanje in deljenje vsebine na Facebooku, ter omogočajo prijavo z računom Facebook, vsebujejo sledilce. Facebook Container zavrača te sledilce in prikaže ikono ograje, kjer so bili sledilci odstranjeni.", 
+    "message": "Gumbi, ki vam omogočajo všečkanje in deljenje vsebine na Facebooku, ter omogočajo prijavo z računom Facebook, vsebujejo sledilce. Facebook Container zavrača te sledilce in prikaže ikono ograje, kjer so bili sledilci odstranjeni.",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "Ta slika prikazuje, kako se ikona ograje Facebook Containerja prikaže ob Facebookovem gumbu Všeč mi je.", 
+    "message": "Ta slika prikazuje, kako se ikona ograje Facebook Containerja prikaže ob Facebookovem gumbu Všeč mi je.",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "Če kliknete na katerega koli od teh gumbov, vam bo Facebook lahko sledil.", 
+    "message": "Če kliknete na katerega koli od teh gumbov, vam bo Facebook lahko sledil.",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "Dovoli", 
+    "message": "Dovoli",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Prekliči", 
+    "message": "Prekliči",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Naprej", 
+    "message": "Naprej",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Nazaj", 
+    "message": "Nazaj",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Končaj", 
+    "message": "Končaj",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Nazaj na prejšnjo ploščo.", 
+    "message": "Nazaj na prejšnjo ploščo.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Pojdi na Kako deluje Facebook Container", 
+    "message": "Pojdi na Kako deluje Facebook Container",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Ni zaznanih Facebookovih sledilcev", 
+    "message": "Ni zaznanih Facebookovih sledilcev",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container na tej strani ni zaznal nobenih Facebookovih sledilcev. Kljub temu pa lahko stran vsebuje druge vrste sledilcev.", 
+    "message": "Facebook Container na tej strani ni zaznal nobenih Facebookovih sledilcev. Kljub temu pa lahko stran vsebuje druge vrste sledilcev.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Več o tem", 
+    "message": "Več o tem",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Kako deluje Facebook Container", 
+    "message": "Kako deluje Facebook Container",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Zaščitili smo vas pred Facebookom.", 
+    "message": "Zaščitili smo vas pred Facebookom.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Facebookovi gumbi, ki se pojavljajo na različnih straneh (kot so spletne trgovine, portali z novicami ...), vsebujejo sledilce, ki Facebooku sporočajo vašo dejavnost na spletu. Tudi če teh gumbov nikoli ne uporabljate, lahko sledilci zbirajo podatke o vašem brskanju. Facebook Container te sledilce zavrača.", 
+    "message": "Facebookovi gumbi, ki se pojavljajo na različnih straneh (kot so spletne trgovine, portali z novicami ...), vsebujejo sledilce, ki Facebooku sporočajo vašo dejavnost na spletu. Tudi če teh gumbov nikoli ne uporabljate, lahko sledilci zbirajo podatke o vašem brskanju. Facebook Container te sledilce zavrača.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container zavrača te sledilce. Če pa kliknete na kateregakoli od teh gumbov, vam bo Facebook lahko sledil.", 
+    "message": "Facebook Container zavrača te sledilce. Če pa kliknete na kateregakoli od teh gumbov, vam bo Facebook lahko sledil.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Ograja Facebook Containerja s ščitom.", 
+    "message": "Ograja Facebook Containerja s ščitom.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Strani, dovoljene v Facebook Containerju", 
+    "message": "Strani, dovoljene v Facebook Containerju",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "VKLJUČENE STRANI", 
+    "message": "VKLJUČENE STRANI",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Brez", 
+    "message": "Brez",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "STRANI, KI STE JIH DOVOLILI", 
+    "message": "STRANI, KI STE JIH DOVOLILI",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container ustvari mejo za Facebookove strani. V to mejo lahko dodate tudi druge strani, vendar bo to Facebooku omogočilo, da lahko bolje spremlja vaše brskanje po spletu."
-  }, 
+  },
   "remove": {
-    "message": "Odstrani", 
+    "message": "Odstrani",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Dovoli stran v Facebook Containerju",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Odstrani stran iz Facebook Containerja",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Ker je to spletno mesto v lasti Facebooka, ga ni mogoče odstraniti iz Facebook Containerja.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Odstranim stran iz Facebook Containerja?", 
+    "message": "Odstranim stran iz Facebook Containerja?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Če odstranite to stran iz Facebook Containerja, možnost prijave z računom Facebook ne bo več delovala, Facebookovi sledilni piškotki pa bodo izbrisani.", 
+    "message": "Če odstranite to stran iz Facebook Containerja, možnost prijave z računom Facebook ne bo več delovala, Facebookovi sledilni piškotki pa bodo izbrisani.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": "Če želite ponovno uporabiti možnost prijave z računom Facebook, boste morali stran dodati nazaj v Facebook Container.", 
+    "message": "Če želite ponovno uporabiti možnost prijave z računom Facebook, boste morali stran dodati nazaj v Facebook Container.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container je onemogočil ta gumb in preprečil Facebooku, da bi spremljal vaš obisk te strani.", 
+    "message": "Facebook Container je onemogočil ta gumb in preprečil Facebooku, da bi spremljal vaš obisk te strani.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container je zavrnil Facebookove sledilce. Če na tej strani za prijavo uporabljate račun Facebook, vam bo Facebook lahko sledil.", 
+    "message": "Facebook Container je zavrnil Facebookove sledilce. Če na tej strani za prijavo uporabljate račun Facebook, vam bo Facebook lahko sledil.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Dovolite Facebooku, da vas spremlja na tej strani?", 
+    "message": "Dovolite Facebooku, da vas spremlja na tej strani?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Če želite uporabiti možnost prijave z računom Facebook, bo Facebook lahko spremljal vašo dejavnost na tej strani. To lahko Facebooku pomaga, da si ustvari popolnejšo sliko o vašem spletnem življenju.", 
+    "message": "Če želite uporabiti možnost prijave z računom Facebook, bo Facebook lahko spremljal vašo dejavnost na tej strani. To lahko Facebooku pomaga, da si ustvari popolnejšo sliko o vašem spletnem življenju.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Ne prikazuj ponovno", 
+    "message": "Ne prikazuj ponovno",
     "description": ""
   }
 }
