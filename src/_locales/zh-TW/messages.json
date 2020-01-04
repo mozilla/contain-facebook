@@ -1,212 +1,224 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container 會將您在 Facebook 的上網行為隔絕於其他上網行為之外，以防止 Facebook 在其網站以外的地方，透過第三方 Cookie 追蹤您的上網紀錄。", 
+    "message": "Facebook Container 會將您在 Facebook 的上網行為隔絕於其他上網行為之外，以防止 Facebook 在其網站以外的地方，透過第三方 Cookie 追蹤您的上網紀錄。",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ 在 Facebook Container 當中。", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ 在 Facebook Container 當中。",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook Container 會於此網站追蹤您。若要從 Facebook Container 移除，請選擇「於 Facebook Container 允許的網站」並從清單中移除此網站。"
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "在 Facebook 與 Facebook Container 邊界上的網站", 
+    "message": "在 Facebook 與 Facebook Container 邊界上的網站",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "當您造訪 Facebook 相關網站，或加入到 Facebook Container 的網站時，Firefox 的網址列將出現此圖示。", 
+    "message": "當您造訪 Facebook 相關網站，或加入到 Facebook Container 的網站時，Firefox 的網址列將出現此圖示。",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "這些網站需要使用您的 Facebook 身分（或是需要知道你是誰）才能正常運作。這也代表 Facebook 可追蹤您在這些網站作的任何事情。", 
+    "message": "這些網站需要使用您的 Facebook 身分（或是需要知道你是誰）才能正常運作。這也代表 Facebook 可追蹤您在這些網站作的任何事情。",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ 不在 Facebook Container 中。", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ 不在 Facebook Container 中。",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "此網站不在 Facebook Container 中，這樣 Facebook 比較不容易在網路上追蹤您。", 
+    "message": "此網站不在 Facebook Container 中，這樣 Facebook 比較不容易在網路上追蹤您。",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "此網站不在 Facebook Container 中。", 
+    "message": "此網站不在 Facebook Container 中。",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "使用 Facebook Container", 
+    "message": "使用 Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook 不只能追蹤您在 Facebook.com 上的瀏覽行為。另外也可以透過其他各網站上的 Facebook「讚」、「分享」按鈕，追蹤您曾經去過哪裡。就算沒有真正點過讚或分享過也會知道。", 
+    "message": "Facebook 不只能追蹤您在 Facebook.com 上的瀏覽行為。另外也可以透過其他各網站上的 Facebook「讚」、「分享」按鈕，追蹤您曾經去過哪裡。就算沒有真正點過讚或分享過也會知道。",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container 可為 Facebook 的各網站與網路上的其他網站建立界線，這樣就會讓 Facebook 更難在線上追蹤您。", 
+    "message": "Facebook Container 可為 Facebook 的各網站與網路上的其他網站建立界線，這樣就會讓 Facebook 更難在線上追蹤您。",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "在 Facebook 與 Facebook Container 邊界上的網站", 
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Faceook Container\""
-  }, 
+    "message": "在 Facebook 與 Facebook Container 邊界上的網站",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding2-alt": {
-    "message": "Facebook Container 籬笆圖示", 
+    "message": "Facebook Container 籬笆圖示",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "當您造訪 Facebook Container 中的相關網站時，例如 Facebook.com 時，將會於 Firefox 網址列顯示此圖示。", 
+    "message": "當您造訪 Facebook Container 中的相關網站時，例如 Facebook.com 時，將會於 Firefox 網址列顯示此圖示。",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "這些網站需要使用您的 Facebook 身分（或是需要知道你是誰）才能正常運作。這也代表 Facebook 可追蹤您在這些網站作的任何事情。", 
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Faceook Container\""
-  }, 
+    "message": "這些網站需要使用您的 Facebook 身分（或是需要知道你是誰）才能正常運作。這也代表 Facebook 可追蹤您在這些網站作的任何事情。",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding3-subhead": {
-    "message": "我要怎麼知道 Facebook Container 正在運作中？", 
+    "message": "我要怎麼知道 Facebook Container 正在運作中？",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "網頁中讓您按讚、分享到 Facebook 或以 Facebook 帳號登入的按鈕都包含追蹤器。Facebook Container 會封鎖這些追蹤器，並顯示籬笆圖示，讓您知道我們已移除這些追蹤器。", 
+    "message": "網頁中讓您按讚、分享到 Facebook 或以 Facebook 帳號登入的按鈕都包含追蹤器。Facebook Container 會封鎖這些追蹤器，並顯示籬笆圖示，讓您知道我們已移除這些追蹤器。",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "此圖片展示了 Facebook Container 的籬笆圖示會如何出現在網頁中的 Facebook「讚」按鈕旁邊。", 
+    "message": "此圖片展示了 Facebook Container 的籬笆圖示會如何出現在網頁中的 Facebook「讚」按鈕旁邊。",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "但若您點擊了任一按鈕，Facebook 還是能追蹤您。", 
+    "message": "但若您點擊了任一按鈕，Facebook 還是能追蹤您。",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "允許", 
+    "message": "允許",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "取消", 
+    "message": "取消",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "下一步", 
+    "message": "下一步",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "上一步", 
+    "message": "上一步",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "完成", 
+    "message": "完成",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "回到上一個面板。", 
+    "message": "回到上一個面板。",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "前往 Facebook Container 運作原理", 
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works \" link"
-  }, 
+    "message": "前往 Facebook Container 運作原理",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
   "no-trackers-subhead": {
-    "message": "未偵測到 Facebook 追蹤器", 
+    "message": "未偵測到 Facebook 追蹤器",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container 並未在此頁面偵測到任何 Facebook 的追蹤器。然而本頁面中可能還有其他類型的追蹤器。", 
+    "message": "Facebook Container 並未在此頁面偵測到任何 Facebook 的追蹤器。然而本頁面中可能還有其他類型的追蹤器。",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "了解更多", 
+    "message": "了解更多",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Facebook Container 運作原理", 
+    "message": "Facebook Container 運作原理",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "我們保護您不受 Facebook 追蹤。", 
+    "message": "我們保護您不受 Facebook 追蹤。",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "顯示於線上購物、新聞等網站的 Facebook 按鈕都包含追蹤器，可告訴 Facebook 您曾經去過這些網站，就算您從未點擊或使用這些按鈕，追蹤器還是會收集您的上網資料。Facebook Container 會封鎖這些追蹤器。", 
+    "message": "顯示於線上購物、新聞等網站的 Facebook 按鈕都包含追蹤器，可告訴 Facebook 您曾經去過這些網站，就算您從未點擊或使用這些按鈕，追蹤器還是會收集您的上網資料。Facebook Container 會封鎖這些追蹤器。",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container 會封鎖這些追蹤器，可是若您點擊了任一按鈕，Facebook 還是可以追蹤您。", 
+    "message": "Facebook Container 會封鎖這些追蹤器，可是若您點擊了任一按鈕，Facebook 還是可以追蹤您。",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Facebook Container 盾牌籬笆圖示。", 
+    "message": "Facebook Container 盾牌籬笆圖示。",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "於 Facebook Container 允許的網站", 
+    "message": "於 Facebook Container 允許的網站",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "網站包括", 
+    "message": "網站包括",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "無", 
-    "description": "This message is shown beneath the 'SITES YOU'VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+    "message": "無",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
   "sites-allowed": {
-    "message": "您允許的網站", 
+    "message": "您允許的網站",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container 會將 Facebook 擁有的相關網站放入容器之中。您可以允許其他網站進入該容器，但也會讓 Facebook 更能追蹤您的上網行為。"
-  }, 
+  },
   "remove": {
-    "message": "移除", 
+    "message": "移除",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "允許將網站加入 Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "從 Facebook Container 移除網站",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "由於這是 Facebook 擁有的網站，無法從 Facebook Container 移除。",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "要將網站從 Facebook Container 移除？", 
+    "message": "要將網站從 Facebook Container 移除？",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "將此網站從 Facebook Container 移除，代表將無法使用「使用 Facebook 帳號登入」功能，也將清除 Facebook 的追蹤 Cookie。", 
+    "message": "將此網站從 Facebook Container 移除，代表將無法使用「使用 Facebook 帳號登入」功能，也將清除 Facebook 的追蹤 Cookie。",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": "若您想要再次使用「使用 Facebook 帳號登入」功能，需要將其再加回 Facebook Container。", 
+    "message": "若您想要再次使用「使用 Facebook 帳號登入」功能，需要將其再加回 Facebook Container。",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container 已停用此按鈕，並封鎖 Facebook，不讓其追蹤您造訪此頁面的紀錄。", 
+    "message": "Facebook Container 已停用此按鈕，並封鎖 Facebook，不讓其追蹤您造訪此頁面的紀錄。",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container 已封鎖來自 Facebook 的追蹤器。若您使用此網站的「使用 Facebook 帳號登入」功能，Facebook 還是能追蹤您。", 
+    "message": "Facebook Container 已封鎖來自 Facebook 的追蹤器。若您使用此網站的「使用 Facebook 帳號登入」功能，Facebook 還是能追蹤您。",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "要允許 Facebook 在此處追蹤您？", 
+    "message": "要允許 Facebook 在此處追蹤您？",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "若您想要使用 Facebook 帳號登入此網站，Facebook 就可以追蹤您在此網站的行為。這樣會幫助他們對您的線上生活有更全盤的了解。", 
+    "message": "若您想要使用 Facebook 帳號登入此網站，Facebook 就可以追蹤您在此網站的行為。這樣會幫助他們對您的線上生活有更全盤的了解。",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "不要再顯示此訊息", 
+    "message": "不要再顯示此訊息",
     "description": ""
   }
 }
