@@ -1,212 +1,224 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container isoleert uw Facebook-activiteit van de rest van uw internetactiviteit, om zo te voorkomen dat Facebook u buiten de Facebook-website volgt via cookies van derden.", 
+    "message": "Facebook Container isoleert uw Facebook-activiteit van de rest van uw internetactiviteit, om zo te voorkomen dat Facebook u buiten de Facebook-website volgt via cookies van derden.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ staat in de Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ staat in de Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook kan u nu op deze pagina volgen. Om deze pagina uit Facebook Container te verwijderen, selecteer Websites toegestaan in Facebook Container en wis het uit de lijst."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Op Facebook en Websites in de Facebook Container-begrenzing", 
+    "message": "Op Facebook en Websites in de Facebook Container-begrenzing",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Dit pictogram verschijnt in de Firefox-adresbalk als u websites bezoekt van Facebook of websites die u aan Facebook Container hebt toegevoegd.", 
+    "message": "Dit pictogram verschijnt in de Firefox-adresbalk als u websites bezoekt van Facebook of websites die u aan Facebook Container hebt toegevoegd.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Deze websites moeten toegang krijgen tot uw Facebook-identiteit (of weten wie u bent) om te werken. Dit betekent ook dat Facebook alles wat u op deze websites doet kan volgen.", 
+    "message": "Deze websites moeten toegang krijgen tot uw Facebook-identiteit (of weten wie u bent) om te werken. Dit betekent ook dat Facebook alles wat u op deze websites doet kan volgen.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ bevindt zich niet in de Facebook-container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ bevindt zich niet in de Facebook-container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Deze website bevindt zich buiten de Facebook-container. Dit maakt het voor Facebook moeilijker om u op het web te volgen.", 
+    "message": "Deze website bevindt zich buiten de Facebook-container. Dit maakt het voor Facebook moeilijker om u op het web te volgen.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Deze website bevindt zich niet in de Facebook-container.", 
+    "message": "Deze website bevindt zich niet in de Facebook-container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Facebook Container gebruiken", 
+    "message": "Facebook Container gebruiken",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook kan uw surfgedrag verder dan Facebook.com volgen. Zo kunnen bijvoorbeeld de Facebook Vind-ik-leuk- en Delen-knoppen volgen waar u bent geweest – zelfs op websites die u niet leuk vindt of deelt.", 
+    "message": "Facebook kan uw surfgedrag verder dan Facebook.com volgen. Zo kunnen bijvoorbeeld de Facebook Vind-ik-leuk- en Delen-knoppen volgen waar u bent geweest – zelfs op websites die u niet leuk vindt of deelt.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container maakt een begrenzing tussen Facebook-websites en de rest van het internet, zodat het voor Facebook moeilijker is u online te volgen.", 
+    "message": "Facebook Container maakt een begrenzing tussen Facebook-websites en de rest van het internet, zodat het voor Facebook moeilijker is u online te volgen.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Op Facebook en websites binnen de begrenzing van Facebook Container", 
+    "message": "Op Facebook en websites binnen de begrenzing van Facebook Container",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Het Facebook Container-hekpictogram", 
+    "message": "Het Facebook Container-hekpictogram",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Dit pictogram verschijnt in de Firefox-adresbalk als u websites bezoekt zoals Facebook.com, die binnen de Facebook Container-begrenzing staan.", 
+    "message": "Dit pictogram verschijnt in de Firefox-adresbalk als u websites bezoekt zoals Facebook.com, die binnen de Facebook Container-begrenzing staan.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Deze websites moeten toegang krijgen tot uw Facebook-identiteit (of weten wie u bent) om te werken. Dit betekent ook dat Facebook alles wat u op deze websites doet kan volgen.", 
+    "message": "Deze websites moeten toegang krijgen tot uw Facebook-identiteit (of weten wie u bent) om te werken. Dit betekent ook dat Facebook alles wat u op deze websites doet kan volgen.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "Hoe weet ik dat Facebook Container werkt?", 
+    "message": "Hoe weet ik dat Facebook Container werkt?",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "Knoppen waarmee u dingen ‘leuk vindt’, naar Facebook deelt of waarmee u zich met uw Facebook-account op websites aanmeldt, bevatten trackers. Facebook Container blokkeert deze trackers en toont het hekpictogram om aan te geven waar trackers verwijderd zijn.", 
+    "message": "Knoppen waarmee u dingen ‘leuk vindt’, naar Facebook deelt of waarmee u zich met uw Facebook-account op websites aanmeldt, bevatten trackers. Facebook Container blokkeert deze trackers en toont het hekpictogram om aan te geven waar trackers verwijderd zijn.",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "Deze afbeelding laat zien hoe het hekpictogram van Facebook Container naast een ‘Vind ik leuk’-knop van Facebook wordt getoond.", 
+    "message": "Deze afbeelding laat zien hoe het hekpictogram van Facebook Container naast een ‘Vind ik leuk’-knop van Facebook wordt getoond.",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "Als u toch op een van deze knoppen klikt, kan Facebook u volgen.", 
+    "message": "Als u toch op een van deze knoppen klikt, kan Facebook u volgen.",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "Toestaan", 
+    "message": "Toestaan",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Annuleren", 
+    "message": "Annuleren",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Volgende", 
+    "message": "Volgende",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Terug", 
+    "message": "Terug",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Gereed", 
+    "message": "Gereed",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Terug naar het vorige paneel.", 
+    "message": "Terug naar het vorige paneel.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Naar Hoe Facebook Container werkt", 
+    "message": "Naar Hoe Facebook Container werkt",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Geen Facebook-trackers gedetecteerd", 
+    "message": "Geen Facebook-trackers gedetecteerd",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container heeft geen Facebook-trackers op deze pagina gedetecteerd. De pagina kan echter nog andere typen trackers bevatten.", 
+    "message": "Facebook Container heeft geen Facebook-trackers op deze pagina gedetecteerd. De pagina kan echter nog andere typen trackers bevatten.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Meer info", 
+    "message": "Meer info",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Hoe Facebook Container werkt", 
+    "message": "Hoe Facebook Container werkt",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "We hebben u beschermd tegen Facebook.", 
+    "message": "We hebben u beschermd tegen Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "De Facebook-knoppen, die op winkel-, nieuws- en andere websites worden getoond, bevatten trackers, die Facebook laten weten waar u op internet bent geweest. Zelfs wanneer u deze knoppen nooit voor ‘Liken’ of delen gebruikt, kunnen die trackers toch gegevens over uw surfgedrag verzamelen. Facebook Container blokkeert deze trackers.", 
+    "message": "De Facebook-knoppen, die op winkel-, nieuws- en andere websites worden getoond, bevatten trackers, die Facebook laten weten waar u op internet bent geweest. Zelfs wanneer u deze knoppen nooit voor ‘Liken’ of delen gebruikt, kunnen die trackers toch gegevens over uw surfgedrag verzamelen. Facebook Container blokkeert deze trackers.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container blokkeert deze trackers. Wanneer u toch op een van deze knoppen klikt, kan Facebook u volgen.", 
+    "message": "Facebook Container blokkeert deze trackers. Wanneer u toch op een van deze knoppen klikt, kan Facebook u volgen.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Facebook Container-hek met schild.", 
+    "message": "Facebook Container-hek met schild.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Websites toegestaan in Facebook Container", 
+    "message": "Websites toegestaan in Facebook Container",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "WEBSITES OP DE LIJST", 
+    "message": "WEBSITES OP DE LIJST",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Geen", 
+    "message": "Geen",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "TOEGESTANE WEBSITES", 
+    "message": "TOEGESTANE WEBSITES",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container stopt Facebook-websites binnen de begrenzing. U kunt andere websites in deze begrenzing opnemen, Facebook kan dan echter meer van uw surfgedrag volgen."
-  }, 
+  },
   "remove": {
-    "message": "Verwijderen", 
+    "message": "Verwijderen",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Website toestaan in Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Website uit Facebook Container verwijderen",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Omdat dit een website is die eigendom is van Facebook, kan deze niet worden verwijderd uit Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Website uit Facebook Container verwijderen?", 
+    "message": "Website uit Facebook Container verwijderen?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Het verwijderen van deze website uit Facebook Container betekent dat de functie Aanmelden met Facebook niet meer werkt en volgcookies van Facebook worden verwijderd.", 
+    "message": "Het verwijderen van deze website uit Facebook Container betekent dat de functie Aanmelden met Facebook niet meer werkt en volgcookies van Facebook worden verwijderd.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Als u Aanmelden met Facebook weer wilt gebruiken, dient u het weer toe te voegen aan de Facebook Container.", 
+    "message": " Als u Aanmelden met Facebook weer wilt gebruiken, dient u het weer toe te voegen aan de Facebook Container.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container heeft deze knop uitgeschakeld en geblokkeerd dat Facebook uw bezoek aan deze pagina volgt.", 
+    "message": "Facebook Container heeft deze knop uitgeschakeld en geblokkeerd dat Facebook uw bezoek aan deze pagina volgt.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container heeft Facebook-trackers geblokkeerd. Als u zich op deze website met Facebook aanmeldt, zal Facebook u kunnen volgen.", 
+    "message": "Facebook Container heeft Facebook-trackers geblokkeerd. Als u zich op deze website met Facebook aanmeldt, zal Facebook u kunnen volgen.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Toestaan dat Facebook u hier volgt?", 
+    "message": "Toestaan dat Facebook u hier volgt?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Wanneer u zich met Facebook aanmeldt, kan Facebook uw activiteiten op deze website volgen. Dit kan hen helpen een uitgebreider beeld van uw online-leven samen te stellen.", 
+    "message": "Wanneer u zich met Facebook aanmeldt, kan Facebook uw activiteiten op deze website volgen. Dit kan hen helpen een uitgebreider beeld van uw online-leven samen te stellen.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Dit niet meer tonen", 
+    "message": "Dit niet meer tonen",
     "description": ""
   }
 }
