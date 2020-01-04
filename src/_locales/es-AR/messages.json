@@ -1,212 +1,224 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container aísla su actividad de Facebook del resto de su actividad web para evitar que Facebook lo rastree fuera del sitio web de Facebook a través de cookies de terceros.", 
+    "message": "Facebook Container aísla su actividad de Facebook del resto de su actividad web para evitar que Facebook lo rastree fuera del sitio web de Facebook a través de cookies de terceros.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ está en Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ está en Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook puede rastrearlo en este sitio ahora. Para eliminarlo del contenedor de Facebook, seleccione \"Sitios permitidos en el contenedor de Facebook\" y elimínelo de la lista."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "En Facebook y sitios en el límite del Facebook Container", 
+    "message": "En Facebook y sitios en el límite del Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Este ícono aparece en la barra de direcciones de Firefox cuando visita sitios que pertenecen a Facebook o que agregó al Facebook Container.", 
+    "message": "Este ícono aparece en la barra de direcciones de Firefox cuando visita sitios que pertenecen a Facebook o que agregó al Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Para poder funcionar, estos sitios necesitan que acceda con su identidad de Facebook, lo que también significa que Facebook podrá rastrear todo lo que haga.", 
+    "message": "Para poder funcionar, estos sitios necesitan que acceda con su identidad de Facebook, lo que también significa que Facebook podrá rastrear todo lo que haga.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ no está en el Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ no está en el Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Este sitio está fuera del Facebook Container. Esto hace que sea más difícil que Facebook lo rastree por la web.", 
+    "message": "Este sitio está fuera del Facebook Container. Esto hace que sea más difícil que Facebook lo rastree por la web.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Este sitio no está en el Facebook Container.", 
+    "message": "Este sitio no está en el Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Usar el Facebook Container", 
+    "message": "Usar el Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook puede rastrearlo más allá de Facebook.com. Por ejemplo, los botones \"Me gusta\" y \"Compartir\" pueden rastrear dónde estuvo, incluso en páginas que nunca le gustaron ni compartió.", 
+    "message": "Facebook puede rastrearlo más allá de Facebook.com. Por ejemplo, los botones \"Me gusta\" y \"Compartir\" pueden rastrear dónde estuvo, incluso en páginas que nunca le gustaron ni compartió.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container crea un límite entre los sitios de Facebook y el resto de la web, por lo que a Facebook le resulta más difícil rastrearlo en línea.", 
+    "message": "Facebook Container crea un límite entre los sitios de Facebook y el resto de la web, por lo que a Facebook le resulta más difícil rastrearlo en línea.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "En Facebook y sitios en el límite del Facebook Container", 
+    "message": "En Facebook y sitios en el límite del Facebook Container",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Ícono de valla de Facebook Container", 
+    "message": "Ícono de valla de Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Este icono aparece en la barra de direcciones de Firefox cuando visita sitios como Facebook.com, que se encuentran en el límite del Contenedor de Facebook.", 
+    "message": "Este icono aparece en la barra de direcciones de Firefox cuando visita sitios como Facebook.com, que se encuentran en el límite del Contenedor de Facebook.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Para poder funcionar, estos sitios necesitan que acceda con su identidad de Facebook, lo que también significa que Facebook podrá rastrear todo lo que haga.", 
+    "message": "Para poder funcionar, estos sitios necesitan que acceda con su identidad de Facebook, lo que también significa que Facebook podrá rastrear todo lo que haga.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "¿Cómo sé si Facebook Container está funcionando?", 
+    "message": "¿Cómo sé si Facebook Container está funcionando?",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "Los botones \"Me gusta\" y \"Compartir\" de Facebook o los que lo dejan acceder iniciando sesión en su cuenta de Facebook incluyen rastreadores. El contenedor de Facebook los bloquea y le muestra un ícono de cierre para que sepa en qué sitios se eliminaron los rastreadores.", 
+    "message": "Los botones \"Me gusta\" y \"Compartir\" de Facebook o los que lo dejan acceder iniciando sesión en su cuenta de Facebook incluyen rastreadores. El contenedor de Facebook los bloquea y le muestra un ícono de cierre para que sepa en qué sitios se eliminaron los rastreadores.",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "Esta imagen muestra cómo aparecerá el ícono de la cerca de Contenedor de Facebook en la página junto al botón \"Me gusta\" de Facebook.", 
+    "message": "Esta imagen muestra cómo aparecerá el ícono de la cerca de Contenedor de Facebook en la página junto al botón \"Me gusta\" de Facebook.",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "Sin embargo, si hace clic en alguno de estos botones, Facebook podrá rastrearlo.", 
+    "message": "Sin embargo, si hace clic en alguno de estos botones, Facebook podrá rastrearlo.",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "Permitir", 
+    "message": "Permitir",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Cancelar", 
+    "message": "Cancelar",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Siguiente", 
+    "message": "Siguiente",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Retroceder", 
+    "message": "Retroceder",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Listo", 
+    "message": "Listo",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Volver al panel anterior.", 
+    "message": "Volver al panel anterior.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Ir a Cómo funciona Facebook Container", 
+    "message": "Ir a Cómo funciona Facebook Container",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "No se detectaron rastreadores de Facebook", 
+    "message": "No se detectaron rastreadores de Facebook",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container no detectó ningún rastreador de Facebook en esta página. Sin embargo, la página puede contener otros tipos de rastreadores.", 
+    "message": "Facebook Container no detectó ningún rastreador de Facebook en esta página. Sin embargo, la página puede contener otros tipos de rastreadores.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Conocer más", 
+    "message": "Conocer más",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Cómo funciona el Facebook Container", 
+    "message": "Cómo funciona el Facebook Container",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Te protegimos de Facebook.", 
+    "message": "Te protegimos de Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Los botones de Facebook que aparecen en las páginas de compras, noticias, etc. incluyen rastreadores que le comunican a Facebook las páginas que visitó. Aunque nunca use estos botones, los rastreadores pueden recopilar información sobre su navegación. Facebook Container bloquea esos rastreadores.", 
+    "message": "Los botones de Facebook que aparecen en las páginas de compras, noticias, etc. incluyen rastreadores que le comunican a Facebook las páginas que visitó. Aunque nunca use estos botones, los rastreadores pueden recopilar información sobre su navegación. Facebook Container bloquea esos rastreadores.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container bloquea estos rastreadores. Pero si hace clic en alguno de los botones, Facebook podrá rastrearlo.", 
+    "message": "Facebook Container bloquea estos rastreadores. Pero si hace clic en alguno de los botones, Facebook podrá rastrearlo.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Valla de Facebook Container con escudo.", 
+    "message": "Valla de Facebook Container con escudo.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Sitios permitidos en Facebook Container", 
+    "message": "Sitios permitidos en Facebook Container",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "SITESINCLUDED", 
+    "message": "SITESINCLUDED",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Ninguno", 
+    "message": "Ninguno",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "SITES YOU ALLOWED", 
+    "message": "SITES YOU ALLOWED",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container ubica los sitios propiedad de Facebook dentro del límite. Puede permitir otros sitios dentro del límite, pero esto permitirá que Facebook rastree más de su navegación web."
-  }, 
+  },
   "remove": {
-    "message": "Eliminar", 
+    "message": "Eliminar",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Permitir sitio en Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Eliminar sitio de Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Debido a que este es un sitio propiedad de Facebook, no se puede eliminar de Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "¿Eliminar sitio de Facebook Container?", 
+    "message": "¿Eliminar sitio de Facebook Container?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Al eliminar este sitio de Facebook Container la función de Iniciar sesión con Facebook ya no funcionará y las cookies de tastreo de Facebook se borrarán.", 
+    "message": "Al eliminar este sitio de Facebook Container la función de Iniciar sesión con Facebook ya no funcionará y las cookies de tastreo de Facebook se borrarán.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Para volver a iniciar sesión con Facebook de nuevo, hará falta agregarlo nuevamente a Facebook Container.", 
+    "message": " Para volver a iniciar sesión con Facebook de nuevo, hará falta agregarlo nuevamente a Facebook Container.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container ha deshabilitado este botón y bloqueado el rastreo de visitas a esta página por parte de Facebook.", 
+    "message": "Facebook Container ha deshabilitado este botón y bloqueado el rastreo de visitas a esta página por parte de Facebook.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "El contenedor de Facebook bloqueó los rastreadores de Facebook. Si utiliza Iniciar sesión con Facebook en este sitio, Facebook podrá rastrearlo.", 
+    "message": "El contenedor de Facebook bloqueó los rastreadores de Facebook. Si utiliza Iniciar sesión con Facebook en este sitio, Facebook podrá rastrearlo.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "¿Permitir que Facebook lo siga aquí?", 
+    "message": "¿Permitir que Facebook lo siga aquí?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Si quiere usar el inicio de sesión con Facebook, Facebook podrá seguir su actividad en este sitio. Esto puede ayudarles a construir una imagen más completa de su vida en línea.", 
+    "message": "Si quiere usar el inicio de sesión con Facebook, Facebook podrá seguir su actividad en este sitio. Esto puede ayudarles a construir una imagen más completa de su vida en línea.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "No mostrar nuevamente", 
+    "message": "No mostrar nuevamente",
     "description": ""
   }
 }
