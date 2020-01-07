@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Ang Facebook container ay inihihiwalay ang iyong mga aktibidad sa Facebook sa iba mong aktibidad sa web upang ma iwasan ang Facebook na subaybayan ka sa labas ng kanilang website gamit ang mga third party cookies.",
+    "message": "Ang Facebook container ay inihihiwalay ang iyong mga aktibidad sa Facebook sa iba mong aktibidad sa web upang maiwasan ang Facebook na subaybayan ka sa labas ng kanilang website gamit ang mga third party cookies.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -110,9 +110,21 @@
     "message": "Pumunta sa Kung paano gamitin ang Facebook Container",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   },
+  "no-trackers-subhead": {
+    "message": "Walang natuklasan na mga trackers ng Facebook",
+    "description": ""
+  },
   "learn-more": {
     "message": "Matuto ng higit pa",
     "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Paano gumagana ang Facebook Container",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "sites-added-subhead": {
+    "message": "Mga sites na pinapayagan sa Facebook Container",
+    "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "SITES INCLUDED",
@@ -124,6 +136,18 @@
   },
   "remove": {
     "message": "Alisin",
+    "description": ""
+  },
+  "remove-site-subhead": {
+    "message": "Alisin ang site mula sa Facebook Container?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Payagan ang Facebook na subaybayan ka rito?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Huwag ipakita sa akin ito ulit",
     "description": ""
   }
 }
