@@ -1,4 +1,36 @@
 {
+  "extensionDescription": {
+    "message": "يعزل امتداد Facebook Container نشاطك على فيسبوك ليكون منفصلًا عن نشاطك في الوِب مُجملًا، ذلك لمنعهم من تعقّب ما تفعله خارج موقعهم باستعمال كعكات الطرف الثالث.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "الموقع $URL$ معزول في امتداد Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "on-facebook-p1": {
+    "message": "تظهر هذه الأيقونة في شريط العنوان داخل Firefox متى زرت مواقع تملكها شركة فيسبوك أو مواقع أضفتها إلى امتداد Facebook Container.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "لتعمل هذه المواقع عليها أن تعرف هويّتك على فيسبوك (أو هويّتك بشكل عام). يعني هذا أيضًا بأنّ فيسبوك يستطيع تعقّب ما تفعله أيًا كان في هذه المواقع.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
+  "notOnFacebookHeader": {
+    "message": "الموقع $URL$ ليس معزولًا في امتداد Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.google.com"
+      }
+    }
+  },
   "btn-allow": {
     "message": "اسمح",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
