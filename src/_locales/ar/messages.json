@@ -31,6 +31,58 @@
       }
     }
   },
+  "notOnFacebookText": {
+    "message": "هذا الموقع يعمل خارج حاوية Facebook Container، بذلك يصعّب على فيسبوك أمر تعقّب ما تفعل على الوِب.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "onUnknownSiteHeader": {
+    "message": "هذا الموقع ليس معزولًا في امتداد Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "facebookContainer": {
+    "message": "Facebook Container",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "onboarding1-subhead": {
+    "message": "استعمال امتداد Facebook Container",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p1": {
+    "message": "يمكن أن يتعقّب فيسبوك ما تفعل على الوِب حتّى وأنت خارج facebook.com. فمثلًا أزرار الإعجاب والمشاركة الخاصة بهم تتعقّب مكانك وأين كنت، حتّى لو لم تُعجبك الصفحة تلك أو تُشاركها.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "يضع امتداد Facebook Container حدًا بين مواقع فيسبوك وباقي أرجاء الوِب ليُصعّب على فيسبوك تعقّب ما تفعله على الشبكة.",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "أيقونة سياج امتداد Facebook Container",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "تظهر هذه الأيقونة في شريط العنوان داخل Firefox متى زُرت الموقع (مثل facebook.com) المحجوزة داخل حدود امتداد Facebook Container.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "لتعمل هذه المواقع عليها أن تعرف هويّتك على فيسبوك (أو هويّتك بشكل عام). يعني هذا أيضًا بأنّ فيسبوك يستطيع تعقّب ما تفعله أيًا كان في هذه المواقع.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding3-subhead": {
+    "message": "كيف أعمل فيما إذا كان امتداد Facebook Container يعمل أو لا؟",
+    "description": "This is the subhead for the third onboarding panel."
+  },
+  "onboarding3-p1": {
+    "message": "تحتوي الأزرار التي تخصّ فيسبوك (والتي تُتيح الإعجاب والمشاركة أو حتّى الولوج إلى المواقع عبر حسابك على فيسبوك) - تحتوي على متعقّبات. سيمنع امتداد Facebook Container هذه المتعقّبات ويعرض أيقونة السياج ليقول بأنّ المتعقّبات هذه قد أُزيلت.",
+    "description": "This is the first paragraph of the third onboarding panel."
+  },
+  "onboarding3-img": {
+    "message": "ترى في هذه الصورة كيف تظهر أيقونة السياج لامتداد Facebook Container في الصفحة عند زرّ الإعجاب لموقع فيسبوك.",
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  },
+  "onboarding3-p2": {
+    "message": "ولكن لو نقرت على أيّ زرّ منها فستقدر فيسبوك على تعقّبك.",
+    "description": "This is the second paragraph on the third onboarding panel."
+  },
   "btn-allow": {
     "message": "اسمح",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -43,6 +95,10 @@
     "message": "التالي",
     "description": "This is a button to continue to the next onboarding panel."
   },
+  "btn-back": {
+    "message": "عُد",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
   "btn-done": {
     "message": "تمّ",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
@@ -51,16 +107,72 @@
     "message": "ارجع إلى اللوحة السابقة.",
     "description": "This is alternative text for the back arrow button."
   },
+  "no-trackers-subhead": {
+    "message": "لم نكتشف أيّ متعقّب لفيسبوك",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "لم يكتشف امتداد Facebook Container أيّ متعقّب لفيسبوك في هذه الصفحة، ولكن لا يمنع هذا أنّها لا تحتوي متعقّبات من أنواع أخرى.",
+    "description": ""
+  },
   "learn-more": {
     "message": "اطّلع على المزيد",
     "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "trackers-detected-fence-alt": {
+    "message": "سياج امتداد Facebook Container مع درع.",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "المواقع المسموحة في امتداد Facebook Container",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "المواقع المُدرجة",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "لا مواقع",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   },
+  "sites-allowed": {
+    "message": "المواقع التي سمحت أنت بها",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
   "remove": {
     "message": "أزِل",
+    "description": ""
+  },
+  "button-remove-site": {
+    "message": "أزِل الموقع من امتداد Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "هذا الموقع تمتلكه شركة فيسبوك ولا يمكن إزالته من امتداد Facebook Container",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "أتريد إزالة الموقع من امتداد Facebook Container؟",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "تعني بإزالتك هذا الموقع من امتداد Facebook Container بأنّ ميزة الولوج عبر فيسبوك ستتعطّل طالما الامتداد يعمل، كما وأنّ كعكات فيسبوك للتعقّب ستُحذف.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": " لو أردت الولوج عبر فيسبوك مرةً أخرى، فعليك إضافة الموقع إلى امتداد Facebook Container.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "عطّل امتداد Facebook Container هذا الزرّ ومنع فيسبوك من تعقّب زيارتك لهذه الصفحة.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "حجب امتداد Facebook Container متعقّبات فيسبوك. لو ولجت إلى هذا الموقع عبر فيسبوك، فستقدر فيسبوك على تعقّب ما تفعل.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "أتسمح بأن تتعقّبك فيسبوك هنا؟",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
