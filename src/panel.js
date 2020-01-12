@@ -20,16 +20,26 @@ const setUpPanel = (panelId) => {
 
   const fragment = document.createDocumentFragment();
   fragment["id"] = panelId;
-
+  page.innerHTML=`<div class="slidecontainer">
+  <input type="range" min="12" max="16" value="12" class="slider" id="fontRange">
+  </div>`;
   return { page, fragment };
 };
-
+const list_sizeable=[];
 
 // adds "Facebook Container" to top of all panels
 const addHeader = (wrapper) => {
   const el = document.createElement("h1");
   el["id"] = "facebookContainer";
   setClassAndAppend(wrapper, el);
+  /* eslint-disable indent */
+  list_sizeable.push(el);
+  var sliderValues=document.getElementById("fontRange");
+  sliderValues.oninput=function(){
+  for(var i=0;i<list_sizeable.length;i++){
+    list_sizeable[i].style.fontSize= this.value +"px";
+     }
+  };
   return el;
 };
 
@@ -48,6 +58,14 @@ const addSubhead = (wrapper, panelId) => {
   el["id"] = elemId;
   setClassAndAppend(wrapper, el);
   el.classList.add(elemId);
+  /* eslint-disable indent */
+  list_sizeable.push(el);
+  var sliderValues=document.getElementById("fontRange");
+  sliderValues.oninput=function(){
+  for(var i=0;i<list_sizeable.length;i++){
+    list_sizeable[i].style.fontSize= this.value +"px";
+     }
+  };
   return el;
 };
 
@@ -57,6 +75,14 @@ const addLightSubhead = (wrapper, stringId) => {
   const el = document.createElement("h3");
   el["id"] = stringId;
   setClassAndAppend(wrapper, el);
+  /* eslint-disable indent */
+  list_sizeable.push(el);
+  var sliderValues=document.getElementById("fontRange");
+  sliderValues.oninput=function(){
+  for(var i=0;i<list_sizeable.length;i++){
+    list_sizeable[i].style.fontSize= this.value +"px";
+     }
+  };
   return el;
 };
 
@@ -65,6 +91,14 @@ const addLightSubhead = (wrapper, stringId) => {
 const addParagraph = (wrapper, stringId) => {
   const el = document.createElement("p");
   el["id"] = stringId;
+  /* eslint-disable indent */
+  list_sizeable.push(el);
+  var sliderValues=document.getElementById("fontRange");
+  sliderValues.oninput=function(){
+  for(var i=0;i<list_sizeable.length;i++){
+    list_sizeable[i].style.fontSize= this.value +"px";
+     }
+  };
   setClassAndAppend(wrapper, el);
 };
 
@@ -97,8 +131,34 @@ const addFullWidthButton = (fragment, listenerClass) => {
 
   let contentWrapper = addDiv(fragment, "fw-bottom-btn");
   contentWrapper.appendChild(button);
+  //adds the ability to change background text color to suit the current theme color
+  /* eslint-disable indent */
+      function style(themeInfo) {
+      if (themeInfo.colors) 
+      {
+      const link_button=document.getElementsByClassName("highlight-on-hover");
+      for(var i=0;i<link_button.length;i++){
+          link_button[i].style.color =themeInfo.colors.tab_background_text;
+      }
+      }
+    
+    }
+    async function getThemeInfo() 
+    {
+      var themeInfo = await browser.theme.getCurrent();
+
+      style(themeInfo);
+    }
+
+    getThemeInfo();
   return button;
 };
+
+
+
+
+
+
 
 
 const addSpan = (wrapper, stringId) => {
