@@ -502,7 +502,7 @@ function detectFacebookOnPage () {
   patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
   patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
 
-  escapeKeyListener();
+
 }
 
 // Resize listener. Only fires after window stops resizing.
@@ -536,7 +536,13 @@ function screenUpdate () {
   }
 }
 
+let escapeKeyListenerEnabled = false;
+
 function escapeKeyListener () {
+  // Only add esc key listener once on page load
+  if (escapeKeyListenerEnabled) { return; }
+
+  escapeKeyListenerEnabled = true;
   document.body.addEventListener("keydown", function(e) {
     if(e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
       closePrompt();
@@ -605,6 +611,7 @@ function contentScriptInit(resetSwitch, msg) {
     // console.log("contentScriptInit--resource");
     detectFacebookOnPage();
     screenUpdate();
+    escapeKeyListener();
   }
 }
 
