@@ -1,0 +1,30 @@
+{
+  "facebookContainer": {
+    "message": "Facebook-houer",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "btn-next": {
+    "message": "Volgende",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "Terug",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "Klaar",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "no-trackers-subhead": {
+    "message": "Geen Facebook-spoorsnyers opgespoor nie",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "Meer inligting",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "trackers-detected-subhead": {
+    "message": "Ons het jou teen Facebook beskerm.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }
+}
