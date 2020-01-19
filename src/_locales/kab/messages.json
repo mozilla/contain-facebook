@@ -1,212 +1,224 @@
 {
   "extensionDescription": {
-    "message": "Amagbar Facebook ad iεzel armud-inek n Facebook ɣef urmud-inek web akken ur ittaǧǧa ara Facebook ad ak-iḍfer beṛṛa n usmel-ines s ttawil n inagan n tuqqna tis kraḍ.", 
+    "message": "Amagbar Facebook ad iεzel armud-inek n Facebook ɣef urmud-inek web akken ur ittaǧǧa ara Facebook ad ak-iḍfer beṛṛa n usmel-ines s ttawil n inagan n tuqqna tis kraḍ.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ deg umagbar Facebook.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ deg umagbar Facebook.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook yezmer tura ad k-yeḍfeṛ deg usmel-a. Akken ad tekkseḍ asmel-a seg Facebook Container, fren ismal deg Facebook Container sakin kkes-it seg tebdert."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Deg Facebook akked ismal i d-yeɛzel Facebook Container. ", 
+    "message": "Deg Facebook akked ismal i d-yeɛzel Facebook Container. ",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Tignit-a ad tban deg ufeggag n tensa n Firefox ticki terziḍ ɣer yismal yessefrak Facebook neɣ ismal i terniḍ ɣer Facebook container.", 
+    "message": "Tignit-a ad tban deg ufeggag n tensa n Firefox ticki terziḍ ɣer yismal yessefrak Facebook neɣ ismal i terniḍ ɣer Facebook container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Ismal-a ḥwaǧen ad kecmen ɣer tmagit-ik Facebook (neɣ akken ad ẓren anwa-k) akken ad lḥun. Ayagi yemmal-d dakken daɣen ula d Facebook yezmer ad yeḍfeṛ meṛṛa ayen i txeddmeḍ deg yismal-a.", 
+    "message": "Ismal-a ḥwaǧen ad kecmen ɣer tmagit-ik Facebook (neɣ akken ad ẓren anwa-k) akken ad lḥun. Ayagi yemmal-d dakken daɣen ula d Facebook yezmer ad yeḍfeṛ meṛṛa ayen i txeddmeḍ deg yismal-a.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ ulac-it deg umagbar Facebook.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ ulac-it deg umagbar Facebook.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Asmel-agi yella beṛṛa n umagbar Facebook. Aya ad yessiwɛeṛ i Facebook ad k-yeḍfeṛ deg Web. ", 
+    "message": "Asmel-agi yella beṛṛa n umagbar Facebook. Aya ad yessiwɛeṛ i Facebook ad k-yeḍfeṛ deg Web. ",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Asmel-agi ulac deg umagbar Facebook.", 
+    "message": "Asmel-agi ulac deg umagbar Facebook.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Aseqdec n Facebook Container", 
+    "message": "Aseqdec n Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook yezmer ad yeḍfeṛ tunigin-ik beṛṛa n Facebook.com. Amedya, ticki llant tqeffalin ḥemmleɣ neɣ Bḍu n Facebook, yezmer ad yeḍfeṛ anida tettedduḍ — ɣas ɣef yiseftar ur teḥmileḍ neɣ ur tebḍiḍ.", 
+    "message": "Facebook yezmer ad yeḍfeṛ tunigin-ik beṛṛa n Facebook.com. Amedya, ticki llant tqeffalin ḥemmleɣ neɣ Bḍu n Facebook, yezmer ad yeḍfeṛ anida tettedduḍ — ɣas ɣef yiseftar ur teḥmileḍ neɣ ur tebḍiḍ.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container ad yeɛzel Facebook seg Web. Ihi ad s-yewɣeṛ  i Facebook akken ad k-yeḍfeṛ srid.", 
+    "message": "Facebook Container ad yeɛzel Facebook seg Web. Ihi ad s-yewɣeṛ  i Facebook akken ad k-yeḍfeṛ srid.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Deg Facebook akked yismal i yeɛzel Facebook Container ", 
+    "message": "Deg Facebook akked yismal i yeɛzel Facebook Container ",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Tignit n talast n Facebook Container", 
+    "message": "Tignit n talast n Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Tignit-a ad tban deg ufeggag n Firefox ticki terziḍ ɣer yismal, am Facebook.com, i yellan deg Facebook Container.", 
+    "message": "Tignit-a ad tban deg ufeggag n Firefox ticki terziḍ ɣer yismal, am Facebook.com, i yellan deg Facebook Container.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Ismal-a ḥwaǧen ad kecmen ɣer tmagit-ik Facebook (neɣ akken ad ẓren anwa-k) akken ad lḥun. Ayagi yemmal-d dakken daɣen ula d Facebook yezmer ad yeḍfeṛ meṛṛa ayen i txeddmeḍ deg yismal-a.", 
+    "message": "Ismal-a ḥwaǧen ad kecmen ɣer tmagit-ik Facebook (neɣ akken ad ẓren anwa-k) akken ad lḥun. Ayagi yemmal-d dakken daɣen ula d Facebook yezmer ad yeḍfeṛ meṛṛa ayen i txeddmeḍ deg yismal-a.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "Amek ara ẓreɣ ma iteddu Facebook Container?", 
+    "message": "Amek ara ẓreɣ ma iteddu Facebook Container?",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "Tiqeffalin ara k-yeǧǧen ad tḥemmleḍ neɣ ad tebḍuḍ iferdisen deg Facebook neɣ akken ad teqqneḍ ɣer yismal s useqdec n umiḍan-ik Faceook gebren ineḍfaṛen. Facebook container ad isewḥel ineḍfaṛen-a sakin ad d-yesken tignit n talast akken ad ak-d-yesken anida ttwakksen ineḍfaṛen.", 
+    "message": "Tiqeffalin ara k-yeǧǧen ad tḥemmleḍ neɣ ad tebḍuḍ iferdisen deg Facebook neɣ akken ad teqqneḍ ɣer yismal s useqdec n umiḍan-ik Faceook gebren ineḍfaṛen. Facebook container ad isewḥel ineḍfaṛen-a sakin ad d-yesken tignit n talast akken ad ak-d-yesken anida ttwakksen ineḍfaṛen.",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "Tugna-a ad tesken amek ad tban tignit n talast Facebook Container deg usebter rrif n uferdis Ḥemmleɣ n Facebook.", 
+    "message": "Tugna-a ad tesken amek ad tban tignit n talast Facebook Container deg usebter rrif n uferdis Ḥemmleɣ n Facebook.",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "Maca, ma tettekkaḍ ɣef yiwet si tqeffalin-a, Facebook ad yizmir ad k-yeḍfeṛ.", 
+    "message": "Maca, ma tettekkaḍ ɣef yiwet si tqeffalin-a, Facebook ad yizmir ad k-yeḍfeṛ.",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "Sireg", 
+    "message": "Sireg",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Sefsex", 
+    "message": "Sefsex",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Γer zdat", 
+    "message": "Γer zdat",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Ɣer deffir", 
+    "message": "Ɣer deffir",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Immed", 
+    "message": "Immed",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Uɣal ɣer ugalis yezrin.", 
+    "message": "Uɣal ɣer ugalis yezrin.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Ddu ad teẓreḍ amek iteddu Facebook Container", 
+    "message": "Ddu ad teẓreḍ amek iteddu Facebook Container",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Ulac aneḍfaṛ n Facebook i d-yettwafen", 
+    "message": "Ulac aneḍfaṛ n Facebook i d-yettwafen",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container ur d-yufi ara ineḍfaṛen n Facebook ɣef usebter-a. Maca asebter yezmer ad yegber anawen-nniḍen n yineḍfaṛen.", 
+    "message": "Facebook Container ur d-yufi ara ineḍfaṛen n Facebook ɣef usebter-a. Maca asebter yezmer ad yegber anawen-nniḍen n yineḍfaṛen.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Issin ugar", 
+    "message": "Issin ugar",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Amek iteddu Facebook Container", 
+    "message": "Amek iteddu Facebook Container",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Nemmesten-ik mgal Facebook.", 
+    "message": "Nemmesten-ik mgal Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Tiqeffalin Facebook i d-yettbanen deg yismal n tiɣin, isallen, d yismal-nniḍen gebrent inedfaṛen i d-yemmalen ayen wiɣer i trezzuḍ. Ɣas ma yella ur tseqdaceḍ ara tiqeffalin-a i uḥemmel neɣ i beṭṭu, ineḍfaṛen zemren yal tikkelt ad leqḍen isefka ɣef tunigin-ik. Facebook Container yessewḥal ineḍfaṛen-a.", 
+    "message": "Tiqeffalin Facebook i d-yettbanen deg yismal n tiɣin, isallen, d yismal-nniḍen gebrent inedfaṛen i d-yemmalen ayen wiɣer i trezzuḍ. Ɣas ma yella ur tseqdaceḍ ara tiqeffalin-a i uḥemmel neɣ i beṭṭu, ineḍfaṛen zemren yal tikkelt ad leqḍen isefka ɣef tunigin-ik. Facebook Container yessewḥal ineḍfaṛen-a.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container yessewḥel ineḍfaṛen-a. Maca, ma tettekkaḍ ɣef yiwet seg tqeffalin-a, Facebook ad yizmir ad k-yeḍfeṛ.", 
+    "message": "Facebook Container yessewḥel ineḍfaṛen-a. Maca, ma tettekkaḍ ɣef yiwet seg tqeffalin-a, Facebook ad yizmir ad k-yeḍfeṛ.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Talast n Facebook Container s waɣer ", 
+    "message": "Talast n Facebook Container s waɣer ",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Ismal yettwaqeblen deg Facebook Container", 
+    "message": "Ismal yettwaqeblen deg Facebook Container",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "ISMAL YEDDAN", 
+    "message": "ISMAL YEDDAN",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Ula yiwen", 
+    "message": "Ula yiwen",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "ISMAL I TQEBLEḌ", 
+    "message": "ISMAL I TQEBLEḌ",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container ad yeɛzel ismal ittekkan ɣer Facebook deg temnaḍt s talast. Tzemreḍ ad ternuḍ ismal-nniḍen ɣer umagbar, maca ad teǧǧeḍ Facebook ad k-yeḍfeṛ ugar."
-  }, 
+  },
   "remove": {
-    "message": "KKES", 
+    "message": "KKES",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Sireg asmel deg umagbar Facebook",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Kkes asmel seg umagbar Facebook",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Imi asmel-a d ayla n Facebook, ur nezmir ara ad t-nekkes seg umagbar Facebook.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Kkes asmel seg Facebook Container?", 
+    "message": "Kkes asmel seg Facebook Container?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Ma tekkseḍ asmel-a seg Facebook Container ayagi ur k-yettaǧǧa ara ad teqqneḍ ɣer-s ɣer zdat s tmahilt n Facebook daɣen inagan n tuqqna Facebook ad ttwakksen.", 
+    "message": "Ma tekkseḍ asmel-a seg Facebook Container ayagi ur k-yettaǧǧa ara ad teqqneḍ ɣer-s ɣer zdat s tmahilt n Facebook daɣen inagan n tuqqna Facebook ad ttwakksen.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": "Ma tebɣiḍ ad teqqneḍ s Facebook tikkelt-nniḍen, ilaq ad ternuḍ asmel-a ɣer Facebook Container.", 
+    "message": "Ma tebɣiḍ ad teqqneḍ s Facebook tikkelt-nniḍen, ilaq ad ternuḍ asmel-a ɣer Facebook Container.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container yessens taqeffalt ihi yessewḥel Facebook seg uḍfaṛ n tirza deg usebter-a.", 
+    "message": "Facebook Container yessens taqeffalt ihi yessewḥel Facebook seg uḍfaṛ n tirza deg usebter-a.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container yessewḥel ineḍfaṛen n Facebook. MA tesqedceḍ tuqqna s Facebook deg usmel-a, Facebook ad yizmir ad k-yeḍfeṛ.", 
+    "message": "Facebook Container yessewḥel ineḍfaṛen n Facebook. MA tesqedceḍ tuqqna s Facebook deg usmel-a, Facebook ad yizmir ad k-yeḍfeṛ.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Eǧǧ Facebook akken ad k-yeḍfeṛ dagi?", 
+    "message": "Eǧǧ Facebook akken ad k-yeḍfeṛ dagi?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Ma tebɣiḍ ad tesqedceḍ tuqqna s Facebook, Facebook ad yizmir ad yeḍfeṛ armud-ik ɣef usmel-a. Ayagi yezmer ad imudd tallelt ɣef wudem-ik deg tudert-ik srid.", 
+    "message": "Ma tebɣiḍ ad tesqedceḍ tuqqna s Facebook, Facebook ad yizmir ad yeḍfeṛ armud-ik ɣef usmel-a. Ayagi yezmer ad imudd tallelt ɣef wudem-ik deg tudert-ik srid.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Ur yi-d-skan ara aya tikelt-nniḍen", 
+    "message": "Ur yi-d-skan ara aya tikelt-nniḍen",
     "description": ""
   }
 }
