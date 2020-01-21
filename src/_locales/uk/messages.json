@@ -186,7 +186,7 @@
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Оскільки цей веб-сайт є власністю Facebook, його не можна вилучити з Facebook Container.",
+    "message": "Оскільки цей вебсайт є власністю Facebook, його не можна вилучити з Facebook Container.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
