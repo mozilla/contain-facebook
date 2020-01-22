@@ -1,212 +1,224 @@
 {
   "extensionDescription": {
-    "message": "Το Facebook Container απομονώνει τη δραστηριότητά σας στο Facebook από την υπόλοιπη δραστηριότητά σας στο διαδίκτυο, προκειμένου να εμποδίσετε την καταγραφή σας από το Facebook εκτός της ιστοσελίδας του Facebook, μέσω cookies τρίτων.", 
+    "message": "Το Facebook Container απομονώνει τη δραστηριότητά σας στο Facebook από την υπόλοιπη δραστηριότητά σας στο διαδίκτυο, προκειμένου να εμποδίσετε την καταγραφή σας από το Facebook εκτός της ιστοσελίδας του Facebook, μέσω cookies τρίτων.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "Το $URL$ είναι στο Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "Το $URL$ είναι στο Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Το Facebook μπορεί πλέον να σας καταγράφει σε αυτή την ιστοσελίδα. Για να αφαιρέσετε αυτή την ιστοσελίδα από το Facebook Container, επιλέξτε το \"Επιτρεπόμενες ιστοσελίδες\" στο Facebook Container και αφαιρέστε την από τη λίστα."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Στο Facebook και σε ιστοσελίδες εντός των ορίων του Facebook Container", 
+    "message": "Στο Facebook και σε ιστοσελίδες εντός των ορίων του Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Αυτό το εικονίδιο εμφανίζεται στη γραμμή διευθύνσεων του Firefox όταν επισκέπτεστε τις ιστοσελίδες του Facebook ή τις ιστοσελίδες που έχετε προσθέσει στο Facebook Container.", 
+    "message": "Αυτό το εικονίδιο εμφανίζεται στη γραμμή διευθύνσεων του Firefox όταν επισκέπτεστε τις ιστοσελίδες του Facebook ή τις ιστοσελίδες που έχετε προσθέσει στο Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Αυτές οι ιστοσελίδες χρειάζονται πρόσβαση στην ταυτότητά σας στο Facebook (ή να γνωρίζουν ποιοι είστε) για να λειτουργήσουν. Επίσης, αυτό σημαίνει ότι το Facebook μπορεί να καταγράψει ό,τι κάνετε σε αυτές τις ιστοσελίδες.", 
+    "message": "Αυτές οι ιστοσελίδες χρειάζονται πρόσβαση στην ταυτότητά σας στο Facebook (ή να γνωρίζουν ποιοι είστε) για να λειτουργήσουν. Επίσης, αυτό σημαίνει ότι το Facebook μπορεί να καταγράψει ό,τι κάνετε σε αυτές τις ιστοσελίδες.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "Το $URL$ δεν είναι στο Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "Το $URL$ δεν είναι στο Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Η ιστοσελίδα είναι εκτός του Facebook Container. Έτσι, το Facebook σάς παρακολουθεί δυσκολότερα στο διαδίκτυο.", 
+    "message": "Η ιστοσελίδα είναι εκτός του Facebook Container. Έτσι, το Facebook σάς παρακολουθεί δυσκολότερα στο διαδίκτυο.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Αυτή η ιστοσελίδα δεν είναι στο Facebook Container.", 
+    "message": "Αυτή η ιστοσελίδα δεν είναι στο Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Χρήση του Facebook Container", 
+    "message": "Χρήση του Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Το Facebook μπορεί να καταγράψει την περιήγησή σας πέρα από το Facebook.com. Τα κουμπιά \"Μου αρέσει\" και \"Κοινοποίηση\" του Facebook, για παράδειγμα, μπορούν να ανιχνεύσουν σε ποια ιστοσελίδα βρίσκεστε - ακόμη και σε αυτές που δεν τα χρησιμοποιείτε.", 
+    "message": "Το Facebook μπορεί να καταγράψει την περιήγησή σας πέρα από το Facebook.com. Τα κουμπιά \"Μου αρέσει\" και \"Κοινοποίηση\" του Facebook, για παράδειγμα, μπορούν να ανιχνεύσουν σε ποια ιστοσελίδα βρίσκεστε - ακόμη και σε αυτές που δεν τα χρησιμοποιείτε.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Το Facebook Container δημιουργεί ένα όριο ανάμεσα στις ιστοσελίδες του Facebook και το υπόλοιπο διαδίκτυο, ώστε να είναι πιο δύσκολο για το Facebook να σάς παρακολουθεί στο διαδίκτυο.", 
+    "message": "Το Facebook Container δημιουργεί ένα όριο ανάμεσα στις ιστοσελίδες του Facebook και το υπόλοιπο διαδίκτυο, ώστε να είναι πιο δύσκολο για το Facebook να σάς παρακολουθεί στο διαδίκτυο.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Στο Facebook και σε ιστοσελίδες εντός των ορίων του Facebook Container", 
+    "message": "Στο Facebook και σε ιστοσελίδες εντός των ορίων του Facebook Container",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Το εικονίδιο φράχτη του Facebook Container", 
+    "message": "Το εικονίδιο φράχτη του Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Αυτό το εικονίδιο εμφανίζεται στη γραμμή διευθύνσεων του Firefox όταν επισκέπτεστε ιστοσελίδες, όπως το Facebook.com, που βρίσκονται εντός των ορίων του Facebook Container.", 
+    "message": "Αυτό το εικονίδιο εμφανίζεται στη γραμμή διευθύνσεων του Firefox όταν επισκέπτεστε ιστοσελίδες, όπως το Facebook.com, που βρίσκονται εντός των ορίων του Facebook Container.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Αυτές οι ιστοσελίδες χρειάζονται πρόσβαση στην ταυτότητά σας στο Facebook (ή να γνωρίζουν ποιοι είστε) για να λειτουργήσουν. Επίσης, αυτό σημαίνει ότι το Facebook μπορεί να καταγράψει ό,τι κάνετε σε αυτές τις ιστοσελίδες.", 
+    "message": "Αυτές οι ιστοσελίδες χρειάζονται πρόσβαση στην ταυτότητά σας στο Facebook (ή να γνωρίζουν ποιοι είστε) για να λειτουργήσουν. Επίσης, αυτό σημαίνει ότι το Facebook μπορεί να καταγράψει ό,τι κάνετε σε αυτές τις ιστοσελίδες.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "Πώς ξέρω ότι το Facebook Container λειτουργεί;", 
+    "message": "Πώς ξέρω ότι το Facebook Container λειτουργεί;",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "Τα κουμπιά \"Μου αρέσει\" ή \"Κοινοποίηση\" του Facebook ή τα κουμπιά που σάς επιτρέπουν να συνδεθείτε σε ιστοσελίδες μέσω του λογαριασμού σας στο Facebook περιέχουν ιχνηλάτες. Το Facebook Container θα αποκλείσει αυτούς τους ιχνηλάτες και θα εμφανίσει το εικονίδιο-φράχτη για να σάς δείξει από πού έχουν αφαιρεθεί οι ιχνηλάτες.", 
+    "message": "Τα κουμπιά \"Μου αρέσει\" ή \"Κοινοποίηση\" του Facebook ή τα κουμπιά που σάς επιτρέπουν να συνδεθείτε σε ιστοσελίδες μέσω του λογαριασμού σας στο Facebook περιέχουν ιχνηλάτες. Το Facebook Container θα αποκλείσει αυτούς τους ιχνηλάτες και θα εμφανίσει το εικονίδιο-φράχτη για να σάς δείξει από πού έχουν αφαιρεθεί οι ιχνηλάτες.",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "Αυτή η εικόνα δείχει πώς θα εμφανίζεται το εικονίδιο-φράχτης του Facebook Container σε μια σελίδα, δίπλα σε ένα κουμπί \"Μου αρέσει\" του Facebook.", 
+    "message": "Αυτή η εικόνα δείχει πώς θα εμφανίζεται το εικονίδιο-φράχτης του Facebook Container σε μια σελίδα, δίπλα σε ένα κουμπί \"Μου αρέσει\" του Facebook.",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "Ωστόσο, αν κάνετε κλικ σε οποιοδήποτε από αυτά τα κουμπιά, το Facebook θα μπορεί να σας καταγράφει.", 
+    "message": "Ωστόσο, αν κάνετε κλικ σε οποιοδήποτε από αυτά τα κουμπιά, το Facebook θα μπορεί να σας καταγράφει.",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "Αποδοχή", 
+    "message": "Αποδοχή",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Ακύρωση", 
+    "message": "Ακύρωση",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Επόμενο", 
+    "message": "Επόμενο",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Πίσω", 
+    "message": "Πίσω",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Τέλος", 
+    "message": "Τέλος",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Επιστροφή στην προηγούμενη σελίδα.", 
+    "message": "Επιστροφή στην προηγούμενη σελίδα.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Μετάβαση στο \"Πώς λειτουργεί το Facebook Container\"", 
+    "message": "Μετάβαση στο \"Πώς λειτουργεί το Facebook Container\"",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Δεν ανιχνεύθηκαν ιχνηλάτες Facebook", 
+    "message": "Δεν ανιχνεύθηκαν ιχνηλάτες Facebook",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Το Facebook Container δεν ανίχνευσε ιχνηλάτες του Facebook σε αυτή τη σελίδα. Ωστόσο, η σελίδα ενδέχεται να περιέχει άλλους τύπους ιχνηλατών.", 
+    "message": "Το Facebook Container δεν ανίχνευσε ιχνηλάτες του Facebook σε αυτή τη σελίδα. Ωστόσο, η σελίδα ενδέχεται να περιέχει άλλους τύπους ιχνηλατών.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Μάθετε περισσότερα", 
+    "message": "Μάθετε περισσότερα",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Πώς λειτουργεί το Facebook Container", 
+    "message": "Πώς λειτουργεί το Facebook Container",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Σας προστατεύουμε από το Facebook.", 
+    "message": "Σας προστατεύουμε από το Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Τα κουμπιά του Facebook, που εμφανίζονται σε ιστοσελίδες αγορών, ειδήσεων και άλλου περιεχομένου, περιέχουν ιχνηλάτες που λένε στο Facebook την τοποθεσία σας στο διαδίκτυο. Ακόμη και αν δεν τα χρησιμοποιείτε ποτέ, οι ιχνηλάτες μπορούν ακόμη να συλλέγουν δεδομένα σχετικά με την περιήγησή σας. Το Facebook Container αποκλείει αυτούς τους ιχνηλάτες.", 
+    "message": "Τα κουμπιά του Facebook, που εμφανίζονται σε ιστοσελίδες αγορών, ειδήσεων και άλλου περιεχομένου, περιέχουν ιχνηλάτες που λένε στο Facebook την τοποθεσία σας στο διαδίκτυο. Ακόμη και αν δεν τα χρησιμοποιείτε ποτέ, οι ιχνηλάτες μπορούν ακόμη να συλλέγουν δεδομένα σχετικά με την περιήγησή σας. Το Facebook Container αποκλείει αυτούς τους ιχνηλάτες.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Το Facebook Container αποκλείει αυτούς τους ιχνηλάτες. Ωστόσο, αν κάνετε κλικ σε οποιοδήποτε από αυτά τα κουμπιά, το Facebook θα μπορέσει να σάς παρακολουθήσει.", 
+    "message": "Το Facebook Container αποκλείει αυτούς τους ιχνηλάτες. Ωστόσο, αν κάνετε κλικ σε οποιοδήποτε από αυτά τα κουμπιά, το Facebook θα μπορέσει να σάς παρακολουθήσει.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Φράχτης Facebook Container με ασπίδα.", 
+    "message": "Φράχτης Facebook Container με ασπίδα.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Επιτρεπόμενες ιστοσελίδες στο Facebook Container", 
+    "message": "Επιτρεπόμενες ιστοσελίδες στο Facebook Container",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ", 
+    "message": "ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Καμία", 
+    "message": "Καμία",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "ΕΠΙΤΡΕΠΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ", 
+    "message": "ΕΠΙΤΡΕΠΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Το Facebook Container τοποθετεί ιστοσελίδες του Facebook μέσα στα όρια αυτά. Μπορείτε να επιτρέψετε σε άλλες ιστοσελίδες εντός των ορίων, αλλά αυτό θα επιτρέψει στο Facebook να καταγράφει περισσότερο την περιήγησή σας στο διαδίκτυο."
-  }, 
+  },
   "remove": {
-    "message": "Αφαίρεση", 
+    "message": "Αφαίρεση",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Να επιτρέπεται η ιστοσελίδα στο Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Αφαίρεση ιστοσελίδας από το Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Επειδή αυτή η ιστοσελίδα ανήκει στο Facebook, δεν μπορεί να αφαιρεθεί από το Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Αφαίρεση ιστοσελίδας από το Facebook Container;", 
+    "message": "Αφαίρεση ιστοσελίδας από το Facebook Container;",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Η αφαίρεση αυτής της ιστοσελίδας από το Facebook Container σημαίνει ότι η σύνδεση μέσω Facebook δεν θα λειτουργεί, ενώ τα cookies καταγραφής του Facebook θα διαγραφούν.", 
+    "message": "Η αφαίρεση αυτής της ιστοσελίδας από το Facebook Container σημαίνει ότι η σύνδεση μέσω Facebook δεν θα λειτουργεί, ενώ τα cookies καταγραφής του Facebook θα διαγραφούν.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Αν θελήσετε να χρησιμοποιήσετε ξανά τη σύνδεση μέσω Facebook, θα πρέπει να την προσθέσετε ξανά στο Facebook Container.", 
+    "message": " Αν θελήσετε να χρησιμοποιήσετε ξανά τη σύνδεση μέσω Facebook, θα πρέπει να την προσθέσετε ξανά στο Facebook Container.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Το Facebook Container έχει απενεργοποιήσει αυτό το κουμπί και απαγόρεψε στο Facebook να καταγράψει την επίσκεψή σας σε αυτή τη σελίδα.", 
+    "message": "Το Facebook Container έχει απενεργοποιήσει αυτό το κουμπί και απαγόρεψε στο Facebook να καταγράψει την επίσκεψή σας σε αυτή τη σελίδα.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Το Facebook Container έχει αποκλείσει τους ιχνηλάτες του Facebook. Αν χρησιμοποιήσετε τη σύνδεση μέσω Facebook σε αυτή την ιστοσελίδα, το Facebook θα μπορέσει να σάς παρακολουθήσει.", 
+    "message": "Το Facebook Container έχει αποκλείσει τους ιχνηλάτες του Facebook. Αν χρησιμοποιήσετε τη σύνδεση μέσω Facebook σε αυτή την ιστοσελίδα, το Facebook θα μπορέσει να σάς παρακολουθήσει.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Να επιτρέπεται στο Facebook να σας καταγράφει εδώ;", 
+    "message": "Να επιτρέπεται στο Facebook να σας καταγράφει εδώ;",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Αν θέλετε να χρησιμοποιήσετε τη σύνδεση μέσω Facebook, τότε το Facebook θα μπορεί να παρακολουθεί τη δραστηριότητά σας σε αυτή την ιστοσελίδα. Αυτό μπορεί να χρησιμοποιηθεί για τη βαθύτερη κατανόηση της διαδικτυακής σας ζωής από τρίτους.", 
+    "message": "Αν θέλετε να χρησιμοποιήσετε τη σύνδεση μέσω Facebook, τότε το Facebook θα μπορεί να παρακολουθεί τη δραστηριότητά σας σε αυτή την ιστοσελίδα. Αυτό μπορεί να χρησιμοποιηθεί για τη βαθύτερη κατανόηση της διαδικτυακής σας ζωής από τρίτους.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Να μην εμφανιστεί ξανά", 
+    "message": "Να μην εμφανιστεί ξανά",
     "description": ""
   }
 }
