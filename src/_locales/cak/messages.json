@@ -150,6 +150,10 @@
     "message": "Tiyuj",
     "description": ""
   },
+  "button-remove-site": {
+    "message": "Nawelesaj ri ruxaq pa Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
   "remove-site-subhead": {
     "message": "¿La nawelesaj ri ruxaq pa Facebook Container?",
     "description": ""
