@@ -1,212 +1,224 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container izolon veprimtarinë tuaj në Facebook nga pjesa tjetër e veprimtarisë tuaj në internet, për të penguar Facebook-un t’ju ndjekë jashtë sajtit Facebook përmes cookie-sh palësh të treta.", 
+    "message": "Facebook Container izolon veprimtarinë tuaj në Facebook nga pjesa tjetër e veprimtarisë tuaj në internet, për të penguar Facebook-un t’ju ndjekë jashtë sajtit Facebook përmes cookie-sh palësh të treta.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ gjendet nën një Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ gjendet nën një Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook-u mund tani t’ju ndjekë në këtë sajt. Për ta hequr këtë sajt nga Facebook Container, përzgjidhni Sajte të Lejuar te Facebook Container dhe hiqeni prej liste."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Mbi Facebook-un dhe Sajte në Vijën Facebook Container", 
+    "message": "Mbi Facebook-un dhe Sajte në Vijën Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Kjo ikonë shfaqet te shtylla e adresave në Firefox, kur vizitoni sajte pronë e Facebook-ut ose sajte që i keni shtuar te Facebook Container.", 
+    "message": "Kjo ikonë shfaqet te shtylla e adresave në Firefox, kur vizitoni sajte pronë e Facebook-ut ose sajte që i keni shtuar te Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Që të mund të funksionojnë, këtyre sajteve u duhet të hyjnë në identitetin tuaj Facebook (ose të dinë se cili jeni). Kjo do të thotë gjithashtu se Facebook-u mund të gjurmojë gjithçka që bëni në këto sajte.", 
+    "message": "Që të mund të funksionojnë, këtyre sajteve u duhet të hyjnë në identitetin tuaj Facebook (ose të dinë se cili jeni). Kjo do të thotë gjithashtu se Facebook-u mund të gjurmojë gjithçka që bëni në këto sajte.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ s’gjendet te Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ s’gjendet te Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Ky sajt gjendet jashtë Facebook Container-it. Ky e bën më të zorshme ndjekjen tuaj nëpër web nga Facebook-u.", 
+    "message": "Ky sajt gjendet jashtë Facebook Container-it. Ky e bën më të zorshme ndjekjen tuaj nëpër web nga Facebook-u.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Ky sajt s’gjendet te Facebook Container.", 
+    "message": "Ky sajt s’gjendet te Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Si të Përdoret Facebook Container", 
+    "message": "Si të Përdoret Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook-u mund të gjurmojë shfletimin tuaj shumë më larg sesa në Facebook.com. Butonat Facebook për Pëlqim dhe Ndarje Me të Tjerë, për shembull, mund të gjurmojnë se ku keni qenë — madje edhe në faqe që s’i keni pëlqyer apo ndarë kurrë me njeri.", 
+    "message": "Facebook-u mund të gjurmojë shfletimin tuaj shumë më larg sesa në Facebook.com. Butonat Facebook për Pëlqim dhe Ndarje Me të Tjerë, për shembull, mund të gjurmojnë se ku keni qenë — madje edhe në faqe që s’i keni pëlqyer apo ndarë kurrë me njeri.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container krijon një vijë mes sajteve Facebook dhe pjesës tjetër të web-it, që kështu të jetë më e zorshme për Facebook-un t’ju ndjekë nëpër internet.", 
+    "message": "Facebook Container krijon një vijë mes sajteve Facebook dhe pjesës tjetër të web-it, që kështu të jetë më e zorshme për Facebook-un t’ju ndjekë nëpër internet.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Mbi Facebook-un dhe Sajte në Vijën Facebook Container", 
+    "message": "Mbi Facebook-un dhe Sajte në Vijën Facebook Container",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Ikona e gardhit Facebook Container", 
+    "message": "Ikona e gardhit Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Kjo ikonë shfaqe te shtylla e adresave në Firefox, kur vizitoni sajte, fjala vjen, Facebook.com, që gjenden në vijën Facebook Container.", 
+    "message": "Kjo ikonë shfaqe te shtylla e adresave në Firefox, kur vizitoni sajte, fjala vjen, Facebook.com, që gjenden në vijën Facebook Container.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Që të mund të funksionojnë, këtyre sajteve u duhet të hyjnë në identitetin tuaj Facebook (ose të dinë se cili jeni). Kjo do të thotë gjithashtu se Facebook-u mund të gjurmojë gjithçka që bëni në këto sajte.", 
+    "message": "Që të mund të funksionojnë, këtyre sajteve u duhet të hyjnë në identitetin tuaj Facebook (ose të dinë se cili jeni). Kjo do të thotë gjithashtu se Facebook-u mund të gjurmojë gjithçka që bëni në këto sajte.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "Si ta di se Facebook Container po funksionon?", 
+    "message": "Si ta di se Facebook Container po funksionon?",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "Butona që ju lejojnë të pëlqeni ose ndani gjëra me të tjerët në Facebook, ose që ju lejojnë të bëni hyrje në llogari në sajte duke përdorur llogarinë tuaj Facebook, përmbajnë gjurmues. Facebook Container do t’i bllokojë këta gjurmues dhe do të shfaqë ikonën gardh për t’ju treguar se janë hequr gjurmues.", 
+    "message": "Butona që ju lejojnë të pëlqeni ose ndani gjëra me të tjerët në Facebook, ose që ju lejojnë të bëni hyrje në llogari në sajte duke përdorur llogarinë tuaj Facebook, përmbajnë gjurmues. Facebook Container do t’i bllokojë këta gjurmues dhe do të shfaqë ikonën gardh për t’ju treguar se janë hequr gjurmues.",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "Kjo figurë ilustron se si do të shfaqet ikona gardh e Facebook Containers brenda faqes, në krah të një butoni Facebook Like.", 
+    "message": "Kjo figurë ilustron se si do të shfaqet ikona gardh e Facebook Containers brenda faqes, në krah të një butoni Facebook Like.",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "Sidoqoftë, nëse klikoni në cilindo nga këta butona, Facebook-u do të jetë në gjendje t’ju gjurmojë.", 
+    "message": "Sidoqoftë, nëse klikoni në cilindo nga këta butona, Facebook-u do të jetë në gjendje t’ju gjurmojë.",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "Lejoje", 
+    "message": "Lejoje",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Anuloje", 
+    "message": "Anuloje",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Pasuesi", 
+    "message": "Pasuesi",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Mbrapsht", 
+    "message": "Mbrapsht",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "U bë", 
+    "message": "U bë",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Shko mbrapsht te paneli i mëparshëm.", 
+    "message": "Shko mbrapsht te paneli i mëparshëm.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Kaloni te pjesa Si Funksionon Facebook Container", 
+    "message": "Kaloni te pjesa Si Funksionon Facebook Container",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "S’u Pikasën Gjurmues Facebook", 
+    "message": "S’u Pikasën Gjurmues Facebook",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container s’pikasi ndonjë gjurmues Facebook në këtë faqe. Megjithatë, faqja mundet prapë të përmbajë lloje të tjerë gjurmuesish.", 
+    "message": "Facebook Container s’pikasi ndonjë gjurmues Facebook në këtë faqe. Megjithatë, faqja mundet prapë të përmbajë lloje të tjerë gjurmuesish.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Mësoni më tepër", 
+    "message": "Mësoni më tepër",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Si Funksionon Facebook Container", 
+    "message": "Si Funksionon Facebook Container",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Ju kemi mbrojtur nga Facebook-u.", 
+    "message": "Ju kemi mbrojtur nga Facebook-u.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Butonat nga Facebook-u që shfaqen në sajte blerjesh, lajmesh, etj, përmbajnë gjurmues që i tregojnë Facebook-ut se ku keni qenë në web. Edhe pse s’i përdorni kurrë këta butona për të pëlqyer apo ndarë diçka me të tjerë, gjurmuesit prapëseprapë mund të grumbullojnë të dhëna rreth shfletimit tuaj. Facebook Container i bllokon këta gjurmues.", 
+    "message": "Butonat nga Facebook-u që shfaqen në sajte blerjesh, lajmesh, etj, përmbajnë gjurmues që i tregojnë Facebook-ut se ku keni qenë në web. Edhe pse s’i përdorni kurrë këta butona për të pëlqyer apo ndarë diçka me të tjerë, gjurmuesit prapëseprapë mund të grumbullojnë të dhëna rreth shfletimit tuaj. Facebook Container i bllokon këta gjurmues.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container i bllokon këta gjurmues. Sidoqoftë, nëse klikoni në cilindo nga këta butona, Facebook-u do të jetë në gjendje t’ju ndjekë.", 
+    "message": "Facebook Container i bllokon këta gjurmues. Sidoqoftë, nëse klikoni në cilindo nga këta butona, Facebook-u do të jetë në gjendje t’ju ndjekë.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Gardh Facebook Container me mburojë.", 
+    "message": "Gardh Facebook Container me mburojë.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Sajte të Lejuar në Facebook Container", 
+    "message": "Sajte të Lejuar në Facebook Container",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "SAJTE TË PËRFSHIRË", 
+    "message": "SAJTE TË PËRFSHIRË",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Asnjë", 
+    "message": "Asnjë",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "SAJTE QË KENI LEJUAR", 
+    "message": "SAJTE QË KENI LEJUAR",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container i vendos brenda cakut sajtet pronë e Facebook-ut. Mund të lejoni sajte të tjerë brenda tij, por kjo do ta lejojë Facebook-un të gjurmojë më tepër nga shfletimi juaj."
-  }, 
+  },
   "remove": {
-    "message": "Hiqe", 
+    "message": "Hiqe",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Lejo Sajt në Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Hiqe Sajtin nga Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Ngaqë ky është një sajt pronë e Facebook-ut, s’mund të hiqet nga Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Të hiqet sajti nga Facebook Container?", 
+    "message": "Të hiqet sajti nga Facebook Container?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Heqja e këtij sajti nga Facebook Container do të thotë që Hyrja përmes llogarisë Facebook s’do të funksionojë më dhe cookie-t e gjurmimit nga Facebook-u do të fshihen.", 
+    "message": "Heqja e këtij sajti nga Facebook Container do të thotë që Hyrja përmes llogarisë Facebook s’do të funksionojë më dhe cookie-t e gjurmimit nga Facebook-u do të fshihen.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Nëse doni të përdorni sërish Hyrje me Facebook, do t’ju duhet ta shtoni sërish te Facebook Container.", 
+    "message": " Nëse doni të përdorni sërish Hyrje me Facebook, do t’ju duhet ta shtoni sërish te Facebook Container.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container e ka çaktivizuar këtë buton dhe ia ka bllokuar Facebook-ut gjurmimin e vizitës tuaj në këtë faqe.", 
+    "message": "Facebook Container e ka çaktivizuar këtë buton dhe ia ka bllokuar Facebook-ut gjurmimin e vizitës tuaj në këtë faqe.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container i ka bllokuar gjurmuesit Facebook. Nëse përdorni Hyrje me Facebook në këtë sajt, Facebook-u do të jetë në gjendje t’ju gjurmojë.", 
+    "message": "Facebook Container i ka bllokuar gjurmuesit Facebook. Nëse përdorni Hyrje me Facebook në këtë sajt, Facebook-u do të jetë në gjendje t’ju gjurmojë.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Të lejohet Facebook-u t’ju gjurmojë këtu?", 
+    "message": "Të lejohet Facebook-u t’ju gjurmojë këtu?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Nëse doni të përdorni hyrje me Facebook,  Facebook-u do të jetë në gjendje të gjurmojë veprimtarinë tuaj në këtë sajt. Kjo mund t’i ndihmojë ata të krijojnë një pamje më të plotë të jetës tuaj internetore.", 
+    "message": "Nëse doni të përdorni hyrje me Facebook,  Facebook-u do të jetë në gjendje të gjurmojë veprimtarinë tuaj në këtë sajt. Kjo mund t’i ndihmojë ata të krijojnë një pamje më të plotë të jetës tuaj internetore.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Mos ma shfaq më këtë", 
+    "message": "Mos ma shfaq më këtë",
     "description": ""
   }
 }
