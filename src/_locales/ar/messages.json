@@ -13,6 +13,9 @@
       }
     }
   },
+  "in-fbc-p1": {
+    "message": "يمكن لموقع فيسبوك الآن تعقّب ما تفعل في هذا الموقع. لو أردت إزالة الموقع من امتداد Facebook Container فاختر ”المواقع المسموحة في امتداد Facebook Container“ وأزِله من القائمة."
+  },
   "on-facebook-p1": {
     "message": "تظهر هذه الأيقونة في شريط العنوان داخل Firefox متى زرت مواقع تملكها شركة فيسبوك أو مواقع أضفتها إلى امتداد Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
