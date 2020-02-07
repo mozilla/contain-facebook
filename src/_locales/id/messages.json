@@ -1,212 +1,224 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container mengisolasi aktivitas Facebook Anda dari aktivitas web Anda yang lain untuk mencegah Facebook melacak Anda di luar situs web Facebook melalui kuki pihak ketiga.", 
+    "message": "Facebook Container mengisolasi aktivitas Facebook Anda dari aktivitas web Anda yang lain untuk mencegah Facebook melacak Anda di luar situs web Facebook melalui kuki pihak ketiga.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ ada dalam Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ ada dalam Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook sekarang dapat melacak Anda di situs ini. Untuk menghapus situs ini dari Facebook Container, pilih Situs yang Dibolehkan dalam Facebook Container lalu hapus dari daftar."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Di Facebook dan Situs dalam Batasan Facebook Container", 
+    "message": "Di Facebook dan Situs dalam Batasan Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Ikon ini muncul dalam bilah alamat Firefox ketika Anda mengunjungi situs yang dimiliki oleh Facebook atau situs yang telah Anda tambahkan ke Facebook Container.", 
+    "message": "Ikon ini muncul dalam bilah alamat Firefox ketika Anda mengunjungi situs yang dimiliki oleh Facebook atau situs yang telah Anda tambahkan ke Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Agar bisa berfungsi, situs ini perlu mengakses identitas Facebook Anda (atau mengetahui siapa Anda). Ini juga berarti bahwa Facebook dapat melacak semua yang Anda lakukan di situs ini.", 
+    "message": "Agar bisa berfungsi, situs ini perlu mengakses identitas Facebook Anda (atau mengetahui siapa Anda). Ini juga berarti bahwa Facebook dapat melacak semua yang Anda lakukan di situs ini.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ tidak ada dalam Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ tidak ada dalam Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Situs ini berada di luar Facebook Container. Ini membuat Facebook semakin sulit melacak Anda di web.", 
+    "message": "Situs ini berada di luar Facebook Container. Ini membuat Facebook semakin sulit melacak Anda di web.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Situs ini tidak ada dalam Facebook Container.", 
+    "message": "Situs ini tidak ada dalam Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Menggunakan Facebook Container", 
+    "message": "Menggunakan Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook dapat melacak penjelajahan Anda bahkan ketika jauh dari Facebook.com. Tombol Suka dan Bagikan Facebook, contohnya, dapat melacak situs yang telah Anda kunjungi — termasuk laman yang tidak pernah Anda sukai atau bagikan.", 
+    "message": "Facebook dapat melacak penjelajahan Anda bahkan ketika jauh dari Facebook.com. Tombol Suka dan Bagikan Facebook, contohnya, dapat melacak situs yang telah Anda kunjungi — termasuk laman yang tidak pernah Anda sukai atau bagikan.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container membuat batasan antara situs Facebook dan Web keseluruhan sehingga sulit bagi Facebook untuk melacak Anda saat daring.", 
+    "message": "Facebook Container membuat batasan antara situs Facebook dan Web keseluruhan sehingga sulit bagi Facebook untuk melacak Anda saat daring.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Dalam Facebook dan Situs di dalam Batasan Facebook Container", 
+    "message": "Dalam Facebook dan Situs di dalam Batasan Facebook Container",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Ikon pagar Facebook Container", 
+    "message": "Ikon pagar Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Ikon ini muncul di dalam bilah alamat Firefox ketika Anda mengunjungi situs, seperti Facebook.com, yang berada di dalam batasan Facebook Container.", 
+    "message": "Ikon ini muncul di dalam bilah alamat Firefox ketika Anda mengunjungi situs, seperti Facebook.com, yang berada di dalam batasan Facebook Container.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Situs-situs berikut memerlukan akses ke identitas Facebook Anda (atau mengetahui siapa Anda) agar dapat berfungsi. Ini juga berarti Facebook dapat melacak apapun yang Anda lakukan di dalam situs tersebut.", 
+    "message": "Situs-situs berikut memerlukan akses ke identitas Facebook Anda (atau mengetahui siapa Anda) agar dapat berfungsi. Ini juga berarti Facebook dapat melacak apapun yang Anda lakukan di dalam situs tersebut.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding3-subhead": {
-    "message": "Bagaimana saya tahu Facebook Container sedang bekerja?", 
+    "message": "Bagaimana saya tahu Facebook Container sedang bekerja?",
     "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "onboarding3-p1": {
-    "message": "Tombol yang membolehkan Anda menyukai atau membagikan sesuai ke Facebook atau membolehkan Anda masuk ke situs web menggunakan akun Facebook Anda mengandung pelacak. Facebook Container akan memblokir pelacak tersebut dan memunculkan ikon pagar untuk menunjukkan Anda di mana pelacar dihilangkan.", 
+    "message": "Tombol yang membolehkan Anda menyukai atau membagikan sesuai ke Facebook atau membolehkan Anda masuk ke situs web menggunakan akun Facebook Anda mengandung pelacak. Facebook Container akan memblokir pelacak tersebut dan memunculkan ikon pagar untuk menunjukkan Anda di mana pelacar dihilangkan.",
     "description": "This is the first paragraph of the third onboarding panel."
-  }, 
+  },
   "onboarding3-img": {
-    "message": "Gambar ini mendemostrasikan bagaimana ikon pagar Facebook Container akan muncul di dalam laman di samping tombol Suka Facebook.", 
+    "message": "Gambar ini mendemostrasikan bagaimana ikon pagar Facebook Container akan muncul di dalam laman di samping tombol Suka Facebook.",
     "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
+  },
   "onboarding3-p2": {
-    "message": "Walaupun begitu, jika Anda klik salah satu tombol tersebut Facebook akan dapat melacak Anda.", 
+    "message": "Walaupun begitu, jika Anda klik salah satu tombol tersebut Facebook akan dapat melacak Anda.",
     "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "Izinkan", 
+    "message": "Izinkan",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Batal", 
+    "message": "Batal",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Lanjut", 
+    "message": "Lanjut",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Kembali", 
+    "message": "Kembali",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Selesai", 
+    "message": "Selesai",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Kembali ke panel sebelumnya.", 
+    "message": "Kembali ke panel sebelumnya.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Lihat Penjelasan Bagaimana Facebook Container Bekerja", 
+    "message": "Lihat Penjelasan Bagaimana Facebook Container Bekerja",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Tidak Ada Pelacak Facebook Terdeteksi", 
+    "message": "Tidak Ada Pelacak Facebook Terdeteksi",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container tidak mendeteksi pelacak Facebook pada laman ini. Walaupun begitu, laman ini bisa saja mengandung berbagai tipe pelacak lainnya.", 
+    "message": "Facebook Container tidak mendeteksi pelacak Facebook pada laman ini. Walaupun begitu, laman ini bisa saja mengandung berbagai tipe pelacak lainnya.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Pelajari lebih lanjut", 
+    "message": "Pelajari lebih lanjut",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Bagaimana Facebook Container Bekerja", 
+    "message": "Bagaimana Facebook Container Bekerja",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Kami melindungi Anda dari Facebook.", 
+    "message": "Kami melindungi Anda dari Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Tombol Facebook yang muncul pada situs belanja, beritas dan situs lainnya mengandung pelacak yang mengabarkan Facebook di mana Anda berada selama di web. Bahkan jika Anda tidak pernah menggunakan tombol tersebut untuk suka atau berbagi, pelacak masih dapat mengumpulkan data tentang penjelajahan Anda. Facebook Container memblokir pelacak tersebut.", 
+    "message": "Tombol Facebook yang muncul pada situs belanja, beritas dan situs lainnya mengandung pelacak yang mengabarkan Facebook di mana Anda berada selama di web. Bahkan jika Anda tidak pernah menggunakan tombol tersebut untuk suka atau berbagi, pelacak masih dapat mengumpulkan data tentang penjelajahan Anda. Facebook Container memblokir pelacak tersebut.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container memblokir pelacak tersebut. Walaupun begitu, jika Anda mengklik salah satu tombol Facebook akan dapat melacak Anda.", 
+    "message": "Facebook Container memblokir pelacak tersebut. Walaupun begitu, jika Anda mengklik salah satu tombol Facebook akan dapat melacak Anda.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Pagar Facebook Container dengan perisai.", 
+    "message": "Pagar Facebook Container dengan perisai.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Situs yang Diizinkan dalam Facebook Container", 
+    "message": "Situs yang Diizinkan dalam Facebook Container",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "SITUS YANG TERMASUK", 
+    "message": "SITUS YANG TERMASUK",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Tidak Ada", 
+    "message": "Tidak Ada",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "SITUS YANG TELAH ANDA IZINKAN", 
+    "message": "SITUS YANG TELAH ANDA IZINKAN",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container menaruh situs yang dimiliki Facebook di dalam batasan. Anda dapat memperbolehkan situs lainnya ke dalam batasan, tetapi ini memungkinkan Facebook untuk melacak penjelajahan web Anda lebih banyak."
-  }, 
+  },
   "remove": {
-    "message": "Hapus", 
+    "message": "Hapus",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Izinkan Situs di Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Hapus Situs dari Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Karena ini adalah situs milik Facebook, maka tidak dapat dihapus dari Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Hapus situs dari Facebook Container?", 
+    "message": "Hapus situs dari Facebook Container?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Menghapus situs ini dari Facebook Container berarti fitur Masuk dengan Facebook tidak akan bekerja lagi dan kuki pelacakan Facebook akan dihapus.", 
+    "message": "Menghapus situs ini dari Facebook Container berarti fitur Masuk dengan Facebook tidak akan bekerja lagi dan kuki pelacakan Facebook akan dihapus.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Jika Anda ingin menggunakan fitur Masuk dengan Facebook lagi, Anda perlu memasukkan situs ini kembali ke Facebook Container.", 
+    "message": " Jika Anda ingin menggunakan fitur Masuk dengan Facebook lagi, Anda perlu memasukkan situs ini kembali ke Facebook Container.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container telah menonaktifkan tombol ini dan memblokir Facebook untuk melacak kunjungan Anda ke laman ini.", 
+    "message": "Facebook Container telah menonaktifkan tombol ini dan memblokir Facebook untuk melacak kunjungan Anda ke laman ini.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container telah memblokir pelacak Facebook. Jika Anda menggunakan fitur Masuk dengan Facebook pada situs ini, Facebook akan dapat melacak Anda.", 
+    "message": "Facebook Container telah memblokir pelacak Facebook. Jika Anda menggunakan fitur Masuk dengan Facebook pada situs ini, Facebook akan dapat melacak Anda.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Izinkan Facebook melacak Anda di sini?", 
+    "message": "Izinkan Facebook melacak Anda di sini?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Jika Anda ingin menggunakan fitur Masuk dengan Facebook maka Facebook akan dapat melacak aktivitas Anda pada situs ini. Hal ini membantu mereka membuat gambar penuh tentang kehidupan daring Anda.", 
+    "message": "Jika Anda ingin menggunakan fitur Masuk dengan Facebook maka Facebook akan dapat melacak aktivitas Anda pada situs ini. Hal ini membantu mereka membuat gambar penuh tentang kehidupan daring Anda.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Jangan tampilkan lagi", 
+    "message": "Jangan tampilkan lagi",
     "description": ""
   }
 }
