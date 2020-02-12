@@ -83,7 +83,7 @@
       "description": "This is the subhead for the fourth onboarding panel."
     },
     "onboarding4-p1": {
-      "message": "Even when you're not on Facebook, Facebook can track you online. Buttons that let you post things to Facebook or log in to websites using your Facebook account contain trackers. Facebook Container will block these trackers and display the fence icon to show you where trackers were removed.",
+      "message": "Even when you’re not on Facebook, Facebook can track you online. Buttons that let you post things to Facebook or log in to websites using your Facebook account contain trackers. Facebook Container will block these trackers and display the fence icon to show you where trackers were removed.",
       "description": "This is the first paragraph of the fourth onboarding panel."
     },
     "onboarding4-img": {
