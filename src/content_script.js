@@ -66,6 +66,14 @@ const SHARE_PATTERN_DETECTION_SELECTORS = [
   "[title='Share on Facebook']" // Medium
 ];
 
+// Selects all anchor links with an HREF to Facebook Domains
+const NOREFERRER_DETECTION = [
+  "a[href*='facebook.com']",
+  "a[href*='instagram.com']",
+  "a[href*='messenger.com']",
+  "a[href*='workplace.com']"
+];
+
 function isFixed (elem) {
   do {
     if (getComputedStyle(elem).position == "fixed") return true;
@@ -474,6 +482,29 @@ function parentIsBadged(target) {
 // List of badge-able in-page elements
 const facebookDetectedElementsArr = [];
 
+function relAttributeInjection(selectionArray, attributeValue){
+  // This only runs once each page load.
+  if (relAttributeInjectionSwitch) { return; }
+
+  relAttributeInjectionSwitch = true;
+
+  // Loop through each anchor and check for rel tags
+  let querySelector = selectionArray.join(",");
+  for (let item of document.querySelectorAll(querySelector)) {
+    // console.log(item, attributeValue);
+    let currentRelAttr = item.getAttribute("rel");
+    if (currentRelAttr == null) {
+      item.setAttribute("rel", attributeValue);
+      continue;
+    }
+
+    if (currentRelAttr.indexOf("noreferrer") < 0) {
+      currentRelAttr = currentRelAttr + " noreferrer";
+      item.setAttribute("rel", currentRelAttr);
+    }
+  }
+}
+
 function patternDetection(selectionArray, socialActionIntent){
   // console.log("patternDetection");
   let querySelector = selectionArray.join(",");
@@ -494,6 +525,8 @@ function patternDetection(selectionArray, socialActionIntent){
   }
 }
 
+let relAttributeInjectionSwitch;
+
 function detectFacebookOnPage () {
   if (!checkForTrackers) {
     return;
@@ -501,6 +534,7 @@ function detectFacebookOnPage () {
 
   patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
   patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
+  relAttributeInjection(NOREFERRER_DETECTION, "noreferrer");
 
   escapeKeyListener();
 }
