@@ -48,14 +48,12 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   ".homepage-photo-leader .welcome-buttons div.btn-facebook", // Mixcloud homepage
   ".modal-content .auth-form div.btn-facebook", // Mixcloud login modal
   "[class*='fb-login']" // Default FB class name "fbc-login-button"
-
 ];
 
 // TODO: Disarm click events on detected elements
 const SHARE_PATTERN_DETECTION_SELECTORS = [
-  "[href*='facebook.com/share']",
+  // "[href*='facebook.com/share']",
   "[href*='facebook.com/dialog/feed']", // Feed dialog
-  "[href*='facebook.com/sharer']", // Buzzfeed
   "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
   "[aria-label*='share on facebook']", // MSN
   "[data-tracking*='facebook|share']", // football.london
@@ -68,6 +66,7 @@ const SHARE_PATTERN_DETECTION_SELECTORS = [
 // TODO: Disarm click events on detected elements
 const PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/dialog/share']", // Share dialog
+  "[href*='facebook.com/sharer']", // Legacy Share dialog
 ];
 
 function isFixed (elem) {
@@ -156,7 +155,6 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
-  // console.log("addFacebookBadge", target);
 
   const htmlBadgeDiv = createBadgeFragment(socialAction);
 
@@ -227,13 +225,11 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   } else if (socialAction === "share-passive") {
     htmlBadgeDiv.classList.add("fbc-badge-share-passive", "fbc-badge-share");
 
-    shareBadgeEventListenerInit(target, htmlBadgeDiv);
+    shareBadgeEventListenerInit(target, htmlBadgeDiv, {allowClickThrough: true});
 
   } else if (socialAction === "share")  {
     htmlBadgeDiv.classList.add("fbc-badge-share");
-
-    shareBadgeEventListenerInit(target, htmlBadgeDiv);
-
+    shareBadgeEventListenerInit(target, htmlBadgeDiv, {allowClickThrough: true});
   }
 
   // Applies to both!
@@ -244,14 +240,15 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
 }
 
 // Add Event Listener actions/hooks to share badges
-function shareBadgeEventListenerInit(target, htmlBadgeDiv) {
-  target.addEventListener("click", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-  });
+function shareBadgeEventListenerInit(target, htmlBadgeDiv, options) {
+  if (!options.allowClickThrough) {
+    target.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+    });
+  }
 
   target.addEventListener("mouseover", () => {
-    // console.log(["mouseover", target, htmlBadgeDiv]);
     target.classList.add("fbc-badge-tooltip-active");
     htmlBadgeDiv.classList.add("fbc-badge-tooltip-active");
     setTimeout( ()=> {
@@ -260,7 +257,6 @@ function shareBadgeEventListenerInit(target, htmlBadgeDiv) {
   });
 
   target.addEventListener("mouseout", () => {
-    // console.log(["mouseout", target, htmlBadgeDiv]);
     target.classList.remove("fbc-badge-tooltip-active");
     htmlBadgeDiv.classList.remove("fbc-badge-tooltip-active");
   });
@@ -381,7 +377,6 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 function determineContainerClientRect() {
   const htmlHeight = document.querySelector("html").offsetHeight;
   const bodyHeight = document.querySelector("body").offsetHeight;
-  // console.log([htmlHeight, bodyHeight, (htmlHeight > bodyHeight)]);
   if (htmlHeight === bodyHeight) {
     return document.body.getBoundingClientRect();
   } else if ( htmlHeight < bodyHeight ) {
@@ -456,7 +451,6 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   // TODO: Add Zindex Targeting
   const targetZindex = calcZindex(target);
 
-  // console.log( calcZindex(target) );
 
   // Set badge position based on target coordinates/size
   htmlBadgeDiv.style.zIndex = targetZindex;
@@ -487,13 +481,11 @@ function parentIsBadged(target) {
 const facebookDetectedElementsArr = [];
 
 function patternDetection(selectionArray, socialActionIntent){
-  // console.log("patternDetection");
   let querySelector = selectionArray.join(",");
 
   for (let item of document.querySelectorAll(querySelector)) {
     // overlay the FBC icon badge on the item
     if (!item.classList.contains("fbc-has-badge") && !isPinterest(item) && !parentIsBadged(item)) {
-      // console.log([querySelector, item]);
       const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
       const itemUIDClassTarget = "js-" + itemUIDClassName;
       const socialAction = socialActionIntent;
@@ -501,7 +493,6 @@ function patternDetection(selectionArray, socialActionIntent){
       addFacebookBadge(item, itemUIDClassTarget, socialAction);
       item.classList.add("fbc-has-badge");
       item.classList.add(itemUIDClassName);
-      // console.log(itemUIDClassName);
     }
   }
 }
@@ -511,8 +502,8 @@ function detectFacebookOnPage () {
     return;
   }
 
-  patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
   patternDetection(PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS, "share-passive");
+  patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
   patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
 
   escapeKeyListener();
@@ -604,18 +595,14 @@ function contentScriptInit(resetSwitch, msg) {
   // Second arg is for debugging to see which contentScriptInit fires
   // Call count tracks number of times contentScriptInit has been called
   // callCount = callCount + 1;
-  // console.log(call, callCount);
-  // console.log(source, ": ", checkForTrackers);
 
   if (resetSwitch) {
-    // console.log("contentScriptInit--resetSwitch");
     contentScriptDelay = 999;
     contentScriptSetTimeout();
   }
 
   // Resource call is not in FBC/FB Domain and is a FB resource
   if (checkForTrackers && msg !== "other-domain") {
-    // console.log("contentScriptInit--resource");
     detectFacebookOnPage();
     screenUpdate();
   }
@@ -644,7 +631,6 @@ addPassiveWindowOnloadListener();
 function contentScriptSetTimeout() {
   // console.timeEnd('contentScriptSetTimeout');
   // console.timeStart('contentScriptSetTimeout');
-  // console.log("contentScriptSetTimeout");
   contentScriptDelay = Math.ceil(contentScriptDelay * 2);
   contentScriptInit(false);
   if ( contentScriptDelay > 999999 ) {
