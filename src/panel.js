@@ -132,12 +132,10 @@ const isSiteInContainer = async(panelId) => {
   }
 
   const addedSitesList = await browser.runtime.sendMessage("what-sites-are-added");
-  const hostname = await getActiveHostname();
+  const activeTabHostname = await getActiveHostname();
 
-  if (addedSitesList.includes(hostname)) {
+  if (addedSitesList.includes(activeTabHostname)) {
     return true;
-  } else {
-    return false;
   }
 };
 
@@ -156,12 +154,11 @@ const addCustomSiteButton = async (fragment, panelId) => {
     button = addFullWidthButton(fragment, "remove-site-from-container");
     addSpan(button, "button-remove-site");
     addTooltip(button, "button-remove-site-tooltip");
-  } else {
-    button = addFullWidthButton(fragment, "add-site-to-container");
-    addSpan(button, "button-allow-site");
+    return;
   }
+  button = addFullWidthButton(fragment, "add-site-to-container");
+  addSpan(button, "button-allow-site");
 };
-
 
 const setCustomSiteButtonEvent = async (panelId) => {
   const shouldShowRemoveSiteButton = await isSiteInContainer(panelId);
@@ -174,11 +171,15 @@ const setCustomSiteButtonEvent = async (panelId) => {
 
   if (shouldShowRemoveSiteButton) {
     const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
-    removeSiteFromContainerLink.addEventListener("click", async () => removeSiteFromContainer());
-  } else {
-    const addSiteToContainerLink = document.querySelector(".add-site-to-container");
-    addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
+    removeSiteFromContainerLink.addEventListener(
+      "click", async () => removeSiteFromContainer()
+    );
+    return;
   }
+
+  const addSiteToContainerLink = document.querySelector(".add-site-to-container");
+  addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
+
 };
 
 // adds bottom navigation buttons to onboarding panels
@@ -255,9 +256,9 @@ const handleOnboardingClicks = async(e, res) => {
     if (res === 4) {
       // This accounts for the skipped Panel #3
       buildOnboardingPanel(2);
-    } else {
-      buildOnboardingPanel(res - 1);
+      return;
     }
+    buildOnboardingPanel(res - 1);
   }
 
   // go back to origin panel
@@ -325,7 +326,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const onboarding = (currentPanel.includes("onboarding"));
   if (!onboarding) {
-    return await buildPanel(currentPanel);
+    return buildPanel(currentPanel);
   }
   buildOnboardingPanel(1);
 });
@@ -356,13 +357,10 @@ const buildPanel = async(panelId) => {
     imgDiv.classList.add("img");
   }
 
-  if (panelId === "no-trackers") {
-    addLearnMoreLink(contentWrapper);
-  }
-
   await addLearnHowFBCWorksButton(fragment);
 
   if (panelId === "no-trackers") {
+    addLearnMoreLink(contentWrapper);
     await addCustomSiteButton(fragment, panelId);
   }
 
@@ -530,23 +528,17 @@ const buildAllowedSitesPanel = async(panelId) => {
 };
 
 const removeSiteFromContainer = async () => {
-
-  const thisHostname = await getActiveHostname();
-
-  await browser.runtime.sendMessage( {removeDomain: thisHostname} );
+  const activeHostname = await getActiveHostname();
+  await browser.runtime.sendMessage( {removeDomain: activeHostname} );
   browser.tabs.reload();
   window.close();
-
 };
 
 const addSiteToContainer = async () => {
-
-  const thisHostname = await getActiveHostname();
-
+  const activeHostname = await getActiveHostname();
   const fbcStorage = await browser.storage.local.get();
-  fbcStorage.domainsAddedToFacebookContainer.push(thisHostname);
+  fbcStorage.domainsAddedToFacebookContainer.push(activeHostname);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
-  //await browser.runtime.sendMessage(thisHostname);
   browser.tabs.reload();
   window.close();
 };
