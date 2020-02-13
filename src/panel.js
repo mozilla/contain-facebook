@@ -21,6 +21,9 @@ const setUpPanel = (panelId) => {
   const fragment = document.createDocumentFragment();
   fragment["id"] = panelId;
 
+  // Clear Panel Notification Dot
+  browser.browserAction.setBadgeText({text: ""});
+
   return { page, fragment };
 };
 
@@ -100,6 +103,12 @@ const addFullWidthButton = (fragment, listenerClass) => {
   return button;
 };
 
+const addTooltip = (wrapper, stringId) => {
+  const div = document.createElement("div");
+  div["id"] = stringId;
+  setClassAndAppend(wrapper, div);
+};
+
 
 const addSpan = (wrapper, stringId) => {
   const span = document.createElement("span");
@@ -107,6 +116,28 @@ const addSpan = (wrapper, stringId) => {
   setClassAndAppend(wrapper, span);
 };
 
+const getActiveHostname = async() => {
+  const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
+  const currentActiveTab = tabsQueryResult[0];
+  const currentActiveURL = new URL(currentActiveTab.url);
+  const thisHostname = currentActiveURL.hostname;
+  return thisHostname;
+};
+
+const isSiteInContainer = async(panelId) => {
+
+  if (panelId === "on-facebook") {
+    // Site is on default FBC domain. Show the "remove site" button, in a disabled state.
+    return true;
+  }
+
+  const addedSitesList = await browser.runtime.sendMessage("what-sites-are-added");
+  const activeTabHostname = await getActiveHostname();
+
+  if (addedSitesList.includes(activeTabHostname)) {
+    return true;
+  }
+};
 
 const addLearnHowFBCWorksButton = async (fragment) => {
   let button = addFullWidthButton (fragment, "open-onboarding");
@@ -116,6 +147,40 @@ const addLearnHowFBCWorksButton = async (fragment) => {
   addSpan(button, "sites-added-subhead");
 };
 
+const addCustomSiteButton = async (fragment, panelId) => {
+  const shouldShowRemoveSiteButton = await isSiteInContainer(panelId);
+  let button;
+  if (shouldShowRemoveSiteButton) {
+    button = addFullWidthButton(fragment, "remove-site-from-container");
+    addSpan(button, "button-remove-site");
+    addTooltip(button, "button-remove-site-tooltip");
+    return;
+  }
+  button = addFullWidthButton(fragment, "add-site-to-container");
+  addSpan(button, "button-allow-site");
+};
+
+const setCustomSiteButtonEvent = async (panelId) => {
+  const shouldShowRemoveSiteButton = await isSiteInContainer(panelId);
+
+  if (panelId === "on-facebook") {
+    const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
+    removeSiteFromContainerLink.classList.add("disabled-button");
+    return;
+  }
+
+  if (shouldShowRemoveSiteButton) {
+    const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
+    removeSiteFromContainerLink.addEventListener(
+      "click", async () => removeSiteFromContainer()
+    );
+    return;
+  }
+
+  const addSiteToContainerLink = document.querySelector(".add-site-to-container");
+  addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
+
+};
 
 // adds bottom navigation buttons to onboarding panels
 const setNavButtons = (wrapper, button1Id, button2Id, panelId) => {
@@ -188,6 +253,11 @@ const handleOnboardingClicks = async(e, res) => {
   }
 
   if (buttonId === "btn-back") {
+    if (res === 4) {
+      // This accounts for the skipped Panel #3
+      buildOnboardingPanel(2);
+      return;
+    }
     buildOnboardingPanel(res - 1);
   }
 
@@ -195,7 +265,7 @@ const handleOnboardingClicks = async(e, res) => {
   if (el.classList.contains("btn-return")) {
     let currentPanel = await browser.storage.local.get("CURRENT_PANEL");
     currentPanel = currentPanel["CURRENT_PANEL"];
-    buildPanel(currentPanel);
+    await buildPanel(currentPanel);
   }
 };
 
@@ -287,26 +357,40 @@ const buildPanel = async(panelId) => {
     imgDiv.classList.add("img");
   }
 
+  await addLearnHowFBCWorksButton(fragment);
+
   if (panelId === "no-trackers") {
     addLearnMoreLink(contentWrapper);
+    await addCustomSiteButton(fragment, panelId);
   }
 
-  addLearnHowFBCWorksButton(fragment);
+  await addCustomSiteButton(fragment, panelId);
+
   getLocalizedStrings();
   appendFragmentAndSetHeight(page, fragment);
   page.id = panelId;
 
   const onboardingLinks = document.querySelectorAll(".open-onboarding");
   const allowedSitesLink = document.querySelector(".open-allowed-sites");
+
   allowedSitesLink.addEventListener("click", () => buildAllowedSitesPanel("sites-allowed"));
+
+  await setCustomSiteButtonEvent(panelId);
 
   onboardingLinks.forEach(link => {
     link.addEventListener("click", () => buildOnboardingPanel(1));
   });
 };
 
-
 const buildOnboardingPanel = async (panelId) => {
+
+  if (panelId === 3) {
+    // This panel has been depricated, but due to the pagination logic and localization
+    // string ID naming conventions, this number is preserved and skipped over.
+    panelId++;
+  }
+
+
   const stringId = `onboarding${panelId}`;
   const { page, fragment } = setUpPanel(stringId);
 
@@ -326,13 +410,21 @@ const buildOnboardingPanel = async (panelId) => {
     setNavButtons(fragment, "btn-back", "btn-next", stringId);
   }
 
-  if (panelId === 3) {
+  if (panelId === 4) {
+    const imgDiv = addDiv(contentWrapper, stringId);
+    imgDiv.classList.add("img");
+    setNavButtons(fragment, "btn-back", "btn-next", stringId);
+  }
+
+  if (panelId === 5) {
     const imgDiv = addDiv(contentWrapper, stringId);
     imgDiv.classList.add("img");
     setNavButtons(fragment, "btn-back", "btn-done", stringId);
   }
 
-  addParagraph(contentWrapper, `${stringId}-p2`);
+  if (panelId !== 4) {
+    addParagraph(contentWrapper, `${stringId}-p2`);
+  }
 
   getLocalizedStrings();
 
@@ -435,6 +527,21 @@ const buildAllowedSitesPanel = async(panelId) => {
   getLocalizedStrings();
 };
 
+const removeSiteFromContainer = async () => {
+  const activeHostname = await getActiveHostname();
+  await browser.runtime.sendMessage( {removeDomain: activeHostname} );
+  browser.tabs.reload();
+  window.close();
+};
+
+const addSiteToContainer = async () => {
+  const activeHostname = await getActiveHostname();
+  const fbcStorage = await browser.storage.local.get();
+  fbcStorage.domainsAddedToFacebookContainer.push(activeHostname);
+  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+  browser.tabs.reload();
+  window.close();
+};
 
 const buildRemoveSitePanel = (siteName) => {
   const panelId = "remove-site";
@@ -454,8 +561,10 @@ const buildRemoveSitePanel = (siteName) => {
   blueRemoveButton.id = "remove";
   blueRemoveButton.addEventListener("click", async() => {
     await browser.runtime.sendMessage( {removeDomain: siteName} );
+    browser.tabs.reload();
     window.close();
   });
+
   fragment.appendChild(blueRemoveButton);
 
   getLocalizedStrings();

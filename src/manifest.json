@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
     "name": "Facebook Container",
-    "version": "2.0.3",
+    "version": "2.1.0",
 
     "incognito": "not_allowed",
-    
+
     "default_locale": "en",
 
     "description": "__MSG_extensionDescription__",
