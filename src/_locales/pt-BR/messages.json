@@ -86,6 +86,26 @@
     "message": "Mesmo quando você não está no Facebook, ele pode rastrear você online. Os botões que permitem publicar no Facebook ou acessar contas em sites usando sua conta do Facebook contêm rastreadores. O Facebook Container bloqueia esses rastreadores e exibe o ícone de cerca para mostrar de onde os rastreadores foram removidos.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "Esta imagem ilustra como o ícone de cerca do Facebook Container aparece dentro de páginas, junto a um botão de curtir do Facebook.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Como acessar contas com o Facebook em outros sites",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Para usar sua conta do Facebook em outros sites, você precisa movê-los para dentro da fronteira. Clique no ícone de cerca e selecione \"Permitir site no Facebook Container\" na parte inferior.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Esta imagem ilustra como o botão de adicionar um site ao Facebook Container aparece no painel.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Isso permite que você acesse sua conta com o Facebook, mas deixa o Facebook rastrear sua atividade neste site.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Permitir",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
