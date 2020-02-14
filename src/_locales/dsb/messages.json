@@ -82,6 +82,10 @@
     "message": "Zwenka Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-p1": {
+    "message": "Samo gaž njeby wy na Facebook był, móžo wam Facebook online slědowaś. Tłocaški, kótarež wam zmóžnjaju, něco na Facebook słaś abo se z wašym kontom Facebook pla websedłow pśizjawiś, pśeslědowaki wopśimuju. Facebook Container buźo toś te pśeslědowaki blokěrowaś a płotowy symbol zwobrazniś, aby wam pokazał, źož su se wótwónoźeli pśeslědowaki.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
   "onboarding4-img": {
     "message": "Toś ten wobraz demonstrěrujo, kak se płośikowy symbol Facebook Container na boku pódla tłocaška „Spódoba se“ Facebook.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
@@ -99,7 +103,7 @@
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "To wam zmóžnja, se pla Facebook pśizjewiś, ale Facebook zmóžnja, wašej aktiwiśe na tom sedle slědowaś.",
+    "message": "To wam zmóžnja, se pla Facebook pśizjawiś, ale Facebook móžo wašej aktiwiśe na tom sedle slědowaś.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
