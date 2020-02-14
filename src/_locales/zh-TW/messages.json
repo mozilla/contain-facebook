@@ -78,21 +78,9 @@
     "message": "這些網站需要使用您的 Facebook 身分（或是需要知道你是誰）才能正常運作。這也代表 Facebook 可追蹤您在這些網站作的任何事情。",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "我要怎麼知道 Facebook Container 正在運作中？",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "網頁中讓您按讚、分享到 Facebook 或以 Facebook 帳號登入的按鈕都包含追蹤器。Facebook Container 會封鎖這些追蹤器，並顯示籬笆圖示，讓您知道我們已移除這些追蹤器。",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "此圖片展示了 Facebook Container 的籬笆圖示會如何出現在網頁中的 Facebook「讚」按鈕旁邊。",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "但若您點擊了任一按鈕，Facebook 還是能追蹤您。",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Facebook 之外",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "允許",
