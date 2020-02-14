@@ -78,21 +78,9 @@
     "message": "Deze websites moeten toegang krijgen tot uw Facebook-identiteit (of weten wie u bent) om te werken. Dit betekent ook dat Facebook alles wat u op deze websites doet kan volgen.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Hoe weet ik dat Facebook Container werkt?",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "Knoppen waarmee u dingen ‘leuk vindt’, naar Facebook deelt of waarmee u zich met uw Facebook-account op websites aanmeldt, bevatten trackers. Facebook Container blokkeert deze trackers en toont het hekpictogram om aan te geven waar trackers verwijderd zijn.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Deze afbeelding laat zien hoe het hekpictogram van Facebook Container naast een ‘Vind ik leuk’-knop van Facebook wordt getoond.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Als u toch op een van deze knoppen klikt, kan Facebook u volgen.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Buiten Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "Toestaan",
