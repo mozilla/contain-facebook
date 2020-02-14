@@ -78,21 +78,13 @@
     "message": "Toś te sedła trjebaju pśistup k wašej identiśe Facebook (abo muse wěźeś, chto sćo), aby funkcioněrowali. To teke groni, až Facebook móžo wšymu slědowaś, což na toś tych sedłach cyniśo.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Wótkul wěm, až Facebook Container funkcioněrujo?",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Zwenka Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
-  "onboarding3-p1": {
-    "message": "Tłocaški, kótarež wam zmóžnjaju, wěcy ze „Spódoba se“ markěrowaś abo z Facebook źěliś abo se pla websedłow z pomocu wašogo konta Facebook pśizjawiś, pśeslědowaki wopśimuju. Facebook Container buźo toś te pśeslědowaki blokěrowaś a płośikowy symbol zwobrazniś, aby wam pokazał, źož pśeslědowaki su se wótwónoźili.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Toś ten wobraz demonstrěrujo, kak se płośikowy symbol Facebook Container na boku pódla tłocaška „Spódoba se“ Facebook.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Jolic pak na někaki z toś tych tłocaškow kliknjośo, móžo wam Facebook slědowaś.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding5-p1": {
+    "message": "Aby swójo pśizjawjenje na drugich sedłach wužywał, musyśo je do šćitanego wobcerka pśesunuś. Klikniśo na płotowy symbol a wubjeŕśo dołojce ‚Sedło we Facebook Container‘.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Dowóliś",
