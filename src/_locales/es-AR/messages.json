@@ -78,21 +78,9 @@
     "message": "Para poder funcionar, estos sitios necesitan que acceda con su identidad de Facebook, lo que también significa que Facebook podrá rastrear todo lo que haga.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "¿Cómo sé si Facebook Container está funcionando?",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "Los botones \"Me gusta\" y \"Compartir\" de Facebook o los que lo dejan acceder iniciando sesión en su cuenta de Facebook incluyen rastreadores. El contenedor de Facebook los bloquea y le muestra un ícono de cierre para que sepa en qué sitios se eliminaron los rastreadores.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Esta imagen muestra cómo aparecerá el ícono de la cerca de Contenedor de Facebook en la página junto al botón \"Me gusta\" de Facebook.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Sin embargo, si hace clic en alguno de estos botones, Facebook podrá rastrearlo.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Fuera de Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "Permitir",
