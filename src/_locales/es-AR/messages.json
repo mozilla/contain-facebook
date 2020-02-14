@@ -94,6 +94,14 @@
     "message": "Iniciar sesión con Facebook en otros sitios",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "Para usar tu inicio de sesión de Facebook en otros sitios, tenés que moverlos dentro de los límites. Hacé clic en el icono de valla y seleccioná \"Permitir sitio en Facebook Container\" en la parte inferior.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Esta imagen muestra cómo aparece en el panes el botón para agregar un sitio al Facebook Container.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Permitir",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
