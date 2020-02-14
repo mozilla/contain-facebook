@@ -14,7 +14,7 @@
     }
   },
   "in-fbc-p1": {
-    "message": "Facebook Container 會於此網站追蹤您。若要從 Facebook Container 移除，請選擇「於 Facebook Container 允許的網站」並從清單中移除此網站。"
+    "message": "Facebook Container 會於此網站追蹤您。若要從 Facebook Container 移除，請選擇「允許於 Facebook Container 中運作的網站」並從清單中移除此網站。"
   },
   "on-facebook-subhead": {
     "message": "在 Facebook 與 Facebook Container 邊界上的網站",
@@ -94,6 +94,18 @@
     "message": "在其他網站使用 Facebook 帳號登入",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "若要使用您的 Facebook 帳號登入其他網站，就也需要將那些網站放到容器內。請點擊籬笆圖示，並選擇底部的「允許網站於 Facebook Container 中運作」。",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "此圖片表示要將網站放入 Facebook Container 的按鈕，會如何顯示於面板中。",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "這個功能讓您可以使用 Facebook 帳號登入，但也讓 Facebook 可以追蹤您在該網站的行為。",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "允許",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -155,7 +167,7 @@
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "於 Facebook Container 允許的網站",
+    "message": "允許於 Facebook Container 中運作的網站",
     "description": "This is a panel subhead."
   },
   "sites-included": {
@@ -178,7 +190,7 @@
     "description": ""
   },
   "button-allow-site": {
-    "message": "允許將網站加入 Facebook Container",
+    "message": "允許網站於 Facebook Container 中運作",
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
   "button-remove-site": {
