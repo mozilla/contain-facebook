@@ -94,6 +94,18 @@
     "message": "Mit Facebook auf anderen Websites anmelden",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "Um Ihren Facebook-Zugang auf anderen Websites zu verwenden, müssen Sie diese innerhalb der Grenze verschieben. Klicken Sie auf das Zaunsymbol und wählen Sie unten „Website in Facebook-Container zulassen“.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Diese Grafik zeigt, wie die Schaltfläche zum Hinzufügen einer Website zum Facebook-Container im Bedienfeld angezeigt wird.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Auf diese Weise können Sie sich bei Facebook anmelden, Facebook kann jedoch Ihre Aktivitäten auf dieser Website verfolgen.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Erlauben",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
