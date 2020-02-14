@@ -82,6 +82,10 @@
     "message": "Facebook 之外",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-p1": {
+    "message": "用于发布文章到 Facebook、以 Facebook 账户登录其他网站的按钮都包含跟踪器。即使您不在 Facebook，它还是能在网络中跟踪您。Facebook Container 会拦截它们并显示篱笆图标，表示已移除这些跟踪器。",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
   "onboarding4-img": {
     "message": "此图片演示了 Facebook Container 的篱笆图标会如何出现于网页中的 Facebook “赞”按钮旁边。",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
@@ -97,6 +101,10 @@
   "onboarding5-img": {
     "message": "此图片演示了如何在面板中显示将网站添加到 Facebook Container 的按钮。",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "该功能让您可以使用 Facebook 账户登录，但也让 Facebook 可以跟踪您在该网站的活动。",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "允许",
