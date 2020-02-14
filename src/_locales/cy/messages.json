@@ -86,6 +86,26 @@
     "message": "Hyd yn oed pan nad ydych chi ar Facebook, gall Facebook eich tracio ar-lein. Mae botymau sy'n caniatáu i chi bostio pethau i Facebook neu fewngofnodi i wefannau gan ddefnyddio'ch cyfrif Facebook yn cynnwys tracwyr. Bydd Facebook Container yn rhwystro'r tracwyr hyn ac yn dangos eicon y ffens i ddangos i chi ble cafodd y tracwyr eu tynnu.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "Mae'r ddelwedd hon yn dangos sut y bydd eicon ffens Facebook Container yn ymddangos ar y dudalen wrth ochr botwm Hoffi Facebook.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Mewngofnodi gyda Facebook ar Wefannau Eraill",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "I ddefnyddio'ch mewngofnod Facebook ar wefannau eraill, bydd angen i chi eu symud y tu mewn i'r ffin. Cliciwch eicon y ffens a dewis ‘Caniatáu'r Wefan o fewn Facebook Container’ ar y gwaelod.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Mae'r ddelwedd hon yn dangos sut y bydd y botwm i ychwanegu gwefan at Facebook Container yn ymddangos yn y panel.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Mae hyn yn caniatáu i chi fewngofnodi gyda Facebook, ond mae'n caniatáu i Facebook dracio eich gweithgaredd ar y wefan honno.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Caniatáu",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
