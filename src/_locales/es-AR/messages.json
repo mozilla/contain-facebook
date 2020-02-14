@@ -102,6 +102,10 @@
     "message": "Esta imagen muestra cómo aparece en el panes el botón para agregar un sitio al Facebook Container.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
+  "onboarding5-p2": {
+    "message": "Esto te permite iniciar sesión con Facebook, pero le permite a Facebook rastrear tu actividad en ese sitio.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Permitir",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
