@@ -14,7 +14,7 @@
     }
   },
   "in-fbc-p1": {
-    "message": "Facebook Container 会在此网站跟踪您。若要从 Facebook Container 移除，请选择“Facebook Container 中允许的网站”并将其从列表中移除。"
+    "message": "Facebook Container 会在此网站跟踪您。若要从 Facebook Container 移除，请选择“允许在 Facebook Container 中运行的网站”并将其从列表中移除。"
   },
   "on-facebook-subhead": {
     "message": "Facebook 与 Facebook Container 边界内的网站",
@@ -78,9 +78,21 @@
     "message": "这些网站需要使用您的 Facebook 身份（或需知道你是谁）才能正常工作。这也代表 Facebook 可以跟踪您在这些网站的任何行为。",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
+  "onboarding4-subhead": {
+    "message": "Facebook 之外",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
   "onboarding4-img": {
     "message": "此图片演示了 Facebook Container 的篱笆图标会如何出现于网页中的 Facebook “赞”按钮旁边。",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "在其他网站使用 Facebook 账户登录",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "若要使用您的 Facebook 账户登陆其他网站，就也需要将那些网站放到容器内。请点击篱笆图标，并选择底部的“允许网站在 Facebook Container 中运行”。",
+    "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
     "message": "此图片演示了如何在面板中显示将网站添加到 Facebook Container 的按钮。",
@@ -147,7 +159,7 @@
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Facebook Container 中允许的网站",
+    "message": "允许在 Facebook Container 中运行的网站",
     "description": "This is a panel subhead."
   },
   "sites-included": {
@@ -163,14 +175,14 @@
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container 会将 Facebook 拥有的相关网站置于边界内。您可以允许其他网站进入该边界，但也会使 Facebook 更易跟踪您的网络浏览。"
+    "message": "Facebook Container 会将 Facebook 拥有的相关网站置于容器内。您可以允许其他网站进入该容器，但也会使 Facebook 更易跟踪您的网络浏览。"
   },
   "remove": {
     "message": "移除",
     "description": ""
   },
   "button-allow-site": {
-    "message": "允许将网站添加到 Facebook Container",
+    "message": "允许网站在 Facebook Container 中运行",
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
   "button-remove-site": {
