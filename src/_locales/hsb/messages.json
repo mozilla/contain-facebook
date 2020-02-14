@@ -98,6 +98,14 @@
     "message": "Zo byšće swoje přizjewjenje na druhich sydłach wužiwał, dyrbiće je do škitaneho wobłuka přesunyć. Klikńće na płótny symbol a wubjerće deleka ‚Sydło we Facebook Container‘.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
+  "onboarding5-img": {
+    "message": "Tutón wobraz demonstruje, kak so tłóčatko za přidawanje sydła do Facebook Container we woknje pokazuje.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "To wam zmóžnja, so pola Facebook přizjewić, ale Facebook móže wašej aktiwiće na tym sydle slědować.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Dowolić",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
