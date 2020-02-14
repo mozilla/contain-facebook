@@ -78,21 +78,13 @@
     "message": "Mae angen i'r gwefannau hyn gael mynediad i'ch hunaniaeth Facebook (neu wybod pwy ydych chi) er mwyn gweithio. Mae hyn hefyd yn golygu y gall Facebook dracio popeth fyddwch chi'n ei wneud ar y gwefannau hyn.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Sut ydw i'n gwybod bod Facebook Container yn gweithio?",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Y Tu Allan i Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
-  "onboarding3-p1": {
-    "message": "Mae botymau sy'n gadael i chi hoffi neu rannu pethau i Facebook neu adael i chi fewngofnodi i wefannau sy'n defnyddio'ch cyfrif Facebook yn cynnwys tracwyr. Bydd Facebook Container yn atal y tracwyr hyn ac yn dangos yr eicon ffens i ddangos i chi ble cafodd tracwyr eu tynnu.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Mae'r ddelwedd hon yn dangos sut y bydd eicon ffens Facebook Container yn ymddangos ar y dudalen wrth ochr botwm Hoffi Facebook.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Fodd bynnag, os cliciwch ar unrhyw un o'r botymau hyn bydd Facebook yn gallu eich tracio.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-p1": {
+    "message": "Hyd yn oed pan nad ydych chi ar Facebook, gall Facebook eich tracio ar-lein. Mae botymau sy'n caniatáu i chi bostio pethau i Facebook neu fewngofnodi i wefannau gan ddefnyddio'ch cyfrif Facebook yn cynnwys tracwyr. Bydd Facebook Container yn rhwystro'r tracwyr hyn ac yn dangos eicon y ffens i ddangos i chi ble cafodd y tracwyr eu tynnu.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "Caniatáu",
