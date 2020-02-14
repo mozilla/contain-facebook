@@ -78,21 +78,13 @@
     "message": "这些网站需要使用您的 Facebook 身份（或需知道你是谁）才能正常工作。这也代表 Facebook 可以跟踪您在这些网站的任何行为。",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "我如何确定 Facebook Container 正在工作？",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "网页中让您点赞、分享到 Facebook 或以 Facebook 账号登录的按钮都包含跟踪器。Facebook Container 会拦截这些跟踪器，并显示篱笆图标，让您知道我们已移除这些跟踪器。",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
+  "onboarding4-img": {
     "message": "此图片演示了 Facebook Container 的篱笆图标会如何出现于网页中的 Facebook “赞”按钮旁边。",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
-  "onboarding3-p2": {
-    "message": "但若您点击了任一按钮，Facebook 还是能够跟踪您。",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding5-img": {
+    "message": "此图片演示了如何在面板中显示将网站添加到 Facebook Container 的按钮。",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "允许",
