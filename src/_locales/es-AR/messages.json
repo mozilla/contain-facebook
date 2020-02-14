@@ -82,6 +82,10 @@
     "message": "Fuera de Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-p1": {
+    "message": "Incluso cuando no estás en Facebook, Facebook puede rastrearte en línea. Los botones que te permiten publicar cosas en Facebook o iniciar sesión en sitios web utilizando tu cuenta de Facebook contienen rastreadores. Facebook Container bloquea estos rastreadores y te muestra el ícono de la cerca para que veas dónde se eliminaron los rastreadores.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
   "btn-allow": {
     "message": "Permitir",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
