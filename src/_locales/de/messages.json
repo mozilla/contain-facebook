@@ -78,21 +78,21 @@
     "message": "Diese Websites müssen auf Ihre Facebook-Identität zugreifen (oder wissen, wer Sie sind), um funktionieren zu können. Dies bedeutet auch, dass Facebook Ihre Aktivitäten auf diesen Websites verfolgen kann.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Woher weiß ich, dass Facebook Container funktioniert?",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Außerhalb von Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
-  "onboarding3-p1": {
-    "message": "Schaltflächen, mit denen Sie Dinge „liken“, zu Facebook teilen oder sich über Ihr Facebook-Konto bei Websites anmelden können, enthalten Tracker. Facebook Container blockiert diese Tracker und zeigt das Zaunsymbol an, um anzuzeigen, wo die Tracker entfernt wurden.",
-    "description": "This is the first paragraph of the third onboarding panel."
+  "onboarding4-p1": {
+    "message": "Auch wenn Sie nicht auf Facebook sind, kann Facebook Sie im Internet verfolgen. Schaltflächen, mit denen Sie Dinge auf Facebook posten oder sich mit Ihrem Facebook-Konto auf Websites anmelden können, enthalten Tracker. Facebook Container blockiert diese Tracker und zeigt das Zaunsymbol an, um anzuzeigen, wo Tracker entfernt wurden.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
   },
-  "onboarding3-img": {
+  "onboarding4-img": {
     "message": "Grafik: Diese Grafik zeigt, wie das Zaunsymbol von Facebook Container neben einer „Gefällt mir“-Schaltfläche von Facebook angezeigt wird.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
-  "onboarding3-p2": {
-    "message": "Wenn Sie jedoch auf eine dieser Schaltflächen klicken, kann Facebook Sie verfolgen.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding5-subhead": {
+    "message": "Mit Facebook auf anderen Websites anmelden",
+    "description": "This is the subhead for the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Erlauben",
