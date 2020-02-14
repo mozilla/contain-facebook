@@ -232,5 +232,9 @@
    "inPageUI-tooltip-prompt-checkbox": {
      "message": "Don’t show me this again",
      "description": ""
+   },
+   "inPageUI-tooltip-button-share-passive": {
+     "message": "If you click this button, Facebook will be able to track your visit to this site.",
+     "description": ""
    }
 }

@@ -105,9 +105,14 @@
 	display: block;
 }
 
-/* Only show first Share badge   */
+.fbc-badge-share-passive:hover {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
 
-.fbc-badge-share.fbc-badge-disabled, .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) ~ .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) {
+/* Only show first Share badge   */
+.fbc-badge-share-passive, .fbc-badge-share-passive.fbc-badge-share:not(.fbc-badge-disabled), .fbc-badge-share.fbc-badge-disabled, .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) ~ .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) {
 	display: none;
 	visibility: hidden;
 	opacity: 0;
@@ -118,9 +123,6 @@
 	visibility: visible;
 	opacity: 1;
 }
-
-
-
 
 .fbc-badge-prompt {
 	display: none;
