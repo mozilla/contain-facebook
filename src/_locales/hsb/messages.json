@@ -232,5 +232,9 @@
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Hižo so njepokazać",
     "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Jeli na tute tłóčatko kliknjeće, móže Facebook wašemu wopytej na tutym sydle slědować.",
+    "description": ""
   }
 }
