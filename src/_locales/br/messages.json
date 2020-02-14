@@ -78,21 +78,9 @@
     "message": "Al lec'hiennoù-mañ o deus ezhomm haeziñ ho pivelezh Facebook (pe gouzout piv oc'h) evit mont en-dro. Talvezout a ra ivez e c'hall Facebook heuliañ holl ar pezh a rit war al lec'hiennoù-mañ.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Penaos e ouezan ez a en-dro an endalc'her Facebook?",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "Afelloù evit kavout plijus (lakaat ul \"Like\"), rannañ traoù da Facebook pe kennaskañ dre ho kont Facebook a zo heulierien eno. Gant an endalc'her Facebook e vo stanket an heulierien-se ha diskouezet an arlun kloued evit diskouez deoc'h pelec'h ez eo bet stanket an heulierien.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Ar skeudenn-se a ziskouez penaos ez eo skrammet an arlun kloued er pajennoù e-kichen un afell Facebook Like.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Ma klikit war unan eus an afelloù-se avat e vo gouest Facebook da heuliaén ac'hanoc'h.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "E diavaez Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "Aotren",
