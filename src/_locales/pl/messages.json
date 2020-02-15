@@ -87,12 +87,20 @@
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "Obraz pokazujący, jak ikona ogrodzenia Facebook Container pojawi się na stronie obok przycisku „Lubię to” Facebooka.",
+    "message": "Obraz pokazujący, jak wygląda ikona ogrodzenia Facebook Container na stronie obok przycisku „Lubię to” Facebooka.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
     "message": "Logowanie do innych stron za pomocą Facebooka",
     "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Aby móc zalogować się na innej stronie za pomocą konta Facebooka, należy przenieść ją wewnątrz granicy. Kliknij ikonę ogrodzenia i wybierz „Zezwól witrynie na działanie w Facebook Container” na dole.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Obraz pokazujący, jak wygląda przycisk dodawania strony do granicy Facebook Container na panelu.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Zezwól",
