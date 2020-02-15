@@ -232,5 +232,9 @@
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Đừng hỏi lại tôi điều này",
     "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Nếu bạn nhấp vào nút này, Facebook sẽ có thể theo dõi lượt truy cập của bạn vào trang web này.",
+    "description": ""
   }
 }
