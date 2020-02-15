@@ -232,5 +232,9 @@
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "不要再顯示此訊息",
     "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "點擊此按鈕後，Facebook 就能夠追蹤到您曾造訪過這個網站。",
+    "description": ""
   }
 }
