@@ -86,9 +86,25 @@
     "message": "Även när du inte är på Facebook, kan Facebook spåra dig online. Knappar som låter dig skicka saker på Facebook eller logga in på webbplatser med ditt Facebook-konto innehåller spårare. Facebook Container kommer att blockera dessa spårare och visa staketikonen för att visa dig var spårare togs bort.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "Den här bilden visar hur Facebook Containers staketikon kommer att visas på sidan bredvid en Facebook Gilla-knapp.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
   "onboarding5-subhead": {
     "message": "Logga in med Facebook på andra webbplatser",
     "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Om du vill använda din Facebook-inloggning på andra webbplatser måste du flytta dem inom gränsen. Klicka på staketikonen och välj \"Tillåt webbplats i Facebook Container\" längst ner.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Den här bilden visar hur knappen för att lägga till en webbplats till Facebook Container kommer att visas i panelen.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Detta låter dig logga in med Facebook, men gör att Facebook kan spåra din aktivitet på den webbplatsen.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Tillåt",
@@ -215,6 +231,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Visa inte detta igen",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Om du klickar på den här knappen kan Facebook spåra ditt besök på den här webbplatsen.",
     "description": ""
   }
 }
