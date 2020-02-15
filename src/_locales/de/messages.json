@@ -232,5 +232,9 @@
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Nicht mehr anzeigen",
     "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Wenn Sie auf diese Schaltfläche klicken, kann Facebook Ihren Besuch auf dieser Website verfolgen.",
+    "description": ""
   }
 }
