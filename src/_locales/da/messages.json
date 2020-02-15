@@ -78,21 +78,9 @@
     "message": "Disse websteder skal have adgang til din Facebook-identitet (eller vide hvem du er) for at fungere. Det betyder også, at Facebook kan spore, hvad du foretager dig på disse websteder.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Hvordan kan jeg se, at Facebook Container virker?",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "Knapper, der giver dig mulighed for at \"synes om\" noget, dele ting på Facebook eller lade dig logge ind på webstedet ved hjælp af din Facebook-konto, indeholder sporings-mekanismer. Facebook Container blokerer disse mekanismer og viser stakit-ikonet, så du kan se, at sporings-mekanismerne blev blokeret.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Dette billede viser, hvordan stakit-ikonet fra Facebook Container ser ud på et websted ved siden af en \"Synes om\"-knap fra Facebook.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Hvis du klikker på en af Facebook-knapperne, vil Facebook dog være i stand til at spore dig.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Uden for Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "Tillad",
