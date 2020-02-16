@@ -78,21 +78,9 @@
     "message": "Estes sites precisam de aceder à sua identidade do Facebook (ou saber quem é) de maneira a poderem trabalhar. Isto também significa que o Facebook pode monitorizar tudo o que faz nestes sites.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Como sei que o Facebook Container está a funcionar?",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "Os botões que lhe permitem que goste ou partilhe coisas no Facebook ou que inicie sessão em websites utilizando a sua conta do Facebook contêm trackers. O Facebook Container irá bloquear estes trackers e mostrar o ícone de cerca para lhe mostrar onde os trackers foram removidos.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Esta imagem demonstra como o ícone de cerca do Facebook Containers irá aparecer na página ao lado de um botão de Gosto do Facebook.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "No entanto, se clicar em qualquer um destes botões o Facebook irá poder monitorizar-lhe.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Fora do Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "Permitir",
