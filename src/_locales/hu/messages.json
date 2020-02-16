@@ -78,21 +78,9 @@
     "message": "Ezen webhelyek működéséhez hozzá kell férniük a Facebook-azonosítójához (vagy tudniuk kell, hogy ki Ön). Ez azt is jelenti, hogy a Facebook nyomon tudja követni mindazt, amit ezeken a webhelyeken tesz.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Hogyan tudom, hogy működik-e a Facebook Container?",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "A Tetszik és Megosztás gombok, melyekkel a Facebookon lehet tartalmakat megosztani, vagy amelyekkel a webhelyekre lehet Facebook-azonosítóval belépni, nyomkövetőket tartalmaznak. A Facebook Container blokkolja ezeket a nyomkövetőket, és egy kerítés ikont jelenít meg, jelezve, hogy a nyomkövetők el lettek távolítva.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Ez a kép azt mutatja, hogy a Facebook Container kerítés ikonja megjelenik az oldalon belül a Facebook Tetszik gombja mellett.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Ha azonban bármelyik gombra kattint, a Facebook képes lesz nyomon követni Önt.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "A Facebookon kívül",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "Engedélyezés",
