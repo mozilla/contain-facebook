@@ -102,6 +102,10 @@
     "message": "Ez a kép bemutatja, hogyan jelenik meg a panelen egy webhely Facebook konténerhez hozzáadásának gombja.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
+  "onboarding5-p2": {
+    "message": "Ezzel lehetővé válik a Facebookkal történő bejelentkezés, de így a Facebook képes követni a tevékenységét az oldalon.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Engedélyezés",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -227,6 +231,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Ne mutassa ezt újra",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Ha rákattint erre a gombra, akkor a Facebook nyomon tudja követni, hogy mikor keresi fel az oldalt.",
     "description": ""
   }
 }
