@@ -82,6 +82,30 @@
     "message": "Fora do Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-p1": {
+    "message": "Mesmo quando não está no Facebook, o Facebook pode monitorizar o que faz na Internet. Os botões que permitem publicar coisas no Facebook ou iniciar sessão em sites utilizando a sua conta do Facebook contêm rastreadores. O contentor do Facebook irá bloquear estes rastreadores e irá apresentat o ícone da cerca para mostrar onde os rastreadores foram removidos.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Esta imagem mostra como o ícone de cerca do Facebook Containers irá aparecer na página ao lado de um botão de Gosto do Facebook.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Iniciar sessão com o Facebook em outros sites",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Para utilizar as suas credenciais do Facebook em outros sites, é necessário mover os mesmos para dentro do contentor. Clique no ícone da cerca e selecione ‘Permitir site no contentor do Facebook’ na parte inferior.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Esta imagem mostra como o botão para adicionar um site ao contentor do Facebook irá aparecer no painel.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Isto permite que inicie sessão com o Facebook, mas também permite que o Facebook rastreie sua atividade nesse site.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Permitir",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -207,6 +231,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Não me mostrar isto novamente",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Se clicar neste botão, o Facebook poderá monitorizar a sua visita neste site.",
     "description": ""
   }
 }
