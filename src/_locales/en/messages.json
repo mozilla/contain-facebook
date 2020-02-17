@@ -213,6 +213,14 @@
      "message": " If you want to use Log in with Facebook again, you will need to add it back to the Facebook Container.",
      "description": ""
    },
+   "add-site-subhead": {
+      "message": "Allow Facebook Tracking on this Site?",
+      "description": ""
+   },
+   "add-site-p1": {
+     "message": "This lets you log in with Facebook, but allows Facebook to follow what you do on this site.",
+     "description": ""
+   },
    "inPageUI-tooltip-button-share": {
      "message": "Facebook Container has disabled this button and blocked Facebook from tracking your visit to this page.",
      "description": ""
