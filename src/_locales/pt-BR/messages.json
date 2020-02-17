@@ -213,6 +213,14 @@
     "message": " Se quiser usar 'Entrar com o Facebook' novamente, precisará adicionar de volta ao Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Permitir ao Facebook rastrear neste site?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Isso permite que você acesse sua conta com o Facebook, mas deixa o Facebook seguir o que você faz neste site.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "O Facebook Container desativou este botão e bloqueou o Facebook, impedindo que rastreasse sua visita a esta página.",
     "description": ""
