@@ -178,8 +178,15 @@ const setCustomSiteButtonEvent = async (panelId) => {
   }
 
   const addSiteToContainerLink = document.querySelector(".add-site-to-container");
-  addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
 
+  if (panelId === "about") {
+    // If on internal About: page, set button to disabled.
+    addSiteToContainerLink.classList.add("disabled-button");
+    return;
+  }
+
+  // Active site is eligable to be added to the container
+  addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
 };
 
 // adds bottom navigation buttons to onboarding panels
