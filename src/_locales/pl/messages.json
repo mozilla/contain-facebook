@@ -213,6 +213,14 @@
     "message": " Jeśli chcesz znowu korzystać z funkcji logowania za pomocą konta Facebooka, musisz dodać ją z powrotem do Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Pozwolić Facebookowi na śledzenie na tej witrynie?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Umożliwia to zalogowanie się za pomocą Facebooka, ale pozwala też Facebookowi śledzić Twoje działania na tej witrynie.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container wyłączył ten przycisk i zablokował Facebookowi możliwość śledzenia Twojej wizyty na tej stronie.",
     "description": ""
