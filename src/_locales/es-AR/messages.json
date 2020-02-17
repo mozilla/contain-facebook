@@ -213,6 +213,14 @@
     "message": " Para volver a iniciar sesión con Facebook de nuevo, hará falta agregarlo nuevamente a Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "¿Querés el rastreo de Facebook en este sitio?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Esto te permite iniciar sesión con Facebook, pero le permite a Facebook rastrear tu actividad en ese sitio.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container ha deshabilitado este botón y bloqueado el rastreo de visitas a esta página por parte de Facebook.",
     "description": ""
