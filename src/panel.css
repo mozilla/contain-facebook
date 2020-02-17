@@ -221,7 +221,7 @@ a:hover {
   transition: var(--transition);
 }
 
-.remove-btn {
+.remove-btn, .allow-btn {
   background-color: var(--blue60);
   border: 1px solid var(--blue60);
   border-top: 1px solid var(--blue70);
@@ -232,11 +232,11 @@ a:hover {
   font-size: 13px;
 }
 
-.remove-btn:hover {
+.remove-btn:hover, .allow-btn:hover {
   background-color: var(--blue70);
 }
 
-.remove-site {
+.remove-site, .add-site {
   background-color: transparent;
   border: none;
   position: absolute;
@@ -249,12 +249,12 @@ a:hover {
   cursor: pointer;
 }
 
-.remove-site-panel .allowed-site-wrapper {
+.remove-site-panel .allowed-site-wrapper, .add-site-panel .allowed-site-wrapper {
   padding: 0;
   margin-bottom: 1rem;
 }
 
-.remove-site-panel .allowed-site-wrapper:hover {
+.remove-site-panel .allowed-site-wrapper:hover, .add-site-panel .allowed-site-wrapper:hover {
   background-color: transparent;
 }
 
@@ -311,6 +311,8 @@ a:hover {
   background-color: var(--blue70);
 }
 
+.allow-btn,
+.allow-btn:hover,
 .remove-btn,
 .remove-btn:hover,
 .bottom-btn,
