@@ -46,6 +46,7 @@ const setClassAndAppend = (wrapper, el) => {
 
 // add "uiMessage" class to element and appends.
 const addSubhead = (wrapper, panelId) => {
+  if (panelId === "about") { panelId = "no-trackers"; }
   const elemId = `${panelId}-subhead`;
   const el = document.createElement("h2");
   el["id"] = elemId;
@@ -352,7 +353,13 @@ const buildPanel = async(panelId) => {
     contentWrapper.appendChild(el);
   }
 
-  addParagraph(contentWrapper, `${panelId}-p1`);
+  // Because strings are named based on CURRENT_PANEL/panelID, this adds the
+  // same paragraph No Trackers Detected pages get for About: pages.
+  if (panelId === "about") {
+    addParagraph(contentWrapper, "no-trackers-p1");
+  } else {
+    addParagraph(contentWrapper, `${panelId}-p1`);
+  }
 
   if (panelId === "on-facebook") {
     addParagraph(contentWrapper, `${panelId}-p2`);
