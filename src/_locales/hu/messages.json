@@ -213,6 +213,14 @@
     "message": " Ha újra szeretné használni a facebookos bejelentkezést, akkor újra hozzá kell adnia a Facebook Containerhez.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Engedélyezi, hogy a Facebook kövesse ezen a webhelyen?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Ezzel lehetővé válik a Facebookkal történő bejelentkezés, de így a Facebook képes követni, hogy mit tesz az oldalon.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "A Facebook Container letiltotta ezt a gombot, és blokkolta a Facebookot a látogatásának nyomon követésében.",
     "description": ""
