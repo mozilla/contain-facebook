@@ -213,6 +213,10 @@
     "message": " Om du vill använda Logga in med Facebook igen måste du lägga till den tillbaka till Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Tillåt Facebook-spårning på den här webbplatsen?",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container har inaktiverat den här knappen och blockerat Facebook från att spåra ditt besök på den här sidan.",
     "description": ""
