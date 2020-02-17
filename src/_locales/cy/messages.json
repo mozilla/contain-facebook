@@ -232,5 +232,9 @@
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Peidiwch â dangos hwn i mi eto",
     "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Os cliciwch y botwm hwn, bydd Facebook yn gallu tracio eich ymweliad â'r wefan hon.",
+    "description": ""
   }
 }
