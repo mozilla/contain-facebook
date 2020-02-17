@@ -213,6 +213,14 @@
     "message": " Se quiser utilizar Iniciar sessão com o Facebook novamente, irá precisar de adicioná-lo de volta ao Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Permitir a monitorização do Facebook neste site?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Isto permite que inicie sessão com o Facebook, mas também permite que o Facebook monitorize o que faz neste site.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "O Facebook Container desativou este botão e bloqueou o Facebook de monitorizar a sua visita a esta página.",
     "description": ""
