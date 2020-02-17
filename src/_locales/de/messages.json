@@ -213,6 +213,14 @@
     "message": "Wenn Sie sich erneut bei Facebook anmelden möchten, müssen Sie sie wieder in den Facebook-Container aufnehmen.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Facebook-Tracking auf dieser Website zulassen?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Auf diese Weise können Sie sich bei Facebook anmelden, Facebook kann jedoch verfolgen, was Sie auf dieser Website tun.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container hat diese Schaltfläche deaktiviert und verhindert, dass Facebook Ihren Besuch auf dieser Seite verfolgt.",
     "description": ""
