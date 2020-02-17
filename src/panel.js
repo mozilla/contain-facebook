@@ -46,6 +46,7 @@ const setClassAndAppend = (wrapper, el) => {
 
 // add "uiMessage" class to element and appends.
 const addSubhead = (wrapper, panelId) => {
+  if (panelId === "about") { panelId = "no-trackers"; }
   const elemId = `${panelId}-subhead`;
   const el = document.createElement("h2");
   el["id"] = elemId;
@@ -178,8 +179,15 @@ const setCustomSiteButtonEvent = async (panelId) => {
   }
 
   const addSiteToContainerLink = document.querySelector(".add-site-to-container");
-  addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
 
+  if (panelId === "about") {
+    // If on internal About: page, set button to disabled.
+    addSiteToContainerLink.classList.add("disabled-button");
+    return;
+  }
+
+  // Active site is eligable to be added to the container
+  addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
 };
 
 // adds bottom navigation buttons to onboarding panels
@@ -345,7 +353,13 @@ const buildPanel = async(panelId) => {
     contentWrapper.appendChild(el);
   }
 
-  addParagraph(contentWrapper, `${panelId}-p1`);
+  // Because strings are named based on CURRENT_PANEL/panelID, this adds the
+  // same paragraph No Trackers Detected pages get for About: pages.
+  if (panelId === "about") {
+    addParagraph(contentWrapper, "no-trackers-p1");
+  } else {
+    addParagraph(contentWrapper, `${panelId}-p1`);
+  }
 
   if (panelId === "on-facebook") {
     addParagraph(contentWrapper, `${panelId}-p2`);
