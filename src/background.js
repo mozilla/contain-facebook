@@ -441,7 +441,7 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
   } else if (hasBeenAddedToFacebookContainer) {
     browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
-  } else if (aboutPageURLCheck > -1) {
+  } else if (aboutPageURLCheck) {
     // Sets CURRENT_PANEL if current URL is an internal about: page
     browser.storage.local.set({"CURRENT_PANEL": "about"});
   } else {
