@@ -232,5 +232,9 @@
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Não mostrar novamente",
     "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Se você clicar neste botão, o Facebook poderá rastrear sua visita a este site.",
+    "description": ""
   }
 }
