@@ -432,7 +432,7 @@ async function updateBrowserActionIcon (tab) {
 
   const url = tab.url;
   const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
-  const aboutPageURLCheck = url.indexOf("about:");
+  const aboutPageURLCheck = url.startsWith("about:");
 
   if (isFacebookURL(url)) {
     // TODO: change panel logic from browser.storage to browser.runtime.onMessage
