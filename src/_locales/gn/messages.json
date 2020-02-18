@@ -201,6 +201,14 @@
     "message": "Emoñepyrũjey hag̃ua tembiapo Facebook ndive ipyahúva, eikotevẽta embojuajujey Facebook Container rehe.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "¿Eipota Facebook rapykuehoha ko tendápe?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Kóva omoneĩta emoñepyrũvo tembiapo Facebook ndive, avei omoneĩta Facebook-pe ohapykuehóvo ne rembiapo ko tendápe.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container oipe’a ko votõ ha ojoko og̃uahẽva jehapykueho ko kuatiarogue pegua Facebook guive.",
     "description": ""
@@ -219,6 +227,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Anive ehechauka",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Eikutúvo ko votõ, Facebook ikatu ohapykueho nde jeike ko tendápe.",
     "description": ""
   }
 }
