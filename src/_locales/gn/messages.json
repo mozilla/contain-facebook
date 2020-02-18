@@ -82,6 +82,10 @@
     "message": "Okápe Facebook-gui",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "Ko ta’ãnga ohechauka mba’éichapa ehecháta Facebook Containers ra’ãnga’i kuatiaroguépe votõ Ahayhu Facebook pegua ykére.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
   "onboarding5-subhead": {
     "message": "Eñepyrũ tembiapo Facebook ndive ambue tendápe",
     "description": "This is the subhead for the fifth onboarding panel."
