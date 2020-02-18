@@ -213,6 +213,14 @@
     "message": "若您想要再次使用「使用 Facebook 帳號登入」功能，需要將其再加回 Facebook Container。",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "要允許 Facebook 在此網站進行追蹤嗎？",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "這個功能讓您可以使用 Facebook 帳號登入，但也會讓 Facebook 知道您在網站上的行為。",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container 已停用此按鈕，並封鎖 Facebook，不讓其追蹤您造訪此頁面的紀錄。",
     "description": ""
