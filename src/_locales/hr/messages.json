@@ -78,21 +78,9 @@
     "message": "Ove stranice trebaju pristup tvom identitetu na Facebooku (ili znati tko si) kako bi radile. To također znači da Facebook može pratiti sve što radiš na ovim stranicama.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Kako znam da Facebook Container radi?",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "Gumbi koji omogućuju lajkanje ili dijelenje na Facebooku ili koji omogućuju prijavu na web stranicama pomoću tvog Facebook računa, sadrže programe za praćenje. Facebook Container će blokirati te programe za praćenje i prikazati ikonu ograde, kako bi se ukazalo na uklonjene programe za praćenje.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Ova slika prikazuje kako će se ikona ograde Facebook Containera pojaviti na stranici pored Facebookovog gumba za Like.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Međutim, ako klikneš na bilo koji od ovih gumba, Facebook će te moći pratiti.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Izvan Facebooka",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "Dozvoli",
