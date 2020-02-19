@@ -98,6 +98,14 @@
     "message": "Щоб використовувати вхід через Facebook на інших сайтах, вам необхідно перемістити їх всередину кордону. Натисніть на піктограму Facebook Container та оберіть \"Дозволити сайт в Facebook Container\" в нижній частині.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
+  "onboarding5-img": {
+    "message": "Це зображення демонструє, який вигляд матиме кнопка додавання сайту до Facebook Container в панелі.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Це дозволяє вам входити на цей сайт через обліковий запис Facebook, але також дозволяє Facebook стежити за вашими діями на цьому сайті.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Дозволити",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -205,6 +213,14 @@
     "message": " Якщо ви хочете знову ввійти у Facebook, вам доведеться додати його у Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Дозволити Facebook стеження на цьому сайті?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Це дозволяє вам входити на цей сайт через обліковий запис Facebook, але також дозволяє Facebook стежити за вашими діями на цьому сайті.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container вимкнув цю кнопку і заблокував для Facebook відстеження вашого відвідування цієї сторінки.",
     "description": ""
@@ -223,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Не показувати це знову",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Якщо ви натиснете цю кнопку, Facebook зможе стежити за вашими відвідуваннями цього сайту.",
     "description": ""
   }
 }
