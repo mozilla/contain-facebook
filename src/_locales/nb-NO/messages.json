@@ -90,6 +90,14 @@
     "message": "Logg inn med Facebook på andre nettsteder",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-img": {
+    "message": "Dette bildet viser hvordan knappen for å legge til et nettsted til Facebook Container vil bli vist i panelet.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Dette lar deg logge på med Facebook, men gjør at Facebook kan spore det du gjør på dette nettstedet.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Tillat",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -197,6 +205,14 @@
     "message": "Hvis du vil bruke Logg inn med Facebook igjen må du legge den tilbake til Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Tillate Facebook-sporing på dette nettstedet?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Dette lar deg logge på med Facebook, men gjør at Facebook kan følge med på det du gjør på dette nettstedet.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container har deaktivert denne knappen og blokkert Facebook fra å spore deg når du besøker denne nettsiden.",
     "description": ""
@@ -215,6 +231,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Ikke vis meg dette igjen",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Hvis du klikker på denne knappen, vil Facebook kunne spore besøket ditt på dette nettstedet.",
     "description": ""
   }
 }
