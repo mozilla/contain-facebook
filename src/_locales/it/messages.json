@@ -78,21 +78,29 @@
     "message": "Per funzionare, questi siti hanno bisogno di accedere alla tua identità Facebook (o identificarti in altro modo). Questo significa che Facebook sarà in grado di tracciare ogni tua attività su questi siti.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Come capisco se Facebook Container è attivo?",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-p1": {
+    "message": "Facebook può seguirti online anche quando non sei su Facebook. I pulsanti che permettono di condividere storie sui social network, oppure di accedere ai siti web utilizzando il tuo account Facebook, contengono elementi traccianti. Facebook Container bloccherà questi elementi traccianti e visualizzerà l'icona del recinto per indicare dove sono stati rimossi.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
   },
-  "onboarding3-p1": {
-    "message": "I tasti che ti permettono di mettere “Mi piace”, condividere contenuti su Facebook o accedere ai siti usando il tuo profilo Facebook, contengono elementi traccianti. Facebook Container blocca questi elementi traccianti e segnala i punti in cui sono stati rimossi con l’icona del recinto.",
-    "description": "This is the first paragraph of the third onboarding panel."
+  "onboarding4-img": {
+    "message": "L’immagine mostra come l’icona del recinto di Facebook Container viene visualizzata nella pagina accanto a un pulsante “Mi piace” di Facebook.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
-  "onboarding3-img": {
-    "message": "Questa immagine mostra in che modo verrà visualizzata l’icona del recinto di Facebook Container accanto a un pulsante “Mi piace” di Facebook.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
+  "onboarding5-subhead": {
+    "message": "Accedere ad altri siti con Facebook",
+    "description": "This is the subhead for the fifth onboarding panel."
   },
-  "onboarding3-p2": {
-    "message": "Tuttavia, se utilizzi uno qualsiasi di questi pulsanti, Facebook sarà in grado di tracciarti.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding5-p1": {
+    "message": "Per accedere ad altri siti con il tuo account Facebook dovrai spostarli all’interno del recinto. Fai clic sull’icona del recinto e seleziona “Consenti sito in Facebook Container”.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "L’immagine mostra come viene visualizzato il pulsante per aggiungere un sito a Facebook Container.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "In questo modo potrai accedere con il tuo account Facebook, ma Facebook potrà tracciare la tua attività su quel sito.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Consenti",
@@ -201,6 +209,10 @@
     "message": "Per utilizzare “Accedi con Facebook” in futuro sarà necessario aggiungere nuovamente il sito a Facebook Container.",
     "description": ""
   },
+  "add-site-p1": {
+    "message": "In questo modo potrai accedere con il tuo account Facebook, ma Facebook potrà tracciare la tua attività su quel sito.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container ha disattivato questo pulsante per impedire a Facebook di tracciare la tua visita a questa pagina.",
     "description": ""
@@ -219,6 +231,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Non visualizzare più questo messaggio",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Facendo clic su questo pulsante consentirai a Facebook di tracciare la tua attività su questo sito.",
     "description": ""
   }
 }
