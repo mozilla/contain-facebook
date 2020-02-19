@@ -205,6 +205,14 @@
     "message": "Si deseas usar la opción de conectarse usando Facebook nuevamente, tendrás que reañadirla a Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "¿Permitir el rastreo de Facebook en este sitio?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Esto te permite conectarte con Facebook, pero le permite también a Facebook seguir lo que haces en este sitio.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container ha desactivado este botón y bloqueado a Facebook de rastrear tu visita a esta página.",
     "description": ""
