@@ -78,6 +78,10 @@
     "message": "Per funzionare, questi siti hanno bisogno di accedere alla tua identità Facebook (o identificarti in altro modo). Questo significa che Facebook sarà in grado di tracciare ogni tua attività su questi siti.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
+  "onboarding4-subhead": {
+    "message": "Fuori da Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
   "onboarding4-p1": {
     "message": "Facebook può seguirti online anche quando non sei su Facebook. I pulsanti che permettono di condividere storie sui social network, oppure di accedere ai siti web utilizzando il tuo account Facebook, contengono elementi traccianti. Facebook Container bloccherà questi elementi traccianti e visualizzerà l'icona del recinto per indicare dove sono stati rimossi.",
     "description": "This is the first paragraph of the fourth onboarding panel."
@@ -207,6 +211,10 @@
   },
   "remove-site-p2": {
     "message": "Per utilizzare “Accedi con Facebook” in futuro sarà necessario aggiungere nuovamente il sito a Facebook Container.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Consentire a Facebook di tracciare la tua attività su questo sito?",
     "description": ""
   },
   "add-site-p1": {
