@@ -135,11 +135,11 @@
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Не виявлено трекерів Facebook",
+    "message": "Стеження Facebook не виявлено",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container не виявив жодних трекерів Facebook на цій сторінці. Однак сторінка може містити інші типи трекерів.",
+    "message": "Facebook Container не виявив стеження Facebook на цій сторінці. Однак, сторінка може містити інші елементи стеження.",
     "description": ""
   },
   "learn-more": {
@@ -155,11 +155,11 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "Кнопки Facebook, які відображаються на сайтах магазинів, новин та інших, містять трекери, які повідомляють Facebook про те, де ви знаходитеся в Інтернеті. Навіть якщо ви ніколи не користуєтеся цими кнопками, щоби вподобати або поділитися даними, трекери все ще можуть збирати дані про ваш перегляд. Facebook Container блокує ці трекери.",
+    "message": "Кнопки Facebook, які відображаються на сайтах магазинів, новин та інших, містять засоби стеження, які повідомляють Facebook про те, де ви знаходитеся в Інтернеті. Навіть якщо ви ніколи не користуєтеся цими кнопками для вподобання чи поширення, елементи стеження все одно можуть збирати дані про ваш перегляд. Facebook Container блокує це стеження.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container блокує ці трекери. Однак, якщо натиснути на будь-яку з цих кнопок, Facebook зможе відслідкувати вас.",
+    "message": "Facebook Container блокує ці елементи стеження. Однак, якщо натиснути на будь-яку з цих кнопок, Facebook зможе виявити вас.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
@@ -226,7 +226,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container заблокував трекери Facebook. Він знову зможе відстежувати вас, якщо ви використаєте на цьому сайті функцію Вхід з Facebook.",
+    "message": "Facebook Container заблокував стеження Facebook. Якщо ви скористаєтеся входом через Facebook на цьому сайті, Facebook зможе виявити вас.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
