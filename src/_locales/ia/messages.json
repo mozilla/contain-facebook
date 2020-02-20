@@ -78,21 +78,9 @@
     "message": "Iste sitos debe acceder a tu identitate de Facebook (o saper qui tu es) pro poter functionar. Isto significa etiam que Facebook pote traciar tote lo que tu face sur iste sitos.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Como sape io si Facebook Container functiona?",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "Le buttones que te permitte de amar o compartir cosas in Facebook, o que te lassa acceder a sitos web per tu conto Facebook, contine traciatores. Facebook Container bloca iste traciatores e monstra le icone de barriera pro monstrar te ubi le traciatores ha essite eliminate.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Iste imagine demonstra como le icone de barriera de Facebook Container appare in le pagina al latere de un button “Me place” de Facebook.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Nonobstante, si tu clicca sur alcun de iste buttones, Facebook potera traciar te.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Foras de Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "Permitter",
