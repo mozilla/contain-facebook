@@ -213,6 +213,14 @@
     "message": " თუ გსურთ, გამოიყენოთ Facebook კვლავ, დაგჭირდებათ მისი უკან დამატება Facebook Container-ში.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "გსურთ, Facebook თვალს გადევნებდეთ ამ საიტზე?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "შედეგად, საშუალება მოგეცემათ Facebook-ით შეხვიდეთ, თუმცა ეს Facebook-საც მისცემს შესაძლებლობას იხილოს, ამ საიტზე თქვენი მოქმედებები.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container-მა გამორთო ეს ღილაკი და შეუზღუდა Facebook-ს ამ გვერდზე თქვენი მოქმედებებისთვის თვალის მიდევნების საშუალება.",
     "description": ""
@@ -231,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "მომავალში ჩვენების გარეშე",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "თუ ამ ღილაკს დააწვებით, Facebook შეძლებს თვალი გადევნოთ ამ საიტზე.",
     "description": ""
   }
 }
