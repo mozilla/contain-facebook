@@ -272,9 +272,12 @@ function getRootDomain(hostname) {
   if (parts.length < 3) {
     return hostname;
   }
-  let subdomain = parts.shift();
-  let upperleveldomain = parts.join(".");
-  return upperleveldomain;
+  while (parts.length > 2) {
+    // Trim around down to final domain
+    parts.shift();
+  }
+  let rootDomain = parts.join(".");
+  return rootDomain;
 }
 
 function isFacebookURL (url) {

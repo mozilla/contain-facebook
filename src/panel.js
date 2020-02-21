@@ -119,20 +119,16 @@ const addSpan = (wrapper, stringId) => {
 
 const getRootDomain = (hostname) => {
   let parts = hostname.split(".");
+  // If there's no subdomain, return hostname as is.
   if (parts.length < 3) {
     return hostname;
   }
-  let subdomain = parts.shift();
-  let upperleveldomain = parts.join(".");
-  return upperleveldomain;
-};
-
-const getActiveHostname = async() => {
-  const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
-  const currentActiveTab = tabsQueryResult[0];
-  const currentActiveURL = new URL(currentActiveTab.url);
-  const thisHostname = currentActiveURL.hostname;
-  return thisHostname;
+  while (parts.length > 2) {
+    // Trim around down to final domain
+    parts.shift();
+  }
+  let rootDomain = parts.join(".");
+  return rootDomain;
 };
 
 const getActiveRootDomain = async() => {
@@ -144,7 +140,6 @@ const getActiveRootDomain = async() => {
 };
 
 const isSiteInContainer = async(panelId) => {
-  console.log("isSiteInContainer");
   if (panelId === "on-facebook") {
     // Site is on default FBC domain. Show the "remove site" button, in a disabled state.
     return true;
@@ -152,8 +147,6 @@ const isSiteInContainer = async(panelId) => {
 
   const addedSitesList = await browser.runtime.sendMessage("what-sites-are-added");
   const activeTabHostname = await getActiveRootDomain();
-  console.log("addedSitesList", addedSitesList);
-  console.log("activeTabHostname: ", activeTabHostname);
   if (addedSitesList.includes(activeTabHostname)) {
     return true;
   }
@@ -562,7 +555,6 @@ const buildAllowedSitesPanel = async(panelId) => {
 
 const removeSiteFromContainer = async () => {
   const activeRootDomain = await getActiveRootDomain();
-  // const activeHostname = await getActiveHostname();
   await browser.runtime.sendMessage( {removeDomain: activeRootDomain} );
   browser.tabs.reload();
   window.close();
@@ -570,7 +562,6 @@ const removeSiteFromContainer = async () => {
 
 const addSiteToContainer = async () => {
   const activeRootDomain = await getActiveRootDomain();
-  // const activeHostname = await getActiveHostname();
   const fbcStorage = await browser.storage.local.get();
   fbcStorage.domainsAddedToFacebookContainer.push(activeRootDomain);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
