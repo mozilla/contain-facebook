@@ -117,6 +117,16 @@ const addSpan = (wrapper, stringId) => {
   setClassAndAppend(wrapper, span);
 };
 
+const getRootDomain = (hostname) => {
+  let parts = hostname.split(".");
+  if (parts.length < 3) {
+    return hostname;
+  }
+  let subdomain = parts.shift();
+  let upperleveldomain = parts.join(".");
+  return upperleveldomain;
+};
+
 const getActiveHostname = async() => {
   const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
   const currentActiveTab = tabsQueryResult[0];
@@ -125,16 +135,25 @@ const getActiveHostname = async() => {
   return thisHostname;
 };
 
-const isSiteInContainer = async(panelId) => {
+const getActiveRootDomain = async() => {
+  const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
+  const currentActiveTab = tabsQueryResult[0];
+  const currentActiveURL = new URL(currentActiveTab.url);
+  const thisHostname = getRootDomain(currentActiveURL.hostname);
+  return thisHostname;
+};
 
+const isSiteInContainer = async(panelId) => {
+  console.log("isSiteInContainer");
   if (panelId === "on-facebook") {
     // Site is on default FBC domain. Show the "remove site" button, in a disabled state.
     return true;
   }
 
   const addedSitesList = await browser.runtime.sendMessage("what-sites-are-added");
-  const activeTabHostname = await getActiveHostname();
-
+  const activeTabHostname = await getActiveRootDomain();
+  console.log("addedSitesList", addedSitesList);
+  console.log("activeTabHostname: ", activeTabHostname);
   if (addedSitesList.includes(activeTabHostname)) {
     return true;
   }
@@ -542,16 +561,18 @@ const buildAllowedSitesPanel = async(panelId) => {
 };
 
 const removeSiteFromContainer = async () => {
-  const activeHostname = await getActiveHostname();
-  await browser.runtime.sendMessage( {removeDomain: activeHostname} );
+  const activeRootDomain = await getActiveRootDomain();
+  // const activeHostname = await getActiveHostname();
+  await browser.runtime.sendMessage( {removeDomain: activeRootDomain} );
   browser.tabs.reload();
   window.close();
 };
 
 const addSiteToContainer = async () => {
-  const activeHostname = await getActiveHostname();
+  const activeRootDomain = await getActiveRootDomain();
+  // const activeHostname = await getActiveHostname();
   const fbcStorage = await browser.storage.local.get();
-  fbcStorage.domainsAddedToFacebookContainer.push(activeHostname);
+  fbcStorage.domainsAddedToFacebookContainer.push(activeRootDomain);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
   browser.tabs.reload();
   window.close();

@@ -266,11 +266,22 @@ async function maybeReopenTab (url, tab, request) {
   return {cancel: true};
 }
 
+function getRootDomain(hostname) {
+  let parts = hostname.split(".");
+  // If there's no subdomain, return hostname as is.
+  if (parts.length < 3) {
+    return hostname;
+  }
+  let subdomain = parts.shift();
+  let upperleveldomain = parts.join(".");
+  return upperleveldomain;
+}
+
 function isFacebookURL (url) {
   const parsedUrl = new URL(url);
-  console.log(parsedUrl);
-  for (let facebookHostRE of facebookHostREs) {    
-    if (facebookHostRE.test(parsedUrl.host)) {
+  let rootDomain = getRootDomain(parsedUrl.host);
+  for (let facebookHostRE of facebookHostREs) {
+    if (facebookHostRE.test(rootDomain)) {
       return true;
     }
   }
@@ -291,7 +302,8 @@ function isFacebookURL (url) {
 async function addDomainToFacebookContainer (url) {
   const parsedUrl = new URL(url);
   const fbcStorage = await browser.storage.local.get();
-  fbcStorage.domainsAddedToFacebookContainer.push(parsedUrl.host);
+  const rootDomain = getRootDomain(parsedUrl.host);
+  fbcStorage.domainsAddedToFacebookContainer.push(rootDomain);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
   // await supportSiteSubdomainCheck(parsedUrl.host);
 }
@@ -307,7 +319,8 @@ async function removeDomainFromFacebookContainer (domain) {
 async function isAddedToFacebookContainer (url) {
   const parsedUrl = new URL(url);
   const fbcStorage = await browser.storage.local.get();
-  if (fbcStorage.domainsAddedToFacebookContainer.includes(parsedUrl.host)) {
+  const rootDomain = getRootDomain(parsedUrl.host);
+  if (fbcStorage.domainsAddedToFacebookContainer.includes(rootDomain)) {
     return true;
   }
   return false;
