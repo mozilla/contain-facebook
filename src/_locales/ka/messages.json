@@ -78,21 +78,9 @@
     "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობაზე წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "როგორ გავიგო, მუშაობს თუ არა Facebook Container?",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "ღილაკები, რომლებიც საშუალებას გაძლევთ მოიწონოთ და გააზიაროთ რამე Facebook-ზე ან შეხვიდეთ საიტზე Facebook-ის ანგარიშით, შეიცავს მეთვალყურეებს. Facebook Container შეზღუდავს ამ მეთვალყურეებს და დაურთავს შესაბამის ნიშანს, რომლითაც ნახავთ, თუ საიდან მოცილდა მეთვალყურეები.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "ამ სურათზე გამოსახულია, თუ როგორ გამოჩნდება Facebook Container-ის ზღუდის ნიშანი ვებგვერდზე, Facebook-ის მოწონების ღილაკის გვერდით.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "თუმცაღა, თუ დააჭერთ რომელიმე ამ ღილაკს, Facebook-ს შეეძლება თვალი მოგადევნოთ.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Facebook-ის მიღმა",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "დაშვება",
