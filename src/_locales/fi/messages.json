@@ -86,6 +86,10 @@
     "message": "Vaikka et ole Facebookissa, Facebook voi seurata sinua verkossa. Painikkeet, joiden avulla voit lähettää asioita Facebookiin tai kirjautua verkkosivustoille Facebook-tilisi avulla, sisältävät seuraimia. Facebook-eristystila estää nämä seuraimet ja näyttää aitakuvakkeen osoittaakseen, mistä seuraimet poistettiin.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "Tämä kuva esittää, kuinka Facebook-eristystilan aitakuvake ilmenee sivun sisällä Facebookin Tykkää-painikkeen vieressä.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
   "onboarding5-subhead": {
     "message": "Sisäänkirjautuminen Facebookilla muilla sivustoilla",
     "description": "This is the subhead for the fifth onboarding panel."
