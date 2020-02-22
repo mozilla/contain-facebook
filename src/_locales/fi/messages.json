@@ -78,21 +78,17 @@
     "message": "Nämä sivustot vaativat toimiakseen pääsyn Facebook-henkilöyteesi (tai niiden tulee tietää, kuka olet). Tämä tarkoittaa myös, että Facebook kykenee seuraamaan kaikkea tekemääsi näillä sivustoilla.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Mistä tiedän Facebook-eristystilan toimivan?",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Facebookin ulkopuolella",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
-  "onboarding3-p1": {
-    "message": "Facebook-tykkäyksen ja -jaon mahdollistavat painikkeet ja sivustot, jotka mahdollistavat kirjautumisen Facebook-tilillä, sisältävät seuraimia. Facebook-eristystila estää nämä seuraimet, ja näyttää aitakuvakkeen niillä alueilla sivuja, joista seuraimet poistettiin.",
-    "description": "This is the first paragraph of the third onboarding panel."
+  "onboarding5-subhead": {
+    "message": "Sisäänkirjautuminen Facebookilla muilla sivustoilla",
+    "description": "This is the subhead for the fifth onboarding panel."
   },
-  "onboarding3-img": {
-    "message": "Tämä kuva osoittaa, miten Facebook-eristystilan aitakuvake ilmestyy sivun sisään Facebookin Tykkää-painikkeen viereen.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Jos napsautat mitä tahansa näistä painikkeista, Facebook kykenee seuraamaan sinua.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding5-p2": {
+    "message": "Tämä mahdollistaa sisäänkirjautumisen Facebookilla, mutta antaa Facebookille mahdollisuuden seurata tekemisiäsi kyseisellä sivustolla.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Salli",
@@ -201,6 +197,14 @@
     "message": " Jos haluat käyttää ”Kirjaudu Facebookilla” -ominaisuutta uudestaan, sinun tulee lisätä takaisin se Facebook-eristystilaan.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Sallitaanko Facebook-seuranta tällä sivustolla?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Tämä mahdollistaa sisäänkirjautumisen Facebookilla, mutta antaa Facebookille mahdollisuuden seurata mitä teet tällä sivustolla.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook-eristystila on poistanut tämän painikkeen käytöstä ja estänyt Facebookia seuraamasta vierailuasi tälle sivustolle.",
     "description": ""
@@ -219,6 +223,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Älä näytä uudestaan",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Jos napsautat tätä painiketta, Facebook voi seurata vierailuasi tällä sivustolla.",
     "description": ""
   }
 }
