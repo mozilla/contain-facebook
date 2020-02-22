@@ -94,6 +94,14 @@
     "message": "Sisäänkirjautuminen Facebookilla muilla sivustoilla",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "Käyttääksesi Facebook-kirjautumista muilla sivustoilla, sinun tulee siirtää ne rajojen sisään. Napsauta aitakuvaketta ja valitse \"Salli sivusto Facebook-eristystilassa\" alhaalta.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Tämä kuva esittää, miltä sivuston Facebook-eristystilaan lisäävä kuvake näyttää paneelissa.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
   "onboarding5-p2": {
     "message": "Tämä mahdollistaa sisäänkirjautumisen Facebookilla, mutta antaa Facebookille mahdollisuuden seurata tekemisiäsi kyseisellä sivustolla.",
     "description": "This is the second paragraph on the fifth onboarding panel."
