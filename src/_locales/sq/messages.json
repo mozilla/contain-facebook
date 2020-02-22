@@ -98,6 +98,14 @@
     "message": "Që të përdorni hyrjen në sajte të tjerë me Facebook, do t’ju duhet t’i kaloni ato brenda kufirit. Klikoni ikonën gardh dhe përzgjidhni ‘Lejoje Sajtin në Facebook Container’ te fundi.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
+  "onboarding5-img": {
+    "message": "Kjo figurë demonstron se si do të shfaqet te paneli butoni për shtim të një sajti te Facebook Container.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Kjo ju lejon të hyni me Facebook, por i lejon Facebook-ut të ndjekë veprimtarinë tuaj në atë sajt.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Lejoje",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -205,6 +213,14 @@
     "message": " Nëse doni të përdorni sërish Hyrje me Facebook, do t’ju duhet ta shtoni sërish te Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Të lejohet Gjurmimi Nga Facebook-u në këtë Sajt?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Kjo ju lejon të hyni me Facebook, por i lejon Facebook-ut të ndjekë se ç’bëni në atë sajt.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container e ka çaktivizuar këtë buton dhe ia ka bllokuar Facebook-ut gjurmimin e vizitës tuaj në këtë faqe.",
     "description": ""
@@ -223,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Mos ma shfaq më këtë",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Nëse klikoni këtë buton, Facebook-u do të jetë në gjendje të ndjekë vizitën tuaj në këtë sajt.",
     "description": ""
   }
 }
