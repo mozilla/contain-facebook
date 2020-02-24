@@ -213,6 +213,14 @@
     "message": " Si vous souhaitez utiliser à nouveau la connexion avec Facebook, vous devrez le rajouter à Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Autoriser le suivi Facebook sur ce site ?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Cela vous permet de vous connecter via Facebook, mais permet à Facebook de suivre votre activité sur ce site.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container a désactivé ce bouton et a empêché Facebook de suivre votre visite sur cette page.",
     "description": ""
