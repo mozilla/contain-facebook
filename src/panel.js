@@ -119,14 +119,34 @@ const addSpan = (wrapper, stringId) => {
 
 const getRootDomain = (hostname) => {
   let parts = hostname.split(".");
+
+  // Default array length of hostname split
+  let defaultDomainLength = 3;
+
   // If there's no subdomain, return hostname as is.
-  if (parts.length < 3) {
+  if (parts.length < defaultDomainLength) {
     return hostname;
   }
-  while (parts.length > 2) {
+
+  let lastArrayLength = parts[(parts.length - 1)].length;
+
+
+  if (lastArrayLength < 3) {
+    // Returns true if last part of hostname is two-characters, meaning it's a
+    // country-level domain.
+    let nextToLastItem = parts[(parts.length - 2)];
+    if (nextToLastItem === "co" || nextToLastItem === "com") {
+      // Checks to see if a third-level domain is present.
+      // Example: https://www.amazon.co.uk returns "amazon.co.uk"
+      defaultDomainLength = 4;
+    }
+  }
+
+  while (parts.length > (defaultDomainLength - 1)) {
     // Trim around down to final domain
     parts.shift();
   }
+
   let rootDomain = parts.join(".");
   return rootDomain;
 };
