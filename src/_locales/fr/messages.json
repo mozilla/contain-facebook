@@ -78,6 +78,10 @@
     "message": "Ces sites ont besoin d’accéder à votre identité Facebook (ou de savoir qui vous êtes) pour fonctionner. Cela signifie également que Facebook peut pister tout ce que vous faites sur ces sites.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
+  "onboarding4-subhead": {
+    "message": "En dehors de Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
   "onboarding4-p1": {
     "message": "Même lorsque vous n’êtes pas sur Facebook, Facebook peut vous pister en ligne. Les boutons qui vous permettent de publier des choses sur Facebook ou de vous connecter à des sites web à l’aide de votre compte Facebook contiennent des traqueurs. Facebook Container bloque ces traqueurs et affiche l’icône de barrière pour vous montrer où les traqueurs ont été supprimés.",
     "description": "This is the first paragraph of the fourth onboarding panel."
