@@ -151,12 +151,18 @@ const getRootDomain = (hostname) => {
   return rootDomain;
 };
 
-const getActiveRootDomain = async() => {
+const getActiveRootDomainFromBackground = async() => {
+  // Get active page URL
   const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
   const currentActiveTab = tabsQueryResult[0];
-  const currentActiveURL = new URL(currentActiveTab.url);
-  const thisHostname = getRootDomain(currentActiveURL.hostname);
-  return thisHostname;
+
+  // Send request to background to parse URL via PSL
+  const backgroundResp = await browser.runtime.sendMessage({
+    message: "get-root-domain",
+    url: currentActiveTab.url
+  });
+
+  return backgroundResp;
 };
 
 const isSiteInContainer = async(panelId) => {
@@ -165,8 +171,11 @@ const isSiteInContainer = async(panelId) => {
     return true;
   }
 
-  const addedSitesList = await browser.runtime.sendMessage("what-sites-are-added");
-  const activeTabHostname = await getActiveRootDomain();
+  const addedSitesList = await browser.runtime.sendMessage({
+    message: "what-sites-are-added"
+  });
+  const activeTabHostname = await getActiveRootDomainFromBackground();
+
   if (addedSitesList.includes(activeTabHostname)) {
     return true;
   }
@@ -251,7 +260,11 @@ const addDeleteSiteListeners = () => {
   document.querySelectorAll(".site-added").forEach(btn => {
     btn.addEventListener("click", async (e) => {
       // TODO: refactor to remove the domain straight from browser.storage.local?
-      await browser.runtime.sendMessage({removeDomain: e.dataset.domain});
+
+      await browser.runtime.sendMessage({
+        message: "remove-domain-from-list",
+        removeDomain: e.dataset.domain
+      });
     });
   });
 };
@@ -552,7 +565,9 @@ const buildAllowedSitesPanel = async(panelId) => {
   addLightSubhead(listsWrapper, "sites-included");
   makeSiteList(listsWrapper, defaultAllowedSites);
 
-  const siteList = await browser.runtime.sendMessage("what-sites-are-added");
+  const siteList = await browser.runtime.sendMessage({
+    message: "what-sites-are-added"
+  });
   const sitesAllowedSubhead = addLightSubhead(listsWrapper, "sites-allowed");
   sitesAllowedSubhead.classList.add("sites-allowed");
   makeSiteList(listsWrapper, siteList, true, true); // (...sitesAllowed=true, addX=true)
@@ -574,14 +589,18 @@ const buildAllowedSitesPanel = async(panelId) => {
 };
 
 const removeSiteFromContainer = async () => {
-  const activeRootDomain = await getActiveRootDomain();
-  await browser.runtime.sendMessage( {removeDomain: activeRootDomain} );
+  const activeRootDomain = await getActiveRootDomainFromBackground();
+
+  await browser.runtime.sendMessage({
+    message: "remove-domain-from-list",
+    removeDomain: activeRootDomain
+  });
   browser.tabs.reload();
   window.close();
 };
 
 const addSiteToContainer = async () => {
-  const activeRootDomain = await getActiveRootDomain();
+  const activeRootDomain = await getActiveRootDomainFromBackground();
   const fbcStorage = await browser.storage.local.get();
   fbcStorage.domainsAddedToFacebookContainer.push(activeRootDomain);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
@@ -606,7 +625,10 @@ const buildRemoveSitePanel = (siteName) => {
   blueRemoveButton.classList.add("uiMessage", "remove-btn");
   blueRemoveButton.id = "remove";
   blueRemoveButton.addEventListener("click", async() => {
-    await browser.runtime.sendMessage( {removeDomain: siteName} );
+    await browser.runtime.sendMessage({
+      message: "remove-domain-from-list",
+      removeDomain: siteName
+    });
     browser.tabs.reload();
     window.close();
   });

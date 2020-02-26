@@ -210,7 +210,9 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
       e.preventDefault();
       allowClickSwitch = true;
-      browser.runtime.sendMessage("add-to-facebook-container");
+      browser.runtime.sendMessage({
+        message: "add-domain-to-list"
+      });
       target.click();
     });
 
@@ -608,7 +610,9 @@ function contentScriptInit(resetSwitch, msg) {
 }
 
 async function CheckIfURLShouldBeBlocked() {
-  const siteList = await browser.runtime.sendMessage("what-sites-are-added");
+  const siteList = await browser.runtime.sendMessage({
+    message: "what-sites-are-added"
+  });
 
   if (siteList.includes(window.location.host)) {
     checkForTrackers = false;

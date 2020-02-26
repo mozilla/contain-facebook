@@ -581,15 +581,24 @@ function setupWindowsAndTabsListeners() {
   setupWebRequestListeners();
   setupWindowsAndTabsListeners();
 
-  browser.runtime.onMessage.addListener( (message, {url}) => {
-    if (message === "what-sites-are-added") {
+  async function messageHandler(request, sender, sendResponse) {
+    switch (request.message) {
+    case "what-sites-are-added":
       return browser.storage.local.get().then(fbcStorage => fbcStorage.domainsAddedToFacebookContainer);
-    } else if (message.removeDomain) {
-      removeDomainFromFacebookContainer(message.removeDomain).then( results => results );
-    } else {
-      addDomainToFacebookContainer(url).then( results => results);
+    case "remove-domain-from-list":
+      removeDomainFromFacebookContainer(request.removeDomain).then( results => results );
+      break;
+    case "add-domain-to-list":
+      addDomainToFacebookContainer(sender.url).then( results => results);
+      break;
+    case "get-root-domain":
+      return getRootDomain(request.url);
+    default:
+      throw new Error("Unexpected message!");
     }
-  });
+  }
+
+  browser.runtime.onMessage.addListener(messageHandler);
 
   maybeReopenAlreadyOpenTabs();
 
