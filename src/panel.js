@@ -187,7 +187,7 @@ const setCustomSiteButtonEvent = async (panelId) => {
   }
 
   // Active site is eligable to be added to the container
-  addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
+  addSiteToContainerLink.addEventListener("click", async () => buildAddSitePanel());
 };
 
 // adds bottom navigation buttons to onboarding panels
