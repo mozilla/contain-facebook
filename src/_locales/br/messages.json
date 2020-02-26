@@ -213,6 +213,14 @@
     "message": " Ma fell deoc'h kennaskañ gant Facebbok en-dro e rankot e ouzhpennañ adarre d'an endalc'her Facebook.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Aotren heuliañ Facebook war al lec'hienn-mañ?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Aotren a raio ac'hanoc'h da gennaskañ dre Facebook, met aotren a raio Facebook da heuliañ ar pezh a rit war al lec'hienn-mañ.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Diweredekaet eo bet an afell-mañ gant endalc'her Facebook hag harzhet eo bet Facebook da heuliañ ac'hanoc'h war ar bajenn-mañ.",
     "description": ""
@@ -231,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Na ziskouez din an dra-se en-dro",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Ma klikit war an afell-mañ e vo gouest Facebook da heuliañ ac'hanoc'h war al lec'hienn-mañ.",
     "description": ""
   }
 }

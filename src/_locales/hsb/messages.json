@@ -213,6 +213,14 @@
     "message": "Jeli chceće so zaso pola Facebook přizjewić, dyrbiće jón zaso Facebook Container přidać.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Slědowanje přez Facebook na tutym sydle dowolić?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "To wam zmóžnja, so pola Facebook přizjewić, dowoluje wšak Facebook slědować, štož na tutym sydle činiće.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container je tute tłóčatko znjemóžnił a Facebook při tym haćił, wašemu wopytej na tutej stronje slědować.",
     "description": ""

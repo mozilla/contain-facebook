@@ -213,6 +213,14 @@
     "message": " Os ydych chi am ddefnyddio Mewngofnodi gyda Facebook eto, bydd angen i chi ei ychwanegu yn ôl i'r Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Caniatáu Tracio gan Facebook ar y Wefan hon?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Mae hyn yn caniatáu i chi fewngofnodi gyda Facebook, ond mae'n caniatáu i Facebook dracio eich gweithgaredd ar y wefan honno.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Mae Facebook Container wedi analluogi'r botwm hwn ac wedi rhwystro Facebook rhag tracio eich ymweliad â'r dudalen hon.",
     "description": ""

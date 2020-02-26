@@ -174,13 +174,16 @@ a:hover {
   background-image: url("/img/site-remove-icon.svg");
 }
 
-.highlight-on-hover.remove-site-from-container.disabled-button {
+.highlight-on-hover.remove-site-from-container.disabled-button, .highlight-on-hover.add-site-to-container.disabled-button {
   cursor: not-allowed;
   position: relative;
   z-index: 0;
 }
 
-.highlight-on-hover.remove-site-from-container.disabled-button::after, .highlight-on-hover.remove-site-from-container.disabled-button span {
+.highlight-on-hover.remove-site-from-container.disabled-button::after,
+.highlight-on-hover.remove-site-from-container.disabled-button span
+.highlight-on-hover.add-site-to-container.disabled-button::after,
+.highlight-on-hover.add-site-to-container.disabled-button span {
   opacity: 0.4;
 }
 

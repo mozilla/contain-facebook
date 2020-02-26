@@ -217,6 +217,10 @@
     "message": "Tillåt Facebook-spårning på den här webbplatsen?",
     "description": ""
   },
+  "add-site-p1": {
+    "message": "Detta låter dig logga in med Facebook, men gör att Facebook kan spåra vad du gör på webbplatsen.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container har inaktiverat den här knappen och blockerat Facebook från att spåra ditt besök på den här sidan.",
     "description": ""

@@ -213,6 +213,14 @@
     "message": " Nếu bạn muốn sử dụng lại đăng nhập bằng Facebook, bạn sẽ cần thêm lại vào Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Cho phép Facebook theo dõi trên trang web này?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Điều này cho phép bạn đăng nhập bằng Facebook, nhưng cũng cho phép Facebook theo dõi những gì bạn làm trên trang web này.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container đã vô hiệu hóa nút này và chặn Facebook theo dõi lượt truy cập của bạn vào trang này.",
     "description": ""

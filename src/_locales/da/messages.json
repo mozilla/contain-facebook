@@ -213,6 +213,14 @@
     "message": " Hvis du vil logge ind med Facebook, skal du føje webstedet til Facebook Container igen.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Tillad at Facebook sporer dig på dette websted?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Dette lader dig logge ind med Facebook, men giver Facebook mulighed for at følge med i, hvad du gør på dette websted.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container har deaktiveret denne knap og forhindret Facebook i at spore dit besøg på denne side.",
     "description": ""

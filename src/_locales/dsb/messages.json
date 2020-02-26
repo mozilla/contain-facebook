@@ -213,6 +213,14 @@
     "message": "Jolic cośo se zasej pla Facebook pśizjawiś, musyśo jen zasej Facebook Container pśidaś.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Slědowanje pśez Facebook na toś tom sedle dowóliś?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "To wam zmóžnja, se pla Facebook pśizjawiś, dowólujo pak Facebook slědowaś, což na toś tom sedle cyniśo.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container jo znjemóžnił toś ten tłocašk a Facebook zawoborał, wašomu woglědoju na toś tom boku slědowaś.",
     "description": ""
