@@ -187,7 +187,7 @@ const setCustomSiteButtonEvent = async (panelId) => {
   }
 
   // Active site is eligable to be added to the container
-  addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
+  addSiteToContainerLink.addEventListener("click", async () => buildAddSitePanel());
 };
 
 // adds bottom navigation buttons to onboarding panels
@@ -543,19 +543,49 @@ const buildAllowedSitesPanel = async(panelId) => {
 
 const removeSiteFromContainer = async () => {
   const activeHostname = await getActiveHostname();
-  await browser.runtime.sendMessage( {removeDomain: activeHostname} );
-  browser.tabs.reload();
-  window.close();
+  buildRemoveSitePanel(activeHostname);
 };
 
-const addSiteToContainer = async () => {
-  const activeHostname = await getActiveHostname();
+const addSiteToContainer = async (activeHostname) => {
+  if (!activeHostname) { throw new Error("Missing site name. Cannot add site."); }
   const fbcStorage = await browser.storage.local.get();
   fbcStorage.domainsAddedToFacebookContainer.push(activeHostname);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
   browser.tabs.reload();
   window.close();
 };
+
+const buildAddSitePanel = async (siteName) => {
+  if (!siteName) {
+    siteName = await getActiveHostname();
+  }
+
+  const panelId = "add-site";
+  const { page, fragment } = setUpPanel(panelId);
+
+  addHeaderWithBackArrow(fragment);
+
+  const contentWrapper = addDiv(fragment, "main-content-wrapper");
+  contentWrapper.classList.add("remove-site-panel");
+
+  addSubhead(contentWrapper, "add-site");
+  makeSiteList(contentWrapper, [siteName], true, false); // (..., sitesAllowed=true, addX=false )
+  addParagraph(contentWrapper, `${panelId}-p1`);
+  let blueRemoveButton = document.createElement("button");
+  blueRemoveButton.classList.add("uiMessage", "allow-btn");
+  blueRemoveButton.id = "btn-allow";
+  blueRemoveButton.addEventListener("click", async() => {
+    addSiteToContainer(siteName);
+  });
+
+  fragment.appendChild(blueRemoveButton);
+
+  getLocalizedStrings();
+
+  appendFragmentAndSetHeight(page, fragment);
+  addOnboardingListeners(siteName);
+};
+
 
 const buildRemoveSitePanel = (siteName) => {
   const panelId = "remove-site";
