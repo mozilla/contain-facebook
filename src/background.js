@@ -266,43 +266,20 @@ async function maybeReopenTab (url, tab, request) {
   return {cancel: true};
 }
 
-function getRootDomain(hostname) {
-  let parts = hostname.split(".");
+function getRootDomain(url) {
 
-  // Default array length of hostname split
-  let defaultDomainLength = 3;
+  const urlObject = new URL(url);
 
-  // If there's no subdomain, return hostname as is.
-  if (parts.length < defaultDomainLength) {
-    return hostname;
-  }
+  if (urlObject.hostname === "") { return false; }
 
-  let lastArrayLength = parts[(parts.length - 1)].length;
+  const parsedUrl = psl.parse(urlObject.hostname);
 
+  return parsedUrl.domain;
 
-  if (lastArrayLength < 3) {
-    // Returns true if last part of hostname is two-characters, meaning it's a
-    // country-level domain.
-    let nextToLastItem = parts[(parts.length - 2)];
-    if (nextToLastItem === "co" || nextToLastItem === "com") {
-      // Checks to see if a third-level domain is present.
-      // Example: https://www.amazon.co.uk returns "amazon.co.uk"
-      defaultDomainLength = 4;
-    }
-  }
-
-  while (parts.length > (defaultDomainLength - 1)) {
-    // Trim around down to final domain
-    parts.shift();
-  }
-
-  let rootDomain = parts.join(".");
-  return rootDomain;
 }
 
 function isFacebookURL (url) {
-  const parsedUrl = new URL(url);
-  let rootDomain = getRootDomain(parsedUrl.host);
+  const rootDomain = getRootDomain(url);
   for (let facebookHostRE of facebookHostREs) {
     if (facebookHostRE.test(rootDomain)) {
       return true;
@@ -323,9 +300,8 @@ function isFacebookURL (url) {
 // TODO: refactor parsedUrl "up" so new URL doesn't have to be called so much
 // TODO: refactor fbcStorage "up" so browser.storage.local.get doesn't have to be called so much
 async function addDomainToFacebookContainer (url) {
-  const parsedUrl = new URL(url);
   const fbcStorage = await browser.storage.local.get();
-  const rootDomain = getRootDomain(parsedUrl.host);
+  const rootDomain = getRootDomain(url);
   fbcStorage.domainsAddedToFacebookContainer.push(rootDomain);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
   // await supportSiteSubdomainCheck(parsedUrl.host);
@@ -340,9 +316,8 @@ async function removeDomainFromFacebookContainer (domain) {
 
 // TODO: Add PSL Subdomain Check against current list
 async function isAddedToFacebookContainer (url) {
-  const parsedUrl = new URL(url);
   const fbcStorage = await browser.storage.local.get();
-  const rootDomain = getRootDomain(parsedUrl.host);
+  const rootDomain = getRootDomain(url);
   if (fbcStorage.domainsAddedToFacebookContainer.includes(rootDomain)) {
     return true;
   }
