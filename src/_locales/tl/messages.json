@@ -78,10 +78,6 @@
     "message": "Ang mga site na ito ay nangangailangan ng access sa iyong pakakakilanlan sa Facebook (o malaman kung sino ka) upang gumana. Nangangahulugan din ito na maaaring nakasubaybay ang Facebook sa lahat ng ginagawa mo sa mga site na ito.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Paano ko malalaman na gumagana ang Facebook Container?",
-    "description": "This is the subhead for the third onboarding panel."
-  },
   "btn-allow": {
     "message": "Payagan",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -122,6 +118,14 @@
     "message": "Paano gumagana ang Facebook Container",
     "description": "This is a button that opens the Facebook Container onboarding flow."
   },
+  "trackers-detected-subhead": {
+    "message": "Protektado ka namin mula sa Facebook.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-fence-alt": {
+    "message": "Bakod ng Facebook Container na may shield.",
+    "description": "This is alternative text describing the container fence icon."
+  },
   "sites-added-subhead": {
     "message": "Mga sites na pinapayagan sa Facebook Container",
     "description": "This is a panel subhead."
@@ -134,9 +138,25 @@
     "message": "Wala",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   },
+  "sites-allowed": {
+    "message": "MGA SITE NA PINAYAGAN MO",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
   "remove": {
     "message": "Alisin",
     "description": ""
+  },
+  "button-allow-site": {
+    "message": "Payagan ang Site sa Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Tanggalin ang Site mula sa Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Dahil ito ay isang site na pagmamay-ari ng Facebook, hindi ito maaaring tanggalin mula sa Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
     "message": "Alisin ang site mula sa Facebook Container?",
