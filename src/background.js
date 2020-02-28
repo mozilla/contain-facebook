@@ -476,6 +476,13 @@ async function containFacebook (request) {
     delete tabsWaitingToLoad[request.tabId];
   }
 
+  // Listen to requests and open Facebook into its Container,
+  // open other sites into the default tab context
+  if (request.tabId === -1) {
+    // Request doesn't belong to a tab
+    return;
+  }
+
   const tab = await browser.tabs.get(request.tabId);
   updateBrowserActionIcon(tab);
 
@@ -483,12 +490,6 @@ async function containFacebook (request) {
   const urlSearchParm = new URLSearchParams(url.search);
   if (urlSearchParm.has("fbclid")) {
     return {redirectUrl: stripFbclid(request.url)};
-  }
-  // Listen to requests and open Facebook into its Container,
-  // open other sites into the default tab context
-  if (request.tabId === -1) {
-    // Request doesn't belong to a tab
-    return;
   }
 
   return maybeReopenTab(request.url, tab, request);
