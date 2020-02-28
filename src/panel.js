@@ -174,9 +174,10 @@ const isSiteInContainer = async(panelId) => {
   const addedSitesList = await browser.runtime.sendMessage({
     message: "what-sites-are-added"
   });
-  const activeTabHostname = await getActiveRootDomainFromBackground();
+  
+  const activeRootDomain = await getActiveRootDomainFromBackground();
 
-  if (addedSitesList.includes(activeTabHostname)) {
+  if (addedSitesList.includes(activeRootDomain)) {
     return true;
   }
 };
