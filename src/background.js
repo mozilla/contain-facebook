@@ -1,3 +1,5 @@
+/* global psl */
+
 const FACEBOOK_CONTAINER_DETAILS = {
   name: "Facebook",
   color: "toolbar",
@@ -279,9 +281,9 @@ function getRootDomain(url) {
 }
 
 function isFacebookURL (url) {
-  const rootDomain = getRootDomain(url);
+  const parsedUrl = new URL(url);
   for (let facebookHostRE of facebookHostREs) {
-    if (facebookHostRE.test(rootDomain)) {
+    if (facebookHostRE.test(parsedUrl.host)) {
       return true;
     }
   }
