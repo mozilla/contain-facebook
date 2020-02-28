@@ -484,6 +484,7 @@ async function containFacebook (request) {
 // https://github.com/mozilla/blok/blob/master/src/js/background.js
 async function blockFacebookSubResources (requestDetails) {
   if (requestDetails.type === "main_frame") {
+    tabStates[requestDetails.tabId] = { trackersDetected: false };
     return {};
   }
 
