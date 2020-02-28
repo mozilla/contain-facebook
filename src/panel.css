@@ -181,7 +181,7 @@ a:hover {
 }
 
 .highlight-on-hover.remove-site-from-container.disabled-button::after,
-.highlight-on-hover.remove-site-from-container.disabled-button span
+.highlight-on-hover.remove-site-from-container.disabled-button span,
 .highlight-on-hover.add-site-to-container.disabled-button::after,
 .highlight-on-hover.add-site-to-container.disabled-button span {
   opacity: 0.4;
