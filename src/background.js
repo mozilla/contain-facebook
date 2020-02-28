@@ -582,7 +582,7 @@ function setupWindowsAndTabsListeners() {
   setupWebRequestListeners();
   setupWindowsAndTabsListeners();
 
-  async function messageHandler(request, sender, sendResponse) {
+  async function messageHandler(request, sender) {
     switch (request.message) {
     case "what-sites-are-added":
       return browser.storage.local.get().then(fbcStorage => fbcStorage.domainsAddedToFacebookContainer);
