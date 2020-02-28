@@ -609,12 +609,24 @@ function contentScriptInit(resetSwitch, msg) {
   }
 }
 
+async function getRootDomainFromBackground(url) {
+  // Send request to background to parse URL via PSL
+  const backgroundResp = await browser.runtime.sendMessage({
+    message: "get-root-domain",
+    url
+  });
+
+  return backgroundResp;
+}
+
 async function CheckIfURLShouldBeBlocked() {
   const siteList = await browser.runtime.sendMessage({
     message: "what-sites-are-added"
   });
 
-  if (siteList.includes(window.location.host)) {
+  const site = await getRootDomainFromBackground(window.location.href);
+
+  if (siteList.includes(site)) {
     checkForTrackers = false;
   } else {
     contentScriptInit(false);
