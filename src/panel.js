@@ -174,7 +174,7 @@ const isSiteInContainer = async(panelId) => {
   const addedSitesList = await browser.runtime.sendMessage({
     message: "what-sites-are-added"
   });
-  
+
   const activeRootDomain = await getActiveRootDomainFromBackground();
 
   if (addedSitesList.includes(activeRootDomain)) {
@@ -229,7 +229,7 @@ const setCustomSiteButtonEvent = async (panelId) => {
   }
 
   // Active site is eligable to be added to the container
-  addSiteToContainerLink.addEventListener("click", async () => addSiteToContainer());
+  addSiteToContainerLink.addEventListener("click", async () => buildAddSitePanel());
 };
 
 // adds bottom navigation buttons to onboarding panels
@@ -608,6 +608,38 @@ const addSiteToContainer = async () => {
   browser.tabs.reload();
   window.close();
 };
+
+const buildAddSitePanel = async (siteName) => {
+  if (!siteName) {
+    siteName = await getActiveHostname();
+  }
+
+  const panelId = "add-site";
+  const { page, fragment } = setUpPanel(panelId);
+
+  addHeaderWithBackArrow(fragment);
+
+  const contentWrapper = addDiv(fragment, "main-content-wrapper");
+  contentWrapper.classList.add("remove-site-panel");
+
+  addSubhead(contentWrapper, "add-site");
+  makeSiteList(contentWrapper, [siteName], true, false); // (..., sitesAllowed=true, addX=false )
+  addParagraph(contentWrapper, `${panelId}-p1`);
+  let blueRemoveButton = document.createElement("button");
+  blueRemoveButton.classList.add("uiMessage", "allow-btn");
+  blueRemoveButton.id = "btn-allow";
+  blueRemoveButton.addEventListener("click", async() => {
+    addSiteToContainer(siteName);
+  });
+
+  fragment.appendChild(blueRemoveButton);
+
+  getLocalizedStrings();
+
+  appendFragmentAndSetHeight(page, fragment);
+  addOnboardingListeners(siteName);
+};
+
 
 const buildRemoveSitePanel = (siteName) => {
   const panelId = "remove-site";
