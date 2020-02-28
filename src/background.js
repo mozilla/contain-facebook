@@ -290,15 +290,6 @@ function isFacebookURL (url) {
   return false;
 }
 
-// TODO: Consider users if accounts.spotify.com already in FBC
-// async function supportSiteSubdomainCheck (url) {
-//   if (url === "accounts.spotify.com") {
-//     await addDomainToFacebookContainer("https://www.spotify.com");
-//     await addDomainToFacebookContainer("https://open.spotify.com");
-//   }
-//   return;
-// }
-
 // TODO: refactor parsedUrl "up" so new URL doesn't have to be called so much
 // TODO: refactor fbcStorage "up" so browser.storage.local.get doesn't have to be called so much
 async function addDomainToFacebookContainer (url) {
@@ -306,7 +297,6 @@ async function addDomainToFacebookContainer (url) {
   const rootDomain = getRootDomain(url);
   fbcStorage.domainsAddedToFacebookContainer.push(rootDomain);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
-  // await supportSiteSubdomainCheck(parsedUrl.host);
 }
 
 async function removeDomainFromFacebookContainer (domain) {
@@ -316,7 +306,6 @@ async function removeDomainFromFacebookContainer (domain) {
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
 }
 
-// TODO: Add PSL Subdomain Check against current list
 async function isAddedToFacebookContainer (url) {
   const fbcStorage = await browser.storage.local.get();
   const rootDomain = getRootDomain(url);
