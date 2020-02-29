@@ -82,6 +82,10 @@
     "message": "ਫੇਸਬੁੱਕ ਤੋਂ ਬਾਹਰ",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-p1": {
+    "message": "ਭਾਵੇ ਤੁਸੀਂ ਫੇਸਬੁੱਕ ਉੱਤੇ ਨਹੀਂ ਹੋ, ਪਰ ਫੇਸਬੁੱਕ ਤੁਹਾਡੇ ਆਨਲਾਈਨ ਹੋਣ ਨੂੰ ਟਰੈਕ ਕਰ ਸਕਦੀ ਹੈ। ਬਟਨ, ਜੋ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਉੱਤੇ ਪੋਸਟਾਂ ਪਾਉਣ, ਜਾਂ ਤੁਹਾਡੇ ਫੇਸਬੁੱਕ ਖਾਤੇ ਨੂੰ ਵਰਤ ਕੇ ਵੈੱਬਸਾਈਟਾਂ ਵਿੱਚ ਲਾਗਇਨ ਦਿੰਦੇ ਹਨ, ਵਿੱਚ ਟਰੈਕਰ ਹੁੰਦੇ ਹਨ। ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਇਹਨਾਂ ਟਰੈਕਰਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਉਂਦਾ ਹੈ ਅਤੇ ਤੁਹਾਨੂੰ ਵਾੜ ਦਾ ਆਈਕਾਨ ਦਿਖਾਉਂਦਾ ਹੈ, ਜਦੋਂ ਵੀ ਟਰੈਕਰਾਂ ਨੂੰ ਹਟਾਇਆ ਗਿਆ ਹੁੰਦਾ ਹੈ।",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
   "onboarding4-img": {
     "message": "ਇਹ ਤਸਵੀਰ ਨਮੂਨਾ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਾੜ ਆਈਕਾਨ ਸਫ਼ੇ ਵਿੱਚ ਫੇਸਬੁੱਕ ਲਾਈਕ ਬਟਨ ਦੇ ਨੇੜੇ ਕਿਵੇਂ ਦਿਸੇਗਾ।",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
@@ -93,6 +97,10 @@
   "onboarding5-p1": {
     "message": "ਤੁਹਾਡੇ ਫੇਸਬੁੱਕ ਲਾਗਇਨ ਨੂੰ ਹੋਰ ਸਾਈਟਾਂ ਉੱਤੇ ਵਰਤਣ ਲਈ ਤੁਹਾਨੂੰ ਉਹਨਾਂ ਨੂੰ ਹੱਦ ਦੇ ਅੰਦਰ ਲਿਆਉਣਾ ਪਵੇਗਾ। ਵਾੜ ਦੇ ਆਈਕਾਨ ਨੂੰ ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਹੇਠਾਂ ‘ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਿੱਚ ਸਾਈਟ ਨੂੰ ਸਹਿਮਤੀ ਦਿਓ’ ਨੂੰ ਚੁਣੋ।",
     "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "ਇਹ ਫੋਟੋ ਦਰਸਾਉਂਦੀ ਹੈ ਕਿ ਸਾਈਟ ਨੂੰ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਿੱਚ ਜੋੜਨ ਵਾਲਾ ਬਟਨ ਪੈਨਲ ਵਿੱਚ ਦਿਖਾਈ ਦੇਵੇਗਾ।",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
     "message": "ਇਹ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗਇਨ ਕਰਨ ਦੇਵੇਗਾ, ਪਰ ਫੇਸਬੁੱਕ ਨੂੰ ਇਸ ਸਾਈਟ ਉੱਤੇ ਤੁਹਾਡੀ ਸਰਗਰਮੀ ਦਾ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨ ਵੀ ਦੇਵੇਗਾ।",
