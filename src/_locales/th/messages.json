@@ -1,141 +1,141 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container แยกกิจกรรม Facebook ของคุณออกจากกิจกรรมเว็บที่เหลือ เพื่อป้องกันไม่ให้ Facebook ติดตามคุณนอกเว็บไซต์ Facebook ผ่านคุกกี้ของบุคคลที่สาม", 
+    "message": "Facebook Container แยกกิจกรรม Facebook ของคุณออกจากกิจกรรมเว็บที่เหลือ เพื่อป้องกันไม่ให้ Facebook ติดตามคุณนอกเว็บไซต์ Facebook ผ่านคุกกี้ของบุคคลที่สาม",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ อยู่ใน Facebook Container", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ อยู่ใน Facebook Container",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ ไม่ได้อยู่ใน Facebook Container", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ ไม่ได้อยู่ใน Facebook Container",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "ไซต์นี้อยู่ภายนอก Facebook Container ซึ่งทำให้ Facebook ติดตามคุณได้ยากขึ้น", 
+    "message": "ไซต์นี้อยู่ภายนอก Facebook Container ซึ่งทำให้ Facebook ติดตามคุณได้ยากขึ้น",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "ไซต์นี้ไม่ได้อยู่ใน Facebook Container", 
+    "message": "ไซต์นี้ไม่ได้อยู่ใน Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "การใช้ Facebook Container", 
+    "message": "การใช้ Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "ไอคอนรูปรั้วของ Facebook Container", 
+    "message": "ไอคอนรูปรั้วของ Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
-  "onboarding3-subhead": {
-    "message": "ฉันจะรู้ได้อย่างไรว่า Facebook Container กำลังทำงานอยู่?", 
-    "description": "This is the subhead for the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "อนุญาต", 
+    "message": "อนุญาต",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "ยกเลิก", 
+    "message": "ยกเลิก",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "ถัดไป", 
+    "message": "ถัดไป",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "ย้อนกลับ", 
+    "message": "ย้อนกลับ",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "เสร็จสิ้น", 
+    "message": "เสร็จสิ้น",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "ไม่พบตัวติดตามของ Facebook", 
+    "message": "ไม่พบตัวติดตามของ Facebook",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "เรียนรู้เพิ่มเติม", 
+    "message": "เรียนรู้เพิ่มเติม",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Facebook Container ทำงานอย่างไร", 
+    "message": "Facebook Container ทำงานอย่างไร",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "พวกเราปกป้องคุณจาก Facebook", 
+    "message": "พวกเราปกป้องคุณจาก Facebook",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "ไซต์ที่อนุญาตใน Facebook Container", 
+    "message": "ไซต์ที่อนุญาตใน Facebook Container",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "ไซต์ที่รวมอยู่", 
+    "message": "ไซต์ที่รวมอยู่",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "ไม่มี", 
+    "message": "ไม่มี",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "ไซต์ที่คุณได้อนุญาต", 
+    "message": "ไซต์ที่คุณได้อนุญาต",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container ทำให้ไซต์ที่เป็นของ Facebook อยู่ภายในขอบเขต คุณสามารถอนุญาตให้ไซต์อื่น ๆ เข้ามาในขอบเขตได้ แต่จะทำให้ Facebook ติดตามการท่องเว็บของคุณได้มากขึ้น"
-  }, 
+  },
   "remove": {
-    "message": "เอาออก", 
+    "message": "เอาออก",
     "description": ""
-  }, 
+  },
+  "button-remove-site-tooltip": {
+    "message": "เนื่องจากนี่เป็นไซต์ที่เป็นของ Facebook จึงไม่สามารถลบออกจาก Facebook Container ได้",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "เอาไซต์ออกจาก Facebook Container?", 
+    "message": "เอาไซต์ออกจาก Facebook Container?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "การลบไซต์นี้ออกจากคอนเทนเนอร์ Facebook หมายความว่าฟีเจอร์การลงชื่อเข้าใช้ด้วย Facebook จะไม่ทำงานอีกต่อไป และคุกกี้การติดตามของ Facebook จะถูกลบ", 
+    "message": "การลบไซต์นี้ออกจากคอนเทนเนอร์ Facebook หมายความว่าฟีเจอร์การลงชื่อเข้าใช้ด้วย Facebook จะไม่ทำงานอีกต่อไป และคุกกี้การติดตามของ Facebook จะถูกลบ",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " หากคุณต้องการใช้การลงชื่อเข้าใช้ด้วย Facebook อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container", 
+    "message": " หากคุณต้องการใช้การลงชื่อเข้าใช้ด้วย Facebook อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container ได้ปิดการใช้งานปุ่มนี้ และปิดกั้น Facebook จากการติดตามคุณในการเข้าชมหน้านี้", 
+    "message": "Facebook Container ได้ปิดการใช้งานปุ่มนี้ และปิดกั้น Facebook จากการติดตามคุณในการเข้าชมหน้านี้",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container ได้ปิดกั้นตัวติดตั้งของ Facebook แล้ว ถ้าคุณใช้การลงชื่อเข้าใช้ด้วย Facebook บนไซต์นี้ Facebook จะสามารถติดตามคุณได้", 
+    "message": "Facebook Container ได้ปิดกั้นตัวติดตั้งของ Facebook แล้ว ถ้าคุณใช้การลงชื่อเข้าใช้ด้วย Facebook บนไซต์นี้ Facebook จะสามารถติดตามคุณได้",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "อนุญาตให้ Facebook ติดตามคุณที่นี่?", 
+    "message": "อนุญาตให้ Facebook ติดตามคุณที่นี่?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "หากคุณต้องการใช้การเข้าสู่ระบบด้วย Facebook แล้ว Facebook จะสามารถติดตามกิจกรรมของคุณบนไซต์นี้ได้ สิ่งนี้ช่วยให้พวกเขาสร้างภาพชีวิตออนไลน์ของคุณได้สมบูรณ์ยิ่งขึ้น", 
+    "message": "หากคุณต้องการใช้การเข้าสู่ระบบด้วย Facebook แล้ว Facebook จะสามารถติดตามกิจกรรมของคุณบนไซต์นี้ได้ สิ่งนี้ช่วยให้พวกเขาสร้างภาพชีวิตออนไลน์ของคุณได้สมบูรณ์ยิ่งขึ้น",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "ไม่ต้องแสดงสิ่งนี้ให้ฉันเห็นอีก", 
+    "message": "ไม่ต้องแสดงสิ่งนี้ให้ฉันเห็นอีก",
     "description": ""
   }
 }
