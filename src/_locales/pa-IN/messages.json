@@ -82,9 +82,21 @@
     "message": "ਫੇਸਬੁੱਕ ਤੋਂ ਬਾਹਰ",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "ਇਹ ਤਸਵੀਰ ਨਮੂਨਾ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਾੜ ਆਈਕਾਨ ਸਫ਼ੇ ਵਿੱਚ ਫੇਸਬੁੱਕ ਲਾਈਕ ਬਟਨ ਦੇ ਨੇੜੇ ਕਿਵੇਂ ਦਿਸੇਗਾ।",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
   "onboarding5-subhead": {
     "message": "ਫੇਸਬੁੱਕ ਦੇ ਨਾਲ ਹੋਰ ਸਾਈਟਾਂ ਵਿੱਚ ਲਾਗਇਨ ਕਰਨਾ",
     "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "ਤੁਹਾਡੇ ਫੇਸਬੁੱਕ ਲਾਗਇਨ ਨੂੰ ਹੋਰ ਸਾਈਟਾਂ ਉੱਤੇ ਵਰਤਣ ਲਈ ਤੁਹਾਨੂੰ ਉਹਨਾਂ ਨੂੰ ਹੱਦ ਦੇ ਅੰਦਰ ਲਿਆਉਣਾ ਪਵੇਗਾ। ਵਾੜ ਦੇ ਆਈਕਾਨ ਨੂੰ ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਹੇਠਾਂ ‘ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਿੱਚ ਸਾਈਟ ਨੂੰ ਸਹਿਮਤੀ ਦਿਓ’ ਨੂੰ ਚੁਣੋ।",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "ਇਹ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗਇਨ ਕਰਨ ਦੇਵੇਗਾ, ਪਰ ਫੇਸਬੁੱਕ ਨੂੰ ਇਸ ਸਾਈਟ ਉੱਤੇ ਤੁਹਾਡੀ ਸਰਗਰਮੀ ਦਾ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨ ਵੀ ਦੇਵੇਗਾ।",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "ਮਨਜ਼ੂਰ",
@@ -197,6 +209,10 @@
     "message": "ਇਸ ਸਾਈਟ ਉੱਤੇ ਫੇਸਬੁੱਕ ਟਰੈਕਿੰਗ ਦੀ ਸਹਿਮਤੀ ਦੇਣੀ ਹੈ?",
     "description": ""
   },
+  "add-site-p1": {
+    "message": "ਇਹ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਉੱਤੇ ਲਾਗਇਨ ਕਰਨ ਦੇਵੇਗਾ, ਪਰ ਫੇਸਬੁੱਕ ਨੂੰ ਇਸ ਸਾਈ ਉੱਤੇ ਤੁਸੀਂ ਕੀ ਕਰਦੇ ਹੋ ਲਈ ਪਿੱਛਾ ਕਰਨ ਲਈ ਸਹਿਮਤੀ ਦਿੰਦਾ ਹੈ।",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨੇ ਇਹ ਬਟਨ ਅਸਮਰੱਥ ਕਰ ਦਿੱਤਾ ਹੈ ਅਤੇ ਫੇਸਬੁੱਕ ਨੂੰ ਇਸ ਸਫ਼ੇ ‘ਤੇ ਤੁਹਾਡੀ ਫੇਰੀ ਦਾ ਪਤਾ ਲਗਾਉਣ ਤੋਂ ਪਾਬੰਦੀ ਲਗਾਈ ਹੈ।",
     "description": ""
@@ -215,6 +231,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "ਇਹ ਮੁੜ ਨਾ ਦਿਖਾਓ",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "ਜੇ ਤੁਸੀਂ ਇਹ ਬਟਨ ਨੂੰ ਕਲਿੱਕ ਕੀਤਾ ਤਾਂ ਫੇਸਬੁੱਕ ਇਸ ਸਾਈਟ ਨੂੰ ਤੁਹਾਡੇ ਵਲੋਂ ਖੋਲ੍ਹਣ ਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋ ਜਾਵੇਗੀ।",
     "description": ""
   }
 }
