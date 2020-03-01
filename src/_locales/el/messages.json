@@ -78,21 +78,13 @@
     "message": "Αυτές οι ιστοσελίδες χρειάζονται πρόσβαση στην ταυτότητά σας στο Facebook (ή να γνωρίζουν ποιοι είστε) για να λειτουργήσουν. Επίσης, αυτό σημαίνει ότι το Facebook μπορεί να καταγράψει ό,τι κάνετε σε αυτές τις ιστοσελίδες.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Πώς ξέρω ότι το Facebook Container λειτουργεί;",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Εκτός του Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
-  "onboarding3-p1": {
-    "message": "Τα κουμπιά \"Μου αρέσει\" ή \"Κοινοποίηση\" του Facebook ή τα κουμπιά που σάς επιτρέπουν να συνδεθείτε σε ιστοσελίδες μέσω του λογαριασμού σας στο Facebook περιέχουν ιχνηλάτες. Το Facebook Container θα αποκλείσει αυτούς τους ιχνηλάτες και θα εμφανίσει το εικονίδιο-φράχτη για να σάς δείξει από πού έχουν αφαιρεθεί οι ιχνηλάτες.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Αυτή η εικόνα δείχει πώς θα εμφανίζεται το εικονίδιο-φράχτης του Facebook Container σε μια σελίδα, δίπλα σε ένα κουμπί \"Μου αρέσει\" του Facebook.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Ωστόσο, αν κάνετε κλικ σε οποιοδήποτε από αυτά τα κουμπιά, το Facebook θα μπορεί να σας καταγράφει.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding5-subhead": {
+    "message": "Σύνδεση με Facebook σε άλλες ιστοσελίδες",
+    "description": "This is the subhead for the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Αποδοχή",
