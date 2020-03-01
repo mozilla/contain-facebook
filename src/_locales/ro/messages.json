@@ -90,9 +90,21 @@
     "message": "Această imagine demonstrează cum va apărea pictograma de gard Facebook Container în pagină, alături de un buton de apreciere Facebook.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
+  "onboarding5-subhead": {
+    "message": "Conectare cu Facebook pe alte site-uri",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
   "onboarding5-p1": {
     "message": "Pentru a folosi datele de autentificare Facebook pe alte site-uri, va trebui să le muți la interiorul limitelor. Dă clic pe pictograma de gard și selectează „Permite site în Container Facebook” în partea de jos.",
     "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Această imagine arată cum va apărea în panou butonul pentru adăugarea unui site în Containerul Facebook.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Îți permite să te conectezi cu Facebook, dar permite și ca Facebook să urmărească ce faci pe acest site.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Permite",
@@ -201,6 +213,14 @@
     "message": " Dacă vrei să folosești din nou autentificarea cu Facebook, va trebui să îl adaugi din nou în Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Permiți Facebook să te urmărească pe acest site?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Îți permite să te conectezi cu Facebook, dar permite și ca Facebook să urmărească ce faci pe acest site.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container a dezactivat acest buton și a blocat urmărirea de către Facebook a vizitei tale pe această pagină.",
     "description": ""
@@ -219,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Nu mai afișa",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Dacă dai clic pe acest buton, Facebook îți va putea urmări vizita pe acest site.",
     "description": ""
   }
 }
