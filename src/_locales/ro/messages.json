@@ -67,7 +67,7 @@
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding2-alt": {
-    "message": "Pictograma de barieră din Facebook Container",
+    "message": "Pictograma de gard din Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
@@ -83,8 +83,16 @@
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Chiar și dacă nu ești pe Facebook, Facebook te poate urmări online. Butoanele care îți permit să postezi pe Facebook sau să te autentifici pe site-uri web folosind contul de Facebook conțin elemente de urmărire. Facebook Container va bloca aceste elemente de urmărire și va afișa pictograma de apărare pentru a-ți arăta unde a eliminat elemente de urmărire.",
+    "message": "Chiar dacă nu ești pe Facebook, Facebook te poate urmări online. Butoanele care îți permit să postezi pe Facebook sau să te autentifici pe site-uri web folosind contul de Facebook conțin elemente de urmărire. Facebook Container va bloca aceste elemente de urmărire și va afișa pictograma de gard pentru a-ți arăta unde a eliminat elemente de urmărire.",
     "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Această imagine demonstrează cum va apărea pictograma de gard Facebook Container în pagină, alături de un buton de apreciere Facebook.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Pentru a folosi datele de autentificare Facebook pe alte site-uri, va trebui să le muți la interiorul limitelor. Dă clic pe pictograma de gard și selectează „Permite site în Container Facebook” în partea de jos.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Permite",
@@ -143,7 +151,7 @@
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Barieră Facebook Container cu scut.",
+    "message": "Gard Facebook Container cu scut.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
