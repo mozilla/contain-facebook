@@ -78,21 +78,13 @@
     "message": "Aceste site-uri trebuie să îți acceseze identitatea Facebook (sau să știe cine ești) ca să funcționeze. Înseamnă și că Facebook poate urmări tot ce faci pe aceste site-uri.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Cum știu că Facebook Container funcționează?",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "În afara Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
-  "onboarding3-p1": {
-    "message": "Butoanele care îți permit să apreciezi sau să partajezi pe Facebook sau care te lasă să te autentifici pe site-uri folosind contul de Facebook conțin elemente de urmărire. Facebook Container va bloca aceste elemente de urmărire și va afișa pictograma de barieră pentru a-ți indica unde au fost eliminate elemente de urmărire.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "Această imagine demonstrează cum va apărea pictograma de barieră Facebook Container în pagină, alături de un buton de apreciere Facebook.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "Însă, dacă dai clic pe oricare dintre aceste butoane, Facebook va putea să te urmărească.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-p1": {
+    "message": "Chiar și dacă nu ești pe Facebook, Facebook te poate urmări online. Butoanele care îți permit să postezi pe Facebook sau să te autentifici pe site-uri web folosind contul de Facebook conțin elemente de urmărire. Facebook Container va bloca aceste elemente de urmărire și va afișa pictograma de apărare pentru a-ți arăta unde a eliminat elemente de urmărire.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "Permite",
