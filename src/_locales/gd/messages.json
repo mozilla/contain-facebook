@@ -154,6 +154,14 @@
     "message": "Dhìon sinn thu o Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
+  "trackers-detected-p1": {
+    "message": "Tha tracaichean sna putanan Facebook a nochdas air làraichean seopadaireachd, naidheachdan is feadhainn eile agus innsidh iad dha Facebook càit an robh thu air an lìon. Fiù mur an cleachd thu na putanan ud airson rud a cho-roinneadh no innse gur toil leat rud, cruinnichidh na tracaichean seo dàta mun bhrabhsadh a nì thu fhathast. Bacaidh Facebook Container na tracaichean seo.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Bacaidh Facebook Container na tracaichean seo. Ge-tà, ma bhriogas tu air gin dhe na putanan seo, bheir sin comas dha Facebook do thracadh.",
+    "description": ""
+  },
   "trackers-detected-fence-alt": {
     "message": "Feansa Facebook Container le sgiath.",
     "description": "This is alternative text describing the container fence icon."
