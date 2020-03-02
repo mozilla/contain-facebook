@@ -205,8 +205,44 @@
     "message": "A bheil thu airson an làrach a thoirt air falbh o Facebook Container?",
     "description": ""
   },
+  "remove-site-p1": {
+    "message": "Ma bheir thu air falbh an làrach seo o Facebook Container, chan obraich an gleus a bheir comas dhut clàradh a-steach leis a’ chunntas Facebook agad agus thèid briosgaidean tracadh Facebook a sguabadh às.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "Ma tha thu airson clàradh a-steach leis a’ chunntas Facebook agad a-rithist, bidh agad ris a chur ri Facebook Container às ùr.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "A bheil thu airson tracadh Facebook a cheadachadh air an làrach seo?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Leigidh seo leat clàradh a-steach leis a’ chunntas Facebook agad ach bheir e comas dha Facebook sùil a chumail air na nì thu air an làrach seo.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Chuir Facebook Container am putan seo à comas agus bhac e Facebook o bhith ’gad thracadh air an duilleag seo.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Bhac Facebook Container tracaichean Facebook. Ma chlàraicheas tu a-steach leis a’ chunntas Facebook agad air an làrach seo, bidh comas aig Facebook do thracadh.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "A bheil thu airson cead a thoirt dha Facebook do thracadh an-seo?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Ma tha thu airson clàradh a-steach le Facebook, bidh comas aig Facebook do ghnìomhachd air an làrach seo a thracadh. Bheir sin comas dhaibh dealbh nas iomlaine fhaighinn dhe na nì thu air loidhne.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Na seall seo dhomh a-rithist",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Ma bhriogas tu am putan seo, bheir sin comas dha Facebook do thracadh air an làrach seo.",
     "description": ""
   }
 }
