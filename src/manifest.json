@@ -55,7 +55,10 @@
     ],
 
     "background": {
-        "scripts": ["background.js"]
+        "scripts": [
+          "psl.min.js",
+          "background.js"
+        ]
     },
 
     "content_scripts": [

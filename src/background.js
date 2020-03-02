@@ -1,3 +1,5 @@
+/* global psl */
+
 const FACEBOOK_CONTAINER_DETAILS = {
   name: "Facebook",
   color: "toolbar",
@@ -266,6 +268,27 @@ async function maybeReopenTab (url, tab, request) {
   return {cancel: true};
 }
 
+const rootDomainCache = {};
+
+function getRootDomain(url) {
+  if (url in rootDomainCache) {
+    // After storing 128 entries, it will delete the oldest each time.
+    const returnValue = rootDomainCache[url];
+    if (Object.keys(rootDomainCache).length > 128) {
+      delete rootDomainCache[(Object.keys(rootDomainCache)[0])];
+    }
+    return returnValue;
+  }
+
+  const urlObject = new URL(url);
+  if (urlObject.hostname === "") { return false; }
+  const parsedUrl = psl.parse(urlObject.hostname);
+
+  rootDomainCache[url] = parsedUrl.domain;
+  return parsedUrl.domain;
+
+}
+
 function isFacebookURL (url) {
   const parsedUrl = new URL(url);
   for (let facebookHostRE of facebookHostREs) {
@@ -276,23 +299,13 @@ function isFacebookURL (url) {
   return false;
 }
 
-// TODO: Consider users if accounts.spotify.com already in FBC
-async function supportSiteSubdomainCheck (url) {
-  if (url === "accounts.spotify.com") {
-    await addDomainToFacebookContainer("https://www.spotify.com");
-    await addDomainToFacebookContainer("https://open.spotify.com");
-  }
-  return;
-}
-
 // TODO: refactor parsedUrl "up" so new URL doesn't have to be called so much
 // TODO: refactor fbcStorage "up" so browser.storage.local.get doesn't have to be called so much
 async function addDomainToFacebookContainer (url) {
-  const parsedUrl = new URL(url);
   const fbcStorage = await browser.storage.local.get();
-  fbcStorage.domainsAddedToFacebookContainer.push(parsedUrl.host);
+  const rootDomain = getRootDomain(url);
+  fbcStorage.domainsAddedToFacebookContainer.push(rootDomain);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
-  await supportSiteSubdomainCheck(parsedUrl.host);
 }
 
 async function removeDomainFromFacebookContainer (domain) {
@@ -302,11 +315,10 @@ async function removeDomainFromFacebookContainer (domain) {
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
 }
 
-// TODO: Add PSL Subdomain Check against current list
 async function isAddedToFacebookContainer (url) {
-  const parsedUrl = new URL(url);
   const fbcStorage = await browser.storage.local.get();
-  if (fbcStorage.domainsAddedToFacebookContainer.includes(parsedUrl.host)) {
+  const rootDomain = getRootDomain(url);
+  if (fbcStorage.domainsAddedToFacebookContainer.includes(rootDomain)) {
     return true;
   }
   return false;
@@ -462,6 +474,13 @@ async function containFacebook (request) {
     delete tabsWaitingToLoad[request.tabId];
   }
 
+  // Listen to requests and open Facebook into its Container,
+  // open other sites into the default tab context
+  if (request.tabId === -1) {
+    // Request doesn't belong to a tab
+    return;
+  }
+
   const tab = await browser.tabs.get(request.tabId);
   updateBrowserActionIcon(tab);
 
@@ -469,12 +488,6 @@ async function containFacebook (request) {
   const urlSearchParm = new URLSearchParams(url.search);
   if (urlSearchParm.has("fbclid")) {
     return {redirectUrl: stripFbclid(request.url)};
-  }
-  // Listen to requests and open Facebook into its Container,
-  // open other sites into the default tab context
-  if (request.tabId === -1) {
-    // Request doesn't belong to a tab
-    return;
   }
 
   return maybeReopenTab(request.url, tab, request);
@@ -570,15 +583,24 @@ function setupWindowsAndTabsListeners() {
   setupWebRequestListeners();
   setupWindowsAndTabsListeners();
 
-  browser.runtime.onMessage.addListener( (message, {url}) => {
-    if (message === "what-sites-are-added") {
+  async function messageHandler(request, sender) {
+    switch (request.message) {
+    case "what-sites-are-added":
       return browser.storage.local.get().then(fbcStorage => fbcStorage.domainsAddedToFacebookContainer);
-    } else if (message.removeDomain) {
-      removeDomainFromFacebookContainer(message.removeDomain).then( results => results );
-    } else {
-      addDomainToFacebookContainer(url).then( results => results);
+    case "remove-domain-from-list":
+      removeDomainFromFacebookContainer(request.removeDomain).then( results => results );
+      break;
+    case "add-domain-to-list":
+      addDomainToFacebookContainer(sender.url).then( results => results);
+      break;
+    case "get-root-domain":
+      return getRootDomain(request.url);
+    default:
+      throw new Error("Unexpected message!");
     }
-  });
+  }
+
+  browser.runtime.onMessage.addListener(messageHandler);
 
   maybeReopenAlreadyOpenTabs();
 
