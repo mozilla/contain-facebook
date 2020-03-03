@@ -14,10 +14,10 @@
     }
   },
   "in-fbc-p1": {
-    "message": "Agora Facebook pue rastrexate nesti sitiu. Pa quitalu de Facebook Container. esbilla Sitios permitíos en Facebook Container. y desanícialu de la llista."
+    "message": "Agora Facebook pue rastrexate nesti sitiu. Pa quitalu de Facebook Container. esbilla Sitios permitíos en Facebook Container y desanícialu de la llista."
   },
   "notOnFacebookHeader": {
-    "message": "$URL$ nun ta nel Facebook Container.",
+    "message": "$URL$ nun ta en Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
