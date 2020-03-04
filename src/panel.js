@@ -181,7 +181,10 @@ const setCustomSiteButtonEvent = async (panelId) => {
   if (shouldShowRemoveSiteButton) {
     const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
     removeSiteFromContainerLink.addEventListener(
-      "click", async () => removeSiteFromContainer()
+      "click", async () => {
+        const activeRootDomain = await getActiveRootDomainFromBackground();
+        buildRemoveSitePanel(activeRootDomain);
+      }
     );
     return;
   }
@@ -553,17 +556,6 @@ const buildAllowedSitesPanel = async(panelId) => {
 
   addOnboardingListeners(panelId);
   getLocalizedStrings();
-};
-
-const removeSiteFromContainer = async () => {
-  const activeRootDomain = await getActiveRootDomainFromBackground();
-
-  await browser.runtime.sendMessage({
-    message: "remove-domain-from-list",
-    removeDomain: activeRootDomain
-  });
-  browser.tabs.reload();
-  window.close();
 };
 
 const addSiteToContainer = async () => {
