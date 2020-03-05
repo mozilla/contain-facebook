@@ -1,0 +1,81 @@
+body {
+  --white: #F2F2F3;
+  --black: #202023;
+  --borders: 1px solid #ededf0;
+  font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  font-size: 16px;
+  min-height: 300px;
+}
+
+header {
+  border-bottom: var(--borders);
+  padding: 0.5rem 0;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+section {
+  border-bottom: var(--borders);
+  padding: 0.5rem 0;
+}
+
+main h2 {
+  font-size: 1rem;
+}
+
+.tooltip {
+	display: none;
+	padding: 5px 10px 10px;
+	width: 250px;
+	max-width: 250px;
+	background: var(--white);
+	z-index: 9999;
+	position: absolute;
+  left: 50%;
+  top: 50%;
+	/* left: calc( 100% + 0.5em);
+	top: 50%; */
+	color: var(--black);
+	font-size: 1rem;
+	line-height: 17px;
+	border: 1px solid #BEBEBF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.tooltip-parent:hover .tooltip {
+  display: block;
+}
+
+.tooltip-parent {
+  position: relative;
+  display: inline-block;
+}
+
+.settings-list > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.setting-item {
+  position: relative;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --borders: 1px solid #4C4C4E;
+
+    background: var(--black);
+    color: var(--white);
+  }
+}
