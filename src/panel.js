@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 // Build non-onboarding panel
 const buildPanel = async(panelId) => {
   const { page, fragment } = setUpPanel(panelId);
-  addHeader(fragment);
+  addHeaderWithGearIcon(fragment);
 
   const contentWrapper = addDiv(fragment, "main-content-wrapper");
   addSubhead(contentWrapper, panelId);
@@ -399,8 +399,16 @@ const buildPanel = async(panelId) => {
 
   const onboardingLinks = document.querySelectorAll(".open-onboarding");
   const allowedSitesLink = document.querySelector(".open-allowed-sites");
+  const settingsLink = document.querySelector(".btn-settings");
 
   allowedSitesLink.addEventListener("click", () => buildAllowedSitesPanel("sites-allowed"));
+  settingsLink.addEventListener("click", () => {
+    browser.tabs.create({
+      url: "/options.html",
+      active: true
+    });
+    window.close();
+  });
 
   await setCustomSiteButtonEvent(panelId);
 
@@ -471,6 +479,13 @@ const addHeaderWithBackArrow = (fragment) => {
   return fragment;
 };
 
+const addHeaderWithGearIcon = (fragment) => {
+  let el = addHeader(fragment);
+  el = document.createElement("button");
+  el.classList.add("btn-settings", "gear");
+  fragment.appendChild(el);
+  return fragment;
+};
 
 const defaultAllowedSites = [
   "instagram.com",
