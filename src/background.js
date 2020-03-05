@@ -56,11 +56,17 @@ async function buildBlockList() {
 }
 
 async function updateSettings(data){
+  let fbcStorage = await browser.storage.local.get();
+
   await browser.storage.local.set({
     "settings": data
   });
-  clearFacebookCookies();
-  await generateFacebookHostREs();
+
+  // Recache Blocked Domains List
+  if (data.blockInstagram != fbcStorage.settings.blockInstagram) {
+    clearFacebookCookies();
+    await generateFacebookHostREs();
+  }
 }
 
 const MAC_ADDON_ID = "@testpilot-containers";
