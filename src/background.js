@@ -11,9 +11,6 @@ const FACEBOOK_DOMAINS = [
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net", "facebookrecruiting.com",
 
-  "instagram.com",
-  "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
-
   "messenger.com", "m.me", "messengerdevelopers.com", "facebook.messenger.com",
 
   "atdmt.com",
@@ -32,9 +29,39 @@ const FACEBOOK_DOMAINS = [
   "novi.com"
 ];
 
+const INSTAGRAM_DOMAINS = [
+  "instagram.com",
+  "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
+];
+
 const DEFAULT_SETTINGS = {
-  hideRelayEmailBadges: false,
+  blockInstagram: true,
+  badgeContent: true,
 };
+
+async function buildBlockList() {
+  let fbcStorage = await browser.storage.local.get();
+
+  if (!fbcStorage.settings) {
+    await browser.storage.local.set({
+      settings: DEFAULT_SETTINGS
+    });
+    fbcStorage = await browser.storage.local.get();
+  }
+
+  if (fbcStorage.settings.blockInstagram){
+    return FACEBOOK_DOMAINS.concat(INSTAGRAM_DOMAINS);
+  }
+  return FACEBOOK_DOMAINS;
+}
+
+async function updateSettings(data){
+  await browser.storage.local.set({
+    "settings": data
+  });
+  clearFacebookCookies();
+  await generateFacebookHostREs();
+}
 
 const MAC_ADDON_ID = "@testpilot-containers";
 const RELAY_ADDON_ID = "private-relay@firefox.com";
@@ -134,9 +161,10 @@ async function setupMACAddonListeners () {
 
 async function sendJailedDomainsToMAC () {
   try {
+    const BLOCKED_DOMAINS = await buildBlockList();
     return await browser.runtime.sendMessage(MAC_ADDON_ID, {
       method: "jailedDomains",
-      urls: FACEBOOK_DOMAINS.map((domain) => {
+      urls: BLOCKED_DOMAINS.map((domain) => {
         return `https://${domain}/`;
       })
     });
@@ -205,8 +233,10 @@ function shouldCancelEarly (tab, options) {
   return false;
 }
 
-function generateFacebookHostREs () {
-  for (let facebookDomain of FACEBOOK_DOMAINS) {
+async function generateFacebookHostREs () {
+  const BLOCKED_DOMAINS = await buildBlockList();
+  facebookHostREs.length = 0;
+  for (let facebookDomain of BLOCKED_DOMAINS) {
     facebookHostREs.push(new RegExp(`^(.*\\.)?${facebookDomain}$`));
   }
 }
@@ -218,16 +248,18 @@ async function clearFacebookCookies () {
     cookieStoreId: "firefox-default"
   });
 
+  const BLOCKED_DOMAINS = await buildBlockList();
+
   let macAssignments = [];
   if (macAddonEnabled) {
-    const promises = FACEBOOK_DOMAINS.map(async facebookDomain => {
+    const promises = BLOCKED_DOMAINS.map(async facebookDomain => {
       const assigned = await getMACAssignment(`https://${facebookDomain}/`);
       return assigned ? facebookDomain : null;
     });
     macAssignments = await Promise.all(promises);
   }
 
-  FACEBOOK_DOMAINS.map(async facebookDomain => {
+  BLOCKED_DOMAINS.map(async facebookDomain => {
     const facebookCookieUrl = `https://${facebookDomain}/`;
 
     // dont clear cookies for facebookDomain if mac assigned (with or without www.)
@@ -672,7 +704,7 @@ async function checkIfTrackersAreDetected(sender) {
     return;
   }
   clearFacebookCookies();
-  generateFacebookHostREs();
+  await generateFacebookHostREs();
   setupWebRequestListeners();
   setupWindowsAndTabsListeners();
 
