@@ -240,5 +240,9 @@
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Не показывать в следующий раз",
     "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Если вы щёлкните по этой кнопке, Фейсбук сможет отследить ваше посещение этого сайта.",
+    "description": ""
   }
 }
