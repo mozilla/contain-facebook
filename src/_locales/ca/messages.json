@@ -102,6 +102,10 @@
     "message": "En aquesta imatge es mostra com es veurà el botó per afegir un lloc en el Facebook Container.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
+  "onboarding5-p2": {
+    "message": "Això us permet iniciar la sessió amb el Facebook, però també permet al Facebook fer el seguiment de la vostra activitat en aquest lloc.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Permet",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -209,6 +213,14 @@
     "message": " Si voleu tornar a utilitzar «Inicia la sessió amb el Facebook», haureu d'afegir-lo de nou al Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Voleu permetre el seguiment del Facebook en aquest lloc?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Això us permet iniciar la sessió amb el Facebook, però també permet al Facebook fer el seguiment de la vostra activitat en aquest lloc.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "El Facebook Container ha desactivat aquest botó i ha blocat el Facebook per tal que no sàpiga que heu visitat aquesta pàgina.",
     "description": ""
@@ -227,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "No tornis a mostrar-ho",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Si feu clic en aquest botó, el Facebook podrà fer el seguiment de la vostra visita en aquest lloc.",
     "description": ""
   }
 }
