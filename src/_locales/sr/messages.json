@@ -153,5 +153,84 @@
   "trackers-detected-subhead": {
     "message": "Успешно смо вас заштитили од Facebook-а.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "Опције на Facebook-у које се појављују на страницама за куповину, вести и остале, садрже тракере који поручују Facebook-у где сте били на вебу, односно које сте странице посетили. Чак и ако никада не користите ове опције да лајкујете и делите, тракери и даље могу прикупљати податке о вашем претраживању. Facebook Container блокира ове програме за праћење.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container блокира ове програме за праћење. Међутим, ако кликнете на било који од ових опција, Facebook ће и даље моће да вас прати.",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "Facebook Container ограда са штитом.",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "Дозвољене странице у Facebook Container-у",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "УКЉУЧЕНЕ СТРАНИЦЕ",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "Ништа",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "СТРАНИЦЕ КОЈЕ СТЕ ДОЗВОЛИЛИ",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "sites-added-p1": {
+    "message": "Facebook Container ставља странице у власништву Facebook-а унутар граница. Можете дозволити и друге странице унутар граница, али ово омогућава Facebook-у да само још више прати ваше веб претраге."
+  },
+  "remove": {
+    "message": "Уклони",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "Дозволи странице у Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Уклони странице из Facebook Container-а",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Пошто се ради о страници у власништву Facebook-а, није је могуће уклонити из Facebook Container-а.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "Уклонити страницу из Facebook Container-а?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "Уклањањем ове странице из Facebook Container-а значи да опција Пријавите се за Facebook неће више радити и да ће се брисати Facebook-ови колачићи за праћење.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "Ако желите поново да се пријавите путем Facebook-а, мораћете да га додате поново у Facebook Container.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Дозволити Facebook праћења на овој веб страници?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Ово вам омогућава пријаву преко Facebook-а, али и дозвољава Facebook-у да прати ваше активности на тој веб страници.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container је онемогућио ову опцију и блокирао Facebook праћење ваше посете овој страници.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container је блокирао Facebook колачиће за праћење. Ако користите опцију да се пријавите преко Facebook-а на овој страници, Facebook ће вас моћи пратити.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Дозволити Facebook-у да вас прати овде?",
+    "description": ""
   }
 }
