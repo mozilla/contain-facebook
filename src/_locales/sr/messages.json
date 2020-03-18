@@ -85,5 +85,73 @@
   "onboarding4-p1": {
     "message": "Чак и када нисте на Facebook-у, Facebook може да вас прати по интернету. Опције које вам омогућавају да објављујете садржај на свом Facebook-у или да се пријавите на веб странице помоћу Facebook налога, садрже програме за праћење. Facebook Container ће блокирати те програме и приказати иконицу ограде тамо где су тракери уклоњени.",
     "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Ова слика приказује како ће се Facebook Container иконица ограде појавити на страници поред Facebook Like опције.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Пријављивање преко Facebook-а на другим страницама",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Да бисте се повезали са другим веб страницама преко Facebook-а, мораћете да их поставите у Facebook Container. Кликните на иконицу ограде и на дну одаберите ‘Дозволи страницу у Facebook Container’.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Ова слика приказује како ће се опција за додавање веб странице у Facebook Container појавити на панелу.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Ово вам омогућава пријаву преко Facebook-а, али и дозвољава Facebook-у да прати ваше активности на тој веб страници.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
+  "btn-allow": {
+    "message": "Дозволи",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "Поништи",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "Даље",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "Назад",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "Готово",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "Вратите се на претходни панел.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Иди на Како Facebook Container функционише",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "Нису откривени Facebook програми за праћење",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container није открио Facebook програме за прећење на овој страници. Међутим, страница може да садржи друге типове тракера.",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "Сазнај више",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Како Facebook Container функционише",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "Успешно смо вас заштитили од Facebook-а.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }
 }
