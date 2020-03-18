@@ -1,4 +1,43 @@
 {
+  "extensionDescription": {
+    "message": "Facebook Container изолује вашу Facebook активност од остатка ваше веб активности, како би спречио да вас Facebook прати ван Facebook странице користећи колачиће трећих страна.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ је у Facebook Container-у.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "in-fbc-p1": {
+    "message": "Facebook сада може да вас прати на овој страници. Да бисте уклонили ову страницу из Facebook Container-а, у Facebook Container-у одаберите Sites Allowed и уклоните је са листе."
+  },
+  "on-facebook-subhead": {
+    "message": "На Facebook-у или једном од места изолованих од Facebook Container-а",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p1": {
+    "message": "Ова иконица се појављује на Firefox адресној траци када посећујете странице којима Facebook управља или странице које сте додали у Facebook Container.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "Ове странице морају да приступе вашем Facebook идентитету (или да знају ко сте) да би могле да раде како треба. То такође значи да Facebook може да прати све што радите на овим страницама.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
+  "notOnFacebookHeader": {
+    "message": "$URL$ није у Facebook Container-у.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.google.com"
+      }
+    }
+  },
   "facebookContainer": {
     "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
