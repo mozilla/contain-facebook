@@ -81,5 +81,9 @@
   "onboarding4-subhead": {
     "message": "Изван Facebook-а",
     "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Чак и када нисте на Facebook-у, Facebook може да вас прати по интернету. Опције које вам омогућавају да објављујете садржај на свом Facebook-у или да се пријавите на веб странице помоћу Facebook налога, садрже програме за праћење. Facebook Container ће блокирати те програме и приказати иконицу ограде тамо где су тракери уклоњени.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
   }
 }
