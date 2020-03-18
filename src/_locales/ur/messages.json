@@ -7,9 +7,9 @@
     "message": "Facebook Container استعمال کر رہے ہیں",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "میں کیسے جان سکتا ہوں کہ  Facebook Container کام کررہا ہے؟",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Facebook کے باہر",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "ہونے دیں",
@@ -35,12 +35,20 @@
     "message": "مزید سیکھیں",
     "description": "This is a link that opens a page with more information about Facebook Container."
   },
+  "how-fbc-works": {
+    "message": "Facebook Container کے کام کرنے کا طریقا",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
   "no-sites-added": {
     "message": "کوئی نہیں",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   },
   "remove": {
     "message": "ہٹائیں",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Facebook کو یہاں آپ کو ٹریک کرنے کی اجازت دیں؟",
     "description": ""
   }
 }
