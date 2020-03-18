@@ -232,5 +232,17 @@
   "inPageUI-tooltip-prompt-p1": {
     "message": "Дозволити Facebook-у да вас прати овде?",
     "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Ако желите да се пријавите путем Facebook-а, Facebook ће онда моћи да прати вашу активност на овој страници. То им може помоћи да израде потпунију слику вашег онлајн живота.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Не показуј ми поново",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Ако одаберете ову опцију, Facebook ће моћи пратити вашу посету овој страници.",
+    "description": ""
   }
 }
