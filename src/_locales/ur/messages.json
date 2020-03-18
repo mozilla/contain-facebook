@@ -12,7 +12,7 @@
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
-    "message": "ہونے دیں",
+    "message": "اجازت دیں",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
   },
   "btn-cancel": {
