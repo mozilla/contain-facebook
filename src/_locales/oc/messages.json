@@ -70,9 +70,21 @@
     "message": "L’icòna de barrièra de Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
+  "onboarding2-p1": {
+    "message": "Aquesta icòna apareis a la barra d’adreça quand consultatz de sites, coma Facebook.com, que son dubèrts dins un contenidor Facebook Container.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "Aqueste sites an d’accedir a vòstra identitat Facebook (o saber qui sètz) per foncionar. Aquò significa tanben que Facebook pòt pistar tot çò que fasètz sus aquestes sites.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding4-subhead": {
     "message": "Fòra de Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Aqueste imatge mòstra cossí l’icòna de la barrièra de Facebook Container apareis al costat del boton « M’agrada » de Facebook.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
     "message": "Se connectar via Facebook sus d’autres sites",
@@ -170,12 +182,20 @@
     "message": "Volètz permetre a Facebook de vos pistar sus aqueste site ?",
     "description": ""
   },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container a blocat de traçadors Facebook. Se vos connectatz amb Facebook sus aqueste site, poirà vos pistar.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-p1": {
     "message": "Volètz permetre a Facebook de vos pistar aquí ?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Me mostrar pas mai aquò",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Se clicatz aqueste boton, Facebook poirà vos pistar sus aqueste site.",
     "description": ""
   }
 }
