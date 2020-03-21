@@ -20,6 +20,14 @@
     "message": "Sus Facebook e suls sites isolats per Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "on-facebook-p1": {
+    "message": "Aquesta icòna apareis a la barra d’adreça de Firefox quand consultatz de sites que son gerits per Facebook o de sites qu’ajustèretz a Facebook Container.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "Aqueste sites an d’accedir a vòstra identitat Facebook (o saber qui sètz) per foncionar. Aquò significa tanben que Facebook pòt pistar tot çò que fasètz sus aquestes sites.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
   "notOnFacebookHeader": {
     "message": "$URL$ se tròba pas dins Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
@@ -45,6 +53,18 @@
   "onboarding1-subhead": {
     "message": "Utilizacion de Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p1": {
+    "message": "Facebook pòt pistar vòstra navegacion en delai de Facebook.com. Per exemple los botons « M’agrada » e « Partejar » pòdon pistar ont sètz anat — amai sus las paginas qu’avètz pas aimadas o partejadas.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "Facebook Container estrema los sites Facebook de la rèsta del web, es doncas mai complicat per Facebook de vos pistar en linha.",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "Sus Facebook e suls sites isolats per Facebook Container",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding2-alt": {
     "message": "L’icòna de barrièra de Facebook Container",
