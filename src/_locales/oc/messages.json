@@ -182,6 +182,14 @@
     "message": "Volètz permetre a Facebook de vos pistar sus aqueste site ?",
     "description": ""
   },
+  "add-site-p1": {
+    "message": "Aquò vos permet de vos connectar via Facebook, mas permet a Facebook de vos pistar sus aqueste site.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container a desactivat aqueste boton e a empachat Facebook de pistar vòstra visita sus aquesta pagina.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-login": {
     "message": "Facebook Container a blocat de traçadors Facebook. Se vos connectatz amb Facebook sus aqueste site, poirà vos pistar.",
     "description": ""
