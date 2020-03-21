@@ -13,6 +13,13 @@
       }
     }
   },
+  "in-fbc-p1": {
+    "message": "Ara Facebook pòt vos pistar sus aqueste site. Per suprimir aqueste site de Facebook Container, seleccionatz « Sites autorizats » dins Facebook Container e tiratz-lo de la lista."
+  },
+  "on-facebook-subhead": {
+    "message": "Sus Facebook e suls sites isolats per Facebook Container",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "notOnFacebookHeader": {
     "message": "$URL$ se tròba pas dins Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
