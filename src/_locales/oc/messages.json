@@ -90,6 +90,10 @@
     "message": "Se connectar via Facebook sus d’autres sites",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-img": {
+    "message": "Aqueste imatge mòstra cossí lo boton per apondre un site a Facebook Container apareisserà pel panèl.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
   "onboarding5-p2": {
     "message": "Aquò vos permet de vos connectar via Facebook mas permet a Facebook de vos pistar sus aqueste site.",
     "description": "This is the second paragraph on the fifth onboarding panel."
@@ -142,6 +146,10 @@
     "message": "Vos avèm protegit de Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
+  "trackers-detected-p2": {
+    "message": "Facebook Container bloca aqueles traçadors. Pasmens, se clicatz qual que siá d’aqueles botons Facebook poirà vos pistar.",
+    "description": ""
+  },
   "trackers-detected-fence-alt": {
     "message": "Barrièra de Facebook Container amb un escut.",
     "description": "This is alternative text describing the container fence icon."
@@ -174,8 +182,20 @@
     "message": "Suprimir lo site de Facebook Container",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
+  "button-remove-site-tooltip": {
+    "message": "Coma aqueste site es proprietat de Facebook, pòt pas èsser tirat de Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
     "message": "Volètz suprimir lo site de Facebook Container ?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "Se tiratz aqueste site de Facebook Container, la foncion de connexion amb Facebook foncionarà pas mai e los cookies de seguiment seràn suprimits.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "Se volètz tornar utilizar la foncion de connexion amb Facebook, auretz de tornar apondre aqueste site a Facebook Container.",
     "description": ""
   },
   "add-site-subhead": {
@@ -196,6 +216,10 @@
   },
   "inPageUI-tooltip-prompt-p1": {
     "message": "Volètz permetre a Facebook de vos pistar aquí ?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Se volètz utilizar la foncion de connexion amb Facebook, alara Facebook poirà pistar vòstra activitat sus aqueste site. Aquò pòt lor ajudar a construire un perfil mai complèt de vòstra vida en linha.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
