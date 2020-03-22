@@ -102,6 +102,10 @@
     "message": "Iste imagine monstra como le button pro adder un sito a Facebook Container appare in le pannello.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
+  "onboarding5-p2": {
+    "message": "Isto permitte aperir session con Facebook, ma etiam permitte que Facebook tracia tu activitate sur iste sito.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Permitter",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -209,6 +213,14 @@
     "message": " Si tu vole aperir session con Facebook de novo, tu debe re-includer le sito in Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Permitter a Facebook de traciar te sur iste sito?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Isto te permitte aperir session con Facebook, ma permitte a Facebook de sequer lo que tu face sur iste sito.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container ha disactivate iste button e blocate Facebook de traciar tu visita a iste pagina.",
     "description": ""
@@ -227,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Non monstrar me isto de novo",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Si tu clicca sur iste button, Facebook potera traciar tu activitate sur iste sito.",
     "description": ""
   }
 }
