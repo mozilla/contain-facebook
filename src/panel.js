@@ -101,6 +101,26 @@ const addFullWidthButton = (fragment, listenerClass) => {
 
   let contentWrapper = addDiv(fragment, "fw-bottom-btn");
   contentWrapper.appendChild(button);
+  //adds the ability to change background text color to suit the current theme color
+  /* eslint-disable indent */
+      function style(themeInfo) {
+      if (themeInfo.colors) 
+      {
+      const link_button=document.getElementsByClassName("highlight-on-hover");
+      for(var i=0;i<link_button.length;i++){
+          link_button[i].style.color =themeInfo.colors.tab_background_text;
+      }
+      }
+    
+    }
+    async function getThemeInfo() 
+    {
+      var themeInfo = await browser.theme.getCurrent();
+
+      style(themeInfo);
+    }
+
+    getThemeInfo();
   return button;
 };
 
@@ -109,6 +129,12 @@ const addTooltip = (wrapper, stringId) => {
   div["id"] = stringId;
   setClassAndAppend(wrapper, div);
 };
+
+
+
+
+
+
 
 
 const addSpan = (wrapper, stringId) => {

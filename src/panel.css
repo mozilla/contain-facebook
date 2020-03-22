@@ -211,6 +211,7 @@ a:hover {
 
 .highlight-on-hover span {
   pointer-events: none;
+
 }
 
 .allowed-site-wrapper {
@@ -263,7 +264,7 @@ a:hover {
 
 .allowed-site-wrapper:hover,
 .highlight-on-hover:hover {
-  background-color: var(--grey20);
+  background-color: rgb(94, 141, 230);
   transition: var(--transition);
 }
 
