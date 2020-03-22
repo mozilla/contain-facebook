@@ -33,7 +33,7 @@ Patches should be submitted as pull requests. When submitting patches as PRs:
 - Run `npm test` to make sure all tests still pass.
 - Please do not include merge commits in pull requests; include only commits with the new relevant code.
 
-See the main [README](https://github.com/mozilla/contain-facebook/blob/master/README.md) for information on prerequisites, installing, running and testing.
+See the main [README](./README.md) for information on prerequisites, installing, running and testing.
 
 
 
