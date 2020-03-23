@@ -60,6 +60,6 @@ for just the linter
 
 ### Links
 
-- [License](./LICENSE.txt)
+- [License](./LICENSE)
 - [Contributing](./CONTRIBUTING.md)
 - [Code Of Conduct](./CODE_OF_CONDUCT.md)
