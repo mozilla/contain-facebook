@@ -94,9 +94,17 @@
     "message": "Prijava s Facebookom na drugih spletnih mestih",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "Če želite uporabljati Facebook za prijavo na drugih straneh, jih boste morali premakniti v vsebnik. Kliknite ikono ograje in na dnu izberite \"Dovoli stran v Facebook Containerju\".",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
   "onboarding5-img": {
     "message": "Ta slika prikazuje, kako se bo gumb za dodajanje spletnega mesta v Facebook Container prikazal na plošči.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "S tem bo omogočena prijava s Facebookom, vendar bo Facebook lahko sledil vaši dejavnosti na tej strani.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Dovoli",
@@ -203,6 +211,14 @@
   },
   "remove-site-p2": {
     "message": "Če želite ponovno uporabiti možnost prijave z računom Facebook, boste morali stran dodati nazaj v Facebook Container.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Dovolite Facebooku, da vam sledi na tej strani?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "S tem bo omogočena prijava s Facebookom, vendar bo Facebook lahko sledil vaši dejavnosti na tej strani.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
