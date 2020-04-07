@@ -82,6 +82,10 @@
     "message": "Utanfor Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "Dette bildet demonstrerer korleis gjerdeikonet til Facebook Container vil visast på nettsida ved sidan av ein Facebook Likar-knapp.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
   "onboarding5-subhead": {
     "message": "Logg inn med Facebook på andre nettstadar",
     "description": "This is the subhead for the fifth onboarding panel."
@@ -135,7 +139,7 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "Facebook-knappar som visest på nettbutikkar, nyhende-, og andre nettstadar inneheld sporfølgjarar som fortel Facebook kvar du har vore på nettet. Til og med viss du aldri brukar desse knappane til å like eller dele, kan sporfølgjarane framleis samle data om nettlesinga di. Facebook Container blokkerer desse sporfølgjarane.",
+    "message": "Facebook-knappar som vert viste på nettbutikkar, nyhende-, og andre nettstadar inneheld sporfølgjarar som fortel Facebook kvar du har vore på nettet. Til og med dersom du aldri brukar desse knappane til å like eller dele, kan sporfølgjarane framleis samle data om nettlesinga di. Facebook Container blokkerer desse sporfølgjarane.",
     "description": ""
   },
   "trackers-detected-p2": {
