@@ -98,6 +98,14 @@
     "message": "For å bruke Facebook-pålogginga di på andre nettstadar, må du flytte dei innanfor grensa. Klikk på gjerdeikonet og vel «Tillat nettstad i Facebook Container» nedst.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
+  "onboarding5-img": {
+    "message": "Dette bildet viser korleis knappen for å leggje til ein nettstad til Facebook Container vil bli vist i panelet.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Dette lar deg logge på med Facebook, men gjer at Facebook kan spore det du gjer på denne nettstaden.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Tillat",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -209,6 +217,10 @@
     "message": "Tillate Facebook-sporing på denne nettstaden?",
     "description": ""
   },
+  "add-site-p1": {
+    "message": "Dette lar deg logge på med Facebook, men gjer at Facebook kan følgje med på det du gjer på denne nettstaden.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container har deaktivert denne knappen og blokkert Facebook frå å spore deg når du besøkjer denne nettsida.",
     "description": ""
@@ -227,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Ikkje vis meg dette meir",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Dersom du klikkar på denne knappen, vil Facebook kunne spore besøket ditt på denne nettstaden.",
     "description": ""
   }
 }
