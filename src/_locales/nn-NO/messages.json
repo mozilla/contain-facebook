@@ -94,6 +94,10 @@
     "message": "Logg inn med Facebook på andre nettstadar",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "For å bruke Facebook-pålogginga di på andre nettstadar, må du flytte dei innanfor grensa. Klikk på gjerdeikonet og vel «Tillat nettstad i Facebook Container» nedst.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Tillat",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
