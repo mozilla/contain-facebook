@@ -58,6 +58,10 @@
     "message": "Facebook 외부",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding5-p2": {
+    "message": "이를 통해 Facebook으로 로그인 할 수 있지만, Facebook은 해당 사이트에서의 당신의 활동을 추적 할 수 있게 됩니다.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "허가",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -133,6 +137,18 @@
     "message": "제거",
     "description": ""
   },
+  "button-allow-site": {
+    "message": "Facebook 컨테이너에 사이트 허용",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Facebook 컨테이너에서 사이트 제거",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "이 사이트는 Facebook 소유 사이트이므로, Facebook 컨테이너에서 제거 할 수 없습니다.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
     "message": "Facebook Container에서 사이트를 제거하시겠습니까?",
     "description": ""
@@ -143,6 +159,14 @@
   },
   "remove-site-p2": {
     "message": " Facebook으로 로그인 기능을 다시 사용하고 싶으시다면, Facebook Container에 다시 추가해야 합니다.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Facebook이 이 사이트에서 추적하는 것을 허용하시겠습니까?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "이것은 당신이 Facebook을 이용해서 로그인할 수 있게 해주지만, Facebook이 당신이 이 사이트에서 수행한 작업을 추적할 수 있도록 허용하게 됩니다.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
@@ -159,6 +183,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "다시 보지 않기",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "이 버튼을 클릭하면 Facebook에서 이 사이트 방문을 추적 할 수 있습니다.",
     "description": ""
   }
 }
