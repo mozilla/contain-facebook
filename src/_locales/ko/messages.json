@@ -1,69 +1,80 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container는 Facebook이 제 3자 쿠키를 이용해 Facebook 이외의 사이트에서 여러분을 추적하는 활동을 방지하기 위해, 여러분의 Facebook 활동을 다른 웹 활동과 분리합니다.", 
+    "message": "Facebook Container는 Facebook이 제 3자 쿠키를 이용해 Facebook 이외의 사이트에서 여러분을 추적하는 활동을 방지하기 위해, 여러분의 Facebook 활동을 다른 웹 활동과 분리합니다.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ 이 Facebook Container 안에 있습니다.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ 이 Facebook Container 안에 있습니다.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
+  "in-fbc-p1": {
+    "message": "Facebook은 이제 이 사이트에서 당신을 추적할 수 있습니다. Facebook 컨테이너에서 이 사이트를 제거하려면, '허용된 사이트'를 선택한 다음 리스트에서 제거하세요."
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$이 Facebook Container 밖에 있습니다.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$이 Facebook Container 밖에 있습니다.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "이 웹사이트는 Facebook Container 밖에 있습니다. 이는 Facebook이 웹 환경에서 여러분을 추적하기 어렵게 만들어줄 것입니다.", 
+    "message": "이 웹사이트는 Facebook Container 밖에 있습니다. 이는 Facebook이 웹 환경에서 여러분을 추적하기 어렵게 만들어줄 것입니다.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "이 사이트는 Facebook Container 밖에 있습니다.", 
+    "message": "이 사이트는 Facebook Container 밖에 있습니다.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
+  "facebookContainer": {
+    "message": "Facebook 컨테이너",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "onboarding1-subhead": {
+    "message": "Facebook 컨테이너 사용",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
   "sites-added-p1": {
     "message": "Facebook Container는 Facebook이 소유한 사이트를 테두리 안으로 집어넣습니다. 다른 사이트도 테두리 안에 넣을 수 있으나, 이는 Facebook이 사용자의 브라우징을 더 추적하도록 허용하는 것입니다."
-  }, 
+  },
   "remove": {
-    "message": "제거", 
+    "message": "제거",
     "description": ""
-  }, 
+  },
   "remove-site-subhead": {
-    "message": "Facebook Container에서 사이트를 제거하시겠습니까?", 
+    "message": "Facebook Container에서 사이트를 제거하시겠습니까?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Facebook Container에서 이 사이트를 제거하는 것은 Facebook으로 로그인 기능이 더이상 작동하지 않고, Facebook 추적 쿠키가 삭제됨을 의미합니다.", 
+    "message": "Facebook Container에서 이 사이트를 제거하는 것은 Facebook으로 로그인 기능이 더이상 작동하지 않고, Facebook 추적 쿠키가 삭제됨을 의미합니다.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Facebook으로 로그인 기능을 다시 사용하고 싶으시다면, Facebook Container에 다시 추가해야 합니다.", 
+    "message": " Facebook으로 로그인 기능을 다시 사용하고 싶으시다면, Facebook Container에 다시 추가해야 합니다.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container는 이 버튼을 비활성화하였으며 Facebook이 이 페이지의 방문을 추적하는 것을 차단했습니다.", 
+    "message": "Facebook Container는 이 버튼을 비활성화하였으며 Facebook이 이 페이지의 방문을 추적하는 것을 차단했습니다.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container는 Facebook 추적기를 차단하였습니다. 이 사이트에서 Facebook으로 로그인 기능을 사용하시면, Facebook이 사용자를 추적할 수 있습니다.", 
+    "message": "Facebook Container는 Facebook 추적기를 차단하였습니다. 이 사이트에서 Facebook으로 로그인 기능을 사용하시면, Facebook이 사용자를 추적할 수 있습니다.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "여기서 Facebook이 사용자를 추적하도록 허가하시겠습니까?", 
+    "message": "여기서 Facebook이 사용자를 추적하도록 허가하시겠습니까?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "다시 보지 않기", 
+    "message": "다시 보지 않기",
     "description": ""
   }
 }
