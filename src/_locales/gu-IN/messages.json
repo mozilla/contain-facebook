@@ -1,212 +1,196 @@
 {
   "extensionDescription": {
-    "message": "Facebook કંટેનર તમારી Facebook પ્રવૃત્તિને તમારી બાકીની વેબ પ્રવૃત્તિથી અલગ કરે છે જેથી Facebook ને તૃતીય પક્ષ કૂકીઝ દ્વારા તમારી વેબસાઇટ પર ટ્રૅક કરવાથી અટકાવી શકાય.", 
+    "message": "Facebook કંટેનર તમારી Facebook પ્રવૃત્તિને તમારી બાકીની વેબ પ્રવૃત્તિથી અલગ કરે છે જેથી Facebook ને તૃતીય પક્ષ કૂકીઝ દ્વારા તમારી વેબસાઇટ પર ટ્રૅક કરવાથી અટકાવી શકાય.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ Facebook Container માં છે.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ Facebook Container માં છે.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook હવે આ સાઇટ પર તમને ટ્રૅક કરી શકે છે. Facebook Containerથી આ સાઇટને દૂર કરવા માટે, Facebook Containerમાં મંજૂર સાઇટ્સ પસંદ કરો અને સૂચિમાંથી તેને દૂર કરો."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Facebook પર અને Facebook કન્ટેનર સીમામાં સાઇટ્સ", 
+    "message": "Facebook પર અને Facebook કન્ટેનર સીમામાં સાઇટ્સ",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "આ ચિન્હ Firefox ના એડ્રેસ બાર માં આવશે જયારે તમે Facebook માલિકી ની સાઈટ અથવા Facebook Container માં ઉમેરેલી સાઇટ્સ છે તેની મુલાકાત લેશો ત્યારે.", 
+    "message": "આ ચિન્હ Firefox ના એડ્રેસ બાર માં આવશે જયારે તમે Facebook માલિકી ની સાઈટ અથવા Facebook Container માં ઉમેરેલી સાઇટ્સ છે તેની મુલાકાત લેશો ત્યારે.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "આ સાઇટ્સને કામ કરવા માટે તમારી Facebook ઓળખ (અથવા તમે કોણ છો તે) સુધી પહોંચવાની જરૂર છે. આનો અર્થ એ પણ છે કે આ સાઇટ્સ પર તમે કરો છો તે બધું જ Facebook ટ્રૅક કરી શકે છે.", 
+    "message": "આ સાઇટ્સને કામ કરવા માટે તમારી Facebook ઓળખ (અથવા તમે કોણ છો તે) સુધી પહોંચવાની જરૂર છે. આનો અર્થ એ પણ છે કે આ સાઇટ્સ પર તમે કરો છો તે બધું જ Facebook ટ્રૅક કરી શકે છે.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ Facebook કંટેનરમાં નથી.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ Facebook કંટેનરમાં નથી.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "આ સાઇટ Facebook Containerની બહાર છે. આ વેબ પર તમને ટ્રૅક કરવા માટે Facebook માટે વધુ મુશ્કેલ બનાવે છે.", 
+    "message": "આ સાઇટ Facebook Containerની બહાર છે. આ વેબ પર તમને ટ્રૅક કરવા માટે Facebook માટે વધુ મુશ્કેલ બનાવે છે.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "આ સાઇટ Facebook કન્ટેનરમાં નથી.", 
+    "message": "આ સાઇટ Facebook કન્ટેનરમાં નથી.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "ફેસબુક કન્ટેનર", 
+    "message": "ફેસબુક કન્ટેનર",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Facebook કન્ટેનર મદદથી", 
+    "message": "Facebook કન્ટેનર મદદથી",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook તમારા બ્રાઉઝિંગને Facebook.com થી ઘણા દૂર ટ્રેક કરી શકે છે. Facebook Like અને Share બટનો, ઉદાહરણ તરીકે, તમે ક્યાં રહો છો તે ટ્રૅક કરી શકો છો — તે પૃષ્ઠો પર પણ કે જે તમે ક્યારેય પસંદ અથવા શેર કરતા નથી.", 
+    "message": "Facebook તમારા બ્રાઉઝિંગને Facebook.com થી ઘણા દૂર ટ્રેક કરી શકે છે. Facebook Like અને Share બટનો, ઉદાહરણ તરીકે, તમે ક્યાં રહો છો તે ટ્રૅક કરી શકો છો — તે પૃષ્ઠો પર પણ કે જે તમે ક્યારેય પસંદ અથવા શેર કરતા નથી.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Fscebook Container Facebook સાઇટ્સ અને બાકીની વેબ વચ્ચેની સીમા બનાવે છે જેથી Facebook ને ઑનલાઇન ટ્રૅક કરવા માટે તે મુશ્કેલ બને છે.", 
+    "message": "Fscebook Container Facebook સાઇટ્સ અને બાકીની વેબ વચ્ચેની સીમા બનાવે છે જેથી Facebook ને ઑનલાઇન ટ્રૅક કરવા માટે તે મુશ્કેલ બને છે.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Facebook પર અને Facebook Container સીમામાં સાઇટ્સ", 
+    "message": "Facebook પર અને Facebook Container સીમામાં સાઇટ્સ",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Facebook કન્ટેનર વાડ આઇકોન", 
+    "message": "Facebook કન્ટેનર વાડ આઇકોન",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "આ આયકન Firefox એડ્રેસ બારમાં દેખાય છે જ્યારે તમે સાઇટ્સની મુલાકાત લો છો, જેમ કે Facebook.com, જે Facebook Container સીમામાં છે.", 
+    "message": "આ આયકન Firefox એડ્રેસ બારમાં દેખાય છે જ્યારે તમે સાઇટ્સની મુલાકાત લો છો, જેમ કે Facebook.com, જે Facebook Container સીમામાં છે.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "આ સાઇટ્સને કાર્ય કરવા માટે તમારી Facebook ઓળખ (અથવા તમે કોણ છો તે) ઍક્સેસ કરવાની જરૂર છે. આનો અર્થ એ પણ છે કે આ સાઇટ્સ પર તમે કરો છો તે બધું જ Facebook ટ્રૅક કરી શકે છે.", 
+    "message": "આ સાઇટ્સને કાર્ય કરવા માટે તમારી Facebook ઓળખ (અથવા તમે કોણ છો તે) ઍક્સેસ કરવાની જરૂર છે. આનો અર્થ એ પણ છે કે આ સાઇટ્સ પર તમે કરો છો તે બધું જ Facebook ટ્રૅક કરી શકે છે.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
-  "onboarding3-subhead": {
-    "message": "હું કેવી રીતે જાણું છું કે Facebook કંટેનર કામ કરી રહ્યું છે?", 
-    "description": "This is the subhead for the third onboarding panel."
-  }, 
-  "onboarding3-p1": {
-    "message": "બટનો કે જે તમને Facebook પર વસ્તુઓ ગમવા અથવા શેર કરવા દે છે અથવા તમારા Facebook એકાઉન્ટનો ઉપયોગ કરીને વેબસાઇટ્સ પર લોગ ઇન કરવા દે છે તે ટ્રેકર્સ ધરાવે છે. Facebook Container આ ટ્રેકરને અવરોધિત કરશે અને ટ્રેન્સર્સને દૂર કરવામાં આવ્યા છે તે બતાવવા માટે વાડ આયકન પ્રદર્શિત કરશે.", 
-    "description": "This is the first paragraph of the third onboarding panel."
-  }, 
-  "onboarding3-img": {
-    "message": "આ છબી દર્શાવે છે કે Facebook Container્સ વાડ આયકન, Facebook જેવું બટનની બાજુમાં પૃષ્ઠમાં કેવી રીતે દેખાશે.", 
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
-  "onboarding3-p2": {
-    "message": "જો કે, જો તમે આમાંથી કોઈપણ બટન પર ક્લિક કરો છો, તો Facebook તમને ટ્રૅક કરવામાં સમર્થ હશે.", 
-    "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
   "btn-allow": {
-    "message": "મંજૂરી આપો", 
+    "message": "મંજૂરી આપો",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "રદ કરો", 
+    "message": "રદ કરો",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "આગળ", 
+    "message": "આગળ",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "પાછળ", 
+    "message": "પાછળ",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "થઈ ગયું", 
+    "message": "થઈ ગયું",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "પાછલા પેનલ પર પાછા જાઓ.", 
+    "message": "પાછલા પેનલ પર પાછા જાઓ.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Facebook કન્ટેનર કેવી રીતે કામ કરે છે તેની પર જાઓ", 
+    "message": "Facebook કન્ટેનર કેવી રીતે કામ કરે છે તેની પર જાઓ",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "કોઈ Facebook ટ્રેકર મળ્યાં નથી", 
+    "message": "કોઈ Facebook ટ્રેકર મળ્યાં નથી",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container આ પૃષ્ઠ પરના કોઈ પણ Facebook ટ્રેકરને શોધી શક્યું નથી. જો કે, પૃષ્ઠમાં હજી પણ અન્ય પ્રકારના ટ્રેકર શામેલ હોઈ શકે છે.", 
+    "message": "Facebook Container આ પૃષ્ઠ પરના કોઈ પણ Facebook ટ્રેકરને શોધી શક્યું નથી. જો કે, પૃષ્ઠમાં હજી પણ અન્ય પ્રકારના ટ્રેકર શામેલ હોઈ શકે છે.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "વધુ શીખો", 
+    "message": "વધુ શીખો",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "કેવી રીતે Facebook કન્ટેનર કામ કરે છે", 
+    "message": "કેવી રીતે Facebook કન્ટેનર કામ કરે છે",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "અમે તમને Facebookથી સુરક્ષિત કર્યા છે.", 
+    "message": "અમે તમને Facebookથી સુરક્ષિત કર્યા છે.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "શોપિંગ, સમાચાર અને અન્ય સાઇટ્સ પર દેખાતા Facebook બટનો ટ્રેકર્સ ધરાવે છે, જે તમે વેબ પર હોવ તેવા Facebook ને કહો. જો તમે આ બટનો ક્યારેય ગમવા અથવા શેર કરવા માટે ક્યારેય ન વાપરો તો પણ, ટ્રૅક્સર્સ તમારી બ્રાઉઝિંગ વિશે ડેટા એકત્રિત કરી શકે છે. Facebook Container આ ટ્રેકરને અવરોધિત કરે છે.", 
+    "message": "શોપિંગ, સમાચાર અને અન્ય સાઇટ્સ પર દેખાતા Facebook બટનો ટ્રેકર્સ ધરાવે છે, જે તમે વેબ પર હોવ તેવા Facebook ને કહો. જો તમે આ બટનો ક્યારેય ગમવા અથવા શેર કરવા માટે ક્યારેય ન વાપરો તો પણ, ટ્રૅક્સર્સ તમારી બ્રાઉઝિંગ વિશે ડેટા એકત્રિત કરી શકે છે. Facebook Container આ ટ્રેકરને અવરોધિત કરે છે.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container આ ટ્રેકરને અવરોધિત કરે છે. જો કે, જો તમે આમાંથી કોઈપણ બટન પર ક્લિક કરો છો, તો Facebook તમને ટ્રૅક કરવામાં સમર્થ હશે.", 
+    "message": "Facebook Container આ ટ્રેકરને અવરોધિત કરે છે. જો કે, જો તમે આમાંથી કોઈપણ બટન પર ક્લિક કરો છો, તો Facebook તમને ટ્રૅક કરવામાં સમર્થ હશે.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "ઢાલ સાથે Facebook કન્ટેનર વાડ.", 
+    "message": "ઢાલ સાથે Facebook કન્ટેનર વાડ.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Facebook કન્ટેનર માં મંજૂર સાઇટ્સ", 
+    "message": "Facebook કન્ટેનર માં મંજૂર સાઇટ્સ",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "SITES INCLUDED", 
+    "message": "SITES INCLUDED",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "કંઈ નહીં", 
+    "message": "કંઈ નહીં",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "SITES YOU’VE ALLOWED", 
+    "message": "SITES YOU’VE ALLOWED",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container સીમામાં Facebookની માલિકીની સાઇટ્સ મૂકે છે. તમે અન્ય સાઇટ્સને સીમામાં મંજૂરી આપી શકો છો, પરંતુ આ Facebook ને તમારી વેબ બ્રાઉઝિંગને વધુ ટ્રૅક કરવાની મંજૂરી આપશે."
-  }, 
+  },
   "remove": {
-    "message": "દૂર કરો", 
+    "message": "દૂર કરો",
     "description": ""
-  }, 
+  },
   "remove-site-subhead": {
-    "message": "Facebook કન્ટેનર માંથી સાઈટ હટાવીએ ?", 
+    "message": "Facebook કન્ટેનર માંથી સાઈટ દૂર કરીએ?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Facebook Containerથી આ સાઇટને દૂર કરવાનો અર્થ એ છે કે Facebook સુવિધા સાથે લૉગ ઇન હવે કાર્ય કરશે નહીં અને Facebook ટ્રેકિંગ કૂકીઝ કાઢી નાખવામાં આવશે.", 
+    "message": "Facebook Containerથી આ સાઇટને દૂર કરવાનો અર્થ એ છે કે Facebook સુવિધા સાથે લૉગ ઇન હવે કાર્ય કરશે નહીં અને Facebook ટ્રેકિંગ કૂકીઝ કાઢી નાખવામાં આવશે.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " જો તમે ફરીથી Facebook સાથે લોગ ઇનનો ઉપયોગ કરવા માંગતા હો, તો તમારે તેને ફરીથી Facebook Containerમાં ઉમેરવાની જરૂર પડશે.", 
+    "message": " જો તમે ફરીથી Facebook સાથે લોગ ઇનનો ઉપયોગ કરવા માંગતા હો, તો તમારે તેને ફરીથી Facebook Containerમાં ઉમેરવાની જરૂર પડશે.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Containerએ આ બટનને અક્ષમ કર્યું છે અને આ પૃષ્ઠ પરની તમારી મુલાકાતને ટ્રૅક કરવાથી Facebook ને અવરોધિત કર્યું છે.", 
+    "message": "Facebook Containerએ આ બટનને અક્ષમ કર્યું છે અને આ પૃષ્ઠ પરની તમારી મુલાકાતને ટ્રૅક કરવાથી Facebook ને અવરોધિત કર્યું છે.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Containerએ Facebook ટ્રેકરને અવરોધિત કર્યા છે. જો તમે આ સાઇટ પર Facebook સાથે લોગ ઇનનો ઉપયોગ કરો છો, તો Facebook તમને ટ્રૅક કરવામાં સમર્થ હશે.", 
+    "message": "Facebook Containerએ Facebook ટ્રેકરને અવરોધિત કર્યા છે. જો તમે આ સાઇટ પર Facebook સાથે લોગ ઇનનો ઉપયોગ કરો છો, તો Facebook તમને ટ્રૅક કરવામાં સમર્થ હશે.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Facebook તમને અહીં ટ્રૅક કરવા દે છે?", 
+    "message": "Facebook તમને અહીં ટ્રૅક કરવા દે છે?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "જો તમે Facebook સાથે લૉગ ઇનનો ઉપયોગ કરવા માંગતા હો, તો પછી Facebook આ સાઇટ પર તમારી પ્રવૃત્તિને ટ્રૅક કરવામાં સમર્થ હશે. આ તેમને તમારા ઑનલાઇન જીવનની સંપૂર્ણ છબી બનાવવામાં સહાય કરી શકે છે.", 
+    "message": "જો તમે Facebook સાથે લૉગ ઇનનો ઉપયોગ કરવા માંગતા હો, તો પછી Facebook આ સાઇટ પર તમારી પ્રવૃત્તિને ટ્રૅક કરવામાં સમર્થ હશે. આ તેમને તમારા ઑનલાઇન જીવનની સંપૂર્ણ છબી બનાવવામાં સહાય કરી શકે છે.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "મને આ ફરીથી બતાવશો નહીં", 
+    "message": "મને આ ફરીથી બતાવશો નહીં",
     "description": ""
   }
 }
