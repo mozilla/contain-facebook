@@ -78,21 +78,33 @@
     "message": "Situs-situs berikut memerlukan akses ke identitas Facebook Anda (atau mengetahui siapa Anda) agar dapat berfungsi. Ini juga berarti Facebook dapat melacak apapun yang Anda lakukan di dalam situs tersebut.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Bagaimana saya tahu Facebook Container sedang bekerja?",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Di luar Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
-  "onboarding3-p1": {
-    "message": "Tombol yang membolehkan Anda menyukai atau membagikan sesuai ke Facebook atau membolehkan Anda masuk ke situs web menggunakan akun Facebook Anda mengandung pelacak. Facebook Container akan memblokir pelacak tersebut dan memunculkan ikon pagar untuk menunjukkan Anda di mana pelacar dihilangkan.",
-    "description": "This is the first paragraph of the third onboarding panel."
+  "onboarding4-p1": {
+    "message": "Bahkan ketika Anda tidak sedang di Facebook, Facebook dapat melacak Anda secara daring. Tombol-tombol yang memungkinkan Anda memposting sesuatu ke Facebook atau masuk ke situs web menggunakan Facebook berisi pelacak. Facebook Container dapat memblokir pelacak-pelacak itu dan menampilkan ikon pagar untuk memberi tahu Anda pelacak itu telah dihapus.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
   },
-  "onboarding3-img": {
+  "onboarding4-img": {
     "message": "Gambar ini mendemostrasikan bagaimana ikon pagar Facebook Container akan muncul di dalam laman di samping tombol Suka Facebook.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
-  "onboarding3-p2": {
-    "message": "Walaupun begitu, jika Anda klik salah satu tombol tersebut Facebook akan dapat melacak Anda.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding5-subhead": {
+    "message": "Masuk dengan Facebook di Situs Lain",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Untuk menggunakan log masuk Facebook Anda di situs lain, Anda harus memindahkannya ke dalam batas. Klik ikon pagar dan pilih ‘Izinkan Situs di Facebook Container’ di bagian bawah.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Gambar ini mendemonstrasikan bagaimana tombol untuk menambahkan situs ke Facebook Container akan muncul di panel.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Ini memungkinkan Anda masuk dengan Facebook, tetapi mengizinkan Facebook untuk melacak aktivitas Anda pada situs itu.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Izinkan",
@@ -201,6 +213,14 @@
     "message": " Jika Anda ingin menggunakan fitur Masuk dengan Facebook lagi, Anda perlu memasukkan situs ini kembali ke Facebook Container.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Izinkan Facebook Tracking di Situs ini?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Ini memungkinkan Anda masuk menggunakan Facebook, tetapi mengizinkan Facebook untuk mengikuti apa yang Anda lakukan pada situs ini.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container telah menonaktifkan tombol ini dan memblokir Facebook untuk melacak kunjungan Anda ke laman ini.",
     "description": ""
@@ -219,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Jangan tampilkan lagi",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Jika Anda klik tombol ini, Facebook akan dapat melacak kunjungan Anda ke situs ini.",
     "description": ""
   }
 }
