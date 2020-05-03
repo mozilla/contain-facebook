@@ -1,0 +1,16 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container ina seernda dille maa e Facebook e ko heddii e dille maa e geese ngam haɗde Facebook rewindaade ma boowal geese Facebook rewrude e kuukiije janane.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ ina e nder Facebook Container oo.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  }
+}
