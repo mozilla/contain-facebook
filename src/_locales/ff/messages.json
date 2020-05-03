@@ -12,5 +12,22 @@
         "example": "www.facebook.com"
       }
     }
+  },
+  "in-fbc-p1": {
+    "message": "Facebook ina waawi rewindaade ma jooni e ndee lowre. Ngam ittude ndee lowre e Facebook Container, suɓo Lowe jamiraaɗe nder Facebook Container etee ittu ɗum e doggol ngol."
+  },
+  "on-facebook-subhead": {
+    "message": "E Facebook e lowe nder keerol Facebook Container ngol",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "notOnFacebookHeader": {
+    "message": "$URL$ alaa e nder Facebook Container oo.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.google.com"
+      }
+    }
   }
 }
