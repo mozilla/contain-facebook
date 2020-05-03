@@ -133,5 +133,17 @@
   "button-remove-site": {
     "message": "Ittu lowre ndee e Facebook Container",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Sabu ndee lowre ko Facebook jeyi nde, ndeɓcb waawaa itteede e Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "Ittude lowre ndee e Facebook Container?",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Yamirde Dewindol Facebook e ndee lowre?",
+    "description": ""
   }
 }
