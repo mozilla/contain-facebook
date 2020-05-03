@@ -29,5 +29,33 @@
         "example": "www.google.com"
       }
     }
+  },
+  "notOnFacebookText": {
+    "message": "Ndee lowre woni ko boowal Facebook Container. Ɗuum ina saɗ-tinana Facebook rewindaade ma e nder geese ɗee.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "onUnknownSiteHeader": {
+    "message": "Ndee lowre alaa e Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "facebookContainer": {
+    "message": "Facebook Container",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "onboarding1-subhead": {
+    "message": "Kuuturogol Facebook Container",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "E Facebook e lowe nder keerol Facebook Container ngol",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding4-subhead": {
+    "message": "Boowal Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Ceŋorogol Facebook e lowe goɗɗe",
+    "description": "This is the subhead for the fifth onboarding panel."
   }
 }
