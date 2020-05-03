@@ -145,5 +145,17 @@
   "add-site-subhead": {
     "message": "Yamirde Dewindol Facebook e ndee lowre?",
     "description": ""
+  },
+  "add-site-p1": {
+    "message": "Ɗuum ma woppe ceŋoroɗaa Facebook, kono ina yamira Facebook rewde e ko mbaɗataa  e ndee lowre.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Yamirde Facebook rewindaade ma ɗoo?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Hoto hollam ɗum goɗngol",
+    "description": ""
   }
 }
