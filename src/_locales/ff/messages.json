@@ -57,5 +57,37 @@
   "onboarding5-subhead": {
     "message": "Ceŋorogol Facebook e lowe goɗɗe",
     "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Ɗuum ma woppe ceŋoroɗaa Facebook, kono ina yamira Facebook rewindaade dille maa e ndee lowre.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
+  "btn-allow": {
+    "message": "Yamir",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "Haaytu",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "Yeeso",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "Caggal",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "Gasii",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "Rutto e alluwel gadanel.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Yah to hol no Facebook Container gollortoo",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   }
 }
