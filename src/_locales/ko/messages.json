@@ -20,6 +20,14 @@
     "message": "Facebook 및 Facebook 컨테이너 경계의 사이트",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "on-facebook-p1": {
+    "message": "이 아이콘은 Facebook이 소유한 웹사이트나 Facebook Container에 별도로 추가한 웹사이트에 접속할 때 Firefox의 주소 표시줄에 나타납니다.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "이러한 웹사이트는 작동을 위해 Facebook의 계정 정보(혹은 개인을 식별할 수 있는 정보)에 접근해야 합니다. 이는 Facebook이 사이트에서 사용자가 하는 모든 행위를 추적하는 것이 가능하다는 의미이기도 합니다.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
   "notOnFacebookHeader": {
     "message": "$URL$이 Facebook Container 밖에 있습니다.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
@@ -50,13 +58,41 @@
     "message": "Facebook은 Facebook.com을 훨씬 뛰어 넘는 탐색을 추적 할 수 있습니다. 예를 들어, Facebook의 좋아요 및 공유 버튼을 사용하면 사용자가 좋아하지 않았거나 공유하지 않는 페이지에서조차 사용자가 어디에 있었는지 추적 할 수 있습니다.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
+  "onboarding1-p2": {
+    "message": "Facebook Container는 Facebook 사이트와 그 밖의 웹사이트 사이에 경계를 생성하여 Facebook이 온라인 환경에서 사용자를 추적하기 어렵도록 만듭니다.",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "Facebook 및 Facebook Container 경계의 사이트",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding2-alt": {
     "message": "Facebook 컨테이너 울타리 아이콘",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
+  "onboarding2-p1": {
+    "message": "이 아이콘은 Facebook.com과 같이 Facebook Container 경계 안에 있는 사이트에 방문할 때 Firefox 주소 표시줄에 나타납니다.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "이러한 웹사이트는 작동을 위해 Facebook의 계정 정보(혹은 개인을 식별할 수 있는 정보)에 접근해야 합니다. 이는 Facebook이 사이트에서 사용자가 하는 모든 행위를 추적하는 것이 가능하다는 의미이기도 합니다.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding4-subhead": {
     "message": "Facebook 외부",
     "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Facebook에 접속하지 않을 때도, Facebook은 사용자를 온라인 환경에서 추적할 수 있습니다. Facebook에 무언가를 게시하거나 Facebook 계정으로 웹사이트에 로그인하는 버튼은 추적기를 가지고 있습니다. Facebook Container는 이러한 추적기를 차단하고 추적기가 제거된 환경임을 보여주기 위해 울타리 아이콘을 표시합니다.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "다른 사이트에서 Facebook으로 로그인",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Facebook 로그인 기능을 다른 사이트에서 사용하기 위해서는, 경계 안으로 이동해야 합니다. 울타리 아이콘을 누르고 하단의 ‘Facebook Container에 사이트 허용’을 선택하세요.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-p2": {
     "message": "이를 통해 Facebook으로 로그인 할 수 있지만, Facebook은 해당 사이트에서의 당신의 활동을 추적 할 수 있게 됩니다.",
@@ -92,6 +128,10 @@
   },
   "no-trackers-subhead": {
     "message": "Facebook 추적기가 감지되지 않음",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container가 이 페이지에서 Facebook 추적기를 감지하지 못했습니다. 그러나, 여전히 다른 형태의 추적기가 페이지 내에 존재할 수 있습니다.",
     "description": ""
   },
   "learn-more": {
