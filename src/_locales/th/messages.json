@@ -154,6 +154,18 @@
     "message": "พวกเราปกป้องคุณจาก Facebook",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
+  "trackers-detected-p1": {
+    "message": "ปุ่ม Facebook ที่ปรากฏในการไซต์ช็อปปิ้ง ข่าว และอื่น ๆ มีตัวติดตามที่บอก Facebook ว่าคุณไปอยู่ที่ไหนบนเว็บมาบ้าง ถึงแม้ว่าคุณจะไม่เคยใช้ปุ่มเหล่านี้เพื่อถูกใจหรือแชร์ แต่ตัวติดตามยังสามารถรวบรวมข้อมูลเกี่ยวกับการเรียกดูของคุณได้ Facebook Container จะปิดกั้นตัวติดตามเหล่านี้",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container จะปิดกั้นตัวติดตามเหล่านี้ แต่หากคุณคลิกที่ปุ่มใดปุ่มหนึ่งเหล่านี้ Facebook จะสามารถติดตามคุณได้",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "รั้ว Facebook Container พร้อมโล่",
+    "description": "This is alternative text describing the container fence icon."
+  },
   "sites-added-subhead": {
     "message": "ไซต์ที่อนุญาตใน Facebook Container",
     "description": "This is a panel subhead."
@@ -177,6 +189,14 @@
     "message": "เอาออก",
     "description": ""
   },
+  "button-allow-site": {
+    "message": "อนุญาตไซต์ใน Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "เอาไซต์ออกจาก Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
   "button-remove-site-tooltip": {
     "message": "เนื่องจากนี่เป็นไซต์ที่เป็นของ Facebook จึงไม่สามารถลบออกจาก Facebook Container ได้",
     "description": "Tooltip that is displayed when hovering over the remove site button"
@@ -191,6 +211,14 @@
   },
   "remove-site-p2": {
     "message": " หากคุณต้องการใช้การลงชื่อเข้าใช้ด้วย Facebook อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "อนุญาตการติดตามของ Facebook บนไซต์นี้หรือไม่?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "ตัวเลือกนี้ช่วยให้คุณสามารถเข้าสู่ระบบด้วย Facebook ได้ แต่จะอนุญาตให้ Facebook สามารถติดตามสิ่งที่คุณทำบนไซต์นี้ได้",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
@@ -211,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "ไม่ต้องแสดงสิ่งนี้ให้ฉันเห็นอีก",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "หากคุณคลิกปุ่มนี้ Facebook จะสามารถติดตามการเยี่ยมชมไซต์นี้ของคุณได้",
     "description": ""
   }
 }
