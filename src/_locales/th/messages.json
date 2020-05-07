@@ -24,6 +24,10 @@
     "message": "ไอคอนนี้จะปรากฏในแถบที่อยู่ของ Firefox เมื่อคุณเยี่ยมชมไซต์ที่ Facebook เป็นเจ้าของหรือไซต์ที่คุณเพิ่มลงใน Facebook Container",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "on-facebook-p2": {
+    "message": "ไซต์เหล่านี้จำเป็นต้องเข้าถึงข้อมูลประจำตัว Facebook ของคุณ (หรือรู้ว่าคุณเป็นใคร) เพื่อให้ทำงานได้ ซึ่งหมายความว่า Facebook สามารถติดตามทุกสิ่งที่คุณทำบนไซต์เหล่านี้ได้ด้วย",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
   "notOnFacebookHeader": {
     "message": "$URL$ ไม่ได้อยู่ใน Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
@@ -50,9 +54,57 @@
     "message": "การใช้ Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
+  "onboarding1-p1": {
+    "message": "Facebook สามารถติดตามการเรียกดูของคุณได้มากกว่า Facebook.com ตัวอย่างเช่น ปุ่ม ถูกใจ และ แชร์ ของ Facebook สามารถติดตามตำแหน่งที่คุณเคยอยู่แม้กระทั่งในหน้าเว็บที่คุณไม่เคยถูกใจหรือแชร์ได้",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "Facebook Container จะสร้างขอบเขตระหว่างไซต์ Facebook กับเว็บอื่น ๆ ที่เหลือ จึงทำให้ Facebook ติดตามคุณบนโลกออนไลน์ได้ยากขึ้น",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "บน Facebook และไซต์ที่อยู่ในขอบเขตของ Facebook Container",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding2-alt": {
     "message": "ไอคอนรูปรั้วของ Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "ไอคอนนี้จะปรากฏในแถบที่อยู่ Firefox เมื่อคุณเยี่ยมชมไซต์ต่าง ๆ เช่น Facebook.com ที่อยู่ในขอบเขตของ Facebook Container",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "ไซต์เหล่านี้จำเป็นต้องเข้าถึงข้อมูลประจำตัว Facebook ของคุณ (หรือรู้ว่าคุณเป็นใคร) เพื่อให้ทำงานได้ ซึ่งหมายความว่า Facebook สามารถติดตามทุกสิ่งที่คุณทำบนไซต์เหล่านี้ได้ด้วย",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding4-subhead": {
+    "message": "ภายนอก Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "ถึงแม้ว่าคุณจะไม่ได้ใช้ Facebook แต่ Facebook ก็สามารถติดตามคุณบนโลกออนไลน์ได้ ปุ่มที่ให้คุณโพสต์สิ่งต่าง ๆ ลงใน Facebook หรือเข้าสู่ระบบเว็บไซต์โดยใช้บัญชี Facebook ของคุณจะมีตัวติดตาม Facebook Container จะปิดกั้นตัวติดตามเหล่านี้และแสดงไอคอนรั้วเพื่อแสดงให้คุณเห็นว่าตัวติดตามถูกเอาออกที่จุดใดบ้าง",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "ภาพนี้จะแสดงให้เห็นว่าไอคอนรั้วของ Facebook Container จะปรากฏในหน้าเคียงข้างปุ่มถูกใจของ Facebook อย่างไร",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "การเข้าสู่ระบบด้วย Facebook บนไซต์อื่น",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "หากต้องการใช้ข้อมูลการเข้าสู่ระบบ Facebook ของคุณบนไซต์อื่น คุณจะต้องย้ายข้อมูลเหล่านั้นมาไว้ภายในขอบเขต คลิกไอคอนรั้วแล้วเลือก ‘อนุญาตไซต์ใน Facebook Container’ ที่อยู่ด้านล่าง",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "ภาพนี้จะแสดงให้เห็นว่าปุ่มที่จะเพิ่มไซต์ลงใน Facebook Container จะปรากฏในแผงอย่างไร",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "วิธีนี้ช่วยให้คุณสามารถเข้าสู่ระบบด้วย Facebook ได้ แต่จะอนุญาตให้ Facebook ติดตามกิจกรรมของคุณบนไซต์นั้นได้",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "อนุญาต",
@@ -74,8 +126,20 @@
     "message": "เสร็จสิ้น",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   },
+  "btn-arrow-back": {
+    "message": "ย้อนกลับไปที่แผงก่อนหน้า",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "ไปที่ Facebook Container ทำงานอย่างไร",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
   "no-trackers-subhead": {
     "message": "ไม่พบตัวติดตามของ Facebook",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container ตรวจไม่พบตัวติดตาม Facebook ใด ๆ บนหน้านี้ แต่หน้านี้อาจยังมีตัวติดตามชนิดอื่น ๆ อยู่",
     "description": ""
   },
   "learn-more": {
