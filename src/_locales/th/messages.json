@@ -13,6 +13,17 @@
       }
     }
   },
+  "in-fbc-p1": {
+    "message": "Facebook สามารถติดตามคุณบนไซต์นี้ได้ หากต้องการเอาไซต์นี้ออกจาก Facebook Container ให้เลือก ไซต์ที่อนุญาต ใน Facebook Container แล้วเอาออกจากรายชื่อ"
+  },
+  "on-facebook-subhead": {
+    "message": "บน Facebook และไซต์ที่อยู่ในขอบเขตของ Facebook Container",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p1": {
+    "message": "ไอคอนนี้จะปรากฏในแถบที่อยู่ของ Firefox เมื่อคุณเยี่ยมชมไซต์ที่ Facebook เป็นเจ้าของหรือไซต์ที่คุณเพิ่มลงใน Facebook Container",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "notOnFacebookHeader": {
     "message": "$URL$ ไม่ได้อยู่ใน Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
