@@ -177,5 +177,9 @@
   "inPageUI-tooltip-prompt-p1": {
     "message": "Yee ki Facebook me lubo kor yin kany?",
     "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Pe inyuta man doki",
+    "description": ""
   }
 }
