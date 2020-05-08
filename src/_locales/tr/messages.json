@@ -94,6 +94,18 @@
     "message": "Başka sitelere Facebook ile giriş yapma",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "Facebook hesabınızı başka sitelerde kullanmak için o siteleri sınırın içine taşımanız gerekir. Çit simgesine tıklayıp alttaki “Facebook Container’da bu siteye izin ver”i seçin.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Bu görüntü, Facebook Container'a site ekleme düğmesinin panelde nasıl görüneceğini gösterir.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Bu, Facebook'ta oturum açmanızı sağlar ancak Facebook'un bu sitedeki etkinliğinizi izlemesine izin verir.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "İzin ver",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -201,6 +213,14 @@
     "message": " Facebook ile giriş özelliğini yeniden kullanmak isterseniz bu siteyi yeniden Facebook Container’a eklemeniz gerekir.",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Facebook sizi bu sitede izleyebilsin mi?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Bu, Facebook'ta oturum açmanızı sağlar ancak Facebook'un bu sitede yaptıklarınızı takip etmesine izin verir.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook Container bu düğmeyi devre dışı bıraktı ve Facebook’un bu sayfayı ziyaretinizi izlemesini engelledi.",
     "description": ""
@@ -219,6 +239,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Bunu bir daha gösterme",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Bu düğmeyi tıklarsanız, Facebook bu siteye yaptığınız ziyareti izleyebilecektir.",
     "description": ""
   }
 }
