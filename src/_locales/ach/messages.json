@@ -161,5 +161,21 @@
   "remove-site-subhead": {
     "message": "Kwany kakube ki i Facebook Container?",
     "description": ""
+  },
+  "remove-site-p2": {
+    "message": "Kacce imito tic ki Dony iyie ki Facebook doki, bi mite ki yin me dwoko ne cen i Facebook Container.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Yee ki Lubo kor me Facebook i Kakube man?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Man weko i donyo iyie ki Facebook, ento yee ki Facebook me lubo ngo ma itimo i kakube man.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Yee ki Facebook me lubo kor yin kany?",
+    "description": ""
   }
 }
