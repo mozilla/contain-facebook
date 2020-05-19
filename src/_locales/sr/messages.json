@@ -111,7 +111,7 @@
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
   },
   "btn-cancel": {
-    "message": "Поништи",
+    "message": "Откажи",
     "description": "This is a button to cancel out of the onboarding panel."
   },
   "btn-next": {
@@ -143,7 +143,7 @@
     "description": ""
   },
   "learn-more": {
-    "message": "Сазнај више",
+    "message": "Сазнајте више",
     "description": "This is a link that opens a page with more information about Facebook Container."
   },
   "how-fbc-works": {
