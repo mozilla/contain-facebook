@@ -103,7 +103,7 @@
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Isso permite que você acesse sua conta com o Facebook, mas deixa o Facebook rastrear sua atividade neste site.",
+    "message": "Permite que você acesse sua conta com o Facebook, mas deixa o Facebook rastrear sua atividade neste site.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
@@ -190,7 +190,7 @@
     "description": ""
   },
   "button-allow-site": {
-    "message": "Permitir site no Facebook Container",
+    "message": "Permitir este site no Facebook Container",
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
   "button-remove-site": {
@@ -214,7 +214,7 @@
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Permitir ao Facebook rastrear neste site?",
+    "message": "Permitir o rastreamento do Facebook neste site?",
     "description": ""
   },
   "add-site-p1": {
