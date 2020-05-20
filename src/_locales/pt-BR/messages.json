@@ -103,7 +103,7 @@
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Permite que você acesse sua conta com o Facebook, mas deixa o Facebook rastrear sua atividade neste site.",
+    "message": "Permite que você acesse sua conta neste site com o Facebook, mas deixa o Facebook rastrear sua atividade neste site.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
@@ -218,7 +218,7 @@
     "description": ""
   },
   "add-site-p1": {
-    "message": "Isso permite que você acesse sua conta com o Facebook, mas deixa o Facebook seguir o que você faz neste site.",
+    "message": "Permite que você acesse sua conta neste site com o Facebook, mas deixa o Facebook seguir o que você faz neste site.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
