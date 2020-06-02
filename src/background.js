@@ -21,7 +21,9 @@ const FACEBOOK_DOMAINS = [
   "workplace.com", "www.workplace.com", "work.facebook.com",
 
   "onavo.com",
-  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com"
+  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
+
+  "giphy.com", "developers.giphy.com"
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
