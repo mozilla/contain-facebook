@@ -182,13 +182,24 @@
     "message": "RI TAQ RUXAQ YA'ON Q'IJ CHI KE",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
+  "sites-added-p1": {
+    "message": "Facebook Container numöl kichi' ri taq ruxaq Facebook. Yatikïr namöl kichi' ch'aqa' chik taq ruxaq, xa xe chi xtuya' q'ij chi re ri Facebook nrojqaj ri ajk'amaya'l awokem."
+  },
   "remove": {
     "message": "Tiyuj",
     "description": ""
   },
+  "button-allow-site": {
+    "message": "Tiya' q'ij chi ke taq Ruxaq K'amaya'l pa Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
   "button-remove-site": {
     "message": "Nawelesaj ri ruxaq pa Facebook Container",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Ruma chi re ruxaq k'amaya'l re' richin ri Facebook, man tikirel ta niyuj el chupam ri Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
     "message": "¿La nawelesaj ri ruxaq pa Facebook Container?",
