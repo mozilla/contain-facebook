@@ -205,12 +205,44 @@
     "message": "¿La nawelesaj ri ruxaq pa Facebook Container?",
     "description": ""
   },
+  "remove-site-p1": {
+    "message": "Toq nayüj re ruxaq k'amaya'l pa ri Facebook Container, man xtisamäj ta chik ri samaj Titikirisäx molojri'ïl rik'in Facebook chuqa' xkeyuj el ri ojqanel taq kuki richin Facebook.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "We nawajo' chik nawokisaj chik Titikirisäx molojri'ïl rik'in Facebook, k'o chi natz'aqatisaj chik pa Facebook Container.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "¿La niya' q'ij chi nojqan ri Facebook pa re Ruxaq K'amaya'l re'?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Re re' nuya' q'ij chawe natikirisaj molojri'ïl rik'in Facebook, po nuya' q'ij chi re ri Facebook nrojqaj ri asamaj pa re ajk'amaya'l ruxaq re'.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container xuchüp re pitz'b'äl re' chuqa' xuq'ät ri Facebook richin man trojqaj ri awokem pa re ruxaq re'.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container xeruq'ät ri rojqanela' Facebook. We nawokisaj Titikirisäx molojri'ïl rik'in Facebook pa re ruxaq k'amaya'l re', ri Facebook xtitikïr xkajrojqaj.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-p1": {
     "message": "¿La nya' q'ij richin yatrojqaj wawe' ri Facebook?",
     "description": ""
   },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "We nawajo' nawokisaj natikirisaj molojri'ïl rik'in Facebook, ri Facebook xtitikïr xtrojqaj ri asamaj pa re ruxaq k'amaya'l re'. Re re' nuto' richin nunük' jun tz'aqät wachib'äl chi rij ri ak'aslem pa k'amab'ey.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Man tik'ut chik pe chwe",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "We napïtz' pa re pitz'b'äl, ri Facebook xtitikïr xrojqaj ri awokem pa re ruxaq k'amaya'l re'.",
     "description": ""
   }
 }
