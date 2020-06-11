@@ -94,6 +94,18 @@
     "message": "Titikirisäx molojri'ïl rik'in Facebook pa Ch'aqa' chik taq Ruxaq",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "Richin nawokisaj ri rutikirib'al amolojri'ïl richin Facebook pa ch'aqa' chik ajk'amaya'l ruxaq, k'o chi ye'asiloj qa chupam ri k'wayöl. Tapitz'a' pa ruwi' ri ruwachib'al kokal richin nacha' ‘Tiya' Q'ij chi ke Ajk'amaya'l Ruxaq pa Facebook Container’ chuxe' qa.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Re wachib'äl re' nuk'üt achike rub'eyal xtiwachin ri pitz'b'äl richin nitz'aqatisäx jun ajk'amaya'l ruxaq pa Facebook Container pa ri pas.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Re re' nuya' q'ij chawe natikirisaj molojri'ïl rik'in Facebook, po nuya' q'ij chi re ri Facebook nrojqaj ri asamaj pa ri ajk'amaya'l ruxaq ri'.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Tiya' q'ij",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
