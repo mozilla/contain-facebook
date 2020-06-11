@@ -154,6 +154,14 @@
     "message": "Xatqachajij chuwäch ri Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
+  "trackers-detected-p1": {
+    "message": "Ri taq rupitz'b'äl Facebook e k'o pa taq loq'oj, taq rutzijol chuqa' ch'aqa' chik ruxaq kik'wan ojqanela' ri nikitzijoj chi re ri Facebook akuchi' xak'oje' wi pan ajk'amaya'l. Estape' majub'ey e'awokisan ri taq rupitz'b'al Ütz o Komonin, k'a yetikïr nikimöl taq tzij ri ojqanela' chi rij ri awokem pa k'amaya'l. Ri Facebook Container yeruq'ät re taq ojqanela' re'.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container yeruq'ät re taq ojqanela' re'. Xa xe we napïtz pa xab'achike pitz'b'äl re', ri Facebook xtitikïr xkatrojqaj.",
+    "description": ""
+  },
   "trackers-detected-fence-alt": {
     "message": "Facebook Container rik'in Pokob'.",
     "description": "This is alternative text describing the container fence icon."
