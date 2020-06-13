@@ -28,10 +28,10 @@ const setUpPanel = (panelId) => {
 };
 
 
-// adds "Facebook Container" to top of all panels
+// adds "Reddit Container" to top of all panels
 const addHeader = (wrapper) => {
   const el = document.createElement("h1");
-  el["id"] = "facebookContainer";
+  el["id"] = "redditContainer";
   setClassAndAppend(wrapper, el);
   return el;
 };
@@ -82,16 +82,16 @@ const addDiv = (wrapper, className) => {
 };
 
 
-// creates grey Facebook text. Grey fence icon is set in CSS.
-const addFacebookAndIcon = async () => {
+// creates grey Reddit text. Grey fence icon is set in CSS.
+const addRedditAndIcon = async () => {
   const el = document.createElement("p");
-  el.innerText = "Facebook";
+  el.innerText = "Reddit";
   const browserInfo = await browser.runtime.getBrowserInfo();
   if (parseInt(browserInfo.version) < 67) {
-    el.classList.add("Facebook-blue-text");
+    el.classList.add("Reddit-blue-text");
     return el;
   }
-  el.classList.add("Facebook-text");
+  el.classList.add("Reddit-text");
   return el;
 };
 
@@ -132,8 +132,8 @@ const getActiveRootDomainFromBackground = async() => {
 };
 
 const isSiteInContainer = async(panelId) => {
-  if (panelId === "on-facebook") {
-    // Site is on default FBC domain. Show the "remove site" button, in a disabled state.
+  if (panelId === "on-reddit") {
+    // Site is on default RDC domain. Show the "remove site" button, in a disabled state.
     return true;
   }
 
@@ -148,9 +148,9 @@ const isSiteInContainer = async(panelId) => {
   }
 };
 
-const addLearnHowFBCWorksButton = async (fragment) => {
+const addLearnHowRDCWorksButton = async (fragment) => {
   let button = addFullWidthButton (fragment, "open-onboarding");
-  addSpan(button, "how-fbc-works");
+  addSpan(button, "how-rdc-works");
 
   button = addFullWidthButton(fragment, "open-allowed-sites");
   addSpan(button, "sites-added-subhead");
@@ -172,7 +172,7 @@ const addCustomSiteButton = async (fragment, panelId) => {
 const setCustomSiteButtonEvent = async (panelId) => {
   const shouldShowRemoveSiteButton = await isSiteInContainer(panelId);
 
-  if (panelId === "on-facebook") {
+  if (panelId === "on-reddit") {
     const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
     removeSiteFromContainerLink.classList.add("disabled-button");
     return;
@@ -245,7 +245,7 @@ const addLearnMoreLink = (fragment) => {
   link.classList.add("open-sumo");
   link["rel"] = "noopener noreferrer";
   link["href"] = "https://support.mozilla.org/kb/facebook-container-prevent-facebook-tracking";
-  // need Facebook Container SUMO url. // need UTM params? // open in new or same window?
+  // need Reddit Container SUMO url. // need UTM params? // open in new or same window?
   setClassAndAppend(fragment, link);
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -363,8 +363,8 @@ const buildPanel = async(panelId) => {
   const contentWrapper = addDiv(fragment, "main-content-wrapper");
   addSubhead(contentWrapper, panelId);
 
-  if (panelId === "on-facebook") {
-    let el = await addFacebookAndIcon(contentWrapper);
+  if (panelId === "on-reddit") {
+    let el = await addRedditAndIcon(contentWrapper);
     contentWrapper.appendChild(el);
   }
 
@@ -376,17 +376,17 @@ const buildPanel = async(panelId) => {
     addParagraph(contentWrapper, `${panelId}-p1`);
   }
 
-  if (panelId === "on-facebook") {
+  if (panelId === "on-reddit") {
     addParagraph(contentWrapper, `${panelId}-p2`);
   }
 
-  if (["trackers-detected", "in-fbc"].includes(panelId)) {
+  if (["trackers-detected", "in-rdc"].includes(panelId)) {
     addLearnMoreLink(contentWrapper);
     const imgDiv = addDiv(contentWrapper, panelId);
     imgDiv.classList.add("img");
   }
 
-  await addLearnHowFBCWorksButton(fragment);
+  await addLearnHowRDCWorksButton(fragment);
 
   if (panelId === "no-trackers") {
     addLearnMoreLink(contentWrapper);
@@ -434,7 +434,7 @@ const buildOnboardingPanel = async (panelId) => {
   }
 
   if (panelId === 2) {
-    let el = await addFacebookAndIcon();
+    let el = await addRedditAndIcon();
     h2.parentNode.insertBefore(el, h2.nextSibling);
     setNavButtons(fragment, "btn-back", "btn-next", stringId);
   }
@@ -475,9 +475,7 @@ const addHeaderWithBackArrow = (fragment) => {
 
 
 const defaultAllowedSites = [
-  "instagram.com",
-  "facebook.com",
-  "messenger.com",
+  "reddit.com"
 ];
 
 
@@ -560,9 +558,9 @@ const buildAllowedSitesPanel = async(panelId) => {
 
 const addSiteToContainer = async () => {
   const activeRootDomain = await getActiveRootDomainFromBackground();
-  const fbcStorage = await browser.storage.local.get();
-  fbcStorage.domainsAddedToFacebookContainer.push(activeRootDomain);
-  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+  const rdcStorage = await browser.storage.local.get();
+  rdcStorage.domainsAddedToRedditContainer.push(activeRootDomain);
+  await browser.storage.local.set({"domainsAddedToRedditContainer": rdcStorage.domainsAddedToRedditContainer});
   browser.tabs.reload();
   window.close();
 };

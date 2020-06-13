@@ -1,40 +1,35 @@
 /* global psl */
 
-const FACEBOOK_CONTAINER_DETAILS = {
-  name: "Facebook",
-  color: "toolbar",
+const REDDIT_CONTAINER_DETAILS = {
+  name: "Reddit",
+  color: "orange",
   icon: "fence"
 };
 
-const FACEBOOK_DOMAINS = [
-  "facebook.com", "www.facebook.com", "facebook.net", "fb.com",
-  "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
-  "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
-
-  "instagram.com",
-  "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
-
-  "messenger.com", "m.me", "messengerdevelopers.com",
-
-  "atdmt.com",
-
-  "workplace.com", "www.workplace.com", "work.facebook.com",
-
-  "onavo.com",
-  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com"
+const REDDIT_DOMAINS = [
+  "external-preview.reddit.it",
+  "redd.it",
+  "reddit.com",
+  "reddit.zendesk.com",
+  "redditblog.com",
+  "redditmedia.com",
+  "redditstatic.com",
+  "www.reddit.com",
+  "www.redditmedia.com",
+  "www.redditstatic.com"
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
 
 let macAddonEnabled = false;
-let facebookCookieStoreId = null;
+let redditCookieStoreId = null;
 
 // TODO: refactor canceledRequests and tabsWaitingToLoad into tabStates
 const canceledRequests = {};
 const tabsWaitingToLoad = {};
 const tabStates = {};
 
-const facebookHostREs = [];
+const redditHostREs = [];
 
 async function isMACAddonEnabled () {
   try {
@@ -80,7 +75,7 @@ async function sendJailedDomainsToMAC () {
   try {
     return await browser.runtime.sendMessage(MAC_ADDON_ID, {
       method: "jailedDomains",
-      urls: FACEBOOK_DOMAINS.map((domain) => {
+      urls: REDDIT_DOMAINS.map((domain) => {
         return `https://${domain}/`;
       })
     });
@@ -149,14 +144,14 @@ function shouldCancelEarly (tab, options) {
   return false;
 }
 
-function generateFacebookHostREs () {
-  for (let facebookDomain of FACEBOOK_DOMAINS) {
-    facebookHostREs.push(new RegExp(`^(.*\\.)?${facebookDomain}$`));
+function generateRedditHostREs () {
+  for (let redditDomain of REDDIT_DOMAINS) {
+    redditHostREs.push(new RegExp(`^(.*\\.)?${redditDomain}$`));
   }
 }
 
-async function clearFacebookCookies () {
-  // Clear all facebook cookies
+async function clearRedditCookies () {
+  // Clear all reddit cookies
   const containers = await browser.contextualIdentities.query({});
   containers.push({
     cookieStoreId: "firefox-default"
@@ -164,78 +159,78 @@ async function clearFacebookCookies () {
 
   let macAssignments = [];
   if (macAddonEnabled) {
-    const promises = FACEBOOK_DOMAINS.map(async facebookDomain => {
-      const assigned = await getMACAssignment(`https://${facebookDomain}/`);
-      return assigned ? facebookDomain : null;
+    const promises = REDDIT_DOMAINS.map(async redditDomain => {
+      const assigned = await getMACAssignment(`https://${redditDomain}/`);
+      return assigned ? redditDomain : null;
     });
     macAssignments = await Promise.all(promises);
   }
 
-  FACEBOOK_DOMAINS.map(async facebookDomain => {
-    const facebookCookieUrl = `https://${facebookDomain}/`;
+  REDDIT_DOMAINS.map(async redditDomain => {
+    const redditCookieUrl = `https://${redditDomain}/`;
 
-    // dont clear cookies for facebookDomain if mac assigned (with or without www.)
+    // dont clear cookies for redditDomain if mac assigned (with or without www.)
     if (macAddonEnabled &&
-        (macAssignments.includes(facebookDomain) ||
-         macAssignments.includes(`www.${facebookDomain}`))) {
+        (macAssignments.includes(redditDomain) ||
+         macAssignments.includes(`www.${redditDomain}`))) {
       return;
     }
 
     containers.map(async container => {
       const storeId = container.cookieStoreId;
-      if (storeId === facebookCookieStoreId) {
-        // Don't clear cookies in the Facebook Container
+      if (storeId === redditCookieStoreId) {
+        // Don't clear cookies in the Reddit Container
         return;
       }
 
       const cookies = await browser.cookies.getAll({
-        domain: facebookDomain,
+        domain: redditDomain,
         storeId
       });
 
       cookies.map(cookie => {
         browser.cookies.remove({
           name: cookie.name,
-          url: facebookCookieUrl,
+          url: redditCookieUrl,
           storeId
         });
       });
       // Also clear Service Workers as it breaks detecting onBeforeRequest
-      await browser.browsingData.remove({hostnames: [facebookDomain]}, {serviceWorkers: true});
+      await browser.browsingData.remove({hostnames: [redditDomain]}, {serviceWorkers: true});
     });
   });
 }
 
 async function setupContainer () {
-  // Use existing Facebook container, or create one
+  // Use existing Reddit container, or create one
 
   const info = await browser.runtime.getBrowserInfo();
   if (parseInt(info.version) < 67) {
-    FACEBOOK_CONTAINER_DETAILS.color = "blue";
-    FACEBOOK_CONTAINER_DETAILS.icon = "briefcase";
+    REDDIT_CONTAINER_DETAILS.color = "orange";
+    REDDIT_CONTAINER_DETAILS.icon = "briefcase";
   }
 
-  const contexts = await browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_DETAILS.name});
+  const contexts = await browser.contextualIdentities.query({name: REDDIT_CONTAINER_DETAILS.name});
   if (contexts.length > 0) {
-    const facebookContext = contexts[0];
-    facebookCookieStoreId = facebookContext.cookieStoreId;
-    // Make existing Facebook container the "fence" icon if needed
-    if (facebookContext.color !== FACEBOOK_CONTAINER_DETAILS.color ||
-        facebookContext.icon !== FACEBOOK_CONTAINER_DETAILS.icon
+    const redditContext = contexts[0];
+    redditCookieStoreId = redditContext.cookieStoreId;
+    // Make existing Reddit container the "fence" icon if needed
+    if (redditContext.color !== REDDIT_CONTAINER_DETAILS.color ||
+        redditContext.icon !== REDDIT_CONTAINER_DETAILS.icon
     ) {
       await browser.contextualIdentities.update(
-        facebookCookieStoreId,
-        { color: FACEBOOK_CONTAINER_DETAILS.color, icon: FACEBOOK_CONTAINER_DETAILS.icon }
+        redditCookieStoreId,
+        { color: REDDIT_CONTAINER_DETAILS.color, icon: REDDIT_CONTAINER_DETAILS.icon }
       );
     }
   } else {
-    const context = await browser.contextualIdentities.create(FACEBOOK_CONTAINER_DETAILS);
-    facebookCookieStoreId = context.cookieStoreId;
+    const context = await browser.contextualIdentities.create(REDDIT_CONTAINER_DETAILS);
+    redditCookieStoreId = context.cookieStoreId;
   }
-  // Initialize domainsAddedToFacebookContainer if needed
-  const fbcStorage = await browser.storage.local.get();
-  if (!fbcStorage.domainsAddedToFacebookContainer) {
-    await browser.storage.local.set({"domainsAddedToFacebookContainer": []});
+  // Initialize domainsAddedToRedditContainer if needed
+  const rdcStorage = await browser.storage.local.get();
+  if (!rdcStorage.domainsAddedToRedditContainer) {
+    await browser.storage.local.set({"domainsAddedToRedditContainer": []});
   }
 }
 
@@ -289,10 +284,10 @@ function getRootDomain(url) {
 
 }
 
-function isFacebookURL (url) {
+function isRedditURL (url) {
   const parsedUrl = new URL(url);
-  for (let facebookHostRE of facebookHostREs) {
-    if (facebookHostRE.test(parsedUrl.host)) {
+  for (let redditHostRE of redditHostREs) {
+    if (redditHostRE.test(parsedUrl.host)) {
       return true;
     }
   }
@@ -300,25 +295,25 @@ function isFacebookURL (url) {
 }
 
 // TODO: refactor parsedUrl "up" so new URL doesn't have to be called so much
-// TODO: refactor fbcStorage "up" so browser.storage.local.get doesn't have to be called so much
-async function addDomainToFacebookContainer (url) {
-  const fbcStorage = await browser.storage.local.get();
+// TODO: refactor rdcStorage "up" so browser.storage.local.get doesn't have to be called so much
+async function addDomainToRedditContainer (url) {
+  const rdcStorage = await browser.storage.local.get();
   const rootDomain = getRootDomain(url);
-  fbcStorage.domainsAddedToFacebookContainer.push(rootDomain);
-  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+  rdcStorage.domainsAddedToRedditContainer.push(rootDomain);
+  await browser.storage.local.set({"domainsAddedToRedditContainer": rdcStorage.domainsAddedToRedditContainer});
 }
 
-async function removeDomainFromFacebookContainer (domain) {
-  const fbcStorage = await browser.storage.local.get();
-  const domainIndex = fbcStorage.domainsAddedToFacebookContainer.indexOf(domain);
-  fbcStorage.domainsAddedToFacebookContainer.splice(domainIndex, 1);
-  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+async function removeDomainFromRedditContainer (domain) {
+  const rdcStorage = await browser.storage.local.get();
+  const domainIndex = rdcStorage.domainsAddedToRedditContainer.indexOf(domain);
+  rdcStorage.domainsAddedToRedditContainer.splice(domainIndex, 1);
+  await browser.storage.local.set({"domainsAddedToRedditContainer": rdcStorage.domainsAddedToRedditContainer});
 }
 
-async function isAddedToFacebookContainer (url) {
-  const fbcStorage = await browser.storage.local.get();
+async function isAddedToRedditContainer (url) {
+  const rdcStorage = await browser.storage.local.get();
   const rootDomain = getRootDomain(url);
-  if (fbcStorage.domainsAddedToFacebookContainer.includes(rootDomain)) {
+  if (rdcStorage.domainsAddedToRedditContainer.includes(rootDomain)) {
     return true;
   }
   return false;
@@ -330,16 +325,16 @@ async function shouldContainInto (url, tab) {
     return false;
   }
 
-  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
+  const hasBeenAddedToRedditContainer = await isAddedToRedditContainer(url);
 
-  if (isFacebookURL(url) || hasBeenAddedToFacebookContainer) {
-    if (tab.cookieStoreId !== facebookCookieStoreId) {
-      // Facebook-URL outside of Facebook Container Tab
-      // Should contain into Facebook Container
-      return facebookCookieStoreId;
+  if (isRedditURL(url) || hasBeenAddedToRedditContainer) {
+    if (tab.cookieStoreId !== redditCookieStoreId) {
+      // Reddit-URL outside of Reddit Container Tab
+      // Should contain into Reddit Container
+      return redditCookieStoreId;
     }
-  } else if (tab.cookieStoreId === facebookCookieStoreId) {
-    // Non-Facebook-URL inside Facebook Container Tab
+  } else if (tab.cookieStoreId === redditCookieStoreId) {
+    // Non-Reddit-URL inside Reddit Container Tab
     // Should contain into Default Container
     return "firefox-default";
   }
@@ -388,9 +383,9 @@ async function maybeReopenAlreadyOpenTabs () {
   });
 }
 
-function stripFbclid(url) {
+function stripRdclid(url) {
   const strippedUrl = new URL(url);
-  strippedUrl.searchParams.delete("fbclid");
+  strippedUrl.searchParams.delete("rdclid");
   return strippedUrl.href;
 }
 
@@ -443,16 +438,16 @@ async function updateBrowserActionIcon (tab) {
   browser.browserAction.setBadgeText({text: ""});
 
   const url = tab.url;
-  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
+  const hasBeenAddedToRedditContainer = await isAddedToRedditContainer(url);
   const aboutPageURLCheck = url.startsWith("about:");
 
-  if (isFacebookURL(url)) {
+  if (isRedditURL(url)) {
     // TODO: change panel logic from browser.storage to browser.runtime.onMessage
     // so the panel.js can "ask" background.js which panel it should show
-    browser.storage.local.set({"CURRENT_PANEL": "on-facebook"});
+    browser.storage.local.set({"CURRENT_PANEL": "on-reddit"});
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
-  } else if (hasBeenAddedToFacebookContainer) {
-    browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
+  } else if (hasBeenAddedToRedditContainer) {
+    browser.storage.local.set({"CURRENT_PANEL": "in-rdc"});
   } else if (aboutPageURLCheck) {
     // Sets CURRENT_PANEL if current URL is an internal about: page
     browser.storage.local.set({"CURRENT_PANEL": "about"});
@@ -468,13 +463,13 @@ async function updateBrowserActionIcon (tab) {
   }
 }
 
-async function containFacebook (request) {
+async function containReddit (request) {
   if (tabsWaitingToLoad[request.tabId]) {
     // Cleanup just to make sure we don't get a race-condition with startup reopening
     delete tabsWaitingToLoad[request.tabId];
   }
 
-  // Listen to requests and open Facebook into its Container,
+  // Listen to requests and open Reddit into its Container,
   // open other sites into the default tab context
   if (request.tabId === -1) {
     // Request doesn't belong to a tab
@@ -486,8 +481,8 @@ async function containFacebook (request) {
 
   const url = new URL(request.url);
   const urlSearchParm = new URLSearchParams(url.search);
-  if (urlSearchParm.has("fbclid")) {
-    return {redirectUrl: stripFbclid(request.url)};
+  if (urlSearchParm.has("rdclid")) {
+    return {redirectUrl: stripRdclid(request.url)};
   }
 
   return maybeReopenTab(request.url, tab, request);
@@ -495,7 +490,7 @@ async function containFacebook (request) {
 
 // Lots of this is borrowed from old blok code:
 // https://github.com/mozilla/blok/blob/master/src/js/background.js
-async function blockFacebookSubResources (requestDetails) {
+async function blockRedditSubResources (requestDetails) {
   if (requestDetails.type === "main_frame") {
     tabStates[requestDetails.tabId] = { trackersDetected: false };
     return {};
@@ -505,32 +500,32 @@ async function blockFacebookSubResources (requestDetails) {
     return {};
   }
 
-  const urlIsFacebook = isFacebookURL(requestDetails.url);
-  const originUrlIsFacebook = isFacebookURL(requestDetails.originUrl);
+  const urlIsReddit = isRedditURL(requestDetails.url);
+  const originUrlIsReddit = isRedditURL(requestDetails.originUrl);
 
-  if (!urlIsFacebook) {
+  if (!urlIsReddit) {
     return {};
   }
 
-  if (originUrlIsFacebook) {
-    const message = {msg: "facebook-domain"};
+  if (originUrlIsReddit) {
+    const message = {msg: "reddit-domain"};
     // Send the message to the content_script
     browser.tabs.sendMessage(requestDetails.tabId, message);
     return {};
   }
 
-  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(requestDetails.originUrl);
+  const hasBeenAddedToRedditContainer = await isAddedToRedditContainer(requestDetails.originUrl);
 
-  if ( urlIsFacebook && !originUrlIsFacebook ) {
-    if (!hasBeenAddedToFacebookContainer ) {
-      const message = {msg: "blocked-facebook-subresources"};
+  if ( urlIsReddit && !originUrlIsReddit ) {
+    if (!hasBeenAddedToRedditContainer ) {
+      const message = {msg: "blocked-reddit-subresources"};
       // Send the message to the content_script
       browser.tabs.sendMessage(requestDetails.tabId, message);
 
       tabStates[requestDetails.tabId] = { trackersDetected: true };
       return {cancel: true};
     } else {
-      const message = {msg: "allowed-facebook-subresources"};
+      const message = {msg: "allowed-reddit-subresources"};
       // Send the message to the content_script
       browser.tabs.sendMessage(requestDetails.tabId, message);
       return {};
@@ -552,10 +547,10 @@ function setupWebRequestListeners() {
   },{urls: ["<all_urls>"], types: ["main_frame"]});
 
   // Add the main_frame request listener
-  browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
+  browser.webRequest.onBeforeRequest.addListener(containReddit, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
 
   // Add the sub-resource request listener
-  browser.webRequest.onBeforeRequest.addListener(blockFacebookSubResources, {urls: ["<all_urls>"]}, ["blocking"]);
+  browser.webRequest.onBeforeRequest.addListener(blockRedditSubResources, {urls: ["<all_urls>"]}, ["blocking"]);
 }
 
 function setupWindowsAndTabsListeners() {
@@ -573,25 +568,25 @@ function setupWindowsAndTabsListeners() {
   } catch (error) {
     // TODO: Needs backup strategy
     // See https://github.com/mozilla/contain-facebook/issues/23
-    // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
+    // Sometimes this add-on is installed but doesn't get a redditCookieStoreId ?
     // eslint-disable-next-line no-console
     console.error(error);
     return;
   }
-  clearFacebookCookies();
-  generateFacebookHostREs();
+  clearRedditCookies();
+  generateRedditHostREs();
   setupWebRequestListeners();
   setupWindowsAndTabsListeners();
 
   async function messageHandler(request, sender) {
     switch (request.message) {
     case "what-sites-are-added":
-      return browser.storage.local.get().then(fbcStorage => fbcStorage.domainsAddedToFacebookContainer);
+      return browser.storage.local.get().then(rdcStorage => rdcStorage.domainsAddedToRedditContainer);
     case "remove-domain-from-list":
-      removeDomainFromFacebookContainer(request.removeDomain).then( results => results );
+      removeDomainFromRedditContainer(request.removeDomain).then( results => results );
       break;
     case "add-domain-to-list":
-      addDomainToFacebookContainer(sender.url).then( results => results);
+      addDomainToRedditContainer(sender.url).then( results => results);
       break;
     case "get-root-domain":
       return getRootDomain(request.url);

@@ -1,42 +1,42 @@
 /* Button Replacement */
-.fbc-loginButton {
+.rdc-loginButton {
 	background-size: contain;
 	background-position: center;
 	background-repeat: none;
 	cursor: pointer;
 }
 
-.fbc-loginButton.fbc-size-large.fbc-button-type-continue_with {
+.rdc-loginButton.rdc-size-large.rdc-button-type-continue_with {
 	height: 40px;
 	width: 252px;
 	background-image: url(/img/login_continue_large.png);
 }
 
-.fbc-loginButton.fbc-size-medium.fbc-button-type-continue_with {
+.rdc-loginButton.rdc-size-medium.rdc-button-type-continue_with {
 	height: 28px;
 	width: 180px;
 	background-image: url(/img/login_continue_medium.png);
 }
 
-.fbc-loginButton.fbc-size-small.fbc-button-type-continue_with {
+.rdc-loginButton.rdc-size-small.rdc-button-type-continue_with {
 	height: 20px;
 	width: 154px;
 	background-image: url(/img/login_continue_small.png);
 }
 
-.fbc-loginButton.fbc-size-large.fbc-button-type-login_width {
+.rdc-loginButton.rdc-size-large.rdc-button-type-login_width {
 	height: 40px;
 	width: 236px;
 	background-image: url(/img/login_login_large.png);
 }
 
-.fbc-loginButton.fbc-size-medium.fbc-button-type-login_width {
+.rdc-loginButton.rdc-size-medium.rdc-button-type-login_width {
 	height: 28px;
 	width: 166px;
 	background-image: url(/img/login_login_medium.png);
 }
 
-.fbc-loginButton.fbc-size-small.fbc-button-type-login_width {
+.rdc-loginButton.rdc-size-small.rdc-button-type-login_width {
 	height: 20px;
 	width: 62px;
 	background-image: url(/img/login_login_small.png);
@@ -44,7 +44,7 @@
 
 /* Overlay */
 
-.fbc-badge {
+.rdc-badge {
 	all: initial;
 	position: absolute;
 	z-index: 100;
@@ -57,13 +57,13 @@
 	--white: #ffffff;
 }
 
-.fbc-badge.fbc-badge-disabled {
+.rdc-badge.rdc-badge-disabled {
 	display: none;
 	visibility: hidden;
 	opacity: 0;
 }
 
-.fbc-badge-fence {
+.rdc-badge-fence {
 	display: block;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
 	background-position: center center;
@@ -78,53 +78,53 @@
 	cursor: pointer;
 }
 
-.fbc-badge.fbc-badge-small .fbc-badge-fence {
+.rdc-badge.rdc-badge-small .rdc-badge-fence {
 	background-size: 7px auto, 100%;
 	background-image: url(/img/fence-small.svg), linear-gradient(-45deg, #6200A4, #D70022);
 	width: 17px;
 	height: 17px;
 }
 
-.fbc-badge.fbc-badge-fixed {
+.rdc-badge.rdc-badge-fixed {
 	position: fixed;
 }
 
-.fbc-badge:hover .fbc-badge-tooltip {
+.rdc-badge:hover .rdc-badge-tooltip {
 	display: block;
 }
 
-.fbc-badge-share.fbc-badge-tooltip-active .fbc-badge-tooltip {
+.rdc-badge-share.rdc-badge-tooltip-active .rdc-badge-tooltip {
 	display: block;
 }
 
-.fbc-badge.active:hover .fbc-badge-tooltip {
+.rdc-badge.active:hover .rdc-badge-tooltip {
 	display: none;
 }
 
-.fbc-badge.active .fbc-badge-prompt {
+.rdc-badge.active .rdc-badge-prompt {
 	display: block;
 }
 
-.fbc-badge-share-passive:hover {
+.rdc-badge-share-passive:hover {
 	display: block;
 	visibility: visible;
 	opacity: 1;
 }
 
 /* Only show first Share badge   */
-.fbc-badge-share-passive, .fbc-badge-share-passive.fbc-badge-share:not(.fbc-badge-disabled), .fbc-badge-share.fbc-badge-disabled, .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) ~ .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) {
+.rdc-badge-share-passive, .rdc-badge-share-passive.rdc-badge-share:not(.rdc-badge-disabled), .rdc-badge-share.rdc-badge-disabled, .rdc-badge-share:not(.rdc-badge-disabled):not(.rdc-badge-tooltip-active) ~ .rdc-badge-share:not(.rdc-badge-disabled):not(.rdc-badge-tooltip-active) {
 	display: none;
 	visibility: hidden;
 	opacity: 0;
 }
 
-.fbc-badge-share:not(.fbc-badge-disabled), .fbc-badge-share.fbc-badge-tooltip-active:not(.fbc-badge-disabled) {
+.rdc-badge-share:not(.rdc-badge-disabled), .rdc-badge-share.rdc-badge-tooltip-active:not(.rdc-badge-disabled) {
 	display: block;
 	visibility: visible;
 	opacity: 1;
 }
 
-.fbc-badge-prompt {
+.rdc-badge-prompt {
 	display: none;
 	width: 345px;
 	position: absolute;
@@ -137,7 +137,7 @@
 	padding: 0 0 40px;
 }
 
-.fbc-badge-prompt:after {
+.rdc-badge-prompt:after {
 	content: " ";
 	position: absolute;
 	left: -10px;
@@ -150,37 +150,37 @@
 	border-color: transparent var(--white) transparent;
 }
 
-.fbc-badge-prompt-align-right .fbc-badge-prompt {
+.rdc-badge-prompt-align-right .rdc-badge-prompt {
 	left: auto;
 	right: calc( 100% + 20px);
 }
 
-.fbc-badge-prompt-align-right .fbc-badge-prompt:after {
+.rdc-badge-prompt-align-right .rdc-badge-prompt:after {
 	left: auto;
 	right: -10px;
 	border-width: 10px 0 10px 10px;
 }
 
-.fbc-badge-prompt-align-top .fbc-badge-prompt {
+.rdc-badge-prompt-align-top .rdc-badge-prompt {
 	top: -7px;
 	transform: none;
 }
 
-.fbc-badge-prompt-align-top .fbc-badge-prompt:after {
+.rdc-badge-prompt-align-top .rdc-badge-prompt:after {
 	top: 16px;
 }
 
-.fbc-badge-prompt-align-bottom .fbc-badge-prompt {
+.rdc-badge-prompt-align-bottom .rdc-badge-prompt {
 	top: auto;
 	bottom: -20px;
 	transform: none;
 }
 
-.fbc-badge-prompt-align-bottom .fbc-badge-prompt:after {
+.rdc-badge-prompt-align-bottom .rdc-badge-prompt:after {
 	display: none;
 }
 
-.fbc-badge-prompt h1 {
+.rdc-badge-prompt h1 {
 	all: unset;
 	letter-spacing: -0.1px;
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
@@ -199,12 +199,12 @@
 	color: var(--black);
 }
 
-.fbc-badge-prompt-contents {
+.rdc-badge-prompt-contents {
 	padding: 20px;
 	background: var(--white);
 }
 
-.fbc-badge-prompt p {
+.rdc-badge-prompt p {
 	all: unset;
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	display: block;
@@ -215,18 +215,18 @@
 	color: var(--black);
 }
 
-.fbc-badge-prompt p:first-of-type {
+.rdc-badge-prompt p:first-of-type {
 	font-weight: 600;
 }
 
-.fbc-badge-prompt form {
+.rdc-badge-prompt form {
 	all: unset;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
 
-.fbc-badge-prompt input {
+.rdc-badge-prompt input {
 	all: unset;
 	margin: 0 5px 0 0;
 	appearance: checkbox;
@@ -238,7 +238,7 @@
 	display: inline-block;
 }
 
-.fbc-badge-prompt label {
+.rdc-badge-prompt label {
 	all: unset;
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	font-size: 12px;
@@ -250,7 +250,7 @@
 	line-height: 20px;
 }
 
-.fbc-badge-prompt-buttons {
+.rdc-badge-prompt-buttons {
 	position: absolute;
 	bottom: 0.15px;
 	height: 40px;
@@ -258,7 +258,7 @@
 	z-index: 0;
 }
 
-.fbc-badge-prompt-buttons button {
+.rdc-badge-prompt-buttons button {
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	all: unset;
 	display: inline-block;
@@ -277,25 +277,25 @@
 	text-align: center;
 }
 
-.fbc-badge-prompt-buttons button:hover {
+.rdc-badge-prompt-buttons button:hover {
 	background: #E9E9E9;
 	color: var(--black);
 }
 
-.fbc-badge-prompt-buttons button:last-child {
+.rdc-badge-prompt-buttons button:last-child {
 	border-top: 1px solid var(--blue70);
 	background: var(--blue60);
 	color: var(--white);
 }
 
-.fbc-badge-prompt-buttons button:last-child:hover {
+.rdc-badge-prompt-buttons button:last-child:hover {
 	background: var(--blue70);
 	color: var(--white);
 }
 
 
 /* Tooltip */
-.fbc-badge-tooltip {
+.rdc-badge-tooltip {
 	display: none;
 	padding: 5px 10px 10px;
 	width: 250px;
@@ -313,22 +313,22 @@
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
-.fbc-badge-prompt-align-right .fbc-badge-tooltip {
+.rdc-badge-prompt-align-right .rdc-badge-tooltip {
 	left: auto;
 	right: calc( 100% + 0.5em );
 }
 
-.fbc-badge-prompt-align-bottom .fbc-badge-tooltip {
+.rdc-badge-prompt-align-bottom .rdc-badge-tooltip {
 	top: auto;
 	bottom: 25%;
 }
 
-/* .fbc-badge-prompt-align-right .fbc-badge-prompt {
+/* .rdc-badge-prompt-align-right .rdc-badge-prompt {
 	left: auto;
 	right: calc( 100% + 20px);
 }
 
-.fbc-badge-prompt-align-right .fbc-badge-prompt:after {
+.rdc-badge-prompt-align-right .rdc-badge-prompt:after {
 	left: auto;
 	right: -10px;
 	border-width: 10px 0 10px 10px;

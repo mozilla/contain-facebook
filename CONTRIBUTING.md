@@ -1,17 +1,14 @@
 # CONTRIBUTING
 
-Everyone is welcome to contribute to Facebook Containers. Reach out to team members if you have questions:
-
-- IRC: #containers on irc.mozilla.org
-- Email: containers@mozilla.com
+Everyone is welcome to contribute to Reddit Container. Reach out to me or the Mozilla Containers team if you have questions.
 
 ## Filing bugs
 
-If you find a bug with Facebook Container, please file a issue.
+If you find a bug with Reddit Container, please file a issue.
 
-Check first if the bug might already exist: https://github.com/mozilla/contain-facebook/issues
+Check first if the bug might already exist: https://github.com/ImtheGiantRat/contain-reddit/issues
 
-[Open an issue](https://github.com/mozilla/contain-facebook/issues/new)
+[Open an issue](https://github.com/ImtheGiantRat/contain-reddit/issues/new)
 
 1. Visit about:support
 2. Click "Copy raw data to clipboard" and paste into the bug. Alternatively copy the following sections into the issue:

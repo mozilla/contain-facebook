@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Facebook Container",
-    "version": "2.1.1",
+    "name": "Reddit Container",
+    "version": "2.1.2",
 
     "incognito": "not_allowed",
 
@@ -16,27 +16,27 @@
 
     "applications": {
       "gecko": {
-        "id": "@contain-facebook",
+        "id": "@contain-reddit",
         "strict_min_version": "67.0"
       }
     },
 
-    "homepage_url": "https://github.com/mozilla/contain-facebook",
+    "homepage_url": "https://github.com/ImtheGiantRat/contain-reddit",
 
     "browser_action": {
         "browser_style": true,
-        "default_icon": "/img/fbc-icon-dark.svg",
-        "default_title": "Facebook Container",
+        "default_icon": "/img/rdc-icon-dark.svg",
+        "default_title": "Reddit Container",
         "default_popup": "panel.html",
         "theme_icons": [
             {
-                "light": "/img/fbc-icon.svg",
-                "dark": "/img/fbc-icon-dark.svg",
+                "light": "/img/rdc-icon.svg",
+                "dark": "/img/rdc-icon-dark.svg",
                 "size": 16
             },
             {
-                "light": "/img/fbc-icon.svg",
-                "dark": "/img/fbc-icon-dark.svg",
+                "light": "/img/rdc-icon.svg",
+                "dark": "/img/rdc-icon-dark.svg",
                 "size": 32
             }
         ]

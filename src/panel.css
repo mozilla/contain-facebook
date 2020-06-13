@@ -44,7 +44,7 @@ div.img {
   padding-bottom: 0;
 }
 
-h1 { /* "Facebook Container" headline for all panels */
+h1 { /* "Reddit Container" headline for all panels */
   font-weight: 600;
   margin: 0;
   font-size: 13px;
@@ -82,13 +82,13 @@ h3 {
   font-weight: 300;
 }
 
-.Facebook-text {
+.Reddit-text {
   color: var(--secondaryText);
   font-weight: 500;
   font-size: 14px;
 }
 
-.Facebook-text::after {
+.Reddit-text::after {
   background: url("/img/fbc-icon-dark.svg") center no-repeat;
   background-size: 14px auto;
   display: inline-block;
@@ -99,13 +99,13 @@ h3 {
   content: "";
 }
 
-.Facebook-blue-text {
+.Reddit-blue-text {
   color: #37ADFF;
   font-weight: 500;
   font-size: 14px;
 }
 
-.Facebook-blue-text::after {
+.Reddit-blue-text::after {
   background: url("/img/briefcase.svg") center no-repeat;
   background-size: 17px auto;
   display: inline-block;
@@ -132,13 +132,13 @@ a:hover {
   border-bottom: 1.5px solid var(--blue70);
 }
 
-.fw-bottom-btn { /* Full-width bottom bar "How Facebook Container Works" button. Only on non-onboarding panels. */
+.fw-bottom-btn { /* Full-width bottom bar "How Reddit Container Works" button. Only on non-onboarding panels. */
   padding: .7rem 0;
   background-color: transparent;
   border-top: var(--borders);
 }
 
-.highlight-on-hover { /* Full-width element that wraps around the "How Facebook Container Works" span and arrow icon */
+.highlight-on-hover { /* Full-width element that wraps around the "How Reddit Container Works" span and arrow icon */
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
@@ -366,10 +366,10 @@ a:hover {
 }
 
 .img,
-.on-facebook-subbhead::before,
+.on-reddit-subbhead::before,
 .in-fbc-subhead::before,
 .highlight-on-hover::after,
-.Facebook-text::after,
+.Reddit-text::after,
 .trackers-detected-subhead::before,
 .btn-return.arrow-left {
   content: "";
@@ -423,16 +423,8 @@ h3.sites-allowed {
   pointer-events: none;
 }
 
-.favi-facebook {
-  background-image: url("/img/favi-facebook.png");
-}
-
-.favi-instagram {
-  background-image: url("/img/favi-instagram.png");
-}
-
-.favi-messenger {
-  background-image: url("/img/favi-messenger.png");
+.favi-reddit {
+  background-image: url("/img/favi-reddit.png");
 }
 
 #no-trackers .fw-bottom-btn:last-of-type {
