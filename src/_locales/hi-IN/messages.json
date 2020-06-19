@@ -169,6 +169,10 @@
     "message": "हटाएँ",
     "description": ""
   },
+  "button-allow-site": {
+    "message": "Facebook Container में साइट की अनुमति दें",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
   "button-remove-site": {
     "message": "Facebook Container से साइट हटाएं",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
