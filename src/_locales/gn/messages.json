@@ -21,7 +21,7 @@
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p1": {
-    "message": "Ko ta'ãngachu'i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com mba’épe térã embojuajúramo Facebook Container rehe.",
+    "message": "Ko ta’ãngachu’i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com mba’épe térã embojuajúramo Facebook Container rehe.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p2": {
@@ -71,7 +71,7 @@
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Ko ta'ãngachu'i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com-pe, oĩva Facebook Container mboypýri.",
+    "message": "Ko ta’ãngachu’i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com-pe, oĩva Facebook Container mboypýri.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
