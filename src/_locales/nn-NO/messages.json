@@ -135,11 +135,11 @@
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Ingen Facebook-sporfølgjarar oppdaga",
+    "message": "Ingen Facebook-sporarar oppdaga",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container fann ingen Facebook-sporfølgjarar på denne nettsida. Men, nettsida kan framleis innehalde andre typar sporfølgjarar.",
+    "message": "Facebook Container fann ingen Facebook-sporarar på denne nettsida. Men, nettsida kan framleis innehalde andre typar sporarar.",
     "description": ""
   },
   "learn-more": {
@@ -155,7 +155,7 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "Facebook-knappar som vert viste på nettbutikkar, nyhende-, og andre nettstadar inneheld sporfølgjarar som fortel Facebook kvar du har vore på nettet. Til og med dersom du aldri brukar desse knappane til å like eller dele, kan sporfølgjarane framleis samle data om nettlesinga di. Facebook Container blokkerer desse sporfølgjarane.",
+    "message": "Facebook-knappar som vert viste på nettbutikkar, nyhende-, og andre nettstadar inneheld sporarar som fortel Facebook kvar du har vore på nettet. Til og med dersom du aldri brukar desse knappane til å like eller dele, kan sporfølgjarane framleis samle data om nettlesinga di. Facebook Container blokkerer desse sporfølgjarane.",
     "description": ""
   },
   "trackers-detected-p2": {
@@ -226,7 +226,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container har blokkert Facebook-sporfølgjarar. Viss du brukar Logg inn med Facebook på denne nettsida vil Facebook ha moglegheita til å spore deg.",
+    "message": "Facebook Container har blokkert Facebook-sporarar. Viss du brukar Logg inn med Facebook på denne nettsida vil Facebook ha moglegheita til å spore deg.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
