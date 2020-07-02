@@ -155,11 +155,11 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "Facebook-knappar som vert viste på nettbutikkar, nyhende-, og andre nettstadar inneheld sporarar som fortel Facebook kvar du har vore på nettet. Til og med dersom du aldri brukar desse knappane til å like eller dele, kan sporfølgjarane framleis samle data om nettlesinga di. Facebook Container blokkerer desse sporfølgjarane.",
+    "message": "Facebook-knappar som vert viste på nettbutikkar, nyhende-, og andre nettstadar inneheld sporarar som fortel Facebook kvar du har vore på nettet. Til og med dersom du aldri brukar desse knappane til å like eller dele, kan sporarane framleis samle data om nettlesinga di. Facebook Container blokkerer desse sporarane.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container blokkerer desse sporfølgjarane. Viss du derimot trykkjer på ein av desse knappane vil Facebook ha moglegheit til å spore deg.",
+    "message": "Facebook Container blokkerer desse sporarane. Viss du derimot trykkjer på ein av desse knappane vil Facebook ha moglegheit til å spore deg.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
