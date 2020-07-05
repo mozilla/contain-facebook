@@ -86,6 +86,10 @@
     "message": "Facebook에 접속하지 않을 때도, Facebook은 사용자를 온라인 환경에서 추적할 수 있습니다. Facebook에 무언가를 게시하거나 Facebook 계정으로 웹사이트에 로그인하는 버튼은 추적기를 가지고 있습니다. Facebook Container는 이러한 추적기를 차단하고 추적기가 제거된 환경임을 보여주기 위해 울타리 아이콘을 표시합니다.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "해당 이미지는 페이스북 컨테이너 펜스 아이콘이 페이지 내의 좋아요 버튼 옆에 표시되는 방법을 보여줍니다.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
   "onboarding5-subhead": {
     "message": "다른 사이트에서 Facebook으로 로그인",
     "description": "This is the subhead for the fifth onboarding panel."
@@ -93,6 +97,10 @@
   "onboarding5-p1": {
     "message": "Facebook 로그인 기능을 다른 사이트에서 사용하기 위해서는, 경계 안으로 이동해야 합니다. 울타리 아이콘을 누르고 하단의 ‘Facebook Container에 사이트 허용’을 선택하세요.",
     "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "해당 이미지는 페이스북 컨테이너에 사이트를 추가하는 버튼이 패널에 표시되는 방법을 보여줍니다.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
     "message": "이를 통해 Facebook으로 로그인 할 수 있지만, Facebook은 해당 사이트에서의 당신의 활동을 추적 할 수 있게 됩니다.",
@@ -219,6 +227,10 @@
   },
   "inPageUI-tooltip-prompt-p1": {
     "message": "여기서 Facebook이 사용자를 추적하도록 허가하시겠습니까?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "페이스북 로그인 사용을 원하시면 페이스북은 이 사이트에서 사용자의 활동을 추적할 수 있습니다. 이것은 사용자의 온라인 활동에 대해 보다 완전한 그림을 그릴 수 있게 해줍니다.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
