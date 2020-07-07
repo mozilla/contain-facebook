@@ -474,10 +474,13 @@ const addHeaderWithBackArrow = (fragment) => {
 };
 
 
+// Add additional domains that need to be shown in the "Sites Allowed" panel here
 const defaultAllowedSites = [
-  "instagram.com",
   "facebook.com",
+  "instagram.com",
   "messenger.com",
+  // "whatsapp.com",
+  // "workplace.com",
 ];
 
 
