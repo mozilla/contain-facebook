@@ -73,5 +73,13 @@
   "onboarding4-img": {
     "message": "Esta imaxe demuestra cómo va apaecer l'iconu de valla de Facebook Container al llau d'un botón Préstame de Facebook.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "trackers-detected-subhead": {
+    "message": "Protexímoste de Facebook.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Si quies usar l'aniciu de sesión con Facebook, Facebook va ser a rastrexar la to actividá nesti sitiu. Esto pue ayudalos a crear un perfil completu de la to vida dixital.",
+    "description": ""
   }
 }
