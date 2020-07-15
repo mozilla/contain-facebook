@@ -74,9 +74,25 @@
     "message": "Esta imaxe demuestra cómo va apaecer l'iconu de valla de Facebook Container al llau d'un botón Préstame de Facebook.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
+  "btn-cancel": {
+    "message": "Encaboxar",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container nun deteutó nengún rastrexador de Facebook nesta páxina. Por embargu, la páxina pue contener otres tribes de rastrexadores.",
+    "description": ""
+  },
+  "how-fbc-works": {
+    "message": "Cómo funciona Facebook Container",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
   "trackers-detected-subhead": {
     "message": "Protexímoste de Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "Los botones de Facebook qu'apaecen nes tiendes, noticies y otros sitios contienen rastrexadores que-y dicen a Facebook en que parte de la web tuviesti. Magar qu'enxamás usares esos botones pa prestar o compartir, los rastrexadores entá puen recoyer datos tocante al to restolar. Facebook Container blóquialos.",
+    "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
     "message": "Si quies usar l'aniciu de sesión con Facebook, Facebook va ser a rastrexar la to actividá nesti sitiu. Esto pue ayudalos a crear un perfil completu de la to vida dixital.",
