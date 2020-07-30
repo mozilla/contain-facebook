@@ -182,8 +182,20 @@
     "message": "הסרת האתר מ־Facebook Container",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
+  "button-remove-site-tooltip": {
+    "message": "מכיוון שאתר זה נמצא בבעלות Facebook, לא ניתן להסירו מ־Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
     "message": "להסיר את האתר מ־Facebook Container?",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "לאפשר מעקב של Facebook באתר זה?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "פעולה זו מאפשרת לך להתחבר עם Facebook, אך גם מאפשרת ל־Facebook לעקוב אחר הפעילות שלך באתר זה.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
