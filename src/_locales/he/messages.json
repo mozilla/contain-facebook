@@ -94,6 +94,10 @@
     "message": "תמונה זו ממחישה כיצד הכפתור להוספת אתר ל־Facebook Container יופיע בחלונית.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
+  "onboarding5-p2": {
+    "message": "פעולה זו מאפשרת לך להתחבר עם Facebook, אך גם מאפשרת ל־Facebook לעקוב אחר הפעילות שלך באותו אתר.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "לאפשר",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -126,6 +130,10 @@
     "message": "לא אותרו עוקבים של Facebook",
     "description": ""
   },
+  "no-trackers-p1": {
+    "message": "‏Facebook Container לא איתר שום רכיבי מעקב של Facebook באתר זה. עם זאת, ייתכן שהדף עדיין מכיל סוגים אחרים של רכיבי מעקב.",
+    "description": ""
+  },
   "learn-more": {
     "message": "מידע נוסף",
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -137,6 +145,14 @@
   "trackers-detected-subhead": {
     "message": "שמרנו עליך מפני Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "הכפתורים של Facebook שמופיעים באתרי קניות, חדשות ועוד מכילים רכיבי מעקב שאומרים ל־Facebook היכן היית ברשת. אפילו אם אין לך שימוש בכפתורים האלו כדי לאהוב או לשתף ב־Facebook, רכיבי המעקב יכולים עדיין לאסוף נתונים על הגלישה שלך. Facebook Container חוסם את רכיבי המעקב האלה.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "‏Facebook Container חוסם את רכיבי המעקב האלו. עם זאת, לחיצה על אחד מהכפתורים האלו יגרום לכך ש־Facebook תוכל לעקוב אחריך.",
+    "description": ""
   },
   "sites-added-subhead": {
     "message": "אתרים מותרים ב־Facebook Container",
@@ -157,6 +173,14 @@
   "remove": {
     "message": "הסרה",
     "description": ""
+  },
+  "button-allow-site": {
+    "message": "לאפשר את האתר ב־Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "הסרת האתר מ־Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
   "remove-site-subhead": {
     "message": "להסיר את האתר מ־Facebook Container?",
