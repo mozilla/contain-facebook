@@ -70,9 +70,9 @@
     "message": "סמל הגדר של Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
-  "onboarding3-subhead": {
-    "message": "איך אוכל לדעת ש־Facebook Container עובד?",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "מחוץ ל־Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "לאפשר",
