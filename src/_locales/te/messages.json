@@ -11,6 +11,10 @@
     "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఉపయోగించడం",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
+  "onboarding2-alt": {
+    "message": "ఫేస్‌బుక్ కంటయినర్ కంచె ప్రతీకం",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
   "onboarding4-subhead": {
     "message": "ఫేస్‌బుక్ వెలుపల",
     "description": "This is the subhead for the fourth onboarding panel."
@@ -58,6 +62,10 @@
   "trackers-detected-subhead": {
     "message": "మేము మిమ్మల్ని Facebook నుండి రక్షించాము.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "sites-added-subhead": {
+    "message": "ఫేస్‌బుక్ కంటెయినర్‌లో అనుమతించబడే సైట్లు",
+    "description": "This is a panel subhead."
   },
   "no-sites-added": {
     "message": "ఏదీకాదు",
