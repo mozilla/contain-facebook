@@ -154,6 +154,10 @@
     "message": "우리는 페이스북에서 당신을 보호했습니다.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
+  "trackers-detected-p1": {
+    "message": "쇼핑, 뉴스 및 기타 사이트에 표시되는 Facebook 버튼에는 Facebook에 웹에서 있었던 위치를 알려주는 추적기가 포함되어 있습니다. 이 버튼을 사용하여 좋아요 버튼을 누르거나 공유하지 않더라도 추적기는 검색에 대한 데이터를 수집 할 수 있습니다. Facebook 컨테이너는 이러한 추적기를 차단합니다.",
+    "description": ""
+  },
   "trackers-detected-p2": {
     "message": "Facebook 컨테이너가 이러한 추적기를 차단합니다. 그러나 이 버튼 중 하나를 클릭하면 Facebook에서 당신을 추적 할 수 있게 됩니다.",
     "description": ""
