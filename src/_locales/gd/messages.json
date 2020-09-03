@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Tha Facebook Container a’ cumail na nì thu air Facebook fa leth on chòrr dhen ghnìomhachd air loidhne agad airson Facebook a chumail o bhith ’gad thracadh taobh a-muigh làrach-lìn Facebook le briosgaidean threas-phàrtaidhean.",
+    "message": "Tha Facebook Container a’ cumail na nì thu air Facebook fa leth on chòrr dhen ghnìomhachd air loidhne agad airson Facebook a chumail o bhith gad thracadh taobh a-muigh làrach-lìn Facebook le briosgaidean threas-phàrtaidhean.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -171,7 +171,7 @@
     "description": "This is a panel subhead."
   },
   "sites-included": {
-    "message": "LÀRAICHEAN ’GAN GABHAIL A-STAIGH",
+    "message": "LÀRAICHEAN GAN GABHAIL A-STAIGH",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
