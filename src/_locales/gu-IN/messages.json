@@ -240,5 +240,9 @@
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "મને આ ફરીથી બતાવશો નહીં",
     "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "જો તમે આ બટનને ક્લિક કરો છો, તો ફેસબુક તમારી આ સાઇટની મુલાકાતને ટ્રેક કરવામાં સમર્થ હશે.",
+    "description": ""
   }
 }
