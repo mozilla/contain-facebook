@@ -1,4 +1,18 @@
 {
+  "in-fbc-subhead": {
+    "message": "$URL$ ఫేస్‌బుక్ కంటెయినరులో ఉంది.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "notOnFacebookText": {
+    "message": "ఈ సైట్ ఫేస్‌బుక్ కంటెయినర్ వెలుపల ఉంది. ఇది జాలంలో మిమ్మల్ని ట్రాక్ చేయడం ఫేస్‌బుక్‌కు కష్టతరం చేస్తుంది.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "onUnknownSiteHeader": {
     "message": "ఈ సైటు ఫేస్‌బుక్ కంటెయినర్‌లో లేదు.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
