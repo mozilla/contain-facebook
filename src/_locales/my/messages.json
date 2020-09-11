@@ -1,212 +1,204 @@
 {
   "extensionDescription": {
-    "message": "ဖေ့ဘုတ်ကွန်တိန်နာသည် သတ်ဖ်ပါတီကွတ်ကီးအဖြစ်ဖြင့် သင်၏ဖေ့ဘုတ်လှုပ်ရှားမှုများကို ခြေရာခံခြင်းကို တားဆီးပေးပါသည်။", 
+    "message": "ဖေ့ဘုတ်ကွန်တိန်နာသည် သတ်ဖ်ပါတီကွတ်ကီးအဖြစ်ဖြင့် သင်၏ဖေ့ဘုတ်လှုပ်ရှားမှုများကို ခြေရာခံခြင်းကို တားဆီးပေးပါသည်။",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ သည် Facebook Container ထဲတွင် ရှိသည်။", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ သည် Facebook Container ထဲတွင် ရှိသည်။",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "ယခုကြည့်နေသော ဝဘ်ဆိုက်ကို Facebook က နောက်ယောင်ခံနိုင်သည်။ Facebook Container ထဲမှ ယခုဝဘ်ဆိုက်ကို ဖယ်ရှားရန် Facebook Container ထဲတွင် ခွင့်ပြုထားသော ဝဘ်ဆိုက်များ ကို ရွေးပြီး စာရင်းထဲမှ ဖယ်ရှားနိုင်သည်။"
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Facebook Container အတွင်းရှိ Facebook နှင့် ဝဘ်ဆိုက်များပေါ်တွင်", 
+    "message": "Facebook Container အတွင်းရှိ Facebook နှင့် ဝဘ်ဆိုက်များပေါ်တွင်",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "သင် Facebook ပိုင်ဆိုင်သော ဝဘ်ဆိုက်များ သို့မဟုတ် Facebook Container ထဲသို့ ထည့်ထားသော ဝဘ်ဆိုက်များကို ကြည့်ရှုသည့်အခါ ယခုအိုင်ကွန်သည် Firefox လိပ်စာဘားတန်းထဲတွင် ပေါ်လာမည်။", 
+    "message": "သင် Facebook ပိုင်ဆိုင်သော ဝဘ်ဆိုက်များ သို့မဟုတ် Facebook Container ထဲသို့ ထည့်ထားသော ဝဘ်ဆိုက်များကို ကြည့်ရှုသည့်အခါ ယခုအိုင်ကွန်သည် Firefox လိပ်စာဘားတန်းထဲတွင် ပေါ်လာမည်။",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "ထိုဝဘ်ဆိုက်များသည် ကောင်းမွန်စွာလုပ်ဆောင်ရန် (သို့မဟုတ် သင် မည်သူဆိုတာကို သိရန်) သင့် Facebook သက်သေခံကို ရယူရန် လိုအပ်သည်။ ယခုကိစ္စသည် Facebook က ၎င်းဝဘ်ဆိုက်များတွင် သင်ဆောင်ရွက်နေသည်များကို နောက်ယောင်ခံနိုင်စေရန် ဆိုလိုခြင်း ဖြစ်သည်။", 
+    "message": "ထိုဝဘ်ဆိုက်များသည် ကောင်းမွန်စွာလုပ်ဆောင်ရန် (သို့မဟုတ် သင် မည်သူဆိုတာကို သိရန်) သင့် Facebook သက်သေခံကို ရယူရန် လိုအပ်သည်။ ယခုကိစ္စသည် Facebook က ၎င်းဝဘ်ဆိုက်များတွင် သင်ဆောင်ရွက်နေသည်များကို နောက်ယောင်ခံနိုင်စေရန် ဆိုလိုခြင်း ဖြစ်သည်။",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ သည် ဖေ့ဘုတ်ကွန်တိန်နာထဲတွင် မဟုတ်ပါ။", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ သည် ဖေ့ဘုတ်ကွန်တိန်နာထဲတွင် မဟုတ်ပါ။",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "ဤဆိုက်သည် ဖေ့ဘုတ်ကွန်တိန်နာအပြင်ဘက်တွင်ရှိသည်။ ဤသည်မှာ ဖေ့ဘုတ်အတွက် ဝဘ်ပေါ်တွင်သင့်ကိုခြေရာခံနိုင်ရန် ပို၍ခက်ခဲစေသည်။", 
+    "message": "ဤဆိုက်သည် ဖေ့ဘုတ်ကွန်တိန်နာအပြင်ဘက်တွင်ရှိသည်။ ဤသည်မှာ ဖေ့ဘုတ်အတွက် ဝဘ်ပေါ်တွင်သင့်ကိုခြေရာခံနိုင်ရန် ပို၍ခက်ခဲစေသည်။",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "ဤဆိုက်သည် ဖေ့ဘုတ်ကွန်တိန်နာထဲတွင် မဟုတ်ပါ။", 
+    "message": "ဤဆိုက်သည် ဖေ့ဘုတ်ကွန်တိန်နာထဲတွင် မဟုတ်ပါ။",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "ဖေ့ဘုတ်ကွန်တိန်နာ", 
+    "message": "ဖေ့ဘုတ်ကွန်တိန်နာ",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "ဖေ့ဘုတ်ကွန်တိန်နာအသုံးပြုခြင်း", 
+    "message": "ဖေ့ဘုတ်ကွန်တိန်နာအသုံးပြုခြင်း",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook ကသင်၏ အင်တာနက် သုံးစွဲမှု့ ကို Facebook.com ထက် ကျော်လွန်ကာ ခြေရာခံ နိုင်သည်။ Facebook ၏ Like နှင့် Share ခလုတ်များ ကို ရယူထားမှု့များ‌ ကြောင့် သင် ဘယ်သောအခါမျှ မကြိုက် ခဲ့သော သို့မဟုတ် မျှဝေခြင်း မရှိ သည့် စာမျက်နှာများ ကို သင် လည်ပတ်ခြင်း နှင့် ရှိနေသည့် နေရာ ကို ခြေရာခံ နိုင်ပါသည်။", 
+    "message": "Facebook ကသင်၏ အင်တာနက် သုံးစွဲမှု့ ကို Facebook.com ထက် ကျော်လွန်ကာ ခြေရာခံ နိုင်သည်။ Facebook ၏ Like နှင့် Share ခလုတ်များ ကို ရယူထားမှု့များ‌ ကြောင့် သင် ဘယ်သောအခါမျှ မကြိုက် ခဲ့သော သို့မဟုတ် မျှဝေခြင်း မရှိ သည့် စာမျက်နှာများ ကို သင် လည်ပတ်ခြင်း နှင့် ရှိနေသည့် နေရာ ကို ခြေရာခံ နိုင်ပါသည်။",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container က Facebook စာမျက်နှာ နှင့် အခြားသော ကွန်ယက် စာမျက်နှာများ အကြား နယ်နိမိတ် ကိုဖန်တီးပေး ထားသောကြောင့် Facebook က သင့် အွန်လိုင်း အသုံးပြုမှု့ ကို ‌ခြေရာ ခံရန် ခက်ခဲ သွား စေ သည်။", 
+    "message": "Facebook Container က Facebook စာမျက်နှာ နှင့် အခြားသော ကွန်ယက် စာမျက်နှာများ အကြား နယ်နိမိတ် ကိုဖန်တီးပေး ထားသောကြောင့် Facebook က သင့် အွန်လိုင်း အသုံးပြုမှု့ ကို ‌ခြေရာ ခံရန် ခက်ခဲ သွား စေ သည်။",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Facebook Container နယ်နိမိတ် အတွင်းရှိ Facebook နှင့် ကွန်ယက် စာမျက်နှာများ", 
+    "message": "Facebook Container နယ်နိမိတ် အတွင်းရှိ Facebook နှင့် ကွန်ယက် စာမျက်နှာများ",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Facebook Container စည်းရိုးရုပ်ပုံငယ်", 
+    "message": "Facebook Container စည်းရိုးရုပ်ပုံငယ်",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Facebook.com ကဲ့သို့ သော ကွန်ရက်စာမျက်နှာများ ကို သင်လည်ပတ် သောအခါ ဤ အိုင်ကွန် သည် Firefox လိပ်စာအတန်း တွင် ပေါ်လာ လိမ့်မည်၊ ထိုသို့ဖြစ်ခြင်းမှာ ၎င်း တို့သည် Facebook Container ၏ နယ်နိမိတ်အတွင်းသာ ရှိ‌‌နေသောကြောင့်ဖြစ်သည်။", 
+    "message": "Facebook.com ကဲ့သို့ သော ကွန်ရက်စာမျက်နှာများ ကို သင်လည်ပတ် သောအခါ ဤ အိုင်ကွန် သည် Firefox လိပ်စာအတန်း တွင် ပေါ်လာ လိမ့်မည်၊ ထိုသို့ဖြစ်ခြင်းမှာ ၎င်း တို့သည် Facebook Container ၏ နယ်နိမိတ်အတွင်းသာ ရှိ‌‌နေသောကြောင့်ဖြစ်သည်။",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "ဤဝဘ်ဆိုက်များသည် သင့် Facebook ၏ သက်သေခံ (သင် မည်သူဖြစ်သည်ကို သိလိုမှု့) ကို လိုအပ်နေသည်။ ယင်းကြောင့်ပင် Facebook က ၎င်းဝဘ်ဆိုက်များတွင် သင်ဆောင်ရွက်နေ သမျှကို နောက်ယောင်ခံနိုင်မည့် အဓိတ်ပ္ပါယ်ပင် ဖြစ်သည်။", 
+    "message": "ဤဝဘ်ဆိုက်များသည် သင့် Facebook ၏ သက်သေခံ (သင် မည်သူဖြစ်သည်ကို သိလိုမှု့) ကို လိုအပ်နေသည်။ ယင်းကြောင့်ပင် Facebook က ၎င်းဝဘ်ဆိုက်များတွင် သင်ဆောင်ရွက်နေ သမျှကို နောက်ယောင်ခံနိုင်မည့် အဓိတ်ပ္ပါယ်ပင် ဖြစ်သည်။",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
-  "onboarding3-subhead": {
-    "message": "Facebook Container အလုပ် လုပ်နေတယ် ဆိုတာ ဘယ်လို သိနိုင်မလဲ?", 
-    "description": "This is the subhead for the third onboarding panel."
-  }, 
-  "onboarding3-p1": {
-    "message": "Facebook သို့ သင်ကြိုက်ရန် နှင့် မျှဝေရန် ခလုပ်များကို နှိပ်လျှင် သော်လကောင်း Facebnook ဖြင့် ဝဘ်ဆိုက်များ သို့ Log in ဝင်ရောက်ခြင်းတို့သည် နောက်ယောက်ခံများ ပါလာနိုင်သည်။ Facebook Container သည် tracker များကိုမည်သည့်နေရာတွင် ဖယ်ရှားလိုက်သည် ကိုပြသရန်ထို နောက်ယောင်ခံများ ဖယ်ရှားပြီးပါက ဒိုင်းပုံ အိုင်ကွန် ကိုပြလိမ့်မည်။", 
-    "description": "This is the first paragraph of the third onboarding panel."
-  }, 
-  "onboarding3-img": {
-    "message": "ဒီ ပုံသည် စာမျက်နှာထဲရှိ Facebook ကြိုက် သော ခလုပ် ဘေးတွင် Facebook Containers ဒိုင်းပုံ အိုင်ကွန် ပေါ်လာပုံကို သရုပ်ဖော်ပြသ ထားသည်။", 
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
-  "onboarding3-p2": {
-    "message": "သို့ပါသော်လည်၊ သင်သာ Facebook မှ မည်သည့် ခလုတ်ကိုမဆို နှိပ်လိုက်လျှင် သင့်ကို နောက်ယောင်ခံ နိုင်သွား လိမ့်မည်။", 
-    "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
+  "onboarding4-subhead": {
+    "message": "Facebook အပြင်ဘက်",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
   "btn-allow": {
-    "message": "ခွင့်ပြုပါ", 
+    "message": "ခွင့်ပြုပါ",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "ပယ်​ဖျက်", 
+    "message": "ပယ်​ဖျက်",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "ရှေ့သို့", 
+    "message": "ရှေ့သို့",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "နောက်သို့", 
+    "message": "နောက်သို့",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "ပြီးပြီ", 
+    "message": "ပြီးပြီ",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "ပြီးခဲ့သည့် စာမျက်နှာ ကိုပြန်သွားရန်။", 
+    "message": "ပြီးခဲ့သည့် စာမျက်နှာ ကိုပြန်သွားရန်။",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Facebook Container အလုပ်လုပ်ပုံသို့ သွားပါ", 
+    "message": "Facebook Container အလုပ်လုပ်ပုံသို့ သွားပါ",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Facebook ၏ ‌ခြေရာခံခြင်းများ မရှိသေးပါ", 
+    "message": "Facebook ၏ ‌ခြေရာခံခြင်းများ မရှိသေးပါ",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "ဤစာမျက်နှာ တွင် Facebook Container သည် နောက်ယောင်ခံမှု့ တစ်ခုမှ ရှာမတွေ့ပါ။ သို့သော် အခြားသော ‌နောက်ယောင်ခံ အမျိုးအစားများပါဝင်နိုင်ပါသည်။", 
+    "message": "ဤစာမျက်နှာ တွင် Facebook Container သည် နောက်ယောင်ခံမှု့ တစ်ခုမှ ရှာမတွေ့ပါ။ သို့သော် အခြားသော ‌နောက်ယောင်ခံ အမျိုးအစားများပါဝင်နိုင်ပါသည်။",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "ပိုမိုလေ့လာရန်", 
+    "message": "ပိုမိုလေ့လာရန်",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Facebook Container အလုပ်လုပ်ပုံ", 
+    "message": "Facebook Container အလုပ်လုပ်ပုံ",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Facebook ထံကနေ ကာကွယ်ထားပါသည်။", 
+    "message": "Facebook ထံကနေ ကာကွယ်ထားပါသည်။",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "စျေးဝယ်ခြင်း၊ သတင်းများ နှင့် အခြားသောဆိုဒ် များတွင် Facebook ၏ ခလုပ်များ ပါလာ သောကြောင့် ထို‌ နောက်ယောင်ခံများ က Facebook ကို သင်ဘယ် ကွန်ယက်လိပ်စာ များတွင် ရှိနေသည်ကို ပြောလိမ့်မည်။ သင် တစ်ခါမှ ကြိုက်ခြင်း သို့မဟုတ် မျှဝေခြင်း ခလုတ်များကို မသုံးသော်လည်း trackers သည်သင်၏ browsing နှင့် ပတ်သက်သော အချက်အလက်များ ကို စုဆောင်း နိုင်သည်။ Facebook Container သည် ထို နောက်ယောင်ခံများ ကို ပိတ်ဆို့ထားသည်။", 
+    "message": "စျေးဝယ်ခြင်း၊ သတင်းများ နှင့် အခြားသောဆိုဒ် များတွင် Facebook ၏ ခလုပ်များ ပါလာ သောကြောင့် ထို‌ နောက်ယောင်ခံများ က Facebook ကို သင်ဘယ် ကွန်ယက်လိပ်စာ များတွင် ရှိနေသည်ကို ပြောလိမ့်မည်။ သင် တစ်ခါမှ ကြိုက်ခြင်း သို့မဟုတ် မျှဝေခြင်း ခလုတ်များကို မသုံးသော်လည်း trackers သည်သင်၏ browsing နှင့် ပတ်သက်သော အချက်အလက်များ ကို စုဆောင်း နိုင်သည်။ Facebook Container သည် ထို နောက်ယောင်ခံများ ကို ပိတ်ဆို့ထားသည်။",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container သည် ထို ခြေရာခံများ ကို ပိတ်ဆို့ထားသည်။ သို့ပါသော်လည်း သင်သာ အဆိုပါ ခလုတ်တစ်ခုခုကို နှိပ်လိုက်လျှင် Facebook က သင့်ကို နောက်ယောင်ခံမိ သွား လိမ့်မည်။", 
+    "message": "Facebook Container သည် ထို ခြေရာခံများ ကို ပိတ်ဆို့ထားသည်။ သို့ပါသော်လည်း သင်သာ အဆိုပါ ခလုတ်တစ်ခုခုကို နှိပ်လိုက်လျှင် Facebook က သင့်ကို နောက်ယောင်ခံမိ သွား လိမ့်မည်။",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Facebook Container ၏ အကာအကွယ်နှင့် စည်ရိုး။", 
+    "message": "Facebook Container ၏ အကာအကွယ်နှင့် စည်ရိုး။",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Facebook Container ထဲရှိ ခွင့်ပြုထားသည့် ဝဘ်ဆိုက်များ", 
+    "message": "Facebook Container ထဲရှိ ခွင့်ပြုထားသည့် ဝဘ်ဆိုက်များ",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "ပါဝင်နေသည့် ဝဘ်ဆိုက်များ", 
+    "message": "ပါဝင်နေသည့် ဝဘ်ဆိုက်များ",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "ဘာမျှမရှိ", 
+    "message": "ဘာမျှမရှိ",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "ခွင့်ပြုထားသည့် ဝဘ်ဆိုက်များ", 
+    "message": "ခွင့်ပြုထားသည့် ဝဘ်ဆိုက်များ",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container မှ Facebook ပိုင်ဆိုက်များကို စည်းရိုးအတွင်း ထားရှိသည်။ အခြားသောဆိုက်များကို စည်းရိုးအတွင်းသို့ သင် ခွင့်ပြုနိုင်သည်၊ သို့သော် ထိုလုပ်ရပ်ကြောင့် Facebook က သင်၏ ကွန်ယက်လှုပ်ရှားမှုများကို ပိုခြေရာခံနိုင်သွားလိမ့်မည်။"
-  }, 
+  },
   "remove": {
-    "message": "ဖယ်ရှားပါ", 
+    "message": "ဖယ်ရှားပါ",
     "description": ""
-  }, 
+  },
   "remove-site-subhead": {
-    "message": "Facebook Container မှ ဆိုက်ကို ဖယ်ရှား မှာလား?", 
+    "message": "Facebook Container မှ ဆိုက်ကို ဖယ်ရှား မှာလား?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "ဤဆိုက် ကို Facebook Container မှဖယ်ရှားခြင်းကြောင့် Facebook ဖြင့် Log in ဝင်ရောက်နိုင်မှုသည် မလုပ်ဆောင်နိုင်တော့ဘဲFacebook ‌၏ ‌ခြေရာခံကွတ်ကီးများလဲ အဖျက်ခံရ ပါလိမ့်မည်။", 
+    "message": "ဤဆိုက် ကို Facebook Container မှဖယ်ရှားခြင်းကြောင့် Facebook ဖြင့် Log in ဝင်ရောက်နိုင်မှုသည် မလုပ်ဆောင်နိုင်တော့ဘဲFacebook ‌၏ ‌ခြေရာခံကွတ်ကီးများလဲ အဖျက်ခံရ ပါလိမ့်မည်။",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " အကယ်၍ သင်သည် Facebook ဝင်‌ရောက်ရန် ထပ်မံလိုအပ်ပါက ၎င်းကို Facebook Container ထဲသို့ပြန်ထည့်ရန် လိုအပ်မည်။", 
+    "message": " အကယ်၍ သင်သည် Facebook ဝင်‌ရောက်ရန် ထပ်မံလိုအပ်ပါက ၎င်းကို Facebook Container ထဲသို့ပြန်ထည့်ရန် လိုအပ်မည်။",
     "description": ""
-  }, 
+  },
+  "add-site-subhead": {
+    "message": "ဒီဆိုဒ်တွင် Facebook ကိုခြေရာခံခွင့်ပြုလား။",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container မှ ဒီ ခလုတ်ကို ပိတ်ထား လိုက်ပြီး ဒီ စာမျက်နှာ သို့ သင်လည်ပတ် ခြင်းကို Facebook မှ နောက်ယောင်မခံနိုင်တော့ပါ။", 
+    "message": "Facebook Container မှ ဒီ ခလုတ်ကို ပိတ်ထား လိုက်ပြီး ဒီ စာမျက်နှာ သို့ သင်လည်ပတ် ခြင်းကို Facebook မှ နောက်ယောင်မခံနိုင်တော့ပါ။",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook ၏ နောက်ယောင်ခံများကို Facebook Container မှပိတ်ဆို့လိုက်ပြီ။ အကယ်၍ သင်သာဒီဆိုက်သို့ Facebookဝင်လိုက်ပါက သင့်ကို နောက်ယောင်ခံမိသွားလိမ့်မည်။", 
+    "message": "Facebook ၏ နောက်ယောင်ခံများကို Facebook Container မှပိတ်ဆို့လိုက်ပြီ။ အကယ်၍ သင်သာဒီဆိုက်သို့ Facebookဝင်လိုက်ပါက သင့်ကို နောက်ယောင်ခံမိသွားလိမ့်မည်။",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Facebook မှ သင့်ကို နောက်ယောင်ခံခွင့် ပြုတော့မှာလား?", 
+    "message": "Facebook မှ သင့်ကို နောက်ယောင်ခံခွင့် ပြုတော့မှာလား?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "သင်သည် Facebook ကို အသုံးပြုပြီး ယခုဝဘ်ဆိုက်ကို ဝင်ရောက်လိုပါက ယခုဝဘ်ဆိုက်တွင် သင်ကြည့်သမျှကို နောက်ယောင်ခံနိုင်ပါလိမ့်မည်။ ယခုကိစ္စသည် သင့်အွန်လိုင်းရှိအသုံးပြုပုံစံကို ပုံဖော်တည်ဆောက်ရာတွင် ၎င်းတို့အတွက် အထောက်အကူ ဖြစ်စေသည်။", 
+    "message": "သင်သည် Facebook ကို အသုံးပြုပြီး ယခုဝဘ်ဆိုက်ကို ဝင်ရောက်လိုပါက ယခုဝဘ်ဆိုက်တွင် သင်ကြည့်သမျှကို နောက်ယောင်ခံနိုင်ပါလိမ့်မည်။ ယခုကိစ္စသည် သင့်အွန်လိုင်းရှိအသုံးပြုပုံစံကို ပုံဖော်တည်ဆောက်ရာတွင် ၎င်းတို့အတွက် အထောက်အကူ ဖြစ်စေသည်။",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "နောက်ထပ်မပြပါနှင့်။", 
+    "message": "နောက်ထပ်မပြပါနှင့်။",
     "description": ""
   }
 }
