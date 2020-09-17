@@ -523,14 +523,23 @@ async function blockFacebookSubResources (requestDetails) {
   }
 
   const urlIsFacebook = isFacebookURL(requestDetails.url);
-  const originUrlIsFacebook = isFacebookURL(requestDetails.originUrl);
-  const frameAncestorUrlIsFacebook = getFrameAncestorsURLAndCheckIfFacebook(requestDetails.frameAncestors);
-
+  // If this request isn't going to Facebook, let's return {} ASAP
   if (!urlIsFacebook) {
     return {};
   }
 
-  if (originUrlIsFacebook || frameAncestorUrlIsFacebook) {
+  const originUrlIsFacebook = isFacebookURL(requestDetails.originUrl);
+
+  if (originUrlIsFacebook) {
+    const message = {msg: "facebook-domain"};
+    // Send the message to the content_script
+    browser.tabs.sendMessage(requestDetails.tabId, message);
+    return {};
+  }
+
+  const frameAncestorUrlIsFacebook = getFrameAncestorsURLAndCheckIfFacebook(requestDetails.frameAncestors);
+
+  if (frameAncestorUrlIsFacebook) {
     const message = {msg: "facebook-domain"};
     // Send the message to the content_script
     browser.tabs.sendMessage(requestDetails.tabId, message);
