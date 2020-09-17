@@ -295,7 +295,14 @@ function getFrameAncestorsURLAndCheckIfFacebook(frameAncestorsArray) {
     return false;
   }
 
+  const appsFacebookURL = "https://apps.facebook.com";
   const frameAncestorsURL = frameAncestorsArray[0].url;
+
+  if (!frameAncestorsURL.startsWith(appsFacebookURL)) {
+    // Only allow frame ancestors that originate from apps.facebook.com
+    return false;
+  }
+
   return isFacebookURL(frameAncestorsURL);
 }
 
