@@ -174,6 +174,9 @@
     "message": "許可されているサイト",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
+  "sites-added-p1": {
+    "message": "Facebook Container は Facebook が所有するサイトを境界内に置きます。他のサイトも境界に入れられますが、これにより Facebook がより多くのウェブブラウジングを追跡できるようになります。"
+  },
   "remove": {
     "message": "削除",
     "description": ""
@@ -196,6 +199,34 @@
   },
   "remove-site-p1": {
     "message": "このサイトを Facebook Container から削除すると、Facebook でログインする機能が動作しなくなり、Facebook のトラッキング Cookie が削除されます。",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "再び Facebook でログインする機能を利用したい場合は、Facebook Container に再度追加する必要があります。",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "このサイトで Facebook の追跡を許可しますか？",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "これにより Facebook でログインしますが、Facebook によるサイト上のあなたの行動追跡を許可することになります。",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container がボタンを無効にし、Facebook によるあなたが訪問したページの追跡をブロックしました。",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container は Facebookトラッカーをブロックしています。このサイトで Facebook でログインを利用すると、Facebook があなたを追跡できるようになります。",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "このページで Facebook があなたを追跡できるようにしますか？",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "このメッセージを再度表示しない",
     "description": ""
   }
 }
