@@ -1,0 +1,16 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container は、Facebook がサードパーティの Cookie を介して Facebook ウェブサイト以外でもあなたを追跡するのを防ぐために、Facebook のアクティビティを他のウェブアクティビティから隔離します。",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ は Facebook Container 内で開いてます。",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  }
+}
