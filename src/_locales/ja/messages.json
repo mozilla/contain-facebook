@@ -93,5 +93,109 @@
   "onboarding5-img": {
     "message": "この画像は、Facebook Container にサイトを追加するためのボタンが、パネルにどのように表示されるかを示しています。",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "これにより Facebook にログインしますが、Facebook によるそのサイト上のあなたの行動追跡を許可することになります。",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
+  "btn-allow": {
+    "message": "許可する",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "キャンセル",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "次へ",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "戻る",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "完了",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "前のパネルに戻ります。",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Facebook Container の使い方へ移動",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "Facebookトラッカーが検出されていません",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container は、このページで Facebook トラッカーを検出しませんでした。ただし、ページには他の種類のトラッカーが潜んでいる可能性があります。",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "詳細情報",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Facebook Container の使い方",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "Facebook からあなたを守っています。",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "ショッピング、ニュース、その他のサイトに表示される Facebook ボタンには、Facebook にあなたがどのウェブサイトを訪れたかを知らせるトラッカーが含まれています。「いいね」または「共有」ボタンを使用しなくても、トラッカーはあなたの閲覧に関するデータを収集します。 Facebook Container は、これらのトラッカーのデータ収集をブロックします。",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container はトラッカーのデータ収集をブロックします。ただし、いずれかのボタンをクリックすると Facebook があなたを追跡できるようになります。",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "シールド付き Facebook Container フェンス。",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "Facebook Container で許可されているサイト",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "含まれるサイト",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "なし",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "許可されているサイト",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "remove": {
+    "message": "削除",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "Facebook Container 内のサイトを許可",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Facebook Container からサイトを削除",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "これは Facebook が所有するサイトであるため、Facebook Container から削除できません。",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "Facebook Container からサイトを削除しますか？",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "このサイトを Facebook Container から削除すると、Facebook でログインする機能が動作しなくなり、Facebook のトラッキング Cookie が削除されます。",
+    "description": ""
   }
 }
