@@ -289,7 +289,7 @@ function getRootDomain(url) {
 
 }
 
-function getFrameAncestorsURLAndCheckIfFacebook(frameAncestorsArray) {
+function topFrameUrlIsFacebookApps(frameAncestorsArray) {
   if (!frameAncestorsArray || frameAncestorsArray.length === 0) {
     // No frame ancestor return false
     return false;
@@ -303,7 +303,7 @@ function getFrameAncestorsURLAndCheckIfFacebook(frameAncestorsArray) {
     return false;
   }
 
-  return isFacebookURL(frameAncestorsURL);
+  return frameAncestorsURL;
 }
 
 function isFacebookURL (url) {
@@ -537,9 +537,9 @@ async function blockFacebookSubResources (requestDetails) {
     return {};
   }
 
-  const frameAncestorUrlIsFacebook = getFrameAncestorsURLAndCheckIfFacebook(requestDetails.frameAncestors);
+  const frameAncestorUrlIsFacebookApps = topFrameUrlIsFacebookApps(requestDetails.frameAncestors);
 
-  if (frameAncestorUrlIsFacebook) {
+  if (frameAncestorUrlIsFacebookApps) {
     const message = {msg: "facebook-domain"};
     // Send the message to the content_script
     browser.tabs.sendMessage(requestDetails.tabId, message);
