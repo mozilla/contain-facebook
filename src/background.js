@@ -289,6 +289,23 @@ function getRootDomain(url) {
 
 }
 
+function topFrameUrlIsFacebookApps(frameAncestorsArray) {
+  if (!frameAncestorsArray || frameAncestorsArray.length === 0) {
+    // No frame ancestor return false
+    return false;
+  }
+
+  const appsFacebookURL = "https://apps.facebook.com";
+  const frameAncestorsURL = frameAncestorsArray[0].url;
+
+  if (!frameAncestorsURL.startsWith(appsFacebookURL)) {
+    // Only allow frame ancestors that originate from apps.facebook.com
+    return false;
+  }
+
+  return frameAncestorsURL;
+}
+
 function isFacebookURL (url) {
   const parsedUrl = new URL(url);
   for (let facebookHostRE of facebookHostREs) {
@@ -506,13 +523,23 @@ async function blockFacebookSubResources (requestDetails) {
   }
 
   const urlIsFacebook = isFacebookURL(requestDetails.url);
-  const originUrlIsFacebook = isFacebookURL(requestDetails.originUrl);
-
+  // If this request isn't going to Facebook, let's return {} ASAP
   if (!urlIsFacebook) {
     return {};
   }
 
+  const originUrlIsFacebook = isFacebookURL(requestDetails.originUrl);
+
   if (originUrlIsFacebook) {
+    const message = {msg: "facebook-domain"};
+    // Send the message to the content_script
+    browser.tabs.sendMessage(requestDetails.tabId, message);
+    return {};
+  }
+
+  const frameAncestorUrlIsFacebookApps = topFrameUrlIsFacebookApps(requestDetails.frameAncestors);
+
+  if (frameAncestorUrlIsFacebookApps) {
     const message = {msg: "facebook-domain"};
     // Send the message to the content_script
     browser.tabs.sendMessage(requestDetails.tabId, message);
