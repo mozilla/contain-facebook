@@ -1,52 +1,66 @@
 {
   "extensionDescription": {
-    "message": "Кантэйнер для Facebook ізалюе вашу дзейнасць у Facebook ад астатняй вашай актыўнасці ў сеціве, каб прадухіліць асочванне вас Facebook-ам па-за межамі сайта Facebook з дапамогай кукаў трэціх асоб.", 
+    "message": "Facebook Container ізалюе вашу дзейнасць у Facebook ад астатняй вашай актыўнасці ў сеціве, каб прадухіліць асочванне вас Facebook-ам па-за межамі сайта Facebook з дапамогай кукаў трэціх асоб.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
-  "notOnFacebookHeader": {
-    "message": "$URL$ не ў Кантэйнеры для Facebook.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ знаходзіцца ў Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "notOnFacebookHeader": {
+    "message": "$URL$ не ў Кантэйнеры для Facebook.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Гэты сайт адкрыты па-за межамі Кантэйнера для Facebook. Гэта робіць асочванне вас па сеціве цяжэйшым для Facebook.", 
+    "message": "Гэты сайт адкрыты па-за межамі Кантэйнера для Facebook. Гэта робіць асочванне вас па сеціве цяжэйшым для Facebook.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Гэты сайт не ў Кантэйнеры для Facebook.", 
+    "message": "Гэты сайт не ў Кантэйнеры для Facebook.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
+  "facebookContainer": {
+    "message": "Facebook Container",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
   "btn-allow": {
-    "message": "Дазволіць", 
+    "message": "Дазволіць",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-done": {
-    "message": "Гатова", 
+    "message": "Гатова",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "learn-more": {
-    "message": "Даведацца больш", 
+    "message": "Даведацца больш",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Нічога", 
+    "message": "Нічога",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "remove": {
-    "message": "Выдаліць", 
+    "message": "Выдаліць",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Дазволіць Facebook высочваць вас тут?", 
+    "message": "Дазволіць Facebook высочваць вас тут?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Не паказваць мне гэта зноў", 
+    "message": "Не паказваць мне гэта зноў",
     "description": ""
   }
 }
