@@ -1,212 +1,200 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container ញែក​សកម្មភាព Facebook របស់​អ្នក​​ចេញ​ពី​សកម្មភាព​បណ្ដាញ​របស់​អ្នក​ដែល​នៅ​សល់ ដើម្បី​ការពារ Facebook ពី​ការតាមដាន​អ្នក​នៅ​ខាង​ក្រៅ​គេហទំព័រ Facebook តាមរយៈ​ខូឃី​ភាគី​ទី​បី។", 
+    "message": "Facebook Container ញែក​សកម្មភាព Facebook របស់​អ្នក​​ចេញ​ពី​សកម្មភាព​បណ្ដាញ​របស់​អ្នក​ដែល​នៅ​សល់ ដើម្បី​ការពារ Facebook ពី​ការតាមដាន​អ្នក​នៅ​ខាង​ក្រៅ​គេហទំព័រ Facebook តាមរយៈ​ខូឃី​ភាគី​ទី​បី។",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ ស្ថិត​នៅ​ក្នុង Facebook Container ។", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ ស្ថិត​នៅ​ក្នុង Facebook Container ។",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "ឥឡូវ Facebook អាច​តាមដាន​អ្នក​នៅ​លើ​គេហទំព័រ​នេះ។ ដើម្បី​យក​គេហទំព័រ​នេះ​ចេញ​ពី Facebook Container សូម​ជ្រើសរើស​គេហទំព័រ​ដែល​បាន​អនុញ្ញាត​នៅ​ក្នុង Facebook Container រួច​ដក​វា​ចេញ​ពី​បញ្ជី។"
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "នៅ​លើ Facebook និង​គេហទំព័រ​នៅ​ក្នុង Facebook Container Boundary", 
+    "message": "នៅ​លើ Facebook និង​គេហទំព័រ​នៅ​ក្នុង Facebook Container Boundary",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "រូបតំណាង​នេះ​បង្ហាញ​នៅ​ក្នុង​របារ​អាសយដ្ឋាន Firefox នៅពេល​អ្នក​ចូលមើល​គេហទំព័រ​ដែល​គ្រប់គ្រង​ដោយ Facebook ឬ​គេហទំព័រ​ ដែល​អ្នក​បាន​បញ្ចូល​ទៅ​ក្នុង Facebook Container ។", 
+    "message": "រូបតំណាង​នេះ​បង្ហាញ​នៅ​ក្នុង​របារ​អាសយដ្ឋាន Firefox នៅពេល​អ្នក​ចូលមើល​គេហទំព័រ​ដែល​គ្រប់គ្រង​ដោយ Facebook ឬ​គេហទំព័រ​ ដែល​អ្នក​បាន​បញ្ចូល​ទៅ​ក្នុង Facebook Container ។",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "គេហទំព័រ​នេះ​ត្រូវការ​សិទ្ធិ​អនុញ្ញាត​ចូល​ប្រើប្រាស់​អត្តសញ្ញាណ Facebook របស់​អ្នក (ឬ​ស្គាល់​ថា អ្នក​ជា​នរណា) ដើម្បី​អាច​ដំណើរការ។ នេះ​ក៏​មាន​ន័យ​ថា Facebook អាច​តាមដាន​អ្វីៗ​គ្រប់យ៉ាង​ដែល​អ្នក​ធ្វើ​នៅ​​លើ​គេហទំព័រ​ទាំងនេះ។", 
+    "message": "គេហទំព័រ​នេះ​ត្រូវការ​សិទ្ធិ​អនុញ្ញាត​ចូល​ប្រើប្រាស់​អត្តសញ្ញាណ Facebook របស់​អ្នក (ឬ​ស្គាល់​ថា អ្នក​ជា​នរណា) ដើម្បី​អាច​ដំណើរការ។ នេះ​ក៏​មាន​ន័យ​ថា Facebook អាច​តាមដាន​អ្វីៗ​គ្រប់យ៉ាង​ដែល​អ្នក​ធ្វើ​នៅ​​លើ​គេហទំព័រ​ទាំងនេះ។",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ មិន​ស្ថិត​នៅ​ក្នុង Facebook Container ទេ។", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ មិន​ស្ថិត​នៅ​ក្នុង Facebook Container ទេ។",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "គេហទំព័រ​នេះ​នៅ​ខាងក្រៅ Facebook Container ។ វា​ធ្វើ​ឲ្យ Facebook លំបាក​ក្នុង​ការ​តាមដាន​អ្នក​នៅ​លើ​បណ្ដាញ។", 
+    "message": "គេហទំព័រ​នេះ​នៅ​ខាងក្រៅ Facebook Container ។ វា​ធ្វើ​ឲ្យ Facebook លំបាក​ក្នុង​ការ​តាមដាន​អ្នក​នៅ​លើ​បណ្ដាញ។",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "គេហទំព័រ​នេះ​មិន​ស្ថិត​នៅ​ក្នុង Facebook Container ទេ។", 
+    "message": "គេហទំព័រ​នេះ​មិន​ស្ថិត​នៅ​ក្នុង Facebook Container ទេ។",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "កំពុង​ប្រើប្រាស់ Facebook Container", 
+    "message": "កំពុង​ប្រើប្រាស់ Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook អាច​តាមដាន​ការរុករក​របស់​អ្នក​ក្រៅ​ពី​នៅ​លើ Facebook.com ។ ឧទាហរណ៍ ប៊ូតុង​ចូលចិត្ត និង​ចែករំលែក Facebook អាច​តាមដាន​កន្លែង​ណា​​ដែល​អ្នក​​ស្ថិត​នៅ ទោះបី​ជា​នៅ​លើ​ទំព័រ​ដែល​អ្នក​មិន​បាន​ចូលចិត្ត ឬ​ចែករំលែក។", 
+    "message": "Facebook អាច​តាមដាន​ការរុករក​របស់​អ្នក​ក្រៅ​ពី​នៅ​លើ Facebook.com ។ ឧទាហរណ៍ ប៊ូតុង​ចូលចិត្ត និង​ចែករំលែក Facebook អាច​តាមដាន​កន្លែង​ណា​​ដែល​អ្នក​​ស្ថិត​នៅ ទោះបី​ជា​នៅ​លើ​ទំព័រ​ដែល​អ្នក​មិន​បាន​ចូលចិត្ត ឬ​ចែករំលែក។",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container បង្កើត​ព្រំដែន​រវាង​គេហទំព័រ Facebook និង​អ្វី​ៗ​ផ្សេង​ទៀត​នៅ​លើ​​បណ្ដាញ ដូច្នេះ​វា​មាន​ការលំបាក​សម្រាប់ Facebook ក្នុង​ការតាមដាន​អ្នក​នៅ​លើ​អ៊ីនធឺណិត។", 
+    "message": "Facebook Container បង្កើត​ព្រំដែន​រវាង​គេហទំព័រ Facebook និង​អ្វី​ៗ​ផ្សេង​ទៀត​នៅ​លើ​​បណ្ដាញ ដូច្នេះ​វា​មាន​ការលំបាក​សម្រាប់ Facebook ក្នុង​ការតាមដាន​អ្នក​នៅ​លើ​អ៊ីនធឺណិត។",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "នៅ​លើ Facebook និង​គេហទំព័រ​នៅ​ក្នុង Facebook Container Boundary", 
+    "message": "នៅ​លើ Facebook និង​គេហទំព័រ​នៅ​ក្នុង Facebook Container Boundary",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "រូបតំណាង​របង Facebook Container", 
+    "message": "រូបតំណាង​របង Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "រូបតំណាង​នេះ​បង្ហាញ​នៅ​ក្នុង​របារ​អាសយដ្ឋាន Firefox នៅពេល​អ្នក​ចូល​មើល​គេហទំព័រ ដូចជា Facebook.com ដែល​ស្ថិត​នៅ​ក្នុង​ព្រំដែន Facebook Container ។", 
+    "message": "រូបតំណាង​នេះ​បង្ហាញ​នៅ​ក្នុង​របារ​អាសយដ្ឋាន Firefox នៅពេល​អ្នក​ចូល​មើល​គេហទំព័រ ដូចជា Facebook.com ដែល​ស្ថិត​នៅ​ក្នុង​ព្រំដែន Facebook Container ។",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "គេហទំព័រ​ទាំងនេះ​ត្រូវ​ការ​សិទ្ធិ​អនុញ្ញាត​ចូល​ប្រើប្រាស់​អត្តសញ្ញាណ Facebook របស់​អ្នក (ឬ​ស្គាល់​ថា អ្នក​ជា​នរណា) ដើម្បី​អាច​ដំណើរការ។ នេះ​ក៏​មានន័យ​ថា Facebook អាច​​តាមដាន​អ្វីៗ​គ្រប់យ៉ាង​ដែល​អ្នក​ធ្វើ​នៅ​លើ​គេហទំព័រ​ទាំងនេះ។", 
+    "message": "គេហទំព័រ​ទាំងនេះ​ត្រូវ​ការ​សិទ្ធិ​អនុញ្ញាត​ចូល​ប្រើប្រាស់​អត្តសញ្ញាណ Facebook របស់​អ្នក (ឬ​ស្គាល់​ថា អ្នក​ជា​នរណា) ដើម្បី​អាច​ដំណើរការ។ នេះ​ក៏​មានន័យ​ថា Facebook អាច​​តាមដាន​អ្វីៗ​គ្រប់យ៉ាង​ដែល​អ្នក​ធ្វើ​នៅ​លើ​គេហទំព័រ​ទាំងនេះ។",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
-  "onboarding3-subhead": {
-    "message": "តើ​ខ្ញុំ​អាច​ដឹង​ថា Facebook Container ដំណើរការ​យ៉ាងដូចម្ដេច?", 
-    "description": "This is the subhead for the third onboarding panel."
-  }, 
-  "onboarding3-p1": {
-    "message": "ប៊ូតុង​ដែល​អាច​ឲ្យ​អ្នក​ចូលចិត្ត ឬ​ចែករំលែក​អ្វីៗ​ទៅ​កាន់ Facebook ឬ​អនុញ្ញាត​ឲ្យ​អ្នក​ចូល​ទៅ​គេហទំព័រ​​​ដោយ​ប្រើប្រាស់​គណនី Facebook របស់​អ្នក​មាន​កម្មវិធី​តាមដាន។ Facebook Container នឹង​ទប់ស្កាត់​កម្មវិធី​តាមដាន​ទាំងនេះ រួច​បង្ហាញ​រូបតំណាង​របង ដើម្បី​បង្ហាញ​អ្នក​កន្លែង​កម្មវិធី​តាមដាន​ត្រូវ​បាន​លុប​ចេញ។", 
-    "description": "This is the first paragraph of the third onboarding panel."
-  }, 
-  "onboarding3-img": {
-    "message": "រូបភាព​នេះ​បង្ហាញ​អំពី​របៀប​ដែល​រូបតំណាង​របង Facebook Container នឹង​បង្ហាញ​នៅ​ក្នុង​ទំព័រ ក្រៅពី​ប៊ូតុង​ចូលចិត្ត Facebook ។", 
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
-  "onboarding3-p2": {
-    "message": "ទោះជាយ៉ាងណាក៏ដោយ ប្រសិនបើ​អ្នក​ចុច​លើ​ប៊ូតុង​​​ណាមួយ​ក្នុង​ចំណោម​ប៊ូតុង​ទាំងនេះ Facebook នឹង​អាច​តាមដាន​អ្នក។", 
-    "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
+  "onboarding5-subhead": {
+    "message": "ចូលដោយ​ប្រើ Facebook នៅលើគេហទំព័រផ្សេងទៀត",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
   "btn-allow": {
-    "message": "អនុញ្ញាត", 
+    "message": "អនុញ្ញាត",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "បោះបង់", 
+    "message": "បោះបង់",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "បន្ទាប់", 
+    "message": "បន្ទាប់",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "ថយក្រោយ", 
+    "message": "ថយក្រោយ",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "ធ្វើរួច", 
+    "message": "ធ្វើរួច",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "ថយក្រោយ​ទៅ​ផ្ទាំង​មុន។", 
+    "message": "ថយក្រោយ​ទៅ​ផ្ទាំង​មុន។",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "ទៅ​កាន់​របៀប​ដែល Facebook Container ដំណើរការ", 
+    "message": "ទៅ​កាន់​របៀប​ដែល Facebook Container ដំណើរការ",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "រក​​មិន​ឃើញ​កម្មវិធី​តាមដាន Facebook ទេ", 
+    "message": "រក​​មិន​ឃើញ​កម្មវិធី​តាមដាន Facebook ទេ",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container រក​មិន​ឃើញ​កម្មវិធី​តាមដាន Facebook ណា​មួយ​នៅ​លើ​ទំព័រ​នេះ​ទេ។ ទោះជាយ៉ាងណាក៏ដោយ ទំព័រ​នេះ​អាច​នៅតែ​មាន​ប្រភេទ​កម្មវិធី​តាមដាន​ផ្សេង។", 
+    "message": "Facebook Container រក​មិន​ឃើញ​កម្មវិធី​តាមដាន Facebook ណា​មួយ​នៅ​លើ​ទំព័រ​នេះ​ទេ។ ទោះជាយ៉ាងណាក៏ដោយ ទំព័រ​នេះ​អាច​នៅតែ​មាន​ប្រភេទ​កម្មវិធី​តាមដាន​ផ្សេង។",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "ស្វែងយល់​បន្ថែម", 
+    "message": "ស្វែងយល់​បន្ថែម",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "របៀប​ដែល Facebook Container ដំណើរការ", 
+    "message": "របៀប​ដែល Facebook Container ដំណើរការ",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "យើង​បាន​ការពារ​អ្នក​ពី Facebook ។", 
+    "message": "យើង​បាន​ការពារ​អ្នក​ពី Facebook ។",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "ប៊ូតុង Facebook ដែល​បង្ហាញ​នៅ​លើ​ការទិញ ដំណឹង និង​គេហទំព័រ​ផ្សេងៗ​មាន​កម្មវិធី​តាមដាន ដែល​ប្រាប់ Facebook កន្លែង​ណា​ដែល​អ្នក​ស្ថិត​នៅ​លើ​បណ្ដាញ។ ទោះបីជា​អ្នក​មិន​ដែល​ប្រើប្រាស់​ប៊ូតុង​ទាំងនេះ​ ដើម្បី​ចូលចិត្ត ឬ​ចែករំលែក​ក៏​ដោយ កម្មវិធី​តាមដាន​នៅតែ​អាច​ប្រមូល​ទិន្នន័យ​អំពី​ការរុករក​របស់​អ្នក។ Facebook Container ទប់ស្កាត់​កម្មវិធី​តាមដាន​ទាំងនេះ។", 
+    "message": "ប៊ូតុង Facebook ដែល​បង្ហាញ​នៅ​លើ​ការទិញ ដំណឹង និង​គេហទំព័រ​ផ្សេងៗ​មាន​កម្មវិធី​តាមដាន ដែល​ប្រាប់ Facebook កន្លែង​ណា​ដែល​អ្នក​ស្ថិត​នៅ​លើ​បណ្ដាញ។ ទោះបីជា​អ្នក​មិន​ដែល​ប្រើប្រាស់​ប៊ូតុង​ទាំងនេះ​ ដើម្បី​ចូលចិត្ត ឬ​ចែករំលែក​ក៏​ដោយ កម្មវិធី​តាមដាន​នៅតែ​អាច​ប្រមូល​ទិន្នន័យ​អំពី​ការរុករក​របស់​អ្នក។ Facebook Container ទប់ស្កាត់​កម្មវិធី​តាមដាន​ទាំងនេះ។",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container ទប់ស្កាត់​កម្មវិធី​តាមដាន​ទាំងនេះ។ ទោះជាយ៉ាងណាក៏ដោយ ប្រសិនបើ​អ្នក​ចុច​លើ​ប៊ូតុង​ណា​មួយ​ក្នុង​ចំណោម​ប៊ូតុង​ទាំងនេះ Facebook នឹង​អាច​តាមដាន​អ្នកបាន។", 
+    "message": "Facebook Container ទប់ស្កាត់​កម្មវិធី​តាមដាន​ទាំងនេះ។ ទោះជាយ៉ាងណាក៏ដោយ ប្រសិនបើ​អ្នក​ចុច​លើ​ប៊ូតុង​ណា​មួយ​ក្នុង​ចំណោម​ប៊ូតុង​ទាំងនេះ Facebook នឹង​អាច​តាមដាន​អ្នកបាន។",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "របង Facebook Container ជាមួយ​របាំង​ការពារ", 
+    "message": "របង Facebook Container ជាមួយ​របាំង​ការពារ",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "គេហទំព័រ​ដែល​អនុញ្ញាត​នៅ​ក្នុង Facebook Container", 
+    "message": "គេហទំព័រ​ដែល​អនុញ្ញាត​នៅ​ក្នុង Facebook Container",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "គេហទំព័រ​ដែល​បាន​បញ្ចូល", 
+    "message": "គេហទំព័រ​ដែល​បាន​បញ្ចូល",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "គ្មាន", 
+    "message": "គ្មាន",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "គេហទំព័រ​ដែល​អ្នក​បាន​អនុញ្ញាត", 
+    "message": "គេហទំព័រ​ដែល​អ្នក​បាន​អនុញ្ញាត",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container ដាក់​គេហទំព័រ​ដែល​គ្រប់គ្រង​ដោយ Facebook នៅ​ក្នុង​ព្រំដែន​មួយ។ អ្នក​អាច​អនុញ្ញាត​គេហទំព័រ​ផ្សេងៗ​​នៅ​ក្នុង​ព្រំដែន​នោះ ប៉ុន្តែ​វា​នឹង​អនុញ្ញាត​ឲ្យ Facebook តាមដាន​ការរុករក​នៅ​លើ​បណ្ដាញ​របស់​អ្នក​កាន់តែ​ច្រើន​ជាង​មុន។"
-  }, 
+  },
   "remove": {
-    "message": "យក​ចេញ", 
+    "message": "យក​ចេញ",
     "description": ""
-  }, 
+  },
   "remove-site-subhead": {
-    "message": "យក​គេហទំព័រ​ចេញ​ពី Facebook Container ដែរ​ឬ​ទេ?", 
+    "message": "យក​គេហទំព័រ​ចេញ​ពី Facebook Container ដែរ​ឬ​ទេ?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "ការយក​គេហទំព័រ​នេះ​ចេញ​ពី Facebook Container មានន័យ​ថា ការចូល​តាមរយៈ​​មុខងារ Facebook នឹង​លែង​ដំណើរការ​ ហើយ​ខូគី​តាមដាន Facebook នឹង​ត្រូវ​លុបចេញ។", 
+    "message": "ការយក​គេហទំព័រ​នេះ​ចេញ​ពី Facebook Container មានន័យ​ថា ការចូល​តាមរយៈ​​មុខងារ Facebook នឹង​លែង​ដំណើរការ​ ហើយ​ខូគី​តាមដាន Facebook នឹង​ត្រូវ​លុបចេញ។",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " ប្រសិនបើ​អ្នក​ចង់​ប្រើប្រាស់​ការចូល​តាមរយៈ Facebook ម្ដងទៀត អ្នក​នឹង​ត្រូវ​បញ្ចូល​វា​ទៅ​ក្នុង Facebook Container ឡើងវិញ។", 
+    "message": " ប្រសិនបើ​អ្នក​ចង់​ប្រើប្រាស់​ការចូល​តាមរយៈ Facebook ម្ដងទៀត អ្នក​នឹង​ត្រូវ​បញ្ចូល​វា​ទៅ​ក្នុង Facebook Container ឡើងវិញ។",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container បាន​បិទ​ប៊ូតុង​នេះ និង​បាន​ទប់ស្កាត់ Facebook មិន​ឲ្យ​តាមដាន​ការចូល​មើល​​ទំព័រ​នេះ​របស់​អ្នក។", 
+    "message": "Facebook Container បាន​បិទ​ប៊ូតុង​នេះ និង​បាន​ទប់ស្កាត់ Facebook មិន​ឲ្យ​តាមដាន​ការចូល​មើល​​ទំព័រ​នេះ​របស់​អ្នក។",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container បាន​ទប់ស្កាត់​កម្មវិធី​តាមដាន Facebook ។ ប្រសិនបើ​អ្នក​ប្រើប្រាស់​ការ​ចូល​តាមរយៈ Facebook នៅ​លើ​គេហទំព័រ​នេះ Facebook នឹង​អាច​តាមដាន​អ្នក។", 
+    "message": "Facebook Container បាន​ទប់ស្កាត់​កម្មវិធី​តាមដាន Facebook ។ ប្រសិនបើ​អ្នក​ប្រើប្រាស់​ការ​ចូល​តាមរយៈ Facebook នៅ​លើ​គេហទំព័រ​នេះ Facebook នឹង​អាច​តាមដាន​អ្នក។",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "អនុញ្ញាតឲ្យ Facebook តាមដាន​អ្នក​នៅ​ទីនេះ​ដែរ​ឬ​ទេ?", 
+    "message": "អនុញ្ញាតឲ្យ Facebook តាមដាន​អ្នក​នៅ​ទីនេះ​ដែរ​ឬ​ទេ?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "ប្រសិនបើ​អ្នក​ចង់​ប្រើប្រាស់​ការចូល​តាមរយៈ Facebook នោះ Facebook នឹង​អាច​តាមដាន​សកម្មភាព​របស់​អ្នក​នៅលើ​គេហទំព័រ​នេះ។ វា​អាច​ជួយ​ពួកគេ​បង្កើត​រូបភាព​ពេញលេញ​នៃ​ជីវិត​របស់​អ្នក​នៅ​លើ​អ៊ីនធឺណិត។", 
+    "message": "ប្រសិនបើ​អ្នក​ចង់​ប្រើប្រាស់​ការចូល​តាមរយៈ Facebook នោះ Facebook នឹង​អាច​តាមដាន​សកម្មភាព​របស់​អ្នក​នៅលើ​គេហទំព័រ​នេះ។ វា​អាច​ជួយ​ពួកគេ​បង្កើត​រូបភាព​ពេញលេញ​នៃ​ជីវិត​របស់​អ្នក​នៅ​លើ​អ៊ីនធឺណិត។",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "កុំបង្ហាញ​វា​ដល់​ខ្ញុំ​ម្ដង​ទៀត", 
+    "message": "កុំបង្ហាញ​វា​ដល់​ខ្ញុំ​ម្ដង​ទៀត",
     "description": ""
   }
 }
