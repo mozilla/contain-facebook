@@ -95,7 +95,7 @@
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "若要使用您的 Facebook 账户登陆其他网站，就也需要将那些网站放到容器内。请点击篱笆图标，并选择底部的“允许网站在 Facebook Container 中运行”。",
+    "message": "若要使用您的 Facebook 账户登录其他网站，就也需要将那些网站放到容器内。请点击篱笆图标，并选择底部的“允许网站在 Facebook Container 中运行”。",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
