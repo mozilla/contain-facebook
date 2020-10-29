@@ -262,7 +262,10 @@
      "description": ""
    },
    "btn-relay-try": {
-     "message": "Try Firefox Relay",
+     "message": "Try Firefox Relay"
+   },
+   "fbcSettingsTitle": {
+     "message": "Preferences",
      "description": ""
    }
 }

@@ -901,3 +901,13 @@ function contentScriptSetTimeout() {
   }
   setTimeout(contentScriptSetTimeout, contentScriptDelay);
 }
+
+(function(){
+
+  const backgroundResp = await browser.runtime.sendMessage({
+    message: "check-settings",
+    settings: "badgeContent"
+  });
+
+
+})();

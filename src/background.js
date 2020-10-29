@@ -69,6 +69,12 @@ async function updateSettings(data){
   }
 }
 
+async function checkSettings(setting){
+  console.log( DEFAULT_SETTINGS[setting] );
+  return "foo";
+  // return DEFAULT_SETTINGS[setting];
+}
+
 const MAC_ADDON_ID = "@testpilot-containers";
 const RELAY_ADDON_ID = "private-relay@firefox.com";
 

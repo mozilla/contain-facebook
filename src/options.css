@@ -56,6 +56,11 @@ main h2 {
   display: block;
 }
 
+.tooltip-parent svg {
+  position: relative;
+  display: inline-block;
+}
+
 .tooltip-parent {
   position: relative;
   display: inline-block;
@@ -71,11 +76,29 @@ main h2 {
   position: relative;
 }
 
+.inline-fbc-icon {
+  display: inline-block;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+	background-position: center center;
+	background-size: 6px auto, 100%;
+	background-image: url(/img/fence-large.svg), linear-gradient(-45deg, #6200A4, #D70022);
+	background-repeat: no-repeat;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	padding: 0;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     --borders: 1px solid #4C4C4E;
 
     background: var(--black);
     color: var(--white);
+  }
+  .tooltip-parent .tooltip-icon {
+    fill: var(--white);
   }
 }
