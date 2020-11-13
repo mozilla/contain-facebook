@@ -82,6 +82,14 @@
     "message": "ចូលដោយ​ប្រើ Facebook នៅលើគេហទំព័រផ្សេងទៀត",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "ដើម្បី​ប្រើប្រាស់​ការចូល Facebook របស់​អ្នក​នៅលើ​គេហទំព័រ​ផ្សេង អ្នក​ត្រូវ​ផ្លាស់ទី​វា​ទៅ​ក្នុង​ព្រំដែន។ ចុច​លើ​រូប​របង រួច​ជ្រើសរើស \"អនុញ្ញាត​គេហទំព័រ​នៅក្នុង Facebook Container\" នៅខាងក្រោមបំផុត។",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "ការធ្វើបែបនេះ​អនុញ្ញាត​ឱ្យ​អ្នក​ចូល​ដោយ​ប្រើ Facebook ប៉ុន្តែ​អនុញ្ញាត Facebook តាមដាន​សកម្មភាព​របស់​អ្នក​នៅលើ​គេហទំព័រ​នោះ​ដែរ។",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "អនុញ្ញាត",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
