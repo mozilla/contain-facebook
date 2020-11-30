@@ -71,11 +71,11 @@
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Diskouezet e vez an arlun-mañ er varrenn chomlec'hioù pa weladennit lec'hiennoù evel Facebook.com hag a zo e bevennoù an endalc'her Facebook.",
+    "message": "Diskouezet e vez an arlun-mañ er varrenn chomlec’hioù pa weladennit lec’hiennoù evel Facebook.com hag a zo e bevennoù an endalc’her Facebook.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "Al lec'hiennoù-mañ o deus ezhomm haeziñ ho pivelezh Facebook (pe gouzout piv oc'h) evit mont en-dro. Talvezout a ra ivez e c'hall Facebook heuliañ holl ar pezh a rit war al lec'hiennoù-mañ.",
+    "message": "Al lec’hiennoù-mañ o deus ezhomm haeziñ ho pivelezh Facebook (pe gouzout piv oc’h) evit mont en-dro. Talvezout a ra ivez e c’hall Facebook heuliañ holl ar pezh a rit war al lec’hiennoù-mañ.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding4-subhead": {
@@ -83,27 +83,27 @@
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Ha pa ne vefec'h ket war Facebook e vezit heuliet ganto enlinenn. An afelloù a ginnig deoc'h embann traoù war Facebook pe kennaskañ da lec'hiennoù dre ur gont Facebook a zo heulierien enno. Gant an endalc'her Faceboko e vo stanket an helierien-se ha diskouezet an arlun gaoued evit diskouez deoc'h ez eus bet dilamet heulierien.",
+    "message": "Ha pa ne vefec’h ket war Facebook e vezit heuliet ganto enlinenn. An afelloù a ginnig deoc’h embann traoù war Facebook pe kennaskañ da lec’hiennoù dre ur gont Facebook a zo heulierien enno. Gant an endalc’her Facebook e vo stanket an helierien-se ha diskouezet an arlun gaoued evit diskouez deoc’h ez eus bet dilamet heulierien.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "Ar skeudenn-mañ a ziskouez penaos eo diskouezet an arlun gaoued endalc'her Facebook e-kichen un afell Like Facebook.",
+    "message": "Ar skeudenn-mañ a ziskouez penaos eo diskouezet an arlun gaoued endalc’her Facebook e-kichen un afell Like Facebook.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "Kennaskañ gant Facebook war lec'hiennoù all",
+    "message": "Kennaskañ gant Facebook war lec’hiennoù all",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "Evit ober gant ar c'hennask Facebook war lec'hiennoù all eo ret deoc'h lakaat anezho e diabarzh an harzhoù. Klikit war ar gaoued ha dibabit 'Aotren al lec'hienn en endalc'her Facebook' en traoñ.",
+    "message": "Evit ober gant ar c’hennask Facebook war lec’hiennoù all eo ret deoc’h lakaat anezho e diabarzh an harzhoù. Klikit war ar gaoued ha dibabit ‘Aotren al lec'hienn en endalc'her Facebook’ en traoñ.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "Ar skeudenn-mañ a ziskouez penaos eo skrammet an afell evit ouzhpennañ ul lec'hienn d'an endalc'her Facebook war ar penel.",
+    "message": "Ar skeudenn-mañ a ziskouez penaos eo skrammet an afell evit ouzhpennañ ul lec’hienn d’an endalc’her Facebook war ar penel.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Leuskel a ra ac'hanoc'h da gennaskañ dre Facebook, met leuskel a ra ivez Facebook da heuliañ hoc'h oberiantiz war al lec'hienn-mañ.",
+    "message": "Leuskel a ra ac’hanoc’h da gennaskañ dre Facebook, met leuskel a ra ivez Facebook da heuliañ hoc’h oberiantiz war al lec’hienn-mañ.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
@@ -127,39 +127,39 @@
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   },
   "btn-arrow-back": {
-    "message": "Mont d'ar penel kent",
+    "message": "Mont d’ar penel kent.",
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Mont d'ar bajenn \"Mont en-dro an endalc'her Facebook\"",
+    "message": "Mont d’ar bajenn “Mont en-dro an endalc’her Facebook”",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "N'eus bet dinoer heulier Facebook ebet",
+    "message": "N’eus bet dinoer heulier Facebook ebet",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "N'eus bet dinoet heulier Facebook ebet war ar bajenn-mañ gant an endalc'her Facebook. Doareoù heulier all a c'hall bezañ war ar bajenn-mañ avat.",
+    "message": "N’eus bet dinoet heulier Facebook ebet war ar bajenn-mañ gant an endalc’her Facebook. Doareoù heulier all a c’hall bezañ war ar bajenn-mañ avat.",
     "description": ""
   },
   "learn-more": {
-    "message": "Gouzout hiroc'h",
+    "message": "Gouzout hiroc’h",
     "description": "This is a link that opens a page with more information about Facebook Container."
   },
   "how-fbc-works": {
-    "message": "Penaos ec'h a en-dro an endalc'her Facebook",
+    "message": "Penaos ec’h a en-dro an endalc’her Facebook",
     "description": "This is a button that opens the Facebook Container onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Gwareziñ a reomp ac'hanoc'h diouzh Facebook.",
+    "message": "Gwareziñ a reomp ac’hanoc’h diouzh Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "An afelloù Facebook a zo skrammet war al lec'hiennoù kenwerzh, keleier hag all a zo heulierien enno hag a lâr da Facebook pelec'h hoc'h bet er web. Zoken ma ne arverit ket an afelloù-se evit kavout plijus pe rannañ ur bajenn e vo dastumet ar roadennoù diwar-benn ho merdeiñ. Gant Facebook Container eo stanket an heulierien-se.",
+    "message": "An afelloù Facebook a zo skrammet war al lec’hiennoù kenwerzh, keleier hag all a zo heulierien enno hag a lâr da Facebook pelec’h hoc’h bet er web. Zoken ma ne arverit ket an afelloù-se evit kavout plijus pe rannañ ur bajenn e vo dastumet ar roadennoù diwar-benn ho merdeiñ. Gant Facebook Container eo stanket an heulierien-se.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Gant Facebook Container e vez stanket an heulierien-se. Ma klikit war unan eus an afelloù-se, avat, e vo gouest Facebook d'ho heuliañ.",
+    "message": "Gant Facebook Container e vez stanket an heulierien-se. Ma klikit war unan eus an afelloù-se, avat, e vo gouest Facebook d’ho heuliañ.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
@@ -167,11 +167,11 @@
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Lec'hiennoù aotreet en endalc'her Facebook",
+    "message": "Lec’hiennoù aotreet en endalc’her Facebook",
     "description": "This is a panel subhead."
   },
   "sites-included": {
-    "message": "LEC'HIENNOÙ ENKORFET",
+    "message": "LEC’HIENNOÙ ENKORFET",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
@@ -179,62 +179,62 @@
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   },
   "sites-allowed": {
-    "message": "LEC'HIENNOÙ AOTREET GANEOC'H",
+    "message": "LEC’HIENNOÙ AOTREET GANEOC’H",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container a vir al lec'hiennoù perc'hennet gant Facebook da vont dreist o harzhoù. Gallout a rit aotren lec'hiennoù all da vezañ e-barzh an harzhoù-se, met aotren a raio Facebook da heuliañ hoc'h oberiantiz merdeiñ."
+    "message": "Facebook Container a vir al lec’hiennoù perc’hennet gant Facebook da vont dreist o harzhoù. Gallout a rit aotren lec’hiennoù all da vezañ e-barzh an harzhoù-se, met aotren a raio Facebook da heuliañ hoc’h oberiantiz merdeiñ."
   },
   "remove": {
     "message": "Dilemel",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Aotren al lec'hienn en endalc'her Facebook",
+    "message": "Aotren al lec’hienn en endalc’her Facebook",
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
   "button-remove-site": {
-    "message": "Dilemel al lec'hienn eus an endalc'her Facebook",
+    "message": "Dilemel al lec’hienn eus an endalc’her Facebook",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Dre ma 'z eo ul lec'hienn perc'hennet gant Facebook n'hall ket bezañ tennet kuit eus an endalc'her Facebook.",
+    "message": "Dre ma ’z eo ul lec’hienn perc’hennet gant Facebook n’hall ket bezañ tennet kuit eus an endalc’her Facebook.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Dilemel al lec'hienn-mañ eus endalc'her Facebook?",
+    "message": "Dilemel al lec’hienn-mañ eus endalc’her Facebook?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Dilemel al lec'hienn-mañ eus an endalc'her Facebook a denno ar c'hennask dre Facebook ha dilamet e vo toupinoù heuliañ Facebook.",
+    "message": "Dilemel al lec’hienn-mañ eus an endalc’her Facebook a denno ar c’hennask dre Facebook ha dilamet e vo toupinoù heuliañ Facebook.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " Ma fell deoc'h kennaskañ gant Facebbok en-dro e rankot e ouzhpennañ adarre d'an endalc'her Facebook.",
+    "message": " Ma fell deoc’h kennaskañ gant Facebook en-dro e rankot e ouzhpennañ adarre d’an endalc’her Facebook.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Aotren heuliañ Facebook war al lec'hienn-mañ?",
+    "message": "Aotren heuliañ Facebook war al lec’hienn-mañ?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "Aotren a raio ac'hanoc'h da gennaskañ dre Facebook, met aotren a raio Facebook da heuliañ ar pezh a rit war al lec'hienn-mañ.",
+    "message": "Aotren a raio ac’hanoc’h da gennaskañ dre Facebook, met aotren a raio Facebook da heuliañ ar pezh a rit war al lec’hienn-mañ.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Diweredekaet eo bet an afell-mañ gant endalc'her Facebook hag harzhet eo bet Facebook da heuliañ ac'hanoc'h war ar bajenn-mañ.",
+    "message": "Diweredekaet eo bet an afell-mañ gant endalc’her Facebook hag harzhet eo bet Facebook da heuliañ ac’hanoc’h war ar bajenn-mañ.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Stanket eo bet heulierien Facebook gant Facebook Container. Ma arverit Facebook war al lec'hienn-mañ e vo gouest da heuliañ ac'hanoc'h.",
+    "message": "Stanket eo bet heulierien Facebook gant Facebook Container. Ma arverit Facebook war al lec’hienn-mañ e vo gouest da heuliañ ac’hanoc’h.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Aotren Facebook da heuliañ ac'hanoc'h?",
+    "message": "Aotren Facebook da heuliañ ac’hanoc’h?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Ma fell deoc'h kennaskañ gant Facebook e vo gouest da heuliañ hoc'h oberiantiz war al lec'hienn-mañ. Gallout a ra sikour anezho da sevel ur skeudenn resisoc'h eus ho puhez.",
+    "message": "Ma fell deoc’h kennaskañ gant Facebook e vo gouest da heuliañ hoc’h oberiantiz war al lec’hienn-mañ. Gallout a ra sikour anezho da sevel ur skeudenn resisoc’h eus ho puhez.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,7 +242,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "Ma klikit war an afell-mañ e vo gouest Facebook da heuliañ ac'hanoc'h war al lec'hienn-mañ.",
+    "message": "Ma klikit war an afell-mañ e vo gouest Facebook da heuliañ ac’hanoc’h war al lec’hienn-mañ.",
     "description": ""
   }
 }
