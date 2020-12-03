@@ -5,6 +5,10 @@
 // "[title*='Facebook']",
 // "[aria-label*='Facebook']",
 
+const EMAIL_PATTERN_DETECTION_SELECTORS = [
+  "input[type='email']",
+];
+
 const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[title='Log in with Facebook']",
   "[class*='FacebookConnectButton']",
@@ -77,7 +81,9 @@ function isFixed (elem) {
 
 const fragmentClasses = ["fbc-badge-fence", "fbc-badge-tooltip", "fbc-badge-prompt"];
 const htmlBadgeFragmentPromptParagraphStrings = [ browser.i18n.getMessage("inPageUI-tooltip-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-prompt-p2") ];
+const htmlEmailBadgeFragmentPromptParagraphStrings = [ browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2") ];
 const htmlBadgeFragmentPromptButtonStrings = ["btn-cancel", "btn-allow"];
+const htmlEmailBadgeFragmentPromptButtonStrings = ["btn-relay-learn", "btn-relay-try"];
 
 function getTooltipFragmentStrings (socialAction) {
   switch (socialAction) {
@@ -87,6 +93,8 @@ function getTooltipFragmentStrings (socialAction) {
     return browser.i18n.getMessage("inPageUI-tooltip-button-share");
   case "share-passive":
     return browser.i18n.getMessage("inPageUI-tooltip-button-share-passive");
+  case "email":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-email");
   }
 }
 
@@ -134,6 +142,36 @@ function createBadgeFragment (socialAction) {
     }
 
     htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
+  } else if (socialAction === "email") {
+    const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
+
+    const htmlBadgeFragmentPromptH1 = document.createElement("h1");
+
+    htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
+    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
+
+    const htmlBadgeFragmentPromptContents = document.createElement("div");
+    htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
+
+    for (let promptParagraphString of htmlEmailBadgeFragmentPromptParagraphStrings) {
+      const paragraph = document.createElement("p");
+      paragraph.appendChild(document.createTextNode(promptParagraphString));
+      htmlBadgeFragmentPromptContents.appendChild(paragraph);
+    }
+
+    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
+
+    const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
+    htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
+
+    for (let buttonString of htmlEmailBadgeFragmentPromptButtonStrings) {
+      const button = document.createElement("button");
+      button.className = "fbc-badge-prompt-" + buttonString;
+      button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
+      htmlBadgeFragmentPromptButtonDiv.appendChild(button);
+    }
+
+    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
   }
 
   // Create Empty Wrapper Div
@@ -159,6 +197,8 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
 
   const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel");
   const htmlBadgeFragmentPromptButtonAllow = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-allow");
+  const htmlEmailBadgeFragmentPromptButtonLearn = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-relay-learn");
+  const htmlEmailBadgeFragmentPromptButtonTry = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-relay-try");
   const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".fbc-badge-fence");
 
   htmlBadgeDiv.className = "fbc-badge " + badgeClassUId;
@@ -222,6 +262,39 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       document.body.classList.remove("js-fbc-prompt-active");
       document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
       e.target.parentElement.parentNode.parentNode.classList.remove("active");
+    });
+  } else if (socialAction === "email") {
+    target.addEventListener("click", (e) => {
+      if (allowClickSwitch) {
+        // Button disabled. Either will trigger new HTTP request or page will refresh.
+        setTimeout(()=>{
+          location.reload(true);
+        }, 250);
+        return;
+      } else {
+        // Click badge, button disabled
+        e.preventDefault();
+        e.stopPropagation();
+        htmlBadgeFragmentFenceDiv.click();
+      }
+    });
+
+    htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.target.parentElement.classList.toggle("active");
+      positionPrompt( htmlBadgeDiv );
+      target.classList.toggle("js-fbc-prompt-active");
+      document.body.classList.toggle("js-fbc-prompt-active");
+    });
+
+    // Add to Container "Allow"
+    htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", (e) => {
+      window.open("https://relay.firefox.com");
+    });
+
+    // Open learn more link
+    htmlEmailBadgeFragmentPromptButtonLearn.addEventListener("click", (e) => {
+      window.open("https://support.mozilla.org/en-US/kb/facebook-container-prevent-facebook-tracking#w_how-does-email-tracking-work");
     });
   } else if (socialAction === "share-passive") {
     htmlBadgeDiv.classList.add("fbc-badge-share-passive", "fbc-badge-share");
@@ -506,6 +579,7 @@ function detectFacebookOnPage () {
   patternDetection(PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS, "share-passive");
   patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
   patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
+  patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
 
   escapeKeyListener();
 }
