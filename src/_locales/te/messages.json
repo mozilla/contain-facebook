@@ -9,6 +9,13 @@
       }
     }
   },
+  "in-fbc-p1": {
+    "message": "ఫేస్‌బుక్ ఇప్పుడు మిమ్మల్ని ఈ సైట్లో ట్రాక్ చేయవచ్చు. ఫేస్‌బుక్ కంటైనర్ నుండి ఈ సైటును తొలగించడానికి, ఫేస్‌బుక్ కంటైనర్లో అనుమతించబడిన సైట్లు ఎంచుకొని దీన్ని ఆ జాబితా నుండి తొలగించండి."
+  },
+  "on-facebook-subhead": {
+    "message": "ఫేస్‌బుక్, ఫేస్‌బుక్ కంటెయినర్ పరిధి లోని సైట్లలో",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "notOnFacebookText": {
     "message": "ఈ సైట్ ఫేస్‌బుక్ కంటెయినర్ వెలుపల ఉంది. ఇది జాలంలో మిమ్మల్ని ట్రాక్ చేయడం ఫేస్‌బుక్‌కు కష్టతరం చేస్తుంది.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
