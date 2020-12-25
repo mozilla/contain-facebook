@@ -1,0 +1,23 @@
+name: Dispatch on Label
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node
+      - name: Install firefox
+        run: |
+          sudo apt install firefox
+          xvfb-run --auto-servernum
+
+      - name: Build with xvfb
+        uses: GabrielBB/xvfb-action@v1.4
+        with:
+          run: npm run build
