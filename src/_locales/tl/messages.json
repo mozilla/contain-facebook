@@ -78,6 +78,10 @@
     "message": "Ang mga site na ito ay nangangailangan ng access sa iyong pakakakilanlan sa Facebook (o malaman kung sino ka) upang gumana. Nangangahulugan din ito na maaaring nakasubaybay ang Facebook sa lahat ng ginagawa mo sa mga site na ito.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
+  "onboarding4-subhead": {
+    "message": "Sa labas ng Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
   "btn-allow": {
     "message": "Payagan",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
