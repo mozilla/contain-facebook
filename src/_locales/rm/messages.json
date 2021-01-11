@@ -101,5 +101,57 @@
   "onboarding5-img": {
     "message": "Quest maletg demonstrescha co ch'il buttun per agiuntar ina website a Facebook Container vegn a cumparair en la panela.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Quai ta permetta da s'annunziar cun Facebook, ma Facebook po uschia fastizar tias activitads sin questa website.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
+  "btn-allow": {
+    "message": "Permetter",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "Interrumper",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "Enavant",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "Enavos",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "Finì",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "Turnar a la panela precedenta.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Siglir a «Co Facebook Container funcziuna»",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "Na chattà nagins fastizaders da Facebook",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container n'ha chattà nagins fastizaders da Facebook sin questa pagina. Ma la pagina po tuttina cuntegnair fastizaders dad in auter tip.",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "Ulteriuras infurmaziuns",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Co Facebook Container funcziuna",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "Nus avain ta protegì da Facebook.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   }
 }
