@@ -153,5 +153,96 @@
   "trackers-detected-subhead": {
     "message": "Nus avain ta protegì da Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "Ils buttuns da Facebook che cumparan sin websites da butias, novitads e sin autras paginas, cuntegnan fastizaders che tradeschan a Facebook las paginas che ti has visità en il web. Perfin sche ti n'utiliseschas mai quests buttuns per favurisar u cundivider, pon ils fastizaders rimnar datas davart tia navigaziun. Facebook Container blochescha quests fastizaders.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container blochescha quests fastizaders. Sche ti cliccas dentant sin in da quests buttuns, po Facebook tuttina ta fastizar.",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "Saiv da Facebook Container cun scut.",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "Websites permessas en Facebook Container",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "WEBSITES INCLUSAS",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "Nagina",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "WEBSITES CHE TI HAS AUTORISÀ",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "sites-added-p1": {
+    "message": "Facebook Container isolescha las websites che appartegnan a Facebook en ina zona delimitada. Ti pos permetter ad ulteriuras websites l'access a quest container, ma quai permetta a Facebook da registrar dapli da tia navigaziun en il web."
+  },
+  "remove": {
+    "message": "Allontanar",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "Permetter la website en Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Allontanar la website da Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Perquai ch'i sa tracta dad ina website che appartegna a Facebook, èsi impussibel da l'allontanar da Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "Allontanar la website da Facebook Container?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "Sche questa website vegn allontanada da Facebook Container, na funcziuna l'annunzia cun Facebook betg pli e cookies da Facebook che fastizeschan vegnan stizzads.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "Sche ti vul puspè duvrar la funcziun d'annunzia da Facebook, stos ti agiuntar danovamain la website a Facebook Container.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Permetter a Facebook da fastizar sin questa website?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Quai ta pussibilitescha da s'annunziar cun Facebook, ma permetta a Facebook da registrar tge che ti fas sin questa website.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container ha deactivà quest buttun ed impedì che Facebook fastizeschia tia visita sin questa pagina.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container ha bloccà fastizaders da Facebook. Sche ti utiliseschas la funcziun d'annunzia da Facebook sin questa website, po Facebook ta fastizar.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Permetter a Facebook da ta fastizar qua?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Sche ti vul utilisar la funcziun d'annunzia da Facebook, po Facebook fastizar tias activitads sin questa website. Quai als po gidar da sa far in maletg pli cumplet da tia vita en l'internet.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Betg pli mussar quest messadi",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Sche ti cliccas sin quest buttun, po Facebook fastizar tia visita sin questa website.",
+    "description": ""
   }
 }
