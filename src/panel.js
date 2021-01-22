@@ -1,5 +1,3 @@
-/* global browser */
-
 // TODO
 // Send message to background.js the first time that onboarding "Done" button is clicked and onboarding has been completed.
 

@@ -288,12 +288,12 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     });
 
     // Add to Container "Allow"
-    htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", (e) => {
+    htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", () => {
       window.open("https://relay.firefox.com");
     });
 
     // Open learn more link
-    htmlEmailBadgeFragmentPromptButtonLearn.addEventListener("click", (e) => {
+    htmlEmailBadgeFragmentPromptButtonLearn.addEventListener("click", () => {
       window.open("https://support.mozilla.org/en-US/kb/facebook-container-prevent-facebook-tracking#w_how-does-email-tracking-work");
     });
   } else if (socialAction === "share-passive") {
