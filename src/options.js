@@ -9,6 +9,20 @@ function getLocalizedStrings() {
   }
 }
 
+async function resetSettingsToDefault() {
+  const checkboxes = document.querySelectorAll(".settings-checkbox");
+  checkboxes.forEach((item) => {
+    item.checked = true;
+  });
+
+  const settings = buildSettingsObject();
+  await browser.runtime.sendMessage({
+    message: "update-settings",
+    settings
+  });
+
+}
+
 function buildSettingsObject() {
   let data = {};
   const checkboxes = document.querySelectorAll(".settings-checkbox");
@@ -37,6 +51,9 @@ async function updateSettings() {
   });
 
   await settingsCheckboxListener();
+
+  const resetSettingsButton = document.getElementById("resetSettingsButton");
+  resetSettingsButton.addEventListener("click", () => resetSettingsToDefault(), false);
 }
 
 function settingsCheckboxListener(){
