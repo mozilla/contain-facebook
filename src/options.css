@@ -1,6 +1,7 @@
 body {
   --white: #F2F2F3;
   --black: #202023;
+  --blue: #3B88FD;
   --borders: 1px solid #ededf0;
   font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
   font-size: 16px;
@@ -13,57 +14,31 @@ header {
 }
 
 header h1 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 main {
   max-width: 600px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 2em;
 }
 
 section {
   border-bottom: var(--borders);
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 2rem;
 }
 
 main h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
-.tooltip {
-	display: none;
-	padding: 5px 10px 10px;
-	width: 250px;
-	max-width: 250px;
-	background: var(--white);
-	z-index: 9999;
-	position: absolute;
-  left: 50%;
-  top: 50%;
-	/* left: calc( 100% + 0.5em);
-	top: 50%; */
-	color: var(--black);
-	font-size: 1rem;
-	line-height: 17px;
-	border: 1px solid #BEBEBF;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-}
-
-.tooltip-parent:hover .tooltip {
+label {
+  font-size: 1.25rem;
+  font-weight: bold;
   display: block;
-}
-
-.tooltip-parent svg {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip-parent {
-  position: relative;
-  display: inline-block;
+  margin: 0 0 0.25em;
+  cursor: pointer;
 }
 
 .settings-list > ul {
@@ -74,6 +49,18 @@ main h2 {
 
 .setting-item {
   position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
+}
+
+.checkbox-copy {
+  margin-left: 0.5em;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .inline-fbc-icon {
@@ -91,14 +78,24 @@ main h2 {
 	cursor: pointer;
 }
 
+.button {
+  outline: none;
+  appearance: none;
+  border: 0;
+  color: var(--white);
+  background: var(--blue);
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
 @media (prefers-color-scheme: dark) {
   body {
     --borders: 1px solid #4C4C4E;
 
     background: var(--black);
     color: var(--white);
-  }
-  .tooltip-parent .tooltip-icon {
-    fill: var(--white);
   }
 }
