@@ -4,3 +4,4 @@
 /coverage
 /build
 /.web-ext-artifacts
+.DS_Store
