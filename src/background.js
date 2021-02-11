@@ -35,9 +35,9 @@ const INSTAGRAM_DOMAINS = [
 ];
 
 const DEFAULT_SETTINGS = {
-  blockInstagram: true,
-  badgeContent: true,
-  replaceTab: true,
+  allowInstagram: false,
+  hideBadgeContent: false,
+  replaceTab: false,
 };
 
 async function buildBlockList() {
@@ -50,13 +50,14 @@ async function buildBlockList() {
     fbcStorage = await browser.storage.local.get();
   }
 
-  if (fbcStorage.settings.blockInstagram){
+  if (!fbcStorage.settings.allowInstagram){
     return FACEBOOK_DOMAINS.concat(INSTAGRAM_DOMAINS);
   }
   return FACEBOOK_DOMAINS;
 }
 
 async function updateSettings(data){
+  console.log(data);
   let fbcStorage = await browser.storage.local.get();
 
   await browser.storage.local.set({
@@ -64,7 +65,7 @@ async function updateSettings(data){
   });
 
   // Recache Blocked Domains List
-  if (data.blockInstagram != fbcStorage.settings.blockInstagram) {
+  if (data.allowInstagram != fbcStorage.settings.allowInstagram) {
     clearFacebookCookies();
     await generateFacebookHostREs();
   }
@@ -371,8 +372,8 @@ async function maybeReopenTab (url, tab, request) {
 
   const replaceTabSetting = await checkSettings("replaceTab");
 
-  // This is true by default
-  if (replaceTabSetting) {
+  // This is false by default
+  if (!replaceTabSetting) {
     browser.tabs.remove(tab.id);
   }
 
