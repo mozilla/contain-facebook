@@ -2,9 +2,10 @@ body {
   --white: #F2F2F3;
   --black: #202023;
   --blue: #3B88FD;
+  --gray: #4C4C4E;
   --borders: 1px solid #ededf0;
   font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-  font-size: 16px;
+  font-size: 12px;
   min-height: 300px;
 }
 
@@ -29,12 +30,25 @@ section {
   padding: 0.5rem 0 2rem;
 }
 
+p {
+  display: block;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
 main h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+main h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
 label {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: bold;
   display: block;
   margin: 0 0 0.25em;
@@ -54,13 +68,13 @@ label {
   margin-bottom: 1.5em;
 }
 
-.checkbox-copy {
-  margin-left: 0.5em;
-}
-
-p {
+.setting-item p {
   margin: 0;
   padding: 0;
+}
+
+.checkbox-copy {
+  margin-left: 0.5em;
 }
 
 .inline-fbc-icon {
@@ -90,12 +104,125 @@ p {
   font-size: 1rem;
 }
 
+/* URL List */
 
+.urls-list, .included-urls-list {
+  background: rgba(0,0,0,.1);
+  padding: 0;
+  margin: 0.5rem 0 1rem;
+  list-style: none;
+}
+
+.included-urls-list {
+  margin: 0 0 2rem;
+  cursor: not-allowed;
+  background: none;
+}
+
+.urls-list li {
+  padding: 0;
+  display: block;
+}
+
+.url-item {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.urls-list .url-item:hover {
+  background: rgba(0,0,0,.1);
+}
+
+.url-domain-wrapper {
+  position: relative;
+  width: 100%;
+  padding-right: 1em;
+}
+
+.remove-site {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  height: 1.1rem;
+  width: 1.1rem;
+  background-image: url("/img/x-close.svg");
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.allowed-site-icon {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.favi-facebook {
+  background-image: url("/img/favi-facebook.png");
+}
+
+.favi-instagram {
+  background-image: url("/img/favi-instagram.png");
+}
+
+.favi-messenger {
+  background-image: url("/img/favi-messenger.png");
+}
+
+.add-url-form {
+  margin-bottom: 1.5rem;
+}
+
+.add-url-wrapper {
+  display: flex;
+}
+
+.add-url-wrapper input {
+  flex-grow: 2;
+  padding: 0 1rem;
+  outline: none;
+  border: 0;
+}
+
+.add-url-wrapper input:focus {
+  outline: 2px solid var(--blue);
+}
+
+.add-url-wrapper button {
+  outline: none;
+  appearance: none;
+  border: 0;
+  color: var(--white);
+  background: var(--gray);
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-url-wrapper button:hover {
+  background: var(--blue);
+}
+
+/* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   body {
-    --borders: 1px solid #4C4C4E;
-
+    --borders: 1px solid var(--gray);
     background: var(--black);
     color: var(--white);
+  }
+  .urls-list {
+    background: rgba(255,255,255,.1);
+  }
+  .urls-list .url-item:hover {
+    background: rgba(255,255,255,.1);
+  }
+  .remove-site {
+    background-image: url("/img/x-close-white.svg");
   }
 }

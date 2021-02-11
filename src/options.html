@@ -43,6 +43,66 @@
         </ul>
         <button type="button" class="button" id="resetSettingsButton" name="button">Reset Settings</button>
       </section>
+      <section class="">
+        <h2 class="i18n-string" data-i18n="sites-added-subhead"></h2>
+        <p class="i18n-string" data-i18n="sites-added-p1"></p>
+        <h3 class="i18n-string" data-i18n="sites-included"></h3>
+        <ul class="included-urls included-urls-list">
+          <li>
+            <div class="url-item">
+              <div class="allowed-site-icon favi-instagram"></div>
+              <div class="url-domain-wrapper">
+                <span>instagram.com</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="url-item">
+              <div class="allowed-site-icon favi-facebook"></div>
+              <div class="url-domain-wrapper">
+                <span>facebook.com</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="url-item">
+              <div class="allowed-site-icon favi-messenger"></div>
+              <div class="url-domain-wrapper">
+                <span>messenger.com</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <h3 class="i18n-string" data-i18n="sites-allowed"></h3>
+        <ul class="added-urls urls-list">
+          <li>
+            <div class="url-item">
+              <div style="background-image: url('https://google.com/favicon.ico')" class="allowed-site-icon"></div>
+              <div class="url-domain-wrapper">
+                <span>domain.com</span>
+                <button class="remove-site" type="button" name="button"></button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="url-item">
+              <div style="background-image: url('https://google.com/favicon.ico')" class="allowed-site-icon"></div>
+              <div class="url-domain-wrapper">
+                <span>domain.com</span>
+                <button class="remove-site" type="button" name="button"></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="add-url-form">
+          <!-- Regex Pattern from https://cran.r-project.org/web/packages/rex/vignettes/url_parsing.html -->
+          <div class="add-url-wrapper">
+            <input placeholder="example.com" pattern=""^(?:(?:http(?:s)?|ftp)://)(?:\\S+(?::(?:\\S)*)?@)?(?:(?:[a-z0-9\u00a1-\uffff](?:-)*)*(?:[a-z0-9\u00a1-\uffff])+)(?:\\.(?:[a-z0-9\u00a1-\uffff](?:-)*)*(?:[a-z0-9\u00a1-\uffff])+)*(?:\\.(?:[a-z0-9\u00a1-\uffff]){2,})(?::(?:\\d){2,5})?(?:/(?:\\S)*)?$"" type="text" name="addDomainInput" value="">
+            <button type="button" class="" id="addDomainSubmit" name="button">Add Site</button>
+          </div>
+        </div>
+        <button type="button" class="button" id="removeAllDomains" name="button">Remove All</button>
+      </section>
     </main>
 
     <script src="options.js"></script>
