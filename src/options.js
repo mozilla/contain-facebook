@@ -11,8 +11,13 @@ function getLocalizedStrings() {
 
 async function resetSettingsToDefault() {
   const checkboxes = document.querySelectorAll(".settings-checkbox");
+
+  const defaultSettings = await browser.runtime.sendMessage({
+    message: "get-default-settings"
+  });
+
   checkboxes.forEach((item) => {
-    item.checked = true;
+    item.checked = defaultSettings[item.id];
   });
 
   const settings = buildSettingsObject();
