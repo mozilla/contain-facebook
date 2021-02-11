@@ -129,7 +129,11 @@ label {
   padding: 0.5rem;
 }
 
-.urls-list .url-item:hover {
+.url-item.empty {
+  padding: 2rem;
+}
+
+.urls-list .url-item:not(.empty):hover {
   background: rgba(0,0,0,.1);
 }
 
@@ -174,41 +178,6 @@ label {
   background-image: url("/img/favi-messenger.png");
 }
 
-.add-url-form {
-  margin-bottom: 1.5rem;
-}
-
-.add-url-wrapper {
-  display: flex;
-}
-
-.add-url-wrapper input {
-  flex-grow: 2;
-  padding: 0 1rem;
-  outline: none;
-  border: 0;
-}
-
-.add-url-wrapper input:focus {
-  outline: 2px solid var(--blue);
-}
-
-.add-url-wrapper button {
-  outline: none;
-  appearance: none;
-  border: 0;
-  color: var(--white);
-  background: var(--gray);
-  display: inline-block;
-  padding: 0.4em 0.8em;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.add-url-wrapper button:hover {
-  background: var(--blue);
-}
-
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   body {
@@ -219,7 +188,7 @@ label {
   .urls-list {
     background: rgba(255,255,255,.1);
   }
-  .urls-list .url-item:hover {
+  .urls-list .url-item:not(.empty):hover {
     background: rgba(255,255,255,.1);
   }
   .remove-site {

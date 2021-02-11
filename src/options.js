@@ -75,7 +75,77 @@ function settingsCheckboxListener(){
   });
 }
 
+async function removeAllowedSite() {
+  await browser.runtime.sendMessage({
+    message: "remove-domain-from-list",
+    removeDomain: this.dataset.site
+  });
+  browser.tabs.reload();
+}
+
+const allowedSitesList = document.querySelector(".added-urls");
+
+const AllowedSites = {
+  build: function(sites) {
+    allowedSitesList.innerHTML = "";
+    if (sites.length < 1) {
+      AllowedSites.setEmptyState();
+    } else {
+      for (let site of sites) {
+        let listItem = document.createElement("li");
+
+        let urlItem = document.createElement("div");
+        urlItem.classList.add("url-item");
+
+        let urlItemImage = document.createElement("div");
+        urlItemImage.classList.add("allowed-site-icon");
+        urlItemImage.style.backgroundImage = `url(https://${site}/favicon.ico`;
+        urlItem.appendChild(urlItemImage);
+
+        let urlDomainWrapper = document.createElement("div");
+        urlDomainWrapper.classList.add("url-domain-wrapper");
+
+        let urlDomainRemoveButton = document.createElement("button");
+        urlDomainRemoveButton.classList.add("remove-site");
+        urlDomainRemoveButton.type = "button";
+        urlDomainRemoveButton.dataset.site = site;
+        urlDomainWrapper.appendChild(urlDomainRemoveButton);
+
+        let urlDomainSpan = document.createElement("span");
+        urlDomainSpan.textContent = site;
+        urlDomainWrapper.appendChild(urlDomainSpan);
+
+        urlItem.appendChild(urlDomainWrapper);
+        listItem.appendChild(urlItem);
+        allowedSitesList.appendChild(listItem);
+      }
+      AllowedSites.setRemoverListeners();
+    }
+  },
+  init: async function() {
+    const siteList = await browser.runtime.sendMessage({
+      message: "what-sites-are-added"
+    });
+    AllowedSites.build(siteList);
+  },
+  setEmptyState: function() {
+    let listItem = document.createElement("li");
+    let urlItem = document.createElement("div");
+    urlItem.textContent = browser.i18n.getMessage("no-sites-added");
+    urlItem.classList.add("url-item", "empty");
+    listItem.appendChild(urlItem);
+    allowedSitesList.appendChild(listItem);
+  },
+  setRemoverListeners: function() {
+    const domainRemoveButtons = document.querySelectorAll(".remove-site");
+    for (let button of domainRemoveButtons) {
+      button.addEventListener("click", removeAllowedSite, false);
+    }
+  }
+};
+
 document.addEventListener("DOMContentLoaded", async () => {
   getLocalizedStrings();
   await updateSettings();
+  await AllowedSites.init();
 });
