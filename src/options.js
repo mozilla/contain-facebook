@@ -99,7 +99,26 @@ const AllowedSites = {
 
         let urlItemImage = document.createElement("div");
         urlItemImage.classList.add("allowed-site-icon");
-        urlItemImage.style.backgroundImage = `url(https://${site}/favicon.ico`;
+
+        let faviconUrl = `https://${site}/favicon.ico`;
+
+        const testFavicon = {
+          favIconError: function() {
+            urlItemImage.classList.add("no-image");
+          },
+          favIconFound: function() {
+            urlItemImage.style.backgroundImage = `url(https://${site}/favicon.ico`;
+          },
+          init: function(URL) {
+            let tester=new Image();
+            tester.addEventListener("load", this.favIconFound);
+            tester.addEventListener("error", this.favIconError);
+            tester.src=URL;
+          }
+        };
+
+        testFavicon.init(faviconUrl);
+
         urlItem.appendChild(urlItemImage);
 
         let urlDomainWrapper = document.createElement("div");
