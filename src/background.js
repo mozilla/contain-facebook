@@ -574,6 +574,7 @@ async function updateBrowserActionIcon (tab) {
   const url = tab.url;
   const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
   const aboutPageURLCheck = url.startsWith("about:");
+  const mozPageURLCheck = url.startsWith("moz-");
 
   if (isFacebookURL(url)) {
     // TODO: change panel logic from browser.storage to browser.runtime.onMessage
@@ -582,9 +583,9 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
   } else if (hasBeenAddedToFacebookContainer) {
     browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
-  } else if (aboutPageURLCheck) {
+  } else if (aboutPageURLCheck || mozPageURLCheck) {
     // Sets CURRENT_PANEL if current URL is an internal about: page
-    browser.storage.local.set({"CURRENT_PANEL": "about"});
+    browser.storage.local.set({"CURRENT_PANEL": "internal"});
   } else {
     const tabState = tabStates[tab.id];
     const panelToShow = (tabState && tabState.trackersDetected) ? "trackers-detected" : "no-trackers";
