@@ -1,0 +1,18 @@
+{
+  "btn-allow": {
+    "message": "Leisti",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "Atsisakyti",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "Toliau",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "Atgal",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }
+}
