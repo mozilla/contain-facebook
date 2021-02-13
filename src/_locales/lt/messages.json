@@ -14,5 +14,21 @@
   "btn-back": {
     "message": "Atgal",
     "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "no-trackers-subhead": {
+    "message": "Neaptikta jokių „Facebook“ stebėjimo priemonių",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "Sužinoti daugiau",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "trackers-detected-subhead": {
+    "message": "Mes apsaugojome jus nuo „Facebook“.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "remove": {
+    "message": "Pašalinti",
+    "description": ""
   }
 }
