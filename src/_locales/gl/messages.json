@@ -1,0 +1,19 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container illa a actividade do Facebook do resto da súa actividade web para evitar que Facebook o rastrexe fóra do sitio web de Facebook a través de rastros de terceiros.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ está no contedor de Facebook.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "in-fbc-p1": {
+    "message": "Agora Facebook pode rastrexarte neste sitio. Para retirar este sitio do Facebook Container, seleccione os sitios permitidos no Facebook Container e retíreo da listaxe."
+  }
+}
