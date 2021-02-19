@@ -585,7 +585,7 @@ async function updateBrowserActionIcon (tab) {
     browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
   } else if (aboutPageURLCheck || mozPageURLCheck) {
     // Sets CURRENT_PANEL if current URL is an internal about: page
-    browser.storage.local.set({"CURRENT_PANEL": "internal"});
+    browser.storage.local.set({"CURRENT_PANEL": "about"});
   } else {
     const tabState = tabStates[tab.id];
     const panelToShow = (tabState && tabState.trackersDetected) ? "trackers-detected" : "no-trackers";

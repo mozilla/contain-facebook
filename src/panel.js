@@ -189,7 +189,7 @@ const setCustomSiteButtonEvent = async (panelId) => {
 
   const addSiteToContainerLink = document.querySelector(".add-site-to-container");
 
-  if (panelId === "internal") {
+  if (panelId === "about") {
     // If on internal About: or moz-extension:// page, set button to disabled.
     addSiteToContainerLink.classList.add("disabled-button");
     return;
