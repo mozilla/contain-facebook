@@ -40,6 +40,12 @@ const DEFAULT_SETTINGS = {
   replaceTab: false,
 };
 
+const DEFAULT_CONTAINED_SITES = [
+  "instagram.com",
+  "facebook.com",
+  "messenger.com",
+];
+
 async function buildBlockList() {
   let fbcStorage = await browser.storage.local.get();
 
@@ -50,9 +56,23 @@ async function buildBlockList() {
     fbcStorage = await browser.storage.local.get();
   }
 
+  const instagramURL = DEFAULT_CONTAINED_SITES.indexOf("instagram.com");
+
   if (!fbcStorage.settings.allowInstagram){
+    if (instagramURL < 0) {
+      // Add IG back to the DEFAULT_CONTAINED_SITES array
+      DEFAULT_CONTAINED_SITES.unshift("instagram.com");
+    }
     return FACEBOOK_DOMAINS.concat(INSTAGRAM_DOMAINS);
+  } else {
+    if (instagramURL > -1) {
+      // Remove IG from the DEFAULT_CONTAINED_SITES array
+      DEFAULT_CONTAINED_SITES.splice(instagramURL, 1);
+    }
   }
+
+
+
   return FACEBOOK_DOMAINS;
 }
 
@@ -752,6 +772,8 @@ async function checkIfTrackersAreDetected(sender) {
       break;
     case "get-default-settings":
       return DEFAULT_SETTINGS;
+    case "get-default-domains":
+      return DEFAULT_CONTAINED_SITES;
     case "check-settings":
       return checkSettings();
     case "are-trackers-detected":

@@ -102,6 +102,7 @@ label {
   padding: 0.4em 0.8em;
   cursor: pointer;
   font-size: 1rem;
+  border-radius: 2px;
 }
 
 /* URL List */
@@ -182,6 +183,10 @@ label {
 
 .favi-messenger {
   background-image: url("/img/favi-messenger.png");
+}
+
+.favi-whatsapp {
+  background-image: url("/img/favi-whatsapp.png");
 }
 
 /* Dark Mode Support */

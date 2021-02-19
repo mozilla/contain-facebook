@@ -75,6 +75,41 @@ function settingsCheckboxListener(){
   });
 }
 
+async function buildDefaultSitesList() {
+  const defaultAllowedSites = await browser.runtime.sendMessage({
+    message: "get-default-domains"
+  });
+
+  const includedSitesList = document.querySelector(".included-urls");
+  includedSitesList.innerHTML = "";
+
+  for (let site of defaultAllowedSites) {
+
+    let listItem = document.createElement("li");
+
+    let urlItem = document.createElement("div");
+    urlItem.classList.add("url-item");
+
+    let urlItemImage = document.createElement("div");
+    const domainClass = site.replace(".com", "");
+    const faviClass = "favi-" + domainClass;
+    urlItemImage.classList.add("allowed-site-icon", faviClass);
+
+    urlItem.appendChild(urlItemImage);
+
+    let urlDomainWrapper = document.createElement("div");
+    urlDomainWrapper.classList.add("url-domain-wrapper");
+
+    let urlDomainSpan = document.createElement("span");
+    urlDomainSpan.textContent = site;
+    urlDomainWrapper.appendChild(urlDomainSpan);
+
+    urlItem.appendChild(urlDomainWrapper);
+    listItem.appendChild(urlItem);
+    includedSitesList.appendChild(listItem);
+  }
+}
+
 async function removeAllowedSite() {
   await browser.runtime.sendMessage({
     message: "remove-domain-from-list",
@@ -167,4 +202,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   getLocalizedStrings();
   await updateSettings();
   await AllowedSites.init();
+  await buildDefaultSitesList();
 });

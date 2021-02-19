@@ -487,14 +487,6 @@ const addHeaderWithGearIcon = (fragment) => {
   return fragment;
 };
 
-// TODO: Remove instagram.com based on allowInstagram setting
-const defaultAllowedSites = [
-  "instagram.com",
-  "facebook.com",
-  "messenger.com",
-];
-
-
 const makeSiteList = async(fragment, siteList, sitesAllowed=false, addX=false) => {
 
   // if no sites have been added to the container, show "None"
@@ -547,6 +539,11 @@ const buildAllowedSitesPanel = async(panelId) => {
 
   const listsWrapper = addDiv(fragment, "site-lists-wrapper");
   addLightSubhead(listsWrapper, "sites-included");
+
+  const defaultAllowedSites = await browser.runtime.sendMessage({
+    message: "get-default-domains"
+  });
+
   makeSiteList(listsWrapper, defaultAllowedSites);
 
   const siteList = await browser.runtime.sendMessage({
