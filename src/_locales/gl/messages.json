@@ -69,5 +69,9 @@
   "onboarding2-alt": {
     "message": "A icona de valado do Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "Esta icona aparece na barra de enderezos de Firefox ao visitar sitios, como Facebook.com, que se atopan na linde do Facebook Container.",
+    "description": "This is the first paragraph of the second onboarding panel."
   }
 }
