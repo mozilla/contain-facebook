@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container illa a actividade do Facebook do resto da súa actividade web para evitar que Facebook o rastrexe fóra do sitio web de Facebook a través de rastros de terceiros.",
+    "message": "Facebook Container illa a actividade do Facebook do resto da súa actividade web para evitar que Facebook o siga fóra do sitio web do Facebook cos rastros de terceiros.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -181,5 +181,68 @@
   "sites-allowed": {
     "message": "Sitios que vostede permitiu",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "sites-added-p1": {
+    "message": "Facebook Container sitúa os sitios que son propiedade do Facebook dentro do linde. Pode permitir que outros sitios estean dentro do linde, pero isto permitiralle ao Facebook rastrexar aínda máis a súa navegación web."
+  },
+  "remove": {
+    "message": "Retirar",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "Permitir un sitio no Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Retirar un sitio do Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Porque este é un sitio de Facebook, non se pode retirar do Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "Quere retirar o sitio de Facebook Container?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "Retiralo do Facebook Container significa que a función de inicio de sesión con Facebook xa non funcionará e eliminaranse os rastros que permiten o rastrexo por parte do Facebook.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "Se desexa volver a iniciar sesión co Facebook, terá que engadilo de novo ao Facebook Container.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Permitir o rastrexo do Facebook neste sitio?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Isto permítelle iniciar sesión co Facebook, pero autoriza a que Facebook realice seguimento do que fai neste sitio.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container desactivou este botón e impediu que o Facebook rastrexase a visita a esta páxina.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container bloqueou os rastrexadores do Facebook. Se utiliza Iniciar sesión con Facebook neste sitio, Facebook poderá realizar un seguimento.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Permite que Facebook o rastrexe aquí?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Se desexa iniciar sesión con Facebook, Facebook poderá rastrexar a súa actividade neste sitio. Isto pode axudalos a construír unha imaxe máis completa da súa vida en liña.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Non amosar isto de novo",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Se preme neste botón, Facebook poderá rastrexar a súa visita a este sitio.",
+    "description": ""
   }
 }
