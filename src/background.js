@@ -44,6 +44,7 @@ const DEFAULT_CONTAINED_SITES = [
   "instagram.com",
   "facebook.com",
   "messenger.com",
+  // "whatsapp.com",
 ];
 
 async function buildBlockList() {
@@ -77,7 +78,6 @@ async function buildBlockList() {
 }
 
 async function updateSettings(data){
-  console.log(data);
   let fbcStorage = await browser.storage.local.get();
 
   await browser.storage.local.set({
