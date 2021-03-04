@@ -68,6 +68,13 @@ const PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/sharer']", // Legacy Share dialog
 ];
 
+// Attributes distilled from selectors above. Update when necessary.
+const OBSERVER_ATTRIBUTES = [
+  "action", "aria-label", "class",
+  "data-action", "data-bfa-network", "data-destination", "data-login-with-facebook",
+  "data-oauthserver", "data-partner", "data-tag", "data-test-id", "data-tracking",
+  "href", "id", "title"];
+
 function isFixed (elem) {
   do {
     if (getComputedStyle(elem).position == "fixed") return true;
@@ -481,10 +488,10 @@ function parentIsBadged(target) {
 // List of badge-able in-page elements
 const facebookDetectedElementsArr = [];
 
-function patternDetection(selectionArray, socialActionIntent){
+function patternDetection(selectionArray, socialActionIntent, target) {
   let querySelector = selectionArray.join(",");
 
-  for (let item of document.querySelectorAll(querySelector)) {
+  for (let item of target.querySelectorAll(querySelector)) {
     // overlay the FBC icon badge on the item
     if (!item.classList.contains("fbc-has-badge") && !isPinterest(item) && !parentIsBadged(item)) {
       const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
@@ -498,16 +505,14 @@ function patternDetection(selectionArray, socialActionIntent){
   }
 }
 
-function detectFacebookOnPage () {
+function detectFacebookOnPage(target) {
   if (!checkForTrackers) {
     return;
   }
 
-  patternDetection(PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS, "share-passive");
-  patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
-  patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
-
-  escapeKeyListener();
+  patternDetection(PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS, "share-passive", target);
+  patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share", target);
+  patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login", target);
 }
 
 // Resize listener. Only fires after window stops resizing.
@@ -541,12 +546,18 @@ function screenUpdate () {
   }
 }
 
+let escapeListerenInitialized = false;
+
 function escapeKeyListener () {
-  document.body.addEventListener("keydown", function(e) {
-    if(e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
-      closePrompt();
-    }
-  });
+  if (!escapeListerenInitialized) {
+    escapeListerenInitialized = true;
+
+    document.body.addEventListener("keydown", function(e) {
+      if(e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
+        closePrompt();
+      }
+    });
+  }
 }
 
 window.addEventListener("click", function(e){
@@ -557,7 +568,7 @@ window.addEventListener("click", function(e){
       closePrompt();
     }
   } else {
-    contentScriptInit(true);
+    // contentScriptInit(true);
   }
 });
 
@@ -592,7 +603,7 @@ browser.runtime.onMessage.addListener(message => {
 // let callCount = 0;
 let contentScriptDelay = 999;
 
-function contentScriptInit(resetSwitch, msg) {
+function contentScriptInit(resetSwitch, msg, target = document) {
   // Second arg is for debugging to see which contentScriptInit fires
   // Call count tracks number of times contentScriptInit has been called
   // callCount = callCount + 1;
@@ -604,7 +615,7 @@ function contentScriptInit(resetSwitch, msg) {
 
   // Resource call is not in FBC/FB Domain and is a FB resource
   if (checkForTrackers && msg !== "other-domain") {
-    detectFacebookOnPage();
+    detectFacebookOnPage(target);
     screenUpdate();
   }
 }
@@ -629,7 +640,27 @@ async function CheckIfURLShouldBeBlocked() {
   if (siteList.includes(site)) {
     checkForTrackers = false;
   } else {
-    contentScriptInit(false);
+    // Reinitialize the content script for mutated nodes
+    const observer = new MutationObserver((mutations) => {
+      new Set(mutations.flatMap(mutation => {
+        switch (mutation.type) {
+        case "attributes":
+          return mutation.target;
+        case "childList":
+          return Array.from(mutation.addedNodes);
+        default:
+          return [];
+        }
+      })).forEach(target => contentScriptInit(false, null, target));
+    });
+
+    // Check for mutations in the entire document
+    observer.observe(document, {
+      childList: true,
+      attributes: true,
+      attributeFilter: OBSERVER_ATTRIBUTES,
+      subtree: true
+    });
   }
 
 }
@@ -638,6 +669,7 @@ async function CheckIfURLShouldBeBlocked() {
 function addPassiveWindowOnloadListener() {
   window.addEventListener("load", function() {
     CheckIfURLShouldBeBlocked();
+    escapeKeyListener();
   }, false);
 }
 
