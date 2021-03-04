@@ -640,6 +640,9 @@ async function CheckIfURLShouldBeBlocked() {
   if (siteList.includes(site)) {
     checkForTrackers = false;
   } else {
+    // Initialize the content script the first time
+    contentScriptInit(false);
+
     // Reinitialize the content script for mutated nodes
     const observer = new MutationObserver((mutations) => {
       new Set(mutations.flatMap(mutation => {
@@ -668,7 +671,14 @@ async function CheckIfURLShouldBeBlocked() {
 // Cross-browser implementation of element.addEventListener()
 function addPassiveWindowOnloadListener() {
   window.addEventListener("load", function() {
-    CheckIfURLShouldBeBlocked();
+    // XXX: Work around slow test startup.
+    // In the real world it works fine without setTimeout.
+    CheckIfURLShouldBeBlocked().catch(() => {
+      setTimeout(() => {
+        CheckIfURLShouldBeBlocked().catch(() =>
+          setTimeout(CheckIfURLShouldBeBlocked, 1000));
+      }, 1000);
+    });
     escapeKeyListener();
   }, false);
 }
