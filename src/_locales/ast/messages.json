@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container aislla l'actividá de Facebook del restu pa evitar que Facebook te rastrexe fuera del so sitiu pente cookies de terceros.",
+    "message": "Facebook Container aislla l'actividá de Facebook pa evitar que te rastrexe fuera del so sitiu pente cookies de terceros.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -14,7 +14,7 @@
     }
   },
   "in-fbc-p1": {
-    "message": "Agora Facebook pue rastrexate nesti sitiu. Pa quitalu de Facebook Container, esbilla Sitios permitíos en Facebook Container y desanícialu de la llista."
+    "message": "Agora Facebook pue rastrexate nesti sitiu. Pa quitalu de Facebook Container, esbilla «Sitios permitíos» en Facebook Container y quítalu de la llista."
   },
   "on-facebook-p1": {
     "message": "Esti iconu apaez na barra de direiciones de Firefox cuando visites sitios que pertenezan a Facebook o qu'amestares a Facebook Container.",
