@@ -247,7 +247,7 @@ async function maybeReopenTab (url, tab, request) {
     // We don't reopen MAC assigned urls
     return;
   }
-  const cookieStoreId = await shouldContainInto(url, tab);
+  const cookieStoreId = await shouldContainInto(url, tab, request);
   if (!cookieStoreId) {
     // Tab doesn't need to be contained
     return;
@@ -291,17 +291,16 @@ function getRootDomain(url) {
 
 }
 
-function topFrameUrlIsFacebookApps(frameAncestorsArray) {
-  if (!frameAncestorsArray || frameAncestorsArray.length === 0) {
+function topFrameUrlMatcher(frameAncestorsArray, allowedDomain) {
+  if (!frameAncestorsArray || !allowedDomain || frameAncestorsArray.length === 0) {
     // No frame ancestor return false
     return false;
   }
 
-  const appsFacebookURL = "https://apps.facebook.com";
   const frameAncestorsURL = frameAncestorsArray[0].url;
 
-  if (!frameAncestorsURL.startsWith(appsFacebookURL)) {
-    // Only allow frame ancestors that originate from apps.facebook.com
+  if (!frameAncestorsURL.startsWith(allowedDomain)) {
+    // Only allow frame ancestors that originate from matched URL
     return false;
   }
 
@@ -314,6 +313,18 @@ function isFacebookURL (url) {
     if (facebookHostRE.test(parsedUrl.host)) {
       return true;
     }
+  }
+  return false;
+}
+
+function isPayPalURL (url) {
+  // TODO: Determine if we need to limit to just www, or wildecard the subdomain
+  // Test for any URLs that match  paypalobjects.com or  paypal.com
+  const parsedUrl = new URL(url);
+  const payPalRegex = new RegExp("^(.*\\.)?paypal.com$");
+  const payPalObjectsRegex = new RegExp("^(.*\\.)?paypalobjects.com$"); 
+  if (payPalRegex.test(parsedUrl.host) || payPalObjectsRegex.test(parsedUrl.host)) {
+    return true;
   }
   return false;
 }
@@ -343,7 +354,7 @@ async function isAddedToFacebookContainer (url) {
   return false;
 }
 
-async function shouldContainInto (url, tab) {
+async function shouldContainInto (url, tab, request) {
   if (!url.startsWith("http")) {
     // we only handle URLs starting with http(s)
     return false;
@@ -351,7 +362,10 @@ async function shouldContainInto (url, tab) {
 
   const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
 
-  if (isFacebookURL(url) || hasBeenAddedToFacebookContainer) {
+  // Github #708 - This logic allows payment services opened from Facebook to stay inside Facebook Container
+  const frameAncestorUrlIsFacebookDonate = topFrameUrlMatcher(request.originUrl, "https://facebook.com/donate");
+
+  if (isFacebookURL(url) || hasBeenAddedToFacebookContainer || frameAncestorUrlIsFacebookDonate) {
     if (tab.cookieStoreId !== facebookCookieStoreId) {
       // Facebook-URL outside of Facebook Container Tab
       // Should contain into Facebook Container
@@ -525,8 +539,10 @@ async function blockFacebookSubResources (requestDetails) {
   }
 
   const urlIsFacebook = isFacebookURL(requestDetails.url);
-  // If this request isn't going to Facebook, let's return {} ASAP
-  if (!urlIsFacebook) {
+  const urlIsPayPal = isPayPalURL(requestDetails.url);
+
+  // If this request isn't going to Facebook or PayPal, let's return {} ASAP
+  if (!urlIsFacebook && !urlIsPayPal) {
     return {};
   }
 
@@ -539,10 +555,19 @@ async function blockFacebookSubResources (requestDetails) {
     return {};
   }
 
-  const frameAncestorUrlIsFacebookApps = topFrameUrlIsFacebookApps(requestDetails.frameAncestors);
+  const frameAncestorUrlIsFacebookApps = topFrameUrlMatcher(requestDetails.frameAncestors, "https://apps.facebook.com");
 
   if (frameAncestorUrlIsFacebookApps) {
     const message = {msg: "facebook-domain"};
+    // Send the message to the content_script
+    browser.tabs.sendMessage(requestDetails.tabId, message);
+    return {};
+  }
+
+  const frameAncestorUrlIsFacebookDonate = topFrameUrlMatcher(requestDetails.frameAncestors, "https://facebook.com/donate");
+  
+  if (urlIsPayPal || frameAncestorUrlIsFacebookDonate) {
+    const message = {msg: "allowed-paypal-subresources"};
     // Send the message to the content_script
     browser.tabs.sendMessage(requestDetails.tabId, message);
     return {};
