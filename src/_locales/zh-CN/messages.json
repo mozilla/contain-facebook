@@ -202,7 +202,7 @@
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "要将网站从 Facebook Container 移除？",
+    "message": "要将网站从 Facebook Container 移除吗？",
     "description": ""
   },
   "remove-site-p1": {
