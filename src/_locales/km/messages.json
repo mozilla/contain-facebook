@@ -82,6 +82,14 @@
     "message": "ក្រៅហ្វេសប៊ុក",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-p1": {
+    "message": "សូម្បីតែនៅពេលដែលអ្នកមិននៅលើហ្វេសប៊ុកក៏ដោយក៏ហ្វេសប៊ុកអាចតាមដានអ្នកនៅលើអ៊ីនធឺណិតបានដែរ។ ប៊ូតុងដែលអនុញ្ញាតឱ្យអ្នកប្រកាសអ្វីៗនៅក្នុងហ្វេសប៊ុកឬចូលគេហទំព័រដោយប្រើគណនីហ្វេសប៊ុករបស់អ្នកមានអ្នកតាមដាន។ Facebook Containe នឹងរារាំងអ្នកតាមដានទាំងនេះហើយបង្ហាញរូបសញ្ញារបង ដើម្បីបង្ហាញអ្នកពីកន្លែងដែលអ្នកតាមដានត្រូវបានដកចេញ។",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "រូបភាពនេះបង្ហាញពីរបៀបដែលរូបតំណាង Facebook Containers នឹងបង្ហាញនៅលើទំព័រក្បែរប៊ូតុងហ្វេសប៊ុក Like ។",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
   "onboarding5-subhead": {
     "message": "ចូលដោយ​ប្រើ Facebook នៅលើគេហទំព័រផ្សេងទៀត",
     "description": "This is the subhead for the fifth onboarding panel."
