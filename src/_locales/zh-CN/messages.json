@@ -14,7 +14,7 @@
     }
   },
   "in-fbc-p1": {
-    "message": "Facebook Container 会在此网站跟踪您。若要从 Facebook Container 移除，请选择“允许在 Facebook Container 中运行的网站”并将其从列表中移除。"
+    "message": "Facebook 会在此网站跟踪您。若要从 Facebook Container 移除，请选择“允许在 Facebook Container 中运行的网站”并将其从列表中移除。"
   },
   "on-facebook-subhead": {
     "message": "Facebook 与 Facebook Container 边界内的网站",
