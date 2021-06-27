@@ -244,5 +244,9 @@
    "inPageUI-tooltip-button-share-passive": {
      "message": "If you click this button, Facebook will be able to track your visit to this site.",
      "description": ""
+   },
+   "fbcSettingsTitle": {
+     "message": "Settings",
+     "description": ""
    }
 }

@@ -191,8 +191,8 @@ const setCustomSiteButtonEvent = async (panelId) => {
 
   const addSiteToContainerLink = document.querySelector(".add-site-to-container");
 
-  if (panelId === "about") {
-    // If on internal About: page, set button to disabled.
+  if (panelId === "internal") {
+    // If on internal About: or moz-extension:// page, set button to disabled.
     addSiteToContainerLink.classList.add("disabled-button");
     return;
   }
@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 // Build non-onboarding panel
 const buildPanel = async(panelId) => {
   const { page, fragment } = setUpPanel(panelId);
-  addHeader(fragment);
+  addHeaderWithGearIcon(fragment);
 
   const contentWrapper = addDiv(fragment, "main-content-wrapper");
   addSubhead(contentWrapper, panelId);
@@ -401,8 +401,16 @@ const buildPanel = async(panelId) => {
 
   const onboardingLinks = document.querySelectorAll(".open-onboarding");
   const allowedSitesLink = document.querySelector(".open-allowed-sites");
+  const settingsLink = document.querySelector(".btn-settings");
 
   allowedSitesLink.addEventListener("click", () => buildAllowedSitesPanel("sites-allowed"));
+  settingsLink.addEventListener("click", () => {
+    browser.tabs.create({
+      url: "/options.html",
+      active: true
+    });
+    window.close();
+  });
 
   await setCustomSiteButtonEvent(panelId);
 
@@ -473,7 +481,15 @@ const addHeaderWithBackArrow = (fragment) => {
   return fragment;
 };
 
+const addHeaderWithGearIcon = (fragment) => {
+  let el = addHeader(fragment);
+  el = document.createElement("button");
+  el.classList.add("btn-settings", "gear");
+  fragment.appendChild(el);
+  return fragment;
+};
 
+// TODO: Remove instagram.com based on allowInstagram setting
 const defaultAllowedSites = [
   "instagram.com",
   "facebook.com",

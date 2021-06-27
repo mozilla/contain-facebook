@@ -67,5 +67,10 @@
             "js": ["content_script.js"],
             "css": ["content_script.css"]
         }
-    ]
+    ],
+
+    "options_ui": {
+      "page": "options.html",
+      "browser_style": true
+    }
 }

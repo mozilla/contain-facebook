@@ -68,6 +68,19 @@ h1 { /* "Facebook Container" headline for all panels */
   cursor: pointer;
 }
 
+.btn-settings.gear {
+  z-index: 2;
+  position: absolute;
+  border: 0;
+  right: 15px;
+  top: 15px;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url("/img/preferences.svg?v=3");
+  cursor: pointer;
+}
+
 h2 { /* panel sub-head for all panels */
   display: flex;
   align-items: center;
@@ -371,7 +384,8 @@ a:hover {
 .highlight-on-hover::after,
 .Facebook-text::after,
 .trackers-detected-subhead::before,
-.btn-return.arrow-left {
+.btn-return.arrow-left,
+.btn-settings.gear {
   content: "";
   background-repeat: no-repeat;
   background-size: contain;

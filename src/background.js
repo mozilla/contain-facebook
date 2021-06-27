@@ -11,9 +11,6 @@ const FACEBOOK_DOMAINS = [
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net", "facebookrecruiting.com",
 
-  "instagram.com",
-  "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
-
   "messenger.com", "m.me", "messengerdevelopers.com",
 
   "atdmt.com",
@@ -25,6 +22,58 @@ const FACEBOOK_DOMAINS = [
 
   "oversightboard.com", "www.oversightboard.com"
 ];
+
+const INSTAGRAM_DOMAINS = [
+  "instagram.com",
+  "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
+];
+
+const DEFAULT_SETTINGS = {
+  allowInstagram: false,
+  hideBadgeContent: false,
+  replaceTab: false,
+};
+
+async function buildBlockList() {
+  let fbcStorage = await browser.storage.local.get();
+
+  if (!fbcStorage.settings) {
+    await browser.storage.local.set({
+      settings: DEFAULT_SETTINGS
+    });
+    fbcStorage = await browser.storage.local.get();
+  }
+
+  if (!fbcStorage.settings.allowInstagram){
+    return FACEBOOK_DOMAINS.concat(INSTAGRAM_DOMAINS);
+  }
+  return FACEBOOK_DOMAINS;
+}
+
+async function updateSettings(data){
+  console.log(data);
+  let fbcStorage = await browser.storage.local.get();
+
+  await browser.storage.local.set({
+    "settings": data
+  });
+
+  // Recache Blocked Domains List
+  if (data.allowInstagram != fbcStorage.settings.allowInstagram) {
+    clearFacebookCookies();
+    await generateFacebookHostREs();
+  }
+}
+
+async function checkSettings(setting){
+  let fbcStorage = await browser.storage.local.get();
+
+  if (setting) {
+    return fbcStorage.settings[setting];
+  }
+
+  return fbcStorage.settings;
+}
 
 const MAC_ADDON_ID = "@testpilot-containers";
 
@@ -80,9 +129,10 @@ async function setupMACAddonListeners () {
 
 async function sendJailedDomainsToMAC () {
   try {
+    const BLOCKED_DOMAINS = await buildBlockList();
     return await browser.runtime.sendMessage(MAC_ADDON_ID, {
       method: "jailedDomains",
-      urls: FACEBOOK_DOMAINS.map((domain) => {
+      urls: BLOCKED_DOMAINS.map((domain) => {
         return `https://${domain}/`;
       })
     });
@@ -151,8 +201,10 @@ function shouldCancelEarly (tab, options) {
   return false;
 }
 
-function generateFacebookHostREs () {
-  for (let facebookDomain of FACEBOOK_DOMAINS) {
+async function generateFacebookHostREs () {
+  const BLOCKED_DOMAINS = await buildBlockList();
+  facebookHostREs.length = 0;
+  for (let facebookDomain of BLOCKED_DOMAINS) {
     facebookHostREs.push(new RegExp(`^(.*\\.)?${facebookDomain}$`));
   }
 }
@@ -164,16 +216,18 @@ async function clearFacebookCookies () {
     cookieStoreId: "firefox-default"
   });
 
+  const BLOCKED_DOMAINS = await buildBlockList();
+
   let macAssignments = [];
   if (macAddonEnabled) {
-    const promises = FACEBOOK_DOMAINS.map(async facebookDomain => {
+    const promises = BLOCKED_DOMAINS.map(async facebookDomain => {
       const assigned = await getMACAssignment(`https://${facebookDomain}/`);
       return assigned ? facebookDomain : null;
     });
     macAssignments = await Promise.all(promises);
   }
 
-  FACEBOOK_DOMAINS.map(async facebookDomain => {
+  BLOCKED_DOMAINS.map(async facebookDomain => {
     const facebookCookieUrl = `https://${facebookDomain}/`;
 
     // dont clear cookies for facebookDomain if mac assigned (with or without www.)
@@ -262,10 +316,16 @@ async function maybeReopenTab (url, tab, request) {
     url,
     cookieStoreId,
     active: tab.active,
-    index: tab.index,
+    index: tab.index + 1,
     windowId: tab.windowId
   });
-  browser.tabs.remove(tab.id);
+
+  const replaceTabSetting = await checkSettings("replaceTab");
+
+  // This is false by default
+  if (!replaceTabSetting) {
+    browser.tabs.remove(tab.id);
+  }
 
   return {cancel: true};
 }
@@ -464,6 +524,7 @@ async function updateBrowserActionIcon (tab) {
   const url = tab.url;
   const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
   const aboutPageURLCheck = url.startsWith("about:");
+  const mozPageURLCheck = url.startsWith("moz-");
 
   if (isFacebookURL(url)) {
     // TODO: change panel logic from browser.storage to browser.runtime.onMessage
@@ -472,9 +533,9 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
   } else if (hasBeenAddedToFacebookContainer) {
     browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
-  } else if (aboutPageURLCheck) {
+  } else if (aboutPageURLCheck || mozPageURLCheck) {
     // Sets CURRENT_PANEL if current URL is an internal about: page
-    browser.storage.local.set({"CURRENT_PANEL": "about"});
+    browser.storage.local.set({"CURRENT_PANEL": "internal"});
   } else {
     const tabState = tabStates[tab.id];
     const panelToShow = (tabState && tabState.trackersDetected) ? "trackers-detected" : "no-trackers";
@@ -608,7 +669,7 @@ function setupWindowsAndTabsListeners() {
     return;
   }
   clearFacebookCookies();
-  generateFacebookHostREs();
+  await generateFacebookHostREs();
   setupWebRequestListeners();
   setupWindowsAndTabsListeners();
 
@@ -624,6 +685,13 @@ function setupWindowsAndTabsListeners() {
       break;
     case "get-root-domain":
       return getRootDomain(request.url);
+    case "update-settings":
+      updateSettings(request.settings);
+      break;
+    case "get-default-settings":
+      return DEFAULT_SETTINGS;
+    case "check-settings":
+      return checkSettings();
     default:
       throw new Error("Unexpected message!");
     }
