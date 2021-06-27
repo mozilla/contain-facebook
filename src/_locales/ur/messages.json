@@ -1,4 +1,8 @@
 {
+  "onUnknownSiteHeader": {
+    "message": "یہ سائٹ Facebook کنٹینر میں نہیں ہے۔",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "facebookContainer": {
     "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
@@ -6,6 +10,10 @@
   "onboarding1-subhead": {
     "message": "Facebook Container استعمال کر رہے ہیں",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "Facebook کنٹینر باڑ کا آئکن",
+    "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding4-subhead": {
     "message": "Facebook کے باہر",
@@ -31,6 +39,14 @@
     "message": "مکمل",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   },
+  "btn-arrow-back": {
+    "message": "پچھلے پینل پر واپس جائیں۔",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Facebook Container کیسے کام کرتا ہے پر واپس جائیں ",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
   "learn-more": {
     "message": "مزید سیکھیں",
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -50,6 +66,10 @@
   "remove": {
     "message": "ہٹائیں",
     "description": ""
+  },
+  "button-allow-site": {
+    "message": "Facebook Container میں سائٹ کو اجازت دیں",
+    "description": "Button text that allows sites to be added to the Facebook Container"
   },
   "inPageUI-tooltip-prompt-p1": {
     "message": "Facebook کو یہاں آپ کو ٹریک کرنے کی اجازت دیں؟",
