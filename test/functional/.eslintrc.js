@@ -5,4 +5,4 @@ module.exports = {
     By: false,
     internalUUID: false
   }
-}
+};
