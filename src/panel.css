@@ -435,6 +435,14 @@ h3.sites-allowed {
   background-image: url("/img/favi-messenger.png");
 }
 
+.favi-whatsapp {
+  background-image: url("/img/favi-whatsapp.png");
+}
+
+.favi-workplace {
+  background-image: url("/img/favi-workplace.png");
+}
+
 #no-trackers .fw-bottom-btn:last-of-type {
   display: none;
 }
