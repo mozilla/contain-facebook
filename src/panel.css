@@ -59,13 +59,17 @@ h1 { /* "Facebook Container" headline for all panels */
 .btn-return.arrow-left {
   position: absolute;
   border: 0;
-  left: 15px;
+  inset-inline-start: 15px;
   top: 15px;
   width: 1.2rem;
   height: 1.2rem;
   background-color: rgba(255, 255, 255, 1);
   background-image: url("/img/arrow-icon-left.svg");
   cursor: pointer;
+}
+
+.btn-return.arrow-left:dir(rtl) {
+  background-image: url("/img/arrow-icon-right.svg");
 }
 
 h2 { /* panel sub-head for all panels */
@@ -94,7 +98,7 @@ h3 {
   display: inline-block;
   width: 14px;
   height: 12px;
-  margin-left: 4px;
+  margin-inline-start: 4px;
   margin-bottom: -1px;
   content: "";
 }
@@ -111,7 +115,7 @@ h3 {
   display: inline-block;
   width: 16px;
   height: 13px;
-  margin-left: 6px;
+  margin-inline-start: 6px;
   content: "";
 }
 
@@ -155,13 +159,17 @@ a:hover {
   display: inline-block;
   top: 0;
   bottom: 0;
+  inset-inline-end: 15px;
   margin: auto;
-  right: 15px;
   height: 100%;
   width: .35rem;
   background-image: url("/img/arrow-icon-right.svg");
   background-position: center center;
   transform: scale(1.3);
+}
+
+.highlight-on-hover::after:dir(rtl) {
+  background-image: url("/img/arrow-icon-left.svg");
 }
 
 .highlight-on-hover.add-site-to-container::after {
@@ -194,7 +202,7 @@ a:hover {
   max-width: 250px;
   z-index: 9999;
   position: absolute;
-  left: 1rem;
+  inset-inline-start: 1rem;
   bottom: 2em;
   color: black;
   font-size: 13px;
@@ -243,7 +251,7 @@ a:hover {
   background-color: transparent;
   border: none;
   position: absolute;
-  right: 1.65rem;
+  inset-inline-end: 1.65rem;
   height: 1.1rem;
   width: 1.1rem;
   background-image: url("/img/x-close.svg");
@@ -291,10 +299,10 @@ a:hover {
 
 .bottom-btn:first-of-type { /* Onboarding Panels only: The first bottom button ("Cancel", "Back") is always gray */
   border-top: 1px solid rgba(24, 25, 26, 0.14);
-  border-right: 1px solid rgba(24, 25, 26, 0.14);
-  border-left: 0;
+  border-inline-start: 0;
+  border-inline-end: 1px solid rgba(24, 25, 26, 0.14);
   background-color: rgba(12,12,13, 0.05);
-  left: 0;
+  inset-inline-start: 0;
 }
 
 .bottom-btn:first-of-type:hover {
@@ -303,8 +311,8 @@ a:hover {
 
 .bottom-btn:last-of-type { /* Onboarding Panels only: The second bottom button on the onboarding panels is always blue */
   border-top: 1px solid var(--blue70);
-  border-left: 1px solid var(--blue60);
-  border-right: 0;
+  border-inline-start: 1px solid var(--blue60);
+  border-inline-end: 0;
   color: rgba(255, 255, 255, 1);
   background-color: var(--blue60);
   right: 0;
@@ -330,7 +338,7 @@ a:hover {
   width: 23px;
   height: 19px;
   display: block;
-  margin-right: 3px;
+  margin-inline-end: 3px;
 }
 
 .img.in-fbc {
@@ -342,21 +350,26 @@ a:hover {
 .img.trackers-detected {
   background-image: url("/img/image-tracker-detected@2x.png");
   height: 145px;
-  margin: 1.25rem 0 1.75rem -4px;
+  margin-block: 1.25rem 1.75rem;
+  margin-inline: -4px 0;
   background-position: left, center;
+}
+
+.img.trackers-detected:dir(rtl) {
+  background-position: right, center;
 }
 
 .img.onboarding4 {
   background-image: url("/img/image-example@2x.png");
   height: 145px;
-  margin: 1rem auto 1.5rem auto;
+  margin: 1rem auto 1.5rem;
   background-position: center center;
 }
 
 .img.onboarding5 {
   background-image: url("/img/image-addsite@2x.png");
   height: 179px;
-  margin: 1rem auto 1.5rem auto;
+  margin: 1rem auto 1.5rem;
   background-position: center center;
 }
 
@@ -405,7 +418,7 @@ h3.sites-allowed {
   display: inline-block;
   width: 1.1rem;
   height: 1.1rem;
-  margin-right: 1.1rem;
+  margin-inline-end: 1.1rem;
   background-size: contain;
   background-repeat: no-repeat;
 }
