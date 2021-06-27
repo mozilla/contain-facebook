@@ -19,6 +19,10 @@
     "message": "Facebook کے باہر",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding5-subhead": {
+    "message": "دوسری سائٹس  پر فیس بک کے ساتھ لاگ ان کرنا",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "اجازت دیں",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -55,6 +59,10 @@
     "message": "Facebook Container کے کام کرنے کا طریقا",
     "description": "This is a button that opens the Facebook Container onboarding flow."
   },
+  "trackers-detected-subhead": {
+    "message": "ہم نے آپ کو Facebook سے محفوظ رکھا ہے۔",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
   "sites-included": {
     "message": "سائٹیں شامل ہیں",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
@@ -71,8 +79,24 @@
     "message": "Facebook Container میں سائٹ کو اجازت دیں",
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
+  "button-remove-site": {
+    "message": "Facebook Container سے سائٹ کو ہٹا دیں",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "remove-site-subhead": {
+    "message": "Facebook Container سے سائٹ کو ہٹا دیں؟",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-p1": {
     "message": "Facebook کو یہاں آپ کو ٹریک کرنے کی اجازت دیں؟",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "مجھے یہ دوبارہ نہ دکھائیں",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "اگر آپ اس بٹن پر کلک کرتے ہیں تو ، Facebook اس سائٹ پر آپ کے دورے کا سراغ لگانے کے قابل ہوگا۔",
     "description": ""
   }
 }
