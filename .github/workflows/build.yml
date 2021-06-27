@@ -1,0 +1,20 @@
+name: Build
+on:
+  [pull_request, push]
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node
+
+      - name: Install firefox
+        run: sudo apt install firefox
+
+      - name: Build with xvfb
+        uses: GabrielBB/xvfb-action@v1.4
+        with:
+          run: npm run build
