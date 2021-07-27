@@ -72,6 +72,17 @@ const PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/sharer']", // Legacy Share dialog
 ];
 
+
+async function getLocalStorageSettingFromBackground(setting) {
+  // Send request to background determine if to show Relay email field prompt
+  const backgroundResp = await browser.runtime.sendMessage({
+    message: "check-settings",
+    setting
+  });
+
+  return backgroundResp;
+}
+
 function isFixed (elem) {
   do {
     if (getComputedStyle(elem).position == "fixed") return true;
@@ -83,7 +94,7 @@ const fragmentClasses = ["fbc-badge-fence", "fbc-badge-tooltip", "fbc-badge-prom
 const htmlBadgeFragmentPromptParagraphStrings = [ browser.i18n.getMessage("inPageUI-tooltip-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-prompt-p2") ];
 const htmlEmailBadgeFragmentPromptParagraphStrings = [ browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2") ];
 const htmlBadgeFragmentPromptButtonStrings = ["btn-cancel", "btn-allow"];
-const htmlEmailBadgeFragmentPromptButtonStrings = ["btn-relay-learn", "btn-relay-try"];
+const htmlEmailBadgeFragmentPromptButtonStrings = ["btn-relay-dismiss", "btn-relay-try"];
 
 function getTooltipFragmentStrings (socialAction) {
   switch (socialAction) {
@@ -96,6 +107,57 @@ function getTooltipFragmentStrings (socialAction) {
   case "email":
     return browser.i18n.getMessage("inPageUI-tooltip-button-email");
   }
+}
+
+function buildSettingsObject() {
+  let data = {};
+  const checkboxes = document.querySelectorAll(".settings-checkbox");
+
+  checkboxes.forEach((item) => {
+    let settingName = item.id;
+    Object.defineProperty(data, settingName, {
+      value: item.checked,
+      writable: true,
+      configurable: true,
+      enumerable: true
+    });
+  });
+
+  return data;
+}
+
+async function updateSettings() {
+  
+  let localStorage = await browser.storage.local.get();
+
+  if(!localStorage.settings) {
+    localStorage.settings = {};
+  }
+
+  const checkboxes = document.querySelectorAll(".settings-checkbox");
+
+  checkboxes.forEach((item) => {
+    let settingName = item.id;
+    item.checked = localStorage.settings[settingName];
+  });
+
+  await settingsCheckboxListener();
+}
+
+
+
+function settingsCheckboxListener(){
+  const checkboxes = document.querySelectorAll(".settings-checkbox");
+
+  checkboxes.forEach((item) => {
+    item.addEventListener("change", async () => {
+      const settings = buildSettingsObject();
+      await browser.runtime.sendMessage({
+        message: "update-settings",
+        settings
+      });
+    });
+  });
 }
 
 function createBadgeFragment (socialAction) {
@@ -159,6 +221,22 @@ function createBadgeFragment (socialAction) {
       htmlBadgeFragmentPromptContents.appendChild(paragraph);
     }
 
+    const dontShowAgainCheckboxForm = document.createElement("div");
+    dontShowAgainCheckboxForm.className = "fbc-badge-prompt-dontShowAgain-checkbox";
+    const dontShowAgainCheckboxInput = document.createElement("input");
+    dontShowAgainCheckboxInput.type = "checkbox";
+    dontShowAgainCheckboxInput.id = "hideRelayEmailBadges";    
+    dontShowAgainCheckboxInput.classList.add("fbc-badge-prompt-dontShowAgain-checkbox-input", "settings-checkbox");
+    const dontShowAgainCheckboxLabel = document.createElement("label");    
+    dontShowAgainCheckboxLabel.htmlFor = "hideRelayEmailBadges";
+    const dontShowAgainCheckboxText = document.createTextNode( browser.i18n.getMessage("inPageUI-tooltip-prompt-checkbox") );
+
+    dontShowAgainCheckboxLabel.appendChild(dontShowAgainCheckboxText);
+    dontShowAgainCheckboxForm.appendChild(dontShowAgainCheckboxInput);
+    dontShowAgainCheckboxForm.appendChild(dontShowAgainCheckboxLabel);
+
+    htmlBadgeFragmentPromptContents.appendChild(dontShowAgainCheckboxForm);
+
     htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
 
     const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
@@ -197,7 +275,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
 
   const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel");
   const htmlBadgeFragmentPromptButtonAllow = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-allow");
-  const htmlEmailBadgeFragmentPromptButtonLearn = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-relay-learn");
+  const htmlEmailBadgeFragmentPromptButtonDismiss = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-relay-dismiss");
   const htmlEmailBadgeFragmentPromptButtonTry = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-relay-try");
   const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".fbc-badge-fence");
 
@@ -277,10 +355,13 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       window.open("https://relay.firefox.com");
     });
 
-    // Open learn more link
-    htmlEmailBadgeFragmentPromptButtonLearn.addEventListener("click", () => {
-      window.open("https://support.mozilla.org/en-US/kb/facebook-container-prevent-facebook-tracking#w_how-does-email-tracking-work");
-    });
+    // Dismiss email/relay prompt
+    htmlEmailBadgeFragmentPromptButtonDismiss.addEventListener("click", ()=>{
+      closePrompt();
+      const activeBadge = document.querySelector("." + badgeClassUId);
+      activeBadge.style.display = "none";
+    }, false);
+
   } else if (socialAction === "share-passive") {
     htmlBadgeDiv.classList.add("fbc-badge-share-passive", "fbc-badge-share");
 
@@ -565,8 +646,11 @@ async function detectFacebookOnPage () {
   patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
   patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
   const relayAddonEnabled = await getRelayAddonEnabledFromBackground();
-  if (!relayAddonEnabled) {
+  // Check if user dismissed the Relay prompt
+  const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
+  if (!relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges) {
     patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
+    updateSettings();
   }
 
   escapeKeyListener();

@@ -24,6 +24,10 @@ const FACEBOOK_DOMAINS = [
   "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com"
 ];
 
+const DEFAULT_SETTINGS = {
+  hideRelayEmailBadges: false,
+};
+
 const MAC_ADDON_ID = "@testpilot-containers";
 const RELAY_ADDON_ID = "private-relay@firefox.com";
 
@@ -37,6 +41,30 @@ const tabsWaitingToLoad = {};
 const tabStates = {};
 
 const facebookHostREs = [];
+
+async function updateSettings(data){
+  await browser.storage.local.set({
+    "settings": data
+  });
+}
+
+async function checkSettings(setting){
+  let fbcStorage = await browser.storage.local.get();
+
+  if (setting) {
+    return fbcStorage.settings[setting];
+  }
+
+  if (fbcStorage.settings) {
+    return fbcStorage.settings;
+  }
+
+  await browser.storage.local.set({
+    "settings": DEFAULT_SETTINGS
+  });
+
+}
+
 
 async function isRelayAddonEnabled () {
   try {
@@ -645,6 +673,11 @@ function setupWindowsAndTabsListeners() {
       return getRootDomain(request.url);
     case "get-relay-enabled":
       return relayAddonEnabled;
+    case "update-settings":
+      updateSettings(request.settings);
+      break;
+    case "check-settings":
+      return checkSettings();
     default:
       throw new Error("Unexpected message!");
     }

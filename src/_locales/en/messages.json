@@ -257,8 +257,8 @@
      "message": "This site can share your email address with Facebook, which allows Facebook to track you. Use a service like Firefox Relay to hide your real email address.",
      "description": ""
    },
-   "btn-relay-learn": {
-     "message": "Learn More",
+   "btn-relay-dismiss": {
+     "message": "Dismiss",
      "description": ""
    },
    "btn-relay-try": {
