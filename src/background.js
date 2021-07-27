@@ -27,7 +27,7 @@ const FACEBOOK_DOMAINS = [
 
   "oversightboard.com", "www.oversightboard.com",
   
-  "bulletin.com"
+  "bulletin.com", "facebookbrand.com",
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
