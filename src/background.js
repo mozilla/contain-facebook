@@ -25,8 +25,10 @@ const FACEBOOK_DOMAINS = [
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
+const RELAY_ADDON_ID = "private-relay@firefox.com";
 
 let macAddonEnabled = false;
+let relayAddonEnabled = false;
 let facebookCookieStoreId = null;
 
 // TODO: refactor canceledRequests and tabsWaitingToLoad into tabStates
@@ -35,6 +37,18 @@ const tabsWaitingToLoad = {};
 const tabStates = {};
 
 const facebookHostREs = [];
+
+async function isRelayAddonEnabled () {
+  try {
+    const relayAddonInfo = await browser.management.get(RELAY_ADDON_ID);
+    if (relayAddonInfo.enabled) {
+      return true;
+    }
+  } catch (e) {
+    return false;
+  }
+  return false;
+}
 
 async function isMACAddonEnabled () {
   try {
@@ -64,10 +78,16 @@ async function setupMACAddonListeners () {
     if (info.id === MAC_ADDON_ID) {
       macAddonEnabled = false;
     }
+    if (info.id === RELAY_ADDON_ID) {
+      relayAddonEnabled = false;
+    }
   }
   function enabledExtension (info) {
     if (info.id === MAC_ADDON_ID) {
       macAddonEnabled = true;
+    }
+    if (info.id === RELAY_ADDON_ID) {
+      relayAddonEnabled = true;
     }
   }
   browser.management.onInstalled.addListener(enabledExtension);
@@ -594,6 +614,7 @@ function setupWindowsAndTabsListeners() {
 (async function init () {
   await setupMACAddonListeners();
   macAddonEnabled = await isMACAddonEnabled();
+  relayAddonEnabled = await isRelayAddonEnabled();
 
   try {
     await setupContainer();
@@ -622,6 +643,8 @@ function setupWindowsAndTabsListeners() {
       break;
     case "get-root-domain":
       return getRootDomain(request.url);
+    case "get-relay-enabled":
+      return relayAddonEnabled;
     default:
       throw new Error("Unexpected message!");
     }

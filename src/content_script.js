@@ -264,21 +264,6 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       e.target.parentElement.parentNode.parentNode.classList.remove("active");
     });
   } else if (socialAction === "email") {
-    target.addEventListener("click", (e) => {
-      if (allowClickSwitch) {
-        // Button disabled. Either will trigger new HTTP request or page will refresh.
-        setTimeout(()=>{
-          location.reload(true);
-        }, 250);
-        return;
-      } else {
-        // Click badge, button disabled
-        e.preventDefault();
-        e.stopPropagation();
-        htmlBadgeFragmentFenceDiv.click();
-      }
-    });
-
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       e.preventDefault();
       e.target.parentElement.classList.toggle("active");
@@ -571,7 +556,7 @@ function patternDetection(selectionArray, socialActionIntent){
   }
 }
 
-function detectFacebookOnPage () {
+async function detectFacebookOnPage () {
   if (!checkForTrackers) {
     return;
   }
@@ -579,7 +564,10 @@ function detectFacebookOnPage () {
   patternDetection(PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS, "share-passive");
   patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
   patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
-  patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
+  const relayAddonEnabled = await getRelayAddonEnabledFromBackground();
+  if (!relayAddonEnabled) {
+    patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
+  }
 
   escapeKeyListener();
 }
@@ -666,7 +654,7 @@ browser.runtime.onMessage.addListener(message => {
 // let callCount = 0;
 let contentScriptDelay = 999;
 
-function contentScriptInit(resetSwitch, msg) {
+async function contentScriptInit(resetSwitch, msg) {
   // Second arg is for debugging to see which contentScriptInit fires
   // Call count tracks number of times contentScriptInit has been called
   // callCount = callCount + 1;
@@ -678,9 +666,16 @@ function contentScriptInit(resetSwitch, msg) {
 
   // Resource call is not in FBC/FB Domain and is a FB resource
   if (checkForTrackers && msg !== "other-domain") {
-    detectFacebookOnPage();
+    await detectFacebookOnPage();
     screenUpdate();
   }
+}
+
+async function getRelayAddonEnabledFromBackground() {
+  const relayAddonEnabled = await browser.runtime.sendMessage({
+    message: "get-relay-enabled"
+  });
+  return relayAddonEnabled;
 }
 
 async function getRootDomainFromBackground(url) {
@@ -703,7 +698,7 @@ async function CheckIfURLShouldBeBlocked() {
   if (siteList.includes(site)) {
     checkForTrackers = false;
   } else {
-    contentScriptInit(false);
+    await contentScriptInit(false);
   }
 
 }
