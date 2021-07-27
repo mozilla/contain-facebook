@@ -1,212 +1,248 @@
 {
   "extensionDescription": {
-    "message": "Расширение Фейсбук-контейнер изолирует вашу деятельность в Фейсбуке от остального Интернета, чтобы предотвратить отслеживание вас Фейсбуком вне сайта социальной сети через сторонние куки.", 
+    "message": "Расширение Фейсбук-контейнер изолирует вашу деятельность в Фейсбуке от остального Интернета, чтобы предотвратить отслеживание вас Фейсбуком вне сайта социальной сети через сторонние куки.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ в Фейсбук-контейнере.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ в Фейсбук-контейнере.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Теперь Фейсбук может отслеживать вас на этом сайте. Чтобы удалить сайт из Фейсбук-контейнера, выберите «Сайты, разрешённые в Фейсбук-контейнере» и удалите его из списка."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "На Фейсбуке и сайтах внутри Фейсбук-контейнера", 
+    "message": "На Фейсбуке и сайтах внутри Фейсбук-контейнера",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Этот значок появляется в адресной строке Firefox, когда вы посещаете сайты, принадлежащие Фейсбуку, или те, которые вы добавили в Фейсбук-контейнер.", 
+    "message": "Этот значок появляется в адресной строке Firefox, когда вы посещаете сайты, принадлежащие Фейсбуку, или те, которые вы добавили в Фейсбук-контейнер.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Эти сайты должны иметь доступ к вашему идентификатору Фейсбука (или знать, кто вы есть) для своей работы. Это также означает, что Фейсбук может отслеживать всё, что вы делаете на этих веб-сайтах.", 
+    "message": "Эти сайты должны иметь доступ к вашему идентификатору Фейсбука (или знать, кто вы есть) для своей работы. Это также означает, что Фейсбук может отслеживать всё, что вы делаете на этих веб-сайтах.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ не в Фейсбук-контейнере.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ не в Фейсбук-контейнере.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Этот сайт вне Фейсбук-контейнера. Фейсбуку станет сложнее отслеживать вашу активность в Интернете.", 
+    "message": "Этот сайт вне Фейсбук-контейнера. Фейсбуку станет сложнее отслеживать вашу активность в Интернете.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Этот сайт не в Фейсбук-контейнере.", 
+    "message": "Этот сайт не в Фейсбук-контейнере.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Фейсбук-контейнер", 
+    "message": "Фейсбук-контейнер",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Использование Фейсбук-контейнера", 
+    "message": "Использование Фейсбук-контейнера",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Фейсбук может отслеживать ваш веб-сёрфинг далеко за пределами Facebook.com. Например, социальные кнопки Фейсбука «Нравится» и «Поделиться» могут отслеживать, где вы были — даже на страницах, на которых вы никогда их не нажимали.", 
+    "message": "Фейсбук может отслеживать ваш веб-сёрфинг далеко за пределами Facebook.com. Например, социальные кнопки Фейсбука «Нравится» и «Поделиться» могут отслеживать, где вы были — даже на страницах, на которых вы никогда их не нажимали.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Фейсбук-контейнер создаёт барьер между сайтами Фейсбука и остальным Интернетом, поэтому Фейсбуку станет труднее отслеживать вас в сети.", 
+    "message": "Фейсбук-контейнер создаёт барьер между сайтами Фейсбука и остальным Интернетом, поэтому Фейсбуку станет труднее отслеживать вас в сети.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "На Фейсбуке и сайтах внутри Фейсбук-контейнера", 
+    "message": "На Фейсбуке и сайтах внутри Фейсбук-контейнера",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Значок ограды Фейсбук-контейнера", 
+    "message": "Значок ограды Фейсбук-контейнера",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Этот значок появляется в адресной строке Firefox, когда вы посещаете сайты, такие как Facebook.com, или те, которые добавлены в Фейсбук-контейнер.", 
+    "message": "Этот значок появляется в адресной строке Firefox, когда вы посещаете сайты, такие как Facebook.com, или те, которые добавлены в Фейсбук-контейнер.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Эти сайты должны иметь доступ к вашему идентификатору Фейсбука (или знать, кто вы есть) для своей работы. Это также означает, что Фейсбук может отслеживать всё, что вы делаете на этих веб-сайтах.", 
+    "message": "Эти сайты должны иметь доступ к вашему идентификатору Фейсбука (или знать, кто вы есть) для своей работы. Это также означает, что Фейсбук может отслеживать всё, что вы делаете на этих веб-сайтах.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
-  "onboarding3-subhead": {
-    "message": "Как я узнаю, что Фейсбук-контейнер работает?", 
-    "description": "This is the subhead for the third onboarding panel."
-  }, 
-  "onboarding3-p1": {
-    "message": "Кнопки, которые позволяют вам лайкать или делиться материалами на Фейсбуке, а также входить на веб-сайты с помощью аккаунта на Фейсбук, содержат трекеры. Фейсбук-контейнер блокирует эти трекеры и отображает значок ограды, чтобы показать вам, где были удалены трекеры.", 
-    "description": "This is the first paragraph of the third onboarding panel."
-  }, 
-  "onboarding3-img": {
-    "message": "Это изображение показывает, как значок ограды Фейсбук-контейнера будет отображаться на странице рядом с кнопкой «Нравится» Фейсбука.", 
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
-  "onboarding3-p2": {
-    "message": "Однако, если вы нажмёте на любую из этих кнопок, то Фейсбук сможет отследить вас.", 
-    "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
+  "onboarding4-subhead": {
+    "message": "За пределами Фейсбука",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Даже когда вы не находитесь в Фейсбуке, социальная сеть может за вами следить. Кнопки для размещения поста в Фейсбуке или входа на веб-сайт через аккаунт Фейсбука содержат трекеры. Фейсбук-контейнер блокирует эти трекеры. На сайтах, где это происходит, будет отображаться значок ограды.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Это изображение показывает, как значок ограды Фейсбук-контейнера будет отображаться на странице рядом с кнопкой «Нравится» Фейсбука.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Вход через Фейсбук на других сайтах",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Чтобы использовать свой аккаунт Фейсбука на других веб-сайтах, вам необходимо поместить их внутрь контейнера. Щёлкните по значку ограды и выберите «Разрешить сайт в Фейсбук-контейнере» внизу.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "На картинке показано, как будет выглядеть кнопка добавления сайта в Фейсбук-контейнер на панели.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Это позволит вам войти через Фейсбук, но сам Фейсбук сможет следить за вашими действиями на этом сайте.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
-    "message": "Разрешить", 
+    "message": "Разрешить",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Отмена", 
+    "message": "Отмена",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Далее", 
+    "message": "Далее",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Назад", 
+    "message": "Назад",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Завершить", 
+    "message": "Завершить",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Вернуться к предыдущей панели.", 
+    "message": "Вернуться к предыдущей панели.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Вернуться к описанию работы Фейсбук-контейнера", 
+    "message": "Вернуться к описанию работы Фейсбук-контейнера",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Трекеров Фейсбука не обнаружено", 
+    "message": "Трекеров Фейсбука не обнаружено",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Фейсбук-контейнер не выявил никаких трекеров Фейсбука на этой странице. Однако страница по-прежнему может содержать другие типы трекеров.", 
+    "message": "Фейсбук-контейнер не выявил никаких трекеров Фейсбука на этой странице. Однако страница по-прежнему может содержать другие типы трекеров.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Подробнее", 
+    "message": "Подробнее",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Как работает Фейсбук-контейнер", 
+    "message": "Как работает Фейсбук-контейнер",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Мы защитили от Фейсбука.", 
+    "message": "Мы защитили от Фейсбука.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Кнопки Фейсбука, которые отображаются на сайтах Интернет-магазинов, новостных и других веб-сайтах, содержат трекеры, которые сообщают Фейсбуку о том, в каком месте сети вы находитесь. Даже если вы никогда не пользуетесь этими кнопками, чтобы поставить лайк или поделиться материалом, трекеры всё равно могут собирать данные о вашем веб-сёрфинге. Фейсбук-контейнер блокирует эти трекеры.", 
+    "message": "Кнопки Фейсбука, которые отображаются на сайтах Интернет-магазинов, новостных и других веб-сайтах, содержат трекеры, которые сообщают Фейсбуку о том, в каком месте сети вы находитесь. Даже если вы никогда не пользуетесь этими кнопками, чтобы поставить лайк или поделиться материалом, трекеры всё равно могут собирать данные о вашем веб-сёрфинге. Фейсбук-контейнер блокирует эти трекеры.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Фейсбук-контейнер блокирует эти трекеры. Однако, если вы нажмёте на любую из этих кнопок, то Фейсбук сможет отследить вас.", 
+    "message": "Фейсбук-контейнер блокирует эти трекеры. Однако, если вы нажмёте на любую из этих кнопок, то Фейсбук сможет отследить вас.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Фейсбук-контейнер — ограда со щитом.", 
+    "message": "Фейсбук-контейнер — ограда со щитом.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Сайты, разрешённые в Фейсбук-контейнере", 
+    "message": "Сайты, разрешённые в Фейсбук-контейнере",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "САЙТЫ ПО УМОЛЧАНИЮ", 
+    "message": "САЙТЫ ПО УМОЛЧАНИЮ",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Нет сайтов", 
+    "message": "Нет сайтов",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "САЙТЫ, ДОБАВЛЕННЫЕ ВАМИ", 
+    "message": "САЙТЫ, ДОБАВЛЕННЫЕ ВАМИ",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Фейсбук-контейнер помещает сайты, которые принадлежат Фейсбуку, в контейнер. Вы можете разрешить другим сайтам выходить за его пределы, но это позволит Фейсбуку больше отслеживать вас."
-  }, 
+  },
   "remove": {
-    "message": "Удалить", 
+    "message": "Удалить",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Разрешить сайт в Фейсбук-контейнере",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Удалить сайт из Фейсбук-контейнера",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Так как этот сайт принадлежит Фейсбук, его нельзя удалить из Фейсбук-контейнера.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Удалить сайт из Фейсбук-контейнера?", 
+    "message": "Удалить сайт из Фейсбук-контейнера?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Удаление этого сайта из Фейсбук-контейнера приведёт к тому, что функция «Вход через Facebook» перестанет работать, а куки Фейсбука будут удалены.", 
+    "message": "Удаление этого сайта из Фейсбук-контейнера приведёт к тому, что функция «Вход через Facebook» перестанет работать, а куки Фейсбука будут удалены.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Если вы снова захотите войти через Фейсбук, то вам придётся вернуть сайт в Фейсбук-контейнер.", 
+    "message": " Если вы снова захотите войти через Фейсбук, то вам придётся вернуть сайт в Фейсбук-контейнер.",
     "description": ""
-  }, 
+  },
+  "add-site-subhead": {
+    "message": "Разрешить отслеживание Фейсбуком на этом сайте?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Это позволит вам войти через Фейсбук, но разрешает Фейсбук следить за тем, что вы делаете на этом сайте.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Фейсбук-контейнер отключил эту кнопку и заблокировал для Фейсбука отслеживание ваших посещений этой страницы.", 
+    "message": "Фейсбук-контейнер отключил эту кнопку и заблокировал для Фейсбука отслеживание ваших посещений этой страницы.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Фейсбук-контейнер заблокировал трекеры Фейсбука. Он снова сможет отслеживать вас, если вы попробуете войти на этот сайт с помощью Фейсбука.", 
+    "message": "Фейсбук-контейнер заблокировал трекеры Фейсбука. Он снова сможет отслеживать вас, если вы попробуете войти на этот сайт с помощью Фейсбука.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Разрешить Фейсбуку отслеживать вас здесь?", 
+    "message": "Разрешить Фейсбуку отслеживать вас здесь?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Если вы хотите войти через Фейсбук, то он сможет отслеживать вашу активность на этом сайте. Это поможет им создать более полную картину вашей жизни в Интернете.", 
+    "message": "Если вы хотите войти через Фейсбук, то он сможет отслеживать вашу активность на этом сайте. Это поможет им создать более полную картину вашей жизни в Интернете.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Не показывать в следующий раз", 
+    "message": "Не показывать в следующий раз",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Если вы щёлкните по этой кнопке, Фейсбук сможет отследить ваше посещение этого сайта.",
     "description": ""
   }
 }

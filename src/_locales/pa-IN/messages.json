@@ -1,212 +1,248 @@
 {
   "extensionDescription": {
-    "message": "ਫੇਸਬੁੱਕ ਨੂੰ ਕਿਸੇ ਤੀਜੀ ਧਿਰ ਦੇ ਕੂਕੀਜ਼ ਰਾਹੀਂ ਤੁਹਾਡੇ 'ਤੇ ਫੇਸਬੁੱਕ ਵੈੱਬਸਾਈਟ ਤੋਂ ਬਾਹਰ ਨਜ਼ਰ ਰੱਖਣ ਤੋਂ ਰੋਕਣ ਲਈ Facebook Container ਤੁਹਾਡੀ ਵੈੱਬ ਸਰਗਰਮੀ ਨੂੰ ਤੁਹਾਡੀ ਫੇਸਬੁੱਕ ਸਰਗਰਮੀ ਤੋਂ ਅਲਹਿਦਾ ਕਰ ਦਿੰਦਾ ਹੈ।", 
+    "message": "Facebook ਨੂੰ ਕਿਸੇ ਤੀਜੀ ਧਿਰ ਦੇ ਕੂਕੀਜ਼ ਰਾਹੀਂ ਤੁਹਾਡੇ 'ਤੇ ਫੇਸਬੁੱਕ ਵੈੱਬਸਾਈਟ ਤੋਂ ਬਾਹਰ ਨਜ਼ਰ ਰੱਖਣ ਤੋਂ ਰੋਕਣ ਲਈ Facebook Container ਤੁਹਾਡੀ ਵੈੱਬ ਸਰਗਰਮੀ ਨੂੰ ਤੁਹਾਡੀ ਫੇਸਬੁੱਕ ਸਰਗਰਮੀ ਤੋਂ ਅਲਹਿਦਾ ਕਰ ਦਿੰਦਾ ਹੈ।",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ Facebook Container ਅੰਦਰ ਹੈ।", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ Facebook Container ਅੰਦਰ ਹੈ।",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "ਫੇਸਬੁੱਕ ਹੁਣ ਇਸ ਸਾਈਟ 'ਤੇ ਤੁਹਾਡੇ 'ਤੇ ਨਜ਼ਰ ਰੱਖ ਸਕਦੀ ਹੈ। ਇਸ ਸਾਈਟ ਨੂੰ Facebook Container ਤੋਂ ਹਟਾਉਣ ਲਈ, Facebook Container ਵਿੱਚ 'ਇਜਾਜ਼ਤਸ਼ੁਦਾ ਸਾਈਟਾਂ' ਵਿਕਲਪ ਚੁਣ ਕੇ ਇਸਨੂੰ ਸੂਚੀ ਵਿੱਚੋਂ ਹਟਾਓ।"
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "ਫੇਸਬੁੱਕ ਸਮੇਤ Facebook Container ਵਿਚਲੀਆਂ ਸਾਈਟਾਂ ਦੀ ਹੱਦਬੰਦੀ ਅੰਦਰ", 
+    "message": "ਫੇਸਬੁੱਕ ਸਮੇਤ Facebook Container ਵਿਚਲੀਆਂ ਸਾਈਟਾਂ ਦੀ ਹੱਦਬੰਦੀ ਅੰਦਰ",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "ਫੇਸਬੁੱਕ ਦੀਆਂ ਸਾਈਟਾਂ ਜਾਂ Facebook Container ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤੀਆਂ ਸਾਈਟਾਂ 'ਤੇ ਜਾਣ ਵੇਲੇ ਇਹ ਪ੍ਰਤੀਕ ਫਾਇਰਫਾਕਸ ਪਤਾ ਪੱਟੀ ਵਿੱਚ ਦਿਸਦਾ ਹੈ।", 
+    "message": "ਫੇਸਬੁੱਕ ਦੀਆਂ ਸਾਈਟਾਂ ਜਾਂ Facebook Container ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤੀਆਂ ਸਾਈਟਾਂ 'ਤੇ ਜਾਣ ਵੇਲੇ ਇਹ ਪ੍ਰਤੀਕ ਫਾਇਰਫਾਕਸ ਪਤਾ ਪੱਟੀ ਵਿੱਚ ਦਿਸਦਾ ਹੈ।",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "ਇਹਨਾਂ ਸਾਈਟਾਂ ਨੂੰ ਕੰਮ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਫੇਸਬੁੱਕ ਪਛਾਣ (ਜਾਂ ਤੁਹਾਡੀ ਪਛਾਣ) ਦੀ ਲੋੜ ਪੈਂਦੀ ਹੈ। ਇਸਦਾ ਮਤਲਬ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਇਹਨਾਂ ਸਾਈਟਾਂ 'ਤੇ ਤੁਹਾਡੀ ਸਾਰੀ ਸਰਗਰਮੀ 'ਤੇ ਨਜ਼ਰ ਰੱਖ ਸਕਦੀ ਹੈ।", 
+    "message": "ਇਹਨਾਂ ਸਾਈਟਾਂ ਨੂੰ ਕੰਮ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਫੇਸਬੁੱਕ ਪਛਾਣ (ਜਾਂ ਤੁਹਾਡੀ ਪਛਾਣ) ਦੀ ਲੋੜ ਪੈਂਦੀ ਹੈ। ਇਸਦਾ ਮਤਲਬ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਇਹਨਾਂ ਸਾਈਟਾਂ 'ਤੇ ਤੁਹਾਡੀ ਸਾਰੀ ਸਰਗਰਮੀ 'ਤੇ ਨਜ਼ਰ ਰੱਖ ਸਕਦੀ ਹੈ।",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ Facebook Container ਵਿੱਚ ਨਹੀਂ ਹੈ।", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ Facebook Container ਵਿੱਚ ਨਹੀਂ ਹੈ।",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "ਇਹ ਸਾਈਟ Facebook Container ਤੋਂ ਬਾਹਰ ਹੈ। ਇਹ ਫੇਸਬੁੱਕ ਨੂੰ ਵੈੱਬ ਉੱਤੇ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨਾ ਔਖਾ ਬਣਾ ਦਿੰਦੀ ਹੈ।", 
+    "message": "ਇਹ ਸਾਈਟ Facebook Container ਤੋਂ ਬਾਹਰ ਹੈ। ਇਹ ਫੇਸਬੁੱਕ ਨੂੰ ਵੈੱਬ ਉੱਤੇ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨਾ ਔਖਾ ਬਣਾ ਦਿੰਦੀ ਹੈ।",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "ਇਹ ਸਾਈਟ Facebook Container ਵਿੱਚ ਨਹੀਂ ਹੈ।", 
+    "message": "ਇਹ ਸਾਈਟ Facebook Container ਵਿੱਚ ਨਹੀਂ ਹੈ।",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Facebook Container ਵਰਤੋਂ", 
+    "message": "Facebook Container ਵਰਤੋਂ",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "ਫੇਸਬੁੱਕ ਤੁਹਾਡੀ ਬਰਾਊਜ਼ਿੰਗ ਨੂੰ Facebook.com ਤੋਂ ਵੀ ਅੱਗੇ ਬਹੁਤ ਦੂਰ ਤੱਕ ਟਰੈਕ ਕਰ ਸਕਦਾ ਹੈ। ਮਿਸਾਲ ਵਜੋਂ ਫੇਸਬੁੱਕ ਦੇ ਲਾਈਕ ਅਤੇ ਸ਼ੇਅਰ ਬਟਨ ਇਹ ਟਰੈਕ ਕਰ ਸਕਦੇ ਹਨ ਕਿ ਤੁਸੀਂ ਕਿੱਥੇ ਸੀ — ਇੱਥੋਂ ਤੱਕ ਕਿ ਉਹ ਸਫ਼ੇ ਵੀ ਜਿਹੜੇ ਤੁਸੀਂ ਕਦੇ ਲਾਈਕ ਜਾਂ ਸ਼ੇਅਰ ਵੀ ਨਹੀਂ ਕੀਤੇ ਸਨ।", 
+    "message": "ਫੇਸਬੁੱਕ ਤੁਹਾਡੀ ਬਰਾਊਜ਼ਿੰਗ ਨੂੰ Facebook.com ਤੋਂ ਵੀ ਅੱਗੇ ਬਹੁਤ ਦੂਰ ਤੱਕ ਟਰੈਕ ਕਰ ਸਕਦਾ ਹੈ। ਮਿਸਾਲ ਵਜੋਂ ਫੇਸਬੁੱਕ ਦੇ ਲਾਈਕ ਅਤੇ ਸ਼ੇਅਰ ਬਟਨ ਇਹ ਟਰੈਕ ਕਰ ਸਕਦੇ ਹਨ ਕਿ ਤੁਸੀਂ ਕਿੱਥੇ ਸੀ — ਇੱਥੋਂ ਤੱਕ ਕਿ ਉਹ ਸਫ਼ੇ ਵੀ ਜਿਹੜੇ ਤੁਸੀਂ ਕਦੇ ਲਾਈਕ ਜਾਂ ਸ਼ੇਅਰ ਵੀ ਨਹੀਂ ਕੀਤੇ ਸਨ।",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਫੇਸਬੁੱਕ ਸਾਈਟ ਅਤੇ ਬਾਕੀ ਦੇ ਵੈੱਬ ਦੇ ਵਿਚਾਲੇ ਹੱਦ ਬਣਾ ਦਿੰਦਾ ਹੈ ਤਾਂ ਕਿ ਫੇਸਬੁੱਕ ਲਈ ਤੁਹਾਨੂੰ ਆਨਲਾਈਨ ਟਰੈਕ ਕਰਨਾ ਔਖਾ ਹੋ ਜਾਵੇ।", 
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਫੇਸਬੁੱਕ ਸਾਈਟ ਅਤੇ ਬਾਕੀ ਦੇ ਵੈੱਬ ਦੇ ਵਿਚਾਲੇ ਹੱਦ ਬਣਾ ਦਿੰਦਾ ਹੈ ਤਾਂ ਕਿ ਫੇਸਬੁੱਕ ਲਈ ਤੁਹਾਨੂੰ ਆਨਲਾਈਨ ਟਰੈਕ ਕਰਨਾ ਔਖਾ ਹੋ ਜਾਵੇ।",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਹੱਦ ਵਿੱਚ ਫੇਸਬੁੱਕ ਅਤੇ ਸਾਈਟਾਂ ਉੱਤੇ", 
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਹੱਦ ਵਿੱਚ ਫੇਸਬੁੱਕ ਅਤੇ ਸਾਈਟਾਂ ਉੱਤੇ",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Facebook Container ਵਾੜ ਆਈਕਾਨ", 
+    "message": "Facebook Container ਵਾੜ ਆਈਕਾਨ",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "ਜਦੋਂ ਤੁਸੀਂ ਸਾਈਟ ‘ਤੇ ਜਾਂਦੇ ਹੋ ਤਾਂ ਇਹ ਆਈਕਾਨ ਫਾਇਰਫਾਕਸ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ‘ਚ ਪ੍ਰਗਟ ਹੁੰਦਾ ਹੈ, ਜਿਵੇਂ ਕਿ Facebook.com, ਜੋ ਕਿ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਹੱਦ ਵਿੱਚ ਹੈ।", 
+    "message": "ਜਦੋਂ ਤੁਸੀਂ ਸਾਈਟ ‘ਤੇ ਜਾਂਦੇ ਹੋ ਤਾਂ ਇਹ ਆਈਕਾਨ ਫਾਇਰਫਾਕਸ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ‘ਚ ਪ੍ਰਗਟ ਹੁੰਦਾ ਹੈ, ਜਿਵੇਂ ਕਿ Facebook.com, ਜੋ ਕਿ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਹੱਦ ਵਿੱਚ ਹੈ।",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "ਇਨ੍ਹਾਂ ਸਾਈਟਾਂ ਨੂੰ ਕੰਮ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਫੇਸਬੁੱਕ ਪਛਾਣ (ਜਾਂ ਤੁਸੀਂ ਕੌਣ ਹੋ ਇਹ ਜਾਣਨ ਦੀ) ਐਕਸੇਸ ਕਰਨ ਦੀ ਲੋੜ ਹੈ। ਇਸ ਦਾ ਇਹ ਮਤਲਬ ਵੀ ਹੈ ਕਿ ਤੁਸੀਂ ਜੋ ਵੀ ਇਨ੍ਹਾਂ ਸਾਈਟਾਂ ‘ਤੇ ਕਰਦੇ ਹੋ ਫੇਸਬੁੱਕ ਉਹ ਸਭ ਕੁਝ ਟਰੈਕ ਕਰ ਸਕਦਾ ਹੈ।", 
+    "message": "ਇਨ੍ਹਾਂ ਸਾਈਟਾਂ ਨੂੰ ਕੰਮ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਫੇਸਬੁੱਕ ਪਛਾਣ (ਜਾਂ ਤੁਸੀਂ ਕੌਣ ਹੋ ਇਹ ਜਾਣਨ ਦੀ) ਐਕਸੇਸ ਕਰਨ ਦੀ ਲੋੜ ਹੈ। ਇਸ ਦਾ ਇਹ ਮਤਲਬ ਵੀ ਹੈ ਕਿ ਤੁਸੀਂ ਜੋ ਵੀ ਇਨ੍ਹਾਂ ਸਾਈਟਾਂ ‘ਤੇ ਕਰਦੇ ਹੋ ਫੇਸਬੁੱਕ ਉਹ ਸਭ ਕੁਝ ਟਰੈਕ ਕਰ ਸਕਦਾ ਹੈ।",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
-  "onboarding3-subhead": {
-    "message": "ਮੈਨੂੰ ਕਿਵੇਂ ਪਤਾ ਲੱਗੇਗਾ ਕਿ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਕੰਮ ਕਰ ਰਿਹਾ ਹੈ?", 
-    "description": "This is the subhead for the third onboarding panel."
-  }, 
-  "onboarding3-p1": {
-    "message": "ਜੋ ਬਟਨ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ‘ਤੇ ਚੀਜ਼ਾਂ ਨੂੰ ਲਾਈਕ ਜਾਂ ਸ਼ੇਅਰ ਕਰਨ ਦਿੰਦੇ ਹਨ ਜਾਂ ਤੁਹਾਨੂੰ ਵੈਬਸਾਈਟ ਵਿੱਚ ਤੁਹਾਡਾ ਫੇਸਬੁੱਕ ਖਾਤਾ ਇਸਤੇਮਾਲ ਕਰ ਕੇ ਲਾਗਇਨ ਕਰਨ ਦਿੰਦੇ ਹਨ ਤਾਂ ਉਨ੍ਹਾਂ ਵਿੱਚ ਟਰੈਕਰ ਹੁੰਦੇ ਹਨ। ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਇਨ੍ਹਾਂ ਟਰੈਕਰਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾ ਦੇਵੇਗਾ ਅਤੇ ਜਿੱਥੇ ਟਰੈਕਰ ਹਟਾਏ ਗਏ ਹਨ, ਉੱਥੇ ਵਾੜ ਦਾ ਆਈਕਾਨ ਦਿਖਾਏਗਾ।", 
-    "description": "This is the first paragraph of the third onboarding panel."
-  }, 
-  "onboarding3-img": {
-    "message": "ਇਹ ਤਸਵੀਰ ਵਿਖਾਉਂਦੀ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਦਾ ਵਾੜ ਆਈਕਾਨ ਸਫ਼ੇ ਵਿ‘ਚ ਫੇਸਬੁੱਕ ਤਰ੍ਹਾਂ ਬਟਨ ਦੇ ਨੇੜੇ ਕਿਵੇਂ ਪ੍ਰਗਟ ਹੋਵੇਗਾ।", 
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
-  "onboarding3-p2": {
-    "message": "ਐਪਰ, ਜੋੋੇੇ ਤੁਸੀਂ ਇਨ੍ਹਾਂ ਚੋਂ ਕਿਸੇ ਵੀ ਬਟਨ ‘ਤੇ ਕਲਿੱਕ ਕਰਦੇ ਹੋ ਤਾਂ ਫੇਸਬੁੱਕ ਤੁਹਾਨੂੰ ਟਰੈਕ ਕਰ ਲਵੇਗਾ।", 
-    "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
+  "onboarding4-subhead": {
+    "message": "ਫੇਸਬੁੱਕ ਤੋਂ ਬਾਹਰ",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "ਭਾਵੇ ਤੁਸੀਂ ਫੇਸਬੁੱਕ ਉੱਤੇ ਨਹੀਂ ਹੋ, ਪਰ ਫੇਸਬੁੱਕ ਤੁਹਾਡੇ ਆਨਲਾਈਨ ਹੋਣ ਨੂੰ ਟਰੈਕ ਕਰ ਸਕਦੀ ਹੈ। ਬਟਨ, ਜੋ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਉੱਤੇ ਪੋਸਟਾਂ ਪਾਉਣ, ਜਾਂ ਤੁਹਾਡੇ ਫੇਸਬੁੱਕ ਖਾਤੇ ਨੂੰ ਵਰਤ ਕੇ ਵੈੱਬਸਾਈਟਾਂ ਵਿੱਚ ਲਾਗਇਨ ਦਿੰਦੇ ਹਨ, ਵਿੱਚ ਟਰੈਕਰ ਹੁੰਦੇ ਹਨ। ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਇਹਨਾਂ ਟਰੈਕਰਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਉਂਦਾ ਹੈ ਅਤੇ ਤੁਹਾਨੂੰ ਵਾੜ ਦਾ ਆਈਕਾਨ ਦਿਖਾਉਂਦਾ ਹੈ, ਜਦੋਂ ਵੀ ਟਰੈਕਰਾਂ ਨੂੰ ਹਟਾਇਆ ਗਿਆ ਹੁੰਦਾ ਹੈ।",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "ਇਹ ਤਸਵੀਰ ਨਮੂਨਾ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਾੜ ਆਈਕਾਨ ਸਫ਼ੇ ਵਿੱਚ ਫੇਸਬੁੱਕ ਲਾਈਕ ਬਟਨ ਦੇ ਨੇੜੇ ਕਿਵੇਂ ਦਿਸੇਗਾ।",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "ਫੇਸਬੁੱਕ ਦੇ ਨਾਲ ਹੋਰ ਸਾਈਟਾਂ ਵਿੱਚ ਲਾਗਇਨ ਕਰਨਾ",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "ਤੁਹਾਡੇ ਫੇਸਬੁੱਕ ਲਾਗਇਨ ਨੂੰ ਹੋਰ ਸਾਈਟਾਂ ਉੱਤੇ ਵਰਤਣ ਲਈ ਤੁਹਾਨੂੰ ਉਹਨਾਂ ਨੂੰ ਹੱਦ ਦੇ ਅੰਦਰ ਲਿਆਉਣਾ ਪਵੇਗਾ। ਵਾੜ ਦੇ ਆਈਕਾਨ ਨੂੰ ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਹੇਠਾਂ ‘ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਿੱਚ ਸਾਈਟ ਨੂੰ ਸਹਿਮਤੀ ਦਿਓ’ ਨੂੰ ਚੁਣੋ।",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "ਇਹ ਫੋਟੋ ਦਰਸਾਉਂਦੀ ਹੈ ਕਿ ਸਾਈਟ ਨੂੰ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਿੱਚ ਜੋੜਨ ਵਾਲਾ ਬਟਨ ਪੈਨਲ ਵਿੱਚ ਦਿਖਾਈ ਦੇਵੇਗਾ।",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "ਇਹ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗਇਨ ਕਰਨ ਦੇਵੇਗਾ, ਪਰ ਫੇਸਬੁੱਕ ਨੂੰ ਇਸ ਸਾਈਟ ਉੱਤੇ ਤੁਹਾਡੀ ਸਰਗਰਮੀ ਦਾ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨ ਵੀ ਦੇਵੇਗਾ।",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
-    "message": "ਮਨਜ਼ੂਰ", 
+    "message": "ਮਨਜ਼ੂਰ ਕਰੋ",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "ਰੱਦ ਕਰੋ", 
+    "message": "ਰੱਦ ਕਰੋ",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "ਅੱਗੇ", 
+    "message": "ਅੱਗੇ",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "ਪਿੱਛੇ", 
+    "message": "ਪਿੱਛੇ",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "ਮੁਕੰਮਲ", 
+    "message": "ਮੁਕੰਮਲ",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "ਪਿਛਲੇ ਪੈਨਲ ‘ਤੇ ਵਾਪਸ ਜਾਓ।", 
+    "message": "ਪਿਛਲੇ ਪੈਨਲ ‘ਤੇ ਵਾਪਸ ਜਾਓ।",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "ਫੇਸੁਬੱਕ ਕਨਟੇਨਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ ‘ਤੇ ਜਾਓ", 
+    "message": "ਫੇਸੁਬੱਕ ਕਨਟੇਨਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ ‘ਤੇ ਜਾਓ",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "ਕੋਈ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨਹੀਂ ਖੋਜੇ ਗਏ", 
+    "message": "ਕੋਈ ਫੇਸਬੁੱਕ ਟਰੈਕਰ ਨਹੀਂ ਲੱਭਿਆ ਹੈ",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨੇ ਇਸ ਸਫ਼ੇ ‘ਤੇ ਕਿਸੇ ਵੀ ਫੇਸਬੁੱਕ ਟਰੈਕਰਾਂ ਦਾ ਪਤਾ ਨਹੀਂ ਲਗਾਇਆ। ਹਾਲਾਂਕਿ, ਸਫ਼ੇ ਵਿੱਚ ਅਜੇ ਵੀ ਹੋਰ ਕਿਸਮ ਦੇ ਟਰੈਕਰ ਹੋ ਸਕਦੇ ਹਨ।", 
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨੇ ਇਸ ਸਫ਼ੇ ‘ਤੇ ਕਿਸੇ ਵੀ ਫੇਸਬੁੱਕ ਟਰੈਕਰਾਂ ਦਾ ਪਤਾ ਨਹੀਂ ਲਗਾਇਆ। ਹਾਲਾਂਕਿ, ਸਫ਼ੇ ਵਿੱਚ ਅਜੇ ਵੀ ਹੋਰ ਕਿਸਮ ਦੇ ਟਰੈਕਰ ਹੋ ਸਕਦੇ ਹਨ।",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "ਹੋਰ ਜਾਣੋ", 
+    "message": "ਹੋਰ ਜਾਣੋ",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ", 
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "ਅਸੀਂ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਤੋਂ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਹੈ।", 
+    "message": "ਅਸੀਂ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਤੋਂ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਹੈ।",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "ਖਰੀਦਦਾਰੀ, ਖ਼ਬਰਾਂ ਅਤੇ ਹੋਰ ਸਾਈਟਾਂ ‘ਤੇ ਆਉਣ ਵਾਲੇ ਫੇਸਬੁੱਕ ਬਟਨ ਖ਼ਤਰੇ ਵਿਚ ਸ਼ਾਮਲ ਹਨ, ਜੋ ਫੇਸਬੁੱਕ ਨੂੰ ਦੱਸਦੇ ਹਨ ਕਿ ਤੁਸੀਂ ਵੈਬ ‘ਤੇ ਕਿੱਥੇ ਹੋ। ਭਾਵੇਂ ਤੁਸੀਂ ਇਹਨਾਂ ਬਟਨ ਨੂੰ ਪਸੰਦ ਜਾਂ ਸਾਂਝਾ ਕਰਨ ਲਈ ਕਦੇ ਵੀ ਨਹੀਂ ਵਰਤਦੇ, ਟਰੈਕ-ਕਰਤਾ ਅਜੇ ਵੀ ਤੁਹਾਡੀ ਬਰਾਊਜ਼ਿੰਗ ਬਾਰੇ ਡਾਟਾ ਇਕੱਠਾ ਕਰ ਸਕਦੇ ਹਨ। ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਇਨ੍ਹਾਂ ਟਰੈਕਰ ਉੱਤੇ ਪਾਬੰਦੀ ਲਗਾਉਂਦਾ ਹੈ।", 
+    "message": "ਖਰੀਦਦਾਰੀ, ਖ਼ਬਰਾਂ ਅਤੇ ਹੋਰ ਸਾਈਟਾਂ ‘ਤੇ ਆਉਣ ਵਾਲੇ ਫੇਸਬੁੱਕ ਬਟਨ ਖ਼ਤਰੇ ਵਿਚ ਸ਼ਾਮਲ ਹਨ, ਜੋ ਫੇਸਬੁੱਕ ਨੂੰ ਦੱਸਦੇ ਹਨ ਕਿ ਤੁਸੀਂ ਵੈਬ ‘ਤੇ ਕਿੱਥੇ ਹੋ। ਭਾਵੇਂ ਤੁਸੀਂ ਇਹਨਾਂ ਬਟਨ ਨੂੰ ਪਸੰਦ ਜਾਂ ਸਾਂਝਾ ਕਰਨ ਲਈ ਕਦੇ ਵੀ ਨਹੀਂ ਵਰਤਦੇ, ਟਰੈਕ-ਕਰਤਾ ਅਜੇ ਵੀ ਤੁਹਾਡੀ ਬਰਾਊਜ਼ਿੰਗ ਬਾਰੇ ਡਾਟਾ ਇਕੱਠਾ ਕਰ ਸਕਦੇ ਹਨ। ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਇਨ੍ਹਾਂ ਟਰੈਕਰ ਉੱਤੇ ਪਾਬੰਦੀ ਲਗਾਉਂਦਾ ਹੈ।",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਇਨ੍ਹਾਂ ਟਰੈਕਰ ‘ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਂਦਾ ਹੈ। ਹਾਲਾਂਕਿ, ਜੇ ਤੁਸੀਂ ਇਹਨਾਂ ਵਿਚੋਂ ਕਿਸੇ ਵੀ ਬਟਨ ‘ਤੇ ਕਲਿੱਕ ਕਰਦੇ ਹੋ ਤਾਂ ਤੁਹਾਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋਣਗੇ।", 
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਇਨ੍ਹਾਂ ਟਰੈਕਰ ‘ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਂਦਾ ਹੈ। ਹਾਲਾਂਕਿ, ਜੇ ਤੁਸੀਂ ਇਹਨਾਂ ਵਿਚੋਂ ਕਿਸੇ ਵੀ ਬਟਨ ‘ਤੇ ਕਲਿੱਕ ਕਰਦੇ ਹੋ ਤਾਂ ਤੁਹਾਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋਣਗੇ।",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "ਢਾਲ ਨਾਲ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਾੜ।", 
+    "message": "ਢਾਲ ਨਾਲ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਵਾੜ।",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ‘ਚ ਆਗਿਆ ਦਿੱਤੀਆਂ ਸਾਈਟਾਂ", 
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ‘ਚ ਇਜਾਜ਼ਤ ਦਿੱਤੀਆਂ ਸਾਈਟਾਂ",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "ਸਾਈਟਾਂ ਸ਼ਾਮਲ ਹਨ", 
+    "message": "ਸਾਈਟਾਂ ਵਿੱਚ ਹਨ",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "ਕੋਈ ਨਹੀਂ", 
+    "message": "ਕੋਈ ਨਹੀਂ",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "ਤੁਹਾਡੇ ਵਲੋਂ ਆਗਿਆ ਦਿੱਤੀਆਂ ਸਾਈਟਾਂ", 
+    "message": "ਤੁਹਾਡੇ ਵਲੋਂ ਇਜਾਜ਼ਤ ਦਿੱਤੀਆਂ ਸਾਈਟਾਂ",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਹੱਦ ਦੇ ਅੰਦਰ ਫੇਸਬੁੱਕ-ਮਲਕੀਅਤ ਵਾਲੀਆਂ ਸਾਈਟਾਂ ਨੂੰ ਰੱਖਦਾ ਹੈ। ਤੁਸੀਂ ਦੂਜੀ ਸਾਈਟਾਂ ਨੂੰ ਹੱਦ ਵਿੱਚ ਮਨਜ਼ੂਰ ਕਰ ਸਕਦੇ ਹੋ, ਪਰ ਇਹ ਫੇਸਬੁੱਕ ਨੂੰ ਤੁਹਾਡੇ ਵੈਬ ਬਰਾਊਜ਼ਿੰਗ ਦਾ ਵੱਧ ਤੋਂ ਵੱਧ ਟਰੈਕ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦੇਵੇਗਾ।"
-  }, 
+  },
   "remove": {
-    "message": "ਹਟਾਓ", 
+    "message": "ਹਟਾਓ",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Facebook Container ਵਿੱਚ ਸਾਈਟ ਨੂੰ ਸਹਿਮਤੀ ਦਿਓ",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Facebook Container ਤੋਂ ਸਾਈਟ ਹਟਾਓ",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "ਇਹ ਸਾਈਟ ਫੇਸਬੁੱਕ ਦੀ ਮਲਕੀਅਤ ਹੋਣ ਕਰਕੇ, ਇਸ ਨੂੰ Facebook Container ਤੋਂ ਹਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "ਸਾਈਟ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਤੋਂ ਹਟਾਉਣੀ ਹੈ?", 
+    "message": "ਸਾਈਟ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਤੋਂ ਹਟਾਉਣੀ ਹੈ?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਤੋਂ ਇਸ ਸਾਈਟ ਨੂੰ ਹਟਾਉਣ ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਦੇ ਫੀਚਰ ਨਾਲ ਲਾਗ ਇਨ ਕਰੋ ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ ਅਤੇ ਫੇਸਬੁੱਕ ਟਰੈਕਿੰਗ ਕੂਕੀਜ਼ ਹਟਾ ਦਿੱਤੇ ਜਾਣਗੇ।", 
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਤੋਂ ਇਸ ਸਾਈਟ ਨੂੰ ਹਟਾਉਣ ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਫੇਸਬੁੱਕ ਦੇ ਫੀਚਰ ਨਾਲ ਲਾਗ ਇਨ ਕਰੋ ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ ਅਤੇ ਫੇਸਬੁੱਕ ਟਰੈਕਿੰਗ ਕੂਕੀਜ਼ ਹਟਾ ਦਿੱਤੇ ਜਾਣਗੇ।",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " ਜੇ ਤੁਸੀਂ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗਇਨ ਕਰਨਾ ਮੁੜ ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਤੁਹਾਨੂੰ ਇਸ ਨੂੰ ਵਾਪਸ ਫੇਸਬੁੱਕ ਕੰਟੇਨਰ ਨਾਲ ਜੋੜਨ ਦੀ ਜ਼ਰੂਰਤ ਹੋਵੇਗੀ।", 
+    "message": " ਜੇ ਤੁਸੀਂ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗਇਨ ਕਰਨਾ ਮੁੜ ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਤੁਹਾਨੂੰ ਇਸ ਨੂੰ ਵਾਪਸ ਫੇਸਬੁੱਕ ਕੰਟੇਨਰ ਨਾਲ ਜੋੜਨ ਦੀ ਜ਼ਰੂਰਤ ਹੋਵੇਗੀ।",
     "description": ""
-  }, 
+  },
+  "add-site-subhead": {
+    "message": "ਇਸ ਸਾਈਟ ਉੱਤੇ ਫੇਸਬੁੱਕ ਟਰੈਕਿੰਗ ਦੀ ਸਹਿਮਤੀ ਦੇਣੀ ਹੈ?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "ਇਹ ਤੁਹਾਨੂੰ ਫੇਸਬੁੱਕ ਉੱਤੇ ਲਾਗਇਨ ਕਰਨ ਦੇਵੇਗਾ, ਪਰ ਫੇਸਬੁੱਕ ਨੂੰ ਇਸ ਸਾਈ ਉੱਤੇ ਤੁਸੀਂ ਕੀ ਕਰਦੇ ਹੋ ਲਈ ਪਿੱਛਾ ਕਰਨ ਲਈ ਸਹਿਮਤੀ ਦਿੰਦਾ ਹੈ।",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨੇ ਇਹ ਬਟਨ ਅਸਮਰੱਥ ਕਰ ਦਿੱਤਾ ਹੈ ਅਤੇ ਫੇਸਬੁੱਕ ਨੂੰ ਇਸ ਸਫ਼ੇ ‘ਤੇ ਤੁਹਾਡੀ ਫੇਰੀ ਦਾ ਪਤਾ ਲਗਾਉਣ ਤੋਂ ਪਾਬੰਦੀ ਲਗਾਈ ਹੈ।", 
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨੇ ਇਹ ਬਟਨ ਅਸਮਰੱਥ ਕਰ ਦਿੱਤਾ ਹੈ ਅਤੇ ਫੇਸਬੁੱਕ ਨੂੰ ਇਸ ਸਫ਼ੇ ‘ਤੇ ਤੁਹਾਡੀ ਫੇਰੀ ਦਾ ਪਤਾ ਲਗਾਉਣ ਤੋਂ ਪਾਬੰਦੀ ਲਗਾਈ ਹੈ।",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨੇ ਫੇਸਬੁੱਕ ਟਰੈਕਰਾਂ ਨੂੰ ਰੋਕ ਦਿੱਤਾ ਹੈ। ਜੇ ਤੁਸੀਂ ਇਸ ਸਾਈਟ ‘ਤੇ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗਇਨ ਕਰੋਗੇ ਤਾਂ ਫੇਸਬੁੱਕ ਤੁਹਾਡੇ ਲਈ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋਵੇਗਾ।", 
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨੇ ਫੇਸਬੁੱਕ ਟਰੈਕਰਾਂ ਨੂੰ ਰੋਕ ਦਿੱਤਾ ਹੈ। ਜੇ ਤੁਸੀਂ ਇਸ ਸਾਈਟ ‘ਤੇ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗਇਨ ਕਰੋਗੇ ਤਾਂ ਫੇਸਬੁੱਕ ਤੁਹਾਡੇ ਲਈ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋਵੇਗਾ।",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "ਕੀ ਫੇਸਬੁੱਕ ਨੂੰ ਇੱਥੇ ਤੁਹਾਨੂੰ ਟਰੈਕ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦੇਣੀ ਹੈ?", 
+    "message": "ਕੀ ਫੇਸਬੁੱਕ ਨੂੰ ਇੱਥੇ ਤੁਹਾਨੂੰ ਟਰੈਕ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦੇਣੀ ਹੈ?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "ਜੇ ਤੁਸੀਂ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗ ਇਨ ਨੂੰ ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਫਿਰ ਫੇਸਬੁੱਕ ਇਸ ਸਾਈਟ ‘ਤੇ ਤੁਹਾਡੀ ਗਤੀਵਿਧੀ ਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਯੋਗ ਹੋਵੇਗਾ। ਇਹ ਤੁਹਾਡੀ ਆਨਲਾਈਨ ਜ਼ਿੰਦਗੀ ਦੀ ਫੁੱਲਦਾਰ ਤਸਵੀਰ ਬਣਾਉਣ ਵਿਚ ਉਹਨਾਂ ਦੀ ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ।", 
+    "message": "ਜੇ ਤੁਸੀਂ ਫੇਸਬੁੱਕ ਨਾਲ ਲਾਗ ਇਨ ਨੂੰ ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਫਿਰ ਫੇਸਬੁੱਕ ਇਸ ਸਾਈਟ ‘ਤੇ ਤੁਹਾਡੀ ਗਤੀਵਿਧੀ ਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਯੋਗ ਹੋਵੇਗਾ। ਇਹ ਤੁਹਾਡੀ ਆਨਲਾਈਨ ਜ਼ਿੰਦਗੀ ਦੀ ਫੁੱਲਦਾਰ ਤਸਵੀਰ ਬਣਾਉਣ ਵਿਚ ਉਹਨਾਂ ਦੀ ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ।",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "ਇਹ ਮੁੜ ਨਾ ਦਿਖਾਓ", 
+    "message": "ਇਹ ਮੁੜ ਨਾ ਦਿਖਾਓ",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "ਜੇ ਤੁਸੀਂ ਇਹ ਬਟਨ ਨੂੰ ਕਲਿੱਕ ਕੀਤਾ ਤਾਂ ਫੇਸਬੁੱਕ ਇਸ ਸਾਈਟ ਨੂੰ ਤੁਹਾਡੇ ਵਲੋਂ ਖੋਲ੍ਹਣ ਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋ ਜਾਵੇਗੀ।",
     "description": ""
   }
 }

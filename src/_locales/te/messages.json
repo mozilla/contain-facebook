@@ -1,82 +1,126 @@
 {
+  "in-fbc-subhead": {
+    "message": "$URL$ ఫేస్‌బుక్ కంటెయినరులో ఉంది.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "in-fbc-p1": {
+    "message": "ఫేస్‌బుక్ ఇప్పుడు మిమ్మల్ని ఈ సైట్లో ట్రాక్ చేయవచ్చు. ఫేస్‌బుక్ కంటైనర్ నుండి ఈ సైటును తొలగించడానికి, ఫేస్‌బుక్ కంటైనర్లో అనుమతించబడిన సైట్లు ఎంచుకొని దీన్ని ఆ జాబితా నుండి తొలగించండి."
+  },
+  "on-facebook-subhead": {
+    "message": "ఫేస్‌బుక్, ఫేస్‌బుక్ కంటెయినర్ పరిధి లోని సైట్లలో",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "notOnFacebookText": {
+    "message": "ఈ సైట్ ఫేస్‌బుక్ కంటెయినర్ వెలుపల ఉంది. ఇది జాలంలో మిమ్మల్ని ట్రాక్ చేయడం ఫేస్‌బుక్‌కు కష్టతరం చేస్తుంది.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "onUnknownSiteHeader": {
-    "message": "ఈ సైటు ఫేస్‌బుక్ కంటెయినర్‌లో లేదు.", 
+    "message": "ఈ సైటు ఫేస్‌బుక్ కంటెయినర్‌లో లేదు.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "ఫేస్‌బుక్ కంటెయినర్", 
+    "message": "ఫేస్‌బుక్ కంటెయినర్",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఉపయోగించడం", 
+    "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఉపయోగించడం",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
+  "onboarding1-p2": {
+    "message": "ఫేస్‌బుక్ సైట్లకు, తతిమా అంతర్జాలానికీ మధ్య సరిహద్దును ఫేస్‌బుక్ కంటైనర్ సృష్టిస్తుంది, తద్వారా జాలంలో మీ జాడను పసిగట్టటం ఫే‌స్‌బుక్‌కి కష్టమవుతుంది.",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "ఫేస్‌బుక్ కంటయినర్ కంచె ప్రతీకం",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding4-subhead": {
+    "message": "ఫేస్‌బుక్ వెలుపల",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
   "btn-allow": {
-    "message": "అనుమతించు", 
+    "message": "అనుమతించు",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "రద్దుచేయి", 
+    "message": "రద్దుచేయి",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "తరువాత", 
+    "message": "తరువాత",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "వెనుకకు", 
+    "message": "వెనుకకు",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "పూర్తయింది", 
+    "message": "పూర్తయింది",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఎలా పనిచేస్తుంది చుడండి", 
+    "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఎలా పనిచేస్తుంది చుడండి",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "ఫేస్‌బుక్ ట్రాకర్లు కనుగొనబడలేదు", 
+    "message": "ఫేస్‌బుక్ ట్రాకర్లు కనుగొనబడలేదు",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఈ పేజీలో ఫేస్‌బుక్ ట్రాకర్లను గుర్తించలేదు. అయినప్పటికీ, ఈ పేజీ ఇతర రకాల ట్రాకర్లను కలిగి ఉండవచ్చు.", 
+    "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఈ పేజీలో ఫేస్‌బుక్ ట్రాకర్లను గుర్తించలేదు. అయినప్పటికీ, ఈ పేజీ ఇతర రకాల ట్రాకర్లను కలిగి ఉండవచ్చు.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "ఇంకా తెలుసుకోండి", 
+    "message": "ఇంకా తెలుసుకోండి",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఎలా పనిచేస్తుంది", 
+    "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఎలా పనిచేస్తుంది",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "మేము మిమ్మల్ని Facebook నుండి రక్షించాము.", 
+    "message": "మేము మిమ్మల్ని Facebook నుండి రక్షించాము.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
+  "sites-added-subhead": {
+    "message": "ఫేస్‌బుక్ కంటెయినర్‌లో అనుమతించబడే సైట్లు",
+    "description": "This is a panel subhead."
+  },
   "no-sites-added": {
-    "message": "ఏదీకాదు", 
+    "message": "ఏదీకాదు",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "మీరు అనుమతించిన సైట్లు", 
+    "message": "మీరు అనుమతించిన సైట్లు",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
+  "sites-added-p1": {
+    "message": "ఫేస్‌బుక్ కంటైనర్ ఫేస్‌బుక్ వారి సైట్లన్నిటినీ ఒక సరిహద్దులో ఉంచుతుంది. ఈ సరిహద్దు లోనికి మీరు ఇతర సైట్లను అనుమతించవచ్చు, కానీ దానివల్ల మీ జాల విహరణపు జాడను ఫేస్‌బుక్ ఎక్కువగా తెలుసుకొనే వీలుకల్గుతుంది."
+  },
   "remove": {
-    "message": "తీసివేయి", 
+    "message": "తీసివేయి",
     "description": ""
-  }, 
+  },
   "remove-site-subhead": {
-    "message": "ఫేస్‌బుక్ కంటెయినర్‌ నుండి సైట్ను తొలగించాలా?", 
+    "message": "ఫేస్‌బుక్ కంటెయినర్‌ నుండి సైట్ను తొలగించాలా?",
     "description": ""
-  }, 
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "ఫేస్‌బుక్ ట్రాకర్లను ఫేస్‌బుక్ కంటైనర్ నిరోధించింది. మీరు ఈ సైటులో ఫేస్‌బుక్‌తో ప్రవేశించే సౌలభ్యాన్ని వాడుతూంటే, ఫేస్‌బుక్ మీ జాడ పసిగట్టగలదు.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "మిమ్మల్ని ఇక్కడ ట్రాక్ చేయడానికి ఫేస్‌బుక్‌ను అనుమతించాలా?", 
+    "message": "మిమ్మల్ని ఇక్కడ ట్రాక్ చేయడానికి ఫేస్‌బుక్‌ను అనుమతించాలా?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "దీన్ని మళ్ళీ నాకు చూపించకు", 
+    "message": "దీన్ని మళ్ళీ నాకు చూపించకు",
     "description": ""
   }
 }

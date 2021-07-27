@@ -1,212 +1,248 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container oddeľuje vaše surfovanie na Facebooku od ostatného surfovania na internete, čím vás chráni pred sledovaním zo strany Facebooku mimo jeho stránok.", 
+    "message": "Facebook Container oddeľuje vaše surfovanie na Facebooku od ostatného surfovania na internete, čím vás chráni pred sledovaním zo strany Facebooku mimo jeho stránok.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "Stránka $URL$ je otvorená vo Facebook Containeri.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "Stránka $URL$ je otvorená vo Facebook Containeri.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook vás odteraz môže na tejto stránke sledovať. Ak chcete odobrať túto stránku z Facebook Containera, vyberte „Povolené stránky“ a odoberte ju zo zoznamu."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Na Facebooku a stránkach oddelených vo Facebook Containeri", 
+    "message": "Na Facebooku a stránkach oddelených vo Facebook Containeri",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Táto ikona sa objaví v paneli s adresou Firefoxu keď navštívite Facebookom vlastnené stránky alebo stránky, ktoré ste pridali do Facebook Containera.", 
+    "message": "Táto ikona sa objaví v paneli s adresou Firefoxu keď navštívite Facebookom vlastnené stránky alebo stránky, ktoré ste pridali do Facebook Containera.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Tieto stránky potrebujú pre fungovanie prístup k vašej Facebookovej identite (alebo k informáciám, kto ste). To znamená, že Facebook môže sledovať všetko, čo na tejto stránke robíte.", 
+    "message": "Tieto stránky potrebujú pre fungovanie prístup k vašej Facebookovej identite (alebo k informáciám, kto ste). To znamená, že Facebook môže sledovať všetko, čo na tejto stránke robíte.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "Stránka $URL$ nie je otvorená vo Facebook Containeri.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "Stránka $URL$ nie je otvorená vo Facebook Containeri.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Táto stránka nie je otvorená vo Facebook Containeri. To znamená, že je pre Facebook ťažšie vás na nej sledovať.", 
+    "message": "Táto stránka nie je otvorená vo Facebook Containeri. To znamená, že je pre Facebook ťažšie vás na nej sledovať.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Táto stránka nie je otvorená vo Facebook Containeri.", 
+    "message": "Táto stránka nie je otvorená vo Facebook Containeri.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Používanie Facebook Containera", 
+    "message": "Používanie Facebook Containera",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook vás môže sledovať aj mimo stránku Facebook.com, napríklad pomocou tlačidiel na lajkovanie a zdieľanie. Tie mu povedia, ktoré stránky ste navštívili, aj ak ste ich neolajkovali ani nezdieľali.", 
+    "message": "Facebook vás môže sledovať aj mimo stránku Facebook.com, napríklad pomocou tlačidiel na lajkovanie a zdieľanie. Tie mu povedia, ktoré stránky ste navštívili, aj ak ste ich neolajkovali ani nezdieľali.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container oddeľuje stránky vlastnené Facebookom od ostatných. Pre Facebook je tak ťažšie vás na internete sledovať.", 
+    "message": "Facebook Container oddeľuje stránky vlastnené Facebookom od ostatných. Pre Facebook je tak ťažšie vás na internete sledovať.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Na Facebooku a stránkach oddelených vo Facebook Containeri", 
+    "message": "Na Facebooku a stránkach oddelených vo Facebook Containeri",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Ikona plotu označujúca Facebook Container", 
+    "message": "Ikona plotu označujúca Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Táto ikona sa objaví v paneli s adresou Firefoxu vždy, keď navštívite stránky ako Facebook.com alebo iné, ktoré sú oddelené pomocou Facebook Containera.", 
+    "message": "Táto ikona sa objaví v paneli s adresou Firefoxu vždy, keď navštívite stránky ako Facebook.com alebo iné, ktoré sú oddelené pomocou Facebook Containera.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Tieto stránky potrebujú pre fungovanie prístup k vašej Facebookovej identite (alebo k informáciám, kto ste). To znamená, že Facebook môže sledovať všetko, čo na tejto stránke robíte.", 
+    "message": "Tieto stránky potrebujú pre fungovanie prístup k vašej Facebookovej identite (alebo k informáciám, kto ste). To znamená, že Facebook môže sledovať všetko, čo na tejto stránke robíte.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
-  "onboarding3-subhead": {
-    "message": "Ako spoznám, že Facebook Container funguje?", 
-    "description": "This is the subhead for the third onboarding panel."
-  }, 
-  "onboarding3-p1": {
-    "message": "Tlačidlá pre lajkovanie a zdieľanie na Facebook alebo funkcia prihlásenia pomocou Facebooku obsahujú sledovacie prvky. Facebook Container tieto sledovacie prvky blokuje a zobrazuje namiesto nich ikonu plotu.", 
-    "description": "This is the first paragraph of the third onboarding panel."
-  }, 
-  "onboarding3-img": {
-    "message": "Toto je náhľad, ako môže ikona Facebook Containera vyzerať na stránke s tlačidlom na lajkovanie.", 
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
-  "onboarding3-p2": {
-    "message": "Ale ak na niektoré z týchto tlačidiel kliknete, Facebook vás môže sledovať.", 
-    "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
+  "onboarding4-subhead": {
+    "message": "Mimo Facebooku",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Aj keď nie ste na Facebooku, Facebook vás môže sledovať. Tlačidlá, vďaka ktorím môžete zdieľať veci na Facebooku alebo sa pomocou Facebooku prihlásiť na webové stránky, obsahujú sledovacie prvky. Facebook Container blokuje tieto sledovacie prvky a na mieste odstránených sledovacích prvkov zobrazí ikonu plotu.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Toto je náhľad, ako môže ikona Facebook Containera vyzerať na stránke s tlačidlom na lajkovanie.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Prihlasovanie sa pomocou Facebooku na iných stránkach",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Ak sa chcete prihlásiť na iných stránkach pomocou Facebooku, musíte ich preniesť do kontajnera. Kliknite na ikonu plotu a vyberte možnosť „Povoliť stránku vo Facebook Containeri“.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Tento obrázok ukazuje, ako bude tlačidlo pre pridanie stránky do Facebook Containera vyzerať.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Toto vám umožní prihlásiť sa pomocou Facebooku, no umožní mu to taktiež sledovať vašu aktivitu na danej stránke.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
-    "message": "Povoliť", 
+    "message": "Povoliť",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Zrušiť", 
+    "message": "Zrušiť",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Ďalej", 
+    "message": "Ďalej",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Naspäť", 
+    "message": "Naspäť",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Hotovo", 
+    "message": "Hotovo",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Späť na predchádzajúcu kartu.", 
+    "message": "Späť na predchádzajúcu kartu.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Pozrite sa, ako Facebook Container funguje", 
+    "message": "Pozrite sa, ako Facebook Container funguje",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Nenašli sa žiadne sledovacie prvky Facebooku", 
+    "message": "Nenašli sa žiadne sledovacie prvky Facebooku",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container na tejto stránke nenašiel žiadne sledovacie prvky Facebooku. Môžu tu byť ale iné sledovacie prvky.", 
+    "message": "Facebook Container na tejto stránke nenašiel žiadne sledovacie prvky Facebooku. Môžu tu byť ale iné sledovacie prvky.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Ďalšie informácie", 
+    "message": "Ďalšie informácie",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Ako Facebook Container funguje", 
+    "message": "Ako Facebook Container funguje",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Ochránili sme vás pred Facebookom.", 
+    "message": "Ochránili sme vás pred Facebookom.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Tlačidlá Facebooku, ktoré sa objavujú v e-shopoch, alebo spravodajských a ďalších stránkach obsahujú sledovacie prvky, vďaka ktorím Facebook vie, ktoré stránky navštívite. Aj ak žiadne z týchto tlačidiel nepoužijete, sledovacie prvky zbierajú údaje o vašom prehliadaní. Facebook Container blokuje práve tieto sledovacie prvky.", 
+    "message": "Tlačidlá Facebooku, ktoré sa objavujú v e-shopoch, alebo spravodajských a ďalších stránkach obsahujú sledovacie prvky, vďaka ktorím Facebook vie, ktoré stránky navštívite. Aj ak žiadne z týchto tlačidiel nepoužijete, sledovacie prvky zbierajú údaje o vašom prehliadaní. Facebook Container blokuje práve tieto sledovacie prvky.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container blokuje tieto sledovacie prvky. Ale ak na niektoré z týchto tlačidiel kliknete, Facebook vás môže sledovať.", 
+    "message": "Facebook Container blokuje tieto sledovacie prvky. Ale ak na niektoré z týchto tlačidiel kliknete, Facebook vás môže sledovať.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Ikona plotu Facebook Containeru so štítom.", 
+    "message": "Ikona plotu Facebook Containeru so štítom.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Stránky povolené vo Facebook Containeri", 
+    "message": "Stránky povolené vo Facebook Containeri",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "ZAHRNUTÉ STRÁNKY", 
+    "message": "ZAHRNUTÉ STRÁNKY",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Žiadne", 
+    "message": "Žiadne",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "VAMI POVOLENÉ STRÁNKY", 
+    "message": "VAMI POVOLENÉ STRÁNKY",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container oddeľuje stránky vlastnené Facebookom od ostatných. Môžete k nim pridať ďalšie stránky, ale tým Facebooku umožníte, aby vás sledoval."
-  }, 
+  },
   "remove": {
-    "message": "Odstrániť", 
+    "message": "Odstrániť",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Povoliť stránku vo Facebook Containeri",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Odstrániť stránku z Facebook Containera",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Táto stránka je vlastnená Facebookom, preto ju z Facebook Containera nie je možné odobrať.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Chcete odstrániť stránku z Facebook Containera?", 
+    "message": "Chcete odstrániť stránku z Facebook Containera?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Odobranie tejto stránky z Facebook Containera znemožní prihlasovanie pomocou Facebooku a sledovacie cookies Facebooku budú vymazané.", 
+    "message": "Odobranie tejto stránky z Facebook Containera znemožní prihlasovanie pomocou Facebooku a sledovacie cookies Facebooku budú vymazané.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Ak sa chcete aj naďalej prihlasovať pomocou Facebooku, pridajte stránku späť do Facebook Containera.", 
+    "message": " Ak sa chcete aj naďalej prihlasovať pomocou Facebooku, pridajte stránku späť do Facebook Containera.",
     "description": ""
-  }, 
+  },
+  "add-site-subhead": {
+    "message": "Chcete umožniť Facebooku, aby vás na tejto stránke sledoval?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Toto vám umožní prihlásiť sa pomocou Facebooku, ale Facebook bude zároveň môcť sledovať vašu aktivitu na danej stránke.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container zablokoval toto tlačidlo a zabránil Facebooku, aby vás na tejto stránke sledoval.", 
+    "message": "Facebook Container zablokoval toto tlačidlo a zabránil Facebooku, aby vás na tejto stránke sledoval.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container zablokoval sledovacie prvky Facebooku. Ak sa ale na tejto stránke prihlásite pomocou Facebooku, Facebook vás bude môcť sledovať.", 
+    "message": "Facebook Container zablokoval sledovacie prvky Facebooku. Ak sa ale na tejto stránke prihlásite pomocou Facebooku, Facebook vás bude môcť sledovať.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Chcete povoliť Facebooku vás sledovať?", 
+    "message": "Chcete povoliť Facebooku vás sledovať?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Ak sa chcete prihlásiť pomocou Facebooku, umožníte mu tak sledovať vás na tejto stránke. To mu pomôže urobiť si ucelený obrázok o vašom online živote.", 
+    "message": "Ak sa chcete prihlásiť pomocou Facebooku, umožníte mu tak sledovať vás na tejto stránke. To mu pomôže urobiť si ucelený obrázok o vašom online živote.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Nabudúce nezobrazovať", 
+    "message": "Nabudúce nezobrazovať",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Ak kliknete na toto tlačidlo, Facebook vás bude môcť na tejto stránke sledovať.",
     "description": ""
   }
 }

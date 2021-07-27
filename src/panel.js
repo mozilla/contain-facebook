@@ -21,6 +21,9 @@ const setUpPanel = (panelId) => {
   const fragment = document.createDocumentFragment();
   fragment["id"] = panelId;
 
+  // Clear Panel Notification Dot
+  browser.browserAction.setBadgeText({text: ""});
+
   return { page, fragment };
 };
 
@@ -43,6 +46,7 @@ const setClassAndAppend = (wrapper, el) => {
 
 // add "uiMessage" class to element and appends.
 const addSubhead = (wrapper, panelId) => {
+  if (panelId === "about") { panelId = "no-trackers"; }
   const elemId = `${panelId}-subhead`;
   const el = document.createElement("h2");
   el["id"] = elemId;
@@ -100,6 +104,12 @@ const addFullWidthButton = (fragment, listenerClass) => {
   return button;
 };
 
+const addTooltip = (wrapper, stringId) => {
+  const div = document.createElement("div");
+  div["id"] = stringId;
+  setClassAndAppend(wrapper, div);
+};
+
 
 const addSpan = (wrapper, stringId) => {
   const span = document.createElement("span");
@@ -107,6 +117,36 @@ const addSpan = (wrapper, stringId) => {
   setClassAndAppend(wrapper, span);
 };
 
+const getActiveRootDomainFromBackground = async() => {
+  // Get active page URL
+  const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
+  const currentActiveTab = tabsQueryResult[0];
+
+  // Send request to background to parse URL via PSL
+  const backgroundResp = await browser.runtime.sendMessage({
+    message: "get-root-domain",
+    url: currentActiveTab.url
+  });
+
+  return backgroundResp;
+};
+
+const isSiteInContainer = async(panelId) => {
+  if (panelId === "on-facebook") {
+    // Site is on default FBC domain. Show the "remove site" button, in a disabled state.
+    return true;
+  }
+
+  const addedSitesList = await browser.runtime.sendMessage({
+    message: "what-sites-are-added"
+  });
+
+  const activeRootDomain = await getActiveRootDomainFromBackground();
+
+  if (addedSitesList.includes(activeRootDomain)) {
+    return true;
+  }
+};
 
 const addLearnHowFBCWorksButton = async (fragment) => {
   let button = addFullWidthButton (fragment, "open-onboarding");
@@ -116,6 +156,50 @@ const addLearnHowFBCWorksButton = async (fragment) => {
   addSpan(button, "sites-added-subhead");
 };
 
+const addCustomSiteButton = async (fragment, panelId) => {
+  const shouldShowRemoveSiteButton = await isSiteInContainer(panelId);
+  let button;
+  if (shouldShowRemoveSiteButton) {
+    button = addFullWidthButton(fragment, "remove-site-from-container");
+    addSpan(button, "button-remove-site");
+    addTooltip(button, "button-remove-site-tooltip");
+    return;
+  }
+  button = addFullWidthButton(fragment, "add-site-to-container");
+  addSpan(button, "button-allow-site");
+};
+
+const setCustomSiteButtonEvent = async (panelId) => {
+  const shouldShowRemoveSiteButton = await isSiteInContainer(panelId);
+
+  if (panelId === "on-facebook") {
+    const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
+    removeSiteFromContainerLink.classList.add("disabled-button");
+    return;
+  }
+
+  if (shouldShowRemoveSiteButton) {
+    const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
+    removeSiteFromContainerLink.addEventListener(
+      "click", async () => {
+        const activeRootDomain = await getActiveRootDomainFromBackground();
+        buildRemoveSitePanel(activeRootDomain);
+      }
+    );
+    return;
+  }
+
+  const addSiteToContainerLink = document.querySelector(".add-site-to-container");
+
+  if (panelId === "about") {
+    // If on internal About: page, set button to disabled.
+    addSiteToContainerLink.classList.add("disabled-button");
+    return;
+  }
+
+  // Active site is eligable to be added to the container
+  addSiteToContainerLink.addEventListener("click", async () => buildAddSitePanel());
+};
 
 // adds bottom navigation buttons to onboarding panels
 const setNavButtons = (wrapper, button1Id, button2Id, panelId) => {
@@ -146,7 +230,11 @@ const addDeleteSiteListeners = () => {
   document.querySelectorAll(".site-added").forEach(btn => {
     btn.addEventListener("click", async (e) => {
       // TODO: refactor to remove the domain straight from browser.storage.local?
-      await browser.runtime.sendMessage({removeDomain: e.dataset.domain});
+
+      await browser.runtime.sendMessage({
+        message: "remove-domain-from-list",
+        removeDomain: e.dataset.domain
+      });
     });
   });
 };
@@ -188,6 +276,11 @@ const handleOnboardingClicks = async(e, res) => {
   }
 
   if (buttonId === "btn-back") {
+    if (res === 4) {
+      // This accounts for the skipped Panel #3
+      buildOnboardingPanel(2);
+      return;
+    }
     buildOnboardingPanel(res - 1);
   }
 
@@ -195,7 +288,7 @@ const handleOnboardingClicks = async(e, res) => {
   if (el.classList.contains("btn-return")) {
     let currentPanel = await browser.storage.local.get("CURRENT_PANEL");
     currentPanel = currentPanel["CURRENT_PANEL"];
-    buildPanel(currentPanel);
+    await buildPanel(currentPanel);
   }
 };
 
@@ -275,7 +368,13 @@ const buildPanel = async(panelId) => {
     contentWrapper.appendChild(el);
   }
 
-  addParagraph(contentWrapper, `${panelId}-p1`);
+  // Because strings are named based on CURRENT_PANEL/panelID, this adds the
+  // same paragraph No Trackers Detected pages get for About: pages.
+  if (panelId === "about") {
+    addParagraph(contentWrapper, "no-trackers-p1");
+  } else {
+    addParagraph(contentWrapper, `${panelId}-p1`);
+  }
 
   if (panelId === "on-facebook") {
     addParagraph(contentWrapper, `${panelId}-p2`);
@@ -287,26 +386,40 @@ const buildPanel = async(panelId) => {
     imgDiv.classList.add("img");
   }
 
+  await addLearnHowFBCWorksButton(fragment);
+
   if (panelId === "no-trackers") {
     addLearnMoreLink(contentWrapper);
+    await addCustomSiteButton(fragment, panelId);
   }
 
-  addLearnHowFBCWorksButton(fragment);
+  await addCustomSiteButton(fragment, panelId);
+
   getLocalizedStrings();
   appendFragmentAndSetHeight(page, fragment);
   page.id = panelId;
 
   const onboardingLinks = document.querySelectorAll(".open-onboarding");
   const allowedSitesLink = document.querySelector(".open-allowed-sites");
+
   allowedSitesLink.addEventListener("click", () => buildAllowedSitesPanel("sites-allowed"));
+
+  await setCustomSiteButtonEvent(panelId);
 
   onboardingLinks.forEach(link => {
     link.addEventListener("click", () => buildOnboardingPanel(1));
   });
 };
 
-
 const buildOnboardingPanel = async (panelId) => {
+
+  if (panelId === 3) {
+    // This panel has been depricated, but due to the pagination logic and localization
+    // string ID naming conventions, this number is preserved and skipped over.
+    panelId++;
+  }
+
+
   const stringId = `onboarding${panelId}`;
   const { page, fragment } = setUpPanel(stringId);
 
@@ -326,13 +439,21 @@ const buildOnboardingPanel = async (panelId) => {
     setNavButtons(fragment, "btn-back", "btn-next", stringId);
   }
 
-  if (panelId === 3) {
+  if (panelId === 4) {
+    const imgDiv = addDiv(contentWrapper, stringId);
+    imgDiv.classList.add("img");
+    setNavButtons(fragment, "btn-back", "btn-next", stringId);
+  }
+
+  if (panelId === 5) {
     const imgDiv = addDiv(contentWrapper, stringId);
     imgDiv.classList.add("img");
     setNavButtons(fragment, "btn-back", "btn-done", stringId);
   }
 
-  addParagraph(contentWrapper, `${stringId}-p2`);
+  if (panelId !== 4) {
+    addParagraph(contentWrapper, `${stringId}-p2`);
+  }
 
   getLocalizedStrings();
 
@@ -414,7 +535,9 @@ const buildAllowedSitesPanel = async(panelId) => {
   addLightSubhead(listsWrapper, "sites-included");
   makeSiteList(listsWrapper, defaultAllowedSites);
 
-  const siteList = await browser.runtime.sendMessage("what-sites-are-added");
+  const siteList = await browser.runtime.sendMessage({
+    message: "what-sites-are-added"
+  });
   const sitesAllowedSubhead = addLightSubhead(listsWrapper, "sites-allowed");
   sitesAllowedSubhead.classList.add("sites-allowed");
   makeSiteList(listsWrapper, siteList, true, true); // (...sitesAllowed=true, addX=true)
@@ -435,6 +558,46 @@ const buildAllowedSitesPanel = async(panelId) => {
   getLocalizedStrings();
 };
 
+const addSiteToContainer = async () => {
+  const activeRootDomain = await getActiveRootDomainFromBackground();
+  const fbcStorage = await browser.storage.local.get();
+  fbcStorage.domainsAddedToFacebookContainer.push(activeRootDomain);
+  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+  browser.tabs.reload();
+  window.close();
+};
+
+const buildAddSitePanel = async (siteName) => {
+  if (!siteName) {
+    siteName = await getActiveRootDomainFromBackground();
+  }
+
+  const panelId = "add-site";
+  const { page, fragment } = setUpPanel(panelId);
+
+  addHeaderWithBackArrow(fragment);
+
+  const contentWrapper = addDiv(fragment, "main-content-wrapper");
+  contentWrapper.classList.add("remove-site-panel");
+
+  addSubhead(contentWrapper, "add-site");
+  makeSiteList(contentWrapper, [siteName], true, false); // (..., sitesAllowed=true, addX=false )
+  addParagraph(contentWrapper, `${panelId}-p1`);
+  let blueRemoveButton = document.createElement("button");
+  blueRemoveButton.classList.add("uiMessage", "allow-btn");
+  blueRemoveButton.id = "btn-allow";
+  blueRemoveButton.addEventListener("click", async() => {
+    addSiteToContainer(siteName);
+  });
+
+  fragment.appendChild(blueRemoveButton);
+
+  getLocalizedStrings();
+
+  appendFragmentAndSetHeight(page, fragment);
+  addOnboardingListeners(siteName);
+};
+
 
 const buildRemoveSitePanel = (siteName) => {
   const panelId = "remove-site";
@@ -453,9 +616,14 @@ const buildRemoveSitePanel = (siteName) => {
   blueRemoveButton.classList.add("uiMessage", "remove-btn");
   blueRemoveButton.id = "remove";
   blueRemoveButton.addEventListener("click", async() => {
-    await browser.runtime.sendMessage( {removeDomain: siteName} );
+    await browser.runtime.sendMessage({
+      message: "remove-domain-from-list",
+      removeDomain: siteName
+    });
+    browser.tabs.reload();
     window.close();
   });
+
   fragment.appendChild(blueRemoveButton);
 
   getLocalizedStrings();

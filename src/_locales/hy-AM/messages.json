@@ -20,6 +20,10 @@
     "message": "Facebook֊ում և կայքերում Facebook բեռնարկղի սահմանագծում",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "on-facebook-p1": {
+    "message": "Այս պատկերակը հայտնվում է Firefox- ի հասցեների բարում, երբ այցելում եք Facebook-ի պատկանող կայքեր կամ կայքեր, որոնք դուք ավելացրել եք Facebook Container-ում:",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "on-facebook-p2": {
     "message": "Աշխատելու համար այս կայքերը պետք է մուտք գործեն ձեր Facebook֊ի ինքնությունը (կամ իմանան, թե ով եք դուք)։Սա նաև նշանակում է, որ  Facebook֊ը կարող է հետևել այն ամենին, ինչ անում եք այս կայքերում։",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
@@ -58,6 +62,10 @@
     "message": "Facebook պարունակը սահման է ստեղծում Facebook֊ի կայքերի և մնացած ցանցի միջև, այնպես որ Facebook֊ի համար ավելի դժվար է ձեզ առցանց հետևել։",
     "description": "Please do not translate \"Facebook Container\""
   },
+  "onboarding2-subhead": {
+    "message": "Facebook֊ում և կայքերում Facebook բեռնարկղի սահմանագծում",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding2-alt": {
     "message": "Facebook բեռնարկղի ցանկապատի պատկերակը",
     "description": "This is alternative text for the icon in the second onboarding panel"
@@ -70,17 +78,33 @@
     "message": "Աշխատելու համար այս կայքերը պետք է մուտք ունենան ձեր  Facebook֊ի ինքնությունը (կամ իմանան,թե ով եք դուք)։Սա նաև նշանակում է, որ  Facebook֊ը կարող է հետևել այն ամենին ինչ անում եք այս կայքերում։",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "Ինչպե՞ս գիտեմ, որ  Facebook բեռնարկղը աշխատում է։",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Ֆեյսբուքումից դուրս",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
-  "onboarding3-img": {
-    "message": "Այս պատկերը ցույց  է տալիս, թե ինչպես  Facebook բեռնարկղի ցանկապատի պատկերակը կհայտնվի ներդիրում՝  Facebook like կոճակի կողքին։",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
+  "onboarding4-p1": {
+    "message": "Նույնիսկ երբ դուք Facebook-ում չես, Facebook-ը կարող է առցանց հետևել ձեզ: Կոճակները, որոնք թույլ են տալիս գործեր տեղադրել Facebook-ում կամ մուտք գործել վեբ կայքեր, օգտագործելով ձեր Facebook հաշիվը, պարունակում են հետքեր: Facebook Container-ը արգելափակում է այս հետքերը և կցուցադրի ցանկապատի պատկերակը `ցույց տալու համար, թե որտեղից են հեռացվել հետքերը:",
+    "description": "This is the first paragraph of the fourth onboarding panel."
   },
-  "onboarding3-p2": {
-    "message": "Այնուամենայնիվ, եթե դուք սեղմեք այս կոճակներից որևէ մեկին,  Facebook֊ը կկարողանա հետևել ձեզ։",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-img": {
+    "message": "Այս պատկերը ցույց  է տալիս, թե ինչպես Facebook բեռնարկղի ցանկապատի պատկերակը կհայտնվի ներդիրում՝ Facebook like կոճակի կողքին։",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Մուտք գործել Facebook-ի հետ այլ կայքերում",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Ձեր Facebook մուտքը այլ կայքերում օգտագործելու համար հարկավոր է դրանք տեղափոխել սահման: Կտտացրեք ցանկապատի պատկերակը և ներքևի մասում ընտրեք «Թույլատրել կայքը Facebook Container-ում»:",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Այս պատկերը ցույց է տալիս, թե ինչպես վահանակում կհայտնվի կայքը Facebook Container-ում տեղադրելու կոճակը:",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Սա թույլ է տալիս մուտք գործել Facebook-ի հետ, բայց Facebook-ին թույլ է տալիս հետևել ձեր գործունեությունը այդ կայքում:",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Թույլատրել",
@@ -130,6 +154,10 @@
     "message": "Մենք ձեզ պաշտպանել ենք Facebook֊ից։",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
+  "trackers-detected-p1": {
+    "message": "Facebook-ի կոճակները, որոնք հայտնվում են գնումների, նորությունների և այլ կայքերի վրա, պարունակում են հետևորդներ, որոնք ասում են Facebook-ին, թե որտեղ եք եղել համացանցում: Նույնիսկ եթե դուք երբեք չեք օգտագործում այս կոճակները դուր գալու կամ համօգտագործման համար, հետքերը դեռ կարող են հավաքել տվյալներ ձեր զննարկման վերաբերյալ: Facebook Container-ը արգելափակում է այս հետքերը:",
+    "description": ""
+  },
   "trackers-detected-p2": {
     "message": "Facebook պարունակը արգելափակում է այս հետքերը։ Այնուամենայնիվ, եթե դուք սեղմեք այս կոճակներից որևէ մեկին, Facebook֊ը կկարողանա հետևել ձեզ։",
     "description": ""
@@ -161,6 +189,18 @@
     "message": "Հեռացնել",
     "description": ""
   },
+  "button-allow-site": {
+    "message": "Թույլատրել կայքը Facebook Container-ում",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Հեռացրեք կայքը Facebook Container-ից։",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Քանի որ սա Facebook-ին պատկանող կայք է, այն չի կարող հանվել Facebook Container-ից:",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
     "message": "Հեռացրեք կայքը Facebook բեռնարկղից։",
     "description": ""
@@ -173,16 +213,36 @@
     "message": " Եթե ցանկանում եք կրկին օգտագործել մուտք գործել Facebook ապա հարկավոր է այն կրկին ավելացնել Facebook պարունակում։",
     "description": ""
   },
+  "add-site-subhead": {
+    "message": "Թույլ տվեք Facebook հետագծումը այս կայքում:",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Սա թույլ է տալիս մուտք գործել Facebook-ի հետ, բայց Facebook-ին թույլ է տալիս հետևել ձեր գործունեությունը այդ կայքում:",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
     "message": "Facebook բեռնարկղը անջատել է այս կոճակը և արգելափակել է Facebook֊ին հետևելու ձեր այցը այս էջ։",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container-ը արգելափակել է Facebook հետագծիչները: Եթե այս կայքում օգտվեք Մուտք գործել Facebook-ից, Facebook ը կկարողանա հետևել ձեզ:",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
     "message": "Թույլ տվեք  Facebook֊ին հետևել ձեզ այստեղ։",
     "description": ""
   },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Եթե ցանկանում եք օգտվել մուտք գործել Facebook-ի հետ, ապա Facebook-ն այնուհետև կկարողանա հետևել ձեր գործունեությանը այս կայքում: Սա կարող է օգնել նրանց կառուցել ձեր առցանց կյանքի ավելի ամբողջական պատկեր:",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Այլևս չցուցադրել",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Եթե կտտացրեք այս կոճակը, Facebook-ը կկարողանա հետևել ձեր այցելությանը այս կայք:",
     "description": ""
   }
 }

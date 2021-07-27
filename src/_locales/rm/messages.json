@@ -1,38 +1,248 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container isolescha tias activitads da Facebook dal rest da tias activitads en il web per evitar che Facebook ta fastizeschia ordaifer la website da Facebook cun agid da cookies da terzas partidas.", 
+    "message": "Facebook Container isolescha tias activitads da Facebook dal rest da tias activitads en il web per evitar che Facebook ta fastizeschia ordaifer la website da Facebook cun agid da cookies da terzas partidas.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
-  "onFacebookHeader": {
-    "message": "$URL$ sa chatta en Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ sa chatta en Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
-  "onFacebookText": {
-    "message": "Questa icona cumpara en la trav d'adressas cura che ti visitas websites sco facebook.com, instagram.com u messenger.com che sa chattan en Facebook Container.", 
+  },
+  "in-fbc-p1": {
+    "message": "Facebook po ussa ta fastizar sin questa website. Per allontanar questa website da Facebook Container, tscherner Websites permessas en Facebook Container e l'allontanar da la glista."
+  },
+  "on-facebook-subhead": {
+    "message": "Sin Facebook u websites isoladas da Facebook Container",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p1": {
+    "message": "Questa icona cumpara en la trav d'adressas da Firefox cura che ti visitas websites che appartegnan a Facebook u websites che ti has agiuntà a Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
+  "on-facebook-p2": {
+    "message": "Questas websites ston acceder a tia identitad da Facebook (u savair tgi che ti es) per ch'ellas funcziunian. Quai vul era dir che Facebook po fastizar tut quai che ti fas sin questas websites.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ na sa chatta betg en Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ na sa chatta betg en Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Questa website sa chatta ordaifer Facebook Container. Uschia èsi pli difficil per Facebook da ta fastizar en il web.", 
+    "message": "Questa website sa chatta ordaifer Facebook Container. Uschia èsi pli difficil per Facebook da ta fastizar en il web.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Questa website n'è betg en Facebook Container.", 
+    "message": "Questa website n'è betg en Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "facebookContainer": {
+    "message": "Facebook Container",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "onboarding1-subhead": {
+    "message": "Utilisar Facebook Container",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p1": {
+    "message": "Facebook po fastizar tia navigaziun lunsch ordaifer Facebook.com. Ils buttuns per favurisar e cundivider, per exempel, pon registrar nua che ti es stà – perfin sin paginas nua che ti has mai duvrà ils buttuns.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "Facebook Container creescha ina barriera tranter websites da Facebook ed il rest dal web. Uschia èsi pli difficil per Facebook da ta persequitar online.",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "Sin Facebook e las websites isoladas da Facebook Container",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "L'icona da saiv da Facebook Container",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "Questa icona cumpara en la trav d'adressas da Firefox sche ti visitas websites (sco Facebook.com) che vegnan isoladas da Facebook Container.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "Questas websites ston acceder a tia identitad da Facebook (u savair tgi che ti es) per ch'ellas funcziunian. Quai vul era dir che Facebook po fastizar tut quai che ti fas sin questas websites.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding4-subhead": {
+    "message": "Ordaifer Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Perfin cura che ti n'es betg sin Facebook, po Facebook ta persequitar online. Buttuns che ta permettan da publitgar rauba sin Facebook u s'annunziar sin websites cun tes conto da Facebook, cuntegnan fastizaders. Facebook Container vegn a bloccar quests fastizaders e mussar l'icona da la saiv per ta mussar nua che fastizaders èn vegnids allontanads.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Quest maletg demonstrescha co che l'icona da saiv da Facebook Container vegn a cumparair entaifer ina pagina dasper in buttun per favurisar da Facebook.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "S'annunziar cun Facebook sin autras websites",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Per acceder ad autras websites cun tes conto da Facebook, las stos ti spustar en il container. Clicca sin l'icona da saiv e tscherna sutvart «Autorisar la website en Facebook Container».",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Quest maletg demonstrescha co ch'il buttun per agiuntar ina website a Facebook Container vegn a cumparair en la panela.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Quai ta permetta da s'annunziar cun Facebook, ma Facebook po uschia fastizar tias activitads sin questa website.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
+  "btn-allow": {
+    "message": "Permetter",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "Interrumper",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "Enavant",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "Enavos",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "Finì",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "Turnar a la panela precedenta.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Siglir a «Co Facebook Container funcziuna»",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "Na chattà nagins fastizaders da Facebook",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container n'ha chattà nagins fastizaders da Facebook sin questa pagina. Ma la pagina po tuttina cuntegnair fastizaders dad in auter tip.",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "Ulteriuras infurmaziuns",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Co Facebook Container funcziuna",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "Nus avain ta protegì da Facebook.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "Ils buttuns da Facebook che cumparan sin websites da butias, novitads e sin autras paginas, cuntegnan fastizaders che tradeschan a Facebook las paginas che ti has visità en il web. Perfin sche ti n'utiliseschas mai quests buttuns per favurisar u cundivider, pon ils fastizaders rimnar datas davart tia navigaziun. Facebook Container blochescha quests fastizaders.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container blochescha quests fastizaders. Sche ti cliccas dentant sin in da quests buttuns, po Facebook tuttina ta fastizar.",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "Saiv da Facebook Container cun scut.",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "Websites permessas en Facebook Container",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "WEBSITES INCLUSAS",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "Nagina",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "WEBSITES CHE TI HAS AUTORISÀ",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "sites-added-p1": {
+    "message": "Facebook Container isolescha las websites che appartegnan a Facebook en ina zona delimitada. Ti pos permetter ad ulteriuras websites l'access a quest container, ma quai permetta a Facebook da registrar dapli da tia navigaziun en il web."
+  },
+  "remove": {
+    "message": "Allontanar",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "Permetter la website en Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Allontanar la website da Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Perquai ch'i sa tracta dad ina website che appartegna a Facebook, èsi impussibel da l'allontanar da Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "Allontanar la website da Facebook Container?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "Sche questa website vegn allontanada da Facebook Container, na funcziuna l'annunzia cun Facebook betg pli e cookies da Facebook che fastizeschan vegnan stizzads.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "Sche ti vul puspè duvrar la funcziun d'annunzia da Facebook, stos ti agiuntar danovamain la website a Facebook Container.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Permetter a Facebook da fastizar sin questa website?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Quai ta pussibilitescha da s'annunziar cun Facebook, ma permetta a Facebook da registrar tge che ti fas sin questa website.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container ha deactivà quest buttun ed impedì che Facebook fastizeschia tia visita sin questa pagina.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container ha bloccà fastizaders da Facebook. Sche ti utiliseschas la funcziun d'annunzia da Facebook sin questa website, po Facebook ta fastizar.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Permetter a Facebook da ta fastizar qua?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Sche ti vul utilisar la funcziun d'annunzia da Facebook, po Facebook fastizar tias activitads sin questa website. Quai als po gidar da sa far in maletg pli cumplet da tia vita en l'internet.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Betg pli mussar quest messadi",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Sche ti cliccas sin quest buttun, po Facebook fastizar tia visita sin questa website.",
+    "description": ""
   }
 }

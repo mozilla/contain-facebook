@@ -25,7 +25,7 @@
         "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
     },
     "on-facebook-p2": {
-      "message": "These sites need to access to your Facebook identity (or know who you are) in order to work. This also means that Facebook can track everything you do on these sites.",
+      "message": "These sites need to access your Facebook identity (or know who you are) in order to work. This also means that Facebook can track everything you do on these sites.",
       "description": "This is shown in the body of the panel pop up when the user is on Facebook."
     },
     "notOnFacebookHeader": {
@@ -78,21 +78,33 @@
       "message": "These sites need to access your Facebook identity (or know who you are) in order to work. This also means that Facebook can track everything you do on these sites.",
       "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
     },
-    "onboarding3-subhead": {
-      "message": "How do I know Facebook Container is working?",
-      "description": "This is the subhead for the third onboarding panel."
+    "onboarding4-subhead": {
+      "message": "Outside of Facebook",
+      "description": "This is the subhead for the fourth onboarding panel."
     },
-    "onboarding3-p1": {
-      "message": "Buttons that let you like or share things to Facebook or let you log in to websites using your Facebook account contain trackers. Facebook Container will block these trackers and display the fence icon to show you where trackers were removed.",
-      "description": "This is the first paragraph of the third onboarding panel."
+    "onboarding4-p1": {
+      "message": "Even when you’re not on Facebook, Facebook can track you online. Buttons that let you post things to Facebook or log in to websites using your Facebook account contain trackers. Facebook Container will block these trackers and display the fence icon to show you where trackers were removed.",
+      "description": "This is the first paragraph of the fourth onboarding panel."
     },
-    "onboarding3-img": {
+    "onboarding4-img": {
       "message": "This image demonstrates how the Facebook Containers fence icon will appear in-page beside a Facebook Like button.",
-      "description": "This is alternative text for the image shown in the third onboarding panel."
+      "description": "This is alternative text for the image shown in the fourth onboarding panel."
     },
-    "onboarding3-p2": {
-      "message": "However, if you click on any of these buttons Facebook will be able to track you.",
-      "description": "This is the second paragraph on the third onboarding panel."
+    "onboarding5-subhead": {
+      "message": "Logging in With Facebook on Other Sites",
+      "description": "This is the subhead for the fifth onboarding panel."
+    },
+    "onboarding5-p1": {
+      "message": "To use your Facebook login on other sites, you’ll need to move them inside the boundary. Click the fence icon and select ‘Allow Site in Facebook Container’ on the bottom.",
+      "description": "This is the first paragraph of the fifth onboarding panel."
+    },
+    "onboarding5-img": {
+      "message": "This image demonstrates how the button to add a site to the Facebook Container will appear in the panel.",
+      "description": "This is alternative text for the image shown in the fifth onboarding panel."
+    },
+    "onboarding5-p2": {
+      "message": "This lets you log in with Facebook, but allows Facebook to track your activity on that site.",
+      "description": "This is the second paragraph on the fifth onboarding panel."
     },
     "btn-allow": {
       "message": "Allow",
@@ -177,6 +189,18 @@
      "message": "Remove",
      "description": ""
    },
+   "button-allow-site": {
+     "message": "Allow Site in Facebook Container",
+     "description": "Button text that allows sites to be added to the Facebook Container"
+   },
+   "button-remove-site": {
+     "message": "Remove Site from Facebook Container",
+     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+   },
+   "button-remove-site-tooltip": {
+     "message": "Because this is a Facebook-owned site, it cannot be removed from Facebook Container.",
+     "description": "Tooltip that is displayed when hovering over the remove site button"
+   },
    "remove-site-subhead": {
       "message": "Remove site from Facebook Container?",
       "description": ""
@@ -187,6 +211,14 @@
    },
    "remove-site-p2": {
      "message": " If you want to use Log in with Facebook again, you will need to add it back to the Facebook Container.",
+     "description": ""
+   },
+   "add-site-subhead": {
+      "message": "Allow Facebook Tracking on this Site?",
+      "description": ""
+   },
+   "add-site-p1": {
+     "message": "This lets you log in with Facebook, but allows Facebook to follow what you do on this site.",
      "description": ""
    },
    "inPageUI-tooltip-button-share": {
@@ -207,6 +239,10 @@
    },
    "inPageUI-tooltip-prompt-checkbox": {
      "message": "Don’t show me this again",
+     "description": ""
+   },
+   "inPageUI-tooltip-button-share-passive": {
+     "message": "If you click this button, Facebook will be able to track your visit to this site.",
      "description": ""
    }
 }

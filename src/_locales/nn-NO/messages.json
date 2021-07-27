@@ -1,212 +1,248 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container isolerer Facebook-aktiviteten din frå resten av nettaktiviteten din for å hindre at Facebook sporar deg utanfor Facebook-nettstaden via tredjeparts infokapslar.", 
+    "message": "Facebook Container isolerer Facebook-aktiviteten din frå resten av nettaktiviteten din for å hindre at Facebook sporar deg utanfor Facebook-nettstaden via tredjeparts infokapslar.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ er i Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ er i Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook kan no spore deg på denne nettstaden. For å fjerne denne nettstaden frå Facebook Container, vel Tillatne nettstadar i Facebook Container og fjern han frå."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "På Facebook og nettstadar innanfor ramma av Facebook Container", 
+    "message": "På Facebook og nettstadar innanfor ramma av Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Dette ikonet vert vist i adressefeltet til Firefox når du besøkjer Facebook-eigde nettstadar eller nettstadar du har lagt til i Facebook Container.", 
+    "message": "Dette ikonet vert vist i adressefeltet til Firefox når du besøkjer Facebook-eigde nettstadar eller nettstadar du har lagt til i Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Disse nettstadane treng tilgang til Facebook-identiteten din (eller vite kven du er) for å fungere. Dette betyr også at Facebook kan spore alt du gjer på desse nettstadane.", 
+    "message": "Disse nettstadane treng tilgang til Facebook-identiteten din (eller vite kven du er) for å fungere. Dette betyr også at Facebook kan spore alt du gjer på desse nettstadane.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ er ikkje i Facebook Container.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ er ikkje i Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Denne nettstaden er utanfor Facebook Container. Dette gjer det vanskelegare for Facebook å spore deg på nettet.", 
+    "message": "Denne nettstaden er utanfor Facebook Container. Dette gjer det vanskelegare for Facebook å spore deg på nettet.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Denne nettsida er ikkje i Facebook Container.", 
+    "message": "Denne nettsida er ikkje i Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Bruke Facebook Container", 
+    "message": "Bruke Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook kan spore nettsurfinga di langt utanfor Facebook.com. Facebook sine Likar- og Dele-knappar kan til dømes spore kvar du har vore — til og med på nettsider du aldri likar eller deler.", 
+    "message": "Facebook kan spore nettsurfinga di langt utanfor Facebook.com. Facebook sine Likar- og Dele-knappar kan til dømes spore kvar du har vore — til og med på nettsider du aldri likar eller deler.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container lagar ei ramme mellom Facebook-nettstadar og resten av nettet slik at det blir vanskelegare for Facebook å spore deg.", 
+    "message": "Facebook Container lagar ei ramme mellom Facebook-nettstadar og resten av nettet slik at det blir vanskelegare for Facebook å spore deg.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "På Facebook og nettstadar innanfor ramma av Facebook Container", 
+    "message": "På Facebook og nettstadar innanfor ramma av Facebook Container",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Gjerde-ikonet til Facebook Container", 
+    "message": "Gjerde-ikonet til Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Dette ikonet vert vist i adressefeltet til Firefox når du besøkjer nettstadar, som Facebook.com, som er innanfor ramma til Facebook Container.", 
+    "message": "Dette ikonet vert vist i adressefeltet til Firefox når du besøkjer nettstadar, som Facebook.com, som er innanfor ramma til Facebook Container.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Desse nettstadane treng tilgang til Facebook-identiteten din (eller å vite kven du er) for å fungere. Dette betyr også at Facebook kan spore alt du gjer på desse nettstadane.", 
+    "message": "Desse nettstadane treng tilgang til Facebook-identiteten din (eller å vite kven du er) for å fungere. Dette betyr også at Facebook kan spore alt du gjer på desse nettstadane.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
-  "onboarding3-subhead": {
-    "message": "Korleis veit eg at Facebook Container fungerer?", 
-    "description": "This is the subhead for the third onboarding panel."
-  }, 
-  "onboarding3-p1": {
-    "message": "Knappar som lèt deg like eller dele ting til Facebook eller lèt deg logge inn på nettstadar med Facebook-kontoen din inneheld sporfølgjarar. Facebook Container kjem til å blokkere desse sporfølgjarane og vise gjerdeikonet for å vise deg kvar sporfølgjarar er fjerna.", 
-    "description": "This is the first paragraph of the third onboarding panel."
-  }, 
-  "onboarding3-img": {
-    "message": "Dette bildet demonstrerer korleis gjerdeikonet til Facebook Container vil visast på nettsida ved sidan av ein Facebook Likar-knapp.", 
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
-  "onboarding3-p2": {
-    "message": "Viss du derimot klikkar på ein av desse knappane, vil Facebook kunne spore deg.", 
-    "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
+  "onboarding4-subhead": {
+    "message": "Utanfor Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Sjølv når du ikkje er på Facebook, kan Facebook spore deg på nettet. Knappar som lar deg leggje ut ting på Facebook eller logge på nettstadar med Facebook-kontoen din, inneheld sporings-mekanismar. Facebook Container blokkerer desse sporingsmekanismane og viser gjerdeikonet for å vise deg kvar sporingsmekanismar vart fjerna.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Dette bildet demonstrerer korleis gjerdeikonet til Facebook Container vil visast på nettsida ved sidan av ein Facebook Likar-knapp.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Logg inn med Facebook på andre nettstadar",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "For å bruke Facebook-pålogginga di på andre nettstadar, må du flytte dei innanfor grensa. Klikk på gjerdeikonet og vel «Tillat nettstad i Facebook Container» nedst.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Dette bildet viser korleis knappen for å leggje til ein nettstad til Facebook Container vil bli vist i panelet.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Dette lar deg logge på med Facebook, men gjer at Facebook kan spore det du gjer på denne nettstaden.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
-    "message": "Tillat", 
+    "message": "Tillat",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Avbryt", 
+    "message": "Avbryt",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Neste", 
+    "message": "Neste",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Tilbake", 
+    "message": "Tilbake",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Ferdig", 
+    "message": "Ferdig",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Gå tilbake til det føregåande panelet.", 
+    "message": "Gå tilbake til det føregåande panelet.",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Gå til ‹‹Korleis Facebook Container fungerer››", 
+    "message": "Gå til «Korleis Facebook Container fungerer»",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Ingen Facebook-sporfølgjarar oppdaga", 
+    "message": "Ingen Facebook-sporarar oppdaga",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container fann ingen Facebook-sporfølgjarar på denne nettsida. Men, nettsida kan framleis innehalde andre typar sporfølgjarar.", 
+    "message": "Facebook Container fann ingen Facebook-sporarar på denne nettsida. Men, nettsida kan framleis innehalde andre typar sporarar.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Les meir", 
+    "message": "Les meir",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Korleis Facebook Container fungerer", 
+    "message": "Korleis Facebook Container fungerer",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Vi har beskytta deg frå Facebook.", 
+    "message": "Vi har beskytta deg frå Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Facebook-knappar som visest på nettbutikkar, nyhende-, og andre nettstadar inneheld sporfølgjarar som fortel Facebook kvar du har vore på nettet. Til og med viss du aldri brukar desse knappane til å like eller dele, kan sporfølgjarane framleis samle data om nettlesinga di. Facebook Container blokkerer desse sporfølgjarane.", 
+    "message": "Facebook-knappar som vert viste på nettbutikkar, nyhende-, og andre nettstadar inneheld sporarar som fortel Facebook kvar du har vore på nettet. Til og med dersom du aldri brukar desse knappane til å like eller dele, kan sporarane framleis samle data om nettlesinga di. Facebook Container blokkerer desse sporarane.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container blokkerer desse sporfølgjarane. Viss du derimot trykkjer på ein av desse knappane vil Facebook ha moglegheit til å spore deg.", 
+    "message": "Facebook Container blokkerer desse sporarane. Viss du derimot trykkjer på ein av desse knappane vil Facebook ha moglegheit til å spore deg.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Facebook Container-gjerde med skjold.", 
+    "message": "Facebook Container-gjerde med skjold.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Tillatne nettstadar i Facebook Container", 
+    "message": "Tillatne nettstadar i Facebook Container",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "INKLUDERTE NETTSTADAR", 
+    "message": "INKLUDERTE NETTSTADAR",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Ingen", 
+    "message": "Ingen",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "NETTSTADAR DU HAR TILLATE", 
+    "message": "NETTSTADAR DU HAR TILLATE",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container puttar Facebook-eigde nettstadar innanfor ramma. Du kan tillate andre nettstadar innanfor grensa, men dette vil gi Facebook moglegheit til å spore meir av nettlesinga di."
-  }, 
+  },
   "remove": {
-    "message": "Fjern", 
+    "message": "Fjern",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Tillat nettstaden i Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Fjern nettstaden frå Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Sidan dette er ein Facebook-eigd nettstad, kan han ikkje fjernast frå Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "Fjerne nettstad frå Facebook Container?", 
+    "message": "Fjerne nettstad frå Facebook Container?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Å ta bort denne nettstaden frå Facebook Container inneber at det å logge inn med Facebook-funksjonen ikkje lenger vil verke og Facebooks-infokapslane vil bli sletta.", 
+    "message": "Å ta bort denne nettstaden frå Facebook Container inneber at det å logge inn med Facebook-funksjonen ikkje lenger vil verke og Facebooks-infokapslane vil bli sletta.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": " Viss du vil bruke Logg inn med Facebook igjen må du leggje den tilbake til Facebook Container.", 
+    "message": " Viss du vil bruke Logg inn med Facebook igjen må du leggje den tilbake til Facebook Container.",
     "description": ""
-  }, 
+  },
+  "add-site-subhead": {
+    "message": "Tillate Facebook-sporing på denne nettstaden?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Dette lar deg logge på med Facebook, men gjer at Facebook kan følgje med på det du gjer på denne nettstaden.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container har deaktivert denne knappen og blokkert Facebook frå å spore deg når du besøkjer denne nettsida.", 
+    "message": "Facebook Container har deaktivert denne knappen og blokkert Facebook frå å spore deg når du besøkjer denne nettsida.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container har blokkert Facebook-sporfølgjarar. Viss du brukar Logg inn med Facebook på denne nettsida vil Facebook ha moglegheita til å spore deg.", 
+    "message": "Facebook Container har blokkert Facebook-sporarar. Viss du brukar Logg inn med Facebook på denne nettsida vil Facebook ha moglegheita til å spore deg.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Tillate Facebook å spore deg her?", 
+    "message": "Tillate Facebook å spore deg her?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Viss du vil bruke logg inn med Facebook så vil Facebook ha moglegheit til å spore aktiviteten din på denne nettstaden. Dette kan hjelpe dei med å byggje eit meir detaljert bilde av livet ditt på nettet.", 
+    "message": "Viss du vil bruke logg inn med Facebook så vil Facebook ha moglegheit til å spore aktiviteten din på denne nettstaden. Dette kan hjelpe dei med å byggje eit meir detaljert bilde av livet ditt på nettet.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Ikkje vis meg dette meir", 
+    "message": "Ikkje vis meg dette meir",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Dersom du klikkar på denne knappen, vil Facebook kunne spore besøket ditt på denne nettstaden.",
     "description": ""
   }
 }

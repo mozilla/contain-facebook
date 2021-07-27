@@ -1,212 +1,248 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container omoha’eño ne rembiapo Facebook pegua ambue mba’e ñandutípe rejapóvagui, omboyke hag̃ua Facebook ohapykuehóvo okápe oikóva  iñanduti rendágui kookie mbohapyháva rupive.", 
+    "message": "Facebook Container omoha’eño ne rembiapo Facebook pegua ambue mba’e ñandutípe rejapóvagui, omboyke hag̃ua Facebook ohapykuehóvo okápe oikóva  iñanduti rendágui kookie mbohapyháva rupive.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "in-fbc-subhead": {
-    "message": "$URL$ oĩ Facebook Container-pe.", 
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ oĩ Facebook Container-pe.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.facebook.com"
       }
     }
-  }, 
+  },
   "in-fbc-p1": {
     "message": "Facebook ikatu ohapykueho ko tenda ko’ág̃a. Emboguesérõ Facebook guerekohágui, eiporavo “Tenda Facebook guerekoha moneĩmbyre” ha emboguete tysýigui."
-  }, 
+  },
   "on-facebook-subhead": {
-    "message": "Facebook ha tenda oĩ Facebook Container mboypýri", 
+    "message": "Facebook ha tenda oĩ Facebook Container mboypýri",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p1": {
-    "message": "Ko ta'ãngachu'i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com mba’épe térã embojuajúramo Facebook Container rehe.", 
+    "message": "Ko ta’ãngachu’i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com mba’épe térã embojuajúramo Facebook Container rehe.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "on-facebook-p2": {
-    "message": "Oiko porã hag̃ua, ko’ã tenda oikotevẽ oike heratee Facebook pegua ndive, he’iséva avei Facebook ikatu nde rapykueho ejapóva guivépe.", 
+    "message": "Oiko porã hag̃ua, ko’ã tenda oikotevẽ oike heratee Facebook pegua ndive, he’iséva avei Facebook ikatu nde rapykueho ejapóva guivépe.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
-  }, 
+  },
   "notOnFacebookHeader": {
-    "message": "$URL$ ndaipóri Facebook Container ryepýpe.", 
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "message": "$URL$ ndaipóri Facebook Container ryepýpe.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
-        "content": "$1", 
+        "content": "$1",
         "example": "www.google.com"
       }
     }
-  }, 
+  },
   "notOnFacebookText": {
-    "message": "Ko tenda ndaipóri Facebook Container ryepýpe. Upéicha rupi asyve Facebook ohapykuehóvo ñandutípe.", 
+    "message": "Ko tenda ndaipóri Facebook Container ryepýpe. Upéicha rupi asyve Facebook ohapykuehóvo ñandutípe.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "onUnknownSiteHeader": {
-    "message": "Ko tenda ndaipóri Facebook Container ryepýpe.", 
+    "message": "Ko tenda ndaipóri Facebook Container ryepýpe.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
-  }, 
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
-  }, 
+  },
   "onboarding1-subhead": {
-    "message": "Mba'éicha eipurúta Facebook Container", 
+    "message": "Mba’éicha eipurúta Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p1": {
-    "message": "Facebook ikatu nde rapykueho Facebook.com-gui esẽ rire. Techapyrã, umi votõ “Ahayhu” ha “Moherakuã” ikatu ohapykueho moõpa eikéra’e, umi kuatiarogue ehayhu’ỹva ha neremoherakuãiva'ekue.", 
+    "message": "Facebook ikatu nde rapykueho Facebook.com-gui esẽ rire. Techapyrã, umi votõ “Ahayhu” ha “Moherakuã” ikatu ohapykueho moõpa eikéra’e, umi kuatiarogue ehayhu’ỹva ha neremoherakuãiva’ekue.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding1-p2": {
-    "message": "Facebook Container omoheñói peteĩ opaha tendakuéra Facebook ha ambue ñandutigua, péicha Facebook-pe hasyve nderapykueho hag̃ua eikundaha jave.", 
+    "message": "Facebook Container omoheñói peteĩ opaha tendakuéra Facebook ha ambue ñandutigua, péicha Facebook-pe hasyve nderapykueho hag̃ua eikundaha jave.",
     "description": "Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-subhead": {
-    "message": "Facebook ha tenda oĩ Facebook Container mboypýri", 
+    "message": "Facebook ha tenda oĩ Facebook Container mboypýri",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
+  },
   "onboarding2-alt": {
-    "message": "Facebook Container korajere ra’ãnga’i", 
+    "message": "Facebook Container korajere ra’ãnga’i",
     "description": "This is alternative text for the icon in the second onboarding panel"
-  }, 
+  },
   "onboarding2-p1": {
-    "message": "Ko ta'ãngachu'i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com-pe, oĩva Facebook Container mboypýri.", 
+    "message": "Ko ta’ãngachu’i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com-pe, oĩva Facebook Container mboypýri.",
     "description": "This is the first paragraph of the second onboarding panel."
-  }, 
+  },
   "onboarding2-p2": {
-    "message": "Oiko porã hag̃ua, ko’ã tenda oikotevẽ oike heratee Facebook pegua ndive, he’iséva avei Facebook ikatu nde rapykueho ejapóva guivépe.", 
+    "message": "Oiko porã hag̃ua, ko’ã tenda oikotevẽ oike heratee Facebook pegua ndive, he’iséva avei Facebook ikatu nde rapykueho ejapóva guivépe.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
-  }, 
-  "onboarding3-subhead": {
-    "message": "¿Mba’éicha aikuaáta Facebook Container oikoha?", 
-    "description": "This is the subhead for the third onboarding panel."
-  }, 
-  "onboarding3-p1": {
-    "message": "Umi votõ 'Ahayhu' ha 'Moherakuã' Facebook pegua térã umi ohejáva oike omoñepyrũvo tembiapo ne mba’ete Facebook pegua oguereko tapykuehoha. Facebook Container ojoko ha ohechauka ndéve peteĩ ta'ãngachu'i ñembotyha eikua hag̃ua mba’e tendápe ojejoko tapykuehoha.", 
-    "description": "This is the first paragraph of the third onboarding panel."
-  }, 
-  "onboarding3-img": {
-    "message": "Ko ta’ãnga ohechauka mba’échapa ojehecháta Facebook Guerekoha kora kuatiaroguépe pe votõ “Me gusta” Facebook pegua.", 
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  }, 
-  "onboarding3-p2": {
-    "message": "Upéicharamo, eikutúrõ oimeraẽva ko’ã votõ, Facebook ikatu ohapykueho.", 
-    "description": "This is the second paragraph on the third onboarding panel."
-  }, 
+  },
+  "onboarding4-subhead": {
+    "message": "Okápe Facebook-gui",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Ndereikéiramo jepe Facebook-pe, Facebook nde rapykuehokuaa ñandutípe. Umi votõ omoneĩva ehupi hag̃ua Facebook-pe térã emoñepyrũvo tembiapo ñanduti rendápe eipurúvo ne mba’ete Facebook pegua oguereko tapykuehoha. Facebook Container ojoko ko’ã tapykuehoha ha ohechauka pe ta’ãnga’i ehecha hag̃ua moõitépa oñemboguéra’e tapykuehoha.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Ko ta’ãnga ohechauka mba’éichapa ehecháta Facebook Containers ra’ãnga’i kuatiaroguépe votõ Ahayhu Facebook pegua ykére.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Eñepyrũ tembiapo Facebook ndive ambue tendápe",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Eipuru hag̃ua ne rembiapo ñepyrũ Facebook-pe ambue tendápe, emongu’eva’erã ikatuha peve. Eikutu pe ta’ãnga’i ha eiporavo \"Facebook Container renda ñemone\" iguypeve gotyo.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Ko ta’ãnga ohechauka mba’éichapa ojehecháta pe votõ embojuaju hag̃ua tenda Facebook Container rehe ta’ãngarupápe.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Kóva omoneĩ oñepyrũvo tembiapo Facebook ndive, avei omoneĩ Facebook-pe ohapykuehóvo ne rembiapo.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
-    "message": "Moneĩ", 
+    "message": "Moneĩ",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
-  }, 
+  },
   "btn-cancel": {
-    "message": "Heja", 
+    "message": "Heja",
     "description": "This is a button to cancel out of the onboarding panel."
-  }, 
+  },
   "btn-next": {
-    "message": "Upeigua", 
+    "message": "Upeigua",
     "description": "This is a button to continue to the next onboarding panel."
-  }, 
+  },
   "btn-back": {
-    "message": "Tapykuegua", 
+    "message": "Tapykuegua",
     "description": "This is a button that returns the user to the previous onboarding panel."
-  }, 
+  },
   "btn-done": {
-    "message": "Apopyre", 
+    "message": "Apopyre",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
-  }, 
+  },
   "btn-arrow-back": {
-    "message": "Eguevijey mboyvegua rupápe", 
+    "message": "Eguevijey mboyvegua rupápe",
     "description": "This is alternative text for the back arrow button."
-  }, 
+  },
   "btn-arrow-forward": {
-    "message": "Ehecha mba’éicha oiko Facebook Container", 
+    "message": "Ehecha mba’éicha oiko Facebook Container",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
-  }, 
+  },
   "no-trackers-subhead": {
-    "message": "Ndojehechái Facebook rapykuehoha", 
+    "message": "Ndojehechái Facebook rapykuehoha",
     "description": ""
-  }, 
+  },
   "no-trackers-p1": {
-    "message": "Facebook Container ndohechái Facebook rapykuehoha ko kuatiaroguépe. Peicharamojepe, ko kuatiarogue ikatu oguereko ambue jehapykuehoha.", 
+    "message": "Facebook Container ndohechái Facebook rapykuehoha ko kuatiaroguépe. Peicharamojepe, ko kuatiarogue ikatu oguereko ambue jehapykuehoha.",
     "description": ""
-  }, 
+  },
   "learn-more": {
-    "message": "Eikuaave", 
+    "message": "Eikuaave",
     "description": "This is a link that opens a page with more information about Facebook Container."
-  }, 
+  },
   "how-fbc-works": {
-    "message": "Mba’éicha oiko Facebook Container", 
+    "message": "Mba’éicha oiko Facebook Container",
     "description": "This is a button that opens the Facebook Container onboarding flow."
-  }, 
+  },
   "trackers-detected-subhead": {
-    "message": "Ore romo’ã ndéve Facebook-gui.", 
+    "message": "Ore romo’ã ndéve Facebook-gui.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
-  }, 
+  },
   "trackers-detected-p1": {
-    "message": "Umi votõ Facebook pegua ojehecháva kuatiarogue jejoguaha, marandu, ha ambue, oguereko tapykuehoha omombe’úva Facebook-pe umi kuatiarogue eike hague. Ndereipurúiramo jepe ko’ã votõ, umi tapykuehoha ikatu ombyaty marandu ne kundahakue rehegua. Facebook Container ojoko umi tapykuehoha.", 
+    "message": "Umi votõ Facebook pegua ojehecháva kuatiarogue jejoguaha, marandu, ha ambue, oguereko tapykuehoha omombe’úva Facebook-pe umi kuatiarogue eike hague. Ndereipurúiramo jepe ko’ã votõ, umi tapykuehoha ikatu ombyaty marandu ne kundahakue rehegua. Facebook Container ojoko umi tapykuehoha.",
     "description": ""
-  }, 
+  },
   "trackers-detected-p2": {
-    "message": "Facebook Container ojoko ko’ã jehapykuehoha. Hákatu eikutúramo oimeraẽva votõ, Facebook ikatu ohapykueho.", 
+    "message": "Facebook Container ojoko ko’ã jehapykuehoha. Hákatu eikutúramo oimeraẽva votõ, Facebook ikatu ohapykueho.",
     "description": ""
-  }, 
+  },
   "trackers-detected-fence-alt": {
-    "message": "Kora ñemboty Facebook Container ndive.", 
+    "message": "Kora ñemboty Facebook Container ndive.",
     "description": "This is alternative text describing the container fence icon."
-  }, 
+  },
   "sites-added-subhead": {
-    "message": "Tenda moneĩmbyre Facebook Container-pe", 
+    "message": "Tenda moneĩmbyre Facebook Container-pe",
     "description": "This is a panel subhead."
-  }, 
+  },
   "sites-included": {
-    "message": "TENDA MOINGEPYRE", 
+    "message": "TENDA MOINGEPYRE",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
-  }, 
+  },
   "no-sites-added": {
-    "message": "Mavave", 
+    "message": "Mavave",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
-  }, 
+  },
   "sites-allowed": {
-    "message": "TENDA EMONEĨVA’EKUE", 
+    "message": "TENDA EMONEĨVA’EKUE",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
-  }, 
+  },
   "sites-added-p1": {
     "message": "Facebook Container omohenda Facebook mba’etee kora jerépe. Ikatu omoneĩ ambue tenda kora jerépe, hákatu kóva omoneĩta Facebook-pe ohapykuehovévo ne kundaha ñandutípe."
-  }, 
+  },
   "remove": {
-    "message": "Mboguete", 
+    "message": "Mboguete",
     "description": ""
-  }, 
+  },
+  "button-allow-site": {
+    "message": "Emoneĩ tenda Facebook Container-pe",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Embogue tenda de Facebook Container-pe",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Ko tenda ha’e rupi Facebook mba’e, ndaikatúi oñembogue Facebook Container-gui.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
-    "message": "¿Emboguete tenda Facebook Container-gui?", 
+    "message": "¿Emboguete tenda Facebook Container-gui?",
     "description": ""
-  }, 
+  },
   "remove-site-p1": {
-    "message": "Emboguévo ko tenda Facebook Container-gui Tembiapo Ñepyrũ rembiapoite Facebook pegua ndoikomo’ãvéima ha umi kookie tapykuehoha Facebook rehegua oguepáta.", 
+    "message": "Emboguévo ko tenda Facebook Container-gui Tembiapo Ñepyrũ rembiapoite Facebook pegua ndoikomo’ãvéima ha umi kookie tapykuehoha Facebook rehegua oguepáta.",
     "description": ""
-  }, 
+  },
   "remove-site-p2": {
-    "message": "Emoñepyrũjey hag̃ua tembiapo Facebook ndive ipyahúva, eikotevẽta embojuajujey Facebook Container rehe.", 
+    "message": "Emoñepyrũjey hag̃ua tembiapo Facebook ndive ipyahúva, eikotevẽta embojuajujey Facebook Container rehe.",
     "description": ""
-  }, 
+  },
+  "add-site-subhead": {
+    "message": "¿Eipota Facebook rapykuehoha ko tendápe?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Kóva omoneĩta emoñepyrũvo tembiapo Facebook ndive, avei omoneĩta Facebook-pe ohapykuehóvo ne rembiapo ko tendápe.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container oipe’a ko votõ ha ojoko og̃uahẽva jehapykueho ko kuatiarogue pegua Facebook guive.", 
+    "message": "Facebook Container oipe’a ko votõ ha ojoko og̃uahẽva jehapykueho ko kuatiarogue pegua Facebook guive.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container ojokóma ijehapykuehoha. Eipurúramo tembiapo ñepyrũ Facebook ndive ko tendápe, ikatu nde rapykueho.", 
+    "message": "Facebook Container ojokóma ijehapykuehoha. Eipurúramo tembiapo ñepyrũ Facebook ndive ko tendápe, ikatu nde rapykueho.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "¿ Emoneĩ Facebook-pe nde rapykuehóvo ápe?", 
+    "message": "¿ Emoneĩ Facebook-pe nde rapykuehóvo ápe?",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Eipurúramo tembiapo ñepyrũ Facebook ndive, Facebook ikatu ohapykueho ne rembiapo ko tendápe. Kóva ikatu ne pytyvõ ehechauka hag̃ua nde rekove porãha eikundahávo ñandutípe.", 
+    "message": "Eipurúramo tembiapo ñepyrũ Facebook ndive, Facebook ikatu ohapykueho ne rembiapo ko tendápe. Kóva ikatu ne pytyvõ ehechauka hag̃ua nde rekove porãha eikundahávo ñandutípe.",
     "description": ""
-  }, 
+  },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "Anive ehechauka", 
+    "message": "Anive ehechauka",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Eikutúvo ko votõ, Facebook ikatu ohapykueho nde jeike ko tendápe.",
     "description": ""
   }
 }

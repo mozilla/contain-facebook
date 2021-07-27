@@ -43,3 +43,23 @@ Other ad networks may try to link your Facebook activities with your regular bro
 Good news! Containers aren’t just for Facebook. You can use Containers to prevent websites from linking your identities across the Web by installing [Firefox Multi-Account Containers](https://addons.mozilla.org/firefox/addon/multi-account-containers/).
 
 To learn more about how Multi-Account Containers work, see our support page at [Firefox Multi-Account Containers](https://addons.mozilla.org/firefox/addon/multi-account-containers/).
+
+## Development
+
+1. `npm install`
+2. `./node_modules/.bin/web-ext run -s src/`
+
+### Testing
+`npm run test`
+
+or
+
+`npm run lint`
+
+for just the linter
+
+### Links
+
+- [License](./LICENSE)
+- [Contributing](./CONTRIBUTING.md)
+- [Code Of Conduct](./CODE_OF_CONDUCT.md)

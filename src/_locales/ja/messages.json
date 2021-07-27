@@ -1,0 +1,248 @@
+{
+  "extensionDescription": {
+    "message": "Facebook Container は、Facebook がサードパーティの Cookie を介して Facebook ウェブサイト以外でもあなたを追跡するのを防ぐために、Facebook のアクティビティを他のウェブアクティビティから隔離します。",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ は Facebook Container 内で開いてます。",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "in-fbc-p1": {
+    "message": "Facebook はこのサイトであなたを追跡できるようになりました。Facebook Container からこのサイトを削除するには、Facebook Container で許可されているサイトを選択し、リストから削除してください。"
+  },
+  "on-facebook-subhead": {
+    "message": "Facebook および Facebook Container Boundary 内のサイト",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p1": {
+    "message": "このアイコンは、Facebook が所有するサイトまたは Facebook Container に追加したサイトにアクセスすると、Firefox のアドレスバーに表示されます。",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "これらのサイトが機能するためには Facebook ID にアクセスする (または、あなたが誰であるかを知る) 必要があります。これは、あなたがこれらのサイトで行ったすべてを Facebook が追跡できることを意味します。",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
+  "notOnFacebookHeader": {
+    "message": "$URL$ は Facebook Container 外で開いてます。",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.google.com"
+      }
+    }
+  },
+  "notOnFacebookText": {
+    "message": "このサイトは Facebook Container 外にあります。Facebook がウェブ上であなたを追跡するのを難しくします。",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "onUnknownSiteHeader": {
+    "message": "このサイトは Facebook Container 外で開いてます。",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "facebookContainer": {
+    "message": "Facebook Container",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "onboarding1-subhead": {
+    "message": "Facebook Container の使い方",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p1": {
+    "message": "Facebook は、Facebook.com をはるかに超えてあなたのブラウジングを追跡できます。例えば、Facebook の「いいね」ボタンや「共有」ボタンは、ページでボタンを押さなくても、あなたがどこにいるかを追跡できます。",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "Facebook Container は、Facebook サイトと他のウェブサイトとの間に境界を作成して、Facebook がオンラインであなたを追跡するのを難しくします。",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "Facebook および Facebook Container Boundary 内のサイト",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "Facebook Container のフェンスアイコン",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "このアイコンは、Facebook Container boundary 内にある Facebook.com などのサイトを訪れた時に Firefox のアドレスバーに表示されます。",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "これらのサイトが機能するためには Facebook ID にアクセスする (または、あなたが誰であるかを知る) 必要があります。これは、あなたがこれらのサイトで行ったすべてを Facebook が追跡できることを意味します。",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding4-subhead": {
+    "message": "Facebook 外",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Facebook サイト上でなくても、Facebook はあなたをオンラインで追跡できます。Facebook に投稿するボタンまたはFacebook アカウントを使用してログインするウェブサイトにトラッカーが含まれています。Facebook Container はこれらのトラッカーをブロックし、フェンスアイコンを表示して、トラッカーが削除された場所を示します。",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "この画像は、Facebook Container のフェンスアイコンが、ページに埋め込まれた Facebook の「いいね」ボタンの横にどのように表示されるかを示しています。",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "他のサイトで Facebook を使用してログイン",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "他のサイトで Facebook ログインを利用するには、境界内に移動する必要があります。フェンスアイコンをクリックし、下部の [Facebook Container でサイトを許可] を選択します。",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "この画像は、Facebook Container にサイトを追加するためのボタンが、パネルにどのように表示されるかを示しています。",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "これにより Facebook にログインしますが、Facebook によるそのサイト上のあなたの行動追跡を許可することになります。",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
+  "btn-allow": {
+    "message": "許可する",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "キャンセル",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "次へ",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "戻る",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "完了",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "前のパネルに戻ります。",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Facebook Container の使い方へ移動",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "Facebookトラッカーが検出されていません",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container は、このページで Facebook トラッカーを検出しませんでした。ただし、ページには他の種類のトラッカーが潜んでいる可能性があります。",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "詳細情報",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Facebook Container の使い方",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "Facebook からあなたを守っています。",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "ショッピング、ニュース、その他のサイトに表示される Facebook ボタンには、Facebook にあなたがどのウェブサイトを訪れたかを知らせるトラッカーが含まれています。「いいね」または「共有」ボタンを使用しなくても、トラッカーはあなたの閲覧に関するデータを収集します。 Facebook Container は、これらのトラッカーのデータ収集をブロックします。",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container はトラッカーのデータ収集をブロックします。ただし、いずれかのボタンをクリックすると Facebook があなたを追跡できるようになります。",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "シールド付き Facebook Container フェンス。",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "Facebook Container で許可されているサイト",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "含まれるサイト",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "なし",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "許可されているサイト",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "sites-added-p1": {
+    "message": "Facebook Container は Facebook が所有するサイトを境界内に置きます。他のサイトも境界に入れられますが、これにより Facebook がより多くのウェブブラウジングを追跡できるようになります。"
+  },
+  "remove": {
+    "message": "削除",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "Facebook Container 内のサイトを許可",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Facebook Container からサイトを削除",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "これは Facebook が所有するサイトであるため、Facebook Container から削除できません。",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "Facebook Container からサイトを削除しますか？",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "このサイトを Facebook Container から削除すると、Facebook でログインする機能が動作しなくなり、Facebook のトラッキング Cookie が削除されます。",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "再び Facebook でログインする機能を利用したい場合は、Facebook Container に再度追加する必要があります。",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "このサイトで Facebook の追跡を許可しますか？",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "これにより Facebook でログインしますが、Facebook によるサイト上のあなたの行動追跡を許可することになります。",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container がボタンを無効にし、Facebook によるあなたが訪問したページの追跡をブロックしました。",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container は Facebookトラッカーをブロックしています。このサイトで Facebook でログインを利用すると、Facebook があなたを追跡できるようになります。",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "このページで Facebook があなたを追跡できるようにしますか？",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Facebook でログインする機能を利用すると、そのサイト上のあなたの行動を Facebook が追跡できるようになります。これは、彼らがあなたのオンライン生活の完全なイメージを構築することを助けることになります。",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "このメッセージを再度表示しない",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "ボタンをクリックすると、あなたがこのサイトに訪問したことを Facebook が追跡できます。",
+    "description": ""
+  }
+}

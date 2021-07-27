@@ -54,6 +54,14 @@
     "message": "Nokisäx Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
+  "onboarding1-p1": {
+    "message": "Facebook nitikïr nrojqaj ri awokem pa k'amaya'l näq chuwäch ri Facebook.com. Achi'el ri taq ütz chuqa' komon rupitz'b'al Facebook yetikïr nikojqaj akuchi' xak'oje' wi, achi'el — taq ruxaq ri majub'ey xtakomonij.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "Facebook Container nuya' jun kikojol taq ruxaq Facebook chuqa' ri ch'aqa' chik e k'o pa ajk'amaya'l, ruma ri toq ri Facebook k'ayew xtub'än chuwäch xkatrojqaj pa k'amab'ey.",
+    "description": "Please do not translate \"Facebook Container\""
+  },
   "onboarding2-subhead": {
     "message": "Pa Facebook chuqa' Taq Ruxaq pa Ruk'ulb'a't Facebook Container",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
@@ -70,13 +78,33 @@
     "message": "Re taq ruxaq re' nik'atzin chi ke ye'ok pa ri ab'anikil pa Facebook (o nrajo' nretamaj at achike rat) richin nitikïr nisamäj. Ri nuq'ajuj chuqa' chi ri Facebook nitikïr nrojqaj ronojel ri nab'än pa ri taq ruxaq ri'.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "¿Achike rub'eyal ninwetamaj chi nisamäj ri Facebook Container?",
-    "description": "This is the subhead for the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "Chi rij Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
-  "onboarding3-p2": {
-    "message": "We napïtz pa xab'achike re taq pitz'b'äl re', ri Facebook xtitikïr xkatrojqaj.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-p1": {
+    "message": "Estape' man at k'o ta pa Facebook, Facebook nitikïr yatrojqaj pa k'amab'ey. Ri taq pitz'b'äl nikiya' q'ij chawe richin nawelesaj rutzijol jun wachinäq pa Facebook o ri yatkokisaj pa ajk'amaya'l ruxaq k'amaya'l akuchi' nawokisaj ri rub'i' ataqoya'l richin Facebook kik'wan ojqanela'. Facebook Container xkeruq'ät ri taq ojqanela' ri' chuqa' xtuk'üt chawäch ri ruwachib'al kokal richin nuya' rutzijol chawe ri taq ojqanela' xeyuj el.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Re wachib'äl re' nuk'üt chawäch achike rub'eyal xtiwachin ri ruwachib'äl rukokal Facebook Containers pa jun ruxaq chuchi' ri pitz'b'äl \"Ütz\" richin Facebook.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Titikirisäx molojri'ïl rik'in Facebook pa Ch'aqa' chik taq Ruxaq",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Richin nawokisaj ri rutikirib'al amolojri'ïl richin Facebook pa ch'aqa' chik ajk'amaya'l ruxaq, k'o chi ye'asiloj qa chupam ri k'wayöl. Tapitz'a' pa ruwi' ri ruwachib'al kokal richin nacha' ‘Tiya' Q'ij chi ke Ajk'amaya'l Ruxaq pa Facebook Container’ chuxe' qa.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Re wachib'äl re' nuk'üt achike rub'eyal xtiwachin ri pitz'b'äl richin nitz'aqatisäx jun ajk'amaya'l ruxaq pa Facebook Container pa ri pas.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Re re' nuya' q'ij chawe natikirisaj molojri'ïl rik'in Facebook, po nuya' q'ij chi re ri Facebook nrojqaj ri asamaj pa ri ajk'amaya'l ruxaq ri'.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Tiya' q'ij",
@@ -126,6 +154,14 @@
     "message": "Xatqachajij chuwäch ri Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
+  "trackers-detected-p1": {
+    "message": "Ri taq rupitz'b'äl Facebook e k'o pa taq loq'oj, taq rutzijol chuqa' ch'aqa' chik ruxaq kik'wan ojqanela' ri nikitzijoj chi re ri Facebook akuchi' xak'oje' wi pan ajk'amaya'l. Estape' majub'ey e'awokisan ri taq rupitz'b'al Ütz o Komonin, k'a yetikïr nikimöl taq tzij ri ojqanela' chi rij ri awokem pa k'amaya'l. Ri Facebook Container yeruq'ät re taq ojqanela' re'.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container yeruq'ät re taq ojqanela' re'. Xa xe we napïtz pa xab'achike pitz'b'äl re', ri Facebook xtitikïr xkatrojqaj.",
+    "description": ""
+  },
   "trackers-detected-fence-alt": {
     "message": "Facebook Container rik'in Pokob'.",
     "description": "This is alternative text describing the container fence icon."
@@ -146,20 +182,67 @@
     "message": "RI TAQ RUXAQ YA'ON Q'IJ CHI KE",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
+  "sites-added-p1": {
+    "message": "Facebook Container numöl kichi' ri taq ruxaq Facebook. Yatikïr namöl kichi' ch'aqa' chik taq ruxaq, xa xe chi xtuya' q'ij chi re ri Facebook nrojqaj ri ajk'amaya'l awokem."
+  },
   "remove": {
     "message": "Tiyuj",
     "description": ""
   },
+  "button-allow-site": {
+    "message": "Tiya' q'ij chi ke taq Ruxaq K'amaya'l pa Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Nawelesaj ri ruxaq pa Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Ruma chi re ruxaq k'amaya'l re' richin ri Facebook, man tikirel ta niyuj el chupam ri Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
     "message": "¿La nawelesaj ri ruxaq pa Facebook Container?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "Toq nayüj re ruxaq k'amaya'l pa ri Facebook Container, man xtisamäj ta chik ri samaj Titikirisäx molojri'ïl rik'in Facebook chuqa' xkeyuj el ri ojqanel taq kuki richin Facebook.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "We nawajo' chik nawokisaj chik Titikirisäx molojri'ïl rik'in Facebook, k'o chi natz'aqatisaj chik pa Facebook Container.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "¿La niya' q'ij chi nojqan ri Facebook pa re Ruxaq K'amaya'l re'?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Re re' nuya' q'ij chawe natikirisaj molojri'ïl rik'in Facebook, po nuya' q'ij chi re ri Facebook nrojqaj ri asamaj pa re ajk'amaya'l ruxaq re'.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container xuchüp re pitz'b'äl re' chuqa' xuq'ät ri Facebook richin man trojqaj ri awokem pa re ruxaq re'.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container xeruq'ät ri rojqanela' Facebook. We nawokisaj Titikirisäx molojri'ïl rik'in Facebook pa re ruxaq k'amaya'l re', ri Facebook xtitikïr xkajrojqaj.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
     "message": "¿La nya' q'ij richin yatrojqaj wawe' ri Facebook?",
     "description": ""
   },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "We nawajo' nawokisaj natikirisaj molojri'ïl rik'in Facebook, ri Facebook xtitikïr xtrojqaj ri asamaj pa re ruxaq k'amaya'l re'. Re re' nuto' richin nunük' jun tz'aqät wachib'äl chi rij ri ak'aslem pa k'amab'ey.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Man tik'ut chik pe chwe",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "We napïtz' pa re pitz'b'äl, ri Facebook xtitikïr xrojqaj ri awokem pa re ruxaq k'amaya'l re'.",
     "description": ""
   }
 }
