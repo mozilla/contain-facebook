@@ -25,7 +25,7 @@
         "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
     },
     "on-facebook-p2": {
-      "message": "These sites need to access to your Facebook identity (or know who you are) in order to work. This also means that Facebook can track everything you do on these sites.",
+      "message": "These sites need to access your Facebook identity (or know who you are) in order to work. This also means that Facebook can track everything you do on these sites.",
       "description": "This is shown in the body of the panel pop up when the user is on Facebook."
     },
     "notOnFacebookHeader": {

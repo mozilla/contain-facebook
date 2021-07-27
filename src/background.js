@@ -23,7 +23,11 @@ const FACEBOOK_DOMAINS = [
   "onavo.com",
   "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
 
-  "wit.ai"
+  "wit.ai",
+
+  "oversightboard.com", "www.oversightboard.com",
+  
+  "bulletin.com"
 ];
 
 const MAC_ADDON_ID = "@testpilot-containers";
