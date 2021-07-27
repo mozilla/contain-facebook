@@ -21,7 +21,7 @@ const FACEBOOK_DOMAINS = [
   "workplace.com", "www.workplace.com", "work.facebook.com",
 
   "onavo.com",
-  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",  
+  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
 
   "mapwith.ai", "wit.ai",
 
