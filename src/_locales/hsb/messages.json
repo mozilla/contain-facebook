@@ -245,8 +245,16 @@
     "message": "Jeli na tute tłóčatko kliknjeće, móže Facebook wašemu wopytej na tutym sydle slědować.",
     "description": ""
   },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Facebook dowolić, wam slědować?",
+    "description": ""
+  },
   "btn-relay-dismiss": {
     "message": "Zaćisnyć",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox Relay wupruwować",
     "description": ""
   }
 }
