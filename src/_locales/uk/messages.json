@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Якщо ви натиснете цю кнопку, Facebook зможе стежити за вашими відвідуваннями цього сайту.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Якщо ви використовуєте тут свою справжню електронну адресу, Facebook, можливо, зможе відстежувати вас. Натисніть, щоб дізнатись докладніше.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Дозволити Facebook відстежувати вас на цьому сайті?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Цей сайт може передавати вашу електронну адресу Facebook, що дозволить Facebook відстежувати вас. Скористайтеся такою службою, як Firefox Relay, щоб приховати свою справжню електронну адресу.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Відхилити",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Спробувати Firefox Relay",
+    "description": ""
   }
 }
