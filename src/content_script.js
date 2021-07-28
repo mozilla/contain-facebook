@@ -352,7 +352,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
 
     // Add to Container "Allow"
     htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", () => {
-      window.open("https://relay.firefox.com");
+      window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=Facebook%20Container&utm_content=Try%20Firefox%20Relay");
     });
 
     // Dismiss email/relay prompt
