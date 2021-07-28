@@ -244,5 +244,13 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Si hace clic en este botón, Facebook podrá rastrear su visita a este sitio.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Si usás tu dirección de correo electrónico real aquí, puede que Facebook pueda rastrearte. Hacé clic para conocer más.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "¿Permitir que Facebook te rastree aquí?",
+    "description": ""
   }
 }
