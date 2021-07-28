@@ -250,6 +250,11 @@
 	line-height: 20px;
 }
 
+.fbc-badge-prompt-dontShowAgain-checkbox {
+	display: flex;
+	align-items: center;
+}
+
 .fbc-badge-prompt-buttons {
 	position: absolute;
 	bottom: 0.15px;
