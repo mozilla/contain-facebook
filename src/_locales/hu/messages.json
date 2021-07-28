@@ -244,5 +244,21 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Ha rákattint erre a gombra, akkor a Facebook nyomon tudja követni, hogy mikor keresi fel az oldalt.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ha a valódi e-mail címét használja itt, akkor a Facebook képes lehet nyomon követni Önt. Kattintson a további információkért.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Hagyja, hogy a Facebook követhesse Önt itt?",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Elvetés",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Próbálja ki a Firefox Relayt",
+    "description": ""
   }
 }
