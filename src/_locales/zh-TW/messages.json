@@ -244,5 +244,9 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "點擊此按鈕後，Facebook 就能夠追蹤到您曾造訪過這個網站。",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "若您在此輸入實際使用的電子郵件信箱，Facebook 可能還是能追蹤您。點擊此處了解更多資訊。",
+    "description": ""
   }
 }
