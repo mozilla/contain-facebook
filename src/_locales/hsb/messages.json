@@ -253,6 +253,10 @@
     "message": "Facebook dowolić, wam slědować?",
     "description": ""
   },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Tute sydło móže wašu e-mejlowu adresu z Facebook dźělić, štož Facebook zmóžnja, wam slědować. Wužiwajće słužbu kaž Firefox Relay, zo byšce swoju woprawdźitu e-mejlowu adresu schował.",
+    "description": ""
+  },
   "btn-relay-dismiss": {
     "message": "Zaćisnyć",
     "description": ""
