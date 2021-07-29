@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Bu düğmeyi tıklarsanız, Facebook bu siteye yaptığınız ziyareti izleyebilecektir.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Burada gerçek e-posta adresinizi kullanırsanız Facebook sizi izleyebilir. Daha fazlasını öğrenmek için tıklayın.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Facebook sizi burada izleyebilsin mi?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Bu site, e-posta adresinizi Facebook’la paylaşabilir. Bu da Facebook’un sizi izlemesine olanak tanır. Gerçek e-posta adresinizi gizlemek için Firefox Relay hizmetini kullanabilirsiniz.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Kapat",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox Relay’i dene",
+    "description": ""
   }
 }
