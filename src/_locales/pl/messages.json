@@ -244,5 +244,13 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Jeśli klikniesz ten przycisk, Facebook będzie mógł śledzić Twoją wizytę na tej witrynie.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Jeśli użyjesz tutaj swojego prawdziwego adresu e-mail, Facebook może móc Cię śledzić. Kliknij, aby dowiedzieć się więcej.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Pozwolić Facebookowi śledzić Cię na tej stronie?",
+    "description": ""
   }
 }
