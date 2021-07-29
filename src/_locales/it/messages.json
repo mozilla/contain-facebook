@@ -245,6 +245,10 @@
     "message": "Facendo clic su questo pulsante consentirai a Facebook di tracciare la tua attività su questo sito.",
     "description": ""
   },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Consentire a Facebook di tracciarti in questa pagina?",
+    "description": ""
+  },
   "inPageUI-tooltip-email-prompt-p2": {
     "message": "Questo sito può condividere il tuo indirizzo email con Facebook consentendogli di tracciarti. Utilizza un servizio come Firefox Relay per nascondere il tuo vero indirizzo email.",
     "description": ""
