@@ -245,6 +245,10 @@
     "message": "Facendo clic su questo pulsante consentirai a Facebook di tracciare la tua attività su questo sito.",
     "description": ""
   },
+  "inPageUI-tooltip-button-email": {
+    "message": "Se utilizzi il tuo indirizzo email reale in questa pagina, Facebook potrebbe essere in grado di tracciarti. Fai clic per ulteriori informazioni.",
+    "description": ""
+  },
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "Consentire a Facebook di tracciarti in questa pagina?",
     "description": ""
