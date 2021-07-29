@@ -254,7 +254,7 @@
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Questo sito può condividere il tuo indirizzo email con Facebook consentendogli di tracciarti. Utilizza un servizio come Firefox Relay per nascondere il tuo vero indirizzo email.",
+    "message": "Questo sito può condividere il tuo indirizzo email con Facebook consentendogli di tracciarti. Utilizza un servizio come Firefox Relay per nascondere il tuo indirizzo email reale.",
     "description": ""
   },
   "btn-relay-dismiss": {
