@@ -244,5 +244,13 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Αν κάνετε κλικ σε αυτό το κουμπί, το Facebook θα μπορεί να καταγράφει την επίσκεψή σας σε αυτή την ιστοσελίδα.",
     "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Απόρριψη",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Δοκιμή Firefox Relay",
+    "description": ""
   }
 }
