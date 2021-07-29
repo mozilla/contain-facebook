@@ -244,5 +244,13 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Jolic na toś ten tłocašk kliknjośo, móžo Facebook wašomu woglědoju na toś tom sedle slědowaś.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Jolic swóju napšawdnu e-mailowu adresu how wužywaśo, móžo Facebook wam slědowaś. Klikniśo, aby wěcej zgónił.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Facebook dowóliś, wam slědowaś?",
+    "description": ""
   }
 }
