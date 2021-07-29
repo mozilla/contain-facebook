@@ -252,5 +252,17 @@
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "Facebook dowóliś, wam slědowaś?",
     "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Toś to sedło móžo wašu e-mailowu adresu z Facebook źěliś, což Facebook zmóžnja, wam slědowaś. Wužywajśo słužbu ako Firefox Relay, aby swóju napšawdnu e-mailowu adresu schował.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Zachyśiś",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox Relay wopytaś",
+    "description": ""
   }
 }
