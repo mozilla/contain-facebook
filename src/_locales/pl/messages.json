@@ -252,5 +252,17 @@
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "Pozwolić Facebookowi śledzić Cię na tej stronie?",
     "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Ta witryna może udostępniać Twój adres e-mail Facebookowi, co umożliwia mu śledzenie Cię. Korzystaj z usługi takiej jak Firefox Relay, aby ukryć swój prawdziwy adres e-mail.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Zamknij",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Wypróbuj Firefox Relay",
+    "description": ""
   }
 }
