@@ -253,6 +253,10 @@
     "message": "要允許 Facebook 在此處追蹤您？",
     "description": ""
   },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "此網站可能會與 Facebook 分享您的電子郵件地址，讓 Facebook 能追蹤到您。可使用如 Firefox Relay 的服務來隱藏您實際的電子郵件地址。",
+    "description": ""
+  },
   "btn-relay-dismiss": {
     "message": "知道了！",
     "description": ""
