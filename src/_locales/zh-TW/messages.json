@@ -248,5 +248,17 @@
   "inPageUI-tooltip-button-email": {
     "message": "若您在此輸入實際使用的電子郵件信箱，Facebook 可能還是能追蹤您。點擊此處了解更多資訊。",
     "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "要允許 Facebook 在此處追蹤您？",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "知道了！",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "試用 Firefox Relay",
+    "description": ""
   }
 }
