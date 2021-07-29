@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Als u op deze knop klikt, kan Facebook uw bezoek aan deze website volgen.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Als u hier uw echte e-mailadres gebruikt, kan Facebook u mogelijk volgen. Klik voor meer informatie.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Toestaan dat Facebook u hier volgt?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Deze website kan uw e-mailadres delen met Facebook, waardoor Facebook u kan volgen. Gebruik een service zoals Firefox Relay om uw echte e-mailadres te verbergen.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Sluiten",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox Relay proberen",
+    "description": ""
   }
 }
