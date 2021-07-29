@@ -245,6 +245,10 @@
     "message": "Jeli na tute tłóčatko kliknjeće, móže Facebook wašemu wopytej na tutym sydle slědować.",
     "description": ""
   },
+  "inPageUI-tooltip-button-email": {
+    "message": "Jeli swoju woprawdźitu e-mejlowu adresu tu wužiwaće, móže Facebook wam slědować. Klikńće, zo byšće wjace zhonił.",
+    "description": ""
+  },
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "Facebook dowolić, wam slědować?",
     "description": ""
