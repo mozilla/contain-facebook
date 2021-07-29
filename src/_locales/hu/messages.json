@@ -253,6 +253,10 @@
     "message": "Hagyja, hogy a Facebook követhesse Önt itt?",
     "description": ""
   },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Ez a webhely megoszthatja e-mail címét a Facebookkal, amely lehetővé teszi a Facebook számára, hogy nyomon kövesse Önt. A valós e-mail-címe elrejtéséhez használjon egy olyan szolgáltatást, mint a Firefox Relay.",
+    "description": ""
+  },
   "btn-relay-dismiss": {
     "message": "Elvetés",
     "description": ""
