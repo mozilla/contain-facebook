@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Sche ti cliccas sin quest buttun, po Facebook fastizar tia visita sin questa website.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Sche ti utiliseschas qua tia dretga adressa dad e-mail, po Facebook eventualmain ta fastizar. Clicca per vegnir a savair dapli.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Permetter a Facebook da ta fastizar qua?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Questa website po cundivider tia adressa dad e-mail cun Facebook. Quai permetta a Facebook da ta fastizar. Utilisescha in servetsch sco Firefox Relay per zuppentar tia dretga adressa dad e-mail.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Ignorar",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Empruvar Firefox Relay",
+    "description": ""
   }
 }
