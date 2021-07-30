@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "თუ ამ ღილაკს დააწვებით, Facebook შეძლებს თვალი გადევნოთ ამ საიტზე.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "თუ ნამდვილ ელფოსტას გამოიყენებთ აქ, Facebook შეძლებს თვალი გადევნოთ. დაწკაპეთ და იხილეთ ვრცლად.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "გსურთ Facebook-მა თვალი გადევნოთ აქ?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "ამ საიტს, შეუძლია თქვენი ელფოსტა გაუზიაროს Facebook-ს, შედეგად კი Facebook შეძლებს თვალი გადევნოთ. გამოიყენეთ Firefox Relay ან მსგავსი მომსახურებები, თქვენი ნამდვილი ელფოსტის დასაფარად.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "გამოტოვება",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "გამოსცადეთ Firefox Relay",
+    "description": ""
   }
 }
