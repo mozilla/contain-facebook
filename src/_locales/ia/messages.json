@@ -245,6 +245,10 @@
     "message": "Si tu clicca sur iste button, Facebook potera traciar tu activitate sur iste sito.",
     "description": ""
   },
+  "inPageUI-tooltip-button-email": {
+    "message": "Si tu usa tu real adresse e-mail hic, Facebook pote traciar te. Clicca pro saper plus.",
+    "description": ""
+  },
   "btn-relay-dismiss": {
     "message": "Dimitter",
     "description": ""
