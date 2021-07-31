@@ -244,5 +244,13 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Nëse klikoni këtë buton, Facebook-u do të jetë në gjendje të ndjekë vizitën tuaj në këtë sajt.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Nëse këtu përdorni adresën tuaj të njëmendtë email, Facebook-u mund të jetë në gjendje t’ju gjurmojë. Klikoni që të mësoni më shumë.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Të lejohet Facebook-u t’ju gjurmojë këtu?",
+    "description": ""
   }
 }
