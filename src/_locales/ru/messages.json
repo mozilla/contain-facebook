@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Если вы щёлкните по этой кнопке, Фейсбук сможет отследить ваше посещение этого сайта.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Если вы укажете здесь свой реальный адрес электронной почты, Фейсбук сможет отслеживать вас. Щёлкните, чтобы узнать больше.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Разрешить Фейсбуку отслеживать вас здесь?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Этот сайт может поделиться вашим адресом электронной почты с Фейсбук , что позволяет Фейсбук отслеживать вас. Используйте такую службу, как Firefox Relay, чтобы скрыть свой реальный адрес электронной почты.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Убрать",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Попробовать Firefox Relay",
+    "description": ""
   }
 }
