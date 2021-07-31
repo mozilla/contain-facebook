@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "若点击此按钮，Facebook 将能够跟踪您对该网站的访问。",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "若在此输入真实邮箱地址，Facebook 可能还是能够跟踪您。点击此处了解更多信息。",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "要允许 Facebook 在此跟踪您？",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "此网站会与 Facebook 共享您的电子邮件地址，这将使得 Facebook 能够跟踪您。可使用如 Firefox Relay 的服务隐藏您的真实电子邮件地址。",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "知道了",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "试用 Firefox Relay",
+    "description": ""
   }
 }
