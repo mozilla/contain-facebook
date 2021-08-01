@@ -260,5 +260,9 @@
   "btn-relay-dismiss": {
     "message": "Ignorera",
     "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Testa Firefox Relay",
+    "description": ""
   }
 }
