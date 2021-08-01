@@ -244,5 +244,21 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Om du klickar på den här knappen kan Facebook spåra ditt besök på den här webbplatsen.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Om du använder din riktiga e-postadress här kan Facebook kanske spåra dig. Klicka för att lära mer.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Tillåt Facebook att spåra dig här?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Denna webbplats kan dela din e-postadress med Facebook, vilket gör att Facebook kan spåra dig. Använd en tjänst som Firefox Relay för att dölja din riktiga e-postadress.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Ignorera",
+    "description": ""
   }
 }
