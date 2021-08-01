@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Ak kliknete na toto tlačidlo, Facebook vás bude môcť na tejto stránke sledovať.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ak tu použijete svoju skutočnú e-mailovú adresu, Facebook vás môže sledovať. Kliknutím získate ďalšie informácie.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Chcete povoliť Facebooku vás tu sledovať?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Táto stránka môže zdieľať vašu e-mailovú adresu s Facebookom, čo umožňuje Facebooku vás sledovať. Na skrytie svojej skutočnej e-mailovej adresy použite službu, ako je Firefox Relay.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Zavrieť",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Vyskúšať Firefox Relay",
+    "description": ""
   }
 }
