@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Si vous cliquez sur ce bouton, Facebook pourra suivre votre visite sur ce site.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Si vous utilisez votre véritable adresse électronique ici, Facebook peut être en mesure de vous suivre. Cliquez pour en savoir plus.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Autoriser Facebook à vous suivre ici ?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Ce site peut partager votre adresse électronique avec Facebook, ce qui permet à Facebook de vous suivre. Utilisez un service comme Firefox Relay pour masquer votre véritable adresse électronique.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Ignorer",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Essayer Firefox Relay",
+    "description": ""
   }
 }
