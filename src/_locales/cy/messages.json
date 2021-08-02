@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Os cliciwch y botwm hwn, bydd Facebook yn gallu tracio eich ymweliad â'r wefan hon.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Os ydych chi'n defnyddio'ch cyfeiriad e-bost go iawn yma, efallai y bydd Facebook yn gallu eich olrhain chi. Cliciwch i ddysgu rhagor.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Caniatáu i Facebook eich tracio chi yma?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Gall y wefan hon rannu eich cyfeiriad e-bost â Facebook, sy'n caniatáu i Facebook eich tracio. Defnyddiwch wasanaeth fel Firefox Relay i guddio'ch cyfeiriad e-bost go iawn.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Cau",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Rhowch gynnig ar Firefox Relay",
+    "description": ""
   }
 }
