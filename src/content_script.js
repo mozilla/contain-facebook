@@ -646,9 +646,13 @@ async function detectFacebookOnPage () {
   patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
   patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
   const relayAddonEnabled = await getRelayAddonEnabledFromBackground();
+  
+  // Check if any FB trackers were blocked, scoped to only the active tab
+  const trackersDetectedOnCurrentPage = await checkIfTrackersAreDetectedOnCurrentPage();
+
   // Check if user dismissed the Relay prompt
   const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
-  if (!relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges) {
+  if (!relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage) {
     patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
     updateSettings();
   }
@@ -760,6 +764,13 @@ async function getRelayAddonEnabledFromBackground() {
     message: "get-relay-enabled"
   });
   return relayAddonEnabled;
+}
+
+async function checkIfTrackersAreDetectedOnCurrentPage() {
+  const trackersDetected = await browser.runtime.sendMessage({
+    message: "are-trackers-detected"
+  });
+  return trackersDetected;
 }
 
 async function getRootDomainFromBackground(url) {

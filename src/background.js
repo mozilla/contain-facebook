@@ -647,6 +647,15 @@ function setupWindowsAndTabsListeners() {
   browser.windows.onFocusChanged.addListener(windowFocusChangedListener);
 }
 
+async function checkIfTrackersAreDetected(sender) {
+  const activeTab = await getActiveTab();
+  const tabState = tabStates[activeTab.id];
+  const trackersDetected = (tabState && tabState.trackersDetected);
+  const onActiveTab = (activeTab.id === sender.tab.id);
+  // Check if trackers were blocked,scoped to the active tab.
+  return (onActiveTab && trackersDetected);  
+}
+
 (async function init () {
   await setupMACAddonListeners();
   macAddonEnabled = await isMACAddonEnabled();
@@ -686,6 +695,8 @@ function setupWindowsAndTabsListeners() {
       break;
     case "check-settings":
       return checkSettings();
+    case "are-trackers-detected":
+      return await checkIfTrackersAreDetected(sender);
     default:
       throw new Error("Unexpected message!");
     }
