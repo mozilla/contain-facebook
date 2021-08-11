@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Se clicar neste botão, o Facebook poderá monitorizar a sua visita neste site.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Se utilizar o seu endereço de e-mail real aqui, o Facebook poderá monitorizar o que faz. Clique para saber mais.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Permitir que o Facebook o monitorize aqui?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Este site pode partilhar o seu endereço de e-mail com o Facebook, o que permite que o Facebook o monitorize. Utilize um serviço como o Firefox Relay para ocultar o seu endereço de e-mail real.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Ignorar",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Experimentar o Firefox Relay",
+    "description": ""
   }
 }
