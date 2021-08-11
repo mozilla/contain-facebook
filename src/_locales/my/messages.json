@@ -169,6 +169,10 @@
     "message": "Facebook Containerတွင် site ကိုခွင့်ပြုပါ",
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
+  "button-remove-site": {
+    "message": "Facebook Container မှဆိုက်ကိုဖ်ပါ",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
   "remove-site-subhead": {
     "message": "Facebook Container မှ ဆိုက်ကို ဖယ်ရှား မှာလား?",
     "description": ""
@@ -203,6 +207,10 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "နောက်ထပ်မပြပါနှင့်။",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "ဒီခလုတ်ကိုနှိပ်လိုက်ရင် Facebook က သင့်ဆိုက်များကြည့်ရှုမှုကိုခြေရာခံနိုင်လိမ့်မယ်။",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
