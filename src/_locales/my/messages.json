@@ -82,6 +82,10 @@
     "message": "Facebook အပြင်ဘက်",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-p1": {
+    "message": "သင် Facebook မှာမရှိရင်တောင်သင့်ကိုခြေရာခံနိုင်တယ်။ သင်ဖေ့စ်ဘွတ်ခ်မှာတင်စရာတွေရှိသလိုသ့ Facebookအကောင့်ကိုသုံးပြီးဆိုက်တွေကို ၀င်ခွင့်ပေးတဲ့ခလုတ်တွေမှာခြေရာခံကိရိယာတွေပါ၀င်ပါတယ်။ Facebook Container သည်ဤခြေရာခံကိရိယာများကိုပိတ်ဆို့ပြီး ဖယ်ရှားလိုက်သောနေရာတွင် ခြံစည်းရိုးသင်္ကေတကိုပြလိမ့်မည်။",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
   "onboarding4-img": {
     "message": "ဤပုံသည် Facebook Containers ခြံစည်းရိုးသင်္ကေတကို Facebook Like ခလုတ်ဘေးမှစာမျက်နှာ၌မည်သို့ပေါ်လာမည်ကိုပြသသည်။",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
