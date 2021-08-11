@@ -173,6 +173,10 @@
     "message": "Facebook Container မှဆိုက်ကိုဖ်ပါ",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
+  "button-remove-site-tooltip": {
+    "message": "၎င်းသည် Facebook ပိုင်ဆိုက်ဖြစ်သောကြောင့် Facebook Container မှဖယ်ရှားမရပါ။",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
     "message": "Facebook Container မှ ဆိုက်ကို ဖယ်ရှား မှာလား?",
     "description": ""
@@ -187,6 +191,10 @@
   },
   "add-site-subhead": {
     "message": "ဒီဆိုဒ်တွင် Facebook ကိုခြေရာခံခွင့်ပြုလား။",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "၎င်းသည်သင့်အား Facebook ဖြင့် ၀င်ခွင့်ပြုသော်လည်း  Facebook သည်ဤဆိုက်တွင်သင်လုပ်ဆောင်သည့်အရာများကိုသိရှိသည်။",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
@@ -219,6 +227,10 @@
   },
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "ဖေ့စ်ဘွတ်ခ်ကသင့်ကိုဒီမှာခြေရာခံခွင့်ပြုမလား။",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "ဒီဆိုက်ကသင့်မေးလ်လိပ်စာကို Facebook နဲ့ဝေမျှနိုင်တယ်။ ဤသို့ပြုခြင်းသည် Facebook ကသင့်ကိုခြေရာခံခွင့်ပြုလိုက်သကဲ့သို့ဖြစ်သွားသည်။ သင့်မေးလ်လိပ်စာအမှန်ကိုဖျောက်ရန် Firefox Relay ကဲ့သို့ ၀န်ဆောင်မှုကိုသုံးပါ။",
     "description": ""
   },
   "btn-relay-dismiss": {
