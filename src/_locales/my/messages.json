@@ -82,6 +82,26 @@
     "message": "Facebook အပြင်ဘက်",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "ဤပုံသည် Facebook Containers ခြံစည်းရိုးသင်္ကေတကို Facebook Like ခလုတ်ဘေးမှစာမျက်နှာ၌မည်သို့ပေါ်လာမည်ကိုပြသသည်။",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "အခြားဆိုက်များတွင် Facebook နှင့် ၀င်ရောက်ပါ။",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "သင့် Facebook login ကိုအခြားဆိုက်တွေမှာသုံးဖို့သူတို့ကိုနယ်နိမိတ်အတွင်းရွှေ့ဖို့လိုလိမ့်မယ်။ ခြံစည်းရိုးသင်္ကေတကိုနှိပ်ပါ၊ အောက်ခြေရှိ  ‘Allow Site in Facebook Container’ ကိုရွေးပါ။",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "ဤပုံသည် Facebook Container ထဲသို့ site တစ်ခုကိုထည့်ရန်ခလုတ်သည် panel တွင်မည်သို့ပေါ်လာလိမ့်မည်ကိုပြသည်။",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "၎င်းသည်သင့်အား Facebook ဖြင့် ၀င်ခွင့်ပြုသော်လည်း ဤဆိုက်တွင်သင့်လှုပ်ရှားမှုများကို Facebook ကခြေရာခံနိုင်အောင်ခွင့်ပြုထားသည်။",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "ခွင့်ပြုပါ",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
