@@ -165,6 +165,10 @@
     "message": "ဖယ်ရှားပါ",
     "description": ""
   },
+  "button-allow-site": {
+    "message": "Facebook Containerတွင် site ကိုခွင့်ပြုပါ",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
   "remove-site-subhead": {
     "message": "Facebook Container မှ ဆိုက်ကို ဖယ်ရှား မှာလား?",
     "description": ""
@@ -199,6 +203,22 @@
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "နောက်ထပ်မပြပါနှင့်။",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "သင့်ဒီမှာမေးလ်လိပ်စာအမှန်ကိုသုံးရင် Facebook ကမင်းကိုခြေရာခံနိုင်တယ်။ ပိုမိုလေ့လာရန်နှိပ်ပါ။",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "ဖေ့စ်ဘွတ်ခ်ကသင့်ကိုဒီမှာခြေရာခံခွင့်ပြုမလား။",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "ထုတ်ပါ",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox Relay ကိုစမ်းသုံးပါ",
     "description": ""
   }
 }
