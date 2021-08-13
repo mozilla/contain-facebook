@@ -253,6 +253,10 @@
     "message": "¿Emoneĩ Facebook-pe nde rapykuehóvo ápe?",
     "description": ""
   },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Ko tenda omoherakuãkuaa ne ñanduti veve kundaharape Facebook ndive, omoneĩva Facebook-pe nde rapykuehóvo. Eipuru Firefox Relay eñomi hag̃ua ne ñanduti veve.",
+    "description": ""
+  },
   "btn-relay-dismiss": {
     "message": "Mboyke",
     "description": ""
