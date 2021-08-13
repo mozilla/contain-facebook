@@ -245,6 +245,10 @@
     "message": "Eikutúvo ko votõ, Facebook ikatu ohapykueho nde jeike ko tendápe.",
     "description": ""
   },
+  "inPageUI-tooltip-button-email": {
+    "message": "Eipurúramo ne ñanduti vevete ko’ápe, ikatu Facebook ohapykueho ndehegui. Eikutu eikuaasevéramo.",
+    "description": ""
+  },
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "¿Emoneĩ Facebook-pe nde rapykuehóvo ápe?",
     "description": ""
