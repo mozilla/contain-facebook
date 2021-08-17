@@ -245,6 +245,10 @@
     "message": "Αν κάνετε κλικ σε αυτό το κουμπί, το Facebook θα μπορεί να καταγράφει την επίσκεψή σας σε αυτή την ιστοσελίδα.",
     "description": ""
   },
+  "inPageUI-tooltip-button-email": {
+    "message": "Αν χρησιμοποιήσετε την πραγματική σας διεύθυνση email εδώ, το Facebook ίσως μπορέσει να σας καταγράψει. Κάντε κλικ για να μάθετε περισσότερα.",
+    "description": ""
+  },
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "Να επιτρέπεται στο Facebook να σας καταγράφει εδώ;",
     "description": ""
