@@ -253,6 +253,10 @@
     "message": "Να επιτρέπεται στο Facebook να σας καταγράφει εδώ;",
     "description": ""
   },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Αυτός ο ιστότοπος μπορεί να μοιραστεί τη διεύθυνση email σας με το Facebook, το οποίο επιτρέπει στο Facebook να σας παρακολουθεί. Χρησιμοποιήστε μια υπηρεσία όπως το Firefox Relay για να αποκρύψετε την πραγματική σας διεύθυνση email.",
+    "description": ""
+  },
   "btn-relay-dismiss": {
     "message": "Απόρριψη",
     "description": ""
