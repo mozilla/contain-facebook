@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Pokud klepnete na toto tlačítko, pak vás bude Facebook moci na této stránce sledovat.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Pokud zde použijete svou skutečnou e-mailovou adresu, Facebook vás může začít sledovat. Klepnutím zjistíte více.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Chcete povolit Facebooku vás sledovat?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Tento server může sdílet vaši e-mailovou adresu s Facebookem, čímž mu umožní vás sledovat. Použitím služby jako je Firefox Relay můžete svou skutečnou e-mailovou adresu skrýt.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Zavřít",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Zkuste Firefox Relay",
+    "description": ""
   }
 }
