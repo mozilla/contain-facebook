@@ -244,5 +244,17 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Matetekkaḍ ɣef tqeffalt-a, Facebook ad yizmir ad k-yeḍfeṛ deg tirza n usmel-a.",
     "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Eǧǧ Facebook akken ad k-yeḍfeṛ dagi?",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Zgel",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Ɛreḍ Firefox Relay",
+    "description": ""
   }
 }
