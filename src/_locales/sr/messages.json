@@ -252,5 +252,17 @@
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "Дозволити Facebook-у да вас прати овде?",
     "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Овај сајт може да дели вашу адресу е-поште са Facebook-ом, што омогућава Facebook-у да вас прати. Користите услугу попут Firefox Relay-а да сакријете своју праву адресу е-поште.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Занемари",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Испробај Firefox Relay",
+    "description": ""
   }
 }
