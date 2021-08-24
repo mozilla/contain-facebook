@@ -244,5 +244,13 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Ако одаберете ову опцију, Facebook ће моћи пратити вашу посету овој страници.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ако овде користите своју праву адресу е-поште, Facebook можда може да вас прати. Кликните да сазнате више.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Дозволити Facebook-у да вас прати овде?",
+    "description": ""
   }
 }
