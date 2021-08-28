@@ -98,5 +98,9 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "اگر آپ اس بٹن پر کلک کرتے ہیں تو ، Facebook اس سائٹ پر آپ کے دورے کا سراغ لگانے کے قابل ہوگا۔",
     "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "برخاست کریں",
+    "description": ""
   }
 }
