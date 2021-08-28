@@ -102,5 +102,9 @@
   "btn-relay-dismiss": {
     "message": "برخاست کریں",
     "description": ""
+  },
+  "btn-relay-try": {
+    "message": " Firefox Relay آزمائیں۔",
+    "description": ""
   }
 }
