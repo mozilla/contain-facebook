@@ -256,5 +256,13 @@
   "inPageUI-tooltip-email-prompt-p2": {
     "message": "Este sitio puede compartir la dirección de correo con Facebook, lo que permite que éste te rastree. Utiliza un servicio como Firefox Relay para ocultar tu dirección de correo real.",
     "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Descartar",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Prueba Firefox Relay",
+    "description": ""
   }
 }
