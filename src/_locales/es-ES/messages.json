@@ -244,5 +244,17 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Si haces clic en este botón, Facebook podrá rastrear tu visita a este sitio web.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Si usas tu dirección de correo electrónico real aquí, puede que Facebook pueda rastrearte. Haz clic para saber más.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "¿Permitir que Facebook te rastree aquí?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Este sitio puede compartir la dirección de correo con Facebook, lo que permite que éste te rastree. Utiliza un servicio como Firefox Relay para ocultar tu dirección de correo real.",
+    "description": ""
   }
 }
