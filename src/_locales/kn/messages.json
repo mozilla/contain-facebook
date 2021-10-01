@@ -45,5 +45,33 @@
   "remove": {
     "message": "ತೆಗೆದು ಹಾಕು",
     "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "ಇದನ್ನು ಮತ್ತೆ ನನಗೆ ತೋರಿಸಬೇಡ",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "ನೀವು ಈ ಗುಂಡಿಯನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿದರೆ, ಈ ಸೈಟ್‌ಗೆ ನಿಮ್ಮ ಭೇಟಿಯನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಫೇಸ್‌ಬುಕ್‌ಗೆ ಸಾಧ್ಯವಾಗುತ್ತದೆ.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "ನಿಮ್ಮ ನಿಜವಾದ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ನೀವು ಇಲ್ಲಿ ಬಳಸಿದರೆ, ಫೇಸ್ಬುಕ್ ನಿಮ್ಮನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಬಹುದು. ಇನ್ನಷ್ಟು ತಿಳಿಯಲು ಕ್ಲಿಕ್ ಮಾಡಿ.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "ನಿಮ್ಮನ್ನು ಇಲ್ಲಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಲು Facebook ಗೆ ಅನುಮತಿಸುವುದೇ?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "ಈ ಸೈಟ್ ನಿಮ್ಮ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಫೇಸ್‌ಬುಕ್‌ನೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಬಹುದು, ಇದು ಫೇಸ್‌ಬುಕ್ ನಿಮ್ಮನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ. ನಿಮ್ಮ ನಿಜವಾದ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಮರೆಮಾಡಲು ಫೈರ್‌ಫಾಕ್ಸ್ ರಿಲೇಯಂತಹ ಸೇವೆಯನ್ನು ಬಳಸಿ.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "ವಜಾಗೊಳಿಸು‍",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "ಫೈರ್‌ಫಾಕ್ಸ್ ರಿಲೇ ಪ್ರಯತ್ನಿಸಿ",
+    "description": ""
   }
 }
