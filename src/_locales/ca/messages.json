@@ -244,5 +244,17 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Si feu clic en aquest botó, el Facebook podrà fer el seguiment de la vostra visita en aquest lloc.",
     "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Voleu permetre que el Facebook us faci el seguiment en aquesta pàgina?",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Descarta",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Proveu el Firefox Relay",
+    "description": ""
   }
 }
