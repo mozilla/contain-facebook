@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Hvis du klikker på denne knappen, vil Facebook kunne spore besøket ditt på dette nettstedet.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Hvis du bruker din virkelige e -postadresse her, kan det hende at Facebook kan spore deg. Klikk for å lese mer.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Tillatt Facebook å spore deg her?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Dette nettstedet kan dele e -postadressen din med Facebook, som lar Facebook spore deg. Bruk en tjeneste som Firefox Relay for å skjule din virkelige e -postadresse.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Ignorer",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Prøv Firefox Relay",
+    "description": ""
   }
 }
