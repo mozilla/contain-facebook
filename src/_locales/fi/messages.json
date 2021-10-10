@@ -17,7 +17,7 @@
     "message": "Facebook voi nyt seurata sinua tällä sivustolla. Poista tämä sivusto sallituista sivustoista valitsemalla ”Sallitut sivustot” ja poistamalla sivusto listalta."
   },
   "on-facebook-subhead": {
-    "message": "Facebookissa ja sivustoissa, jotka on avattu Facebook Containeriin",
+    "message": "Facebookissa ja sivustoissa, jotka on avattu Facebook Containerissa.",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p1": {
