@@ -21,7 +21,7 @@
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p1": {
-    "message": "Tämä kuvake ilmestyy Firefoxin osoitepalkkiin, kun käyt Facebookin omistamilla sivustoilla tai sivustoilla, jotka on avattu Facebook-eristystilaan.",
+    "message": "Tämä kuvake ilmestyy Firefoxin osoitepalkkiin, kun käyt Facebookin omistamilla sivustoilla tai sivustoilla, jotka on avattu Facebook Containerissa.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p2": {
