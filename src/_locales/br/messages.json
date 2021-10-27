@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Ma klikit war an afell-mañ e vo gouest Facebook da heuliañ ac’hanoc’h war al lec’hienn-mañ.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ma vez implijet ho chomlec’h postel gwirion amañ, Facebook a vo gouest da heuliañ ac’hanoc’h. Klikit evit gouzout hiroc’h.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Aotren Facebook da heuliañ ac’hanoc’h?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Al lec’hienn-mañ a c’hall rannañ ho chomlec'h postel gant Facebook, ar pezh a ro an tu da Facebook da heuliañ ac’hanoc’h. Implijit ur servij evel Firefox Relay evit kuzhat ho chomlec’h postel gwirion.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Argas",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Eseañ Firefox Relay",
+    "description": ""
   }
 }
