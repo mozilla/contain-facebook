@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "ਜੇ ਤੁਸੀਂ ਇਹ ਬਟਨ ਨੂੰ ਕਲਿੱਕ ਕੀਤਾ ਤਾਂ ਫੇਸਬੁੱਕ ਇਸ ਸਾਈਟ ਨੂੰ ਤੁਹਾਡੇ ਵਲੋਂ ਖੋਲ੍ਹਣ ਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋ ਜਾਵੇਗੀ।",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "ਜੇ ਤੁਸੀਂ ਆਪਣਾ ਅਸਲ ਈਮੇਲ ਸਿਰਨਾਵਾਂ ਇੱਥੇ ਵਰਤਿਆ ਤਾਂ ਫੇਸਬੁੱਕ ਤੁਹਾਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋ ਸਕਦੀ ਹੈ। ਹੋਰ ਜਾਣਨ ਲਈ ਕਲਿੱਕ ਕਰੋ।",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "ਕੀ ਫੇਸਬੁੱਕ ਨੂੰ ਤੁਹਾਨੂੰ ਇੱਥੇ ਟਰੈਕ ਕਰਨ ਦੇਣਾ ਹੈ?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "ਇਹ ਸਾਈਟ ਤੁਹਾਡੇ ਈਮੇਲ ਸਿਰਨਾਵੇਂ ਨੂੰ ਫੇਸਬੁੱਕ ਨਾਲ ਸ਼ੇਅਰ ਕਰ ਸਕਦੀ ਹੈ, ਜੋ ਕਿ ਫੇਸਬੁੱਕ ਨੂੰ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨ ਦੇ ਸਮਰੱਥ ਕਰ ਦੇਵੇਗਾ। ਆਪਣੇ ਅਸਲ ਈਮੇਲ ਸਿਰਨਾਵੇ ਨੂੰ ਲੁਕਾਉਣ ਵਾਸਤੇ Firefox Relay ਵਰਗੀ ਸੇਵਾ ਨੂੰ ਵਰਤੋਂ।",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "ਖ਼ਾਰਜ ਕਰੋ",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox Relay ਵਰਤ ਕੇ ਵੇਖੋ",
+    "description": ""
   }
 }
