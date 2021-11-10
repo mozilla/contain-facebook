@@ -51,6 +51,10 @@
     "message": "Facebook Container کیسے کام کرتا ہے پر واپس جائیں ",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   },
+  "no-trackers-subhead": {
+    "message": "کوئی Facebook ٹریکرز نہیں ملا",
+    "description": ""
+  },
   "learn-more": {
     "message": "مزید سیکھیں",
     "description": "This is a link that opens a page with more information about Facebook Container."
