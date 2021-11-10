@@ -99,6 +99,10 @@
     "message": "اگر آپ اس بٹن پر کلک کرتے ہیں تو ، Facebook اس سائٹ پر آپ کے دورے کا سراغ لگانے کے قابل ہوگا۔",
     "description": ""
   },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Facebook کو یہاں آپ کو ٹریک کرنے کی اجازت دیں؟",
+    "description": ""
+  },
   "btn-relay-dismiss": {
     "message": "برخاست کریں",
     "description": ""
