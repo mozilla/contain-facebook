@@ -3,6 +3,16 @@
     "message": "Facebook Containerले तपाइँको फेसबुक गतिविधिलाई तपाइँको वेब गतिविधिबाट टाढा राख्छ ताकि फेसबुकले तपाइँलाई तेस्रो पार्टी कुकीज मार्फत फेसबुक वेबसाइट बाहिर ट्र्याक गर्न नसकोस् । ",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "in-fbc-subhead": {
+    "message": "$URL$ यो Facebook कन्टेनरमा छ।",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
   "facebookContainer": {
     "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
