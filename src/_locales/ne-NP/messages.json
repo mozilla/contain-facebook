@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Containerले तपाइँको फेसबुक गतिविधिलाई तपाइँको वेब गतिविधिबाट टाढा राख्छ ताकि फेसबुकले तपाइँलाई तेस्रो पार्टी कुकीज मार्फत फेसबुक वेबसाइट बाहिर ट्र्याक गर्न नसकोस् । ",
+    "message": "Facebook Containerले तपाईंको फेसबुक गतिविधिलाई तपाईंको वेब गतिविधिबाट टाढा राख्छ ताकि फेसबुकले तपाईंलाई तेस्रो पार्टी कुकीज मार्फत फेसबुक वेबसाइट बाहिर ट्र्याक गर्न नसकोस्।",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -42,7 +42,7 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "कसरी Facebook Container काम गर्दछ",
+    "message": "कसरी Facebook Container काम गर्दछ मा जानुहोस्",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   }
 }
