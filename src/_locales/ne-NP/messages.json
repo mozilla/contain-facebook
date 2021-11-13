@@ -13,9 +13,98 @@
       }
     }
   },
+  "in-fbc-p1": {
+    "message": "फेसबुकले अब यस साइटमा तपाइँलाई ट्र्याक गर्न सक्छ। फेसबुक कन्टेनरबाट यो साइट हटाउन, फेसबुक कन्टेनरमा अनुमति दिइएका साइटहरू चयन गर्नुहोस् र यसलाई सूचीबाट हटाउनुहोस्।"
+  },
+  "on-facebook-subhead": {
+    "message": "फेसबुकमा र फेसबुक कन्टेनर सीमामा भएका साइटहरूमा",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p1": {
+    "message": "यो आइकन Firefox ठेगाना पट्टीमा देखा पर्दछ जब तपाइँ फेसबुकको स्वामित्वमा रहेका साइटहरू वा तपाइँले Facebook कन्टेनरमा थप्नुभएको साइटहरूमा जानुहुन्छ।",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "यी साइटहरूले काम गर्नको लागि तपाईंको Facebook पहिचान (वा तपाईं को हुनुहुन्छ भनेर जान्न) पहुँच गर्न आवश्यक छ। यसको मतलब यो पनि हो कि फेसबुकले तपाईंले यी साइटहरूमा गर्ने सबै कुरा ट्र्याक गर्न सक्छ।",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
+  "notOnFacebookHeader": {
+    "message": "$URL$ यो फेसबुक कन्टेनरमा छैन।",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.google.com"
+      }
+    }
+  },
+  "notOnFacebookText": {
+    "message": "यो साइट फेसबुक कन्टेनर बाहिर छ। यसले फेसबुकलाई वेबमा तपाईंलाई ट्र्याक गर्न गाह्रो बनाउँछ।",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "onUnknownSiteHeader": {
+    "message": "यो साइट फेसबुक कन्टेनरमा छैन।",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "facebookContainer": {
     "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "onboarding1-subhead": {
+    "message": "फेसबुक कन्टेनर प्रयोग गरिदै",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p1": {
+    "message": "फेसबुकले Facebook.com भन्दा धेरै टाढा तपाईंको ब्राउजिङ्ग ट्र्याक गर्न सक्छ। फेसबुक लाइक र सेयर बटनहरू, उदाहरणका लागि, तपाईं कहाँ हुनुहुन्थ्यो भनेर ट्र्याक गर्न सक्छ — तपाईंले कहिल्यै मन नपर्ने वा साझेदारी नगरेका पृष्ठहरूमा पनि ट्राक गर्न सक्छ।",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "फेसबुक कन्टेनरले फेसबुक साइटहरू र वेबको बाँकी भागहरू बीचको सीमा सिर्जना गर्दछ, त्यसैले फेसबुकलाई तपाईंलाई अनलाइन ट्र्याक गर्न गाह्रो हुन्छ।",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "फेसबुकमा र फेसबुक कन्टेनर सीमामा भएका साइटहरूमा",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "फेसबुक कन्टेनर फेन्च आइकन",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "यो आइकन Firefox ठेगाना पट्टीमा देखिन्छ जब तपाइँ फेसबुक कन्टेनर सीमामा रहेका Facebook.com जस्ता साइटहरूमा जानुहुन्छ।",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "यी साइटहरूले काम गर्नको लागि तपाईंको फेसबुक पहिचान (वा तपाईं को हुनुहुन्छ भनेर जान्न) पहुँच गर्न आवश्यक छ। यसको मतलब यो पनि हो कि फेसबुकले तपाईंले यी साइटहरूमा गर्ने सबै कुरा ट्र्याक गर्न सक्छ।",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding4-subhead": {
+    "message": "फेसबुकभन्दा बाहिर",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "तपाईं फेसबुकमा नहुँदा पनि फेसबुकले तपाईंलाई अनलाइन ट्र्याक गर्न सक्छ। बटनहरू जसले तपाईंलाई फेसबुकमा चीजहरू पोस्ट गर्न वा तपाईंको फेसबुक खाता प्रयोग गरेर वेबसाइटहरूमा लग इन गर्न अनुमति दिने ट्र्याकरहरू समावेश गर्दछ। फेसबुक कन्टेनरले यी ट्र्याकरहरूलाई रोक्नेछ र ट्र्याकरहरू हटाइएका ठाउँहरू देखाउनको लागि फेंस आइकन प्रदर्शन गर्नेछ।",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "यो तस्वीरले देखाउँछ कि, फेसबुक कन्टेनर फेञ्च आइकन कसरी फेसबुक लाइक बटनको छेउमा पेजमा नै देखिनेछ।",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "अन्य साइटहरूमा फेसबुकमा लग इन गरिँदै",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "अन्य साइटहरूमा आफ्नो फेसबुक लगइन प्रयोग गर्न, तपाईंले तिनीहरूलाई सीमा भित्र सार्न आवश्यक हुनेछ। फेञ्च आइकनमा क्लिक गर्नुहोस् र तलको 'फेसबुक कन्टेनरमा साइटलाई अनुमति दिनुहोस्' चयन गर्नुहोस्।",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "यो तस्वीरले कसरी फेसबुक कन्टेनरमा साइट थप्ने बटन प्यानलमा देखा पर्नेछ भनेर देखाउँछ।",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "यसले तपाईंलाई फेसबुकमा लग इन गर्न दिन्छ, तर फेसबुकलाई त्यो साइटमा तपाईंको गतिविधि ट्र्याक गर्न अनुमति दिन्छ।",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "अनुमति दिनुहोस्",
@@ -44,5 +133,9 @@
   "btn-arrow-forward": {
     "message": "कसरी Facebook Container काम गर्दछ मा जानुहोस्",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "कुनै पनि फेसबुक ट्र्याकरहरू फेला परेनन्",
+    "description": ""
   }
 }
