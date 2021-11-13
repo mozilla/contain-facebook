@@ -137,5 +137,96 @@
   "no-trackers-subhead": {
     "message": "कुनै पनि फेसबुक ट्र्याकरहरू फेला परेनन्",
     "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "फेसबुक कन्टेनरले यस पृष्ठमा कुनै पनि फेसबुक ट्र्याकरहरू फेला पारेन। यद्यपि, पृष्ठमा अझै अन्य प्रकारका ट्र्याकरहरू पनि हुन सक्छन्।",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "थप जान्नुहोस्",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "कसरी फेसबुक Container काम गर्दछ",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "हामीले तपाईंलाई फेसबुकबाट सुरक्षित गरेका छौं।",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "किनमेल, समाचार र अन्य साइटहरूमा देखा पर्ने फेसबुक बटनहरूमा ट्र्याकरहरू हुन्छन् जसले फेसबुकलाई तपाइँ वेबमा कहाँ पुग्नुभएको छ भनी बताउँछन्। यदि तपाइँ यी बटनहरू लाईक वा सेयर गर्न प्रयोग गर्नुहुन्न भने पनि, ट्र्याकरहरूले अझै पनि तपाइँको ब्राउजिङ्गको बारेमा डेटा सङ्कलन गर्न सक्छन्। फेसबुक कन्टेनरले यी ट्र्याकरहरूलाई रोक्दछ।",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "फेसबुक कन्टेनरले यी ट्र्याकरहरूलाई रोक्छ। यद्यपि, यदि तपाइँ यी मध्ये कुनै बटनमा क्लिक गर्नुहुन्छ भने, फेसबुकले तपाइँलाई ट्र्याक गर्न सक्षम हुनेछ।",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "ढालसङ्ग फेसबुक कन्टेनर बार।",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "फेसबुक कन्टेनरमा अनुमति दिइएका साइटहरू",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "समावेश गरिएका साइटहरू",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "कुनै पनि होइन",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "तपाईंले अनुमति दिनुभएका साइटहरू",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "sites-added-p1": {
+    "message": "फेसबुक कन्टेनरले फेसबुकको स्वामित्वमा रहेका साइटहरूलाई सीमाभित्र राख्दछ। तपाइँ अन्य साइटहरूलाई सीमा भित्र अनुमति दिन सक्नुहुन्छ, तर यसले फेसबुकलाई तपाइँको वेब ब्राउजिङ्गको थप ट्र्याक गर्न अनुमति दिनेछ।"
+  },
+  "remove": {
+    "message": "हटाउनुहोस्",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "फेसबुक कन्टेनरमा अनुमति दिनुहोस्",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "फेसबुक कन्टेनरबाट साइट हटाउनुहोस्",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "यो फेसबुकको स्वामित्वमा रहेको साइट भएकाले हो, यसलाई फेसबुक कन्टेनरबाट हटाउन सकिँदैन।",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "फेसबुक कन्टेनरबाट साइट हटाउन चाहानुहुन्छ?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "यस साइटलाई फेसबुक कन्टेनरबाट हटाउनु भनेको फेसबुकको साथ लग इन सुविधाले अब काम गर्ने छैन र फेसबुक ट्र्याकिङ्ग कुकीजहरू मेटाइनेछ।",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": " यदि तपाइँ फेरि फेसबुकमा लग इन प्रयोग गर्न चाहानुहुन्छ भने, तपाइँ यसलाई फेसबुक कन्टेनरमा थप्न आवश्यक छ।",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "यस साइटमा फेसबुक ट्र्याकिङ्गलाई अनुमति दिन चाहानुहुन्छ?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "यसले तपाइँलाई फेसबुकमा लग इन गर्न दिन्छ, तर तपाइँले यस साइटमा के गर्नुहुन्छ, त्यसलाई पछ्याउन फेसबुकलाई अनुमति दिन्छ।",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "फेसबुक कन्टेनरले यो बटन असक्षम पारेको छ र फेसबुकलाई यो पृष्ठमा तपाईंको भ्रमण ट्र्याक गर्नबाट रोकेको छ।",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "फेसबुक कन्टेनरले फेसबुक ट्र्याकरहरू ब्लक गरेको छ। यदि तपाइँ यस साइटमा फेसबुकसँग लग इन प्रयोग गर्नुहुन्छ भने, फेसबुकले तपाईंलाई ट्र्याक गर्न सक्षम हुनेछ।",
+    "description": ""
   }
 }
