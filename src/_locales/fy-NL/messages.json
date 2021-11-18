@@ -21,7 +21,7 @@
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p1": {
-    "message": "Dit piktogram ferskynt yn de Firefox-adresbalke as jo websiden besykje fan Facebook of siden dy't jo oan Facebook Container tafoege hawwe.",
+    "message": "Dit piktogram ferskynt yn de Firefox-adresbalke as jo websiden besykje fan Facebook of siden dy’t jo oan Facebook Container tafoege hawwe.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p2": {
@@ -71,7 +71,7 @@
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Dit piktogram ferskynt yn de Firefox-adresbalke as jo websiden besykje lykas Facebook.com, dy't binnen it Facebook Container-stek stean.",
+    "message": "Dit piktogram ferskynt yn de Firefox-adresbalke as jo websiden besykje lykas Facebook.com, dy’t binnen it Facebook Container-stek stean.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
@@ -155,7 +155,7 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "De Facebook-knoppen, dy't op winkel-, nijs- en oare websites toand wurde, befetsje trackers, dy Facebook litte witte wêr't jo op ynternet west binne. Sels wannear't jo dizze knoppen nea foar ‘Liken’ of dielen brûke, kinne dy trackers dochs gegevens oer jo sneupgedrach sammelje. Facebook Container blokkearret dizze trackers.",
+    "message": "De Facebook-knoppen, dy’t op winkel-, nijs- en oare websites toand wurde, befetsje trackers, dy Facebook litte witte wêr't jo op ynternet west binne. Sels wannear’t jo dizze knoppen nea foar ‘Liken’ of dielen brûke, kinne dy trackers dochs gegevens oer jo sneupgedrach sammelje. Facebook Container blokkearret dizze trackers.",
     "description": ""
   },
   "trackers-detected-p2": {
@@ -198,7 +198,7 @@
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Omdat dit in website is dy't eigendom is fan Facebook, kin dizze net út Facebook Container fuortsmiten wurde.",
+    "message": "Omdat dit in website is dy’t eigendom is fan Facebook, kin dizze net út Facebook Container fuortsmiten wurde.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
@@ -234,7 +234,7 @@
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Wannear't jo jo mei Facebook oanmelde, kin Facebook jo aktiviteiten op dizze website folgje. Dit kin harren helpe in wiidweidich byld fan jo online-libben gear te stellen.",
+    "message": "Wannear’t jo jo mei Facebook oanmelde, kin Facebook jo aktiviteiten op dizze website folgje. Dit kin harren helpe in wiidweidich byld fan jo online-libben gear te stellen.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
