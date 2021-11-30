@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "หากคุณคลิกปุ่มนี้ Facebook จะสามารถติดตามการเยี่ยมชมไซต์นี้ของคุณได้",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "หากคุณใช้ที่อยู่อีเมลจริงของคุณที่นี่ Facebook อาจสามารถติดตามคุณได้ คลิกเพื่อเรียนรู้เพิ่มเติม",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "อนุญาตให้ Facebook ติดตามคุณที่นี่?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "ไซต์นี้สามารถแชร์ที่อยู่อีเมลของคุณกับ Facebook ซึ่งช่วยให้ Facebook ติดตามคุณได้ ให้ใช้บริการ เช่น Firefox Relay เพื่อซ่อนที่อยู่อีเมลจริงของคุณ",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "ปิด",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "ลองใช้ Firefox Relay",
+    "description": ""
   }
 }
