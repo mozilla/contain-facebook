@@ -244,5 +244,9 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Dersom du klikkar på denne knappen, vil Facebook kunne spore besøket ditt på denne nettstaden.",
     "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Tillate Facebook å spore deg her?",
+    "description": ""
   }
 }
