@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Ma bhriogas tu am putan seo, bheir sin comas dha Facebook do thracadh air an làrach seo.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ma chleachdas tu am fìor-sheòladh puist-d agad an-seo, dh’fhaoidte gun urrainn dha Facebook do thracadh. Dèan briogadh airson barrachd fiosrachaidh.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "A bheil thu airson cead a thoirt dha Facebook do thracadh an-seo?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "’S urrainn dhan làrach seo an seòladh puist-d agad a nochdadh dha Facebook agus bheir sin cothrom dha Facebook do thracadh. Cleachd seirbheis mar Firefox Relay airson am fìor-sheòladh puist-d agad a chur am falach.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Leig seachad",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Feuch Firefox Relay",
+    "description": ""
   }
 }
