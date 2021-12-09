@@ -245,8 +245,16 @@
     "message": "Matetekkaḍ ɣef tqeffalt-a, Facebook ad yizmir ad k-yeḍfeṛ deg tirza n usmel-a.",
     "description": ""
   },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ma yella tesseqdaceḍ tansa-inek·inem n yimayl n tidet dagi, Facebook yezmer ad ak·akem-yeḍfer. Sit i wakken ad teẓreḍ ugar.",
+    "description": ""
+  },
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "Eǧǧ Facebook ad ak·akem-yeḍfeṛ dagi?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Asel-a yezmer ad yebḍu tansa-inek·inem n yimayl akked Facebook, ayen ara yeǧǧen Facebook ad ak·akem-yeḍfer. Seqdec ameẓlu am Firefox Relay i wakken ad teffreḍ tansa-inek·inem n yimayl n tidet.",
     "description": ""
   },
   "btn-relay-dismiss": {
