@@ -55,7 +55,7 @@
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
   "onboarding1-p1": {
-    "message": "Facebook สามารถติดตามการเรียกดูของคุณได้มากกว่า Facebook.com ตัวอย่างเช่น ปุ่ม ถูกใจ และ แชร์ ของ Facebook สามารถติดตามตำแหน่งที่คุณเคยอยู่แม้กระทั่งในหน้าเว็บที่คุณไม่เคยถูกใจหรือแชร์ได้",
+    "message": "Facebook สามารถติดตามการเรียกดูของคุณได้มากกว่า Facebook.com ปุ่มถูกใจและแชร์ของ Facebook สามารถติดตามสถานที่ที่คุณเคยไปแม้กระทั่งในหน้าที่คุณไม่เคยถูกใจหรือแชร์ได้",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
   "onboarding1-p2": {
@@ -99,11 +99,11 @@
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "ภาพนี้จะแสดงให้เห็นว่าปุ่มที่จะเพิ่มไซต์ลงใน Facebook Container จะปรากฏในแผงอย่างไร",
+    "message": "ภาพนี้แสดงให้เห็นว่าปุ่มที่จะเพิ่มไซต์ลงใน Facebook Container จะปรากฏในแผงอย่างไร",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "วิธีนี้ช่วยให้คุณสามารถเข้าสู่ระบบด้วย Facebook ได้ แต่จะอนุญาตให้ Facebook ติดตามกิจกรรมของคุณบนไซต์นั้นได้",
+    "message": "คุณลักษณะนี้ช่วยให้คุณสามารถเข้าสู่ระบบด้วย Facebook ได้ แต่จะอนุญาตให้ Facebook ติดตามกิจกรรมของคุณบนไซต์นั้นได้",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
@@ -139,7 +139,7 @@
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container ตรวจไม่พบตัวติดตาม Facebook ใด ๆ บนหน้านี้ แต่หน้านี้อาจยังมีตัวติดตามชนิดอื่น ๆ อยู่",
+    "message": "Facebook Container ไม่พบตัวติดตาม Facebook ใด ๆ บนหน้านี้ แต่อาจยังมีตัวติดตามชนิดอื่น ๆ อยู่",
     "description": ""
   },
   "learn-more": {
@@ -151,11 +151,11 @@
     "description": "This is a button that opens the Facebook Container onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "พวกเราปกป้องคุณจาก Facebook",
+    "message": "เราปกป้องคุณจาก Facebook",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "ปุ่ม Facebook ที่ปรากฏในการไซต์ช็อปปิ้ง ข่าว และอื่น ๆ มีตัวติดตามที่บอก Facebook ว่าคุณไปอยู่ที่ไหนบนเว็บมาบ้าง ถึงแม้ว่าคุณจะไม่เคยใช้ปุ่มเหล่านี้เพื่อถูกใจหรือแชร์ แต่ตัวติดตามยังสามารถรวบรวมข้อมูลเกี่ยวกับการเรียกดูของคุณได้ Facebook Container จะปิดกั้นตัวติดตามเหล่านี้",
+    "message": "ปุ่ม Facebook ที่ปรากฏในไซต์ซื้อของ ข่าว และอื่น ๆ มีตัวติดตามที่บอก Facebook ว่าคุณไปเยี่ยมชมเว็บใดมาบ้าง ถึงแม้ว่าคุณจะไม่เคยใช้ปุ่มเหล่านี้เพื่อกดถูกใจหรือแชร์ แต่ตัวติดตามยังสามารถรวบรวมข้อมูลเกี่ยวกับการเรียกดูของคุณได้ ซึ่ง Facebook Container จะปิดกั้นตัวติดตามเหล่านี้",
     "description": ""
   },
   "trackers-detected-p2": {
@@ -183,7 +183,7 @@
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container ทำให้ไซต์ที่เป็นของ Facebook อยู่ภายในขอบเขต คุณสามารถอนุญาตให้ไซต์อื่น ๆ เข้ามาในขอบเขตได้ แต่จะทำให้ Facebook ติดตามการท่องเว็บของคุณได้มากขึ้น"
+    "message": "Facebook Container ทำให้ไซต์ที่เป็นของ Facebook อยู่ภายในขอบเขต คุณสามารถอนุญาตให้ไซต์อื่น ๆ เข้ามาในขอบเขตได้ แต่จะทำให้ Facebook ติดตามการเรียกดูเว็บของคุณได้มากขึ้น"
   },
   "remove": {
     "message": "เอาออก",
@@ -198,23 +198,23 @@
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "เนื่องจากนี่เป็นไซต์ที่เป็นของ Facebook จึงไม่สามารถลบออกจาก Facebook Container ได้",
+    "message": "เนื่องจากไซต์นี้เป็นไซต์ของ Facebook จึงไม่สามารถเอาออกจาก Facebook Container ได้",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "เอาไซต์ออกจาก Facebook Container?",
+    "message": "ต้องการเอาไซต์ออกจาก Facebook Container หรือไม่?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "การลบไซต์นี้ออกจากคอนเทนเนอร์ Facebook หมายความว่าฟีเจอร์การลงชื่อเข้าใช้ด้วย Facebook จะไม่ทำงานอีกต่อไป และคุกกี้การติดตามของ Facebook จะถูกลบ",
+    "message": "การเอาไซต์นี้ออกจาก Facebook Container จะทำให้ไม่สามารถใช้คุณลักษณะการลงชื่อเข้าใช้ด้วย Facebook ได้อีกต่อไป และจะลบคุกกี้การติดตามของ Facebook",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " หากคุณต้องการใช้การลงชื่อเข้าใช้ด้วย Facebook อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container",
+    "message": " หากคุณต้องการใช้คุณลักษณะ “เข้าสู่ระบบด้วย Facebook” อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container ใหม่",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "อนุญาตการติดตามของ Facebook บนไซต์นี้หรือไม่?",
+    "message": "ต้องการอนุญาตการติดตามของ Facebook บนไซต์นี้หรือไม่?",
     "description": ""
   },
   "add-site-p1": {
