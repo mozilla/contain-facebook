@@ -210,7 +210,7 @@
     "description": ""
   },
   "remove-site-p2": {
-    "message": " หากคุณต้องการใช้คุณลักษณะ “เข้าสู่ระบบด้วย Facebook” อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container ใหม่",
+    "message": " หากคุณต้องการใช้ “เข้าสู่ระบบด้วย Facebook” อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container ใหม่",
     "description": ""
   },
   "add-site-subhead": {
@@ -218,27 +218,27 @@
     "description": ""
   },
   "add-site-p1": {
-    "message": "ตัวเลือกนี้ช่วยให้คุณสามารถเข้าสู่ระบบด้วย Facebook ได้ แต่จะอนุญาตให้ Facebook สามารถติดตามสิ่งที่คุณทำบนไซต์นี้ได้",
+    "message": "ตัวเลือกนี้ให้คุณสามารถเข้าสู่ระบบด้วย Facebook ได้ แต่จะทำให้ Facebook สามารถติดตามสิ่งต่าง ๆ ที่คุณได้ทำบนไซต์นี้ได้",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container ได้ปิดการใช้งานปุ่มนี้ และปิดกั้น Facebook จากการติดตามคุณในการเข้าชมหน้านี้",
+    "message": "Facebook Container ได้ปิดใช้งานปุ่มนี้ และปิดกั้น Facebook ไม่ให้ติดตามการเยี่ยมชมหน้านี้ของคุณ",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container ได้ปิดกั้นตัวติดตั้งของ Facebook แล้ว ถ้าคุณใช้การลงชื่อเข้าใช้ด้วย Facebook บนไซต์นี้ Facebook จะสามารถติดตามคุณได้",
+    "message": "Facebook Container ได้ปิดกั้นตัวติดตามของ Facebook หากคุณใช้ “เข้าสู่ระบบด้วย Facebook” บนไซต์นี้ Facebook จะสามารถติดตามคุณได้",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "อนุญาตให้ Facebook ติดตามคุณที่นี่?",
+    "message": "ต้องการอนุญาตให้ Facebook ติดตามคุณที่นี่หรือไม่?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "หากคุณต้องการใช้การเข้าสู่ระบบด้วย Facebook แล้ว Facebook จะสามารถติดตามกิจกรรมของคุณบนไซต์นี้ได้ สิ่งนี้ช่วยให้พวกเขาสร้างภาพชีวิตออนไลน์ของคุณได้สมบูรณ์ยิ่งขึ้น",
+    "message": "หากคุณต้องการใช้การเข้าสู่ระบบด้วย Facebook จะทำให้ Facebook สามารถติดตามกิจกรรมของคุณบนไซต์นี้ได้ ซึ่งจะช่วยให้พวกเขาสร้างภาพชีวิตออนไลน์ของคุณได้สมบูรณ์ยิ่งขึ้น",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
-    "message": "ไม่ต้องแสดงสิ่งนี้ให้ฉันเห็นอีก",
+    "message": "ไม่ต้องแสดงข้อความนี้อีก",
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
@@ -250,7 +250,7 @@
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "อนุญาตให้ Facebook ติดตามคุณที่นี่?",
+    "message": "ต้องการอนุญาตให้ Facebook ติดตามคุณที่นี่หรือไม่?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
