@@ -33,5 +33,89 @@
   "onUnknownSiteHeader": {
     "message": "Þessi vefslóð er ekki í Facebook gámnum.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "facebookContainer": {
+    "message": "Facebook-gámur",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "btn-allow": {
+    "message": "Leyfa",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "Hætta við",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "Næsta",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "Til baka",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "Lokið",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-forward": {
+    "message": "Farðu í hvernig Facebook-gámur virkar",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "Engir Facebook rekjarar fundust",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container fann enga Facebook-rekjara á þessari síðu. Hins vegar gæti síðan samt innihaldið aðrar gerðir af rekjurum.",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "Frekari upplýsingar",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Hvernig Facebook-gámur virkar",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "Við höfum verndað þig fyrir Facebook.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "sites-added-subhead": {
+    "message": "Leyfð vefsvæði í Facebook-gámnum",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "MEÐFYLGJANDI VEFSVÆÐI",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "Ekkert",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "VEFSVÆÐI SEM ÞÚ HEFUR LEYFT",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "remove": {
+    "message": "Fjarlægja",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "Leyfa vefsvæði í Facebook-gámnum",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "add-site-subhead": {
+    "message": "Leyfa Facebook-rakningu á þessu vefsvæði?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Leyfa Facebook að fylgjast með þér hér?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Leyfa Facebook að fylgjast með þér hér?",
+    "description": ""
   }
 }
