@@ -82,9 +82,21 @@
     "message": "Utan við Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "Þessi mynd sýnir hvernig girðingartákn Facebook-gámsins mun birtast á síðu við hlið Facebook 'Like'-hnapps.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
   "onboarding5-subhead": {
     "message": "Innskráning með Facebook á öðrum vefsvæðum",
     "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Þessi mynd sýnir hvernig hnappurinn til að bæta vefsíðu í Facebook-gáminn birtist á spjaldinu.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Þetta gerir þér kleift að skrá þig inn með Facebook, en gefur líka Facebook færi á að fylgjast með virkni þinni á því vefsvæði.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Leyfa",
