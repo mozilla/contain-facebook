@@ -82,6 +82,18 @@
     "message": "Við höfum verndað þig fyrir Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
+  "trackers-detected-p1": {
+    "message": "Facebook-hnapparnir sem birtast á verslunarvefjum, fréttasíðum og öðrum vefsvæðum innihalda rekjara sem segja Facebook hvar þú hefur verið á vefnum. Jafnvel þó þú notir aldrei þessa hnappa til að líka við eða deila, þá geta rekjarar safnað gögnum um vafurvenjur þína. Facebook-gámur lokar á þessa rekjara.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook-gámur lokar á þessa rekjara. Hins vegar, ef þú smellir á einhvern af þessum hnöppum mun Facebook geta fylgst með þér.",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "Facebook-gámagirðing með skjöld.",
+    "description": "This is alternative text describing the container fence icon."
+  },
   "sites-added-subhead": {
     "message": "Leyfð vefsvæði í Facebook-gámnum",
     "description": "This is a panel subhead."
@@ -98,6 +110,9 @@
     "message": "VEFSVÆÐI SEM ÞÚ HEFUR LEYFT",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
+  "sites-added-p1": {
+    "message": "Facebook-gámur setur síður í eigu Facebook innan markanna. Þú getur hleypt öðrum síðum inn fyrir mörkin, en það mun gera Facebook kleift að fylgjast með meira af vafrinu þínu."
+  },
   "remove": {
     "message": "Fjarlægja",
     "description": ""
@@ -105,6 +120,18 @@
   "button-allow-site": {
     "message": "Leyfa vefsvæði í Facebook-gámnum",
     "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Fjarlægja vefsvæði úr Facebook-gámnum",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Þar sem þetta er vefsvæði í eigu Facebook er ekki hægt að fjarlægja það úr Facebook-gámnum.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "Fjarlægja vefsvæði úr Facebook-gámnum?",
+    "description": ""
   },
   "add-site-subhead": {
     "message": "Leyfa Facebook-rakningu á þessu vefsvæði?",
@@ -114,8 +141,20 @@
     "message": "Leyfa Facebook að fylgjast með þér hér?",
     "description": ""
   },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Ekki sýna mér þetta aftur",
+    "description": ""
+  },
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "Leyfa Facebook að fylgjast með þér hér?",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Hafna",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Prófaðu Firefox Relay",
     "description": ""
   }
 }
