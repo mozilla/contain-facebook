@@ -205,16 +205,48 @@
     "message": "Fjarlægja vefsvæði úr Facebook-gámnum?",
     "description": ""
   },
+  "remove-site-p1": {
+    "message": "Sé þessi síða fjarlægð úr Facebook-gámnum mun innskráning með Facebook-reikningi ekki lengur virka og um leið verður Facebook-rakningarkökum eytt.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "Ef þú vilt geta skráð inn aftur með Facebook þarftu að bæta vefsvæðinu aftur í Facebook-gáminn.",
+    "description": ""
+  },
   "add-site-subhead": {
     "message": "Leyfa Facebook-rakningu á þessu vefsvæði?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Þetta gerir þér kleift að skrá þig inn með Facebook, en gefur líka Facebook færi á að fylgjast með því sem þú gerir á þessu vefsvæði.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook -gámurinn hefur gert þennan hnapp óvirkan og hindrar Facebook í að fylgjast með heimsókn þinni á þessa síðu.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook-gámurinn hefur lokað á Facebook-rekjara. Ef þú notar innskráningu með Facebook á þessu vefsvæði mun Facebook geta fylgst með þér.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
     "message": "Leyfa Facebook að fylgjast með þér hér?",
     "description": ""
   },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Ef þú vilt nota innskráningu með Facebook þá mun Facebook geta fylgst með virkni þinni á þessu vefsvæði. Þetta getur hjálpað þeim að byggja upp nákvæmari mynd af lífi þínu á netinu.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Ekki sýna mér þetta aftur",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Ef þú smellir á þennan hnapp mun Facebook geta fylgst með heimsókn þinni á þessu vefsvæði.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ef þú notar raunverulegt tölvupóstfang þitt hér gæti Facebook rakið ferðir þínar. Smelltu til að vita meira um þetta.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
