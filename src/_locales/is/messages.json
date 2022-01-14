@@ -253,6 +253,10 @@
     "message": "Leyfa Facebook að fylgjast með þér hér?",
     "description": ""
   },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Þetta vefsvæði getur deilt tölvupóstfanginu þínu með Facebook, sem gerir Facebook kleift að fylgjast með þér. Notaðu þjónustu á borð við Firefox Relay til að fela raunverulega tölvupóstfangið þitt.",
+    "description": ""
+  },
   "btn-relay-dismiss": {
     "message": "Hafna",
     "description": ""
