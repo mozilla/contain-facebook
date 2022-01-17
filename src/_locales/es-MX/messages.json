@@ -202,7 +202,7 @@
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "¿Quitar el sitio de Facebook Container?",
+    "message": "¿Eliminar el sitio de Facebook Container?",
     "description": ""
   },
   "remove-site-p1": {
