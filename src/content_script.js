@@ -343,10 +343,10 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
+        e.preventDefault();
         return false;
       } 
 
-      e.preventDefault();
       allowClickSwitch = true;
       browser.runtime.sendMessage({
         message: "add-domain-to-list"
