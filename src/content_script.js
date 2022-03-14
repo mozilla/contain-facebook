@@ -268,6 +268,14 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
   return false;
 }
 
+function openLoginPrompt(parent, el, htmlBadgeDiv) {
+  parent.classList.toggle("active");
+  positionPrompt( htmlBadgeDiv );
+  el.classList.toggle("js-fbc-prompt-active");
+  document.body.classList.toggle("js-fbc-prompt-active");
+  htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus()
+}
+
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
 
@@ -300,6 +308,11 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Show/hide prompt if login element
   if (socialAction === "login"){
     target.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
+      
       if (allowClickSwitch) {
         // Button disabled. Either will trigger new HTTP request or page will refresh.
         setTimeout(()=>{
@@ -310,32 +323,42 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         // Click badge, button disabled
         e.preventDefault();
         e.stopPropagation();
-        htmlBadgeFragmentFenceDiv.click();
+        openLoginPrompt(htmlBadgeFragmentFenceDiv.parentElement, target, htmlBadgeDiv);
       }
     });
 
-
-
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
+      
       e.preventDefault();
-      e.target.parentElement.classList.toggle("active");
-      positionPrompt( htmlBadgeDiv );
-      target.classList.toggle("js-fbc-prompt-active");
-      document.body.classList.toggle("js-fbc-prompt-active");
+      openLoginPrompt(e.target.parentElement, target, htmlBadgeDiv);
     });
 
     // Add to Container "Allow"
     htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
+
       e.preventDefault();
       allowClickSwitch = true;
       browser.runtime.sendMessage({
         message: "add-domain-to-list"
       });
+
       target.click();
     });
 
     // Close prompt
     htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
       e.preventDefault();
       document.body.classList.remove("js-fbc-prompt-active");
       document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
@@ -343,6 +366,10 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     });
   } else if (socialAction === "email") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
       e.preventDefault();
       e.target.parentElement.classList.toggle("active");
       positionPrompt( htmlBadgeDiv );
@@ -351,12 +378,23 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     });
 
     // Add to Container "Allow"
-    htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", () => {
+    htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
+      
+
       window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=Facebook%20Container&utm_content=Try%20Firefox%20Relay");
     });
 
     // Dismiss email/relay prompt
-    htmlEmailBadgeFragmentPromptButtonDismiss.addEventListener("click", ()=>{
+    htmlEmailBadgeFragmentPromptButtonDismiss.addEventListener("click", (e)=>{
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
+      
       closePrompt();
       const activeBadge = document.querySelector("." + badgeClassUId);
       activeBadge.style.display = "none";
