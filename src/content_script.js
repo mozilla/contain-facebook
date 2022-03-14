@@ -690,7 +690,7 @@ async function detectFacebookOnPage () {
 
   // Check if user dismissed the Relay prompt
   const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
-  if (!relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage) {
+  if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage) {
     patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
     updateSettings();
   }
