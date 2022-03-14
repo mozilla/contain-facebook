@@ -275,7 +275,7 @@ function openLoginPrompt(parent, el, htmlBadgeDiv) {
   positionPrompt( htmlBadgeDiv );
   el.classList.toggle("js-fbc-prompt-active");
   document.body.classList.toggle("js-fbc-prompt-active");
-  htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus()
+  htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
 }
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
