@@ -14,44 +14,46 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[class*='FacebookConnectButton']",
   "[class*='js-facebook-login']", // kickstarter
   ".signup__button.button--facebook", // massdrop
-  "[class*='signinInitialStep_fbButton']", // soundcloud
   "[id*='signin_fb_btn']", // Ebay
-  "[class*='facebookV2Login']", // emag.ro
-  "[class*='btn-facebook-signin']", // estadao.com.br
+  ".btn-social.facebook", // emag.ro
+  ".button-login.facebook-login", // estadao.com.br
   "[class*='signup-provider-facebook']", // Fandom
   ".socialContainer-0-131 .mainFacebook-0-150", // Honey
   "[class*='facebook_login_click']", // Hi5
   "[data-test-id*='facebook-create-button']", // Doordash
-  "[class*='facebook-signup-button']", // Strava
+  "[class*='FacebookButton--facebook-button']", // Strava
+  "#login_form > .facebook", // Strava
   "[class*='facebook-connect-button']", // Twitch
-  "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
-  "[href*='/sign_in/Facebook']", // bazqux.com
+  "[data-testid*='facebook-login']", // Spotify
+  ".logInWithButtons .logInWith.facebook", // bazqux.com
   "[href*='signin/facebook']",
-  "[href*='/auth/facebook']", // Producthunt
+  "[data-test*='login-with-facebook']", // Producthunt
   "[data-oauthserver*='facebook']", // Stackoverflow
-  "[class*='ModalLoginSignup-facebook-connect']", // Freelancer.com
-  "[id*='facebook_connect_button']", // Quora
-  "[data-action*='facebook-auth']", //Medium
+  ".puppeteer_test_login_button_facebook", // Quora
+  "[href*='connect/facebook']", //Medium
   "[data-login-with-facebook='']", // etsy
   "[data-destination*='facebook']",
-  "[data-partner*='facebook']", // AliExpress
+  ".fm-sns-item.facebook", // AliExpress
   ".social-login .button--facebook", // noovie.com
-  "#home_account_fb.unlogged-btn-facebook", // Deezer
-  "[class*='_1HC-DxGDAHiEbG3x6-vzL9']", // Match UK Login
-  ".social-login > button.btn-facebook", // GroupMe
+  "#home_account_fb", // Deezer
+  ".front-door .btn.btn-facebook", // GroupMe
   "[class*='meetup-signupModal-facebook']", // Meetup Signup Homepage
-  "#register-form--creds .button--facebook", // Meetup Signup Static Page
-  "#modal--register .button--facebook", // Meetup Signup Non-homepage
-  ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
+  "#facebook-register", // Meetup Signup Static Page
+  "[href*='https://www.facebook.com/v11.0/dialog/oauth']", // Meetup Signup Non-homepage
   ".fb-start .ybtn--social.ybtn--facebook", // Yelp
-  "form > .c-btn.c-btn--facebook.c-btn--icon.c-btn--full", // komoot
   "[aria-label*='Log in with Facebook']", // Tinder
+  ".registration__form .button.color-provider-facebook", // Bumble
+  "#facebookLoginButton", // eHarmony
   "[action*='facebook_login']", // Airbnb
   "[action*='facebook_signup']", // Airbnb
-  "[data-tag='login-form'] ~ span button[color='facebookBlue']", // Patreon
-  ".homepage-photo-leader .welcome-buttons div.btn-facebook", // Mixcloud homepage
-  ".modal-content .auth-form div.btn-facebook", // Mixcloud login modal
-  "[class*='fb-login']" // Default FB class name "fbc-login-button"
+  "#social-auth-provider-facebook-web", // VRBO
+  "[class*='FBLoginForm__Button']", // Mixcloud homepage
+  ".button.button--facebook", // Buzzfeed Login
+  "#js-facebook-oauth-login", // NY Times
+  "#login-facebook-button", // Indeed
+  ".btn-social-connect.btn-facebook", // Zillow (Zindex Issue)
+  "[class*='fb-login']", // Default FB class name "fbc-login-button"
+  ".fb-login-button" // Default FB class name "fbc-login-button"
 ];
 
 // TODO: Disarm click events on detected elements
@@ -268,6 +270,14 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
   return false;
 }
 
+function openLoginPrompt(parent, el, htmlBadgeDiv) {
+  parent.classList.toggle("active");
+  positionPrompt( htmlBadgeDiv );
+  el.classList.toggle("js-fbc-prompt-active");
+  document.body.classList.toggle("js-fbc-prompt-active");
+  htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
+}
+
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
 
@@ -300,6 +310,11 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Show/hide prompt if login element
   if (socialAction === "login"){
     target.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
+      
       if (allowClickSwitch) {
         // Button disabled. Either will trigger new HTTP request or page will refresh.
         setTimeout(()=>{
@@ -310,32 +325,42 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         // Click badge, button disabled
         e.preventDefault();
         e.stopPropagation();
-        htmlBadgeFragmentFenceDiv.click();
+        openLoginPrompt(htmlBadgeFragmentFenceDiv.parentElement, target, htmlBadgeDiv);
       }
     });
 
-
-
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
+      
       e.preventDefault();
-      e.target.parentElement.classList.toggle("active");
-      positionPrompt( htmlBadgeDiv );
-      target.classList.toggle("js-fbc-prompt-active");
-      document.body.classList.toggle("js-fbc-prompt-active");
+      openLoginPrompt(e.target.parentElement, target, htmlBadgeDiv);
     });
 
     // Add to Container "Allow"
     htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
-      e.preventDefault();
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        e.preventDefault();
+        return false;
+      } 
+
       allowClickSwitch = true;
       browser.runtime.sendMessage({
         message: "add-domain-to-list"
       });
+
       target.click();
     });
 
     // Close prompt
     htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
       e.preventDefault();
       document.body.classList.remove("js-fbc-prompt-active");
       document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
@@ -343,6 +368,10 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     });
   } else if (socialAction === "email") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
       e.preventDefault();
       e.target.parentElement.classList.toggle("active");
       positionPrompt( htmlBadgeDiv );
@@ -351,12 +380,23 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     });
 
     // Add to Container "Allow"
-    htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", () => {
+    htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
+      
+
       window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=Facebook%20Container&utm_content=Try%20Firefox%20Relay");
     });
 
     // Dismiss email/relay prompt
-    htmlEmailBadgeFragmentPromptButtonDismiss.addEventListener("click", ()=>{
+    htmlEmailBadgeFragmentPromptButtonDismiss.addEventListener("click", (e)=>{
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      } 
+      
       closePrompt();
       const activeBadge = document.querySelector("." + badgeClassUId);
       activeBadge.style.display = "none";
@@ -652,7 +692,7 @@ async function detectFacebookOnPage () {
 
   // Check if user dismissed the Relay prompt
   const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
-  if (!relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage) {
+  if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage) {
     patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
     updateSettings();
   }
