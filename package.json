@@ -9,7 +9,8 @@
     "test-functional": "mocha --reporter=progress test/functional/setup.js test/functional/*.test.js --timeout 60000",
     "test-functional-dev": "cross-env NODE_ENV=development npm run test-functional",
     "coverage": "nyc --reporter=html --reporter=text mocha --reporter=progress test/setup.js test/features/*.test.js --timeout 60000",
-    "build": "npm test && web-ext build --overwrite-dest -s src"
+    "build": "npm test && web-ext build --overwrite-dest -s src",
+    "dev": "web-ext run -s src"
   },
   "repository": {
     "type": "git",
@@ -37,10 +38,14 @@
     "psl": "^1.7.0",
     "sinon": "^7.3.2",
     "sinon-chai": "^3.0.0",
-    "webextensions-geckodriver": "^0.6.1",
+    "webextensions-geckodriver": "^0.7.0",
     "webextensions-jsdom": "^0.15.2"
   },
   "dependencies": {
-    "web-ext": "^3.1.1"
+    "web-ext": "^5.5.0"
+  },
+  "volta": {
+    "node": "12.22.6",
+    "npm": "6.14.15"
   }
 }
