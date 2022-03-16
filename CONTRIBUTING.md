@@ -28,7 +28,7 @@ Check first if the bug might already exist: https://github.com/mozilla/contain-f
 Patches should be submitted as pull requests. When submitting patches as PRs:
 
 - You agree to license your code under the project's open source license (MPL 2.0).
-- Base your branch off the current master (see below for an example workflow).
+- Base your branch off the current `main` (see below for an example workflow).
 - Add both your code and new tests if relevant.
 - Run `npm test` to make sure all tests still pass.
 - Please do not include merge commits in pull requests; include only commits with the new relevant code.

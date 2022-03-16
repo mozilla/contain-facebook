@@ -567,7 +567,7 @@ async function containFacebook (request) {
 }
 
 // Lots of this is borrowed from old blok code:
-// https://github.com/mozilla/blok/blob/master/src/js/background.js
+// https://github.com/mozilla/blok/blob/main/src/js/background.js
 async function blockFacebookSubResources (requestDetails) {
   if (requestDetails.type === "main_frame") {
     tabStates[requestDetails.tabId] = { trackersDetected: false };

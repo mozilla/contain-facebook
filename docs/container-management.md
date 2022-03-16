@@ -16,7 +16,7 @@ To **remove** a site from the Facebook Container, you can do the inverse, by nav
 
 Additionally, you can manage all the custom sites that have been added by clicking on "Sites Allowed in Facebook Container".  
 
-_*Note that [Facebook-owned domains](https://github.com/mozilla/contain-facebook/blob/master/src/background.js#L7-L23)_ cannot be removed. 
+_*Note that [Facebook-owned domains](https://github.com/mozilla/contain-facebook/blob/main/src/background.js#L7-L23)_ cannot be removed. 
 
 Once on that panel page, click the `X` next to the domain you would like to remove. 
 
