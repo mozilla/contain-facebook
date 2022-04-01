@@ -24,6 +24,10 @@
     "message": "Tiu ĉi emblemo aperas en la adresa strio de Firefox kiam vi vizitas retejojn posedatajn de Facebook aŭ retejojn aldonitajn de vi en Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "on-facebook-p2": {
+    "message": "Tiuj ĉi retejoj bezonas aliri vian identecon de Facebook (aŭ scii kiu vi estas) por funkcii. Tio ankaŭ signifas ke Facebook povas spuri ĉion, kion vi faras en tiuj ĉi retejoj.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
   "facebookContainer": {
     "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
@@ -55,5 +59,9 @@
   "learn-more": {
     "message": "Pli da informo",
     "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "btn-relay-try": {
+    "message": "Provi Firefox Relay",
+    "description": ""
   }
 }
