@@ -20,6 +20,10 @@
     "message": "En Facebook kaj retejoj izolitaj en Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "on-facebook-p1": {
+    "message": "Tiu ĉi emblemo aperas en la adresa strio de Firefox kiam vi vizitas retejojn posedatajn de Facebook aŭ retejojn aldonitajn de vi en Facebook Container.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "facebookContainer": {
     "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
