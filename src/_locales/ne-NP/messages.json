@@ -127,11 +127,11 @@
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   },
   "btn-arrow-back": {
-    "message": "अघिल्लो प्यानलमा फर्कनुहोस्।",
+    "message": "पछिल्लो प्यानलमा फर्कनुहोस्",
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "कसरी Facebook Container काम गर्दछ मा जानुहोस्",
+    "message": "फेसबुक कन्टेनर कार्यविधि मा जानुहोस",
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   },
   "no-trackers-subhead": {
@@ -147,15 +147,15 @@
     "description": "This is a link that opens a page with more information about Facebook Container."
   },
   "how-fbc-works": {
-    "message": "कसरी फेसबुक Container काम गर्दछ",
+    "message": "फेसबुक कन्टेनर ले कसरी काम गर्दछ",
     "description": "This is a button that opens the Facebook Container onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "हामीले तपाईंलाई फेसबुकबाट सुरक्षित गरेका छौं।",
+    "message": "हामीले तपाईंलाई फेसबुक ट्र्याकर्स हरुबाट सुरक्षित राखेका छौं।",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "किनमेल, समाचार र अन्य साइटहरूमा देखा पर्ने फेसबुक बटनहरूमा ट्र्याकरहरू हुन्छन् जसले फेसबुकलाई तपाइँ वेबमा कहाँ पुग्नुभएको छ भनी बताउँछन्। यदि तपाइँ यी बटनहरू लाईक वा सेयर गर्न प्रयोग गर्नुहुन्न भने पनि, ट्र्याकरहरूले अझै पनि तपाइँको ब्राउजिङ्गको बारेमा डेटा सङ्कलन गर्न सक्छन्। फेसबुक कन्टेनरले यी ट्र्याकरहरूलाई रोक्दछ।",
+    "message": "किनमेल, समाचार तथा अन्य साइटहरूमा देखा पर्ने फेसबुकका सांकेतिक बटनहरूमा ट्र्याकरहरू हुन्छन् जसले फेसबुकलाई तपाइँ वेबमा कहाँ पुग्नुभएको छ भनी बताउँछन्। यी बटनहरू लाईक वा सेयर गर्न प्रयोग नगरेता पनि, ट्र्याकरहरूले तपाइँको ब्राउजिङ्गको गतिविधि सम्बन्धी डेटा सङ्कलन गर्न सक्छन्। फेसबुक कन्टेनरले यी ट्र्याकरहरूलाई रोक्दछ ।",
     "description": ""
   },
   "trackers-detected-p2": {
@@ -163,7 +163,7 @@
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "ढालसङ्ग फेसबुक कन्टेनर बार।",
+    "message": "फेसबुक कन्टेनर सुरक्षा कवज झै तैनाथ ।",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
@@ -183,7 +183,7 @@
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "फेसबुक कन्टेनरले फेसबुकको स्वामित्वमा रहेका साइटहरूलाई सीमाभित्र राख्दछ। तपाइँ अन्य साइटहरूलाई सीमा भित्र अनुमति दिन सक्नुहुन्छ, तर यसले फेसबुकलाई तपाइँको वेब ब्राउजिङ्गको थप ट्र्याक गर्न अनुमति दिनेछ।"
+    "message": "फेसबुक कन्टेनरले फेसबुकको स्वामित्वमा रहेका साइटहरूलाई लक्ष्मण घेरा भित्र सीमित गरीदिन्छ। अन्य साइटहरूलाई तपाइँ सीमा भित्र प्रवेश पाउने अनुमति दिन सक्नुहुन्छ, फलत : यसले फेसबुकलाई तपाइँको वेब ब्राउजिङ्ग गतिविधि थप ट्र्याक गर्न अनुमति दिनेछ ।"
   },
   "remove": {
     "message": "हटाउनुहोस्",
@@ -198,7 +198,7 @@
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "यो फेसबुकको स्वामित्वमा रहेको साइट भएकाले हो, यसलाई फेसबुक कन्टेनरबाट हटाउन सकिँदैन।",
+    "message": "यो फेसबुकको स्वामित्वमा रहेको साइट भएकाले , यसलाई फेसबुक कन्टेनरबाट हटाउन मिल्दैन ।",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
@@ -206,19 +206,19 @@
     "description": ""
   },
   "remove-site-p1": {
-    "message": "यस साइटलाई फेसबुक कन्टेनरबाट हटाउनु भनेको फेसबुकको साथ लग इन सुविधाले अब काम गर्ने छैन र फेसबुक ट्र्याकिङ्ग कुकीजहरू मेटाइनेछ।",
+    "message": "यस साइटलाई फेसबुक कन्टेनरबाट हटाउनु भनेको फेसबुकको-साथ-लग-इन सुविधाले यस पश्चात काम गर्ने छैन र फेसबुक ट्र्याकिङ्ग कुकीजहरू मेटाइनेछ ।",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " यदि तपाइँ फेरि फेसबुकमा लग इन प्रयोग गर्न चाहानुहुन्छ भने, तपाइँ यसलाई फेसबुक कन्टेनरमा थप्न आवश्यक छ।",
+    "message": " यदि तपाइँ पुन: फेसबुकको-साथ-लग-इन सेवा प्रयोग गर्न चाहानुहुन्छ भने, तपाइँले यसलाई फेसबुक कन्टेनरमा थप्न आवश्यक छ ।",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "यस साइटमा फेसबुक ट्र्याकिङ्गलाई अनुमति दिन चाहानुहुन्छ?",
+    "message": "के तपाइँ यस साइटमा फेसबुक ट्र्याकिङ्गलाई अनुमति दिन चाहानुहुन्छ ?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "यसले तपाइँलाई फेसबुकमा लग इन गर्न दिन्छ, तर तपाइँले यस साइटमा के गर्नुहुन्छ, त्यसलाई पछ्याउन फेसबुकलाई अनुमति दिन्छ।",
+    "message": "यसले तपाइँलाई फेसबुकमा लग इन गर्न दिन्छ, साथै तपाईले यस साइटमा गर्ने सम्पुर्ण गतिविधि हरु पनि फेसबुकले पछ्याउन फेसबुकलाई अनुमति दिन्छ ।",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
@@ -230,7 +230,7 @@
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "तपाईंलाई फेसबुकलाई यहाँ ट्र्याक गर्न अनुमति दिनुहुन्छ?",
+    "message": "के तपाईं फेसबुकलाई यहाँ ट्र्याक गर्न अनुमति दिनुहुन्छ ?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
@@ -246,11 +246,11 @@
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "यदि यहाँ तपाईंले आफ्नो वास्तविक इमेल ठेगाना प्रयोग गर्नुभयो भने, फेसबुकले तपाईंलाई ट्र्याक गर्न सक्षम हुन सक्छ। थप जान्नको लागि क्लिक गर्नुहोस्।",
+    "message": "यदि यहाँ तपाईंले आफ्नो वास्तविक इमेल ठेगाना प्रयोग गर्नुभयो भने, फेसबुकले तपाईंलाई ट्र्याक गर्न सक्षम हुनेछ । थप जान्नको लागि क्लिक गर्नुहोस् ।",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "तपाईंलाई फेसबुकलाई यहाँ ट्र्याक गर्ने अनुमति दिनुहुन्छ?",
+    "message": "के तपाईंलाई फेसबुकले यहाँ ट्र्याक गर्ने अनुमति दिनुहुन्छ ?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
