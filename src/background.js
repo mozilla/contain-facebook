@@ -72,10 +72,22 @@ async function buildBlockList() {
     }
   }
 
-
-
   return FACEBOOK_DOMAINS;
 }
+
+const MAC_ADDON_ID = "@testpilot-containers";
+const RELAY_ADDON_ID = "private-relay@firefox.com";
+
+let macAddonEnabled = false;
+let relayAddonEnabled = false;
+let facebookCookieStoreId = null;
+
+// TODO: refactor canceledRequests and tabsWaitingToLoad into tabStates
+const canceledRequests = {};
+const tabsWaitingToLoad = {};
+const tabStates = {};
+
+const facebookHostREs = [];
 
 async function updateSettings(data){
   let fbcStorage = await browser.storage.local.get();
@@ -98,36 +110,6 @@ async function checkSettings(setting){
     return fbcStorage.settings[setting];
   }
 
-  return fbcStorage.settings;
-}
-
-const MAC_ADDON_ID = "@testpilot-containers";
-const RELAY_ADDON_ID = "private-relay@firefox.com";
-
-let macAddonEnabled = false;
-let relayAddonEnabled = false;
-let facebookCookieStoreId = null;
-
-// TODO: refactor canceledRequests and tabsWaitingToLoad into tabStates
-const canceledRequests = {};
-const tabsWaitingToLoad = {};
-const tabStates = {};
-
-const facebookHostREs = [];
-
-async function updateSettings(data){
-  await browser.storage.local.set({
-    "settings": data
-  });
-}
-
-async function checkSettings(setting){
-  let fbcStorage = await browser.storage.local.get();
-
-  if (setting) {
-    return fbcStorage.settings[setting];
-  }
-
   if (fbcStorage.settings) {
     return fbcStorage.settings;
   }
@@ -137,7 +119,6 @@ async function checkSettings(setting){
   });
 
 }
-
 
 async function isRelayAddonEnabled () {
   try {

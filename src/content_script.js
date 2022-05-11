@@ -31,6 +31,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-oauthserver*='facebook']", // Stackoverflow
   ".puppeteer_test_login_button_facebook", // Quora
   "[href*='connect/facebook']", //Medium
+  "[href*='/signin/facebook']", //Imgur
   "[data-login-with-facebook='']", // etsy
   "[data-destination*='facebook']",
   ".fm-sns-item.facebook", // AliExpress
@@ -794,11 +795,11 @@ browser.runtime.onMessage.addListener(message => {
 // let callCount = 0;
 let contentScriptDelay = 999;
 
-async function getUserSettings(setting) {
+async function getUserSettings(setting = null) {
   // Send request to background to parse URL via PSL
   const localStorage = await browser.storage.local.get();
 
-  if (localStorage.settings) {
+  if (localStorage.settings && setting === "hideBadgeContent") {
     return localStorage.settings.hideBadgeContent;
   }
 
