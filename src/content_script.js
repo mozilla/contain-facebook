@@ -187,7 +187,6 @@ function createBadgeFragment (socialAction) {
   // Create Prompt/Allow Dialog
   if (socialAction === "login"){
 
-    console.log("this still works");
     // loginItem.classList.remove(".is-hidden");
     
 
