@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Firefox Relay</title>
+    <link rel="stylesheet" href="content_script.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <h1>Facebook Container</h1>
+    </header>
+
+    <main class="fbc-badge-prompt">
+
+        <!-- Login -->
+        <section id="fbc-login" class="is-hidden">
+            <div class="fbc-badge-prompt-contents">
+                <p>Allow Facebook to track you here?</p>
+                <p>If you want to use log in with Facebook then Facebook will then be able to track your activity on
+                    this
+                    site. This can help them build a fuller picture of your online life.</p>
+            </div>
+
+            <div class="fbc-badge-prompt-buttons">
+                <button class="fbc-badge-prompt-btn-cancel">Cancel</button>
+                <button class="fbc-badge-prompt-btn-allow">Allow</button>
+            </div>
+        </section>
+
+        <!-- Email -->
+        <section id="fbc-email" class="is-hidden">
+            <div class="fbc-badge-prompt-contents">
+                <p>Allow Facebook to track you here?</p>
+                <p>This site can share your email address with Facebook, which allows Facebook to track you. Use a service like Firefox Relay to hide your real email address.</p>
+            
+                <div class="fbc-badge-prompt-dontShowAgain-checkbox">
+                    <input type="checkbox" id="hideRelayEmailBadges" class="fbc-badge-prompt-dontShowAgain-checkbox-input settings-checkbox">
+                    <label for="hideRelayEmailBadges">Don't show again</label>
+                </div>
+                <div class="fbc-badge-prompt-buttons">
+                    <button class="fbc-badge-prompt-btn-cancel">Cancel</button>
+                    <button class="fbc-badge-prompt-btn-allow">Try Firefox Relay</button>
+                </div>
+            
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+<script src="inpage-content.js"></script>
+
+
+</html>

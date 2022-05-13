@@ -1,3 +1,17 @@
+
+
+body {
+    --blue60: #0060df;
+    --blue70: #003eaa;
+    --primaryText: #0c0c0d;
+    --secondaryText: #737373;
+    --grey20: #ededf0;
+    --transition: all .15s cubic-bezier(.07,.95,0,1);
+    --borders: 1px solid #ededf0;
+    font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+
 /* Button Replacement */
 .fbc-loginButton {
 	background-size: contain;
@@ -47,7 +61,7 @@
 .fbc-badge {
 	all: initial;
 	position: absolute;
-	z-index: 100;
+	z-index: 999999999999999;
 	transition: opacity 0.2s ease-out;
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	--transition: all .15s cubic-bezier(.07,.95,0,1);
@@ -125,20 +139,35 @@
 	opacity: 1;
 }
 
-.fbc-badge-prompt {
-	display: none;
-	width: 345px;
+.fbc-wrapper{
+	position: fixed;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.1);
+	/* animation: 0.2s ease forwards; */
+  }
+
+.fbc-iframe iframe {
+	/* position: absolute; */
+
+	/* width: 345px;
 	position: absolute;
 	left: calc( 100% + 20px);
 	top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
 	color: var(--black);
 	box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2);
 	border: 1px solid rgba(0,0,0,0.2);
 	padding: 0 0 40px;
+	background: rgb(235, 235, 235);
 }
 
-.fbc-badge-prompt:after {
+.fbc-iframe::after {
 	content: " ";
 	position: absolute;
 	left: -10px;
@@ -151,33 +180,33 @@
 	border-color: transparent var(--white) transparent;
 }
 
-.fbc-badge-prompt-align-right .fbc-badge-prompt {
+.fbc-badge-prompt-align-right .fbc-iframe {
 	left: auto;
 	right: calc( 100% + 20px);
 }
 
-.fbc-badge-prompt-align-right .fbc-badge-prompt:after {
+.fbc-badge-prompt-align-right .fbc-iframe {
 	left: auto;
 	right: -10px;
 	border-width: 10px 0 10px 10px;
 }
 
-.fbc-badge-prompt-align-top .fbc-badge-prompt {
+.fbc-badge-prompt-align-top .fbc-iframe {
 	top: -7px;
 	transform: none;
 }
 
-.fbc-badge-prompt-align-top .fbc-badge-prompt:after {
+.fbc-badge-prompt-align-top .fbc-iframe:after {
 	top: 16px;
 }
 
-.fbc-badge-prompt-align-bottom .fbc-badge-prompt {
+.fbc-badge-prompt-align-bottom .fbc-iframe {
 	top: auto;
 	bottom: -20px;
 	transform: none;
 }
 
-.fbc-badge-prompt-align-bottom .fbc-badge-prompt:after {
+.fbc-badge-prompt-align-bottom .fbc-iframe:after {
 	display: none;
 }
 
@@ -347,3 +376,7 @@
 	right: -10px;
 	border-width: 10px 0 10px 10px;
 } */
+
+.is-hidden {
+    display: none;
+}
