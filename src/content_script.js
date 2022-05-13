@@ -170,6 +170,9 @@ function settingsCheckboxListener(){
 
 function createBadgeFragment (socialAction) {
   const htmlBadgeFragment = document.createDocumentFragment();
+ 
+
+  // const emailContent = document.querySelector(".fbc-email");
 
   for (let className of fragmentClasses) {
     const div = document.createElement("div");
@@ -183,36 +186,43 @@ function createBadgeFragment (socialAction) {
 
   // Create Prompt/Allow Dialog
   if (socialAction === "login"){
-    const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
 
-    const htmlBadgeFragmentPromptH1 = document.createElement("h1");
+    console.log("this still works");
+    // loginItem.classList.remove(".is-hidden");
+    
 
-    htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
-    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
+    // loginContent.classList.remove("is-hidden");
+    // const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
 
-    const htmlBadgeFragmentPromptContents = document.createElement("div");
-    htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
+    // const htmlBadgeFragmentPromptH1 = document.createElement("h1");
 
-    for (let promptParagraphString of htmlBadgeFragmentPromptParagraphStrings) {
-      const paragraph = document.createElement("p");
-      paragraph.appendChild(document.createTextNode(promptParagraphString));
-      htmlBadgeFragmentPromptContents.appendChild(paragraph);
-    }
+    // htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
+    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
 
-    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
+    // const htmlBadgeFragmentPromptContents = document.createElement("div");
+    // htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
 
-    const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
-    htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
+    // for (let promptParagraphString of htmlBadgeFragmentPromptParagraphStrings) {
+    //   const paragraph = document.createElement("p");
+    //   paragraph.appendChild(document.createTextNode(promptParagraphString));
+    //   htmlBadgeFragmentPromptContents.appendChild(paragraph);
+    // }
 
-    for (let buttonString of htmlBadgeFragmentPromptButtonStrings) {
-      const button = document.createElement("button");
-      button.className = "fbc-badge-prompt-" + buttonString;
-      button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
-      htmlBadgeFragmentPromptButtonDiv.appendChild(button);
-    }
+    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
 
-    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
+    // const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
+    // htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
+
+    // for (let buttonString of htmlBadgeFragmentPromptButtonStrings) {
+    //   const button = document.createElement("button");
+    //   button.className = "fbc-badge-prompt-" + buttonString;
+    //   button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
+    //   htmlBadgeFragmentPromptButtonDiv.appendChild(button);
+    // }
+
+    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
   } else if (socialAction === "email") {
+ 
     const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
 
     const htmlBadgeFragmentPromptH1 = document.createElement("h1");
@@ -276,12 +286,60 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
   return false;
 }
 
-function openLoginPrompt(parent, el, htmlBadgeDiv) {
-  parent.classList.toggle("active");
-  positionPrompt( htmlBadgeDiv );
-  el.classList.toggle("js-fbc-prompt-active");
-  document.body.classList.toggle("js-fbc-prompt-active");
-  htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
+
+function createElementWithClassList(elemType, elemClass) {
+  const newElem = document.createElement(elemType);
+  newElem.classList.add(elemClass);
+  return newElem;
+}
+
+
+function buildInpageIframe(socialAction) {
+  const div = createElementWithClassList(
+    "div",
+    "fbc-iframe"
+  );
+  const iframe = document.createElement("iframe");
+  iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}`);
+  iframe.width = 350;
+  // This height is derived from the Figma file. However, this is just the starting instance of the iframe/inpage menu. After it's built out, it resizes itself based on the inner contents.
+  iframe.height = 300;
+  iframe.title = browser.i18n.getMessage("facebookContainer");
+  iframe.tabIndex = 0;
+  iframe.ariaHidden = "false";
+  iframe.id = socialAction;
+
+  div.appendChild(iframe);
+
+  return div;
+}
+
+function injectIframeOntoPage(socialAction) {
+  const fbcContent = buildInpageIframe(socialAction);
+  const fbcWrapper = createElementWithClassList(
+      "div",
+      "fbc-wrapper"
+    );
+  fbcWrapper.appendChild(fbcContent);
+  document.body.appendChild(fbcWrapper);
+
+  return;
+}
+
+
+function openLoginPrompt(socialAction) {
+  const hasFbcWrapper = document.querySelector('.fbc-wrapper');
+  if(!hasFbcWrapper) {
+    injectIframeOntoPage(socialAction);
+  } else {
+    hasFbcWrapper.remove();
+  }
+  // buildInpageIframe().classList.toggle("active");
+  // parent.classList.toggle("active");
+  // positionPrompt( htmlBadgeDiv );
+  // el.classList.toggle("js-fbc-prompt-active");
+  // document.body.classList.toggle("js-fbc-prompt-active");
+  // htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
 }
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
@@ -331,7 +389,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         // Click badge, button disabled
         e.preventDefault();
         e.stopPropagation();
-        openLoginPrompt(htmlBadgeFragmentFenceDiv.parentElement, target, htmlBadgeDiv);
+        openLoginPrompt("login");
       }
     });
 
@@ -342,7 +400,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       }
 
       e.preventDefault();
-      openLoginPrompt(e.target.parentElement, target, htmlBadgeDiv);
+      openLoginPrompt("login");
     });
 
     // Add to Container "Allow"
@@ -379,10 +437,11 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         return false;
       }
       e.preventDefault();
-      e.target.parentElement.classList.toggle("active");
-      positionPrompt( htmlBadgeDiv );
-      target.classList.toggle("js-fbc-prompt-active");
-      document.body.classList.toggle("js-fbc-prompt-active");
+      openLoginPrompt("email");
+      // e.target.parentElement.classList.toggle("active");
+      // positionPrompt( htmlBadgeDiv );
+      // target.classList.toggle("js-fbc-prompt-active");
+      // document.body.classList.toggle("js-fbc-prompt-active");
     });
 
     // Add to Container "Allow"
@@ -514,10 +573,10 @@ function isVisible(target) {
 
 function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
-  if ( target === null ) {
-    htmlBadgeDiv.classList.add("fbc-badge-disabled");
-    return false;
-  }
+  // if ( target === null ) {
+  //   htmlBadgeDiv.classList.add("fbc-badge-disabled");
+  //   return false;
+  // }
 
   const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
 
@@ -671,7 +730,9 @@ function patternDetection(selectionArray, socialActionIntent, target) {
 
   for (let item of target.querySelectorAll(querySelector)) {
     // overlay the FBC icon badge on the item
-    if (!item.classList.contains("fbc-has-badge") && !isPinterest(item) && !parentIsBadged(item)) {
+    const hasBadge = document.querySelector('.fbc-badge');
+    if (!hasBadge && !isPinterest(item) && !parentIsBadged(item)) {
+      console.log(hasBadge);
       const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
       const itemUIDClassTarget = "js-" + itemUIDClassName;
       const socialAction = socialActionIntent;
