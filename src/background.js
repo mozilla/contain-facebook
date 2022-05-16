@@ -578,6 +578,7 @@ async function updateBrowserActionIcon (tab) {
   const mozPageURLCheck = url.startsWith("moz-");
 
   if (isFacebookURL(url)) {
+    // TODO: Add logic with this check to continue to block Instagram resources 
     // TODO: change panel logic from browser.storage to browser.runtime.onMessage
     // so the panel.js can "ask" background.js which panel it should show
     browser.storage.local.set({"CURRENT_PANEL": "on-facebook"});
