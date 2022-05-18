@@ -167,7 +167,7 @@ body {
 	background: rgb(235, 235, 235);
 }
 
-.fbc-iframe::after {
+iframe::after {
 	content: " ";
 	position: absolute;
 	left: -10px;
@@ -180,33 +180,33 @@ body {
 	border-color: transparent var(--white) transparent;
 }
 
-.fbc-badge-prompt-align-right .fbc-iframe {
+.fbc-badge-prompt-align-right iframe {
 	left: auto;
 	right: calc( 100% + 20px);
 }
 
-.fbc-badge-prompt-align-right .fbc-iframe {
+.fbc-badge-prompt-align-right iframe {
 	left: auto;
 	right: -10px;
 	border-width: 10px 0 10px 10px;
 }
 
-.fbc-badge-prompt-align-top .fbc-iframe {
+.fbc-badge-prompt-align-top iframe {
 	top: -7px;
 	transform: none;
 }
 
-.fbc-badge-prompt-align-top .fbc-iframe:after {
+.fbc-badge-prompt-align-top iframe:after {
 	top: 16px;
 }
 
-.fbc-badge-prompt-align-bottom .fbc-iframe {
+.fbc-badge-prompt-align-bottom iframe {
 	top: auto;
 	bottom: -20px;
 	transform: none;
 }
 
-.fbc-badge-prompt-align-bottom .fbc-iframe:after {
+.fbc-badge-prompt-align-bottom iframe:after {
 	display: none;
 }
 

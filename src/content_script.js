@@ -314,6 +314,7 @@ function injectIframeOntoPage(socialAction) {
       "fbc-wrapper"
     );
   fbcWrapper.appendChild(fbcContent);
+  positionPrompt(fbcContent);
   document.body.appendChild(fbcWrapper);
 
   return;
