@@ -16,3 +16,20 @@ if (action === "email") {
 
 const fbcTitle = document.querySelector(".fbc-title");
 fbcTitle.innerHTML = browser.i18n.getMessage("facebookContainer");
+
+const fbcPromptSubtitleLogin = document.querySelector(".fbc-subtitle-login");
+fbcPromptSubtitleLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-prompt-p1");
+
+const fbcPromptBodyTextLogin = document.querySelector(".fbc-bodytext-login");
+fbcPromptBodyTextLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-prompt-p2");
+
+const fbcPromptSubtitleEmail =  browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1");
+const fbcPromptBodyTextEmail = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2");
+
+const fbcPromptAllow = document.querySelector(".fbc-badge-prompt-btn-cancel");
+const fbcPromptCancel = browser.i18n.getMessage("fbc-badge-prompt-btn-allow");
+
+fbcPromptAllow.innerHTML = browser.i18n.getMessage("btn-allow");
+fbcPromptCancel.innerHTML = browser.i18n.getMessage("btn-cancel");
+
+
