@@ -13,3 +13,6 @@ if (action === "login") {
 if (action === "email") {
     emailItem.classList.remove("is-hidden");
 }
+
+const fbcTitle = document.querySelector(".fbc-title");
+fbcTitle.innerHTML = browser.i18n.getMessage("facebookContainer");
