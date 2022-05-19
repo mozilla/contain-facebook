@@ -25,7 +25,7 @@
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p2": {
-    "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობაზე წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
+    "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობასთან წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   },
   "notOnFacebookHeader": {
@@ -75,7 +75,7 @@
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობაზე წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
+    "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობასთან წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding4-subhead": {
