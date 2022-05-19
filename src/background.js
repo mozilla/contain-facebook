@@ -30,6 +30,8 @@ const FACEBOOK_DOMAINS = [
   "bulletin.com", "facebookbrand.com",
 
   "novi.com"
+  
+  "mapillary.com"
 ];
 
 const DEFAULT_SETTINGS = {
