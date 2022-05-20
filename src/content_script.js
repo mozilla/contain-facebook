@@ -431,32 +431,33 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     });
 
     // Add to Container "Allow"
-    htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
-      if (!e.isTrusted) {
-        // The click was not user generated so ignore
-        e.preventDefault();
-        return false;
-      } 
+    
+    // htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
+    //   if (!e.isTrusted) {
+    //     // The click was not user generated so ignore
+    //     e.preventDefault();
+    //     return false;
+    //   } 
 
-      allowClickSwitch = true;
-      browser.runtime.sendMessage({
-        message: "add-domain-to-list"
-      });
+    //   allowClickSwitch = true;
+    //   browser.runtime.sendMessage({
+    //     message: "add-domain-to-list"
+    //   });
 
-      target.click();
-    });
+    //   target.click();
+    // });
 
     // Close prompt
-    htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
-      if (!e.isTrusted) {
-        // The click was not user generated so ignore
-        return false;
-      } 
-      e.preventDefault();
-      document.body.classList.remove("js-fbc-prompt-active");
-      document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
-      e.target.parentElement.parentNode.parentNode.classList.remove("active");
-    });
+    // htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
+    //   if (!e.isTrusted) {
+    //     // The click was not user generated so ignore
+    //     return false;
+    //   } 
+    //   e.preventDefault();
+    //   document.body.classList.remove("js-fbc-prompt-active");
+    //   document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
+    //   e.target.parentElement.parentNode.parentNode.classList.remove("active");
+    // });
   } else if (socialAction === "email") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       if (!e.isTrusted) {
