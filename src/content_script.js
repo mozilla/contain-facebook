@@ -344,7 +344,7 @@ function positionIframe(fencePos) {
   // console.log("this works");
 }
 
-function openLoginPrompt(socialAction, fencePos) {
+function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv) {
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
   if(!hasFbcWrapper) {
     injectIframeOntoPage(socialAction);
@@ -360,7 +360,7 @@ function openLoginPrompt(socialAction, fencePos) {
   positionPrompt( htmlBadgeDiv );
   // el.classList.toggle("js-fbc-prompt-active");
   // document.body.classList.toggle("js-fbc-prompt-active");
-  // htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
+  htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
 }
 
 
@@ -415,8 +415,8 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       } else {
         // Click badge, button disabled
         e.preventDefault();
-        e.stopPropagation();
-        openLoginPrompt("login", htmlBadgeFragmentFenceDiv);
+        // e.stopPropagation();
+        openLoginPrompt("login", htmlBadgeFragmentFenceDiv.parentElement, htmlBadgeDiv);
       }
     });
 
@@ -426,9 +426,8 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         return false;
       } 
       
-      e.preventDefault();
       e.stopPropagation();
-      openLoginPrompt("login", htmlBadgeFragmentFenceDiv);
+      openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv);
     });
 
     // Add to Container "Allow"
@@ -465,7 +464,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         return false;
       } 
       e.preventDefault();
-      openLoginPrompt("email", htmlBadgeFragmentFenceDiv);
+      openLoginPrompt("email", htmlBadgeFragmentFenceDiv, htmlBadgeDiv);
       // e.target.parentElement.classList.toggle("active");
       positionPrompt( htmlBadgeDiv );
       // target.classList.toggle("js-fbc-prompt-active");
