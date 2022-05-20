@@ -446,22 +446,33 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     });
 
     // Add to Container "Allow"
+<<<<<<< HEAD
     htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
         e.preventDefault();
         return false;
       }
+=======
+    
+    // htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
+    //   if (!e.isTrusted) {
+    //     // The click was not user generated so ignore
+    //     e.preventDefault();
+    //     return false;
+    //   } 
+>>>>>>> 3043993 (debug screenupdate method)
 
-      allowClickSwitch = true;
-      browser.runtime.sendMessage({
-        message: "add-domain-to-list"
-      });
+    //   allowClickSwitch = true;
+    //   browser.runtime.sendMessage({
+    //     message: "add-domain-to-list"
+    //   });
 
-      target.click();
-    });
+    //   target.click();
+    // });
 
     // Close prompt
+<<<<<<< HEAD
     htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
@@ -472,6 +483,18 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
       e.target.parentElement.parentNode.parentNode.classList.remove("active");
     });
+=======
+    // htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
+    //   if (!e.isTrusted) {
+    //     // The click was not user generated so ignore
+    //     return false;
+    //   } 
+    //   e.preventDefault();
+    //   document.body.classList.remove("js-fbc-prompt-active");
+    //   document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
+    //   e.target.parentElement.parentNode.parentNode.classList.remove("active");
+    // });
+>>>>>>> 3043993 (debug screenupdate method)
   } else if (socialAction === "email") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       if (!e.isTrusted) {
