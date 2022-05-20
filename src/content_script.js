@@ -294,23 +294,24 @@ function createElementWithClassList(elemType, elemClass) {
 
 
 function buildInpageIframe(socialAction) {
-  const div = createElementWithClassList(
-    "div",
-    "fbc-iframe"
-  );
+  // const div = createElementWithClassList(
+  //   "div",
+  //   "fbc-iframe"
+  // );
   const iframe = document.createElement("iframe");
   iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}`);
   iframe.width = 350;
   // This height is derived from the Figma file. However, this is just the starting instance of the iframe/inpage menu. After it's built out, it resizes itself based on the inner contents.
-  iframe.height = 300;
+  iframe.height = 350;
   iframe.title = browser.i18n.getMessage("facebookContainer");
   iframe.tabIndex = 0;
   iframe.ariaHidden = "false";
   iframe.id = socialAction;
+  iframe.classList.add("fbc-content-box");
 
-  div.appendChild(iframe);
+  // div.appendChild(iframe);
 
-  return div;
+  return iframe;
 }
 
 function injectIframeOntoPage(socialAction) {
@@ -320,7 +321,7 @@ function injectIframeOntoPage(socialAction) {
       "fbc-wrapper"
     );
   fbcWrapper.appendChild(fbcContent);
-  positionPrompt(fbcContent);
+  // positionPrompt(fbcContent);
   document.body.appendChild(fbcWrapper);
 
   return;
@@ -334,12 +335,27 @@ function openLoginPrompt(socialAction) {
   } else {
     hasFbcWrapper.remove();
   }
+
   // buildInpageIframe().classList.toggle("active");
   // parent.classList.toggle("active");
   // positionPrompt( htmlBadgeDiv );
   // el.classList.toggle("js-fbc-prompt-active");
   // document.body.classList.toggle("js-fbc-prompt-active");
   // htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
+}
+
+function handleIframeClosure() {
+  const iframeBox = document.querySelector(".fbc-content-box");
+
+  iframeBox.addEventListener("click", function() {
+    // e.stopPropagation();
+  });
+
+}
+
+function closeIframe() {
+  const hasFbcWrapper = document.querySelector('.fbc-wrapper');
+  hasFbcWrapper.remove();
 }
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
@@ -400,7 +416,9 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       }
 
       e.preventDefault();
+      e.stopPropagation();
       openLoginPrompt("login");
+      handleIframeClosure();
     });
 
     // Add to Container "Allow"
@@ -460,9 +478,16 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
         return false;
+<<<<<<< HEAD
       }
 
       closePrompt();
+=======
+      } 
+      
+      // closePrompt();
+      closeIframe();
+>>>>>>> a2e1a59 (click outside of popup)
       const activeBadge = document.querySelector("." + badgeClassUId);
       activeBadge.style.display = "none";
     }, false);
@@ -801,6 +826,7 @@ function screenUpdate () {
 let escapeListerenInitialized = false;
 
 function escapeKeyListener () {
+<<<<<<< HEAD
   if (!escapeListerenInitialized) {
     escapeListerenInitialized = true;
 
@@ -810,14 +836,32 @@ function escapeKeyListener () {
       }
     });
   }
+=======
+  document.body.addEventListener("keydown", function(e) {
+    if(e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
+      // closePrompt();
+      closeIframe();
+    }
+  });
+>>>>>>> a2e1a59 (click outside of popup)
 }
+
+window.addEventListener("click", function() {
+  if (this.document.querySelector(".fbc-wrapper")) {
+    // closeIframe();
+    console.log("check");
+  }
+  console.log("check 2");
+});
+
 
 window.addEventListener("click", function(e){
   if ( document.body.classList.contains("js-fbc-prompt-active") ) {
     const activePrompt = findActivePrompt();
     const activePromptTarget = document.querySelector(".fbc-has-badge.js-fbc-prompt-active");
     if ( !activePrompt.contains(e.target) && !activePromptTarget.contains(e.target) ) {
-      closePrompt();
+      // closePrompt();
+      closeIframe();
     }
   } else {
     // contentScriptInit(true);
