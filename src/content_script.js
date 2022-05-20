@@ -335,10 +335,31 @@ function injectIframeOntoPage(socialAction) {
   return;
 }
 
-function openLoginPrompt(socialAction) {
+function positionIframe(fencePos) {
+  const fencePosition = fencePos.getBoundingClientRect();
+  const iframeObject = document.querySelector(".fbc-content-box");
+
+  const offsetX = 50;
+  const offsetY = 100;
+  const xPos = `${fencePosition.x + offsetX}`;
+  const yPos = `${fencePosition.y - offsetY}`;
+
+  iframeObject.style.marginLeft = `${xPos}px`;
+  iframeObject.style.marginTop = `${yPos}px`;
+
+  // console.log(`${fencePosition.x}px`);
+  // iframeObject.style.marginLeft = "100px";
+  console.log(fencePosition);
+  // console.log("this works");
+}
+
+function openLoginPrompt(socialAction, fencePos) {
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
   if(!hasFbcWrapper) {
     injectIframeOntoPage(socialAction);
+    // console.log("iframe added");
+    positionIframe(fencePos);
+
   } else {
     hasFbcWrapper.remove();
   }
@@ -404,7 +425,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         // Click badge, button disabled
         e.preventDefault();
         e.stopPropagation();
-        openLoginPrompt("login");
+        openLoginPrompt("login", htmlBadgeFragmentFenceDiv);
       }
     });
 
@@ -416,8 +437,8 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
 
       e.preventDefault();
       e.stopPropagation();
-      openLoginPrompt("login");
-      handleIframeClosure();
+      openLoginPrompt("login", htmlBadgeFragmentFenceDiv);
+      positionIframe();
     });
 
     // Add to Container "Allow"
@@ -454,7 +475,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         return false;
       }
       e.preventDefault();
-      openLoginPrompt("email");
+      openLoginPrompt("email", htmlBadgeFragmentFenceDiv);
       // e.target.parentElement.classList.toggle("active");
       // positionPrompt( htmlBadgeDiv );
       // target.classList.toggle("js-fbc-prompt-active");
@@ -545,25 +566,25 @@ function closePrompt() {
   document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
 }
 
-function positionPrompt ( activeBadge ) {
-  const elemRect = activeBadge.getBoundingClientRect();
+// function positionPrompt ( activeBadge ) {
+//   const elemRect = activeBadge.getBoundingClientRect();
 
-  if ( (window.innerWidth - elemRect.left) < 350  ) {
-    activeBadge.classList.add("fbc-badge-prompt-align-right");
-  }
+//   if ( (window.innerWidth - elemRect.left) < 350  ) {
+//     activeBadge.classList.add("fbc-badge-prompt-align-right");
+//   }
 
-  const modifierClassList = ["fbc-badge-prompt-align-top", "fbc-badge-prompt-align-bottom", "fbc-badge-prompt-align-right"];
+//   const modifierClassList = ["fbc-badge-prompt-align-top", "fbc-badge-prompt-align-bottom", "fbc-badge-prompt-align-right"];
 
-  if ( elemRect.top < 140 ) {
-    activeBadge.classList.add("fbc-badge-prompt-align-top");
-  } else if ( (window.innerHeight - elemRect.bottom) < 130 ) {
-    activeBadge.classList.add("fbc-badge-prompt-align-bottom");
-  } else if ( (window.innerWidth - elemRect.left) < 350  ) {
-    activeBadge.classList.add("fbc-badge-prompt-align-right");
-  } else {
-    activeBadge.classList.remove(...modifierClassList);
-  }
-}
+//   if ( elemRect.top < 140 ) {
+//     activeBadge.classList.add("fbc-badge-prompt-align-top");
+//   } else if ( (window.innerHeight - elemRect.bottom) < 130 ) {
+//     activeBadge.classList.add("fbc-badge-prompt-align-bottom");
+//   } else if ( (window.innerWidth - elemRect.left) < 350  ) {
+//     activeBadge.classList.add("fbc-badge-prompt-align-right");
+//   } else {
+//     activeBadge.classList.remove(...modifierClassList);
+//   }
+// }
 
 function elementSizeOffsetXY(smallSwitch) {
   // [X, Y]
