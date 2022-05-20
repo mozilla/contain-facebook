@@ -74,6 +74,11 @@ const PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/sharer']", // Legacy Share dialog
 ];
 
+window.addEventListener("message", (e) => {
+  if (e.data === "closeTheInjectedIframe") {
+    closeIframe();
+  }
+})
 
 async function getLocalStorageSettingFromBackground(setting) {
   // Send request to background determine if to show Relay email field prompt
@@ -321,7 +326,6 @@ function injectIframeOntoPage(socialAction) {
   return;
 }
 
-
 function openLoginPrompt(socialAction) {
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
   if(!hasFbcWrapper) {
@@ -338,14 +342,6 @@ function openLoginPrompt(socialAction) {
   // htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
 }
 
-function handleIframeClosure() {
-  const iframeBox = document.querySelector(".fbc-content-box");
-
-  iframeBox.addEventListener("click", function() {
-    // e.stopPropagation();
-  });
-
-}
 
 function closeIframe() {
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
@@ -822,7 +818,7 @@ function escapeKeyListener () {
 
 window.addEventListener("click", function() {
   if (this.document.querySelector(".fbc-wrapper")) {
-    // closeIframe();
+    closeIframe();
     console.log("check");
   }
   console.log("check 2");

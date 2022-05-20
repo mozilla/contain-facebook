@@ -26,10 +26,14 @@ fbcPromptBodyTextLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-pro
 const fbcPromptSubtitleEmail =  browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1");
 const fbcPromptBodyTextEmail = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2");
 
-const fbcPromptAllow = document.querySelector(".fbc-badge-prompt-btn-cancel");
-const fbcPromptCancel = browser.i18n.getMessage("fbc-badge-prompt-btn-allow");
+const fbcPromptAllow = document.querySelector(".fbc-badge-prompt-btn-allow");
+const fbcPromptCancel = document.querySelector(".fbc-badge-prompt-btn-cancel");
 
 fbcPromptAllow.innerHTML = browser.i18n.getMessage("btn-allow");
 fbcPromptCancel.innerHTML = browser.i18n.getMessage("btn-cancel");
 
+fbcPromptCancel.addEventListener("click", function() {
+    parent.postMessage("closeTheInjectedIframe", "*")
+});
 
+console.log(window.parent);
