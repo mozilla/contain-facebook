@@ -36,4 +36,3 @@ fbcPromptCancel.addEventListener("click", function() {
     parent.postMessage("closeTheInjectedIframe", "*")
 });
 
-console.log(window.parent);
