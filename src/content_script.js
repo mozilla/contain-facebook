@@ -357,7 +357,7 @@ function openLoginPrompt(socialAction, fencePos) {
 
   // buildInpageIframe().classList.toggle("active");
   // parent.classList.toggle("active");
-  // positionPrompt( htmlBadgeDiv );
+  positionPrompt( htmlBadgeDiv );
   // el.classList.toggle("js-fbc-prompt-active");
   // document.body.classList.toggle("js-fbc-prompt-active");
   // htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
@@ -429,7 +429,6 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       e.preventDefault();
       e.stopPropagation();
       openLoginPrompt("login", htmlBadgeFragmentFenceDiv);
-      positionIframe();
     });
 
     // Add to Container "Allow"
@@ -468,7 +467,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       e.preventDefault();
       openLoginPrompt("email", htmlBadgeFragmentFenceDiv);
       // e.target.parentElement.classList.toggle("active");
-      // positionPrompt( htmlBadgeDiv );
+      positionPrompt( htmlBadgeDiv );
       // target.classList.toggle("js-fbc-prompt-active");
       // document.body.classList.toggle("js-fbc-prompt-active");
     });
@@ -551,25 +550,25 @@ function closePrompt() {
   document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
 }
 
-// function positionPrompt ( activeBadge ) {
-//   const elemRect = activeBadge.getBoundingClientRect();
+function positionPrompt ( activeBadge ) {
+  const elemRect = activeBadge.getBoundingClientRect();
 
-//   if ( (window.innerWidth - elemRect.left) < 350  ) {
-//     activeBadge.classList.add("fbc-badge-prompt-align-right");
-//   }
+  if ( (window.innerWidth - elemRect.left) < 350  ) {
+    activeBadge.classList.add("fbc-badge-prompt-align-right");
+  }
 
-//   const modifierClassList = ["fbc-badge-prompt-align-top", "fbc-badge-prompt-align-bottom", "fbc-badge-prompt-align-right"];
+  const modifierClassList = ["fbc-badge-prompt-align-top", "fbc-badge-prompt-align-bottom", "fbc-badge-prompt-align-right"];
 
-//   if ( elemRect.top < 140 ) {
-//     activeBadge.classList.add("fbc-badge-prompt-align-top");
-//   } else if ( (window.innerHeight - elemRect.bottom) < 130 ) {
-//     activeBadge.classList.add("fbc-badge-prompt-align-bottom");
-//   } else if ( (window.innerWidth - elemRect.left) < 350  ) {
-//     activeBadge.classList.add("fbc-badge-prompt-align-right");
-//   } else {
-//     activeBadge.classList.remove(...modifierClassList);
-//   }
-// }
+  if ( elemRect.top < 140 ) {
+    activeBadge.classList.add("fbc-badge-prompt-align-top");
+  } else if ( (window.innerHeight - elemRect.bottom) < 130 ) {
+    activeBadge.classList.add("fbc-badge-prompt-align-bottom");
+  } else if ( (window.innerWidth - elemRect.left) < 350  ) {
+    activeBadge.classList.add("fbc-badge-prompt-align-right");
+  } else {
+    activeBadge.classList.remove(...modifierClassList);
+  }
+}
 
 function elementSizeOffsetXY(smallSwitch) {
   // [X, Y]
