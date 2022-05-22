@@ -1,4 +1,21 @@
 {
+  "extensionDescription": {
+    "message": "تیسری پارٹی کی کوکیز کے ذریعے فیس بک کو ویب سائٹ سے باہر آپ کو ٹریک کرنے سے روکنے کے لئے فیس بک کنٹینر آپ کی فیس بک کی سرگرمی کو آپ کی باقی ویب سرگرمی سے الگ کرتا ہے۔",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ فیس بک کنٹینر میں ہے۔",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "in-fbc-p1": {
+    "message": "فیس بک اب آپ کو اس سائٹ پر ٹریک کرسکتا ہے۔ اس سائٹ کو فیس بک کنٹینر سے ہٹانے کے لئے ، فیس بک کنٹینر میں اجازت شدہ سائٹیں منتخب کریں اور اسے فہرست سے ہٹائیں۔"
+  },
   "onUnknownSiteHeader": {
     "message": "یہ سائٹ Facebook کنٹینر میں نہیں ہے۔",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
