@@ -1,9 +1,26 @@
 
 const url = window.location.href;
-const action = url.split('?')[1].split('=')[1];
+// const action = url.split('?')[1].split('=')[1];
+
+const action = parseQuery(url).action;
+const btnLink = parseQuery(url).btnlink;
+
+console.log(action);
+
 
 const loginItem = document.getElementById("fbc-login");
 const emailItem = document.getElementById("fbc-email");
+
+function parseQuery(queryString) {
+    var query = {};
+
+    var pairs = queryString.split('?')[1].split('&');
+    for (var i = 0; i < pairs.length; i++) {
+        var splt = pairs[i].split('=');
+        query[splt[0]] = splt[1]
+    }
+    return query;
+}
 
 
 if (action === "login") {
@@ -35,7 +52,6 @@ fbcPromptCancel.innerHTML = browser.i18n.getMessage("btn-cancel");
 
 fbcPromptAllow.addEventListener("click", (e) => {
 
-    // console.log("clicked");
     if (!e.isTrusted) {
     // The click was not user generated so ignore
     e.preventDefault();
@@ -46,6 +62,9 @@ fbcPromptAllow.addEventListener("click", (e) => {
     browser.runtime.sendMessage({
     message: "add-domain-to-list"
     });
+
+    parent.location.href = btnLink;
+
 });
 
 fbcPromptCancel.addEventListener("click", function() {
