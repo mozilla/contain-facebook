@@ -5,9 +5,6 @@ const url = window.location.href;
 const action = parseQuery(url).action;
 const btnLink = parseQuery(url).btnlink;
 
-console.log(action);
-
-
 const loginItem = document.getElementById("fbc-login");
 const emailItem = document.getElementById("fbc-email");
 
@@ -63,7 +60,18 @@ fbcPromptAllow.addEventListener("click", (e) => {
     message: "add-domain-to-list"
     });
 
-    parent.location.href = btnLink;
+    // console.log(btnLink);
+
+    // if (typeof btnLink === "string") {
+    //     // parent.location.href = btnLink;
+    //     console.log("this string");
+    // }
+
+    // if (typeof btnLink === "object") {
+    //     console.log("this obj");
+    // }
+
+    parent.postMessage("allowTriggered", "*");
 
 });
 
@@ -71,3 +79,23 @@ fbcPromptCancel.addEventListener("click", function() {
     parent.postMessage("closeTheInjectedIframe", "*")
 });
 
+
+// target.addEventListener("click", (e) => {
+//     if (!e.isTrusted) {
+//       // The click was not user generated so ignore
+//       return false;
+//     } 
+    
+//     if (allowClickSwitch) {
+//       // Button disabled. Either will trigger new HTTP request or page will refresh.
+//       setTimeout(()=>{
+//         location.reload(true);
+//       }, 250);
+//       return;
+//     } else {
+//       // Click badge, button disabled
+//       e.preventDefault();
+//       // e.stopPropagation();
+//       openLoginPrompt("login", htmlBadgeFragmentFenceDiv.parentElement, htmlBadgeDiv, target);
+//     }
+//   });

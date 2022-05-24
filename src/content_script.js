@@ -349,7 +349,7 @@ function positionIframe(fencePos) {
 
   // console.log(`${fencePosition.x}px`);
   // iframeObject.style.marginLeft = "100px";
-  console.log(fencePosition);
+  // console.log(fencePosition);
   // console.log("this works");
 }
 
@@ -359,6 +359,13 @@ function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
     injectIframeOntoPage(socialAction, target);
     // console.log("iframe added");
     positionIframe(fencePos);
+
+    window.addEventListener("message", (e) => {
+      if (e.data === "allowTriggered") {
+        target.click();
+      }
+    });
+
 
   } else {
     hasFbcWrapper.remove();
@@ -897,9 +904,7 @@ function escapeKeyListener () {
 window.addEventListener("click", function() {
   if (this.document.querySelector(".fbc-wrapper")) {
     closeIframe();
-    console.log("check");
   }
-  console.log("check 2");
 });
 
 
