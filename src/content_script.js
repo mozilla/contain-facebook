@@ -292,13 +292,13 @@ function createElementWithClassList(elemType, elemClass) {
 }
 
 
-function buildInpageIframe(socialAction) {
+function buildInpageIframe(socialAction, target) {
   // const div = createElementWithClassList(
   //   "div",
   //   "fbc-iframe"
   // );
   const iframe = document.createElement("iframe");
-  iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}`);
+  iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}&btnlink=${target}`);
   iframe.width = 350;
   // This height is derived from the Figma file. However, this is just the starting instance of the iframe/inpage menu. After it's built out, it resizes itself based on the inner contents.
   iframe.height = 250;
@@ -313,8 +313,8 @@ function buildInpageIframe(socialAction) {
   return iframe;
 }
 
-function injectIframeOntoPage(socialAction) {
-  const fbcContent = buildInpageIframe(socialAction);
+function injectIframeOntoPage(socialAction, target) {
+  const fbcContent = buildInpageIframe(socialAction, target);
   const fbcWrapper = createElementWithClassList(
       "div",
       "fbc-wrapper"
@@ -344,10 +344,10 @@ function positionIframe(fencePos) {
   // console.log("this works");
 }
 
-function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv) {
+function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
   if(!hasFbcWrapper) {
-    injectIframeOntoPage(socialAction);
+    injectIframeOntoPage(socialAction, target);
     // console.log("iframe added");
     positionIframe(fencePos);
 
@@ -416,7 +416,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         // Click badge, button disabled
         e.preventDefault();
         // e.stopPropagation();
-        openLoginPrompt("login", htmlBadgeFragmentFenceDiv.parentElement, htmlBadgeDiv);
+        openLoginPrompt("login", htmlBadgeFragmentFenceDiv.parentElement, htmlBadgeDiv, target);
       }
     });
 
@@ -427,7 +427,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       } 
       
       e.stopPropagation();
-      openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv);
+      openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv, target);
     });
 
     // Add to Container "Allow"
@@ -465,7 +465,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         return false;
       } 
       e.preventDefault();
-      openLoginPrompt("email", htmlBadgeFragmentFenceDiv, htmlBadgeDiv);
+      openLoginPrompt("email", htmlBadgeFragmentFenceDiv, htmlBadgeDiv, target);
       // e.target.parentElement.classList.toggle("active");
       positionPrompt( htmlBadgeDiv );
       // target.classList.toggle("js-fbc-prompt-active");
@@ -510,6 +510,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   htmlBadgeFragmentFenceDiv.addEventListener("mouseenter", () => {
     positionPrompt( htmlBadgeDiv );
   });
+
 
 }
 
