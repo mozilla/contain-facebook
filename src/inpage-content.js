@@ -32,6 +32,22 @@ const fbcPromptCancel = document.querySelector(".fbc-badge-prompt-btn-cancel");
 fbcPromptAllow.innerHTML = browser.i18n.getMessage("btn-allow");
 fbcPromptCancel.innerHTML = browser.i18n.getMessage("btn-cancel");
 
+
+fbcPromptAllow.addEventListener("click", (e) => {
+
+    // console.log("clicked");
+    if (!e.isTrusted) {
+    // The click was not user generated so ignore
+    e.preventDefault();
+    return false;
+    } 
+
+    // allowClickSwitch = true;
+    browser.runtime.sendMessage({
+    message: "add-domain-to-list"
+    });
+});
+
 fbcPromptCancel.addEventListener("click", function() {
     parent.postMessage("closeTheInjectedIframe", "*")
 });
