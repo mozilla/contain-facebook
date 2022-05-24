@@ -164,7 +164,7 @@ body {
 	box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2);
 	border: 1px solid rgba(0,0,0,0.2);
 	padding: 0 0 40px;
-	background: rgb(235, 235, 235);
+	background: rgb(255, 255, 255);
 }
 
 iframe::after {
@@ -210,7 +210,7 @@ iframe::after {
 	display: none;
 }
 
-.fbc-badge-prompt h1 {
+.fbc-badge-prompt h1, .fbc-title {
 	all: unset;
 	letter-spacing: -0.1px;
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
@@ -287,7 +287,7 @@ iframe::after {
 
 .fbc-badge-prompt-buttons {
 	bottom: 0.15px;
-	height: 40px;
+	/* height: 40px; */
 	width: 100%;
 	z-index: 0;
 	display: flex;
@@ -296,19 +296,19 @@ iframe::after {
 
 .fbc-badge-prompt-buttons button {
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-	all: unset;
+	/* all: unset; */
 	display: inline-block;
-	height: 40px;
-	width: 50%;
+	/* height: 40px; */
+	width: 100%;
+	padding: 8px 0;
 	appearance: none;
 	border: 0;
 	letter-spacing: -0.1px;
 	font-size: 13px;
-	line-height: 17px;
+	/* line-height: 17px; */
 	background-color: #F2F2F2;
-	border-top: 1px solid #E9E9E9;
+	/* border-top: 1px solid #E9E9E9; */
 	transition: var(--transition);
-	color: var(--black);
 	cursor: pointer;
 	text-align: center;
 }
@@ -325,7 +325,7 @@ iframe::after {
 .fbc-badge-prompt-buttons button:last-child {
 	border-top: 1px solid var(--blue70);
 	background: var(--blue60);
-	color: var(--white);
+	color: #ffffff;
 }
 
 .fbc-badge-prompt-buttons button:last-child:focus {
