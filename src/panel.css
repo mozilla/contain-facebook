@@ -9,432 +9,369 @@ body {
   font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-html,
-body {
-  overflow: hidden;
-  min-height: 200px;
-  min-width: 355px;
-  max-width: 355px;
-  transition: all .25s ease-in-out;
+/* Button Replacement */
+.fbc-loginButton {
+background-size: contain;
+background-position: center;
+background-repeat: none;
+cursor: pointer;
 }
 
-h2,
-h3,
-div,
-p,
-a,
-body,
-span {
-  margin: 0;
-  font-size: 12px;
+.fbc-loginButton.fbc-size-large.fbc-button-type-continue_with {
+height: 40px;
+width: 252px;
+background-image: url(/img/login_continue_large.png);
 }
 
-.main-content-wrapper {
-  padding: 1.5rem 1.65rem;
-  min-height: 100px;
+.fbc-loginButton.fbc-size-medium.fbc-button-type-continue_with {
+height: 28px;
+width: 180px;
+background-image: url(/img/login_continue_medium.png);
 }
 
-h2,
-p,
-div.img {
-  padding-bottom: 1rem;
+.fbc-loginButton.fbc-size-small.fbc-button-type-continue_with {
+height: 20px;
+width: 154px;
+background-image: url(/img/login_continue_small.png);
 }
 
-.main-content-wrapper a:last-child {
-  padding-bottom: 0;
+.fbc-loginButton.fbc-size-large.fbc-button-type-login_width {
+height: 40px;
+width: 236px;
+background-image: url(/img/login_login_large.png);
 }
 
-h1 { /* "Facebook Container" headline for all panels */
-  font-weight: 600;
-  margin: 0;
-  font-size: 13px;
-  border-bottom: var(--borders);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 46px;
+.fbc-loginButton.fbc-size-medium.fbc-button-type-login_width {
+height: 28px;
+width: 166px;
+background-image: url(/img/login_login_medium.png);
 }
 
-.btn-return.arrow-left {
-  position: absolute;
-  border: 0;
-  left: 15px;
-  top: 15px;
-  width: 1.2rem;
-  height: 1.2rem;
-  background-color: rgba(255, 255, 255, 1);
-  background-image: url("/img/arrow-icon-left.svg");
-  cursor: pointer;
+.fbc-loginButton.fbc-size-small.fbc-button-type-login_width {
+height: 20px;
+width: 62px;
+background-image: url(/img/login_login_small.png);
 }
 
-h2 { /* panel sub-head for all panels */
-  display: flex;
-  align-items: center;
+/* Overlay */
+
+.fbc-badge {
+all: initial;
+position: absolute;
+z-index: 999999999999999;
+transition: opacity 0.2s ease-out;
+font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+--transition: all .15s cubic-bezier(.07,.95,0,1);
+--blue60: #0060df;
+--blue70: #003eaa;
+--blue80: #073072;
+--black: #000000;
+--white: #ffffff;
 }
 
-h2,
-.bold {
-  font-weight: 700;
+.fbc-badge.fbc-badge-disabled {
+display: none;
+visibility: hidden;
+opacity: 0;
 }
 
-h3 {
-  font-weight: 300;
+.fbc-badge-fence {
+display: block;
+box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+background-position: center center;
+background-size: 16px auto, 100%;
+background-image: url(/img/fence-large.svg), linear-gradient(-45deg, #6200A4, #D70022);
+background-repeat: no-repeat;
+border-radius: 100%;
+width: 28px;
+height: 28px;
+padding: 0;
+border: 1px solid white;
+cursor: pointer;
 }
 
-.Facebook-text {
-  color: var(--secondaryText);
-  font-weight: 500;
-  font-size: 14px;
+.fbc-badge.fbc-badge-small .fbc-badge-fence {
+background-size: 7px auto, 100%;
+background-image: url(/img/fence-small.svg), linear-gradient(-45deg, #6200A4, #D70022);
+width: 17px;
+height: 17px;
 }
 
-.Facebook-text::after {
-  background: url("/img/fbc-icon-dark.svg") center no-repeat;
-  background-size: 14px auto;
-  display: inline-block;
-  width: 14px;
-  height: 12px;
-  margin-left: 4px;
-  margin-bottom: -1px;
-  content: "";
+.fbc-badge.fbc-badge-fixed {
+position: fixed;
 }
 
-.Facebook-blue-text {
-  color: #37ADFF;
-  font-weight: 500;
-  font-size: 14px;
+.fbc-badge:hover .fbc-badge-tooltip {
+display: block;
 }
 
-.Facebook-blue-text::after {
-  background: url("/img/briefcase.svg") center no-repeat;
-  background-size: 17px auto;
-  display: inline-block;
-  width: 16px;
-  height: 13px;
-  margin-left: 6px;
-  content: "";
+.fbc-badge-share.fbc-badge-tooltip-active .fbc-badge-tooltip {
+display: block;
 }
 
-p,
-a {
-  font-weight: 400;
-  line-height: 140%;
+.fbc-badge.active:hover .fbc-badge-tooltip {
+display: none;
 }
 
-a {
-  color: var(--blue60);
-  text-decoration: none;
-  cursor: pointer;
+.fbc-badge.active .fbc-badge-prompt {
+display: block;
 }
 
-a:hover {
-  color: var(--blue70);
-  border-bottom: 1.5px solid var(--blue70);
+.fbc-badge-share-passive:hover {
+display: block;
+visibility: visible;
+opacity: 1;
 }
 
-.fw-bottom-btn { /* Full-width bottom bar "How Facebook Container Works" button. Only on non-onboarding panels. */
-  padding: .7rem 0;
-  background-color: transparent;
-  border-top: var(--borders);
+/* Only show first Share badge   */
+.fbc-badge-share-passive, .fbc-badge-share-passive.fbc-badge-share:not(.fbc-badge-disabled), .fbc-badge-share.fbc-badge-disabled, .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) ~ .fbc-badge-share:not(.fbc-badge-disabled):not(.fbc-badge-tooltip-active) {
+display: none;
+visibility: hidden;
+opacity: 0;
 }
 
-.highlight-on-hover { /* Full-width element that wraps around the "How Facebook Container Works" span and arrow icon */
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  border: 0;
-  cursor: pointer;
-  padding: .45rem 1.65rem;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  transition: var(--transition);
+.fbc-badge-share:not(.fbc-badge-disabled), .fbc-badge-share.fbc-badge-tooltip-active:not(.fbc-badge-disabled) {
+display: block;
+visibility: visible;
+opacity: 1;
 }
 
-.highlight-on-hover::after {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  right: 15px;
-  height: 100%;
-  width: .35rem;
-  background-image: url("/img/arrow-icon-right.svg");
-  background-position: center center;
-  transform: scale(1.3);
+.fbc-wrapper{
+position: fixed;
+height: 100%;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+z-index: 999999999999;
+background-color: rgba(0, 0, 0, 0.1);
+/* animation: 0.2s ease forwards; */
 }
 
-.highlight-on-hover.add-site-to-container::after {
-  width: 16px;
-  background-image: url("/img/site-add-icon.svg");
+.fbc-wrapper iframe {
+/* position: absolute; */
+
+/* width: 345px;
+position: absolute;
+left: calc( 100% + 20px);
+top: 50%;
+transform: translateY(-50%); */
+color: var(--black);
+box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2);
+border: 1px solid rgba(0,0,0,0.2);
+padding: 0 0 40px;
+background: rgb(255, 255, 255);
 }
 
-.highlight-on-hover.remove-site-from-container::after {
-  width: 16px;
-  background-image: url("/img/site-remove-icon.svg");
+iframe::after {
+content: " ";
+position: absolute;
+left: -10px;
+top: 50%;
+margin-top: -10px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 10px 10px 0;
+border-color: transparent var(--white) transparent;
 }
 
-.highlight-on-hover.remove-site-from-container.disabled-button, .highlight-on-hover.add-site-to-container.disabled-button {
-  cursor: not-allowed;
-  position: relative;
-  z-index: 0;
+.fbc-badge-prompt-align-right iframe {
+left: auto;
+right: calc( 100% + 20px);
 }
 
-.highlight-on-hover.remove-site-from-container.disabled-button::after,
-.highlight-on-hover.remove-site-from-container.disabled-button span,
-.highlight-on-hover.add-site-to-container.disabled-button::after,
-.highlight-on-hover.add-site-to-container.disabled-button span {
-  opacity: 0.4;
+.fbc-badge-prompt-align-right iframe {
+left: auto;
+right: -10px;
+border-width: 10px 0 10px 10px;
 }
 
-#button-remove-site-tooltip {
-  display: none;
-  padding: 5px 10px 10px;
-  width: 250px;
-  max-width: 250px;
-  z-index: 9999;
-  position: absolute;
-  left: 1rem;
-  bottom: 2em;
-  color: black;
-  font-size: 13px;
-  line-height: 17px;
-  background-color: var(--grey20);
-  border: 1px solid #BEBEBF;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-  font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+.fbc-badge-prompt-align-top iframe {
+top: -7px;
+transform: none;
 }
 
-.highlight-on-hover.remove-site-from-container.disabled-button:hover #button-remove-site-tooltip {
-  display: block;
+.fbc-badge-prompt-align-top iframe:after {
+top: 16px;
 }
 
-.highlight-on-hover span {
-  pointer-events: none;
+.fbc-badge-prompt-align-bottom iframe {
+top: auto;
+bottom: -20px;
+transform: none;
 }
 
-.allowed-site-wrapper {
-  display: block;
-  position: relative;
-  margin: .25rem 0;
-  padding: .25rem 1.65rem;
-  display: flex;
-  align-items: center;
-  min-height: 1.25rem;
-  transition: var(--transition);
+.fbc-badge-prompt-align-bottom iframe:after {
+display: none;
 }
 
-.remove-btn, .allow-btn {
-  background-color: var(--blue60);
-  border: 1px solid var(--blue60);
-  border-top: 1px solid var(--blue70);
-  cursor: pointer;
-  line-height: 41px;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  font-size: 13px;
+.fbc-badge-prompt h1, .fbc-title {
+all: unset;
+letter-spacing: -0.1px;
+font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+font-size: 13px;
+font-weight: 700;
+height: 40px;
+display: flex;
+width: 100%;
+margin: 0;
+padding: 0;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-bottom: 1px solid #E9E9E9;
+background: white;
+color: var(--black);
 }
 
-.remove-btn:hover, .allow-btn:hover {
-  background-color: var(--blue70);
+.fbc-badge-prompt-contents {
+padding: 20px;
+background: var(--white);
 }
 
-.remove-site, .add-site {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  right: 1.65rem;
-  height: 1.1rem;
-  width: 1.1rem;
-  background-image: url("/img/x-close.svg");
-  background-position: center center;
-  background-size: contain;
-  cursor: pointer;
+.fbc-badge-prompt p {
+all: unset;
+font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+display: block;
+padding: 0 0 20px;
+margin: 0;
+font-size: 13px;
+line-height: 17px;
+color: var(--black);
 }
 
-.remove-site-panel .allowed-site-wrapper, .add-site-panel .allowed-site-wrapper {
-  padding: 0;
-  margin-bottom: 1rem;
+.fbc-badge-prompt p:first-of-type {
+font-weight: 600;
 }
 
-.remove-site-panel .allowed-site-wrapper:hover, .add-site-panel .allowed-site-wrapper:hover {
-  background-color: transparent;
+.fbc-badge-prompt form {
+all: unset;
+display: flex;
+justify-content: flex-start;
+align-items: center;
 }
 
-.allowed-site-wrapper:hover,
-.highlight-on-hover:hover {
-  background-color: var(--grey20);
-  transition: var(--transition);
+.fbc-badge-prompt input {
+all: unset;
+margin: 0 5px 0 0;
+appearance: checkbox;
+-moz-appearance: checkbox;
+cursor: pointer;
+width: 13px;
+height: 13px;
+line-height: 14px;
+display: inline-block;
 }
 
-.fw-bottom-btn,
-.bottom-btns {
-  display: flex;
-  justify-content: space-between;
-  transition: var(--transition);
-  cursor: pointer;
+.fbc-badge-prompt label {
+all: unset;
+font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+font-size: 12px;
+line-height: 16px;
+color: #0C0C0D;
+margin: 0;
+font-weight: normal;
+cursor: pointer;
+line-height: 20px;
 }
 
-.bottom-btns { /* Bottom "Cancel, Back, Next, Done" buttons - onboarding panels only */
-  width: 100%;
+.fbc-badge-prompt-dontShowAgain-checkbox {
+display: flex;
+align-items: center;
 }
 
-.bottom-btn {
-  border-bottom: 0;
-  line-height: 103%;
-  height: 3.37rem;
-  width: 50%;
-  color: var(--primaryText);
-  padding: 1.15rem 0;
-  text-align: center;
+.fbc-badge-prompt-buttons {
+bottom: 0.15px;
+/* height: 40px; */
+width: 100%;
+z-index: 0;
+display: flex;
+gap: 16px;
 }
 
-.bottom-btn:first-of-type { /* Onboarding Panels only: The first bottom button ("Cancel", "Back") is always gray */
-  border-top: 1px solid rgba(24, 25, 26, 0.14);
-  border-right: 1px solid rgba(24, 25, 26, 0.14);
-  border-left: 0;
-  background-color: rgba(12,12,13, 0.05);
-  left: 0;
+.fbc-badge-prompt-buttons button {
+font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+/* all: unset; */
+display: inline-block;
+/* height: 40px; */
+width: 100%;
+padding: 8px 0;
+appearance: none;
+border: 0;
+letter-spacing: -0.1px;
+font-size: 13px;
+/* line-height: 17px; */
+background-color: #F2F2F2;
+/* border-top: 1px solid #E9E9E9; */
+transition: var(--transition);
+cursor: pointer;
+text-align: center;
 }
 
-.bottom-btn:first-of-type:hover {
-  background-color: rgba(204, 204, 204, 0.5);
+.fbc-badge-prompt-buttons button:focus {
+border-top: 1px solid #cfcfd8;
 }
 
-.bottom-btn:last-of-type { /* Onboarding Panels only: The second bottom button on the onboarding panels is always blue */
-  border-top: 1px solid var(--blue70);
-  border-left: 1px solid var(--blue60);
-  border-right: 0;
-  color: rgba(255, 255, 255, 1);
-  background-color: var(--blue60);
-  right: 0;
+.fbc-badge-prompt-buttons button:hover {
+background: #E9E9E9;
+color: var(--black);
 }
 
-.bottom-btn:last-of-type:hover {
-  background-color: var(--blue70);
+.fbc-badge-prompt-buttons button:last-child {
+border-top: 1px solid var(--blue70);
+background: var(--blue60);
+color: #ffffff;
 }
 
-.allow-btn,
-.allow-btn:hover,
-.remove-btn,
-.remove-btn:hover,
-.bottom-btn,
-.bottom-btn:hover {
-  transition: var(--transition);
+.fbc-badge-prompt-buttons button:last-child:focus {
+border-top: 1px solid var(--blue80);
 }
 
-.in-fbc-subhead::before,
-.trackers-detected-subhead::before {
-  background-image: url("/img/fenced-badge.svg");
-  background-position: center center;
-  width: 23px;
-  height: 19px;
-  display: block;
-  margin-right: 3px;
+.fbc-badge-prompt-buttons button:last-child:hover {
+background: var(--blue70);
+color: var(--white);
 }
 
-.img.in-fbc {
-  background-image: url("/img/image-inFBC@2x.png");
-  background-position: bottom center;
-  height: 170px;
+
+/* Tooltip */
+.fbc-badge-tooltip {
+display: none;
+padding: 5px 10px 10px;
+width: 250px;
+max-width: 250px;
+background: var(--white);
+z-index: 9999;
+position: absolute;
+left: calc( 100% + 0.5em);
+top: 50%;
+color: black;
+font-size: 13px;
+line-height: 17px;
+border: 1px solid #BEBEBF;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
-.img.trackers-detected {
-  background-image: url("/img/image-tracker-detected@2x.png");
-  height: 145px;
-  margin: 1.25rem 0 1.75rem -4px;
-  background-position: left, center;
+.fbc-badge-prompt-align-right .fbc-badge-tooltip {
+left: auto;
+right: calc( 100% + 0.5em );
 }
 
-.img.onboarding4 {
-  background-image: url("/img/image-example@2x.png");
-  height: 145px;
-  margin: 1rem auto 1.5rem auto;
-  background-position: center center;
+.fbc-badge-prompt-align-bottom .fbc-badge-tooltip {
+top: auto;
+bottom: 25%;
 }
 
-.img.onboarding5 {
-  background-image: url("/img/image-addsite@2x.png");
-  height: 179px;
-  margin: 1rem auto 1.5rem auto;
-  background-position: center center;
+/* .fbc-badge-prompt-align-right .fbc-badge-prompt {
+left: auto;
+right: calc( 100% + 20px);
 }
 
-.img {
-  display: block;
-  min-height: 100px;
-}
+.fbc-badge-prompt-align-right .fbc-badge-prompt:after {
+left: auto;
+right: -10px;
+border-width: 10px 0 10px 10px;
+} */
 
-.img,
-.on-facebook-subbhead::before,
-.in-fbc-subhead::before,
-.highlight-on-hover::after,
-.Facebook-text::after,
-.trackers-detected-subhead::before,
-.btn-return.arrow-left {
-  content: "";
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/* Bottom button hacks until a more reasonable solution presents itself */
-/* This eliminates (The-Powers-That-Be-Willing) a strange little white gap between
-   the bottom edge of the 'bottom-btns' and the bottom edge of the panel. */
-
-.onboarding5 .bottom-btn {
-  height: 3.41rem;
-}
-
-h3 {
-  margin-bottom: .5rem;
-  padding: 0 1.65rem;
-}
-
-h3.sites-allowed {
-  margin-top: 2rem;
-}
-
-/* allowed site flows */
-
-.site-name {
-  min-height: 13px;
-}
-
-.allowed-site-icon {
-  content: "";
-  display: inline-block;
-  width: 1.1rem;
-  height: 1.1rem;
-  margin-right: 1.1rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.site-lists-wrapper {
-  min-height: 100px;
-  padding-bottom: 1.65rem;
-}
-
-.allowed-site-wrapper.default-allowed-site:hover {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.allowed-site-wrapper.default-allowed-site {
-  pointer-events: none;
-}
-
-.favi-facebook {
-  background-image: url("/img/favi-facebook.png");
-}
-
-.favi-instagram {
-  background-image: url("/img/favi-instagram.png");
-}
-
-.favi-messenger {
-  background-image: url("/img/favi-messenger.png");
-}
-
-#no-trackers .fw-bottom-btn:last-of-type {
-  display: none;
-}

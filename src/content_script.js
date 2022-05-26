@@ -177,81 +177,81 @@ function createBadgeFragment (socialAction) {
 
   // Create Prompt/Allow Dialog
   if (socialAction === "login"){
-    const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
+    // const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
 
-    const htmlBadgeFragmentPromptH1 = document.createElement("h1");
+    // const htmlBadgeFragmentPromptH1 = document.createElement("h1");
 
-    htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
-    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
+    // htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
+    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
 
-    const htmlBadgeFragmentPromptContents = document.createElement("div");
-    htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
+    // const htmlBadgeFragmentPromptContents = document.createElement("div");
+    // htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
 
-    for (let promptParagraphString of htmlBadgeFragmentPromptParagraphStrings) {
-      const paragraph = document.createElement("p");
-      paragraph.appendChild(document.createTextNode(promptParagraphString));
-      htmlBadgeFragmentPromptContents.appendChild(paragraph);
-    }
+    // for (let promptParagraphString of htmlBadgeFragmentPromptParagraphStrings) {
+    //   const paragraph = document.createElement("p");
+    //   paragraph.appendChild(document.createTextNode(promptParagraphString));
+    //   htmlBadgeFragmentPromptContents.appendChild(paragraph);
+    // }
 
-    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
+    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
 
-    const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
-    htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
+    // const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
+    // htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
 
-    for (let buttonString of htmlBadgeFragmentPromptButtonStrings) {
-      const button = document.createElement("button");
-      button.className = "fbc-badge-prompt-" + buttonString;
-      button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
-      htmlBadgeFragmentPromptButtonDiv.appendChild(button);
-    }
+    // for (let buttonString of htmlBadgeFragmentPromptButtonStrings) {
+    //   const button = document.createElement("button");
+    //   button.className = "fbc-badge-prompt-" + buttonString;
+    //   button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
+    //   htmlBadgeFragmentPromptButtonDiv.appendChild(button);
+    // }
 
-    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
+    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
   } else if (socialAction === "email") {
-    const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
+    // const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
 
-    const htmlBadgeFragmentPromptH1 = document.createElement("h1");
+    // const htmlBadgeFragmentPromptH1 = document.createElement("h1");
 
-    htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
-    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
+    // htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
+    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
 
-    const htmlBadgeFragmentPromptContents = document.createElement("div");
-    htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
+    // const htmlBadgeFragmentPromptContents = document.createElement("div");
+    // htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
 
-    for (let promptParagraphString of htmlEmailBadgeFragmentPromptParagraphStrings) {
-      const paragraph = document.createElement("p");
-      paragraph.appendChild(document.createTextNode(promptParagraphString));
-      htmlBadgeFragmentPromptContents.appendChild(paragraph);
-    }
+    // for (let promptParagraphString of htmlEmailBadgeFragmentPromptParagraphStrings) {
+    //   const paragraph = document.createElement("p");
+    //   paragraph.appendChild(document.createTextNode(promptParagraphString));
+    //   htmlBadgeFragmentPromptContents.appendChild(paragraph);
+    // }
 
-    const dontShowAgainCheckboxForm = document.createElement("div");
-    dontShowAgainCheckboxForm.className = "fbc-badge-prompt-dontShowAgain-checkbox";
-    const dontShowAgainCheckboxInput = document.createElement("input");
-    dontShowAgainCheckboxInput.type = "checkbox";
-    dontShowAgainCheckboxInput.id = "hideRelayEmailBadges";    
-    dontShowAgainCheckboxInput.classList.add("fbc-badge-prompt-dontShowAgain-checkbox-input", "settings-checkbox");
-    const dontShowAgainCheckboxLabel = document.createElement("label");    
-    dontShowAgainCheckboxLabel.htmlFor = "hideRelayEmailBadges";
-    const dontShowAgainCheckboxText = document.createTextNode( browser.i18n.getMessage("inPageUI-tooltip-prompt-checkbox") );
+    // const dontShowAgainCheckboxForm = document.createElement("div");
+    // dontShowAgainCheckboxForm.className = "fbc-badge-prompt-dontShowAgain-checkbox";
+    // const dontShowAgainCheckboxInput = document.createElement("input");
+    // dontShowAgainCheckboxInput.type = "checkbox";
+    // dontShowAgainCheckboxInput.id = "hideRelayEmailBadges";    
+    // dontShowAgainCheckboxInput.classList.add("fbc-badge-prompt-dontShowAgain-checkbox-input", "settings-checkbox");
+    // const dontShowAgainCheckboxLabel = document.createElement("label");    
+    // dontShowAgainCheckboxLabel.htmlFor = "hideRelayEmailBadges";
+    // const dontShowAgainCheckboxText = document.createTextNode( browser.i18n.getMessage("inPageUI-tooltip-prompt-checkbox") );
 
-    dontShowAgainCheckboxLabel.appendChild(dontShowAgainCheckboxText);
-    dontShowAgainCheckboxForm.appendChild(dontShowAgainCheckboxInput);
-    dontShowAgainCheckboxForm.appendChild(dontShowAgainCheckboxLabel);
+    // dontShowAgainCheckboxLabel.appendChild(dontShowAgainCheckboxText);
+    // dontShowAgainCheckboxForm.appendChild(dontShowAgainCheckboxInput);
+    // dontShowAgainCheckboxForm.appendChild(dontShowAgainCheckboxLabel);
 
-    htmlBadgeFragmentPromptContents.appendChild(dontShowAgainCheckboxForm);
+    // htmlBadgeFragmentPromptContents.appendChild(dontShowAgainCheckboxForm);
 
-    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
+    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
 
-    const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
-    htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
+    // const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
+    // htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
 
-    for (let buttonString of htmlEmailBadgeFragmentPromptButtonStrings) {
-      const button = document.createElement("button");
-      button.className = "fbc-badge-prompt-" + buttonString;
-      button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
-      htmlBadgeFragmentPromptButtonDiv.appendChild(button);
-    }
+    // for (let buttonString of htmlEmailBadgeFragmentPromptButtonStrings) {
+    //   const button = document.createElement("button");
+    //   button.className = "fbc-badge-prompt-" + buttonString;
+    //   button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
+    //   htmlBadgeFragmentPromptButtonDiv.appendChild(button);
+    // }
 
-    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
+    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
   }
 
   // Create Empty Wrapper Div
@@ -270,13 +270,82 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
   return false;
 }
 
-function openLoginPrompt(parent, el, htmlBadgeDiv) {
-  parent.classList.toggle("active");
-  positionPrompt( htmlBadgeDiv );
-  el.classList.toggle("js-fbc-prompt-active");
-  document.body.classList.toggle("js-fbc-prompt-active");
-  htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
+function createElementWithClassList(elemType, elemClass) {
+  const newElem = document.createElement(elemType);
+  newElem.classList.add(elemClass);
+  return newElem;
 }
+
+
+function buildInpageIframe(socialAction, target) {
+  // const div = createElementWithClassList(
+  //   "div",
+  //   "fbc-iframe"
+  // );
+  const iframe = document.createElement("iframe");
+  iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}&btnlink=${target}`);
+  iframe.width = 350;
+  // This height is derived from the Figma file. However, this is just the starting instance of the iframe/inpage menu. After it's built out, it resizes itself based on the inner contents.
+  iframe.height = 250;
+  iframe.title = browser.i18n.getMessage("facebookContainer");
+  iframe.tabIndex = 0;
+  iframe.ariaHidden = "false";
+  iframe.id = socialAction;
+  iframe.classList.add("fbc-content-box");
+
+  // div.appendChild(iframe);
+
+  return iframe;
+}
+
+function injectIframeOntoPage(socialAction, target) {
+  const fbcContent = buildInpageIframe(socialAction, target);
+  const fbcWrapper = createElementWithClassList(
+      "div",
+      "fbc-wrapper"
+    );
+  fbcWrapper.appendChild(fbcContent);
+  // positionPrompt(fbcContent);
+  document.body.appendChild(fbcWrapper);
+
+  return;
+}
+
+function positionIframe(fencePos) {
+  const fencePosition = fencePos.getBoundingClientRect();
+  const iframeObject = document.querySelector(".fbc-content-box");
+
+  const offsetX = 50;
+  const offsetY = 100;
+  const xPos = `${fencePosition.x + offsetX}`;
+  const yPos = `${fencePosition.y - offsetY}`;
+
+  iframeObject.style.marginLeft = `${xPos}px`;
+  iframeObject.style.marginTop = `${yPos}px`;
+
+}
+
+function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
+  const hasFbcWrapper = document.querySelector('.fbc-wrapper');
+  if(!hasFbcWrapper) {
+    injectIframeOntoPage(socialAction, target);
+    // console.log("iframe added");
+    positionIframe(fencePos);
+
+    window.addEventListener("message", (e) => {
+      if (e.data === "allowTriggered") {
+        target.click();
+      }
+    });
+
+
+  } else {
+    hasFbcWrapper.remove();
+  }
+
+}
+
+
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
@@ -306,101 +375,48 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   }
 
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
-
   // Show/hide prompt if login element
   if (socialAction === "login"){
-    target.addEventListener("click", (e) => {
-      if (!e.isTrusted) {
-        // The click was not user generated so ignore
-        return false;
-      } 
-      
-      if (allowClickSwitch) {
-        // Button disabled. Either will trigger new HTTP request or page will refresh.
-        setTimeout(()=>{
-          location.reload(true);
-        }, 250);
-        return;
-      } else {
-        // Click badge, button disabled
-        e.preventDefault();
-        e.stopPropagation();
-        openLoginPrompt(htmlBadgeFragmentFenceDiv.parentElement, target, htmlBadgeDiv);
-      }
-    });
-
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      console.log('clicked login');
+
       if (!e.isTrusted) {
         // The click was not user generated so ignore
         return false;
       } 
       
       e.preventDefault();
-      openLoginPrompt(e.target.parentElement, target, htmlBadgeDiv);
+      e.stopPropagation();
+      openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv, target);
+
+      // if (allowClickSwitch) {
+      //   // Button disabled. Either will trigger new HTTP request or page will refresh.
+      //   setTimeout(()=>{
+      //     location.reload(true);
+      //   }, 250);
+      //   return;
+      // } else {
+      //   // Click badge, button disabled
+      //   e.preventDefault();
+      //   // e.stopPropagation();
+      //   openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv, target);
+      // }
     });
-
-    // Add to Container "Allow"
-    htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
-      if (!e.isTrusted) {
-        // The click was not user generated so ignore
-        e.preventDefault();
-        return false;
-      } 
-
-      allowClickSwitch = true;
-      browser.runtime.sendMessage({
-        message: "add-domain-to-list"
-      });
-
-      target.click();
-    });
-
-    // Close prompt
-    htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
-      if (!e.isTrusted) {
-        // The click was not user generated so ignore
-        return false;
-      } 
-      e.preventDefault();
-      document.body.classList.remove("js-fbc-prompt-active");
-      document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
-      e.target.parentElement.parentNode.parentNode.classList.remove("active");
-    });
-  } else if (socialAction === "email") {
+  }  if (socialAction === "email") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      console.log('clicked email');
       if (!e.isTrusted) {
         // The click was not user generated so ignore
         return false;
       } 
       e.preventDefault();
-      e.target.parentElement.classList.toggle("active");
-      positionPrompt( htmlBadgeDiv );
-      target.classList.toggle("js-fbc-prompt-active");
-      document.body.classList.toggle("js-fbc-prompt-active");
+      e.stopPropagation();
+      openLoginPrompt("email", e.target.parentElement, htmlBadgeDiv, target);
+      // e.target.parentElement.classList.toggle("active");
+      // positionPrompt( htmlBadgeDiv );
+      // target.classList.toggle("js-fbc-prompt-active");
+      // document.body.classList.toggle("js-fbc-prompt-active");
     });
-
-    // Add to Container "Allow"
-    htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", (e) => {
-      if (!e.isTrusted) {
-        // The click was not user generated so ignore
-        return false;
-      } 
-      
-
-      window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=Facebook%20Container&utm_content=Try%20Firefox%20Relay");
-    });
-
-    // Dismiss email/relay prompt
-    htmlEmailBadgeFragmentPromptButtonDismiss.addEventListener("click", (e)=>{
-      if (!e.isTrusted) {
-        // The click was not user generated so ignore
-        return false;
-      } 
-      
-      closePrompt();
-      const activeBadge = document.querySelector("." + badgeClassUId);
-      activeBadge.style.display = "none";
-    }, false);
 
   } else if (socialAction === "share-passive") {
     htmlBadgeDiv.classList.add("fbc-badge-share-passive", "fbc-badge-share");
@@ -738,6 +754,20 @@ function escapeKeyListener () {
     }
   });
 }
+
+
+window.addEventListener("click", function() {
+  if (this.document.querySelector(".fbc-wrapper")) {
+    // stopPropagation();
+    closeIframe();
+  }
+});
+
+function closeIframe() {
+  const hasFbcWrapper = document.querySelector('.fbc-wrapper');
+  hasFbcWrapper.remove();
+}
+
 
 window.addEventListener("click", function(e){
   if ( document.body.classList.contains("js-fbc-prompt-active") ) {
