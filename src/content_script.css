@@ -9,7 +9,6 @@ body {
     --transition: all .15s cubic-bezier(.07,.95,0,1);
     --borders: 1px solid #ededf0;
     font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow: hidden;
 }
 
 /* Button Replacement */
