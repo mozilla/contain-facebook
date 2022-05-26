@@ -107,7 +107,7 @@
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
-    "message": "ਮਨਜ਼ੂਰ",
+    "message": "ਮਨਜ਼ੂਰ ਕਰੋ",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
   },
   "btn-cancel": {
@@ -135,7 +135,7 @@
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "ਕੋਈ ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ਨਹੀਂ ਖੋਜੇ ਗਏ",
+    "message": "ਕੋਈ ਫੇਸਬੁੱਕ ਟਰੈਕਰ ਨਹੀਂ ਲੱਭਿਆ ਹੈ",
     "description": ""
   },
   "no-trackers-p1": {
@@ -167,11 +167,11 @@
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ‘ਚ ਆਗਿਆ ਦਿੱਤੀਆਂ ਸਾਈਟਾਂ",
+    "message": "ਫੇਸਬੁੱਕ ਕਨਟੇਨਰ ‘ਚ ਇਜਾਜ਼ਤ ਦਿੱਤੀਆਂ ਸਾਈਟਾਂ",
     "description": "This is a panel subhead."
   },
   "sites-included": {
-    "message": "ਸਾਈਟਾਂ ਸ਼ਾਮਲ ਹਨ",
+    "message": "ਸਾਈਟਾਂ ਵਿੱਚ ਹਨ",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
@@ -179,7 +179,7 @@
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   },
   "sites-allowed": {
-    "message": "ਤੁਹਾਡੇ ਵਲੋਂ ਆਗਿਆ ਦਿੱਤੀਆਂ ਸਾਈਟਾਂ",
+    "message": "ਤੁਹਾਡੇ ਵਲੋਂ ਇਜਾਜ਼ਤ ਦਿੱਤੀਆਂ ਸਾਈਟਾਂ",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
@@ -243,6 +243,26 @@
   },
   "inPageUI-tooltip-button-share-passive": {
     "message": "ਜੇ ਤੁਸੀਂ ਇਹ ਬਟਨ ਨੂੰ ਕਲਿੱਕ ਕੀਤਾ ਤਾਂ ਫੇਸਬੁੱਕ ਇਸ ਸਾਈਟ ਨੂੰ ਤੁਹਾਡੇ ਵਲੋਂ ਖੋਲ੍ਹਣ ਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋ ਜਾਵੇਗੀ।",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "ਜੇ ਤੁਸੀਂ ਆਪਣਾ ਅਸਲ ਈਮੇਲ ਸਿਰਨਾਵਾਂ ਇੱਥੇ ਵਰਤਿਆ ਤਾਂ ਫੇਸਬੁੱਕ ਤੁਹਾਨੂੰ ਟਰੈਕ ਕਰਨ ਦੇ ਸਮਰੱਥ ਹੋ ਸਕਦੀ ਹੈ। ਹੋਰ ਜਾਣਨ ਲਈ ਕਲਿੱਕ ਕਰੋ।",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "ਕੀ ਫੇਸਬੁੱਕ ਨੂੰ ਤੁਹਾਨੂੰ ਇੱਥੇ ਟਰੈਕ ਕਰਨ ਦੇਣਾ ਹੈ?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "ਇਹ ਸਾਈਟ ਤੁਹਾਡੇ ਈਮੇਲ ਸਿਰਨਾਵੇਂ ਨੂੰ ਫੇਸਬੁੱਕ ਨਾਲ ਸ਼ੇਅਰ ਕਰ ਸਕਦੀ ਹੈ, ਜੋ ਕਿ ਫੇਸਬੁੱਕ ਨੂੰ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨ ਦੇ ਸਮਰੱਥ ਕਰ ਦੇਵੇਗਾ। ਆਪਣੇ ਅਸਲ ਈਮੇਲ ਸਿਰਨਾਵੇ ਨੂੰ ਲੁਕਾਉਣ ਵਾਸਤੇ Firefox Relay ਵਰਗੀ ਸੇਵਾ ਨੂੰ ਵਰਤੋਂ।",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "ਖ਼ਾਰਜ ਕਰੋ",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox Relay ਵਰਤ ਕੇ ਵੇਖੋ",
     "description": ""
   }
 }

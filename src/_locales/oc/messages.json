@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Se clicatz aqueste boton, Facebook poirà vos pistar sus aqueste site.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "S’utilizatz vòstra adreça electronica reala aquí, Facebook pòt vos pistar. Clicatz aquí per ne saber mai.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Autorizar Facebook a vos pistar aquí ?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Aqueste site pòt partejar vòstra adreça electronica amb Facebook, çò que lor permeton de vos pistar. Utilizatz un servici coma Firefox Relay per amagar vòstra adreça electronica.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Ignorar",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Ensajar Firefox Relay",
+    "description": ""
   }
 }

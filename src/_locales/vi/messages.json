@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Nếu bạn nhấp vào nút này, Facebook sẽ có thể theo dõi lượt truy cập của bạn vào trang web này.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Nếu bạn sử dụng địa chỉ email thực của mình ở đây, Facebook có thể theo dõi bạn. Nhấp để tìm hiểu thêm.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Cho phép Facebook theo dõi bạn ở đây?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Trang web này có thể chia sẻ địa chỉ email của bạn với Facebook, điều này cho phép Facebook theo dõi bạn. Sử dụng một dịch vụ như Firefox Relay để ẩn địa chỉ email thực của bạn.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Bỏ qua",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Thử Firefox Relay",
+    "description": ""
   }
 }

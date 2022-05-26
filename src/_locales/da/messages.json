@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Hvis du klikker på denne knap, vil Facebook være i stand til at spore dit besøg på dette websted.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Hvis du bruger din rigtige mailadresse her, kan Facebook muligvis spore dig. Klik for at læse mere.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Tillad Facebook at spore dig her?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Dette websted kan dele din mailadresse med Facebook, hvilket gør det muligt for Facebook at spore dig. Brug en tjeneste som Firefox Relay til at skjule din rigtige mailadresse.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Afvis",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Prøv Firefox Relay",
+    "description": ""
   }
 }

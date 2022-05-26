@@ -1,10 +1,10 @@
 {
   "extensionDescription": {
-    "message": "A Facebook Container elkülöníti a Facebook tevékenységét a többi webes tevékenységtől annak érdekében, hogy megakadályozza, hogy a Facebook a webhelyén kívül is követhesse Önt a harmadik féltől származó sütik révén.",
+    "message": "A Facebook Container elkülöníti a facebookos tevékenységét a többi webes tevékenységtől annak érdekében, hogy megakadályozza, hogy a Facebook a webhelyén kívül is követhesse Önt a harmadik féltől származó sütik révén.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
-    "message": "A $URL$ a Facebook Containerben található.",
+    "message": "A(z) $URL$ a Facebook Containerben van.",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
@@ -29,7 +29,7 @@
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   },
   "notOnFacebookHeader": {
-    "message": "A $URL$ nem a Facebook Containerben található.",
+    "message": "A(z) $URL$ nincs a Facebook Containerben.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
@@ -95,11 +95,11 @@
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "Ahhoz hogy a Facebook bejelentkezést használja más oldalakon, át kell helyeznie azokat a korláton belülre. Kattintson a kerítés ikonra, és válassza a „Webhely engedélyezése a Facebook konténerben” lehetőséget.",
+    "message": "Ahhoz hogy a Facebook bejelentkezést használja más oldalakon, át kell helyeznie azokat a korláton belülre. Kattintson a kerítés ikonra, és válassza a „Webhely engedélyezése a Facebook Containerben” lehetőséget.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "Ez a kép bemutatja, hogyan jelenik meg a panelen egy webhely Facebook konténerhez hozzáadásának gombja.",
+    "message": "Ez a kép bemutatja, hogyan jelenik meg a panelen egy webhely Facebook Containerhez hozzáadásának gombja.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
@@ -190,15 +190,15 @@
     "description": ""
   },
   "button-allow-site": {
-    "message": "Webhely engedélyezése a Facebook konténerben",
+    "message": "Webhely engedélyezése a Facebook Containerben",
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
   "button-remove-site": {
-    "message": "Webhely eltávolítása a Facebook konténerből",
+    "message": "Webhely eltávolítása a Facebook Containerből",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Mivel ez egy a Facebook tulajdonában lévő webhely, ezért nem távolítható el a Facebook konténerből.",
+    "message": "Mivel ez egy a Facebook tulajdonában lévő webhely, ezért nem távolítható el a Facebook Containerből.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
@@ -243,6 +243,26 @@
   },
   "inPageUI-tooltip-button-share-passive": {
     "message": "Ha rákattint erre a gombra, akkor a Facebook nyomon tudja követni, hogy mikor keresi fel az oldalt.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ha a valódi e-mail címét használja itt, akkor a Facebook képes lehet nyomon követni Önt. Kattintson a további információkért.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Hagyja, hogy a Facebook követhesse Önt itt?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Ez a webhely megoszthatja e-mail címét a Facebookkal, amely lehetővé teszi a Facebook számára, hogy nyomon kövesse Önt. A valós e-mail-címe elrejtéséhez használjon egy olyan szolgáltatást, mint a Firefox Relay.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Elvetés",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Próbálja ki a Firefox Relayt",
     "description": ""
   }
 }

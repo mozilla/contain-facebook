@@ -25,7 +25,7 @@
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p2": {
-    "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობაზე წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
+    "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობასთან წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   },
   "notOnFacebookHeader": {
@@ -75,7 +75,7 @@
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობაზე წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
+    "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობასთან წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding4-subhead": {
@@ -234,7 +234,7 @@
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "თუ გსურთ შეხვიდეთ Facebook-ით, მაშინ Facebook შეძლებს თვალი ადევნოს თქვენს მოქმედებებს ამ საიტზე. ეს საშუალებას მისცემს მათ, სრული სურათი შეიქმნან, თქვენი ინტერნეტ-ცხოვრების შესახებ.",
+    "message": "თუ გსურთ შეხვიდეთ Facebook-ით, მაშინ Facebook შეძლებს თვალი ადევნოს თქვენს მოქმედებებს ამ საიტზე. ეს საშუალებას მისცემს მათ, სრული სურათი შეიქმნან, თქვენი ინტერნეტცხოვრების შესახებ.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -243,6 +243,26 @@
   },
   "inPageUI-tooltip-button-share-passive": {
     "message": "თუ ამ ღილაკს დააწვებით, Facebook შეძლებს თვალი გადევნოთ ამ საიტზე.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "თუ ნამდვილ ელფოსტას გამოიყენებთ აქ, Facebook შეძლებს თვალი გადევნოთ. დაწკაპეთ და იხილეთ ვრცლად.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "გსურთ Facebook-მა თვალი გადევნოთ აქ?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "ამ საიტს, შეუძლია თქვენი ელფოსტა გაუზიაროს Facebook-ს, შედეგად კი Facebook შეძლებს თვალი გადევნოთ. გამოიყენეთ Firefox Relay ან მსგავსი მომსახურებები, თქვენი ნამდვილი ელფოსტის დასაფარად.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "გამოტოვება",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "გამოსცადეთ Firefox Relay",
     "description": ""
   }
 }

@@ -16,6 +16,10 @@
   "in-fbc-p1": {
     "message": "يمكن لموقع فيسبوك الآن تعقّب ما تفعل في هذا الموقع. لو أردت إزالة الموقع من امتداد Facebook Container فاختر ”المواقع المسموحة في امتداد Facebook Container“ وأزِله من القائمة."
   },
+  "on-facebook-subhead": {
+    "message": "على فيسبوك والمواقع داخل نطاق حاوية فيسبوك",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "on-facebook-p1": {
     "message": "تظهر هذه الأيقونة في شريط العنوان داخل Firefox متى زرت مواقع تملكها شركة فيسبوك أو مواقع أضفتها إلى امتداد Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
@@ -58,6 +62,10 @@
     "message": "يضع امتداد Facebook Container حدًا بين مواقع فيسبوك وباقي أرجاء الوِب ليُصعّب على فيسبوك تعقّب ما تفعله على الشبكة.",
     "description": "Please do not translate \"Facebook Container\""
   },
+  "onboarding2-subhead": {
+    "message": "على فيسبوك والمواقع داخل نطاق حاوية فيسبوك",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding2-alt": {
     "message": "أيقونة سياج امتداد Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
@@ -70,21 +78,9 @@
     "message": "لتعمل هذه المواقع عليها أن تعرف هويّتك على فيسبوك (أو هويّتك بشكل عام). يعني هذا أيضًا بأنّ فيسبوك يستطيع تعقّب ما تفعله أيًا كان في هذه المواقع.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
-  "onboarding3-subhead": {
-    "message": "كيف أعمل فيما إذا كان امتداد Facebook Container يعمل أو لا؟",
-    "description": "This is the subhead for the third onboarding panel."
-  },
-  "onboarding3-p1": {
-    "message": "تحتوي الأزرار التي تخصّ فيسبوك (والتي تُتيح الإعجاب والمشاركة أو حتّى الولوج إلى المواقع عبر حسابك على فيسبوك) - تحتوي على متعقّبات. سيمنع امتداد Facebook Container هذه المتعقّبات ويعرض أيقونة السياج ليقول بأنّ المتعقّبات هذه قد أُزيلت.",
-    "description": "This is the first paragraph of the third onboarding panel."
-  },
-  "onboarding3-img": {
-    "message": "ترى في هذه الصورة كيف تظهر أيقونة السياج لامتداد Facebook Container في الصفحة عند زرّ الإعجاب لموقع فيسبوك.",
-    "description": "This is alternative text for the image shown in the third onboarding panel."
-  },
-  "onboarding3-p2": {
-    "message": "ولكن لو نقرت على أيّ زرّ منها فستقدر فيسبوك على تعقّبك.",
-    "description": "This is the second paragraph on the third onboarding panel."
+  "onboarding4-subhead": {
+    "message": "خارج فيسبوك",
+    "description": "This is the subhead for the fourth onboarding panel."
   },
   "btn-allow": {
     "message": "اسمح",

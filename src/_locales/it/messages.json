@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Facendo clic su questo pulsante consentirai a Facebook di tracciare la tua attività su questo sito.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Se utilizzi il tuo indirizzo email reale in questa pagina, Facebook potrebbe essere in grado di tracciarti. Fai clic per ulteriori informazioni.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Consentire a Facebook di tracciarti in questa pagina?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Questo sito può condividere il tuo indirizzo email con Facebook consentendogli di tracciarti. Utilizza un servizio come Firefox Relay per nascondere il tuo indirizzo email reale.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Ignora",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Prova Firefox Relay",
+    "description": ""
   }
 }

@@ -83,7 +83,7 @@
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Навіть коли ви не знаходитесь на Facebook, він може стежити за вами в Інтернеті. Кнопки, які дозволяють вам поширювати матеріали в Facebook, або входити на вебсайти з використанням вашого облікового запису Facebook, містять вбудовані елементи стеження. Facebook Container блокуватиме таке стеження та відображатиме піктограму у вигляді паркану, щоб показати вам, де було вилучено стеження.",
+    "message": "Навіть коли ви не знаходитесь на Facebook, він може стежити за вами в Інтернеті. Кнопки, які дозволяють вам поширювати матеріали в Facebook, або входити на вебсайти з використанням вашого облікового запису Facebook, містять вбудовані елементи стеження. Facebook Container блокуватиме таке стеження та показуватиме піктограму у вигляді паркану, щоб показати вам, де було вилучено стеження.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
@@ -143,7 +143,7 @@
     "description": ""
   },
   "learn-more": {
-    "message": "Дізнатись більше",
+    "message": "Докладніше",
     "description": "This is a link that opens a page with more information about Facebook Container."
   },
   "how-fbc-works": {
@@ -243,6 +243,26 @@
   },
   "inPageUI-tooltip-button-share-passive": {
     "message": "Якщо ви натиснете цю кнопку, Facebook зможе стежити за вашими відвідуваннями цього сайту.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Якщо ви використовуєте тут свою справжню електронну адресу, Facebook, можливо, зможе відстежувати вас. Натисніть, щоб дізнатись докладніше.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Дозволити Facebook відстежувати вас на цьому сайті?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Цей сайт може передавати вашу електронну адресу Facebook, що дасть змогу Facebook відстежувати вас. Скористайтеся такою службою, як Firefox Relay, щоб приховати свою справжню електронну адресу.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Відхилити",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Спробувати Firefox Relay",
     "description": ""
   }
 }

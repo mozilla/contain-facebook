@@ -5,49 +5,55 @@
 // "[title*='Facebook']",
 // "[aria-label*='Facebook']",
 
+const EMAIL_PATTERN_DETECTION_SELECTORS = [
+  "input[type='email']",
+];
+
 const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[title='Log in with Facebook']",
   "[class*='FacebookConnectButton']",
   "[class*='js-facebook-login']", // kickstarter
   ".signup__button.button--facebook", // massdrop
-  "[class*='signinInitialStep_fbButton']", // soundcloud
   "[id*='signin_fb_btn']", // Ebay
-  "[class*='facebookV2Login']", // emag.ro
-  "[class*='btn-facebook-signin']", // estadao.com.br
+  ".btn-social.facebook", // emag.ro
+  ".button-login.facebook-login", // estadao.com.br
   "[class*='signup-provider-facebook']", // Fandom
   ".socialContainer-0-131 .mainFacebook-0-150", // Honey
   "[class*='facebook_login_click']", // Hi5
   "[data-test-id*='facebook-create-button']", // Doordash
-  "[class*='facebook-signup-button']", // Strava
+  "[class*='FacebookButton--facebook-button']", // Strava
+  "#login_form > .facebook", // Strava
   "[class*='facebook-connect-button']", // Twitch
-  "[href*='facebook.com/v2.3/dialog/oauth']", // Spotify
-  "[href*='/sign_in/Facebook']", // bazqux.com
+  "[data-testid*='facebook-login']", // Spotify
+  ".logInWithButtons .logInWith.facebook", // bazqux.com
   "[href*='signin/facebook']",
-  "[href*='/auth/facebook']", // Producthunt
+  "[data-test*='login-with-facebook']", // Producthunt
   "[data-oauthserver*='facebook']", // Stackoverflow
-  "[class*='ModalLoginSignup-facebook-connect']", // Freelancer.com
-  "[id*='facebook_connect_button']", // Quora
-  "[data-action*='facebook-auth']", //Medium
+  ".puppeteer_test_login_button_facebook", // Quora
+  "[href*='connect/facebook']", //Medium
   "[data-login-with-facebook='']", // etsy
   "[data-destination*='facebook']",
-  "[data-partner*='facebook']", // AliExpress
+  ".fm-sns-item.facebook", // AliExpress
   ".social-login .button--facebook", // noovie.com
-  "#home_account_fb.unlogged-btn-facebook", // Deezer
-  "[class*='_1HC-DxGDAHiEbG3x6-vzL9']", // Match UK Login
-  ".social-login > button.btn-facebook", // GroupMe
+  "#home_account_fb", // Deezer
+  ".front-door .btn.btn-facebook", // GroupMe
   "[class*='meetup-signupModal-facebook']", // Meetup Signup Homepage
-  "#register-form--creds .button--facebook", // Meetup Signup Static Page
-  "#modal--register .button--facebook", // Meetup Signup Non-homepage
-  ".join-linkedin-form + .third-party-btn-container button.fb-btn", // LinkedIn
+  "#facebook-register", // Meetup Signup Static Page
+  "[href*='https://www.facebook.com/v11.0/dialog/oauth']", // Meetup Signup Non-homepage
   ".fb-start .ybtn--social.ybtn--facebook", // Yelp
-  "form > .c-btn.c-btn--facebook.c-btn--icon.c-btn--full", // komoot
   "[aria-label*='Log in with Facebook']", // Tinder
+  ".registration__form .button.color-provider-facebook", // Bumble
+  "#facebookLoginButton", // eHarmony
   "[action*='facebook_login']", // Airbnb
   "[action*='facebook_signup']", // Airbnb
-  "[data-tag='login-form'] ~ span button[color='facebookBlue']", // Patreon
-  ".homepage-photo-leader .welcome-buttons div.btn-facebook", // Mixcloud homepage
-  ".modal-content .auth-form div.btn-facebook", // Mixcloud login modal
-  "[class*='fb-login']" // Default FB class name "fbc-login-button"
+  "#social-auth-provider-facebook-web", // VRBO
+  "[class*='FBLoginForm__Button']", // Mixcloud homepage
+  ".button.button--facebook", // Buzzfeed Login
+  "#js-facebook-oauth-login", // NY Times
+  "#login-facebook-button", // Indeed
+  ".btn-social-connect.btn-facebook", // Zillow (Zindex Issue)
+  "[class*='fb-login']", // Default FB class name "fbc-login-button"
+  ".fb-login-button" // Default FB class name "fbc-login-button"
 ];
 
 // TODO: Disarm click events on detected elements
@@ -75,6 +81,16 @@ const OBSERVER_ATTRIBUTES = [
   "data-oauthserver", "data-partner", "data-tag", "data-test-id", "data-tracking",
   "href", "id", "title"];
 
+async function getLocalStorageSettingFromBackground(setting) {
+  // Send request to background determine if to show Relay email field prompt
+  const backgroundResp = await browser.runtime.sendMessage({
+    message: "check-settings",
+    setting
+  });
+
+  return backgroundResp;
+}
+
 function isFixed (elem) {
   do {
     if (getComputedStyle(elem).position == "fixed") return true;
@@ -84,7 +100,9 @@ function isFixed (elem) {
 
 const fragmentClasses = ["fbc-badge-fence", "fbc-badge-tooltip", "fbc-badge-prompt"];
 const htmlBadgeFragmentPromptParagraphStrings = [ browser.i18n.getMessage("inPageUI-tooltip-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-prompt-p2") ];
+const htmlEmailBadgeFragmentPromptParagraphStrings = [ browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2") ];
 const htmlBadgeFragmentPromptButtonStrings = ["btn-cancel", "btn-allow"];
+const htmlEmailBadgeFragmentPromptButtonStrings = ["btn-relay-dismiss", "btn-relay-try"];
 
 function getTooltipFragmentStrings (socialAction) {
   switch (socialAction) {
@@ -94,7 +112,60 @@ function getTooltipFragmentStrings (socialAction) {
     return browser.i18n.getMessage("inPageUI-tooltip-button-share");
   case "share-passive":
     return browser.i18n.getMessage("inPageUI-tooltip-button-share-passive");
+  case "email":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-email");
   }
+}
+
+function buildSettingsObject() {
+  let data = {};
+  const checkboxes = document.querySelectorAll(".settings-checkbox");
+
+  checkboxes.forEach((item) => {
+    let settingName = item.id;
+    Object.defineProperty(data, settingName, {
+      value: item.checked,
+      writable: true,
+      configurable: true,
+      enumerable: true
+    });
+  });
+
+  return data;
+}
+
+async function updateSettings() {
+
+  let localStorage = await browser.storage.local.get();
+
+  if(!localStorage.settings) {
+    localStorage.settings = {};
+  }
+
+  const checkboxes = document.querySelectorAll(".settings-checkbox");
+
+  checkboxes.forEach((item) => {
+    let settingName = item.id;
+    item.checked = localStorage.settings[settingName];
+  });
+
+  await settingsCheckboxListener();
+}
+
+
+
+function settingsCheckboxListener(){
+  const checkboxes = document.querySelectorAll(".settings-checkbox");
+
+  checkboxes.forEach((item) => {
+    item.addEventListener("change", async () => {
+      const settings = buildSettingsObject();
+      await browser.runtime.sendMessage({
+        message: "update-settings",
+        settings
+      });
+    });
+  });
 }
 
 function createBadgeFragment (socialAction) {
@@ -141,6 +212,52 @@ function createBadgeFragment (socialAction) {
     }
 
     htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
+  } else if (socialAction === "email") {
+    const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
+
+    const htmlBadgeFragmentPromptH1 = document.createElement("h1");
+
+    htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
+    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
+
+    const htmlBadgeFragmentPromptContents = document.createElement("div");
+    htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
+
+    for (let promptParagraphString of htmlEmailBadgeFragmentPromptParagraphStrings) {
+      const paragraph = document.createElement("p");
+      paragraph.appendChild(document.createTextNode(promptParagraphString));
+      htmlBadgeFragmentPromptContents.appendChild(paragraph);
+    }
+
+    const dontShowAgainCheckboxForm = document.createElement("div");
+    dontShowAgainCheckboxForm.className = "fbc-badge-prompt-dontShowAgain-checkbox";
+    const dontShowAgainCheckboxInput = document.createElement("input");
+    dontShowAgainCheckboxInput.type = "checkbox";
+    dontShowAgainCheckboxInput.id = "hideRelayEmailBadges";
+    dontShowAgainCheckboxInput.classList.add("fbc-badge-prompt-dontShowAgain-checkbox-input", "settings-checkbox");
+    const dontShowAgainCheckboxLabel = document.createElement("label");
+    dontShowAgainCheckboxLabel.htmlFor = "hideRelayEmailBadges";
+    const dontShowAgainCheckboxText = document.createTextNode( browser.i18n.getMessage("inPageUI-tooltip-prompt-checkbox") );
+
+    dontShowAgainCheckboxLabel.appendChild(dontShowAgainCheckboxText);
+    dontShowAgainCheckboxForm.appendChild(dontShowAgainCheckboxInput);
+    dontShowAgainCheckboxForm.appendChild(dontShowAgainCheckboxLabel);
+
+    htmlBadgeFragmentPromptContents.appendChild(dontShowAgainCheckboxForm);
+
+    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
+
+    const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
+    htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
+
+    for (let buttonString of htmlEmailBadgeFragmentPromptButtonStrings) {
+      const button = document.createElement("button");
+      button.className = "fbc-badge-prompt-" + buttonString;
+      button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
+      htmlBadgeFragmentPromptButtonDiv.appendChild(button);
+    }
+
+    htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
   }
 
   // Create Empty Wrapper Div
@@ -159,6 +276,14 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
   return false;
 }
 
+function openLoginPrompt(parent, el, htmlBadgeDiv) {
+  parent.classList.toggle("active");
+  positionPrompt( htmlBadgeDiv );
+  el.classList.toggle("js-fbc-prompt-active");
+  document.body.classList.toggle("js-fbc-prompt-active");
+  htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
+}
+
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
 
@@ -166,6 +291,8 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
 
   const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel");
   const htmlBadgeFragmentPromptButtonAllow = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-allow");
+  const htmlEmailBadgeFragmentPromptButtonDismiss = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-relay-dismiss");
+  const htmlEmailBadgeFragmentPromptButtonTry = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-relay-try");
   const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".fbc-badge-fence");
 
   htmlBadgeDiv.className = "fbc-badge " + badgeClassUId;
@@ -189,6 +316,11 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Show/hide prompt if login element
   if (socialAction === "login"){
     target.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      }
+
       if (allowClickSwitch) {
         // Button disabled. Either will trigger new HTTP request or page will refresh.
         setTimeout(()=>{
@@ -199,13 +331,53 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
         // Click badge, button disabled
         e.preventDefault();
         e.stopPropagation();
-        htmlBadgeFragmentFenceDiv.click();
+        openLoginPrompt(htmlBadgeFragmentFenceDiv.parentElement, target, htmlBadgeDiv);
       }
     });
 
-
-
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      }
+
+      e.preventDefault();
+      openLoginPrompt(e.target.parentElement, target, htmlBadgeDiv);
+    });
+
+    // Add to Container "Allow"
+    htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        e.preventDefault();
+        return false;
+      }
+
+      allowClickSwitch = true;
+      browser.runtime.sendMessage({
+        message: "add-domain-to-list"
+      });
+
+      target.click();
+    });
+
+    // Close prompt
+    htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      }
+      e.preventDefault();
+      document.body.classList.remove("js-fbc-prompt-active");
+      document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
+      e.target.parentElement.parentNode.parentNode.classList.remove("active");
+    });
+  } else if (socialAction === "email") {
+    htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      }
       e.preventDefault();
       e.target.parentElement.classList.toggle("active");
       positionPrompt( htmlBadgeDiv );
@@ -214,22 +386,28 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     });
 
     // Add to Container "Allow"
-    htmlBadgeFragmentPromptButtonAllow.addEventListener("click", (e) => {
-      e.preventDefault();
-      allowClickSwitch = true;
-      browser.runtime.sendMessage({
-        message: "add-domain-to-list"
-      });
-      target.click();
+    htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", (e) => {
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      }
+
+
+      window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=Facebook%20Container&utm_content=Try%20Firefox%20Relay");
     });
 
-    // Close prompt
-    htmlBadgeFragmentPromptButtonCancel.addEventListener("click", (e) => {
-      e.preventDefault();
-      document.body.classList.remove("js-fbc-prompt-active");
-      document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
-      e.target.parentElement.parentNode.parentNode.classList.remove("active");
-    });
+    // Dismiss email/relay prompt
+    htmlEmailBadgeFragmentPromptButtonDismiss.addEventListener("click", (e)=>{
+      if (!e.isTrusted) {
+        // The click was not user generated so ignore
+        return false;
+      }
+
+      closePrompt();
+      const activeBadge = document.querySelector("." + badgeClassUId);
+      activeBadge.style.display = "none";
+    }, false);
+
   } else if (socialAction === "share-passive") {
     htmlBadgeDiv.classList.add("fbc-badge-share-passive", "fbc-badge-share");
 
@@ -505,7 +683,7 @@ function patternDetection(selectionArray, socialActionIntent, target) {
   }
 }
 
-function detectFacebookOnPage(target) {
+async function detectFacebookOnPage(target) {
   if (!checkForTrackers) {
     return;
   }
@@ -513,6 +691,19 @@ function detectFacebookOnPage(target) {
   patternDetection(PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS, "share-passive", target);
   patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share", target);
   patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login", target);
+  const relayAddonEnabled = await getRelayAddonEnabledFromBackground();
+
+  // Check if any FB trackers were blocked, scoped to only the active tab
+  const trackersDetectedOnCurrentPage = await checkIfTrackersAreDetectedOnCurrentPage();
+
+  // Check if user dismissed the Relay prompt
+  const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
+  if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage) {
+    patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
+    updateSettings();
+  }
+
+  escapeKeyListener();
 }
 
 // Resize listener. Only fires after window stops resizing.
@@ -603,7 +794,7 @@ browser.runtime.onMessage.addListener(message => {
 // let callCount = 0;
 let contentScriptDelay = 999;
 
-function contentScriptInit(resetSwitch, msg, target = document) {
+async function contentScriptInit(resetSwitch, msg, target = document) {
   // Second arg is for debugging to see which contentScriptInit fires
   // Call count tracks number of times contentScriptInit has been called
   // callCount = callCount + 1;
@@ -615,9 +806,23 @@ function contentScriptInit(resetSwitch, msg, target = document) {
 
   // Resource call is not in FBC/FB Domain and is a FB resource
   if (checkForTrackers && msg !== "other-domain") {
-    detectFacebookOnPage(target);
+    await detectFacebookOnPage(target);
     screenUpdate();
   }
+}
+
+async function getRelayAddonEnabledFromBackground() {
+  const relayAddonEnabled = await browser.runtime.sendMessage({
+    message: "get-relay-enabled"
+  });
+  return relayAddonEnabled;
+}
+
+async function checkIfTrackersAreDetectedOnCurrentPage() {
+  const trackersDetected = await browser.runtime.sendMessage({
+    message: "are-trackers-detected"
+  });
+  return trackersDetected;
 }
 
 async function getRootDomainFromBackground(url) {
@@ -641,7 +846,7 @@ async function CheckIfURLShouldBeBlocked() {
     checkForTrackers = false;
   } else {
     // Initialize the content script the first time
-    contentScriptInit(false);
+    await contentScriptInit(false);
 
     // Reinitialize the content script for mutated nodes
     const observer = new MutationObserver((mutations) => {

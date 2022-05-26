@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "ボタンをクリックすると、あなたがこのサイトに訪問したことを Facebook が追跡できます。",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "ここで実際のメールアドレスを使用すると、Facebook があなたを追跡できる可能性があります。詳細は、こちらをクリックしてください。",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "このページで Facebook があなたを追跡できるようにしますか？",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "このサイトはあなたのメールアドレスを Facebook と共有し、Facebook があなたを追跡できるようにしています。Firefox Relay などのサービスを利用して実際のメールアドレスを隠してください。",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "閉じる",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox Relay を試す",
+    "description": ""
   }
 }

@@ -25,7 +25,7 @@
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p2": {
-    "message": "Tute sydła trjebaja přistup na wašu identitu Facebook (abo dyrbja wědźeć, štó sće), zo bychu fungowali. To tež rěka, zo Facebook móže wšemu slědować, štož na tutych sydłach činiće.",
+    "message": "Tute sydła trjebaja přistup k wašej identiće Facebook (abo dyrbja wědźeć, štó sće), zo bychu fungowali. To tež rěka, zo Facebook móže wšemu slědować, štož na tutych sydłach činiće.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   },
   "notOnFacebookHeader": {
@@ -75,7 +75,7 @@
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "Tute sydła trjebaja přistup na wašu identitu Facebook (abo dyrbja wědźeć, štó sće), zo bychu fungowali. To tež rěka, zo Facebook móže wšemu slědować, štož na tutych sydłach činiće.",
+    "message": "Tute sydła trjebaja přistup k wašej identiće Facebook (abo dyrbja wědźeć, štó sće), zo bychu fungowali. To tež rěka, zo Facebook móže wšemu slědować, štož na tutych sydłach činiće.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding4-subhead": {
@@ -243,6 +243,26 @@
   },
   "inPageUI-tooltip-button-share-passive": {
     "message": "Jeli na tute tłóčatko kliknjeće, móže Facebook wašemu wopytej na tutym sydle slědować.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Jeli swoju woprawdźitu e-mejlowu adresu tu wužiwaće, móže Facebook wam slědować. Klikńće, zo byšće wjace zhonił.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Facebook dowolić, wam slědować?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Tute sydło móže wašu e-mejlowu adresu z Facebook dźělić, štož Facebook zmóžnja, wam slědować. Wužiwajće słužbu kaž Firefox Relay, zo byšce swoju woprawdźitu e-mejlowu adresu schował.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Zaćisnyć",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox Relay wupruwować",
     "description": ""
   }
 }

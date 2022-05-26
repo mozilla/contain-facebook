@@ -154,6 +154,10 @@
     "message": "‏Facebook Container חוסם את רכיבי המעקב האלו. עם זאת, לחיצה על אחד מהכפתורים האלו יגרום לכך ש־Facebook תוכל לעקוב אחריך.",
     "description": ""
   },
+  "trackers-detected-fence-alt": {
+    "message": "גדר של Facebook Container עם מגן.",
+    "description": "This is alternative text describing the container fence icon."
+  },
   "sites-added-subhead": {
     "message": "אתרים מותרים ב־Facebook Container",
     "description": "This is a panel subhead."
@@ -198,12 +202,36 @@
     "message": "פעולה זו מאפשרת לך להתחבר עם Facebook, אך גם מאפשרת ל־Facebook לעקוב אחר הפעילות שלך באתר זה.",
     "description": ""
   },
+  "inPageUI-tooltip-button-share": {
+    "message": "‏Facebook Container השבית את הכפתור הזה וחסם מפני Facebook את האפשרות לעקוב אחר הביקור שלך בדף זה.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-p1": {
     "message": "האם לאפשר ל־Facebook לעקוב אחריך כאן?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "לא להציג הודעה זו שוב",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "אם ייעשה שימוש בכתובת הדוא״ל האמיתית שלך כאן, ייתכן שיהיה באפשרות Facebook לעקוב אחריך. יש ללחוץ למידע נוסף.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "האם לאפשר ל־Facebook לעקוב אחריך כאן?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "אתר זה יכול לשתף את כתובת הדוא״ל שלך עם Facebook, מה שמאפשר לפייסבוק לעקוב אחריך. ניתן להשתמש בשירות כמו Firefox Relay כדי להסתיר את כתובת הדוא״ל האמיתית שלך.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "סגירה",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "לנסות את Firefox Relay",
     "description": ""
   }
 }

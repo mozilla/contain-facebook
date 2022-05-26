@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Nëse klikoni këtë buton, Facebook-u do të jetë në gjendje të ndjekë vizitën tuaj në këtë sajt.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Nëse këtu përdorni adresën tuaj të njëmendtë email, Facebook-u mund të jetë në gjendje t’ju gjurmojë. Klikoni që të mësoni më shumë.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Të lejohet Facebook-u t’ju gjurmojë këtu?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Ky sajt mund t’ia japë adresën tuaj email Facebook-ut, çka e lejon Facebook-un t’ju gjurmojë. Që të fshihni adresën tuaj email reale, përdorni një shërbim të tillë si Firefox Relay.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Hidhe tej",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Provoni Firefox Relay",
+    "description": ""
   }
 }

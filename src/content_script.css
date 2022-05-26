@@ -53,6 +53,7 @@
 	--transition: all .15s cubic-bezier(.07,.95,0,1);
 	--blue60: #0060df;
 	--blue70: #003eaa;
+	--blue80: #073072;
 	--black: #000000;
 	--white: #ffffff;
 }
@@ -250,6 +251,11 @@
 	line-height: 20px;
 }
 
+.fbc-badge-prompt-dontShowAgain-checkbox {
+	display: flex;
+	align-items: center;
+}
+
 .fbc-badge-prompt-buttons {
 	position: absolute;
 	bottom: 0.15px;
@@ -277,6 +283,10 @@
 	text-align: center;
 }
 
+.fbc-badge-prompt-buttons button:focus {
+	border-top: 1px solid #cfcfd8;
+}
+
 .fbc-badge-prompt-buttons button:hover {
 	background: #E9E9E9;
 	color: var(--black);
@@ -286,6 +296,10 @@
 	border-top: 1px solid var(--blue70);
 	background: var(--blue60);
 	color: var(--white);
+}
+
+.fbc-badge-prompt-buttons button:last-child:focus {
+	border-top: 1px solid var(--blue80);
 }
 
 .fbc-badge-prompt-buttons button:last-child:hover {

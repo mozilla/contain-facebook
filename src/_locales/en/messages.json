@@ -25,7 +25,7 @@
         "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
     },
     "on-facebook-p2": {
-      "message": "These sites need to access to your Facebook identity (or know who you are) in order to work. This also means that Facebook can track everything you do on these sites.",
+      "message": "These sites need to access your Facebook identity (or know who you are) in order to work. This also means that Facebook can track everything you do on these sites.",
       "description": "This is shown in the body of the panel pop up when the user is on Facebook."
     },
     "notOnFacebookHeader": {
@@ -243,6 +243,26 @@
    },
    "inPageUI-tooltip-button-share-passive": {
      "message": "If you click this button, Facebook will be able to track your visit to this site.",
+     "description": ""
+   },
+   "inPageUI-tooltip-button-email": {
+     "message": "If you use your real email address here, Facebook may be able to track you. Click to learn more.",
+     "description": ""
+   },
+   "inPageUI-tooltip-email-prompt-p1": {
+     "message": "Allow Facebook to track you here?",
+     "description": ""
+   },
+   "inPageUI-tooltip-email-prompt-p2": {
+     "message": "This site can share your email address with Facebook, which allows Facebook to track you. Use a service like Firefox Relay to hide your real email address.",
+     "description": ""
+   },
+   "btn-relay-dismiss": {
+     "message": "Dismiss",
+     "description": ""
+   },
+   "btn-relay-try": {
+     "message": "Try Firefox Relay",
      "description": ""
    }
 }

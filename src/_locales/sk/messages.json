@@ -83,7 +83,7 @@
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Aj keď nie ste na Facebooku, Facebook vás môže sledovať. Tlačidlá, vďaka ktorím môžete zdieľať veci na Facebooku alebo sa pomocou Facebooku prihlásiť na webové stránky, obsahujú sledovacie prvky. Facebook Container blokuje tieto sledovacie prvky a na mieste odstránených sledovacích prvkov zobrazí ikonu plotu.",
+    "message": "Aj keď nie ste na Facebooku, Facebook vás môže sledovať. Tlačidlá, vďaka ktorým môžete zdieľať veci na Facebooku alebo sa pomocou Facebooku prihlásiť na webové stránky, obsahujú sledovacie prvky. Facebook Container blokuje tieto sledovacie prvky a na mieste odstránených sledovacích prvkov zobrazí ikonu plotu.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
@@ -155,7 +155,7 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "Tlačidlá Facebooku, ktoré sa objavujú v e-shopoch, alebo spravodajských a ďalších stránkach obsahujú sledovacie prvky, vďaka ktorím Facebook vie, ktoré stránky navštívite. Aj ak žiadne z týchto tlačidiel nepoužijete, sledovacie prvky zbierajú údaje o vašom prehliadaní. Facebook Container blokuje práve tieto sledovacie prvky.",
+    "message": "Tlačidlá Facebooku, ktoré sa objavujú v e-shopoch, alebo spravodajských a ďalších stránkach obsahujú sledovacie prvky, vďaka ktorým Facebook vie, ktoré stránky navštívite. Aj ak žiadne z týchto tlačidiel nepoužijete, sledovacie prvky zbierajú údaje o vašom prehliadaní. Facebook Container blokuje práve tieto sledovacie prvky.",
     "description": ""
   },
   "trackers-detected-p2": {
@@ -243,6 +243,26 @@
   },
   "inPageUI-tooltip-button-share-passive": {
     "message": "Ak kliknete na toto tlačidlo, Facebook vás bude môcť na tejto stránke sledovať.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ak tu použijete svoju skutočnú e-mailovú adresu, Facebook vás môže sledovať. Kliknutím získate ďalšie informácie.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Chcete povoliť Facebooku vás tu sledovať?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Táto stránka môže zdieľať vašu e-mailovú adresu s Facebookom, čo umožňuje Facebooku vás sledovať. Na skrytie svojej skutočnej e-mailovej adresy použite službu, ako je Firefox Relay.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Zavrieť",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Vyskúšať Firefox Relay",
     "description": ""
   }
 }

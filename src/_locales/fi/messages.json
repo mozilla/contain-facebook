@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Jos napsautat tätä painiketta, Facebook voi seurata vierailuasi tällä sivustolla.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Jos käytät oikeaa sähköpostiosoitettasi täällä, Facebook saattaa pystyä seuraamaan sinua. Napsauta saadaksesi lisätietoja.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Haluatko sallia Facebookin seuraavan sinua täällä?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Tämä sivusto voi jakaa sähköpostiosoitteesi Facebookin kanssa, jolloin Facebook voi seurata sinua. Käytä Firefox Relayn kaltaista palvelua piilottaaksesi todellisen sähköpostiosoitteesi.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Hylkää",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Kokeile Firefox Relay -palvelua",
+    "description": ""
   }
 }

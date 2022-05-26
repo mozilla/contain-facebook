@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Si feu clic en aquest botó, el Facebook podrà fer el seguiment de la vostra visita en aquest lloc.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Si utilitzeu la vostra adreça electrònica real aquí, és possible que Facebook us pugui fer seguiment. Feu clic per a més informació.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Voleu permetre que el Facebook us faci el seguiment en aquesta pàgina?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Aquest lloc pot compartir la vostra adreça electrònica amb el Facebook, cosa que permetria que el Facebook us faci el seguiment. Utilitzeu un servei com el Firefox Relay per amagar la vostra adreça electrònica real.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Descarta",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Proveu el Firefox Relay",
+    "description": ""
   }
 }

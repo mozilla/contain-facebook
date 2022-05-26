@@ -14,19 +14,33 @@ const FACEBOOK_DOMAINS = [
   "instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
 
-  "messenger.com", "m.me", "messengerdevelopers.com",
+  "messenger.com", "m.me", "messengerdevelopers.com", "facebook.messenger.com",
 
   "atdmt.com",
 
   "workplace.com", "www.workplace.com", "work.facebook.com",
 
   "onavo.com",
-  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com"
+  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
+
+  "mapwith.ai", "wit.ai",
+
+  "oversightboard.com", "www.oversightboard.com",
+  
+  "bulletin.com", "facebookbrand.com",
+
+  "novi.com"
 ];
 
+const DEFAULT_SETTINGS = {
+  hideRelayEmailBadges: false,
+};
+
 const MAC_ADDON_ID = "@testpilot-containers";
+const RELAY_ADDON_ID = "private-relay@firefox.com";
 
 let macAddonEnabled = false;
+let relayAddonEnabled = false;
 let facebookCookieStoreId = null;
 
 // TODO: refactor canceledRequests and tabsWaitingToLoad into tabStates
@@ -35,6 +49,42 @@ const tabsWaitingToLoad = {};
 const tabStates = {};
 
 const facebookHostREs = [];
+
+async function updateSettings(data){
+  await browser.storage.local.set({
+    "settings": data
+  });
+}
+
+async function checkSettings(setting){
+  let fbcStorage = await browser.storage.local.get();
+
+  if (setting) {
+    return fbcStorage.settings[setting];
+  }
+
+  if (fbcStorage.settings) {
+    return fbcStorage.settings;
+  }
+
+  await browser.storage.local.set({
+    "settings": DEFAULT_SETTINGS
+  });
+
+}
+
+
+async function isRelayAddonEnabled () {
+  try {
+    const relayAddonInfo = await browser.management.get(RELAY_ADDON_ID);
+    if (relayAddonInfo.enabled) {
+      return true;
+    }
+  } catch (e) {
+    return false;
+  }
+  return false;
+}
 
 async function isMACAddonEnabled () {
   try {
@@ -64,10 +114,16 @@ async function setupMACAddonListeners () {
     if (info.id === MAC_ADDON_ID) {
       macAddonEnabled = false;
     }
+    if (info.id === RELAY_ADDON_ID) {
+      relayAddonEnabled = false;
+    }
   }
   function enabledExtension (info) {
     if (info.id === MAC_ADDON_ID) {
       macAddonEnabled = true;
+    }
+    if (info.id === RELAY_ADDON_ID) {
+      relayAddonEnabled = true;
     }
   }
   browser.management.onInstalled.addListener(enabledExtension);
@@ -511,7 +567,7 @@ async function containFacebook (request) {
 }
 
 // Lots of this is borrowed from old blok code:
-// https://github.com/mozilla/blok/blob/master/src/js/background.js
+// https://github.com/mozilla/blok/blob/main/src/js/background.js
 async function blockFacebookSubResources (requestDetails) {
   if (requestDetails.type === "main_frame") {
     tabStates[requestDetails.tabId] = { trackersDetected: false };
@@ -591,9 +647,19 @@ function setupWindowsAndTabsListeners() {
   browser.windows.onFocusChanged.addListener(windowFocusChangedListener);
 }
 
+async function checkIfTrackersAreDetected(sender) {
+  const activeTab = await getActiveTab();
+  const tabState = tabStates[activeTab.id];
+  const trackersDetected = (tabState && tabState.trackersDetected);
+  const onActiveTab = (activeTab.id === sender.tab.id);
+  // Check if trackers were blocked,scoped to the active tab.
+  return (onActiveTab && trackersDetected);  
+}
+
 (async function init () {
   await setupMACAddonListeners();
   macAddonEnabled = await isMACAddonEnabled();
+  relayAddonEnabled = await isRelayAddonEnabled();
 
   try {
     await setupContainer();
@@ -622,6 +688,15 @@ function setupWindowsAndTabsListeners() {
       break;
     case "get-root-domain":
       return getRootDomain(request.url);
+    case "get-relay-enabled":
+      return relayAddonEnabled;
+    case "update-settings":
+      updateSettings(request.settings);
+      break;
+    case "check-settings":
+      return checkSettings();
+    case "are-trackers-detected":
+      return await checkIfTrackersAreDetected(sender);
     default:
       throw new Error("Unexpected message!");
     }

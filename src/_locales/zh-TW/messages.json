@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "點擊此按鈕後，Facebook 就能夠追蹤到您曾造訪過這個網站。",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "若您在此輸入實際使用的電子郵件信箱，Facebook 可能還是能追蹤您。點擊此處了解更多資訊。",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "要允許 Facebook 在此處追蹤您？",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "此網站可能會與 Facebook 分享您的電子郵件地址，讓 Facebook 能追蹤到您。可使用如 Firefox Relay 的服務來隱藏您實際的電子郵件地址。",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "知道了！",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "試用 Firefox Relay",
+    "description": ""
   }
 }

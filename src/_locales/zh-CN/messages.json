@@ -14,7 +14,7 @@
     }
   },
   "in-fbc-p1": {
-    "message": "Facebook Container 会在此网站跟踪您。若要从 Facebook Container 移除，请选择“允许在 Facebook Container 中运行的网站”并将其从列表中移除。"
+    "message": "Facebook 会在此网站跟踪您。若要从 Facebook Container 移除，请选择“允许在 Facebook Container 中运行的网站”并将其从列表中移除。"
   },
   "on-facebook-subhead": {
     "message": "Facebook 与 Facebook Container 边界内的网站",
@@ -202,7 +202,7 @@
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "要将网站从 Facebook Container 移除？",
+    "message": "要将网站从 Facebook Container 移除吗？",
     "description": ""
   },
   "remove-site-p1": {
@@ -243,6 +243,26 @@
   },
   "inPageUI-tooltip-button-share-passive": {
     "message": "若点击此按钮，Facebook 将能够跟踪您对该网站的访问。",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "若在此输入真实邮箱地址，Facebook 可能还是能够跟踪您。点击此处了解更多信息。",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "要允许 Facebook 在此跟踪您？",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "此网站会与 Facebook 共享您的电子邮件地址，这将使得 Facebook 能够跟踪您。可使用如 Firefox Relay 的服务隐藏您的真实电子邮件地址。",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "知道了",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "试用 Firefox Relay",
     "description": ""
   }
 }

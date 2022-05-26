@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Jika Anda klik tombol ini, Facebook akan dapat melacak kunjungan Anda ke situs ini.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Jika Anda menggunakan alamat surel asli Anda di sini, Facebook mungkin dapat melacak Anda. Tekan untuk mempelajari lebih lanjut.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Izinkan Facebook melacak Anda di sini?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Situs ini dapat membagikan alamat surel Anda dengan Facebook, yang memungkinkan Facebook untuk melacak Anda. Gunakan layanan seperti Firefox Relay untuk menyembunyikan alamat surel asli Anda.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Tutup",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Coba Firefox Relay",
+    "description": ""
   }
 }
