@@ -65,12 +65,6 @@ fbcPromptAllow.addEventListener("click", (e) => {
 
 });
 
-// Remove popup when cancel is selected
-fbcPromptCancel.addEventListener("click", function() {
-    parent.postMessage("closeTheInjectedIframe", "*")
-});
-
-
 // Email Strings
 const fbcEmailSubtitleLogin = document.querySelector(".fbc-subtitle-email");
 fbcEmailSubtitleLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1");
@@ -87,6 +81,13 @@ const fbcEmailCancel = document.querySelector(".fbc-badge-email-btn-dismiss");
 fbcEmailAllow.innerHTML = browser.i18n.getMessage("btn-relay-try");
 fbcEmailCancel.innerHTML = browser.i18n.getMessage("btn-relay-dismiss");
 
+
+// // Remove popup when cancel/dismiss is clicked
+[fbcPromptCancel, fbcEmailCancel].forEach(e => {
+    e.addEventListener("click", () => {
+        parent.postMessage("closeTheInjectedIframe", "*")
+    })
+});
 
  // TODO: Add this condition via postMessage
     // allowClickSwitch = true; 
