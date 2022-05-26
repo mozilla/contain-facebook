@@ -74,11 +74,6 @@ const PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/sharer']", // Legacy Share dialog
 ];
 
-window.addEventListener("message", (e) => {
-  if (e.data === "closeTheInjectedIframe") {
-    closeIframe();
-  }
-})
 
 async function getLocalStorageSettingFromBackground(setting) {
   // Send request to background determine if to show Relay email field prompt
@@ -169,9 +164,6 @@ function settingsCheckboxListener(){
 
 function createBadgeFragment (socialAction) {
   const htmlBadgeFragment = document.createDocumentFragment();
- 
-
-  // const emailContent = document.querySelector(".fbc-email");
 
   for (let className of fragmentClasses) {
     const div = document.createElement("div");
@@ -185,11 +177,6 @@ function createBadgeFragment (socialAction) {
 
   // Create Prompt/Allow Dialog
   if (socialAction === "login"){
-
-    // loginItem.classList.remove(".is-hidden");
-    
-
-    // loginContent.classList.remove("is-hidden");
     // const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
 
     // const htmlBadgeFragmentPromptH1 = document.createElement("h1");
@@ -220,7 +207,6 @@ function createBadgeFragment (socialAction) {
 
     // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
   } else if (socialAction === "email") {
- 
     // const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
 
     // const htmlBadgeFragmentPromptH1 = document.createElement("h1");
@@ -284,7 +270,6 @@ function shouldBadgeBeSmall(ratioCheck, itemHeight) {
   return false;
 }
 
-
 function createElementWithClassList(elemType, elemClass) {
   const newElem = document.createElement(elemType);
   newElem.classList.add(elemClass);
@@ -338,10 +323,6 @@ function positionIframe(fencePos) {
   iframeObject.style.marginLeft = `${xPos}px`;
   iframeObject.style.marginTop = `${yPos}px`;
 
-  // console.log(`${fencePosition.x}px`);
-  // iframeObject.style.marginLeft = "100px";
-  // console.log(fencePosition);
-  // console.log("this works");
 }
 
 function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
@@ -362,24 +343,13 @@ function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
     hasFbcWrapper.remove();
   }
 
-  // buildInpageIframe().classList.toggle("active");
-  // parent.classList.toggle("active");
-  positionPrompt( htmlBadgeDiv );
-  // el.classList.toggle("js-fbc-prompt-active");
-  // document.body.classList.toggle("js-fbc-prompt-active");
-  htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel").focus();
 }
 
 
-function closeIframe() {
-  const hasFbcWrapper = document.querySelector('.fbc-wrapper');
-  hasFbcWrapper.remove();
-}
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Detect if target is visible
 
-  console.log(target);
   const htmlBadgeDiv = createBadgeFragment(socialAction);
 
   const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel");
@@ -405,79 +375,48 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   }
 
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
-
   // Show/hide prompt if login element
   if (socialAction === "login"){
-    target.addEventListener("click", (e) => {
-      if (!e.isTrusted) {
-        // The click was not user generated so ignore
-        return false;
-      } 
-      
-      if (allowClickSwitch) {
-        // Button disabled. Either will trigger new HTTP request or page will refresh.
-        setTimeout(()=>{
-          location.reload(true);
-        }, 250);
-        return;
-      } else {
-        // Click badge, button disabled
-        e.preventDefault();
-        // e.stopPropagation();
-        openLoginPrompt("login", htmlBadgeFragmentFenceDiv.parentElement, htmlBadgeDiv, target);
-      }
-    });
-
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      console.log('clicked login');
+
       if (!e.isTrusted) {
         // The click was not user generated so ignore
         return false;
       } 
       
+      e.preventDefault();
       e.stopPropagation();
       openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv, target);
+
+      // if (allowClickSwitch) {
+      //   // Button disabled. Either will trigger new HTTP request or page will refresh.
+      //   setTimeout(()=>{
+      //     location.reload(true);
+      //   }, 250);
+      //   return;
+      // } else {
+      //   // Click badge, button disabled
+      //   e.preventDefault();
+      //   // e.stopPropagation();
+      //   openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv, target);
+      // }
     });
-
-
-  } else if (socialAction === "email") {
-    console.log("email here");
+  }  if (socialAction === "email") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
+      console.log('clicked email');
       if (!e.isTrusted) {
         // The click was not user generated so ignore
         return false;
       } 
       e.preventDefault();
-      openLoginPrompt("email", htmlBadgeFragmentFenceDiv, htmlBadgeDiv, target);
+      e.stopPropagation();
+      openLoginPrompt("email", e.target.parentElement, htmlBadgeDiv, target);
       // e.target.parentElement.classList.toggle("active");
       // positionPrompt( htmlBadgeDiv );
       // target.classList.toggle("js-fbc-prompt-active");
       // document.body.classList.toggle("js-fbc-prompt-active");
     });
-
-    // Add to Container "Allow"
-    // htmlEmailBadgeFragmentPromptButtonTry.addEventListener("click", (e) => {
-    //   if (!e.isTrusted) {
-    //     // The click was not user generated so ignore
-    //     return false;
-    //   } 
-
-    //   window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=Facebook%20Container&utm_content=Try%20Firefox%20Relay");
-    
-    
-    // });
-
-    // // Dismiss email/relay prompt
-    // htmlEmailBadgeFragmentPromptButtonDismiss.addEventListener("click", (e)=>{
-    //   if (!e.isTrusted) {
-    //     // The click was not user generated so ignore
-    //     return false;
-    //   } 
-      
-    //   // closePrompt();
-    //   closeIframe();
-    //   const activeBadge = document.querySelector("." + badgeClassUId);
-    //   activeBadge.style.display = "none";
-    // }, false);
 
   } else if (socialAction === "share-passive") {
     htmlBadgeDiv.classList.add("fbc-badge-share-passive", "fbc-badge-share");
@@ -493,7 +432,6 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   htmlBadgeFragmentFenceDiv.addEventListener("mouseenter", () => {
     positionPrompt( htmlBadgeDiv );
   });
-
 
 }
 
@@ -665,8 +603,6 @@ function calcZindex(target) {
 
 function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch) {
 
-  console.log(target + "is target");
-  console.log(target.getBoundingClientRect());
   // Check for Badge element and select it
   if (!badgeClassUId) {
     badgeClassUId = "js-" + target;
@@ -745,16 +681,12 @@ function patternDetection(selectionArray, socialActionIntent){
 
   for (let item of document.querySelectorAll(querySelector)) {
     // overlay the FBC icon badge on the item
-    const hasBadge = document.querySelector('.fbc-badge');
-    if (!hasBadge && !isPinterest(item) && !parentIsBadged(item)) {
-      console.log(hasBadge);
+    if (!item.classList.contains("fbc-has-badge") && !isPinterest(item) && !parentIsBadged(item)) {
       const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
       const itemUIDClassTarget = "js-" + itemUIDClassName;
       const socialAction = socialActionIntent;
       facebookDetectedElementsArr.push(itemUIDClassName);
       addFacebookBadge(item, itemUIDClassTarget, socialAction);
-      console.log(item + "check");
-
       item.classList.add("fbc-has-badge");
       item.classList.add(itemUIDClassName);
     }
@@ -818,17 +750,23 @@ function screenUpdate () {
 function escapeKeyListener () {
   document.body.addEventListener("keydown", function(e) {
     if(e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
-      // closePrompt();
-      closeIframe();
+      closePrompt();
     }
   });
 }
 
+
 window.addEventListener("click", function() {
   if (this.document.querySelector(".fbc-wrapper")) {
+    // stopPropagation();
     closeIframe();
   }
 });
+
+function closeIframe() {
+  const hasFbcWrapper = document.querySelector('.fbc-wrapper');
+  hasFbcWrapper.remove();
+}
 
 
 window.addEventListener("click", function(e){
@@ -836,8 +774,7 @@ window.addEventListener("click", function(e){
     const activePrompt = findActivePrompt();
     const activePromptTarget = document.querySelector(".fbc-has-badge.js-fbc-prompt-active");
     if ( !activePrompt.contains(e.target) && !activePromptTarget.contains(e.target) ) {
-      // closePrompt();
-      closeIframe();
+      closePrompt();
     }
   } else {
     contentScriptInit(true);
