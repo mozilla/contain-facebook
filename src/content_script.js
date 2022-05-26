@@ -314,7 +314,15 @@ function positionIframe(fencePos) {
   }
 }
 
+<<<<<<< HEAD
 function openInputPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
+=======
+function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
+  const hasFbcWrapper = document.querySelector('.fbc-wrapper');
+  if(!hasFbcWrapper) {
+    injectIframeOntoPage(socialAction, target);
+    positionIframe(fencePos);
+>>>>>>> d5ca6b2 (localize emails trings)
 
   const iframeSrcVal = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT).src;
 
@@ -799,6 +807,7 @@ window.addEventListener("click", function () {
   }
 });
 
+<<<<<<< HEAD
 // window.addEventListener("message", (e) => {
 //   if (
 //     e.data === "closeTheInjectedIframe" 
@@ -806,6 +815,13 @@ window.addEventListener("click", function () {
 //     closeIframe();
 //   }
 // });
+=======
+window.addEventListener("message", (e) => {
+  if (e.data === "closeTheInjectedIframe") {
+    closeIframe();
+  }
+});
+>>>>>>> d5ca6b2 (localize emails trings)
 
 function closeIframe() {
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
