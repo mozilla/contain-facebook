@@ -28,17 +28,16 @@ if (action === "email") {
     emailItem.classList.remove("is-hidden");
 }
 
+// Header String
 const fbcTitle = document.querySelector(".fbc-title");
 fbcTitle.innerHTML = browser.i18n.getMessage("facebookContainer");
 
+// Login Strings
 const fbcPromptSubtitleLogin = document.querySelector(".fbc-subtitle-login");
 fbcPromptSubtitleLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-prompt-p1");
 
 const fbcPromptBodyTextLogin = document.querySelector(".fbc-bodytext-login");
 fbcPromptBodyTextLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-prompt-p2");
-
-const fbcPromptSubtitleEmail =  browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1");
-const fbcPromptBodyTextEmail = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2");
 
 const fbcPromptAllow = document.querySelector(".fbc-badge-prompt-btn-allow");
 const fbcPromptCancel = document.querySelector(".fbc-badge-prompt-btn-cancel");
@@ -55,31 +54,42 @@ fbcPromptAllow.addEventListener("click", (e) => {
     return false;
     } 
 
-    // allowClickSwitch = true;
+    // TODO: Add this condition via postMessage
+    // allowClickSwitch = true; 
     browser.runtime.sendMessage({
     message: "add-domain-to-list"
     });
 
-    // console.log(btnLink);
-
-    // if (typeof btnLink === "string") {
-    //     // parent.location.href = btnLink;
-    //     console.log("this string");
-    // }
-
-    // if (typeof btnLink === "object") {
-    //     console.log("this obj");
-    // }
-
+    // Launch facebook authentication
     parent.postMessage("allowTriggered", "*");
 
 });
 
+// Remove popup when cancel is selected
 fbcPromptCancel.addEventListener("click", function() {
     parent.postMessage("closeTheInjectedIframe", "*")
 });
 
 
+// Email Strings
+const fbcEmailSubtitleLogin = document.querySelector(".fbc-subtitle-email");
+fbcEmailSubtitleLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1");
+
+const fbcEmailBodyTextLogin = document.querySelector(".fbc-bodytext-email");
+fbcEmailBodyTextLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2");
+
+const fbcEmailCheckbox = document.querySelector(".fbc-email-checkbox");
+fbcEmailCheckbox.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-prompt-checkbox");
+
+const fbcEmailAllow = document.querySelector(".fbc-badge-email-btn-cta-fx-relay");
+const fbcEmailCancel = document.querySelector(".fbc-badge-email-btn-dismiss");
+
+fbcEmailAllow.innerHTML = browser.i18n.getMessage("btn-relay-try");
+fbcEmailCancel.innerHTML = browser.i18n.getMessage("btn-relay-dismiss");
+
+
+ // TODO: Add this condition via postMessage
+    // allowClickSwitch = true; 
 // target.addEventListener("click", (e) => {
 //     if (!e.isTrusted) {
 //       // The click was not user generated so ignore

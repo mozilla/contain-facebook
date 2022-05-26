@@ -329,7 +329,6 @@ function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
   if(!hasFbcWrapper) {
     injectIframeOntoPage(socialAction, target);
-    // console.log("iframe added");
     positionIframe(fencePos);
 
     window.addEventListener("message", (e) => {
@@ -378,7 +377,6 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   // Show/hide prompt if login element
   if (socialAction === "login"){
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
-      console.log('clicked login');
 
       if (!e.isTrusted) {
         // The click was not user generated so ignore
@@ -404,7 +402,6 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     });
   }  if (socialAction === "email") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
-      console.log('clicked email');
       if (!e.isTrusted) {
         // The click was not user generated so ignore
         return false;
@@ -759,6 +756,12 @@ function escapeKeyListener () {
 window.addEventListener("click", function() {
   if (this.document.querySelector(".fbc-wrapper")) {
     // stopPropagation();
+    closeIframe();
+  }
+});
+
+window.addEventListener("message", (e) => {
+  if (e.data === "closeTheInjectedIframe") {
     closeIframe();
   }
 });
