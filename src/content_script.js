@@ -175,85 +175,6 @@ function createBadgeFragment (socialAction) {
   const htmlBadgeFragmentTooltipDiv = htmlBadgeFragment.querySelector(".fbc-badge-tooltip");
   htmlBadgeFragmentTooltipDiv.appendChild( document.createTextNode( getTooltipFragmentStrings(socialAction) ) );
 
-  // Create Prompt/Allow Dialog
-  if (socialAction === "login"){
-    // const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
-
-    // const htmlBadgeFragmentPromptH1 = document.createElement("h1");
-
-    // htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
-    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
-
-    // const htmlBadgeFragmentPromptContents = document.createElement("div");
-    // htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
-
-    // for (let promptParagraphString of htmlBadgeFragmentPromptParagraphStrings) {
-    //   const paragraph = document.createElement("p");
-    //   paragraph.appendChild(document.createTextNode(promptParagraphString));
-    //   htmlBadgeFragmentPromptContents.appendChild(paragraph);
-    // }
-
-    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
-
-    // const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
-    // htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
-
-    // for (let buttonString of htmlBadgeFragmentPromptButtonStrings) {
-    //   const button = document.createElement("button");
-    //   button.className = "fbc-badge-prompt-" + buttonString;
-    //   button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
-    //   htmlBadgeFragmentPromptButtonDiv.appendChild(button);
-    // }
-
-    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
-  } else if (socialAction === "email") {
-    // const htmlBadgeFragmentPromptDiv = htmlBadgeFragment.querySelector(".fbc-badge-prompt");
-
-    // const htmlBadgeFragmentPromptH1 = document.createElement("h1");
-
-    // htmlBadgeFragmentPromptH1.appendChild(document.createTextNode( browser.i18n.getMessage("facebookContainer") ));
-    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptH1);
-
-    // const htmlBadgeFragmentPromptContents = document.createElement("div");
-    // htmlBadgeFragmentPromptContents.className = "fbc-badge-prompt-contents";
-
-    // for (let promptParagraphString of htmlEmailBadgeFragmentPromptParagraphStrings) {
-    //   const paragraph = document.createElement("p");
-    //   paragraph.appendChild(document.createTextNode(promptParagraphString));
-    //   htmlBadgeFragmentPromptContents.appendChild(paragraph);
-    // }
-
-    // const dontShowAgainCheckboxForm = document.createElement("div");
-    // dontShowAgainCheckboxForm.className = "fbc-badge-prompt-dontShowAgain-checkbox";
-    // const dontShowAgainCheckboxInput = document.createElement("input");
-    // dontShowAgainCheckboxInput.type = "checkbox";
-    // dontShowAgainCheckboxInput.id = "hideRelayEmailBadges";    
-    // dontShowAgainCheckboxInput.classList.add("fbc-badge-prompt-dontShowAgain-checkbox-input", "settings-checkbox");
-    // const dontShowAgainCheckboxLabel = document.createElement("label");    
-    // dontShowAgainCheckboxLabel.htmlFor = "hideRelayEmailBadges";
-    // const dontShowAgainCheckboxText = document.createTextNode( browser.i18n.getMessage("inPageUI-tooltip-prompt-checkbox") );
-
-    // dontShowAgainCheckboxLabel.appendChild(dontShowAgainCheckboxText);
-    // dontShowAgainCheckboxForm.appendChild(dontShowAgainCheckboxInput);
-    // dontShowAgainCheckboxForm.appendChild(dontShowAgainCheckboxLabel);
-
-    // htmlBadgeFragmentPromptContents.appendChild(dontShowAgainCheckboxForm);
-
-    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptContents);
-
-    // const htmlBadgeFragmentPromptButtonDiv = document.createElement("div");
-    // htmlBadgeFragmentPromptButtonDiv.className = "fbc-badge-prompt-buttons";
-
-    // for (let buttonString of htmlEmailBadgeFragmentPromptButtonStrings) {
-    //   const button = document.createElement("button");
-    //   button.className = "fbc-badge-prompt-" + buttonString;
-    //   button.appendChild(document.createTextNode( browser.i18n.getMessage(buttonString) ));
-    //   htmlBadgeFragmentPromptButtonDiv.appendChild(button);
-    // }
-
-    // htmlBadgeFragmentPromptDiv.appendChild(htmlBadgeFragmentPromptButtonDiv);
-  }
-
   // Create Empty Wrapper Div
   const htmlBadgeWrapperDiv = document.createElement("div");
   htmlBadgeWrapperDiv.appendChild(htmlBadgeFragment);
@@ -278,10 +199,6 @@ function createElementWithClassList(elemType, elemClass) {
 
 
 function buildInpageIframe(socialAction, target) {
-  // const div = createElementWithClassList(
-  //   "div",
-  //   "fbc-iframe"
-  // );
   const iframe = document.createElement("iframe");
   iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}&btnlink=${target}`);
   iframe.width = 350;
@@ -292,8 +209,6 @@ function buildInpageIframe(socialAction, target) {
   iframe.ariaHidden = "false";
   iframe.id = socialAction;
   iframe.classList.add("fbc-content-box");
-
-  // div.appendChild(iframe);
 
   return iframe;
 }
@@ -325,7 +240,7 @@ function positionIframe(fencePos) {
 
 }
 
-function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
+function openLoginPrompt(socialAction, fencePos, target) {
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
   if(!hasFbcWrapper) {
     injectIframeOntoPage(socialAction, target);
@@ -373,7 +288,6 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     htmlBadgeDiv.classList.add("fbc-badge-small");
   }
 
-  positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
   // Show/hide prompt if login element
   if (socialAction === "login"){
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -385,8 +299,8 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       
       e.preventDefault();
       e.stopPropagation();
-      openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv, target);
-
+      openLoginPrompt("login", e.target.parentElement, target);
+      console.log(e.target.parentElement);
       // if (allowClickSwitch) {
       //   // Button disabled. Either will trigger new HTTP request or page will refresh.
       //   setTimeout(()=>{
@@ -408,7 +322,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       } 
       e.preventDefault();
       e.stopPropagation();
-      openLoginPrompt("email", e.target.parentElement, htmlBadgeDiv, target);
+      openLoginPrompt("email", e.target.parentElement, target);
       // e.target.parentElement.classList.toggle("active");
       // positionPrompt( htmlBadgeDiv );
       // target.classList.toggle("js-fbc-prompt-active");
@@ -429,6 +343,11 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   htmlBadgeFragmentFenceDiv.addEventListener("mouseenter", () => {
     positionPrompt( htmlBadgeDiv );
   });
+
+
+
+  positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
+
 
 }
 
@@ -649,6 +568,20 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   htmlBadgeDiv.style.zIndex = targetZindex;
   htmlBadgeDiv.style.left = htmlBadgeDivPosX + "px";
   htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
+
+
+  // if (document.querySelector(".fbc-wrapper")) {
+  //   positionIframe(target);
+  // }
+
+  // console.log(target);
+
+  window.addEventListener("resize", () => {  
+  if (document.querySelector(".fbc-wrapper")) {
+    positionIframe(htmlBadgeDiv);
+  }
+ }, true);
+
 }
 
 function isPinterest(target) {
