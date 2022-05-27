@@ -167,7 +167,11 @@ function createBadgeFragment(socialAction) {
 
   // Create Tooltip
   const htmlBadgeFragmentTooltipDiv = htmlBadgeFragment.querySelector(".fbc-badge-tooltip");
+<<<<<<< HEAD
   htmlBadgeFragmentTooltipDiv.appendChild(document.createTextNode(getTooltipFragmentStrings(socialAction)));
+=======
+  htmlBadgeFragmentTooltipDiv.appendChild( document.createTextNode( getTooltipFragmentStrings(socialAction) ) );
+>>>>>>> c07e173 (reposition iframe on resize)
 
   // Create Empty Wrapper Div
   const htmlBadgeWrapperDiv = document.createElement("div");
@@ -191,7 +195,12 @@ function createElementWithClassList(elemType, elemClass) {
   return newElem;
 }
 
+<<<<<<< HEAD
 function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
+=======
+
+function buildInpageIframe(socialAction, target) {
+>>>>>>> c07e173 (reposition iframe on resize)
   const iframe = document.createElement("iframe");
   iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}`);
   iframe.width = 350;
@@ -202,8 +211,11 @@ function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
   iframe.ariaHidden = "false";
   iframe.id = socialAction;
   iframe.classList.add("fbc-content-box");
+<<<<<<< HEAD
   
   // setIframeSrcValue(iframe.src);
+=======
+>>>>>>> c07e173 (reposition iframe on resize)
 
   return iframe;
 }
@@ -315,9 +327,13 @@ function positionIframe(fencePos) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function openInputPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
 =======
 function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
+=======
+function openLoginPrompt(socialAction, fencePos, target) {
+>>>>>>> c07e173 (reposition iframe on resize)
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
   if(!hasFbcWrapper) {
     injectIframeOntoPage(socialAction, target);
@@ -411,9 +427,12 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
     htmlBadgeDiv.classList.add("fbc-badge-small");
   }
 
+<<<<<<< HEAD
   const FBC_IFRAME_HEIGHT_LOGIN = 230;
   const FBC_IFRAME_HEIGHT_EMAIL = 240;
 
+=======
+>>>>>>> c07e173 (reposition iframe on resize)
   // Show/hide prompt if login element
   if (socialAction === "login") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -421,6 +440,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
         return false;
+<<<<<<< HEAD
       }
 
       else {
@@ -441,6 +461,26 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
         htmlBadgeFragmentFenceDiv.remove();
         closeIframe();
       }
+=======
+      } 
+      
+      e.preventDefault();
+      e.stopPropagation();
+      openLoginPrompt("login", e.target.parentElement, target);
+      console.log(e.target.parentElement);
+      // if (allowClickSwitch) {
+      //   // Button disabled. Either will trigger new HTTP request or page will refresh.
+      //   setTimeout(()=>{
+      //     location.reload(true);
+      //   }, 250);
+      //   return;
+      // } else {
+      //   // Click badge, button disabled
+      //   e.preventDefault();
+      //   // e.stopPropagation();
+      //   openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv, target);
+      // }
+>>>>>>> c07e173 (reposition iframe on resize)
     });
 
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -450,7 +490,15 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       }
       e.preventDefault();
       e.stopPropagation();
+<<<<<<< HEAD
       openInputPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
+=======
+      openLoginPrompt("email", e.target.parentElement, target);
+      // e.target.parentElement.classList.toggle("active");
+      // positionPrompt( htmlBadgeDiv );
+      // target.classList.toggle("js-fbc-prompt-active");
+      // document.body.classList.toggle("js-fbc-prompt-active");
+>>>>>>> c07e173 (reposition iframe on resize)
     });
 
   } else if (socialAction === "share-passive") {
@@ -468,6 +516,11 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
     positionPrompt(htmlBadgeDiv);
   });
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> c07e173 (reposition iframe on resize)
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
 
 
@@ -691,6 +744,22 @@ function positionFacebookBadge(target, badgeClassUId, targetWidth, smallSwitch) 
   htmlBadgeDiv.style.left = htmlBadgeDivPosX + "px";
   htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
 
+<<<<<<< HEAD
+=======
+
+  // if (document.querySelector(".fbc-wrapper")) {
+  //   positionIframe(target);
+  // }
+
+  // console.log(target);
+
+  window.addEventListener("resize", () => {  
+  if (document.querySelector(".fbc-wrapper")) {
+    positionIframe(htmlBadgeDiv);
+  }
+ }, true);
+
+>>>>>>> c07e173 (reposition iframe on resize)
 }
 
 function isPinterest(target) {
