@@ -353,17 +353,29 @@ function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
     positionIframe(fencePos);
 >>>>>>> d5ca6b2 (localize emails trings)
 
+<<<<<<< HEAD
   const iframeSrcVal = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT).src;
 
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
   if (!hasFbcWrapper) {
     document.body.appendChild(injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT));
     positionIframe(fencePos);
+=======
+>>>>>>> c125976 (resize and scroll reposition iframe)
     ["resize", "scroll"].forEach(function (evt) {
       if (document.querySelector(".fbc-wrapper")) {
         window.addEventListener(evt, () => {
           positionIframe(fencePos);
         });
+<<<<<<< HEAD
+=======
+      }
+    });
+
+    window.addEventListener("message", (e) => {
+      if (e.data === "allowTriggered") {
+        target.click();
+>>>>>>> c125976 (resize and scroll reposition iframe)
       }
     });
 
@@ -767,6 +779,7 @@ function positionFacebookBadge(target, badgeClassUId, targetWidth, smallSwitch) 
   htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
   // if (document.querySelector(".fbc-wrapper")) {
@@ -782,6 +795,8 @@ function positionFacebookBadge(target, badgeClassUId, targetWidth, smallSwitch) 
  }, true);
 
 >>>>>>> c07e173 (reposition iframe on resize)
+=======
+>>>>>>> c125976 (resize and scroll reposition iframe)
 }
 
 function isPinterest(target) {
