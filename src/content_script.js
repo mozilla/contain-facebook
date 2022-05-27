@@ -295,6 +295,7 @@ function positionIframe(fencePos) {
     const xPosChevron = xRight - iframeChevron.offsetWidth;
     const yPosChevron = yPos + offsetY;
 
+<<<<<<< HEAD
     iframeChevron.style.marginLeft = `${xPosChevron}px`;
     iframeChevron.style.marginTop = `${yPosChevron}px`;
 
@@ -333,6 +334,25 @@ function positionIframe(fencePos) {
     iframeChevron.style.marginTop = `${yPosChevronMobile}px`;
 
   }
+=======
+  const offsetX = 20; 
+  const offsetY = 50;
+  const iframePaddingAllowance = iframeObject.offsetWidth + offsetX;
+  const xRight = `${fencePosition.x + offsetX + fencePos.offsetWidth}`;
+  const xLeft = `${fencePosition.x - iframePaddingAllowance}`;
+  const yPos = `${fencePosition.y - offsetY}`;
+
+  iframeObject.style.marginLeft = `${xRight}px`;
+  iframeObject.style.marginTop = `${yPos}px`;
+
+  const calculateOffsetDiff = window.innerWidth - fencePosition.x;
+
+  // Flip the iframe to show on the left side when icon is too close to the edge
+  if (iframePaddingAllowance > calculateOffsetDiff) {
+    iframeObject.style.marginLeft = `${xLeft}px`;
+  }
+
+>>>>>>> e14401f (flip iframe on small device width)
 }
 
 <<<<<<< HEAD
