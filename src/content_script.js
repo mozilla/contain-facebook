@@ -198,12 +198,12 @@ function createElementWithClassList(elemType, elemClass) {
 }
 
 
-function buildInpageIframe(socialAction, target) {
+function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
   const iframe = document.createElement("iframe");
   iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}&btnlink=${target}`);
   iframe.width = 350;
   // This height is derived from the Figma file. However, this is just the starting instance of the iframe/inpage menu. After it's built out, it resizes itself based on the inner contents.
-  iframe.height = 250;
+  iframe.height = FBC_IFRAME_HEIGHT;
   iframe.title = browser.i18n.getMessage("facebookContainer");
   iframe.tabIndex = 0;
   iframe.ariaHidden = "false";
@@ -213,8 +213,8 @@ function buildInpageIframe(socialAction, target) {
   return iframe;
 }
 
-function injectIframeOntoPage(socialAction, target) {
-  const fbcContent = buildInpageIframe(socialAction, target);
+function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
+  const fbcContent = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT);
   const fbcWrapper = createElementWithClassList(
       "div",
       "fbc-wrapper"
@@ -240,10 +240,10 @@ function positionIframe(fencePos) {
 
 }
 
-function openLoginPrompt(socialAction, fencePos, target) {
+function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
   if(!hasFbcWrapper) {
-    injectIframeOntoPage(socialAction, target);
+    injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT);
     positionIframe(fencePos);
 
     window.addEventListener("message", (e) => {
@@ -288,6 +288,9 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
     htmlBadgeDiv.classList.add("fbc-badge-small");
   }
 
+  const FBC_IFRAME_HEIGHT_LOGIN = 250;
+  const FBC_IFRAME_HEIGHT_EMAIL = 300;
+
   // Show/hide prompt if login element
   if (socialAction === "login"){
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -299,8 +302,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       
       e.preventDefault();
       e.stopPropagation();
-      openLoginPrompt("login", e.target.parentElement, target);
-      console.log(e.target.parentElement);
+      openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);
       // if (allowClickSwitch) {
       //   // Button disabled. Either will trigger new HTTP request or page will refresh.
       //   setTimeout(()=>{
@@ -322,7 +324,7 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
       } 
       e.preventDefault();
       e.stopPropagation();
-      openLoginPrompt("email", e.target.parentElement, target);
+      openLoginPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
       // e.target.parentElement.classList.toggle("active");
       // positionPrompt( htmlBadgeDiv );
       // target.classList.toggle("js-fbc-prompt-active");
