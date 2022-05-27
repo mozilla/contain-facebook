@@ -36,6 +36,10 @@
     "message": "Kiel uzi Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
+  "onboarding4-subhead": {
+    "message": "Ekster Facebook",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
   "btn-allow": {
     "message": "Permesi",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -59,6 +63,18 @@
   "learn-more": {
     "message": "Pli da informo",
     "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "no-sites-added": {
+    "message": "Neniu",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "remove": {
+    "message": "Forigi",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Ignori",
+    "description": ""
   },
   "btn-relay-try": {
     "message": "Provi Firefox Relay",
