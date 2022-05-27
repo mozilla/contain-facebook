@@ -230,13 +230,22 @@ function positionIframe(fencePos) {
   const fencePosition = fencePos.getBoundingClientRect();
   const iframeObject = document.querySelector(".fbc-content-box");
 
-  const offsetX = 50;
-  const offsetY = 100;
-  const xPos = `${fencePosition.x + offsetX}`;
+  const offsetX = 20; 
+  const offsetY = 50;
+  const iframePaddingAllowance = iframeObject.offsetWidth + offsetX;
+  const xRight = `${fencePosition.x + offsetX + fencePos.offsetWidth}`;
+  const xLeft = `${fencePosition.x - iframePaddingAllowance}`;
   const yPos = `${fencePosition.y - offsetY}`;
 
-  iframeObject.style.marginLeft = `${xPos}px`;
+  iframeObject.style.marginLeft = `${xRight}px`;
   iframeObject.style.marginTop = `${yPos}px`;
+
+  const calculateOffsetDiff = window.innerWidth - fencePosition.x;
+
+  // Flip the iframe to show on the left side when icon is too close to the edge
+  if (iframePaddingAllowance > calculateOffsetDiff) {
+    iframeObject.style.marginLeft = `${xLeft}px`;
+  }
 
 }
 
