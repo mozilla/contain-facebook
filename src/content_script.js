@@ -199,8 +199,12 @@ function createElementWithClassList(elemType, elemClass) {
 function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
 =======
 
+<<<<<<< HEAD
 function buildInpageIframe(socialAction, target) {
 >>>>>>> c07e173 (reposition iframe on resize)
+=======
+function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
+>>>>>>> de2a237 (resize iframe height according to content)
   const iframe = document.createElement("iframe");
   iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}`);
   iframe.width = 350;
@@ -220,6 +224,7 @@ function buildInpageIframe(socialAction, target) {
   return iframe;
 }
 
+<<<<<<< HEAD
 // function setIframeSrcValue(val) {
 //   // return val;
 //   const iframeVal = val;
@@ -236,6 +241,10 @@ function buildInpageIframe(socialAction, target) {
 function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
   const fbcContent = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT);
 
+=======
+function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
+  const fbcContent = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT);
+>>>>>>> de2a237 (resize iframe height according to content)
   const fbcWrapper = createElementWithClassList(
     "div",
     "fbc-wrapper"
@@ -328,15 +337,19 @@ function positionIframe(fencePos) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function openInputPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
 =======
 function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
 =======
 function openLoginPrompt(socialAction, fencePos, target) {
 >>>>>>> c07e173 (reposition iframe on resize)
+=======
+function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
+>>>>>>> de2a237 (resize iframe height according to content)
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
   if(!hasFbcWrapper) {
-    injectIframeOntoPage(socialAction, target);
+    injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT);
     positionIframe(fencePos);
 >>>>>>> d5ca6b2 (localize emails trings)
 
@@ -428,11 +441,17 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   const FBC_IFRAME_HEIGHT_LOGIN = 230;
   const FBC_IFRAME_HEIGHT_EMAIL = 240;
 
 =======
 >>>>>>> c07e173 (reposition iframe on resize)
+=======
+  const FBC_IFRAME_HEIGHT_LOGIN = 250;
+  const FBC_IFRAME_HEIGHT_EMAIL = 300;
+
+>>>>>>> de2a237 (resize iframe height according to content)
   // Show/hide prompt if login element
   if (socialAction === "login") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -466,8 +485,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       
       e.preventDefault();
       e.stopPropagation();
-      openLoginPrompt("login", e.target.parentElement, target);
-      console.log(e.target.parentElement);
+      openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);
       // if (allowClickSwitch) {
       //   // Button disabled. Either will trigger new HTTP request or page will refresh.
       //   setTimeout(()=>{
@@ -491,9 +509,13 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       e.preventDefault();
       e.stopPropagation();
 <<<<<<< HEAD
+<<<<<<< HEAD
       openInputPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
 =======
       openLoginPrompt("email", e.target.parentElement, target);
+=======
+      openLoginPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
+>>>>>>> de2a237 (resize iframe height according to content)
       // e.target.parentElement.classList.toggle("active");
       // positionPrompt( htmlBadgeDiv );
       // target.classList.toggle("js-fbc-prompt-active");

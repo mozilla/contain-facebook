@@ -138,6 +138,10 @@ body {
 	opacity: 1;
 }
 
+.fbc-container {
+	overflow: hidden;
+}
+
 .fbc-wrapper{
 	position: fixed;
 	height: 100%;
@@ -149,20 +153,12 @@ body {
 	z-index: 999999999999;
 	background-color: rgba(0, 0, 0, 0.1);
 	/* animation: 0.2s ease forwards; */
-  }
+}
 
 .fbc-wrapper iframe {
-	/* position: absolute; */
-
-	/* width: 345px;
-	position: absolute;
-	left: calc( 100% + 20px);
-	top: 50%;
-  transform: translateY(-50%); */
 	color: var(--black);
 	box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2);
 	border: 1px solid rgba(0,0,0,0.2);
-	padding: 0 0 40px;
 	background: rgb(255, 255, 255);
 }
 
@@ -229,7 +225,7 @@ iframe::after {
 }
 
 .fbc-badge-prompt-contents {
-	padding: 20px;
+	padding: 16px;
 	background: var(--white);
 }
 
@@ -237,7 +233,9 @@ iframe::after {
 	all: unset;
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	display: block;
-	padding: 0 0 20px;
+	padding: 8px 0;
+	/* padding-top: 16px; */
+	/* padding: 0 0 20px; */
 	margin: 0;
 	font-size: 13px;
 	line-height: 17px;
@@ -253,6 +251,10 @@ iframe::after {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+.fbc-badge-prompt-dontShowAgain-checkbox {
+	padding-top: 8px;
 }
 
 .fbc-badge-prompt input {
@@ -285,8 +287,9 @@ iframe::after {
 }
 
 .fbc-badge-prompt-buttons {
-	bottom: 0.15px;
+	/* bottom: 0.15px; */
 	/* height: 40px; */
+	padding-top: 16px;
 	width: 100%;
 	z-index: 0;
 	display: flex;
