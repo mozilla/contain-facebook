@@ -81,6 +81,14 @@ const fbcEmailCancel = document.querySelector(".fbc-badge-email-btn-dismiss");
 fbcEmailAllow.innerHTML = browser.i18n.getMessage("btn-relay-try");
 fbcEmailCancel.innerHTML = browser.i18n.getMessage("btn-relay-dismiss");
 
+// Launch Relay when Try Relay is clicked
+fbcEmailAllow.addEventListener("click", (e) => {
+    if (!e.isTrusted) {
+      // The click was not user generated so ignore
+      return false;
+    } 
+    window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=Facebook%20Container&utm_content=Try%20Firefox%20Relay");
+  });
 
 // // Remove popup when cancel/dismiss is clicked
 [fbcPromptCancel, fbcEmailCancel].forEach(e => {
