@@ -246,6 +246,14 @@ function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
     injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT);
     positionIframe(fencePos);
 
+    ["resize", "scroll"].forEach(function (evt) {
+      if (document.querySelector(".fbc-wrapper")) {
+        window.addEventListener(evt, () => {
+          positionIframe(fencePos);
+        });
+      }
+    });
+
     window.addEventListener("message", (e) => {
       if (e.data === "allowTriggered") {
         target.click();
@@ -570,19 +578,6 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
   htmlBadgeDiv.style.zIndex = targetZindex;
   htmlBadgeDiv.style.left = htmlBadgeDivPosX + "px";
   htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
-
-
-  // if (document.querySelector(".fbc-wrapper")) {
-  //   positionIframe(target);
-  // }
-
-  // console.log(target);
-
-  window.addEventListener("resize", () => {  
-  if (document.querySelector(".fbc-wrapper")) {
-    positionIframe(htmlBadgeDiv);
-  }
- }, true);
 
 }
 
