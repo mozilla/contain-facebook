@@ -364,7 +364,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   }
 
   const FBC_IFRAME_HEIGHT_LOGIN = 250;
-  const FBC_IFRAME_HEIGHT_EMAIL = 300;
+  const FBC_IFRAME_HEIGHT_EMAIL = 290;
 
   // Show/hide prompt if login element
   if (socialAction === "login") {

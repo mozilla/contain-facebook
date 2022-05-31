@@ -1,11 +1,11 @@
 
-
 body {
     --blue60: #0060df;
     --blue70: #003eaa;
     --primaryText: #0c0c0d;
     --secondaryText: #737373;
     --grey20: #ededf0;
+	--white: #ffffff;
     --transition: all .15s cubic-bezier(.07,.95,0,1);
     --borders: 1px solid #ededf0;
     font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -159,7 +159,7 @@ body {
 	color: var(--black);
 	box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2);
 	border: 1px solid rgba(0,0,0,0.2);
-	background: rgb(255, 255, 255);
+	background: var(--white);
 }
 
 .fbc-iframe-chevron {
@@ -181,23 +181,7 @@ body {
 .fbc-chevron-arrow-top {
 	transform: rotate(90deg);
 	top: -4px;
-	/* left: -1px; */
 }
-
-
-/* .fbc-content-box::after {
-	content: " ";
-	display: block;
-	position: absolute;
-	margin-top: -7px;
-	margin-right: 20px;
-	height: 20px;
-	width: 20px;
-	background: white;
-	z-index: 1;
-	transform: rotate(90deg);
-  
-} */
 
 .fbc-badge-prompt-align-right iframe {
 	left: auto;
@@ -244,7 +228,7 @@ body {
 	align-items: center;
 	text-align: center;
 	border-bottom: 1px solid #E9E9E9;
-	background: white;
+	background: var(--white);
 	color: var(--black);
 }
 
