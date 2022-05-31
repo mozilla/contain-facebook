@@ -572,7 +572,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 >>>>>>> c07e173 (reposition iframe on resize)
 =======
   const FBC_IFRAME_HEIGHT_LOGIN = 250;
-  const FBC_IFRAME_HEIGHT_EMAIL = 300;
+  const FBC_IFRAME_HEIGHT_EMAIL = 290;
 
 >>>>>>> de2a237 (resize iframe height according to content)
   // Show/hide prompt if login element
