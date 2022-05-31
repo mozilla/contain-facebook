@@ -246,12 +246,21 @@ function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
   const fbcContent = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT);
 >>>>>>> de2a237 (resize iframe height according to content)
   const fbcWrapper = createElementWithClassList(
+<<<<<<< HEAD
     "div",
     "fbc-wrapper"
   );
   const fbcChevron = createElementWithClassList(
     "div",
     "fbc-iframe-chevron"
+=======
+      "div",
+      "fbc-wrapper"
+    );
+  const fbcChevron = createElementWithClassList(
+    "div",
+    "iframe-chevron"
+>>>>>>> 3cc76d3 (add right/left chevron)
   );
 
   fbcWrapper.appendChild(fbcChevron);
@@ -336,20 +345,34 @@ function positionIframe(fencePos) {
   }
 =======
   const offsetX = 20; 
-  const offsetY = 50;
+  const offsetY = 55;
   const iframePaddingAllowance = iframeObject.offsetWidth + offsetX;
-  const xRight = `${fencePosition.x + offsetX + fencePos.offsetWidth}`;
-  const xLeft = `${fencePosition.x - iframePaddingAllowance}`;
-  const yPos = `${fencePosition.y - offsetY}`;
+  const xRight = fencePosition.x + offsetX + fencePos.offsetWidth ;
+  const xLeft = fencePosition.x - iframePaddingAllowance;
+  const yPos = fencePosition.y - offsetY;
 
   iframeObject.style.marginLeft = `${xRight}px`;
   iframeObject.style.marginTop = `${yPos}px`;
+
+  // Add Chevron
+  const iframeChevron = document.querySelector(".iframe-chevron");
+  const xPosChevron = xRight - iframeChevron.offsetWidth;
+  const yPosChevron = yPos + offsetY;
+
+  iframeChevron.style.marginLeft = `${xPosChevron}px`;
+  iframeChevron.style.marginTop = `${yPosChevron}px`;
 
   const calculateOffsetDiff = window.innerWidth - fencePosition.x;
 
   // Flip the iframe to show on the left side when icon is too close to the edge
   if (iframePaddingAllowance > calculateOffsetDiff) {
     iframeObject.style.marginLeft = `${xLeft}px`;
+    iframeChevron.classList.add("arrow-right");
+    iframeChevron.style.marginLeft = `${xPosChevron - fencePos.offsetWidth - iframeChevron.offsetWidth - offsetX}px`;
+  }
+
+  else {
+    iframeChevron.classList.remove("arrow-right");
   }
 
 >>>>>>> e14401f (flip iframe on small device width)
