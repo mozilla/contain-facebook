@@ -93,17 +93,24 @@ function isFixed(elem) {
 }
 
 const fragmentClasses = ["fbc-badge-fence", "fbc-badge-tooltip", "fbc-badge-prompt"];
+<<<<<<< HEAD
+=======
+const htmlBadgeFragmentPromptParagraphStrings = [browser.i18n.getMessage("inPageUI-tooltip-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-prompt-p2")];
+const htmlEmailBadgeFragmentPromptParagraphStrings = [browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2")];
+const htmlBadgeFragmentPromptButtonStrings = ["btn-cancel", "btn-allow"];
+const htmlEmailBadgeFragmentPromptButtonStrings = ["btn-relay-dismiss", "btn-relay-try"];
+>>>>>>> 3cdab59 (add mobile panel orientation)
 
 function getTooltipFragmentStrings(socialAction) {
   switch (socialAction) {
-  case "login":
-    return browser.i18n.getMessage("inPageUI-tooltip-button-login");
-  case "share":
-    return browser.i18n.getMessage("inPageUI-tooltip-button-share");
-  case "share-passive":
-    return browser.i18n.getMessage("inPageUI-tooltip-button-share-passive");
-  case "email":
-    return browser.i18n.getMessage("inPageUI-tooltip-button-email");
+    case "login":
+      return browser.i18n.getMessage("inPageUI-tooltip-button-login");
+    case "share":
+      return browser.i18n.getMessage("inPageUI-tooltip-button-share");
+    case "share-passive":
+      return browser.i18n.getMessage("inPageUI-tooltip-button-share-passive");
+    case "email":
+      return browser.i18n.getMessage("inPageUI-tooltip-button-email");
   }
 }
 
@@ -142,6 +149,11 @@ async function updateSettings() {
   await settingsCheckboxListener();
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 3cdab59 (add mobile panel orientation)
 function settingsCheckboxListener() {
   const checkboxes = document.querySelectorAll(".settings-checkbox");
 
@@ -168,10 +180,14 @@ function createBadgeFragment(socialAction) {
   // Create Tooltip
   const htmlBadgeFragmentTooltipDiv = htmlBadgeFragment.querySelector(".fbc-badge-tooltip");
 <<<<<<< HEAD
+<<<<<<< HEAD
   htmlBadgeFragmentTooltipDiv.appendChild(document.createTextNode(getTooltipFragmentStrings(socialAction)));
 =======
   htmlBadgeFragmentTooltipDiv.appendChild( document.createTextNode( getTooltipFragmentStrings(socialAction) ) );
 >>>>>>> c07e173 (reposition iframe on resize)
+=======
+  htmlBadgeFragmentTooltipDiv.appendChild(document.createTextNode(getTooltipFragmentStrings(socialAction)));
+>>>>>>> 3cdab59 (add mobile panel orientation)
 
   // Create Empty Wrapper Div
   const htmlBadgeWrapperDiv = document.createElement("div");
@@ -247,6 +263,7 @@ function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
 >>>>>>> de2a237 (resize iframe height according to content)
   const fbcWrapper = createElementWithClassList(
 <<<<<<< HEAD
+<<<<<<< HEAD
     "div",
     "fbc-wrapper"
   );
@@ -261,6 +278,14 @@ function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
     "div",
     "iframe-chevron"
 >>>>>>> 3cc76d3 (add right/left chevron)
+=======
+    "div",
+    "fbc-wrapper"
+  );
+  const fbcChevron = createElementWithClassList(
+    "div",
+    "fbc-iframe-chevron"
+>>>>>>> 3cdab59 (add mobile panel orientation)
   );
 
   fbcWrapper.appendChild(fbcChevron);
@@ -275,6 +300,7 @@ function positionIframe(fencePos) {
   const iframeWrapper = document.querySelector(".fbc-wrapper");
   const iframeElement = iframeWrapper.getElementsByTagName("iframe");
   const iframeChevron = document.querySelector(".fbc-iframe-chevron");
+<<<<<<< HEAD
 
   const offsetX = 20;
   const offsetY = 55;
@@ -345,37 +371,79 @@ function positionIframe(fencePos) {
   }
 =======
   const offsetX = 20; 
+=======
+
+  const offsetX = 20;
+>>>>>>> 3cdab59 (add mobile panel orientation)
   const offsetY = 55;
-  const iframePaddingAllowance = iframeObject.offsetWidth + offsetX;
-  const xRight = fencePosition.x + offsetX + fencePos.offsetWidth ;
+
+  const iframePaddingAllowance = iframeBox.offsetWidth + offsetX;
+
+  // Desktop Values
+  const xRight = fencePosition.x + offsetX + fencePos.offsetWidth;
   const xLeft = fencePosition.x - iframePaddingAllowance;
   const yPos = fencePosition.y - offsetY;
 
-  iframeObject.style.marginLeft = `${xRight}px`;
-  iframeObject.style.marginTop = `${yPos}px`;
+  // Mobile Values
+  const xPosMobile = fencePosition.x;
+  const yPosMobile = fencePosition.y + offsetY;
 
-  // Add Chevron
-  const iframeChevron = document.querySelector(".iframe-chevron");
-  const xPosChevron = xRight - iframeChevron.offsetWidth;
-  const yPosChevron = yPos + offsetY;
+  const iconRightAllowance = window.innerWidth - fencePosition.x + fencePos.offsetWidth;
+  const iconLeftAllowance = window.innerWidth - iconRightAllowance;
 
-  iframeChevron.style.marginLeft = `${xPosChevron}px`;
-  iframeChevron.style.marginTop = `${yPosChevron}px`;
+  // Desktop Orientation
+  if (iconRightAllowance > iframePaddingAllowance || iconLeftAllowance > iframePaddingAllowance) {
 
-  const calculateOffsetDiff = window.innerWidth - fencePosition.x;
+    // Position iframe relative to FBC Icon
+    iframeBox.style.marginLeft = `${xRight}px`;
+    iframeBox.style.marginTop = `${yPos}px`;
 
-  // Flip the iframe to show on the left side when icon is too close to the edge
-  if (iframePaddingAllowance > calculateOffsetDiff) {
-    iframeObject.style.marginLeft = `${xLeft}px`;
-    iframeChevron.classList.add("arrow-right");
-    iframeChevron.style.marginLeft = `${xPosChevron - fencePos.offsetWidth - iframeChevron.offsetWidth - offsetX}px`;
+    // Add Chevron (Default left arrow)
+    const xPosChevron = xRight - iframeChevron.offsetWidth;
+    const yPosChevron = yPos + offsetY;
+
+    iframeChevron.style.marginLeft = `${xPosChevron}px`;
+    iframeChevron.style.marginTop = `${yPosChevron}px`;
+
+    const calculateOffsetDiff = window.innerWidth - fencePosition.x;
+
+    // Flip the iframe to show on the left side when icon is too close to the edge
+    if (iframePaddingAllowance > calculateOffsetDiff) {
+      iframeBox.style.marginLeft = `${xLeft}px`;
+      iframeChevron.classList.add("fbc-chevron-arrow-right");
+      iframeChevron.style.marginLeft = `${xPosChevron - fencePos.offsetWidth - iframeChevron.offsetWidth - offsetX}px`;
+    }
+
+    else {
+      iframeChevron.classList.remove("fbc-chevron-arrow-right");
+    }
+
+    iframeChevron.classList.remove("fbc-chevron-arrow-top");
   }
 
+  // Mobile Orientation
   else {
-    iframeChevron.classList.remove("arrow-right");
-  }
+    for (const panels of iframeElement) {
+      panels.width = window.innerWidth;
+      if (window.innerWidth > 480){
+        panels.width = 350;
+      }
+    }
+  
+    iframeChevron.classList.add("fbc-chevron-arrow-top");
+    iframeBox.style.marginTop = `${yPosMobile}px`;
 
+<<<<<<< HEAD
 >>>>>>> e14401f (flip iframe on small device width)
+=======
+    const xPosChevronMobile = xPosMobile;
+    const yPosChevronMobile = yPosMobile - iframeChevron.offsetWidth;
+
+    iframeChevron.style.marginLeft = `${xPosChevronMobile}px`;
+    iframeChevron.style.marginTop = `${yPosChevronMobile}px`;
+
+  }
+>>>>>>> 3cdab59 (add mobile panel orientation)
 }
 
 <<<<<<< HEAD
@@ -391,7 +459,7 @@ function openLoginPrompt(socialAction, fencePos, target) {
 function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
 >>>>>>> de2a237 (resize iframe height according to content)
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
-  if(!hasFbcWrapper) {
+  if (!hasFbcWrapper) {
     injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT);
     positionIframe(fencePos);
 >>>>>>> d5ca6b2 (localize emails trings)
@@ -515,6 +583,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
         // The click was not user generated so ignore
         return false;
 <<<<<<< HEAD
+<<<<<<< HEAD
       }
 
       else {
@@ -538,6 +607,10 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 =======
       } 
       
+=======
+      }
+
+>>>>>>> 3cdab59 (add mobile panel orientation)
       e.preventDefault();
       e.stopPropagation();
       openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);
@@ -555,7 +628,11 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       // }
 >>>>>>> c07e173 (reposition iframe on resize)
     });
+<<<<<<< HEAD
 
+=======
+  } if (socialAction === "email") {
+>>>>>>> 3cdab59 (add mobile panel orientation)
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
@@ -882,7 +959,10 @@ function patternDetection(selectionArray, socialActionIntent) {
   }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3cdab59 (add mobile panel orientation)
 async function detectFacebookOnPage() {
   if (!checkForTrackers) {
     return;
@@ -942,8 +1022,13 @@ function screenUpdate() {
 
 function escapeKeyListener() {
   document.body.addEventListener("keydown", function (e) {
+<<<<<<< HEAD
     if (e.key === "Escape" && document.querySelector(".fbc-wrapper")) {
       closeIframe();
+=======
+    if (e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
+      closePrompt();
+>>>>>>> 3cdab59 (add mobile panel orientation)
     }
   });
 }
