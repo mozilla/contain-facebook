@@ -162,7 +162,7 @@ body {
 	background: rgb(255, 255, 255);
 }
 
-.iframe-chevron {
+.fbc-iframe-chevron {
 	width: 0; 
 	height: 0; 
 	border-top: 10px solid transparent;
@@ -173,10 +173,17 @@ body {
 	z-index: 9999999;
 }
 
-.arrow-right {
+.fbc-chevron-arrow-right {
 	transform: rotate(180deg);
 	left: -1px;
 }
+
+.fbc-chevron-arrow-top {
+	transform: rotate(90deg);
+	top: -4px;
+	/* left: -1px; */
+}
+
 
 /* .fbc-content-box::after {
 	content: " ";
