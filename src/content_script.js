@@ -219,6 +219,12 @@ function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
       "div",
       "fbc-wrapper"
     );
+  const fbcChevron = createElementWithClassList(
+    "div",
+    "iframe-chevron"
+  );
+
+  fbcWrapper.appendChild(fbcChevron);
   fbcWrapper.appendChild(fbcContent);
   // positionPrompt(fbcContent);
   document.body.appendChild(fbcWrapper);
@@ -231,20 +237,34 @@ function positionIframe(fencePos) {
   const iframeObject = document.querySelector(".fbc-content-box");
 
   const offsetX = 20; 
-  const offsetY = 50;
+  const offsetY = 55;
   const iframePaddingAllowance = iframeObject.offsetWidth + offsetX;
-  const xRight = `${fencePosition.x + offsetX + fencePos.offsetWidth}`;
-  const xLeft = `${fencePosition.x - iframePaddingAllowance}`;
-  const yPos = `${fencePosition.y - offsetY}`;
+  const xRight = fencePosition.x + offsetX + fencePos.offsetWidth ;
+  const xLeft = fencePosition.x - iframePaddingAllowance;
+  const yPos = fencePosition.y - offsetY;
 
   iframeObject.style.marginLeft = `${xRight}px`;
   iframeObject.style.marginTop = `${yPos}px`;
+
+  // Add Chevron
+  const iframeChevron = document.querySelector(".iframe-chevron");
+  const xPosChevron = xRight - iframeChevron.offsetWidth;
+  const yPosChevron = yPos + offsetY;
+
+  iframeChevron.style.marginLeft = `${xPosChevron}px`;
+  iframeChevron.style.marginTop = `${yPosChevron}px`;
 
   const calculateOffsetDiff = window.innerWidth - fencePosition.x;
 
   // Flip the iframe to show on the left side when icon is too close to the edge
   if (iframePaddingAllowance > calculateOffsetDiff) {
     iframeObject.style.marginLeft = `${xLeft}px`;
+    iframeChevron.classList.add("arrow-right");
+    iframeChevron.style.marginLeft = `${xPosChevron - fencePos.offsetWidth - iframeChevron.offsetWidth - offsetX}px`;
+  }
+
+  else {
+    iframeChevron.classList.remove("arrow-right");
   }
 
 }
