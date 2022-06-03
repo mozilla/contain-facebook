@@ -11,6 +11,8 @@ const FACEBOOK_DOMAINS = [
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net", "facebookrecruiting.com",
 
+  "fb.me",
+
   "instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
 
@@ -26,8 +28,10 @@ const FACEBOOK_DOMAINS = [
   "mapwith.ai", "wit.ai",
 
   "oversightboard.com", "www.oversightboard.com",
-  
+
   "bulletin.com", "facebookbrand.com",
+
+  "meta.com", "metacareers.com",
 
   "novi.com"
 ];
