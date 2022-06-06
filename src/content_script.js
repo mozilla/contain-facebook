@@ -100,14 +100,14 @@ const htmlEmailBadgeFragmentPromptButtonStrings = ["btn-relay-dismiss", "btn-rel
 
 function getTooltipFragmentStrings(socialAction) {
   switch (socialAction) {
-    case "login":
-      return browser.i18n.getMessage("inPageUI-tooltip-button-login");
-    case "share":
-      return browser.i18n.getMessage("inPageUI-tooltip-button-share");
-    case "share-passive":
-      return browser.i18n.getMessage("inPageUI-tooltip-button-share-passive");
-    case "email":
-      return browser.i18n.getMessage("inPageUI-tooltip-button-email");
+  case "login":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-login");
+  case "share":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-share");
+  case "share-passive":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-share-passive");
+  case "email":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-email");
   }
 }
 
@@ -290,11 +290,11 @@ function positionIframe(fencePos) {
   else {
     for (const panels of iframeElement) {
       panels.width = window.innerWidth;
-      if (window.innerWidth > 480){
+      if (window.innerWidth > 480) {
         panels.width = 350;
       }
     }
-  
+
     iframeChevron.classList.add("fbc-chevron-arrow-top");
     iframeBox.style.marginTop = `${yPosMobile}px`;
 
@@ -308,7 +308,7 @@ function positionIframe(fencePos) {
 }
 
 function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
-  const hasFbcWrapper = document.querySelector('.fbc-wrapper');
+  const hasFbcWrapper = document.querySelector(".fbc-wrapper");
   if (!hasFbcWrapper) {
     injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT);
     positionIframe(fencePos);
@@ -341,10 +341,6 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 
   const htmlBadgeDiv = createBadgeFragment(socialAction);
 
-  const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel");
-  const htmlBadgeFragmentPromptButtonAllow = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-allow");
-  const htmlEmailBadgeFragmentPromptButtonDismiss = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-relay-dismiss");
-  const htmlEmailBadgeFragmentPromptButtonTry = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-relay-try");
   const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".fbc-badge-fence");
 
   htmlBadgeDiv.className = "fbc-badge " + badgeClassUId;
@@ -356,7 +352,6 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 
   const ratioCheck = (itemWidth / itemHeight);
 
-  let allowClickSwitch = false;
 
   const badgeSmallSwitch = shouldBadgeBeSmall(ratioCheck, itemHeight);
   if (badgeSmallSwitch) {
@@ -365,6 +360,14 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 
   const FBC_IFRAME_HEIGHT_LOGIN = 250;
   const FBC_IFRAME_HEIGHT_EMAIL = 290;
+
+  let allowClickSwitch = false;
+
+  window.addEventListener("message", (e) => {
+    if (e.data === "allowTriggered") {
+      allowClickSwitch = true;
+    }
+  });
 
   // Show/hide prompt if login element
   if (socialAction === "login") {
@@ -375,9 +378,19 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
         return false;
       }
 
-      e.preventDefault();
-      e.stopPropagation();
-      openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);
+      if (allowClickSwitch) {
+        setTimeout(()=>{
+          location.reload(true);
+        }, 250);
+        return;
+      } 
+      else {
+        e.preventDefault();
+        e.stopPropagation();
+        openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
+  
+      }
+  
       // if (allowClickSwitch) {
       //   // Button disabled. Either will trigger new HTTP request or page will refresh.
       //   setTimeout(()=>{
