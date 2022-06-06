@@ -103,14 +103,14 @@ const htmlEmailBadgeFragmentPromptButtonStrings = ["btn-relay-dismiss", "btn-rel
 
 function getTooltipFragmentStrings(socialAction) {
   switch (socialAction) {
-    case "login":
-      return browser.i18n.getMessage("inPageUI-tooltip-button-login");
-    case "share":
-      return browser.i18n.getMessage("inPageUI-tooltip-button-share");
-    case "share-passive":
-      return browser.i18n.getMessage("inPageUI-tooltip-button-share-passive");
-    case "email":
-      return browser.i18n.getMessage("inPageUI-tooltip-button-email");
+  case "login":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-login");
+  case "share":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-share");
+  case "share-passive":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-share-passive");
+  case "email":
+    return browser.i18n.getMessage("inPageUI-tooltip-button-email");
   }
 }
 
@@ -425,11 +425,11 @@ function positionIframe(fencePos) {
   else {
     for (const panels of iframeElement) {
       panels.width = window.innerWidth;
-      if (window.innerWidth > 480){
+      if (window.innerWidth > 480) {
         panels.width = 350;
       }
     }
-  
+
     iframeChevron.classList.add("fbc-chevron-arrow-top");
     iframeBox.style.marginTop = `${yPosMobile}px`;
 
@@ -457,8 +457,12 @@ function openLoginPrompt(socialAction, fencePos, target) {
 >>>>>>> c07e173 (reposition iframe on resize)
 =======
 function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
+<<<<<<< HEAD
 >>>>>>> de2a237 (resize iframe height according to content)
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
+=======
+  const hasFbcWrapper = document.querySelector(".fbc-wrapper");
+>>>>>>> 9da6a46 (add reload on allow prompt)
   if (!hasFbcWrapper) {
     injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT);
     positionIframe(fencePos);
@@ -574,7 +578,18 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   const FBC_IFRAME_HEIGHT_LOGIN = 250;
   const FBC_IFRAME_HEIGHT_EMAIL = 290;
 
+<<<<<<< HEAD
 >>>>>>> de2a237 (resize iframe height according to content)
+=======
+  let allowClickSwitch = false;
+
+  window.addEventListener("message", (e) => {
+    if (e.data === "allowTriggered") {
+      allowClickSwitch = true;
+    }
+  });
+
+>>>>>>> 9da6a46 (add reload on allow prompt)
   // Show/hide prompt if login element
   if (socialAction === "login") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -610,10 +625,26 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 =======
       }
 
+<<<<<<< HEAD
 >>>>>>> 3cdab59 (add mobile panel orientation)
       e.preventDefault();
       e.stopPropagation();
       openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);
+=======
+      if (allowClickSwitch) {
+        setTimeout(()=>{
+          location.reload(true);
+        }, 250);
+        return;
+      } 
+      else {
+        e.preventDefault();
+        e.stopPropagation();
+        openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
+  
+      }
+  
+>>>>>>> 9da6a46 (add reload on allow prompt)
       // if (allowClickSwitch) {
       //   // Button disabled. Either will trigger new HTTP request or page will refresh.
       //   setTimeout(()=>{
