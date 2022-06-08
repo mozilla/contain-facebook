@@ -1,0 +1,235 @@
+body {
+  --white: #FFFFFF;
+  --black: #202023;
+  --blue: #0060df;
+  --blueFocus: rgba(0, 96, 223, 0.4); /*  This is the RGB value of #0060df @ 40% opacity */
+  --blueActive: #054096;
+  --blueHover: #bcd0ec;
+  --gray: #4C4C4E;
+  --borders: 1px solid #ededf0;
+  font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  font-size: 12px;
+  min-height: 300px;
+}
+
+header {
+  border-bottom: var(--borders);
+  padding: 0.5rem 0;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 0 2em;
+}
+
+section {
+  border-bottom: var(--borders);
+  padding: 0.5rem 0 2rem;
+}
+
+p {
+  display: block;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+main h2 {
+  font-size: 1.25rem;
+}
+
+main h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+  margin: 0 0 0.25em;
+  cursor: pointer;
+}
+
+.settings-list > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.setting-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
+}
+
+.setting-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox-copy {
+  margin-left: 0.5em;
+}
+
+.inline-fbc-icon {
+  display: inline-block;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+	background-position: center center;
+	background-size: 6px auto, 100%;
+	background-image: url(/img/fence-large.svg), linear-gradient(-45deg, #6200A4, #D70022);
+	background-repeat: no-repeat;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	padding: 0;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 400;
+  appearance: none;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.button:focus {
+  outline: 4px solid var(--blueFocus);
+}
+
+.button:hover {
+  background-color: var(--blueHover);
+}
+
+.button:active {
+  background-color: var(--blueActive);
+}
+
+/* URL List */
+
+.urls-list, .included-urls-list {
+  background: rgba(0,0,0,.1);
+  padding: 0;
+  margin: 0.5rem 0 1rem;
+  list-style: none;
+}
+
+.included-urls-list {
+  margin: 0 0 2rem;
+  cursor: not-allowed;
+  background: none;
+}
+
+.urls-list li {
+  padding: 0;
+  display: block;
+}
+
+.url-item {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.url-item.empty {
+  padding: 2rem;
+}
+
+.urls-list .url-item:not(.empty):hover, .urls-list .url-item:not(.empty):focus {
+  background: rgba(0,0,0,.1);
+}
+
+.url-domain-wrapper {
+  position: relative;
+  width: 100%;
+  padding-right: 1em;
+}
+
+.remove-site {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  height: 1.1rem;
+  width: 1.1rem;
+  background-image: url("/img/x-close.svg");
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.allowed-site-icon {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.allowed-site-icon.no-image {
+  background-color: rgba(255,255,255,.1);
+  border-radius: 1.1rem;
+}
+
+.favi-facebook {
+  background-image: url("/img/favi-facebook.png");
+}
+
+.favi-instagram {
+  background-image: url("/img/favi-instagram.png");
+}
+
+.favi-messenger {
+  background-image: url("/img/favi-messenger.png");
+}
+
+.favi-whatsapp {
+  background-image: url("/img/favi-whatsapp.png");
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  body {
+    --borders: 1px solid var(--gray);
+    background: var(--black);
+    color: var(--white);
+  }
+  .urls-list {
+    background: rgba(255,255,255,.1);
+  }
+  .urls-list .url-item:not(.empty):hover {
+    background: rgba(255,255,255,.1);
+  }
+  .remove-site {
+    background-image: url("/img/x-close-white.svg");
+  }
+  .allowed-site-icon.no-image {
+    /* background: rgba(0,0,0,0.3); */
+    background-color: rgba(255,255,255,.2);
+  }
+}

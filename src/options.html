@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css">
+  </head>
+	<body>
+		<header>
+      <h1 data-i18n="facebookContainer" class="i18n-string"></h1>
+    </header>
+    <main>
+      <section class="settings-list">
+        <h2 class="i18n-string" data-i18n="fbcSettingsTitle"></h2>
+        <ul>
+          <li>
+            <div class="setting-item">
+              <input class="settings-checkbox" id="allowInstagram" type="checkbox" name="instagram" value="">
+              <div class="checkbox-copy">
+                <label for="allowInstagram">Allow Instagram to load outside of the Facebook container</label>
+                <p>This setting allows for embedded Instagram posts to load on websites outside of the Facebook Container. Note that enabling this setting may allow Facebook to track you across other websites.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="setting-item">
+              <input class="settings-checkbox" id="hideBadgeContent" type="checkbox" name="hideBadgeContent" value="">
+              <div class="checkbox-copy">
+                <label for="hideBadgeContent"><img class="inline-fbc-icon" src="fbc-icon.svg" alt=""> Hide FBC Badge </label>
+                <p>This setting hides the badge from appearing (including on hover) on Share/Login elements across non-Facebook sites.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="setting-item">
+              <input class="settings-checkbox" id="replaceTab" type="checkbox" name="replaceTab" value="">
+              <div class="checkbox-copy">
+                <label for="replaceTab">Open all Facebook-owned links in a new tab</label>
+                <p>This setting changes how opening Facebook-specific links behaves. The default behavior is to replace the current tab with the new link.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="button" id="resetSettingsButton" name="button">Reset Settings</button>
+      </section>
+      <section class="">
+        <h2 class="i18n-string" data-i18n="sites-added-subhead"></h2>
+        <p class="i18n-string" data-i18n="sites-added-p1"></p>
+        <h3 class="i18n-string" data-i18n="sites-included"></h3>
+        <ul class="included-urls included-urls-list"></ul>
+        <h3 class="i18n-string" data-i18n="sites-allowed"></h3>
+        <ul class="added-urls urls-list"></ul>
+      </section>
+    </main>
+
+    <script src="options.js"></script>
+	</body>
+</html>

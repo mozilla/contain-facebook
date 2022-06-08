@@ -31,6 +31,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = [
   "[data-oauthserver*='facebook']", // Stackoverflow
   ".puppeteer_test_login_button_facebook", // Quora
   "[href*='connect/facebook']", //Medium
+  "[href*='/signin/facebook']", //Imgur
   "[data-login-with-facebook='']", // etsy
   "[data-destination*='facebook']",
   ".fm-sns-item.facebook", // AliExpress
@@ -794,6 +795,21 @@ browser.runtime.onMessage.addListener(message => {
 // let callCount = 0;
 let contentScriptDelay = 999;
 
+async function getUserSettings(setting = null) {
+  // Send request to background to parse URL via PSL
+  const localStorage = await browser.storage.local.get();
+
+  if (localStorage.settings && setting === "hideBadgeContent") {
+    return localStorage.settings.hideBadgeContent;
+  }
+
+  const backgroundResp = await browser.runtime.sendMessage({
+    message: "check-settings"
+  });
+
+  return backgroundResp;
+}
+
 async function contentScriptInit(resetSwitch, msg, target = document) {
   // Second arg is for debugging to see which contentScriptInit fires
   // Call count tracks number of times contentScriptInit has been called
@@ -804,11 +820,18 @@ async function contentScriptInit(resetSwitch, msg, target = document) {
     contentScriptSetTimeout();
   }
 
+  // Check user settings
+  const hideBadges = await getUserSettings("hideBadgeContent");
+  if (hideBadges) {
+    checkForTrackers = false;
+  }
+
   // Resource call is not in FBC/FB Domain and is a FB resource
   if (checkForTrackers && msg !== "other-domain") {
     await detectFacebookOnPage(target);
     screenUpdate();
   }
+
 }
 
 async function getRelayAddonEnabledFromBackground() {
@@ -899,4 +922,5 @@ function contentScriptSetTimeout() {
     return false;
   }
   setTimeout(contentScriptSetTimeout, contentScriptDelay);
+
 }

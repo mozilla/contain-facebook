@@ -190,7 +190,7 @@ const setCustomSiteButtonEvent = async (panelId) => {
   const addSiteToContainerLink = document.querySelector(".add-site-to-container");
 
   if (panelId === "about") {
-    // If on internal About: page, set button to disabled.
+    // If on internal About: or moz-extension:// page, set button to disabled.
     addSiteToContainerLink.classList.add("disabled-button");
     return;
   }
@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 // Build non-onboarding panel
 const buildPanel = async(panelId) => {
   const { page, fragment } = setUpPanel(panelId);
-  addHeader(fragment);
+  addHeaderWithGearIcon(fragment);
 
   const contentWrapper = addDiv(fragment, "main-content-wrapper");
   addSubhead(contentWrapper, panelId);
@@ -399,8 +399,16 @@ const buildPanel = async(panelId) => {
 
   const onboardingLinks = document.querySelectorAll(".open-onboarding");
   const allowedSitesLink = document.querySelector(".open-allowed-sites");
+  const settingsLink = document.querySelector(".btn-settings");
 
   allowedSitesLink.addEventListener("click", () => buildAllowedSitesPanel("sites-allowed"));
+  settingsLink.addEventListener("click", () => {
+    browser.tabs.create({
+      url: "/options.html",
+      active: true
+    });
+    window.close();
+  });
 
   await setCustomSiteButtonEvent(panelId);
 
@@ -471,13 +479,13 @@ const addHeaderWithBackArrow = (fragment) => {
   return fragment;
 };
 
-
-const defaultAllowedSites = [
-  "instagram.com",
-  "facebook.com",
-  "messenger.com",
-];
-
+const addHeaderWithGearIcon = (fragment) => {
+  let el = addHeader(fragment);
+  el = document.createElement("button");
+  el.classList.add("btn-settings", "gear");
+  fragment.appendChild(el);
+  return fragment;
+};
 
 const makeSiteList = async(fragment, siteList, sitesAllowed=false, addX=false) => {
 
@@ -531,6 +539,11 @@ const buildAllowedSitesPanel = async(panelId) => {
 
   const listsWrapper = addDiv(fragment, "site-lists-wrapper");
   addLightSubhead(listsWrapper, "sites-included");
+
+  const defaultAllowedSites = await browser.runtime.sendMessage({
+    message: "get-default-domains"
+  });
+
   makeSiteList(listsWrapper, defaultAllowedSites);
 
   const siteList = await browser.runtime.sendMessage({
