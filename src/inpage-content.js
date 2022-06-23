@@ -1,6 +1,5 @@
 
 const url = window.location.href;
-// const action = url.split('?')[1].split('=')[1];
 
 const action = parseQuery(url).action;
 const btnLink = parseQuery(url).btnlink;
@@ -9,23 +8,23 @@ const loginItem = document.getElementById("fbc-login");
 const emailItem = document.getElementById("fbc-email");
 
 function parseQuery(queryString) {
-    var query = {};
+  var query = {};
 
-    var pairs = queryString.split('?')[1].split('&');
-    for (var i = 0; i < pairs.length; i++) {
-        var splt = pairs[i].split('=');
-        query[splt[0]] = splt[1]
-    }
-    return query;
+  var pairs = queryString.split('?')[1].split('&');
+  for (var i = 0; i < pairs.length; i++) {
+    var splt = pairs[i].split('=');
+    query[splt[0]] = splt[1]
+  }
+  return query;
 }
 
 
 if (action === "login") {
-    loginItem.classList.remove("is-hidden");
+  loginItem.classList.remove("is-hidden");
 }
 
 if (action === "email") {
-    emailItem.classList.remove("is-hidden");
+  emailItem.classList.remove("is-hidden");
 }
 
 // Header String
@@ -48,20 +47,20 @@ fbcPromptCancel.innerHTML = browser.i18n.getMessage("btn-cancel");
 
 fbcPromptAllow.addEventListener("click", (e) => {
 
-    if (!e.isTrusted) {
+  if (!e.isTrusted) {
     // The click was not user generated so ignore
     e.preventDefault();
     return false;
-    } 
+  } 
 
-    // TODO: Add this condition via postMessage
-    // allowClickSwitch = true; 
-    browser.runtime.sendMessage({
+  // TODO: Add this condition via postMessage
+  // allowClickSwitch = true; 
+  browser.runtime.sendMessage({
     message: "add-domain-to-list"
-    });
+  });
 
-    // Launch facebook authentication
-    parent.postMessage("allowTriggered", "*");
+  // Launch facebook authentication
+  parent.postMessage("allowTriggered", "*");
 
 });
 
@@ -83,38 +82,19 @@ fbcEmailCancel.innerHTML = browser.i18n.getMessage("btn-relay-dismiss");
 
 // Launch Relay when Try Relay is clicked
 fbcEmailAllow.addEventListener("click", (e) => {
-    if (!e.isTrusted) {
-      // The click was not user generated so ignore
-      return false;
-    } 
-    window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=Facebook%20Container&utm_content=Try%20Firefox%20Relay");
-  });
+  if (!e.isTrusted) {
+    // The click was not user generated so ignore
+    return false;
+  } 
+  window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=Facebook%20Container&utm_content=Try%20Firefox%20Relay");
+});
 
 // // Remove popup when cancel/dismiss is clicked
 [fbcPromptCancel, fbcEmailCancel].forEach(e => {
-    e.addEventListener("click", () => {
-        parent.postMessage("closeTheInjectedIframe", "*")
-    })
+  e.addEventListener("click", () => {
+    parent.postMessage("closeTheInjectedIframe", "*")
+  });
 });
 
- // TODO: Add this condition via postMessage
-    // allowClickSwitch = true; 
-// target.addEventListener("click", (e) => {
-//     if (!e.isTrusted) {
-//       // The click was not user generated so ignore
-//       return false;
-//     } 
-    
-//     if (allowClickSwitch) {
-//       // Button disabled. Either will trigger new HTTP request or page will refresh.
-//       setTimeout(()=>{
-//         location.reload(true);
-//       }, 250);
-//       return;
-//     } else {
-//       // Click badge, button disabled
-//       e.preventDefault();
-//       // e.stopPropagation();
-//       openLoginPrompt("login", htmlBadgeFragmentFenceDiv.parentElement, htmlBadgeDiv, target);
-//     }
-//   });
+
+

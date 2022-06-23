@@ -388,21 +388,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
         e.preventDefault();
         e.stopPropagation();
         openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
-  
       }
-  
-      // if (allowClickSwitch) {
-      //   // Button disabled. Either will trigger new HTTP request or page will refresh.
-      //   setTimeout(()=>{
-      //     location.reload(true);
-      //   }, 250);
-      //   return;
-      // } else {
-      //   // Click badge, button disabled
-      //   e.preventDefault();
-      //   // e.stopPropagation();
-      //   openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv, target);
-      // }
     });
   } if (socialAction === "email") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -413,10 +399,6 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       e.preventDefault();
       e.stopPropagation();
       openLoginPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
-      // e.target.parentElement.classList.toggle("active");
-      // positionPrompt( htmlBadgeDiv );
-      // target.classList.toggle("js-fbc-prompt-active");
-      // document.body.classList.toggle("js-fbc-prompt-active");
     });
 
   } else if (socialAction === "share-passive") {
