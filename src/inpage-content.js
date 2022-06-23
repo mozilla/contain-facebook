@@ -2,7 +2,6 @@
 const url = window.location.href;
 
 const action = parseQuery(url).action;
-const btnLink = parseQuery(url).btnlink;
 
 const loginItem = document.getElementById("fbc-login");
 const emailItem = document.getElementById("fbc-email");
@@ -10,9 +9,9 @@ const emailItem = document.getElementById("fbc-email");
 function parseQuery(queryString) {
   var query = {};
 
-  var pairs = queryString.split('?')[1].split('&');
+  var pairs = queryString.split("?")[1].split("&");
   for (var i = 0; i < pairs.length; i++) {
-    var splt = pairs[i].split('=');
+    var splt = pairs[i].split("=");
     query[splt[0]] = splt[1]
   }
   return query;
