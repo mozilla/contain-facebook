@@ -641,8 +641,8 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
         e.preventDefault();
         e.stopPropagation();
         openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
-  
       }
+<<<<<<< HEAD
   
 >>>>>>> 9da6a46 (add reload on allow prompt)
       // if (allowClickSwitch) {
@@ -658,6 +658,8 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       //   openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv, target);
       // }
 >>>>>>> c07e173 (reposition iframe on resize)
+=======
+>>>>>>> e1cf345 (remove commented out code)
     });
 <<<<<<< HEAD
 
@@ -678,12 +680,15 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       openLoginPrompt("email", e.target.parentElement, target);
 =======
       openLoginPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
+<<<<<<< HEAD
 >>>>>>> de2a237 (resize iframe height according to content)
       // e.target.parentElement.classList.toggle("active");
       // positionPrompt( htmlBadgeDiv );
       // target.classList.toggle("js-fbc-prompt-active");
       // document.body.classList.toggle("js-fbc-prompt-active");
 >>>>>>> c07e173 (reposition iframe on resize)
+=======
+>>>>>>> e1cf345 (remove commented out code)
     });
 
   } else if (socialAction === "share-passive") {
