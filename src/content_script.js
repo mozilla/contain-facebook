@@ -93,10 +93,6 @@ function isFixed(elem) {
 }
 
 const fragmentClasses = ["fbc-badge-fence", "fbc-badge-tooltip", "fbc-badge-prompt"];
-const htmlBadgeFragmentPromptParagraphStrings = [browser.i18n.getMessage("inPageUI-tooltip-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-prompt-p2")];
-const htmlEmailBadgeFragmentPromptParagraphStrings = [browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2")];
-const htmlBadgeFragmentPromptButtonStrings = ["btn-cancel", "btn-allow"];
-const htmlEmailBadgeFragmentPromptButtonStrings = ["btn-relay-dismiss", "btn-relay-try"];
 
 function getTooltipFragmentStrings(socialAction) {
   switch (socialAction) {
@@ -226,7 +222,6 @@ function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
 
   fbcWrapper.appendChild(fbcChevron);
   fbcWrapper.appendChild(fbcContent);
-  // positionPrompt(fbcContent);
   document.body.appendChild(fbcWrapper);
 
   return;
@@ -358,8 +353,8 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
     htmlBadgeDiv.classList.add("fbc-badge-small");
   }
 
-  const FBC_IFRAME_HEIGHT_LOGIN = 250;
-  const FBC_IFRAME_HEIGHT_EMAIL = 290;
+  const FBC_IFRAME_HEIGHT_LOGIN = 230;
+  const FBC_IFRAME_HEIGHT_EMAIL = 240;
 
   let allowClickSwitch = false;
 
@@ -759,7 +754,7 @@ window.addEventListener("message", (e) => {
 });
 
 function closeIframe() {
-  const hasFbcWrapper = document.querySelector('.fbc-wrapper');
+  const hasFbcWrapper = document.querySelector(".fbc-wrapper");
   hasFbcWrapper.remove();
 }
 
