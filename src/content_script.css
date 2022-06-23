@@ -3,7 +3,7 @@ body {
     --blue60: #0060df;
     --blue70: #003eaa;
     --primaryText: #15141A;
-    --secondaryText: ##5B5B66;
+    --secondaryText: #5B5B66;
     --grey20: #ededf0;
 	--light-gray: #F0F0F4;
 	--white: #ffffff;
@@ -275,31 +275,11 @@ body {
 .fbc-badge-prompt input[type=checkbox]:checked {
 	appearance: checkbox;
 }
-/* 
-.fbc-badge-prompt input {
-	all: unset;
-	margin: 0 5px 0 0;
-	appearance: checkbox;
-	-moz-appearance: checkbox;
-	cursor: pointer;
-	width: 13px;
-	color: #8F8F9D;
-	border: 1px solid #8F8F9D;
-	border-radius: 2px;
-	height: 13px;
-	line-height: 14px;
-	display: inline-block;
-} */
 
 .fbc-badge-prompt label {
-	all: unset;
-	font-size: 12px;
-	line-height: 16px;
 	color: var(--secondaryText);
 	margin: 0;
-	font-weight: normal;
 	cursor: pointer;
-	line-height: 20px;
 }
 
 .fbc-badge-prompt-dontShowAgain-checkbox {
