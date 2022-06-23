@@ -219,11 +219,11 @@ body {
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	font-size: 13px;
 	font-weight: 700;
-	height: 40px;
 	display: flex;
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	line-height: 0;
+	padding: 15px 0 20px 0;
 	border-bottom: 1px solid var(--light-gray);
 	justify-content: center;
 	align-items: center;
@@ -241,7 +241,7 @@ body {
 }
 
 .fbc-badge-prompt-contents {
-	padding: 8px 16px;
+	padding: 4px 8px;
 	background: var(--white);
 }
 
@@ -253,8 +253,8 @@ body {
 }
 
 .fbc-badge-prompt-dontShowAgain-checkbox {
-	padding-top: 8px;
 	gap: 8px;
+	margin-bottom: 16px;
 }
 
 .fbc-badge-prompt input[type=checkbox] {
@@ -289,7 +289,6 @@ body {
 }
 
 .fbc-badge-prompt-buttons {
-	padding-top: 16px;
 	width: 100%;
 	z-index: 0;
 	display: flex;
@@ -305,7 +304,6 @@ body {
 	border-radius: 4px;
 	appearance: none;
 	border: 0;
-	letter-spacing: -0.1px;
 	font-size: 13px;
 	font-weight: 500;
 	color: var(--primaryText);
