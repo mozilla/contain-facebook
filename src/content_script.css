@@ -2,9 +2,10 @@
 body {
     --blue60: #0060df;
     --blue70: #003eaa;
-    --primaryText: #0c0c0d;
+    --primaryText: #15141A;
     --secondaryText: #737373;
     --grey20: #ededf0;
+	--light-gray: #F0F0F4;
 	--white: #ffffff;
     --transition: all .15s cubic-bezier(.07,.95,0,1);
     --borders: 1px solid #ededf0;
@@ -69,6 +70,7 @@ body {
 	--blue80: #073072;
 	--black: #000000;
 	--white: #ffffff;
+	--light-gray: #F0F0F4;
 }
 
 .fbc-badge.fbc-badge-disabled {
@@ -295,8 +297,6 @@ body {
 }
 
 .fbc-badge-prompt-buttons {
-	/* bottom: 0.15px; */
-	/* height: 40px; */
 	padding-top: 16px;
 	width: 100%;
 	z-index: 0;
@@ -306,18 +306,17 @@ body {
 
 .fbc-badge-prompt-buttons button {
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-	/* all: unset; */
 	display: inline-block;
-	/* height: 40px; */
-	width: 100%;
-	padding: 8px 0;
+	width: auto;
+	padding: 8px 16px;
+	border-radius: 4px;
 	appearance: none;
 	border: 0;
 	letter-spacing: -0.1px;
 	font-size: 13px;
-	/* line-height: 17px; */
-	background-color: #F2F2F2;
-	/* border-top: 1px solid #E9E9E9; */
+	font-weight: 500;
+	color: var(--primaryText);
+	background: var(--light-gray);
 	transition: var(--transition);
 	cursor: pointer;
 	text-align: center;
@@ -329,24 +328,7 @@ body {
 
 .fbc-badge-prompt-buttons button:hover {
 	background: #E9E9E9;
-	color: var(--black);
 }
-
-.fbc-badge-prompt-buttons button:last-child {
-	border-top: 1px solid var(--blue70);
-	background: var(--blue60);
-	color: #ffffff;
-}
-
-.fbc-badge-prompt-buttons button:last-child:focus {
-	border-top: 1px solid var(--blue80);
-}
-
-.fbc-badge-prompt-buttons button:last-child:hover {
-	background: var(--blue70);
-	color: var(--white);
-}
-
 
 /* Tooltip */
 .fbc-badge-tooltip {
