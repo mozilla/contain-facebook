@@ -92,8 +92,6 @@ fbcEmailAllow.addEventListener("click", (e) => {
 [fbcPromptCancel, fbcEmailCancel].forEach(e => {
   e.addEventListener("click", () => {
     parent.postMessage("closeTheInjectedIframe", "*");
-    console.log(e.origin);
-
   });
 });
 
