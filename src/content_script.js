@@ -314,7 +314,7 @@ function positionIframe(fencePos) {
   }
 }
 
-function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
+function openInputPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
 
   const iframeSrcVal = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT).src;
 
@@ -356,6 +356,8 @@ function postMessageListeners(iframeSrcVal, target){
       closeIframe();
     }
   });
+
+
 }
 
 
@@ -384,13 +386,13 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   const FBC_IFRAME_HEIGHT_LOGIN = 230;
   const FBC_IFRAME_HEIGHT_EMAIL = 240;
 
-  let allowClickSwitch = false;
+  // let allowClickSwitch = false;
 
-  window.addEventListener("message", (e) => {
-    if (e.data === "allowTriggered") {
-      allowClickSwitch = true;
-    }
-  });
+  // window.addEventListener("message", (e) => {
+  //   if (e.data === "allowTriggered") {
+  //     allowClickSwitch = true;
+  //   }
+  // });
 
   // Show/hide prompt if login element
   if (socialAction === "login") {
@@ -401,16 +403,16 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
         return false;
       }
 
-      if (allowClickSwitch) {
-        setTimeout(()=>{
-          location.reload(true);
-        }, 250);
-        return;
-      } 
+      // if (allowClickSwitch) {
+      //   setTimeout(()=>{
+      //     location.reload(true);
+      //   }, 250);
+      //   return;
+      // } 
       else {
         e.preventDefault();
         e.stopPropagation();
-        openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
+        openInputPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
       }
     });
   } if (socialAction === "email") {
@@ -421,7 +423,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       }
       e.preventDefault();
       e.stopPropagation();
-      openLoginPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
+      openInputPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
     });
 
   } else if (socialAction === "share-passive") {
