@@ -17,8 +17,6 @@ function parseQuery(queryString) {
   return query;
 }
 
-const iframeUrl = document.location.origin;
-
 if (action === "login") {
   loginItem.classList.remove("is-hidden");
 }
@@ -45,14 +43,11 @@ fbcPromptAllow.textContent = browser.i18n.getMessage("btn-allow");
 fbcPromptCancel.textContent = browser.i18n.getMessage("btn-cancel");
 
 fbcPromptAllow.addEventListener("click", (e) => {
-
   if (!e.isTrusted) {
     // The click was not user generated so ignore
     e.preventDefault();
     return false;
   } 
-
-  // TODO: Add this condition via postMessage
   // allowClickSwitch = true; 
   browser.runtime.sendMessage({
     message: "add-domain-to-list"
@@ -79,6 +74,16 @@ const fbcEmailCancel = document.querySelector(".fbc-badge-email-btn-dismiss");
 fbcEmailAllow.textContent = browser.i18n.getMessage("btn-relay-try");
 fbcEmailCancel.textContent = browser.i18n.getMessage("btn-relay-dismiss");
 
+// Checkbox
+// TODO: Add checkbox local storage functionality
+
+const fbcCheckboxes = document.querySelectorAll(".settings-checkbox");
+
+fbcCheckboxes.forEach(e => {
+  e.addEventListener("change", () => {
+    parent.postMessage("checkboxTicked", "*");
+  });
+});
 
 // Launch Relay when Try Relay is clicked
 fbcEmailAllow.addEventListener("click", (e) => {

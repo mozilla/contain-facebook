@@ -476,6 +476,7 @@ function positionIframe(fencePos) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function openInputPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
 =======
 function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
@@ -490,6 +491,9 @@ function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
 =======
 =======
+=======
+function openInputPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
+>>>>>>> 123432b (make variable names make more sense)
 
   const iframeSrcVal = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT).src;
 
@@ -564,6 +568,7 @@ function postMessageListeners(iframeSrcVal, target){
     }
   });
 
+<<<<<<< HEAD
   window.addEventListener("message", (e) => {
     if (
       e.data === "checkboxTicked" 
@@ -608,6 +613,9 @@ function postMessageListeners(iframeSrcVal, target){
     }
   });
 >>>>>>> 18ff4cc (Add origin specifity)
+=======
+
+>>>>>>> 123432b (make variable names make more sense)
 }
 
 
@@ -650,15 +658,19 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 >>>>>>> f8c4802 (adjust iframe heights)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> de2a237 (resize iframe height according to content)
 =======
   let allowClickSwitch = false;
+=======
+  // let allowClickSwitch = false;
+>>>>>>> 123432b (make variable names make more sense)
 
-  window.addEventListener("message", (e) => {
-    if (e.data === "allowTriggered") {
-      allowClickSwitch = true;
-    }
-  });
+  // window.addEventListener("message", (e) => {
+  //   if (e.data === "allowTriggered") {
+  //     allowClickSwitch = true;
+  //   }
+  // });
 
 >>>>>>> 9da6a46 (add reload on allow prompt)
   // Show/hide prompt if login element
@@ -697,6 +709,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3cdab59 (add mobile panel orientation)
       e.preventDefault();
       e.stopPropagation();
@@ -708,10 +721,18 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
         }, 250);
         return;
       } 
+=======
+      // if (allowClickSwitch) {
+      //   setTimeout(()=>{
+      //     location.reload(true);
+      //   }, 250);
+      //   return;
+      // } 
+>>>>>>> 123432b (make variable names make more sense)
       else {
         e.preventDefault();
         e.stopPropagation();
-        openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
+        openInputPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
       }
 <<<<<<< HEAD
   
@@ -746,6 +767,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       e.stopPropagation();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       openInputPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
 =======
       openLoginPrompt("email", e.target.parentElement, target);
@@ -760,6 +782,9 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 >>>>>>> c07e173 (reposition iframe on resize)
 =======
 >>>>>>> e1cf345 (remove commented out code)
+=======
+      openInputPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
+>>>>>>> 123432b (make variable names make more sense)
     });
 
   } else if (socialAction === "share-passive") {
