@@ -142,8 +142,6 @@ async function updateSettings() {
   await settingsCheckboxListener();
 }
 
-
-
 function settingsCheckboxListener() {
   const checkboxes = document.querySelectorAll(".settings-checkbox");
 
@@ -193,10 +191,9 @@ function createElementWithClassList(elemType, elemClass) {
   return newElem;
 }
 
-
 function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
   const iframe = document.createElement("iframe");
-  iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}&btnlink=${target}`);
+  iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}`);
   iframe.width = 350;
   // This height is derived from the Figma file. However, this is just the starting instance of the iframe/inpage menu. After it's built out, it resizes itself based on the inner contents.
   iframe.height = FBC_IFRAME_HEIGHT;
@@ -205,12 +202,28 @@ function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
   iframe.ariaHidden = "false";
   iframe.id = socialAction;
   iframe.classList.add("fbc-content-box");
+  
+  // setIframeSrcValue(iframe.src);
 
   return iframe;
 }
 
+// function setIframeSrcValue(val) {
+//   // return val;
+//   const iframeVal = val;
+//   // return val;
+// }
+
+// function getIframeSrcValue() {
+//   const val = getIframeSrcValue();
+//   // console.log(val);
+//   // return "hello";
+// }
+
+
 function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
   const fbcContent = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT);
+
   const fbcWrapper = createElementWithClassList(
     "div",
     "fbc-wrapper"
@@ -222,9 +235,8 @@ function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
 
   fbcWrapper.appendChild(fbcChevron);
   fbcWrapper.appendChild(fbcContent);
-  document.body.appendChild(fbcWrapper);
 
-  return;
+  return fbcWrapper;
 }
 
 function positionIframe(fencePos) {
@@ -303,11 +315,13 @@ function positionIframe(fencePos) {
 }
 
 function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
+
+  const iframeSrcVal = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT).src;
+
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
   if (!hasFbcWrapper) {
-    injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT);
+    document.body.appendChild(injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT));
     positionIframe(fencePos);
-
     ["resize", "scroll"].forEach(function (evt) {
       if (document.querySelector(".fbc-wrapper")) {
         window.addEventListener(evt, () => {
@@ -316,22 +330,33 @@ function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
       }
     });
 
-    window.addEventListener("message", (e) => {
-      if (
-        e.data === "allowTriggered" 
-        && e.origin === "moz-extension://ad96861a-bb7a-4c63-a924-2f21045b80aa"
-      ){
-        target.click();
-      }
-    });
-
-
+    postMessageListeners(iframeSrcVal, target);
+    
   } else {
     hasFbcWrapper.remove();
   }
-
 }
 
+function postMessageListeners(iframeSrcVal, target){
+
+  window.addEventListener("message", (e) => {
+    if (
+      e.data === "allowTriggered" 
+      && iframeSrcVal.includes(e.origin)
+    ){
+      target.click();
+    }
+  });
+
+  window.addEventListener("message", (e) => {
+    if (
+      e.data === "closeTheInjectedIframe" 
+      && iframeSrcVal.includes(e.origin)
+    ) {
+      closeIframe();
+    }
+  });
+}
 
 
 function addFacebookBadge(target, badgeClassUId, socialAction) {
@@ -748,14 +773,13 @@ window.addEventListener("click", function () {
   }
 });
 
-window.addEventListener("message", (e) => {
-  if (
-    e.data === "closeTheInjectedIframe" 
-    && e.origin === "moz-extension://ad96861a-bb7a-4c63-a924-2f21045b80aa"
-  ) {
-    closeIframe();
-  }
-});
+// window.addEventListener("message", (e) => {
+//   if (
+//     e.data === "closeTheInjectedIframe" 
+//   ) {
+//     closeIframe();
+//   }
+// });
 
 function closeIframe() {
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
