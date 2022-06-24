@@ -719,10 +719,13 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> c07e173 (reposition iframe on resize)
+=======
+>>>>>>> 6208ebd (add innerhtml to textcontent)
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
 
 
