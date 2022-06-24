@@ -28,20 +28,20 @@ if (action === "email") {
 
 // Header String
 const fbcTitle = document.querySelector(".fbc-title");
-fbcTitle.innerHTML = browser.i18n.getMessage("facebookContainer");
+fbcTitle.textContent = browser.i18n.getMessage("facebookContainer");
 
 // Login Strings
 const fbcPromptSubtitleLogin = document.querySelector(".fbc-subtitle-login");
-fbcPromptSubtitleLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-prompt-p1");
+fbcPromptSubtitleLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-prompt-p1");
 
 const fbcPromptBodyTextLogin = document.querySelector(".fbc-bodytext-login");
-fbcPromptBodyTextLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-prompt-p2");
+fbcPromptBodyTextLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-prompt-p2");
 
 const fbcPromptAllow = document.querySelector(".fbc-badge-prompt-btn-allow");
 const fbcPromptCancel = document.querySelector(".fbc-badge-prompt-btn-cancel");
 
-fbcPromptAllow.innerHTML = browser.i18n.getMessage("btn-allow");
-fbcPromptCancel.innerHTML = browser.i18n.getMessage("btn-cancel");
+fbcPromptAllow.textContent = browser.i18n.getMessage("btn-allow");
+fbcPromptCancel.textContent = browser.i18n.getMessage("btn-cancel");
 
 
 fbcPromptAllow.addEventListener("click", (e) => {
@@ -65,19 +65,19 @@ fbcPromptAllow.addEventListener("click", (e) => {
 
 // Email Strings
 const fbcEmailSubtitleLogin = document.querySelector(".fbc-subtitle-email");
-fbcEmailSubtitleLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1");
+fbcEmailSubtitleLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1");
 
 const fbcEmailBodyTextLogin = document.querySelector(".fbc-bodytext-email");
-fbcEmailBodyTextLogin.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2");
+fbcEmailBodyTextLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2");
 
 const fbcEmailCheckbox = document.querySelector(".fbc-email-checkbox");
-fbcEmailCheckbox.innerHTML = browser.i18n.getMessage("inPageUI-tooltip-prompt-checkbox");
+fbcEmailCheckbox.textContent = browser.i18n.getMessage("inPageUI-tooltip-prompt-checkbox");
 
 const fbcEmailAllow = document.querySelector(".fbc-badge-email-btn-cta-fx-relay");
 const fbcEmailCancel = document.querySelector(".fbc-badge-email-btn-dismiss");
 
-fbcEmailAllow.innerHTML = browser.i18n.getMessage("btn-relay-try");
-fbcEmailCancel.innerHTML = browser.i18n.getMessage("btn-relay-dismiss");
+fbcEmailAllow.textContent = browser.i18n.getMessage("btn-relay-try");
+fbcEmailCancel.textContent = browser.i18n.getMessage("btn-relay-dismiss");
 
 // Launch Relay when Try Relay is clicked
 fbcEmailAllow.addEventListener("click", (e) => {

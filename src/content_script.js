@@ -411,8 +411,6 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
     positionPrompt(htmlBadgeDiv);
   });
 
-
-
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
 
 
