@@ -495,7 +495,10 @@ function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
     });
 
     window.addEventListener("message", (e) => {
-      if (e.data === "allowTriggered") {
+      if (
+        e.data === "allowTriggered" 
+        && e.origin === "moz-extension://ad96861a-bb7a-4c63-a924-2f21045b80aa"
+      ){
         target.click();
 >>>>>>> c125976 (resize and scroll reposition iframe)
       }
@@ -1102,7 +1105,10 @@ window.addEventListener("click", function () {
 // });
 =======
 window.addEventListener("message", (e) => {
-  if (e.data === "closeTheInjectedIframe") {
+  if (
+    e.data === "closeTheInjectedIframe" 
+    && e.origin === "moz-extension://ad96861a-bb7a-4c63-a924-2f21045b80aa"
+  ) {
     closeIframe();
   }
 });

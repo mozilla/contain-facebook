@@ -43,7 +43,6 @@ const fbcPromptCancel = document.querySelector(".fbc-badge-prompt-btn-cancel");
 fbcPromptAllow.textContent = browser.i18n.getMessage("btn-allow");
 fbcPromptCancel.textContent = browser.i18n.getMessage("btn-cancel");
 
-
 fbcPromptAllow.addEventListener("click", (e) => {
 
   if (!e.isTrusted) {
@@ -79,6 +78,7 @@ const fbcEmailCancel = document.querySelector(".fbc-badge-email-btn-dismiss");
 fbcEmailAllow.textContent = browser.i18n.getMessage("btn-relay-try");
 fbcEmailCancel.textContent = browser.i18n.getMessage("btn-relay-dismiss");
 
+
 // Launch Relay when Try Relay is clicked
 fbcEmailAllow.addEventListener("click", (e) => {
   if (!e.isTrusted) {
@@ -91,7 +91,9 @@ fbcEmailAllow.addEventListener("click", (e) => {
 // // Remove popup when cancel/dismiss is clicked
 [fbcPromptCancel, fbcEmailCancel].forEach(e => {
   e.addEventListener("click", () => {
-    parent.postMessage("closeTheInjectedIframe", "*")
+    parent.postMessage("closeTheInjectedIframe", "*");
+    console.log(e.origin);
+
   });
 });
 
