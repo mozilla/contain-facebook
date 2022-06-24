@@ -12,11 +12,12 @@ function parseQuery(queryString) {
   var pairs = queryString.split("?")[1].split("&");
   for (var i = 0; i < pairs.length; i++) {
     var splt = pairs[i].split("=");
-    query[splt[0]] = splt[1]
+    query[splt[0]] = splt[1];
   }
   return query;
 }
 
+const iframeUrl = document.location.origin;
 
 if (action === "login") {
   loginItem.classList.remove("is-hidden");

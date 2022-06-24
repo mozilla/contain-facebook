@@ -153,10 +153,13 @@ async function updateSettings() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> 3cdab59 (add mobile panel orientation)
+=======
+>>>>>>> 18ff4cc (Add origin specifity)
 function settingsCheckboxListener() {
   const checkboxes = document.querySelectorAll(".settings-checkbox");
 
@@ -215,6 +218,7 @@ function createElementWithClassList(elemType, elemClass) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
 =======
 
@@ -222,6 +226,8 @@ function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
 function buildInpageIframe(socialAction, target) {
 >>>>>>> c07e173 (reposition iframe on resize)
 =======
+=======
+>>>>>>> 18ff4cc (Add origin specifity)
 function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
 >>>>>>> de2a237 (resize iframe height according to content)
   const iframe = document.createElement("iframe");
@@ -235,15 +241,23 @@ function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
   iframe.id = socialAction;
   iframe.classList.add("fbc-content-box");
 <<<<<<< HEAD
+<<<<<<< HEAD
   
   // setIframeSrcValue(iframe.src);
 =======
 >>>>>>> c07e173 (reposition iframe on resize)
+=======
+  
+  // setIframeSrcValue(iframe.src);
+>>>>>>> 18ff4cc (Add origin specifity)
 
   return iframe;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 18ff4cc (Add origin specifity)
 // function setIframeSrcValue(val) {
 //   // return val;
 //   const iframeVal = val;
@@ -260,10 +274,13 @@ function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
 function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
   const fbcContent = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT);
 
+<<<<<<< HEAD
 =======
 function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
   const fbcContent = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT);
 >>>>>>> de2a237 (resize iframe height according to content)
+=======
+>>>>>>> 18ff4cc (Add origin specifity)
   const fbcWrapper = createElementWithClassList(
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -294,9 +311,12 @@ function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
   fbcWrapper.appendChild(fbcChevron);
   fbcWrapper.appendChild(fbcContent);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   document.body.appendChild(fbcWrapper);
 >>>>>>> f8c4802 (adjust iframe heights)
+=======
+>>>>>>> 18ff4cc (Add origin specifity)
 
   return fbcWrapper;
 }
@@ -465,14 +485,21 @@ function openLoginPrompt(socialAction, fencePos, target) {
 =======
 function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> de2a237 (resize iframe height according to content)
   const hasFbcWrapper = document.querySelector('.fbc-wrapper');
 =======
+=======
+
+  const iframeSrcVal = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT).src;
+
+>>>>>>> 18ff4cc (Add origin specifity)
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
 >>>>>>> 9da6a46 (add reload on allow prompt)
   if (!hasFbcWrapper) {
-    injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT);
+    document.body.appendChild(injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT));
     positionIframe(fencePos);
+<<<<<<< HEAD
 >>>>>>> d5ca6b2 (localize emails trings)
 
 <<<<<<< HEAD
@@ -484,6 +511,8 @@ function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
     positionIframe(fencePos);
 =======
 >>>>>>> c125976 (resize and scroll reposition iframe)
+=======
+>>>>>>> 18ff4cc (Add origin specifity)
     ["resize", "scroll"].forEach(function (evt) {
       if (document.querySelector(".fbc-wrapper")) {
         window.addEventListener(evt, () => {
@@ -494,6 +523,7 @@ function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
       }
     });
 
+<<<<<<< HEAD
     window.addEventListener("message", (e) => {
       if (
         e.data === "allowTriggered" 
@@ -504,11 +534,14 @@ function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
       }
     });
 
+=======
+>>>>>>> 18ff4cc (Add origin specifity)
     postMessageListeners(iframeSrcVal, target);
     
   } else {
     hasFbcWrapper.remove();
   }
+<<<<<<< HEAD
 }
 
 function postMessageListeners(iframeSrcVal, target){
@@ -552,6 +585,29 @@ async function localStorageAvailable() {
 
 function setLocalStorageTickedCheckBox() {
   localStorage.setItem("checkbox-ticked", true);
+=======
+}
+
+function postMessageListeners(iframeSrcVal, target){
+
+  window.addEventListener("message", (e) => {
+    if (
+      e.data === "allowTriggered" 
+      && iframeSrcVal.includes(e.origin)
+    ){
+      target.click();
+    }
+  });
+
+  window.addEventListener("message", (e) => {
+    if (
+      e.data === "closeTheInjectedIframe" 
+      && iframeSrcVal.includes(e.origin)
+    ) {
+      closeIframe();
+    }
+  });
+>>>>>>> 18ff4cc (Add origin specifity)
 }
 
 
@@ -1096,6 +1152,9 @@ window.addEventListener("click", function () {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 18ff4cc (Add origin specifity)
 // window.addEventListener("message", (e) => {
 //   if (
 //     e.data === "closeTheInjectedIframe" 
@@ -1103,6 +1162,7 @@ window.addEventListener("click", function () {
 //     closeIframe();
 //   }
 // });
+<<<<<<< HEAD
 =======
 window.addEventListener("message", (e) => {
   if (
@@ -1113,6 +1173,8 @@ window.addEventListener("message", (e) => {
   }
 });
 >>>>>>> d5ca6b2 (localize emails trings)
+=======
+>>>>>>> 18ff4cc (Add origin specifity)
 
 function closeIframe() {
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
