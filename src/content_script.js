@@ -579,6 +579,7 @@ function postMessageListeners(iframeSrcVal, target){
       && localStorageAvailable()
     ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       setLocalStorageTickedCheckBox();
     }
   });
@@ -622,6 +623,9 @@ function postMessageListeners(iframeSrcVal, target){
 >>>>>>> 123432b (make variable names make more sense)
 =======
       setLocalStorageCheckbox();
+=======
+      setLocalStorageTickedCheckBox();
+>>>>>>> 5043efb (checkbox add localstorage listener)
     }
   });
 }
@@ -635,9 +639,10 @@ async function localStorageAvailable() {
 >>>>>>> e50d9ee (checkbox add localstorage listener)
 }
 
-async function setLocalStorageCheckbox() {
+function setLocalStorageTickedCheckBox() {
   localStorage.setItem("checkbox-ticked", true);
 }
+
 
 function addFacebookBadge(target, badgeClassUId, socialAction) {
   // Detect if target is visible
@@ -692,7 +697,12 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   //   }
   // });
 
+<<<<<<< HEAD
 >>>>>>> 9da6a46 (add reload on allow prompt)
+=======
+
+
+>>>>>>> 5043efb (checkbox add localstorage listener)
   // Show/hide prompt if login element
   if (socialAction === "login") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -777,7 +787,20 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 
 =======
   } if (socialAction === "email") {
+<<<<<<< HEAD
 >>>>>>> 3cdab59 (add mobile panel orientation)
+=======
+
+    window.addEventListener("message", () => {
+      if (
+        localStorage.getItem("checkbox-ticked") === "true"
+      ) {
+        htmlBadgeFragmentFenceDiv.remove();
+        closeIframe();
+      }
+    });
+
+>>>>>>> 5043efb (checkbox add localstorage listener)
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
@@ -1115,9 +1138,13 @@ function patternDetection(selectionArray, socialActionIntent) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3cdab59 (add mobile panel orientation)
+=======
+
+>>>>>>> 5043efb (checkbox add localstorage listener)
 async function detectFacebookOnPage() {
   if (!checkForTrackers) {
     return;
@@ -1135,10 +1162,14 @@ async function detectFacebookOnPage() {
   const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   const checkboxTicked = localStorage.getItem("checkbox-ticked");
 =======
   const checkboxTicked = await localStorage.getItem("checkbox-ticked");
 >>>>>>> e50d9ee (checkbox add localstorage listener)
+=======
+  const checkboxTicked = localStorage.getItem("checkbox-ticked");
+>>>>>>> 5043efb (checkbox add localstorage listener)
 
   if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage && checkboxTicked !== "true") {
     patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
@@ -1182,12 +1213,17 @@ function screenUpdate() {
 function escapeKeyListener() {
   document.body.addEventListener("keydown", function (e) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (e.key === "Escape" && document.querySelector(".fbc-wrapper")) {
       closeIframe();
 =======
     if (e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
       closePrompt();
 >>>>>>> 3cdab59 (add mobile panel orientation)
+=======
+    if (e.key === "Escape" && document.querySelector(".fbc-wrapper")) {
+      closeIframe();
+>>>>>>> 5043efb (checkbox add localstorage listener)
     }
   });
 }
