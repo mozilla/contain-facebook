@@ -363,7 +363,7 @@ function postMessageListeners(iframeSrcVal, target){
       && iframeSrcVal.includes(e.origin)
       && localStorageAvailable()
     ) {
-      setLocalStorageCheckbox();
+      setLocalStorageTickedCheckBox();
     }
   });
 }
@@ -376,9 +376,10 @@ async function localStorageAvailable() {
   }
 }
 
-async function setLocalStorageCheckbox() {
+function setLocalStorageTickedCheckBox() {
   localStorage.setItem("checkbox-ticked", true);
 }
+
 
 function addFacebookBadge(target, badgeClassUId, socialAction) {
   // Detect if target is visible
@@ -413,6 +414,8 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   //   }
   // });
 
+
+
   // Show/hide prompt if login element
   if (socialAction === "login") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -435,6 +438,16 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       }
     });
   } if (socialAction === "email") {
+
+    window.addEventListener("message", () => {
+      if (
+        localStorage.getItem("checkbox-ticked") === "true"
+      ) {
+        htmlBadgeFragmentFenceDiv.remove();
+        closeIframe();
+      }
+    });
+
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
@@ -720,9 +733,11 @@ function patternDetection(selectionArray, socialActionIntent) {
       addFacebookBadge(item, itemUIDClassTarget, socialAction);
       item.classList.add("fbc-has-badge");
       item.classList.add(itemUIDClassName);
+
     }
   }
 }
+
 
 async function detectFacebookOnPage() {
   if (!checkForTrackers) {
@@ -740,7 +755,7 @@ async function detectFacebookOnPage() {
   // Check if user dismissed the Relay prompt
   const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
 
-  const checkboxTicked = await localStorage.getItem("checkbox-ticked");
+  const checkboxTicked = localStorage.getItem("checkbox-ticked");
 
   if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage && checkboxTicked !== "true") {
     patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
@@ -783,8 +798,8 @@ function screenUpdate() {
 
 function escapeKeyListener() {
   document.body.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
-      closePrompt();
+    if (e.key === "Escape" && document.querySelector(".fbc-wrapper")) {
+      closeIframe();
     }
   });
 }
