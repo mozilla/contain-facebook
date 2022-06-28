@@ -672,6 +672,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   const FBC_IFRAME_HEIGHT_LOGIN = 230;
   const FBC_IFRAME_HEIGHT_EMAIL = 240;
 
+<<<<<<< HEAD
 =======
 >>>>>>> c07e173 (reposition iframe on resize)
 =======
@@ -703,6 +704,8 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 
 
 >>>>>>> 5043efb (checkbox add localstorage listener)
+=======
+>>>>>>> bcbb8f3 (add helpful comments)
   // Show/hide prompt if login element
   if (socialAction === "login") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -740,6 +743,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3cdab59 (add mobile panel orientation)
       e.preventDefault();
       e.stopPropagation();
@@ -759,6 +763,8 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       //   return;
       // } 
 >>>>>>> 123432b (make variable names make more sense)
+=======
+>>>>>>> bcbb8f3 (add helpful comments)
       else {
         e.preventDefault();
         e.stopPropagation();
@@ -784,13 +790,20 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
 >>>>>>> e1cf345 (remove commented out code)
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
   } if (socialAction === "email") {
 <<<<<<< HEAD
 >>>>>>> 3cdab59 (add mobile panel orientation)
 =======
+=======
+  } 
+  
+  if (socialAction === "email") {
+>>>>>>> bcbb8f3 (add helpful comments)
 
+    // Remove the email prompt when the "do not show me again" checkbox is ticked for the first time
     window.addEventListener("message", () => {
       if (
         localStorage.getItem("checkbox-ticked") === "true"
