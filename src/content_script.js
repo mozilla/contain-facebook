@@ -569,12 +569,16 @@ function postMessageListeners(iframeSrcVal, target){
   });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e50d9ee (checkbox add localstorage listener)
   window.addEventListener("message", (e) => {
     if (
       e.data === "checkboxTicked" 
       && iframeSrcVal.includes(e.origin)
       && localStorageAvailable()
     ) {
+<<<<<<< HEAD
       setLocalStorageTickedCheckBox();
     }
   });
@@ -616,8 +620,24 @@ function postMessageListeners(iframeSrcVal, target){
 =======
 
 >>>>>>> 123432b (make variable names make more sense)
+=======
+      setLocalStorageCheckbox();
+    }
+  });
 }
 
+async function localStorageAvailable() {
+  if (typeof(Storage) !== "undefined") {
+    return true;
+  } else {
+    return false;
+  }
+>>>>>>> e50d9ee (checkbox add localstorage listener)
+}
+
+async function setLocalStorageCheckbox() {
+  localStorage.setItem("checkbox-ticked", true);
+}
 
 function addFacebookBadge(target, badgeClassUId, socialAction) {
   // Detect if target is visible
@@ -1114,7 +1134,11 @@ async function detectFacebookOnPage() {
   // Check if user dismissed the Relay prompt
   const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
 
+<<<<<<< HEAD
   const checkboxTicked = localStorage.getItem("checkbox-ticked");
+=======
+  const checkboxTicked = await localStorage.getItem("checkbox-ticked");
+>>>>>>> e50d9ee (checkbox add localstorage listener)
 
   if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage && checkboxTicked !== "true") {
     patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
