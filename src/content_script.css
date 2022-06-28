@@ -150,7 +150,6 @@ body {
 	width: 100%;
 	z-index: 999999999999;
 	background-color: rgba(0, 0, 0, 0.1);
-	/* animation: 0.2s ease forwards; */
 }
 
 .fbc-wrapper iframe {
@@ -349,17 +348,6 @@ body {
 	top: auto;
 	bottom: 25%;
 }
-
-/* .fbc-badge-prompt-align-right .fbc-badge-prompt {
-	left: auto;
-	right: calc( 100% + 20px);
-}
-
-.fbc-badge-prompt-align-right .fbc-badge-prompt:after {
-	left: auto;
-	right: -10px;
-	border-width: 10px 0 10px 10px;
-} */
 
 .is-hidden {
     display: none;
