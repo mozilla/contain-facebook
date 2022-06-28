@@ -406,16 +406,6 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   const FBC_IFRAME_HEIGHT_LOGIN = 230;
   const FBC_IFRAME_HEIGHT_EMAIL = 240;
 
-  // let allowClickSwitch = false;
-
-  // window.addEventListener("message", (e) => {
-  //   if (e.data === "allowTriggered") {
-  //     allowClickSwitch = true;
-  //   }
-  // });
-
-
-
   // Show/hide prompt if login element
   if (socialAction === "login") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -425,20 +415,17 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
         return false;
       }
 
-      // if (allowClickSwitch) {
-      //   setTimeout(()=>{
-      //     location.reload(true);
-      //   }, 250);
-      //   return;
-      // } 
       else {
         e.preventDefault();
         e.stopPropagation();
         openInputPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
       }
     });
-  } if (socialAction === "email") {
+  } 
+  
+  if (socialAction === "email") {
 
+    // Remove the email prompt when the "do not show me again" checkbox is ticked for the first time
     window.addEventListener("message", () => {
       if (
         localStorage.getItem("checkbox-ticked") === "true"
