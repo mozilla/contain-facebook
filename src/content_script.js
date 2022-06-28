@@ -357,9 +357,28 @@ function postMessageListeners(iframeSrcVal, target){
     }
   });
 
-
+  window.addEventListener("message", (e) => {
+    if (
+      e.data === "checkboxTicked" 
+      && iframeSrcVal.includes(e.origin)
+      && localStorageAvailable()
+    ) {
+      setLocalStorageCheckbox();
+    }
+  });
 }
 
+async function localStorageAvailable() {
+  if (typeof(Storage) !== "undefined") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+async function setLocalStorageCheckbox() {
+  localStorage.setItem("checkbox-ticked", true);
+}
 
 function addFacebookBadge(target, badgeClassUId, socialAction) {
   // Detect if target is visible
@@ -720,7 +739,10 @@ async function detectFacebookOnPage() {
 
   // Check if user dismissed the Relay prompt
   const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
-  if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage) {
+
+  const checkboxTicked = await localStorage.getItem("checkbox-ticked");
+
+  if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage && checkboxTicked !== "true") {
     patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
     updateSettings();
   }
