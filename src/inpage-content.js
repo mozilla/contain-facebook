@@ -75,8 +75,6 @@ fbcEmailAllow.textContent = browser.i18n.getMessage("btn-relay-try");
 fbcEmailCancel.textContent = browser.i18n.getMessage("btn-relay-dismiss");
 
 // Checkbox
-// TODO: Add checkbox local storage functionality
-
 const fbcCheckboxes = document.querySelectorAll(".settings-checkbox");
 
 fbcCheckboxes.forEach(e => {
