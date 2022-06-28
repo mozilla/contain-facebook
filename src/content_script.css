@@ -64,7 +64,7 @@ body {
 .fbc-badge {
 	all: initial;
 	position: absolute;
-	z-index: 999999999999999;
+	z-index: 100;
 	transition: opacity 0.2s ease-out;
 	--transition: all .15s cubic-bezier(.07,.95,0,1)
 }
