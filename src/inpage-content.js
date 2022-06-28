@@ -78,10 +78,10 @@ fbcEmailCancel.textContent = browser.i18n.getMessage("btn-relay-dismiss");
 const fbcCheckboxes = document.querySelectorAll(".settings-checkbox");
 
 fbcCheckboxes.forEach(e => {
-  if (!e.isTrusted) {
-    // The click was not user generated so ignore
-    return false;
-  } 
+  // if (!e.isTrusted) {
+  //   // The click was not user generated so ignore
+  //   return false;
+  // } 
   e.addEventListener("change", () => {
     parent.postMessage("checkboxTicked", "*");
   });
