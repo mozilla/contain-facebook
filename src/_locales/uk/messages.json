@@ -190,7 +190,7 @@
     "description": ""
   },
   "button-allow-site": {
-    "message": "Дозволити сайт в Facebook Container",
+    "message": "Дозволити сайт у Facebook Container",
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
   "button-remove-site": {
