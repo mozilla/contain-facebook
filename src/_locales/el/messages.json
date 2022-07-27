@@ -14,14 +14,14 @@
     }
   },
   "in-fbc-p1": {
-    "message": "Το Facebook μπορεί πλέον να σας καταγράφει σε αυτή την ιστοσελίδα. Για να αφαιρέσετε αυτή την ιστοσελίδα από το Facebook Container, επιλέξτε το \"Επιτρεπόμενες ιστοσελίδες\" στο Facebook Container και αφαιρέστε την από τη λίστα."
+    "message": "Το Facebook μπορεί πλέον να σας καταγράφει σε αυτόν τον ιστότοπο. Για να αφαιρέσετε αυτόν τον ιστότοπο από το Facebook Container, επιλέξτε «Επιτρεπόμενοι ιστότοποι» στο Facebook Container και διαγράψτε τον από τη λίστα."
   },
   "on-facebook-subhead": {
-    "message": "Στο Facebook και σε ιστοσελίδες εντός των ορίων του Facebook Container",
+    "message": "Στο Facebook και σε ιστοτόπους εντός των ορίων του Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p1": {
-    "message": "Αυτό το εικονίδιο εμφανίζεται στη γραμμή διευθύνσεων του Firefox όταν επισκέπτεστε τις ιστοσελίδες του Facebook ή τις ιστοσελίδες που έχετε προσθέσει στο Facebook Container.",
+    "message": "Αυτό το εικονίδιο εμφανίζεται στη γραμμή διευθύνσεων του Firefox όταν επισκέπτεστε ιστοτόπους του Facebook ή ιστοτόπους που έχετε προσθέσει στο Facebook Container.",
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p2": {
@@ -159,7 +159,7 @@
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Το Facebook Container αποκλείει αυτούς τους ιχνηλάτες. Ωστόσο, αν κάνετε κλικ σε οποιοδήποτε από αυτά τα κουμπιά, το Facebook θα μπορέσει να σας παρακολουθήσει.",
+    "message": "Το Facebook Container αποκλείει αυτούς τους ιχνηλάτες. Ωστόσο, αν κάνετε κλικ σε οποιοδήποτε από αυτά τα κουμπιά, το Facebook θα μπορεί να σας καταγράφει.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
@@ -167,15 +167,15 @@
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Επιτρεπόμενες ιστοσελίδες στο Facebook Container",
+    "message": "Επιτρεπόμενοι ιστότοποι του Facebook Container",
     "description": "This is a panel subhead."
   },
   "sites-included": {
-    "message": "ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ",
+    "message": "ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΟΙ ΙΣΤΟΤΟΠΟΙ",
     "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
-    "message": "Καμία",
+    "message": "Κανένας",
     "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
   },
   "sites-allowed": {
@@ -183,7 +183,7 @@
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Το Facebook Container τοποθετεί ιστοσελίδες του Facebook μέσα στα όρια αυτά. Μπορείτε να επιτρέψετε σε άλλες ιστοσελίδες εντός των ορίων, αλλά αυτό θα επιτρέψει στο Facebook να καταγράφει περισσότερο την περιήγησή σας στο διαδίκτυο."
+    "message": "Το Facebook Container τοποθετεί ιστοτόπους του Facebook μέσα στα όρια αυτά. Μπορείτε να προσθέσετε άλλους ιστοτόπους εντός των ορίων, αλλά αυτό θα επιτρέψει στο Facebook να καταγράφει την περιήγησή σας στο διαδίκτυο."
   },
   "remove": {
     "message": "Αφαίρεση",
@@ -194,39 +194,39 @@
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
   "button-remove-site": {
-    "message": "Αφαίρεση ιστοσελίδας από το Facebook Container",
+    "message": "Αφαίρεση ιστοτόπου από το Facebook Container",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Επειδή αυτή η ιστοσελίδα ανήκει στο Facebook, δεν μπορεί να αφαιρεθεί από το Facebook Container.",
+    "message": "Επειδή αυτός ο ιστότοπος ανήκει στο Facebook, δεν μπορεί να αφαιρεθεί από το Facebook Container.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Αφαίρεση ιστοσελίδας από το Facebook Container;",
+    "message": "Αφαίρεση ιστοτόπου από το Facebook Container;",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Η αφαίρεση αυτής της ιστοσελίδας από το Facebook Container σημαίνει ότι η σύνδεση μέσω Facebook δεν θα λειτουργεί, ενώ τα cookies καταγραφής του Facebook θα διαγραφούν.",
+    "message": "Η αφαίρεση αυτού του ιστοτόπου από το Facebook Container σημαίνει ότι η σύνδεση μέσω Facebook δεν θα λειτουργεί, ενώ τα cookies καταγραφής του Facebook θα διαγραφούν.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " Αν θελήσετε να χρησιμοποιήσετε ξανά τη σύνδεση μέσω Facebook, θα πρέπει να την προσθέσετε ξανά στο Facebook Container.",
+    "message": " Αν θελήσετε να χρησιμοποιήσετε ξανά τη σύνδεση μέσω Facebook, θα πρέπει να τον προσθέσετε ξανά στο Facebook Container.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Να επιτρέπεται η παρακολούθηση του Facebook σε αυτή την ιστοσελίδα;",
+    "message": "Να επιτρέπεται η καταγραφή του Facebook σε αυτόν τον ιστότοπο;",
     "description": ""
   },
   "add-site-p1": {
-    "message": "Αυτό σας επιτρέπει να συνδεθείτε με το Facebook, αλλά επιτρέπει στο Facebook να παρακολουθεί ό,τι κάνετε σε αυτή την ιστοσελίδα.",
+    "message": "Αυτό σας επιτρέπει να συνδεθείτε με το Facebook, αλλά επιτρέπει στο Facebook να καταγράφει ό,τι κάνετε σε αυτόν τον ιστότοπο.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Το Facebook Container έχει απενεργοποιήσει αυτό το κουμπί και απαγόρεψε στο Facebook να καταγράψει την επίσκεψή σας σε αυτή τη σελίδα.",
+    "message": "Το Facebook Container έχει απενεργοποιήσει αυτό το κουμπί και απέτρεψε την καταγραφή της επίσκεψής σας σε αυτήν τη σελίδα, από το Facebook.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Το Facebook Container έχει αποκλείσει τους ιχνηλάτες του Facebook. Αν χρησιμοποιήσετε τη σύνδεση μέσω Facebook σε αυτή την ιστοσελίδα, το Facebook θα μπορέσει να σας παρακολουθήσει.",
+    "message": "Το Facebook Container έχει αποκλείσει τους ιχνηλάτες του Facebook. Αν χρησιμοποιήσετε τη σύνδεση μέσω Facebook σε αυτόν τον ιστότοπο, το Facebook θα μπορεί να σας καταγράφει.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
@@ -234,7 +234,7 @@
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Αν θέλετε να χρησιμοποιήσετε τη σύνδεση μέσω Facebook, τότε το Facebook θα μπορεί να παρακολουθεί τη δραστηριότητά σας σε αυτή την ιστοσελίδα. Αυτό μπορεί να χρησιμοποιηθεί για τη βαθύτερη κατανόηση της διαδικτυακής σας ζωής από τρίτους.",
+    "message": "Αν θέλετε να χρησιμοποιήσετε τη σύνδεση μέσω Facebook, τότε το Facebook θα μπορεί να καταγράφει τη δραστηριότητά σας σε αυτόν τον ιστότοπο. Αυτό μπορεί να χρησιμοποιηθεί για τη βαθύτερη κατανόηση της διαδικτυακής σας ζωής από τρίτους.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,7 +242,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "Αν κάνετε κλικ σε αυτό το κουμπί, το Facebook θα μπορεί να καταγράφει την επίσκεψή σας σε αυτή την ιστοσελίδα.",
+    "message": "Αν κάνετε κλικ σε αυτό το κουμπί, το Facebook θα μπορεί να καταγράφει την επίσκεψή σας σε αυτόν τον ιστότοπο.",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
@@ -254,7 +254,7 @@
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Αυτός ο ιστότοπος μπορεί να μοιραστεί τη διεύθυνση email σας με το Facebook, το οποίο επιτρέπει στο Facebook να σας παρακολουθεί. Χρησιμοποιήστε μια υπηρεσία όπως το Firefox Relay για να αποκρύψετε την πραγματική σας διεύθυνση email.",
+    "message": "Αυτός ο ιστότοπος μπορεί να κοινοποιήσει τη διεύθυνση email σας στο Facebook, επιτρέποντας την καταγραφή σας από αυτό. Χρησιμοποιήστε μια υπηρεσία όπως το Firefox Relay για να αποκρύψετε την πραγματική σας διεύθυνση email.",
     "description": ""
   },
   "btn-relay-dismiss": {
@@ -262,7 +262,7 @@
     "description": ""
   },
   "btn-relay-try": {
-    "message": "Δοκιμή Firefox Relay",
+    "message": "Δοκιμή του Firefox Relay",
     "description": ""
   }
 }
