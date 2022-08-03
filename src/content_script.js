@@ -93,16 +93,6 @@ function isFixed(elem) {
 }
 
 const fragmentClasses = ["fbc-badge-fence", "fbc-badge-tooltip", "fbc-badge-prompt"];
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-const htmlBadgeFragmentPromptParagraphStrings = [browser.i18n.getMessage("inPageUI-tooltip-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-prompt-p2")];
-const htmlEmailBadgeFragmentPromptParagraphStrings = [browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1"), browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2")];
-const htmlBadgeFragmentPromptButtonStrings = ["btn-cancel", "btn-allow"];
-const htmlEmailBadgeFragmentPromptButtonStrings = ["btn-relay-dismiss", "btn-relay-try"];
->>>>>>> 3cdab59 (add mobile panel orientation)
-=======
->>>>>>> f8c4802 (adjust iframe heights)
 
 function getTooltipFragmentStrings(socialAction) {
   switch (socialAction) {
@@ -152,14 +142,6 @@ async function updateSettings() {
   await settingsCheckboxListener();
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 3cdab59 (add mobile panel orientation)
-=======
->>>>>>> 18ff4cc (Add origin specifity)
 function settingsCheckboxListener() {
   const checkboxes = document.querySelectorAll(".settings-checkbox");
 
@@ -185,15 +167,7 @@ function createBadgeFragment(socialAction) {
 
   // Create Tooltip
   const htmlBadgeFragmentTooltipDiv = htmlBadgeFragment.querySelector(".fbc-badge-tooltip");
-<<<<<<< HEAD
-<<<<<<< HEAD
   htmlBadgeFragmentTooltipDiv.appendChild(document.createTextNode(getTooltipFragmentStrings(socialAction)));
-=======
-  htmlBadgeFragmentTooltipDiv.appendChild( document.createTextNode( getTooltipFragmentStrings(socialAction) ) );
->>>>>>> c07e173 (reposition iframe on resize)
-=======
-  htmlBadgeFragmentTooltipDiv.appendChild(document.createTextNode(getTooltipFragmentStrings(socialAction)));
->>>>>>> 3cdab59 (add mobile panel orientation)
 
   // Create Empty Wrapper Div
   const htmlBadgeWrapperDiv = document.createElement("div");
@@ -217,19 +191,8 @@ function createElementWithClassList(elemType, elemClass) {
   return newElem;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
-=======
 
-<<<<<<< HEAD
-function buildInpageIframe(socialAction, target) {
->>>>>>> c07e173 (reposition iframe on resize)
-=======
-=======
->>>>>>> 18ff4cc (Add origin specifity)
-function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
->>>>>>> de2a237 (resize iframe height according to content)
   const iframe = document.createElement("iframe");
   iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}`);
   iframe.width = 350;
@@ -240,24 +203,10 @@ function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
   iframe.ariaHidden = "false";
   iframe.id = socialAction;
   iframe.classList.add("fbc-content-box");
-<<<<<<< HEAD
-<<<<<<< HEAD
-  
-  // setIframeSrcValue(iframe.src);
-=======
->>>>>>> c07e173 (reposition iframe on resize)
-=======
-  
-  // setIframeSrcValue(iframe.src);
->>>>>>> 18ff4cc (Add origin specifity)
 
   return iframe;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 18ff4cc (Add origin specifity)
 // function setIframeSrcValue(val) {
 //   // return val;
 //   const iframeVal = val;
@@ -270,53 +219,20 @@ function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
 //   // return "hello";
 // }
 
-
 function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
   const fbcContent = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT);
 
-<<<<<<< HEAD
-=======
-function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
-  const fbcContent = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT);
->>>>>>> de2a237 (resize iframe height according to content)
-=======
->>>>>>> 18ff4cc (Add origin specifity)
   const fbcWrapper = createElementWithClassList(
-<<<<<<< HEAD
-<<<<<<< HEAD
     "div",
     "fbc-wrapper"
   );
   const fbcChevron = createElementWithClassList(
     "div",
     "fbc-iframe-chevron"
-=======
-      "div",
-      "fbc-wrapper"
-    );
-  const fbcChevron = createElementWithClassList(
-    "div",
-    "iframe-chevron"
->>>>>>> 3cc76d3 (add right/left chevron)
-=======
-    "div",
-    "fbc-wrapper"
-  );
-  const fbcChevron = createElementWithClassList(
-    "div",
-    "fbc-iframe-chevron"
->>>>>>> 3cdab59 (add mobile panel orientation)
   );
 
   fbcWrapper.appendChild(fbcChevron);
   fbcWrapper.appendChild(fbcContent);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  document.body.appendChild(fbcWrapper);
->>>>>>> f8c4802 (adjust iframe heights)
-=======
->>>>>>> 18ff4cc (Add origin specifity)
 
   return fbcWrapper;
 }
@@ -327,81 +243,8 @@ function positionIframe(fencePos) {
   const iframeWrapper = document.querySelector(".fbc-wrapper");
   const iframeElement = iframeWrapper.getElementsByTagName("iframe");
   const iframeChevron = document.querySelector(".fbc-iframe-chevron");
-<<<<<<< HEAD
 
   const offsetX = 20;
-  const offsetY = 55;
-
-  const iframePaddingAllowance = iframeBox.offsetWidth + offsetX;
-
-  // Desktop Values
-  const xRight = fencePosition.x + offsetX + fencePos.offsetWidth;
-  const xLeft = fencePosition.x - iframePaddingAllowance;
-  const yPos = fencePosition.y - offsetY;
-
-  // Mobile Values
-  const xPosMobile = fencePosition.x;
-  const yPosMobile = fencePosition.y + offsetY;
-
-  const iconRightAllowance = window.innerWidth - fencePosition.x + fencePos.offsetWidth;
-  const iconLeftAllowance = window.innerWidth - iconRightAllowance;
-
-  // Desktop Orientation
-  if (iconRightAllowance > iframePaddingAllowance || iconLeftAllowance > iframePaddingAllowance) {
-
-    // Position iframe relative to FBC Icon
-    iframeBox.style.marginLeft = `${xRight}px`;
-    iframeBox.style.marginTop = `${yPos}px`;
-
-    // Add Chevron (Default left arrow)
-    const xPosChevron = xRight - iframeChevron.offsetWidth;
-    const yPosChevron = yPos + offsetY;
-
-<<<<<<< HEAD
-    iframeChevron.style.marginLeft = `${xPosChevron}px`;
-    iframeChevron.style.marginTop = `${yPosChevron}px`;
-
-    const calculateOffsetDiff = window.innerWidth - fencePosition.x;
-
-    // Flip the iframe to show on the left side when icon is too close to the edge
-    if (iframePaddingAllowance > calculateOffsetDiff) {
-      iframeBox.style.marginLeft = `${xLeft}px`;
-      iframeChevron.classList.add("fbc-chevron-arrow-right");
-      iframeChevron.style.marginLeft = `${xPosChevron - fencePos.offsetWidth - iframeChevron.offsetWidth - offsetX}px`;
-    }
-
-    else {
-      iframeChevron.classList.remove("fbc-chevron-arrow-right");
-    }
-
-    iframeChevron.classList.remove("fbc-chevron-arrow-top");
-  }
-
-  // Mobile Orientation
-  else {
-    for (const panels of iframeElement) {
-      panels.width = window.innerWidth;
-      if (window.innerWidth > 480) {
-        panels.width = 350;
-      }
-    }
-
-    iframeChevron.classList.add("fbc-chevron-arrow-top");
-    iframeBox.style.marginTop = `${yPosMobile}px`;
-
-    const xPosChevronMobile = xPosMobile;
-    const yPosChevronMobile = yPosMobile - iframeChevron.offsetWidth;
-
-    iframeChevron.style.marginLeft = `${xPosChevronMobile}px`;
-    iframeChevron.style.marginTop = `${yPosChevronMobile}px`;
-
-  }
-=======
-  const offsetX = 20; 
-=======
-
-  const offsetX = 20;
->>>>>>> 3cdab59 (add mobile panel orientation)
   const offsetY = 55;
 
   const iframePaddingAllowance = iframeBox.offsetWidth + offsetX;
@@ -460,9 +303,6 @@ function positionIframe(fencePos) {
     iframeChevron.classList.add("fbc-chevron-arrow-top");
     iframeBox.style.marginTop = `${yPosMobile}px`;
 
-<<<<<<< HEAD
->>>>>>> e14401f (flip iframe on small device width)
-=======
     const xPosChevronMobile = xPosMobile;
     const yPosChevronMobile = yPosMobile - iframeChevron.offsetWidth;
 
@@ -470,82 +310,33 @@ function positionIframe(fencePos) {
     iframeChevron.style.marginTop = `${yPosChevronMobile}px`;
 
   }
->>>>>>> 3cdab59 (add mobile panel orientation)
+
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 function openInputPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
-=======
-function openLoginPrompt(socialAction, fencePos, htmlBadgeDiv, target) {
-=======
-function openLoginPrompt(socialAction, fencePos, target) {
->>>>>>> c07e173 (reposition iframe on resize)
-=======
-function openLoginPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> de2a237 (resize iframe height according to content)
-  const hasFbcWrapper = document.querySelector('.fbc-wrapper');
-=======
-=======
-=======
-function openInputPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
->>>>>>> 123432b (make variable names make more sense)
 
-  const iframeSrcVal = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT).src;
-
->>>>>>> 18ff4cc (Add origin specifity)
-  const hasFbcWrapper = document.querySelector(".fbc-wrapper");
->>>>>>> 9da6a46 (add reload on allow prompt)
-  if (!hasFbcWrapper) {
-    document.body.appendChild(injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT));
-    positionIframe(fencePos);
-<<<<<<< HEAD
->>>>>>> d5ca6b2 (localize emails trings)
-
-<<<<<<< HEAD
   const iframeSrcVal = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT).src;
 
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
   if (!hasFbcWrapper) {
     document.body.appendChild(injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT));
     positionIframe(fencePos);
-=======
->>>>>>> c125976 (resize and scroll reposition iframe)
-=======
->>>>>>> 18ff4cc (Add origin specifity)
     ["resize", "scroll"].forEach(function (evt) {
       if (document.querySelector(".fbc-wrapper")) {
         window.addEventListener(evt, () => {
           positionIframe(fencePos);
         });
-<<<<<<< HEAD
-=======
+
       }
     });
 
-<<<<<<< HEAD
-    window.addEventListener("message", (e) => {
-      if (
-        e.data === "allowTriggered" 
-        && e.origin === "moz-extension://ad96861a-bb7a-4c63-a924-2f21045b80aa"
-      ){
-        target.click();
->>>>>>> c125976 (resize and scroll reposition iframe)
-      }
-    });
-
-=======
->>>>>>> 18ff4cc (Add origin specifity)
     postMessageListeners(iframeSrcVal, target);
     
   } else {
     hasFbcWrapper.remove();
   }
-<<<<<<< HEAD
+
 }
 
 function postMessageListeners(iframeSrcVal, target){
@@ -568,18 +359,13 @@ function postMessageListeners(iframeSrcVal, target){
     }
   });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e50d9ee (checkbox add localstorage listener)
   window.addEventListener("message", (e) => {
     if (
       e.data === "checkboxTicked" 
       && iframeSrcVal.includes(e.origin)
       && localStorageAvailable()
     ) {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       setLocalStorageTickedCheckBox();
     }
   });
@@ -593,50 +379,12 @@ async function localStorageAvailable() {
   }
 }
 
-function setLocalStorageTickedCheckBox() {
-  localStorage.setItem("checkbox-ticked", true);
-=======
-}
-
-function postMessageListeners(iframeSrcVal, target){
-
-  window.addEventListener("message", (e) => {
-    if (
-      e.data === "allowTriggered" 
-      && iframeSrcVal.includes(e.origin)
-    ){
-      target.click();
-    }
-  });
-
-  window.addEventListener("message", (e) => {
-    if (
-      e.data === "closeTheInjectedIframe" 
-      && iframeSrcVal.includes(e.origin)
-    ) {
-      closeIframe();
-    }
-  });
->>>>>>> 18ff4cc (Add origin specifity)
-=======
-
->>>>>>> 123432b (make variable names make more sense)
-=======
-      setLocalStorageCheckbox();
-=======
-      setLocalStorageTickedCheckBox();
->>>>>>> 5043efb (checkbox add localstorage listener)
-    }
-  });
-}
-
 async function localStorageAvailable() {
   if (typeof(Storage) !== "undefined") {
     return true;
   } else {
     return false;
   }
->>>>>>> e50d9ee (checkbox add localstorage listener)
 }
 
 function setLocalStorageTickedCheckBox() {
@@ -666,46 +414,9 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
     htmlBadgeDiv.classList.add("fbc-badge-small");
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   const FBC_IFRAME_HEIGHT_LOGIN = 230;
   const FBC_IFRAME_HEIGHT_EMAIL = 240;
 
-<<<<<<< HEAD
-=======
->>>>>>> c07e173 (reposition iframe on resize)
-=======
-  const FBC_IFRAME_HEIGHT_LOGIN = 250;
-  const FBC_IFRAME_HEIGHT_EMAIL = 290;
-=======
-  const FBC_IFRAME_HEIGHT_LOGIN = 230;
-  const FBC_IFRAME_HEIGHT_EMAIL = 240;
->>>>>>> f8c4802 (adjust iframe heights)
-
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> de2a237 (resize iframe height according to content)
-=======
-  let allowClickSwitch = false;
-=======
-  // let allowClickSwitch = false;
->>>>>>> 123432b (make variable names make more sense)
-
-  // window.addEventListener("message", (e) => {
-  //   if (e.data === "allowTriggered") {
-  //     allowClickSwitch = true;
-  //   }
-  // });
-
-<<<<<<< HEAD
->>>>>>> 9da6a46 (add reload on allow prompt)
-=======
-
-
->>>>>>> 5043efb (checkbox add localstorage listener)
-=======
->>>>>>> bcbb8f3 (add helpful comments)
   // Show/hide prompt if login element
   if (socialAction === "login") {
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
@@ -713,8 +424,6 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
         return false;
-<<<<<<< HEAD
-<<<<<<< HEAD
       }
 
       else {
@@ -724,7 +433,6 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       }
     });
   } 
-  
   if (socialAction === "email") {
 
     // Remove the email prompt when the "do not show me again" checkbox is ticked for the first time
@@ -735,85 +443,8 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
         htmlBadgeFragmentFenceDiv.remove();
         closeIframe();
       }
-=======
-      } 
-      
-=======
-      }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 3cdab59 (add mobile panel orientation)
-      e.preventDefault();
-      e.stopPropagation();
-      openLoginPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);
-=======
-      if (allowClickSwitch) {
-        setTimeout(()=>{
-          location.reload(true);
-        }, 250);
-        return;
-      } 
-=======
-      // if (allowClickSwitch) {
-      //   setTimeout(()=>{
-      //     location.reload(true);
-      //   }, 250);
-      //   return;
-      // } 
->>>>>>> 123432b (make variable names make more sense)
-=======
->>>>>>> bcbb8f3 (add helpful comments)
-      else {
-        e.preventDefault();
-        e.stopPropagation();
-        openInputPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
-      }
-<<<<<<< HEAD
-  
->>>>>>> 9da6a46 (add reload on allow prompt)
-      // if (allowClickSwitch) {
-      //   // Button disabled. Either will trigger new HTTP request or page will refresh.
-      //   setTimeout(()=>{
-      //     location.reload(true);
-      //   }, 250);
-      //   return;
-      // } else {
-      //   // Click badge, button disabled
-      //   e.preventDefault();
-      //   // e.stopPropagation();
-      //   openLoginPrompt("login", e.target.parentElement, htmlBadgeDiv, target);
-      // }
->>>>>>> c07e173 (reposition iframe on resize)
-=======
->>>>>>> e1cf345 (remove commented out code)
-    });
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-  } if (socialAction === "email") {
-<<<<<<< HEAD
->>>>>>> 3cdab59 (add mobile panel orientation)
-=======
-=======
-  } 
-  
-  if (socialAction === "email") {
->>>>>>> bcbb8f3 (add helpful comments)
-
-    // Remove the email prompt when the "do not show me again" checkbox is ticked for the first time
-    window.addEventListener("message", () => {
-      if (
-        localStorage.getItem("checkbox-ticked") === "true"
-      ) {
-        htmlBadgeFragmentFenceDiv.remove();
-        closeIframe();
-      }
     });
 
->>>>>>> 5043efb (checkbox add localstorage listener)
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
@@ -821,26 +452,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       }
       e.preventDefault();
       e.stopPropagation();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       openInputPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
-=======
-      openLoginPrompt("email", e.target.parentElement, target);
-=======
-      openLoginPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
-<<<<<<< HEAD
->>>>>>> de2a237 (resize iframe height according to content)
-      // e.target.parentElement.classList.toggle("active");
-      // positionPrompt( htmlBadgeDiv );
-      // target.classList.toggle("js-fbc-prompt-active");
-      // document.body.classList.toggle("js-fbc-prompt-active");
->>>>>>> c07e173 (reposition iframe on resize)
-=======
->>>>>>> e1cf345 (remove commented out code)
-=======
-      openInputPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
->>>>>>> 123432b (make variable names make more sense)
     });
 
   } else if (socialAction === "share-passive") {
@@ -858,18 +470,11 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
     positionPrompt(htmlBadgeDiv);
   });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
->>>>>>> c07e173 (reposition iframe on resize)
-=======
->>>>>>> 6208ebd (add innerhtml to textcontent)
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
 
 
 }
+
 
 // Add Event Listener actions/hooks to share badges
 function shareBadgeEventListenerInit(target, htmlBadgeDiv, options) {
@@ -1089,25 +694,6 @@ function positionFacebookBadge(target, badgeClassUId, targetWidth, smallSwitch) 
   htmlBadgeDiv.style.left = htmlBadgeDivPosX + "px";
   htmlBadgeDiv.style.top = htmlBadgeDivPosY + "px";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-  // if (document.querySelector(".fbc-wrapper")) {
-  //   positionIframe(target);
-  // }
-
-  // console.log(target);
-
-  window.addEventListener("resize", () => {  
-  if (document.querySelector(".fbc-wrapper")) {
-    positionIframe(htmlBadgeDiv);
-  }
- }, true);
-
->>>>>>> c07e173 (reposition iframe on resize)
-=======
->>>>>>> c125976 (resize and scroll reposition iframe)
 }
 
 function isPinterest(target) {
@@ -1150,14 +736,6 @@ function patternDetection(selectionArray, socialActionIntent) {
   }
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3cdab59 (add mobile panel orientation)
-=======
-
->>>>>>> 5043efb (checkbox add localstorage listener)
 async function detectFacebookOnPage() {
   if (!checkForTrackers) {
     return;
@@ -1174,15 +752,7 @@ async function detectFacebookOnPage() {
   // Check if user dismissed the Relay prompt
   const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   const checkboxTicked = localStorage.getItem("checkbox-ticked");
-=======
-  const checkboxTicked = await localStorage.getItem("checkbox-ticked");
->>>>>>> e50d9ee (checkbox add localstorage listener)
-=======
-  const checkboxTicked = localStorage.getItem("checkbox-ticked");
->>>>>>> 5043efb (checkbox add localstorage listener)
 
   if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage && checkboxTicked !== "true") {
     patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
@@ -1225,22 +795,11 @@ function screenUpdate() {
 
 function escapeKeyListener() {
   document.body.addEventListener("keydown", function (e) {
-<<<<<<< HEAD
-<<<<<<< HEAD
     if (e.key === "Escape" && document.querySelector(".fbc-wrapper")) {
       closeIframe();
-=======
-    if (e.key === "Escape" && document.body.classList.contains("js-fbc-prompt-active")) {
-      closePrompt();
->>>>>>> 3cdab59 (add mobile panel orientation)
-=======
-    if (e.key === "Escape" && document.querySelector(".fbc-wrapper")) {
-      closeIframe();
->>>>>>> 5043efb (checkbox add localstorage listener)
     }
   });
 }
-
 
 window.addEventListener("click", function () {
   if (this.document.querySelector(".fbc-wrapper")) {
@@ -1249,30 +808,6 @@ window.addEventListener("click", function () {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 18ff4cc (Add origin specifity)
-// window.addEventListener("message", (e) => {
-//   if (
-//     e.data === "closeTheInjectedIframe" 
-//   ) {
-//     closeIframe();
-//   }
-// });
-<<<<<<< HEAD
-=======
-window.addEventListener("message", (e) => {
-  if (
-    e.data === "closeTheInjectedIframe" 
-    && e.origin === "moz-extension://ad96861a-bb7a-4c63-a924-2f21045b80aa"
-  ) {
-    closeIframe();
-  }
-});
->>>>>>> d5ca6b2 (localize emails trings)
-=======
->>>>>>> 18ff4cc (Add origin specifity)
 
 function closeIframe() {
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
