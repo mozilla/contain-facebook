@@ -190,7 +190,7 @@
     "description": ""
   },
   "button-allow-site": {
-    "message": "Αποδοχή ιστοτόπου στο Facebook Container",
+    "message": "Προσθήκη ιστοτόπου στο Facebook Container",
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
   "button-remove-site": {
