@@ -295,7 +295,10 @@ function addFacebookBadge (target, badgeClassUId, socialAction) {
   const htmlEmailBadgeFragmentPromptButtonTry = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-relay-try");
   const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".fbc-badge-fence");
 
-  htmlBadgeDiv.className = "fbc-badge " + badgeClassUId;
+  htmlBadgeDiv.className = "fbc-badge";
+  // Set the UID to the element's id attribute, as this is the fastest way to select
+  // an element later on.
+  htmlBadgeDiv.id = badgeClassUId;
 
   document.body.appendChild(htmlBadgeDiv);
 
@@ -598,7 +601,7 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
     badgeClassUId = "js-" + target;
   }
 
-  const htmlBadgeDiv = document.querySelector("." + badgeClassUId);
+  const htmlBadgeDiv = document.getElementById(badgeClassUId);
 
   // Confirm target element is defined
   if (!target || !(typeof target === "object")) {
