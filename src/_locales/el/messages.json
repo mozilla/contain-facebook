@@ -107,7 +107,7 @@
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
-    "message": "Αποδοχή",
+    "message": "Προσθήκη",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
   },
   "btn-cancel": {
