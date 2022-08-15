@@ -285,8 +285,6 @@ function openLoginPrompt(parent, el, htmlBadgeDiv) {
 }
 
 function addFacebookBadge (target, badgeClassUId, socialAction) {
-  // Detect if target is visible
-
   const htmlBadgeDiv = createBadgeFragment(socialAction);
 
   const htmlBadgeFragmentPromptButtonCancel = htmlBadgeDiv.querySelector(".fbc-badge-prompt-btn-cancel");
@@ -503,12 +501,23 @@ function getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv) {
   }
 }
 
+function isOpaque(target){
+  // Check if any parents have 0 opacity
+  let current = target;
+  while(current != null){
+    if( window.getComputedStyle(current, false).getPropertyValue("opacity") === "0" ) return false;
+    current = current.parentElement;
+  }
+  return true;
+}
+
 function isVisible(target) {
   const currentComputedStyle = window.getComputedStyle(target, false);
   const styleTransform = ( currentComputedStyle.getPropertyValue("transform") === "matrix(1, 0, 0, 0, 0, 0)" );
   const styleHidden = ( currentComputedStyle.getPropertyValue("visibility") === "hidden" );
   const styleDisplayNone = ( currentComputedStyle.getPropertyValue("display") === "none" );
-  if (styleTransform || styleHidden || styleDisplayNone) return false;
+  const styleOpacityNone = !isOpaque(target);
+  if (styleTransform || styleHidden || styleDisplayNone || styleOpacityNone ) return false;
   return true;
 }
 
@@ -605,6 +614,7 @@ function positionFacebookBadge (target, badgeClassUId, targetWidth, smallSwitch)
     target = document.querySelector("." + target);
   }
 
+  // Detect if target is visible
   if (!checkVisibilityAndApplyClass(target, htmlBadgeDiv)) {
     return;
   }
