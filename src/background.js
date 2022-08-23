@@ -31,7 +31,7 @@ const FACEBOOK_DOMAINS = [
   
   "bulletin.com", "facebookbrand.com",
 
-  "metacareers.com", "meta.com",  "metaque.st", "metaquestmail.com"
+  "metacareers.com", "meta.com",  "metaque.st", "metaquestmail.com",
 
   "novi.com"
 ];
