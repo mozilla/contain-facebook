@@ -385,14 +385,6 @@ async function localStorageAvailable() {
   }
 }
 
-async function localStorageAvailable() {
-  if (typeof(Storage) !== "undefined") {
-    return true;
-  } else {
-    return false;
-  }
-}
-
 function setLocalStorageTickedCheckBox() {
   localStorage.setItem("checkbox-ticked", true);
 }
@@ -503,20 +495,6 @@ function shareBadgeEventListenerInit(target, htmlBadgeDiv, options) {
     target.classList.remove("fbc-badge-tooltip-active");
     htmlBadgeDiv.classList.remove("fbc-badge-tooltip-active");
   });
-}
-
-function findActivePrompt() {
-  const allBadges = document.querySelectorAll(".fbc-badge.active");
-  for (let badge of allBadges) {
-    return badge;
-  }
-}
-
-function closePrompt() {
-  const activePrompt = findActivePrompt();
-  activePrompt.classList.remove("active");
-  document.body.classList.remove("js-fbc-prompt-active");
-  document.querySelector(".fbc-has-badge.js-fbc-prompt-active").classList.remove("js-fbc-prompt-active");
 }
 
 function positionPrompt(activeBadge) {
@@ -819,19 +797,6 @@ function closeIframe() {
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
   hasFbcWrapper.remove();
 }
-
-
-// window.addEventListener("click", function (e) {
-//   if (document.body.classList.contains("js-fbc-prompt-active")) {
-//     const activePrompt = findActivePrompt();
-//     const activePromptTarget = document.querySelector(".fbc-has-badge.js-fbc-prompt-active");
-//     if (!activePrompt.contains(e.target) && !activePromptTarget.contains(e.target)) {
-//       closePrompt();
-//     }
-//   } else {
-//     // contentScriptInit(true);
-//   }
-// });
 
 /*
 function removeBadges() {
