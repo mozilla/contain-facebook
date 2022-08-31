@@ -74,6 +74,12 @@ const PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS = [
   "[href*='facebook.com/sharer']", // Legacy Share dialog
 ];
 
+// Attributes distilled from selectors above. Update when necessary.
+const OBSERVER_ATTRIBUTES = [
+  "action", "aria-label", "class",
+  "data-action", "data-bfa-network", "data-destination", "data-login-with-facebook",
+  "data-oauthserver", "data-partner", "data-tag", "data-test-id", "data-tracking",
+  "href", "id", "title"];
 
 async function getLocalStorageSettingFromBackground(setting) {
   // Send request to background determine if to show Relay email field prompt
@@ -718,10 +724,10 @@ function parentIsBadged(target) {
 // List of badge-able in-page elements
 const facebookDetectedElementsArr = [];
 
-function patternDetection(selectionArray, socialActionIntent) {
+function patternDetection(selectionArray, socialActionIntent, target) {
   let querySelector = selectionArray.join(",");
 
-  for (let item of document.querySelectorAll(querySelector)) {
+  for (let item of target.querySelectorAll(querySelector)) {
     // overlay the FBC icon badge on the item
     if (!item.classList.contains("fbc-has-badge") && !isPinterest(item) && !parentIsBadged(item)) {
       const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
@@ -736,14 +742,14 @@ function patternDetection(selectionArray, socialActionIntent) {
   }
 }
 
-async function detectFacebookOnPage() {
+async function detectFacebookOnPage(target) {
   if (!checkForTrackers) {
     return;
   }
 
-  patternDetection(PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS, "share-passive");
-  patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share");
-  patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login");
+  patternDetection(PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS, "share-passive", target);
+  patternDetection(SHARE_PATTERN_DETECTION_SELECTORS, "share", target);
+  patternDetection(LOGIN_PATTERN_DETECTION_SELECTORS, "login", target);
   const relayAddonEnabled = await getRelayAddonEnabledFromBackground();
 
   // Check if any FB trackers were blocked, scoped to only the active tab
@@ -755,7 +761,7 @@ async function detectFacebookOnPage() {
   const checkboxTicked = localStorage.getItem("checkbox-ticked");
 
   if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage && checkboxTicked !== "true") {
-    patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
+    patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email", target);
     updateSettings();
   }
 
@@ -815,17 +821,17 @@ function closeIframe() {
 }
 
 
-window.addEventListener("click", function (e) {
-  if (document.body.classList.contains("js-fbc-prompt-active")) {
-    const activePrompt = findActivePrompt();
-    const activePromptTarget = document.querySelector(".fbc-has-badge.js-fbc-prompt-active");
-    if (!activePrompt.contains(e.target) && !activePromptTarget.contains(e.target)) {
-      closePrompt();
-    }
-  } else {
-    contentScriptInit(true);
-  }
-});
+// window.addEventListener("click", function (e) {
+//   if (document.body.classList.contains("js-fbc-prompt-active")) {
+//     const activePrompt = findActivePrompt();
+//     const activePromptTarget = document.querySelector(".fbc-has-badge.js-fbc-prompt-active");
+//     if (!activePrompt.contains(e.target) && !activePromptTarget.contains(e.target)) {
+//       closePrompt();
+//     }
+//   } else {
+//     // contentScriptInit(true);
+//   }
+// });
 
 /*
 function removeBadges() {
@@ -858,7 +864,7 @@ browser.runtime.onMessage.addListener(message => {
 // let callCount = 0;
 let contentScriptDelay = 999;
 
-async function contentScriptInit(resetSwitch, msg) {
+async function contentScriptInit(resetSwitch, msg, target = document) {
   // Second arg is for debugging to see which contentScriptInit fires
   // Call count tracks number of times contentScriptInit has been called
   // callCount = callCount + 1;
@@ -870,7 +876,7 @@ async function contentScriptInit(resetSwitch, msg) {
 
   // Resource call is not in FBC/FB Domain and is a FB resource
   if (checkForTrackers && msg !== "other-domain") {
-    await detectFacebookOnPage();
+    await detectFacebookOnPage(target);
     screenUpdate();
   }
 }
@@ -909,15 +915,46 @@ async function CheckIfURLShouldBeBlocked() {
   if (siteList.includes(site)) {
     checkForTrackers = false;
   } else {
+    // Initialize the content script the first time
     await contentScriptInit(false);
+
+    // Reinitialize the content script for mutated nodes
+    const observer = new MutationObserver((mutations) => {
+      new Set(mutations.flatMap(mutation => {
+        switch (mutation.type) {
+        case "attributes":
+          return mutation.target;
+        case "childList":
+          return Array.from(mutation.addedNodes);
+        default:
+          return [];
+        }
+      })).forEach(target => contentScriptInit(false, null, target));
+    });
+
+    // Check for mutations in the entire document
+    observer.observe(document, {
+      childList: true,
+      attributes: true,
+      attributeFilter: OBSERVER_ATTRIBUTES,
+      subtree: true
+    });
   }
 
 }
 
 // Cross-browser implementation of element.addEventListener()
 function addPassiveWindowOnloadListener() {
-  window.addEventListener("load", function () {
-    CheckIfURLShouldBeBlocked();
+  window.addEventListener("load", function() {
+    // XXX: Work around slow test startup.
+    // In the real world it works fine without setTimeout.
+    CheckIfURLShouldBeBlocked().catch(() => {
+      setTimeout(() => {
+        CheckIfURLShouldBeBlocked().catch(() =>
+          setTimeout(CheckIfURLShouldBeBlocked, 1000));
+      }, 1000);
+    });
+    escapeKeyListener();
   }, false);
 }
 
