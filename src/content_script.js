@@ -197,7 +197,7 @@ function createElementWithClassList(elemType, elemClass) {
   return newElem;
 }
 
-function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
+function buildInpageIframe(socialAction, FBC_IFRAME_HEIGHT) {
 
   const iframe = document.createElement("iframe");
   iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}`);
@@ -225,8 +225,8 @@ function buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT) {
 //   // return "hello";
 // }
 
-function injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT) {
-  const fbcContent = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT);
+function injectIframeOntoPage(socialAction, FBC_IFRAME_HEIGHT) {
+  const fbcContent = buildInpageIframe(socialAction, FBC_IFRAME_HEIGHT);
 
   const fbcWrapper = createElementWithClassList(
     "div",
@@ -322,11 +322,11 @@ function positionIframe(fencePos) {
 
 function openInputPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
 
-  const iframeSrcVal = buildInpageIframe(socialAction, target, FBC_IFRAME_HEIGHT).src;
+  const iframeSrcVal = buildInpageIframe(socialAction, FBC_IFRAME_HEIGHT).src;
 
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
   if (!hasFbcWrapper) {
-    document.body.appendChild(injectIframeOntoPage(socialAction, target, FBC_IFRAME_HEIGHT));
+    document.body.appendChild(injectIframeOntoPage(socialAction, FBC_IFRAME_HEIGHT));
     positionIframe(fencePos);
     ["resize", "scroll"].forEach(function (evt) {
       if (document.querySelector(".fbc-wrapper")) {
