@@ -197,13 +197,13 @@ function createElementWithClassList(elemType, elemClass) {
   return newElem;
 }
 
-function buildInpageIframe(socialAction, FBC_IFRAME_HEIGHT) {
+function buildInpageIframe(socialAction, fbcIframeHeight) {
 
   const iframe = document.createElement("iframe");
   iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}`);
   iframe.width = 350;
   // This height is derived from the Figma file. However, this is just the starting instance of the iframe/inpage menu. After it's built out, it resizes itself based on the inner contents.
-  iframe.height = FBC_IFRAME_HEIGHT;
+  iframe.height = fbcIframeHeight;
   iframe.title = browser.i18n.getMessage("facebookContainer");
   iframe.tabIndex = 0;
   iframe.ariaHidden = "false";
@@ -225,8 +225,8 @@ function buildInpageIframe(socialAction, FBC_IFRAME_HEIGHT) {
 //   // return "hello";
 // }
 
-function injectIframeOntoPage(socialAction, FBC_IFRAME_HEIGHT) {
-  const fbcContent = buildInpageIframe(socialAction, FBC_IFRAME_HEIGHT);
+function injectIframeOntoPage(socialAction, fbcIframeHeight) {
+  const fbcContent = buildInpageIframe(socialAction, fbcIframeHeight);
 
   const fbcWrapper = createElementWithClassList(
     "div",
@@ -320,13 +320,13 @@ function positionIframe(fencePos) {
 }
 
 
-function openInputPrompt(socialAction, fencePos, target, FBC_IFRAME_HEIGHT) {
+function openInputPrompt(socialAction, fencePos, target, fbcIframeHeight) {
 
-  const iframeSrcVal = buildInpageIframe(socialAction, FBC_IFRAME_HEIGHT).src;
+  const iframeSrcVal = buildInpageIframe(socialAction, fbcIframeHeight).src;
 
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
   if (!hasFbcWrapper) {
-    document.body.appendChild(injectIframeOntoPage(socialAction, FBC_IFRAME_HEIGHT));
+    document.body.appendChild(injectIframeOntoPage(socialAction, fbcIframeHeight));
     positionIframe(fencePos);
     ["resize", "scroll"].forEach(function (evt) {
       if (document.querySelector(".fbc-wrapper")) {
@@ -412,8 +412,8 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
     htmlBadgeDiv.classList.add("fbc-badge-small");
   }
 
-  const FBC_IFRAME_HEIGHT_LOGIN = 230;
-  const FBC_IFRAME_HEIGHT_EMAIL = 240;
+  const fbcIframeHeightLogin = 230;
+  const fbcIframeHeightEmail = 240;
 
   // Show/hide prompt if login element
   if (socialAction === "login") {
@@ -427,7 +427,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       else {
         e.preventDefault();
         e.stopPropagation();
-        openInputPrompt("login", e.target.parentElement, target, FBC_IFRAME_HEIGHT_LOGIN);    
+        openInputPrompt("login", e.target.parentElement, target, fbcIframeHeightLogin);    
       }
     });
   } 
@@ -450,7 +450,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       }
       e.preventDefault();
       e.stopPropagation();
-      openInputPrompt("email", e.target.parentElement, target, FBC_IFRAME_HEIGHT_EMAIL);
+      openInputPrompt("email", e.target.parentElement, target, fbcIframeHeightEmail);
     });
 
   } else if (socialAction === "share-passive") {
