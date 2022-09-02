@@ -267,12 +267,10 @@ function positionIframe(fencePos) {
   const iconRightAllowance = window.innerWidth - fencePosition.x + fencePos.offsetWidth;
   const iconLeftAllowance = window.innerWidth - iconRightAllowance;
 
-  // Desktop Orientation
   if (iconRightAllowance > iframePaddingAllowance || iconLeftAllowance > iframePaddingAllowance) {
     desktopOrientation(iframeBox, xRight, yPos, xLeft, iframeChevron, offsetY, fencePosition, iframePaddingAllowance, fencePos, offsetX);
   }
-
-  // Mobile Orientation
+  
   else {
     mobileOrientation(iframeElement, iframeChevron, iframeBox, yPosMobile, xPosMobile);
   }
@@ -330,10 +328,9 @@ function desktopOrientation(iframeBox, xRight, yPos, xLeft, iframeChevron, offse
 
 
 function openInputPrompt(socialAction, fencePos, target, fbcIframeHeight) {
-
   const iframeSrcVal = buildInpageIframe(socialAction, fbcIframeHeight).src;
-
   const hasFbcWrapper = document.querySelector(".fbc-wrapper");
+
   if (!hasFbcWrapper) {
     document.body.appendChild(injectIframeOntoPage(socialAction, fbcIframeHeight));
     positionIframe(fencePos);
@@ -345,13 +342,9 @@ function openInputPrompt(socialAction, fencePos, target, fbcIframeHeight) {
 
       }
     });
-
     postMessageListeners(iframeSrcVal, target);
-    
-  } else {
-    hasFbcWrapper.remove();
   }
-
+  hasFbcWrapper.remove();
 }
 
 function postMessageListeners(iframeSrcVal, target){
@@ -389,9 +382,8 @@ function postMessageListeners(iframeSrcVal, target){
 async function localStorageAvailable() {
   if (typeof(Storage) !== "undefined") {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 function setLocalStorageTickedCheckBox() {
@@ -424,24 +416,22 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   const fbcIframeHeightLogin = 230;
   const fbcIframeHeightEmail = 240;
 
-  // Show/hide prompt if login element
-  if (socialAction === "login") {
+  switch (socialAction) {
+  case "login":
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
-
       if (!e.isTrusted) {
         // The click was not user generated so ignore
         return false;
       }
-
+  
       else {
         e.preventDefault();
         e.stopPropagation();
         openInputPrompt("login", e.target.parentElement, target, fbcIframeHeightLogin);    
       }
     });
-  } 
-  if (socialAction === "email") {
-
+    break;
+  case "email":
     // Remove the email prompt when the "do not show me again" checkbox is ticked for the first time
     window.addEventListener("message", () => {
       if (
@@ -451,7 +441,6 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
         closeIframe();
       }
     });
-
     htmlBadgeFragmentFenceDiv.addEventListener("click", (e) => {
       if (!e.isTrusted) {
         // The click was not user generated so ignore
@@ -461,16 +450,16 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       e.stopPropagation();
       openInputPrompt("email", e.target.parentElement, target, fbcIframeHeightEmail);
     });
-
-  } else if (socialAction === "share-passive") {
+    break;
+  case "share-passive":
     htmlBadgeDiv.classList.add("fbc-badge-share-passive", "fbc-badge-share");
-
     shareBadgeEventListenerInit(target, htmlBadgeDiv, { allowClickThrough: true });
-
-  } else if (socialAction === "share") {
+    break;
+  case "share":
     htmlBadgeDiv.classList.add("fbc-badge-share");
     shareBadgeEventListenerInit(target, htmlBadgeDiv, { allowClickThrough: true });
-  }
+    break;
+  } 
 
   // Applies to both!
   htmlBadgeFragmentFenceDiv.addEventListener("mouseenter", () => {
@@ -478,10 +467,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
   });
 
   positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
-
-
 }
-
 
 // Add Event Listener actions/hooks to share badges
 function shareBadgeEventListenerInit(target, htmlBadgeDiv, options) {
