@@ -782,7 +782,6 @@ function escapeKeyListener() {
 
 window.addEventListener("click", function () {
   if (this.document.querySelector(".fbc-wrapper")) {
-    // stopPropagation();
     closeIframe();
   }
 });
