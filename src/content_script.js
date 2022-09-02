@@ -284,7 +284,6 @@ function mobileOrientation(iframeElement, iframeChevron, iframeBox, fencePositio
 
   iframeChevron.style.marginLeft = `${xPosChevronMobile}px`;
   iframeChevron.style.marginTop = `${yPosChevronMobile}px`;
-
 }
 
 function desktopOrientation(iframeBox, iframeChevron, offsetY, fencePosition, iframePaddingAllowance, fencePos, offsetX) {
@@ -301,6 +300,7 @@ function desktopOrientation(iframeBox, iframeChevron, offsetY, fencePosition, if
   const xPosChevron = xRight - iframeChevron.offsetWidth;
   const yPosChevron = yPos + offsetY;
 
+  iframeChevron.classList.remove("fbc-chevron-arrow-top");
   iframeChevron.style.marginLeft = `${xPosChevron}px`;
   iframeChevron.style.marginTop = `${yPosChevron}px`;
 
@@ -311,11 +311,9 @@ function desktopOrientation(iframeBox, iframeChevron, offsetY, fencePosition, if
     iframeBox.style.marginLeft = `${xLeft}px`;
     iframeChevron.classList.add("fbc-chevron-arrow-right");
     iframeChevron.style.marginLeft = `${xPosChevron - fencePos.offsetWidth - iframeChevron.offsetWidth - offsetX}px`;
+    return;
   }
-  else {
-    iframeChevron.classList.remove("fbc-chevron-arrow-right");
-  }
-  iframeChevron.classList.remove("fbc-chevron-arrow-top");
+  return iframeChevron.classList.remove("fbc-chevron-arrow-right");
 }
 
 
