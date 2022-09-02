@@ -255,29 +255,20 @@ function positionIframe(fencePos) {
 
   const iframePaddingAllowance = iframeBox.offsetWidth + offsetX;
 
-  // Desktop Values
-  const xRight = fencePosition.x + offsetX + fencePos.offsetWidth;
-  const xLeft = fencePosition.x - iframePaddingAllowance;
-  const yPos = fencePosition.y - offsetY;
-
-  // Mobile Values
-  const xPosMobile = fencePosition.x;
-  const yPosMobile = fencePosition.y + offsetY;
-
   const iconRightAllowance = window.innerWidth - fencePosition.x + fencePos.offsetWidth;
   const iconLeftAllowance = window.innerWidth - iconRightAllowance;
 
   if (iconRightAllowance > iframePaddingAllowance || iconLeftAllowance > iframePaddingAllowance) {
-    desktopOrientation(iframeBox, xRight, yPos, xLeft, iframeChevron, offsetY, fencePosition, iframePaddingAllowance, fencePos, offsetX);
+    return desktopOrientation(iframeBox, iframeChevron, offsetY, fencePosition, iframePaddingAllowance, fencePos, offsetX);
   }
-  
-  else {
-    mobileOrientation(iframeElement, iframeChevron, iframeBox, yPosMobile, xPosMobile);
-  }
-
+  return mobileOrientation(iframeElement, iframeChevron, iframeBox, fencePosition, offsetY);
 }
 
-function mobileOrientation(iframeElement, iframeChevron, iframeBox, yPosMobile, xPosMobile){
+function mobileOrientation(iframeElement, iframeChevron, iframeBox, fencePosition, offsetY){
+  // Mobile Values
+  const xPosMobile = fencePosition.x;
+  const yPosMobile = fencePosition.y + offsetY;
+
   for (const panels of iframeElement) {
     panels.width = window.innerWidth;
     if (window.innerWidth > 480) {
@@ -296,7 +287,11 @@ function mobileOrientation(iframeElement, iframeChevron, iframeBox, yPosMobile, 
 
 }
 
-function desktopOrientation(iframeBox, xRight, yPos, xLeft, iframeChevron, offsetY, fencePosition, iframePaddingAllowance, fencePos, offsetX) {
+function desktopOrientation(iframeBox, iframeChevron, offsetY, fencePosition, iframePaddingAllowance, fencePos, offsetX) {
+  // Desktop Values
+  const xRight = fencePosition.x + offsetX + fencePos.offsetWidth;
+  const xLeft = fencePosition.x - iframePaddingAllowance;
+  const yPos = fencePosition.y - offsetY;
 
   // Position iframe relative to FBC Icon
   iframeBox.style.marginLeft = `${xRight}px`;
@@ -317,11 +312,9 @@ function desktopOrientation(iframeBox, xRight, yPos, xLeft, iframeChevron, offse
     iframeChevron.classList.add("fbc-chevron-arrow-right");
     iframeChevron.style.marginLeft = `${xPosChevron - fencePos.offsetWidth - iframeChevron.offsetWidth - offsetX}px`;
   }
-
   else {
     iframeChevron.classList.remove("fbc-chevron-arrow-right");
   }
-
   iframeChevron.classList.remove("fbc-chevron-arrow-top");
 }
 
