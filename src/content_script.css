@@ -1,5 +1,5 @@
 
-body {
+.fbc-container {
     --blue60: #0060df;
     --blue70: #003eaa;
     --primaryText: #15141A;
@@ -13,6 +13,7 @@ body {
 	font-weight: 400;
 	color: #15141A;
     font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	overflow: hidden;
 }
 
 /* Button Replacement */
@@ -134,10 +135,6 @@ body {
 	display: block;
 	visibility: visible;
 	opacity: 1;
-}
-
-.fbc-container {
-	overflow: hidden;
 }
 
 .fbc-wrapper{
