@@ -58,6 +58,12 @@ or
 
 for just the linter
 
+### Building
+
+1. `npm run build`
+2. use the add-on zip file generated in the `web-ext-artifacts` folder
+
+
 ### Links
 
 - [License](./LICENSE)
