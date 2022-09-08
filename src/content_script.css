@@ -1,17 +1,21 @@
-
 body {
-    --blue60: #0060df;
-    --blue70: #003eaa;
-    --primaryText: #15141A;
-    --secondaryText: #5B5B66;
-    --grey20: #ededf0;
-	--light-gray: #F0F0F4;
-	--white: #ffffff;
-    --transition: all .15s cubic-bezier(.07,.95,0,1);
-    --borders: 1px solid #ededf0;
-	font-size: 13px;
+	--fbc-blue-60: #0060df;
+    --fbc-blue-70: #003eaa;
+    --fbc-gray-20: #ededf0;
+	--fbc-light-gray: #F0F0F4;
+	--fbc-white: #ffffff;
+    --fbc-transition: all .15s cubic-bezier(.07,.95,0,1);
+    --fbc-borders: 1px solid #ededf0;
+	--fbc-primary-text: #15141A;
+    --fbc-secondary-text: #5B5B66;
+	--fbc-font-size: 13px;
+}
+
+.fbc-container {
+	font-size: var(--fbc-font-size);
 	font-weight: 400;
-	color: #15141A;
+	color: var(--fbc-primary-text);
+	background: var(--fbc-white);
     font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -66,7 +70,7 @@ body {
 	position: absolute;
 	z-index: 100;
 	transition: opacity 0.2s ease-out;
-	--transition: all .15s cubic-bezier(.07,.95,0,1)
+	--fbc-transition: all .15s cubic-bezier(.07,.95,0,1)
 }
 
 .fbc-badge.fbc-badge-disabled {
@@ -136,10 +140,6 @@ body {
 	opacity: 1;
 }
 
-.fbc-container {
-	overflow: hidden;
-}
-
 .fbc-wrapper{
 	position: fixed;
 	height: 100%;
@@ -156,7 +156,7 @@ body {
 	color: var(--black);
 	box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2);
 	border: 1px solid rgba(0,0,0,0.2);
-	background: var(--white);
+	background: var(--fbc-white);
 	border-radius: 8px;
 	line-height: 120%;
 }
@@ -223,11 +223,11 @@ body {
 	margin: 0;
 	line-height: 0;
 	padding: 15px 0 20px 0;
-	border-bottom: 1px solid var(--light-gray);
+	border-bottom: 1px solid var(--fbc-light-gray);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	color: var(--primaryText);
+	color: var(--fbc-primary-text);
 }
 
 .fbc-badge-prompt p {
@@ -235,13 +235,13 @@ body {
 }
 
 .fbc-subtitle-login, .fbc-subtitle-email {
-	color: var(--primaryText);
+	color: var(--fbc-primary-text);
 	font-weight: 500;
 }
 
 .fbc-badge-prompt-contents {
 	padding: 4px 8px;
-	background: var(--white);
+	background: var(--fbc-white);
 }
 
 .fbc-badge-prompt form {
@@ -262,7 +262,7 @@ body {
 	-o-appearance: none;
 	appearance: none;
 	margin: 0;
-	background-color: var(--light-gray);
+	background-color: var(--fbc-light-gray);
 	border: 1px solid #8F8F9D;
 	border-radius: 2px;
 	height: 13px;
@@ -276,7 +276,7 @@ body {
 }
 
 .fbc-badge-prompt label {
-	color: var(--secondaryText);
+	color: var(--fbc-secondary-text);
 	margin: 0;
 	cursor: pointer;
 }
@@ -305,9 +305,9 @@ body {
 	border: 0;
 	font-size: 13px;
 	font-weight: 500;
-	color: var(--primaryText);
-	background: var(--light-gray);
-	transition: var(--transition);
+	color: var(--fbc-primary-text);
+	background: var(--fbc-light-gray);
+	transition: var(--fbc-transition);
 	cursor: pointer;
 	text-align: center;
 }
@@ -326,7 +326,7 @@ body {
 	padding: 5px 10px 10px;
 	width: 250px;
 	max-width: 250px;
-	background: var(--white);
+	background: var(--fbc-white);
 	z-index: 9999;
 	position: absolute;
 	left: calc( 100% + 0.5em);
