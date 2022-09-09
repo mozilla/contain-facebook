@@ -1,11 +1,11 @@
 body {
-  --blue60: #0060df;
-  --blue70: #003eaa;
-  --primaryText: #0c0c0d;
-  --secondaryText: #737373;
-  --grey20: #ededf0;
-  --transition: all .15s cubic-bezier(.07,.95,0,1);
-  --borders: 1px solid #ededf0;
+  --fbc-blue-60: #0060df;
+  --fbc-blue-70: #003eaa;
+  --fbc-primary-text: #0c0c0d;
+  --fbc-secondary-text: #737373;
+  --fbc-gray-20: #ededf0;
+  --fbc-transition: all .15s cubic-bezier(.07,.95,0,1);
+  --fbc-borders: 1px solid #ededf0;
   font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -48,7 +48,7 @@ h1 { /* "Facebook Container" headline for all panels */
   font-weight: 600;
   margin: 0;
   font-size: 13px;
-  border-bottom: var(--borders);
+  border-bottom: var(--fbc-borders);
   position: relative;
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@ h3 {
 }
 
 .Facebook-text {
-  color: var(--secondaryText);
+  color: var(--fbc-secondary-text);
   font-weight: 500;
   font-size: 14px;
 }
@@ -122,20 +122,20 @@ a {
 }
 
 a {
-  color: var(--blue60);
+  color: var(--fbc-blue-60);
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover {
-  color: var(--blue70);
-  border-bottom: 1.5px solid var(--blue70);
+  color: var(--fbc-blue-70);
+  border-bottom: 1.5px solid var(--fbc-blue-70);
 }
 
 .fw-bottom-btn { /* Full-width bottom bar "How Facebook Container Works" button. Only on non-onboarding panels. */
   padding: .7rem 0;
   background-color: transparent;
-  border-top: var(--borders);
+  border-top: var(--fbc-borders);
 }
 
 .highlight-on-hover { /* Full-width element that wraps around the "How Facebook Container Works" span and arrow icon */
@@ -147,7 +147,7 @@ a:hover {
   position: relative;
   display: flex;
   justify-content: space-between;
-  transition: var(--transition);
+  transition: var(--fbc-transition);
 }
 
 .highlight-on-hover::after {
@@ -199,7 +199,7 @@ a:hover {
   color: black;
   font-size: 13px;
   line-height: 17px;
-  background-color: var(--grey20);
+  background-color: var(--fbc-gray-20);
   border: 1px solid #BEBEBF;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
   font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
@@ -221,13 +221,13 @@ a:hover {
   display: flex;
   align-items: center;
   min-height: 1.25rem;
-  transition: var(--transition);
+  transition: var(--fbc-transition);
 }
 
 .remove-btn, .allow-btn {
-  background-color: var(--blue60);
-  border: 1px solid var(--blue60);
-  border-top: 1px solid var(--blue70);
+  background-color: var(--fbc-blue-60);
+  border: 1px solid var(--fbc-blue-60);
+  border-top: 1px solid var(--fbc-blue-70);
   cursor: pointer;
   line-height: 41px;
   text-align: center;
@@ -236,7 +236,7 @@ a:hover {
 }
 
 .remove-btn:hover, .allow-btn:hover {
-  background-color: var(--blue70);
+  background-color: var(--fbc-blue-70);
 }
 
 .remove-site, .add-site {
@@ -263,15 +263,15 @@ a:hover {
 
 .allowed-site-wrapper:hover,
 .highlight-on-hover:hover {
-  background-color: var(--grey20);
-  transition: var(--transition);
+  background-color: var(--fbc-gray-20);
+  transition: var(--fbc-transition);
 }
 
 .fw-bottom-btn,
 .bottom-btns {
   display: flex;
   justify-content: space-between;
-  transition: var(--transition);
+  transition: var(--fbc-transition);
   cursor: pointer;
 }
 
@@ -284,7 +284,7 @@ a:hover {
   line-height: 103%;
   height: 3.37rem;
   width: 50%;
-  color: var(--primaryText);
+  color: var(--fbc-primary-text);
   padding: 1.15rem 0;
   text-align: center;
 }
@@ -302,16 +302,16 @@ a:hover {
 }
 
 .bottom-btn:last-of-type { /* Onboarding Panels only: The second bottom button on the onboarding panels is always blue */
-  border-top: 1px solid var(--blue70);
-  border-left: 1px solid var(--blue60);
+  border-top: 1px solid var(--fbc-blue-70);
+  border-left: 1px solid var(--fbc-blue-60);
   border-right: 0;
   color: rgba(255, 255, 255, 1);
-  background-color: var(--blue60);
+  background-color: var(--fbc-blue-60);
   right: 0;
 }
 
 .bottom-btn:last-of-type:hover {
-  background-color: var(--blue70);
+  background-color: var(--fbc-blue-70);
 }
 
 .allow-btn,
@@ -320,7 +320,7 @@ a:hover {
 .remove-btn:hover,
 .bottom-btn,
 .bottom-btn:hover {
-  transition: var(--transition);
+  transition: var(--fbc-transition);
 }
 
 .in-fbc-subhead::before,
