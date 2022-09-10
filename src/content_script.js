@@ -876,7 +876,7 @@ async function CheckIfURLShouldBeBlocked() {
           return mutation.target;
         case "childList":
           return Array.from(mutation.addedNodes)
-			.filter(node => node.nodeType === Node.ELEMENT_NODE);
+		    .filter(node => node.nodeType === Node.ELEMENT_NODE);
         default:
           return [];
         }
@@ -897,7 +897,7 @@ async function CheckIfURLShouldBeBlocked() {
 // Cross-browser implementation of element.addEventListener()
 function addPassiveWindowOnloadListener() {
   window.addEventListener("load", function() {
-    // XXX: Work around slow test startup.
+    // FIXME: Work around slow test startup.
     // In the real world it works fine without setTimeout.
     CheckIfURLShouldBeBlocked().catch(() => {
       setTimeout(() => {
