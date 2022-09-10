@@ -876,7 +876,7 @@ async function CheckIfURLShouldBeBlocked() {
           return mutation.target;
         case "childList":
           return Array.from(mutation.addedNodes)
-		    .filter(node => node.nodeType === Node.ELEMENT_NODE);
+           .filter(node => node.nodeType === Node.ELEMENT_NODE);
         default:
           return [];
         }
