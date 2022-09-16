@@ -31,6 +31,10 @@
     "message": "ෆේස්බුක් කන්ටේනර් භාවිතයෙන්",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
+  "onboarding2-alt": {
+    "message": "ෆේස්බුක් කන්ටේනර් වැට නිරූපකය",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
   "onboarding4-subhead": {
     "message": "ෆේස්බුක් සේවාවෙන් පිටත",
     "description": "This is the subhead for the fourth onboarding panel."
@@ -55,6 +59,14 @@
     "message": "අහවරයි",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
   },
+  "btn-arrow-back": {
+    "message": "කලින් මඬලට ආපසු යන්න.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "ෆේස්බුක් කන්ටේනර් වැඩ කරන අයුරු වෙත යන්න",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
   "no-trackers-subhead": {
     "message": "ෆේස්බුක් ලුහුබැඳීම් අනාවරණය වී නැත",
     "description": ""
@@ -62,6 +74,22 @@
   "learn-more": {
     "message": "තව දැනගන්න",
     "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "ෆේස්බුක් කන්ටේනර් ක්‍රියා කරන අයුරු",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "ඔබ ෆේස්බුක් වෙතින් තරමක් ආරක්‍ෂිතයි.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p2": {
+    "message": "ෆේස්බුක් කන්ටේනර් මගින් මෙම ලුහුබැඳීම් අවහිර කරයි. කෙසේ වුවද, ඔබ මෙම බොත්තම් වලින් එකක් එබුවහොත් ෆේස්බුක් සඳහා ඔබව ලුහුබැඳීමට හැකිය.",
+    "description": ""
+  },
+  "sites-added-subhead": {
+    "message": "ෆෙස්බුක් කන්ටේනර් තුළට ඉඩදුන් අඩවි",
+    "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "ඇතුළත් අඩවි",
@@ -77,6 +105,26 @@
   },
   "remove": {
     "message": "ඉවත් කරන්න",
+    "description": ""
+  },
+  "remove-site-subhead": {
+    "message": "ෆේස්බුක් කන්ටේනර් වෙතින් අඩවිය ඉවත් කරන්නද?",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "මෙම අඩවියේ ෆේස්බුක් ලුහුබැඳීමට ඉඩ දෙන්නද?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "ඔබව මෙහි ලුහුබැඳීමට ෆේස්බුක් වෙත ඉඩ දෙන්නද?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "මෙය නැවත නොපෙන්වන්න",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "ඔබව මෙහි ලුහුබැඳීමට ෆේස්බුක් වෙත ඉඩ දෙන්නද?",
     "description": ""
   },
   "btn-relay-dismiss": {
