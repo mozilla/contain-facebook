@@ -31,9 +31,21 @@
     "message": "ෆේස්බුක් කන්ටේනර් භාවිතයෙන්",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
+  "onboarding2-subhead": {
+    "message": "ෆේස්බුක් හි සහ ෆේස්බුක් කන්ටේනර් මායිමේ තිබෙන අඩවි",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding2-alt": {
     "message": "ෆේස්බුක් කන්ටේනර් වැට නිරූපකය",
     "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "ඔබ ෆේස්බුක් කන්ටේනර් මායිමේ තිබෙන Facebook.com වැනි අඩවි වලට ගොඩවදින විට මෙම නිරූපකය ෆයර්ෆොක්ස් ලිපින තීරුවේ දිස් වේ.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "මෙම අඩවි නිවරදිව ක්‍රියාත්මක වීමට ඔබගේ ෆේස්බුක් අනන්‍යතාව වෙත ප්‍රවේශ විය යුතුය (හෝ ඔබ කවුද යන්න දැන ගන්න). මෙම අඩවිවල ඔබ සිදු කරන සෑම දෙයක්ම ෆේස්බුක් සඳහා නිරීක්‍ෂණය කළ හැකි බව මෙයින් අදහස් වේ.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding4-subhead": {
     "message": "ෆේස්බුක් සේවාවෙන් පිටත",
@@ -82,6 +94,10 @@
   "trackers-detected-subhead": {
     "message": "ඔබ ෆේස්බුක් වෙතින් තරමක් ආරක්‍ෂිතයි.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "සාප්පු සවාරි, ප්‍රවෘත්ති සහ වෙනත් වියමන අඩවිවල දිස්වන ෆේස්බුක් බොත්තම් තුළ ඔබ වියමනෙහි යන එන තැන් ෆේස්බුක් වෙත දන්වන ලුහුබැඳීම් අඩංගු වේ. මනාපය දැක්වීමට හෝ බෙදා ගැනීමට ඔබ කිසි විටෙක මෙම බොත්තම් භාවිතා නොකළ ද, ලුහුබැඳීම් මගින් නිරතුරුව ඔබගේ පිරික්සුම් දත්ත රැස් කරයි. ෆේස්බුක් කන්ටේනර් මෙම ලුහුබැඳීම් අවහිර කරයි.",
+    "description": ""
   },
   "trackers-detected-p2": {
     "message": "ෆේස්බුක් කන්ටේනර් මගින් මෙම ලුහුබැඳීම් අවහිර කරයි. කෙසේ වුවද, ඔබ මෙම බොත්තම් වලින් එකක් එබුවහොත් ෆේස්බුක් සඳහා ඔබව ලුහුබැඳීමට හැකිය.",
