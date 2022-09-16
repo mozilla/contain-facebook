@@ -9,6 +9,9 @@
       }
     }
   },
+  "in-fbc-p1": {
+    "message": "දැන් ෆේස්බුක් සේවාවට මෙම අඩවිය හරහා ඔබව නිරීක්‍ෂණය කිරීමට හැකිය. ෆේස්බුක් කන්ටේනර් වෙතින් මෙම අඩවිය ඉවත් කිරීමට, ෆේස්බුක් කන්ටේනර් තුළ ඉඩ දී තිබෙන අඩවි තේරීමෙන් පසු ඒවා ලේඛනයෙන් ඉවත් කරන්න."
+  },
   "on-facebook-subhead": {
     "message": "ෆේස්බුක් හි සහ ෆේස්බුක් කන්ටේනර් මාඉම තිබෙන අඩවි",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
