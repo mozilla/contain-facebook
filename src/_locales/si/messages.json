@@ -98,6 +98,10 @@
     "message": "ෆේස්බුක් කන්ටේනර් වෙත වියමන අඩවියක් එක් කිරීමට අදාළ බොත්තම මඬලෙහි දිස්වන ආකාරය මෙම රූපයෙන් පෙන්නුම් කරයි.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
+  "onboarding5-p2": {
+    "message": "මෙය ෆෙස්බුක් සමඟ පිවිසීමට ඉඩ සලසන අතර ඔබ එම අඩවියෙහි සිදු කරන ක්‍රියාකාරකම් නිරීක්‍ෂණය කිරීමට ද ෆේස්බුක් සේවාවට ඉඩ සලසයි.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "ඉඩ දෙන්න",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -130,6 +134,10 @@
     "message": "ෆේස්බුක් ලුහුබැඳීම් අනාවරණය වී නැත",
     "description": ""
   },
+  "no-trackers-p1": {
+    "message": "මෙම පිටුවෙහි කිසිදු ෆේස්බුක් ලුහුබැඳීමක් ෆේස්බුක් කන්ටේනර් වෙත අනාවරණය වී නැත. කෙසේ වෙතත්, මෙම පිටුවෙහි වෙනත් ලුහුබැඳීම් අඩංගු වී තිබීමට ඉඩ ඇත.",
+    "description": ""
+  },
   "learn-more": {
     "message": "තව දැනගන්න",
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -149,6 +157,10 @@
   "trackers-detected-p2": {
     "message": "ෆේස්බුක් කන්ටේනර් මගින් මෙම ලුහුබැඳීම් අවහිර කරයි. කෙසේ වුවද, ඔබ මෙම බොත්තම් වලින් එකක් එබුවහොත් ෆේස්බුක් සඳහා ඔබව ලුහුබැඳීමට හැකිය.",
     "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "පලිහ සහිත ෆේස්බුක් කන්ටේනර් වැට.",
+    "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
     "message": "ෆෙස්බුක් කන්ටේනර් තුළට ඉඩදුන් අඩවි",
@@ -178,8 +190,16 @@
     "message": "ෆේස්බුක් කන්ටේනර් වෙතින් අඩවිය ඉවත් කරන්න",
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
+  "button-remove-site-tooltip": {
+    "message": "මෙය ෆෙස්බුක් සතු අඩවියක් නිසා ෆේස්බුක් කන්ටේනර් වෙතින් ඉවත් කිරීමට නොහැකිය.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
   "remove-site-subhead": {
     "message": "ෆේස්බුක් කන්ටේනර් වෙතින් අඩවිය ඉවත් කරන්නද?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "ෆේස්බුක් කන්ටේනර් වෙතින් මෙම අඩවිය ඉවත් කිරීම යන්නෙන් අදහස් වන්නේ ෆේස්බුක් සමඟ පිවිසෙන්න යන විශේෂාංගය තවදුරටත් ක්‍රියා නොකරන අතර ෆේස්බුක් ලුහුබැඳීමේ දත්තකඩ මකා දමන බවයි.",
     "description": ""
   },
   "add-site-subhead": {
