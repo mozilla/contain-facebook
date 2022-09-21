@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Facebook Container",
-    "version": "2.3.3",
+    "version": "2.3.5",
 
     "incognito": "not_allowed",
 
