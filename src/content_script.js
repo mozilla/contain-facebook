@@ -28,6 +28,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = hostnameFilter([
   ["[data-destination*='facebook']"],
   ["[class*='fb-login']"], // Default FB class name "fbc-login-button"
   [".fb-login-button"], // Default FB class name "fbc-login-button"
+  ["[data-login-with-facebook]"],
 
   ["[class*='js-facebook-login']", "kickstarter"], // kickstarter
   [".signup__button.button--facebook", "drop"], // massdrop
@@ -45,7 +46,6 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = hostnameFilter([
   [".logInWithButtons .logInWith.facebook", "bazqux"], // bazqux.com
   ["[data-test*='login-with-facebook']", "producthunt"], // Producthunt
   [".puppeteer_test_login_button_facebook", "quora"], // Quora
-  ["[data-login-with-facebook='']", "etsy"], // etsy
   [".fm-sns-item.facebook", "aliexpress"], // AliExpress
   [".social-login .button--facebook", "noovie"], // noovie.com
   ["#home_account_fb", "deezer"], // Deezer
