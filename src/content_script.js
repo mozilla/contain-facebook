@@ -68,16 +68,17 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = hostnameFilter([
 ]);
 
 // TODO: Disarm click events on detected elements
-const SHARE_PATTERN_DETECTION_SELECTORS = [
-  "[href*='facebook.com/dialog/feed']", // Feed dialog
-  "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
-  "[aria-label*='share on facebook']", // MSN
-  "[data-tracking*='facebook|share']", // football.london
-  "[class*='facebookShare']", // Producthunt share
-  "[class*='social-tray__link--facebook']", // Vice
-  ".post-action-options + .right > .social-icon.icon-f", // Imgur share
-  "[title='Share on Facebook']" // Medium
-];
+const SHARE_PATTERN_DETECTION_SELECTORS = hostnameFilter([
+  ["[href*='facebook.com/dialog/feed']"], // Feed dialog
+  ["[title='Share on Facebook']"], // Medium
+
+  ["[data-bfa-network*='facebook']", "buzzfeed"], // Buzzfeed Mini Share
+  ["[aria-label*='share on facebook']", "msn"], // MSN
+  ["[data-tracking*='facebook|share']", "football.london"], // football.london
+  ["[class*='facebookShare']", "producthunt"], // Producthunt share
+  ["[class*='social-tray__link--facebook']", "vice"], // Vice
+  [".post-action-options + .right > .social-icon.icon-f", "imgur"] // Imgur share
+]);
 
 // TODO: Disarm click events on detected elements
 const PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS = [
