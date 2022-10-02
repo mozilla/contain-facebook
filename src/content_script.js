@@ -1,5 +1,15 @@
 "use strict";
 
+function hostnameFilter(selectorList) {
+  const hostname = window.location.hostname.toLowerCase();
+  return selectorList
+    .filter(
+      ([, hostnameFilter]) =>
+        !hostnameFilter || hostname.includes(hostnameFilter.toLowerCase()),
+    )
+    .map(([selector]) => selector);
+}
+
 // Use the following patterns to check for on-screen Facebook elements
 // Unused Patterns from previous mixed set of selectors
 // "[title*='Facebook']",
@@ -9,52 +19,52 @@ const EMAIL_PATTERN_DETECTION_SELECTORS = [
   "input[type='email']",
 ];
 
-const LOGIN_PATTERN_DETECTION_SELECTORS = [
-  "[title='Log in with Facebook']",
-  "[class*='FacebookConnectButton']",
-  "[class*='js-facebook-login']", // kickstarter
-  ".signup__button.button--facebook", // massdrop
-  "[id*='signin_fb_btn']", // Ebay
-  ".btn-social.facebook", // emag.ro
-  ".button-login.facebook-login", // estadao.com.br
-  "[class*='signup-provider-facebook']", // Fandom
-  ".socialContainer-0-131 .mainFacebook-0-150", // Honey
-  "[class*='facebook_login_click']", // Hi5
-  "[data-test-id*='facebook-create-button']", // Doordash
-  "[class*='FacebookButton--facebook-button']", // Strava
-  "#login_form > .facebook", // Strava
-  "[class*='facebook-connect-button']", // Twitch
-  "[data-testid*='facebook-login']", // Spotify
-  ".logInWithButtons .logInWith.facebook", // bazqux.com
-  "[href*='signin/facebook']",
-  "[data-test*='login-with-facebook']", // Producthunt
-  "[data-oauthserver*='facebook']", // Stackoverflow
-  ".puppeteer_test_login_button_facebook", // Quora
-  "[href*='connect/facebook']", //Medium
-  "[data-login-with-facebook='']", // etsy
-  "[data-destination*='facebook']",
-  ".fm-sns-item.facebook", // AliExpress
-  ".social-login .button--facebook", // noovie.com
-  "#home_account_fb", // Deezer
-  ".front-door .btn.btn-facebook", // GroupMe
-  "[class*='meetup-signupModal-facebook']", // Meetup Signup Homepage
-  "#facebook-register", // Meetup Signup Static Page
-  "[href*='https://www.facebook.com/v11.0/dialog/oauth']", // Meetup Signup Non-homepage
-  ".fb-start .ybtn--social.ybtn--facebook", // Yelp
-  "[aria-label*='Log in with Facebook']", // Tinder
-  ".registration__form .button.color-provider-facebook", // Bumble
-  "#facebookLoginButton", // eHarmony
-  "[action*='facebook_login']", // Airbnb
-  "[action*='facebook_signup']", // Airbnb
-  "#social-auth-provider-facebook-web", // VRBO
-  "[class*='FBLoginForm__Button']", // Mixcloud homepage
-  ".button.button--facebook", // Buzzfeed Login
-  "#js-facebook-oauth-login", // NY Times
-  "#login-facebook-button", // Indeed
-  ".btn-social-connect.btn-facebook", // Zillow (Zindex Issue)
-  "[class*='fb-login']", // Default FB class name "fbc-login-button"
-  ".fb-login-button" // Default FB class name "fbc-login-button"
-];
+const LOGIN_PATTERN_DETECTION_SELECTORS = hostnameFilter([
+  ["[title='Log in with Facebook']"],
+  ["[class*='FacebookConnectButton']"],
+  ["[class*='js-facebook-login']", "kickstarter"], // kickstarter
+  [".signup__button.button--facebook", "drop"], // massdrop
+  ["[id*='signin_fb_btn']", "ebay"], // Ebay
+  [".btn-social.facebook", "emag"], // emag.ro
+  [".button-login.facebook-login", "estadao"], // estadao.com.br
+  ["[class*='signup-provider-facebook']", "fandom"], // Fandom
+  [".socialContainer-0-131 .mainFacebook-0-150", "joinhoney"], // Honey
+  ["[class*='facebook_login_click']", "hi5"], // Hi5
+  ["[data-test-id*='facebook-create-button']", "doordash"], // Doordash
+  ["[class*='FacebookButton--facebook-button']", "strava"], // Strava
+  ["#login_form > .facebook", "strava"], // strava
+  ["[class*='facebook-connect-button']", "twitch"], // Twitch
+  ["[data-testid*='facebook-login']", "spotify"], // Spotify
+  [".logInWithButtons .logInWith.facebook", "bazqux"], // bazqux.com
+  ["[href*='signin/facebook']"],
+  ["[data-test*='login-with-facebook']", "producthunt"], // Producthunt
+  ["[data-oauthserver*='facebook']"], // Stackoverflow
+  [".puppeteer_test_login_button_facebook", "quora"], // Quora
+  ["[href*='connect/facebook']"], // Medium
+  ["[data-login-with-facebook='']", "etsy"], // etsy
+  ["[data-destination*='facebook']"],
+  [".fm-sns-item.facebook", "aliexpress"], // AliExpress
+  [".social-login .button--facebook", "noovie"], // noovie.com
+  ["#home_account_fb", "deezer"], // Deezer
+  [".front-door .btn.btn-facebook", "groupme"], // GroupMe
+  ["[class*='meetup-signupModal-facebook']", "meetup"], // Meetup Signup Homepage
+  ["#facebook-register", "meetup"], // Meetup Signup Static Page
+  ["[href*='https://www.facebook.com/v11.0/dialog/oauth']", "meetup"], // Meetup Signup Non-homepage
+  [".fb-start .ybtn--social.ybtn--facebook", "yelp"], // Yelp
+  ["[aria-label*='Log in with Facebook']", "tinder"], // Tinder
+  [".registration__form .button.color-provider-facebook", "bumble"], // Bumble
+  ["#facebookLoginButton", "eharmony"], // eHarmony
+  ["[action*='facebook_login']", "airbnb"], // Airbnb
+  ["[action*='facebook_signup']", "airbnb"], // Airbnb
+  ["#social-auth-provider-facebook-web", "vrbo"], // VRBO
+  ["[class*='FBLoginForm__Button']", "mixcloud"], // Mixcloud homepage
+  [".button.button--facebook", "buzzfeed"], // Buzzfeed Login
+  ["#js-facebook-oauth-login", "nytimes"], // NY Times
+  ["#login-facebook-button", "indeed"], // Indeed
+  [".btn-social-connect.btn-facebook", "zillow"], // Zillow (Zindex Issue)
+  ["[class*='fb-login']"], // Default FB class name "fbc-login-button"
+  [".fb-login-button"] // Default FB class name "fbc-login-button"
+]);
 
 // TODO: Disarm click events on detected elements
 const SHARE_PATTERN_DETECTION_SELECTORS = [
