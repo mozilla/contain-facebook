@@ -3,7 +3,7 @@
 function processPerSite(selectors) {
   const hostname = window.location.hostname.toLowerCase();
   return Object.keys(selectors)
-    .filter((key) => !key || hostname.includes(key.toLowerCase()))
+    .filter((key) => hostname.includes(key.toLowerCase()))
     .flatMap((key) => selectors[key]);
 }
 
