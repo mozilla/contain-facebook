@@ -22,6 +22,13 @@ const EMAIL_PATTERN_DETECTION_SELECTORS = [
 const LOGIN_PATTERN_DETECTION_SELECTORS = hostnameFilter([
   ["[title='Log in with Facebook']"],
   ["[class*='FacebookConnectButton']"],
+  ["[href*='signin/facebook']"],
+  ["[data-oauthserver*='facebook']"], // Stackoverflow
+  ["[href*='connect/facebook']"], // Medium
+  ["[data-destination*='facebook']"],
+  ["[class*='fb-login']"], // Default FB class name "fbc-login-button"
+  [".fb-login-button"], // Default FB class name "fbc-login-button"
+
   ["[class*='js-facebook-login']", "kickstarter"], // kickstarter
   [".signup__button.button--facebook", "drop"], // massdrop
   ["[id*='signin_fb_btn']", "ebay"], // Ebay
@@ -36,13 +43,9 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = hostnameFilter([
   ["[class*='facebook-connect-button']", "twitch"], // Twitch
   ["[data-testid*='facebook-login']", "spotify"], // Spotify
   [".logInWithButtons .logInWith.facebook", "bazqux"], // bazqux.com
-  ["[href*='signin/facebook']"],
   ["[data-test*='login-with-facebook']", "producthunt"], // Producthunt
-  ["[data-oauthserver*='facebook']"], // Stackoverflow
   [".puppeteer_test_login_button_facebook", "quora"], // Quora
-  ["[href*='connect/facebook']"], // Medium
   ["[data-login-with-facebook='']", "etsy"], // etsy
-  ["[data-destination*='facebook']"],
   [".fm-sns-item.facebook", "aliexpress"], // AliExpress
   [".social-login .button--facebook", "noovie"], // noovie.com
   ["#home_account_fb", "deezer"], // Deezer
@@ -61,9 +64,7 @@ const LOGIN_PATTERN_DETECTION_SELECTORS = hostnameFilter([
   [".button.button--facebook", "buzzfeed"], // Buzzfeed Login
   ["#js-facebook-oauth-login", "nytimes"], // NY Times
   ["#login-facebook-button", "indeed"], // Indeed
-  [".btn-social-connect.btn-facebook", "zillow"], // Zillow (Zindex Issue)
-  ["[class*='fb-login']"], // Default FB class name "fbc-login-button"
-  [".fb-login-button"] // Default FB class name "fbc-login-button"
+  [".btn-social-connect.btn-facebook", "zillow"] // Zillow (Zindex Issue)
 ]);
 
 // TODO: Disarm click events on detected elements
