@@ -166,6 +166,14 @@
     "message": "Ці дазволіць Facebook асочванне на гэтым сайце?",
     "description": ""
   },
+  "add-site-p1": {
+    "message": "Гэта дазваляе вам увайсці на сайт праз уліковы запіс Facebook, але таксама дазваляе Facebook сачыць за вашыми дзеяннямі на гэтым сайце.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container адключыў гэту кнопку і заблакаваў для Facebook магчымасць асочвання вашых наведванняў гэтай старонкі.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-p1": {
     "message": "Дазволіць Facebook высочваць вас тут?",
     "description": ""
