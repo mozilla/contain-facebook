@@ -70,6 +70,10 @@
     "message": "Значок плота Facebook Container ",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
+  "onboarding2-p1": {
+    "message": "Гэты значок з'яўляецца ў адрасным радку Firefox, калі вы наведваеце сайты, такія як Facebook.com, або тыя, што даданы ў Facebook Container.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
   "onboarding4-subhead": {
     "message": "Па-за Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
@@ -121,6 +125,10 @@
   "trackers-detected-subhead": {
     "message": "Мы абаранілі вас ад Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container блакуе гэтыя трэкеры. Аднак, калі вы націснеце любую з гэтых кнопак, Facebook зможа адсачыць вас.",
+    "description": ""
   },
   "trackers-detected-fence-alt": {
     "message": "Плот Facebook Container са шчытом.",
