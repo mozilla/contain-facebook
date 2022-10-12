@@ -162,6 +162,10 @@
     "message": "Ці выдаліць сайт з Facebook Container?",
     "description": ""
   },
+  "remove-site-p2": {
+    "message": "Калі вы захочаце зноў увайсці праз Facebook, вам  прыйдзецца вярнуць сайт у Facebook Container.",
+    "description": ""
+  },
   "add-site-subhead": {
     "message": "Ці дазволіць Facebook асочванне на гэтым сайце?",
     "description": ""
