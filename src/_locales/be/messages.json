@@ -74,6 +74,10 @@
     "message": "Гэты значок з'яўляецца ў адрасным радку Firefox, калі вы наведваеце сайты, такія як Facebook.com, або тыя, што даданы ў Facebook Container.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
+  "onboarding2-p2": {
+    "message": "Гэтыя сайты мусяць мець доступ да вашага ідэнтыфікатара Facebook (альбо ведаць, хто вы ёсць), каб працаваць. Таксама гэта значыць, што Facebook можа асочваць усё, што вы робіце на гэтых сайтах.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding4-subhead": {
     "message": "Па-за Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
