@@ -90,6 +90,10 @@
     "message": "Уваход на іншыя сайты праз Facebook",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "Каб выкарыстоўваць уваход праз Facebook на іншых сайтах, вам трэба будзе перамясціць іх унутр кантэйнера. Націсніце на значок Facebook Container і абярыце «Дазволіць сайт у Facebook Container» у ніжняй частцы.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
   "onboarding5-img": {
     "message": "На гэтым відарысе паказана, як будзе выглядаць кнопка дадання сайта ў Facebook Container на панэлі.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
@@ -128,6 +132,10 @@
   },
   "no-trackers-subhead": {
     "message": "Асочвальнікі Facebook не знойдзены",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container не выявіў ніякіх трэкераў Facebook на гэтай старонцы. Тым не менш, старонка ўсё яшчэ можа ўтрымліваць іншыя тыпы трэкераў.",
     "description": ""
   },
   "learn-more": {
