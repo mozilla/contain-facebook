@@ -174,6 +174,9 @@
     "message": "ДАЗВОЛЕНЫЯ ВАМІ САЙТЫ",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
+  "sites-added-p1": {
+    "message": "Facebook Container змяшчае сайты, якія належаць Facebook, у кантэйнер. Вы можаце дазволіць іншым сайтам выходзіць за яго межы, але гэта дазволіць Facebook больш асочваць вас."
+  },
   "remove": {
     "message": "Выдаліць",
     "description": ""
