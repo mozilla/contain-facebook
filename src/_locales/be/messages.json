@@ -94,6 +94,10 @@
     "message": "На гэтым відарысе паказана, як будзе выглядаць кнопка дадання сайта ў Facebook Container на панэлі.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
+  "onboarding5-p2": {
+    "message": "Гэта дазваляе вам увайсці на сайт праз уліковы запіс Facebook, але таксама дазваляе Facebook сачыць за вашыми дзеяннямі на гэтым сайце.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Дазволіць",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -216,6 +220,10 @@
   },
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "Ці дазволіць Facebook адсочваць вас тут?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Гэты сайт можа перадаць ваш адрас электроннай пошты Facebook, што дазволіць Facebook адсочваць вас. Скарыстайцеся такім сэрвісам, як Firefox Relay, каб схаваць свой сапраўдны адрас электроннай пошты.",
     "description": ""
   },
   "btn-relay-dismiss": {
