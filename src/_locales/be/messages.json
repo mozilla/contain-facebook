@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container ізалюе вашу дзейнасць у Facebook ад астатняй вашай актыўнасці ў сеціве, каб прадухіліць асочванне вас Facebook-ам па-за межамі сайта Facebook з дапамогай кукаў трэціх асоб.",
+    "message": "Facebook Container ізалюе вашу дзейнасць у Facebook ад астатняй вашай актыўнасці ў Інтэрнэце, каб прадухіліць Facebook ад асочвання вас па-за межамі сайта Facebook праз староннія кукі.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -81,6 +81,10 @@
   "onboarding4-subhead": {
     "message": "Па-за Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Нават калі вы не знаходзіцеся на Facebook, ён можа можа сачыць за вамі у Інтэрнэце. Кнопкі, якія дазваляюць вам дзяліцца матэрыяламі на Facebook або ўваходзіць на вэб-сайты з дапамогай уліковага запісу Facebook, утрымліваюць трэкеры. Facebook Container блакуе гэтыя трэкеры. На сайтах, дзе гэта адбываецца, будзе адлюстроўвацца значок у агароджы.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
     "message": "На гэтым відарысе паказана, як будзе выглядаць значок Facebook Container побач з кнопкай «Упадабаць» ад Facebook.",
