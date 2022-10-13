@@ -83,7 +83,7 @@
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Нават калі вы не знаходзіцеся на Facebook, ён можа можа сачыць за вамі у Інтэрнэце. Кнопкі, якія дазваляюць вам дзяліцца матэрыяламі на Facebook або ўваходзіць на вэб-сайты з дапамогай уліковага запісу Facebook, утрымліваюць трэкеры. Facebook Container блакуе гэтыя трэкеры. На сайтах, дзе гэта адбываецца, будзе адлюстроўвацца значок у агароджы.",
+    "message": "Нават калі вы не знаходзіцеся на Facebook, ён можа можа сачыць за вамі у Інтэрнэце. Кнопкі, якія дазваляюць вам дзяліцца матэрыяламі на Facebook або ўваходзіць на вэб-сайты з дапамогай уліковага запісу Facebook, утрымліваюць трэкеры. Facebook Container блакуе гэтыя трэкеры. На сайтах, дзе гэта адбываецца, будзе адлюстроўвацца значок плота.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
@@ -202,7 +202,7 @@
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Ці выдаліць сайт з Facebook Container?",
+    "message": "Выдаліць сайт з Facebook Container?",
     "description": ""
   },
   "remove-site-p1": {
@@ -214,7 +214,7 @@
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Ці дазволіць Facebook асочванне на гэтым сайце?",
+    "message": "Дазволіць Facebook асочванне на гэтым сайце?",
     "description": ""
   },
   "add-site-p1": {
@@ -230,7 +230,7 @@
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Дазволіць Facebook высочваць вас тут?",
+    "message": "Дазволіць Facebook асочваць вас тут?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
@@ -246,11 +246,11 @@
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Калі вы скарыстаецеся тут сваім сапраўдным адрасам эмэйл, Facebook зможа адсачыць вас. Пстрыкніце тут па больш падрабязную інфармацыю.",
+    "message": "Калі вы скарыстаецеся тут сваім сапраўдным адрасам эмэйл, Facebook зможа адсачыць вас. Націсніце, каб даведацца больш.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "Ці дазволіць Facebook адсочваць вас тут?",
+    "message": "Дазволіць Facebook асочваць вас тут?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
