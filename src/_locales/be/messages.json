@@ -25,11 +25,11 @@
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p2": {
-    "message": "Гэтыя сайты мусяць мець доступ да вашай тоеснасці на Facebook (альбо ведаць, хто вы ёсць), каб працаваць. Таксама гэта значыць, што Facebook можа асочваць усё, што вы робіце на гэтых сайтах.",
+    "message": "Гэтыя сайты мусяць мець доступ да вашага ідэнтыфікатара Facebook (альбо ведаць, хто вы ёсць), каб працаваць. Таксама гэта значыць, што Facebook можа асочваць усё, што вы робіце на гэтых сайтах.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   },
   "notOnFacebookHeader": {
-    "message": "$URL$ не ў Кантэйнеры для Facebook.",
+    "message": "$URL$ не ў Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
