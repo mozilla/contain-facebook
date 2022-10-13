@@ -82,9 +82,17 @@
     "message": "Па-за Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "На гэтым відарысе паказана, як будзе выглядаць значок Facebook Container побач з кнопкай «Упадабаць» ад Facebook.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
   "onboarding5-subhead": {
     "message": "Уваход на іншыя сайты праз Facebook",
     "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "На гэтым відарысе паказана, як будзе выглядаць кнопка дадання сайта ў Facebook Container на панэлі.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Дазволіць",
