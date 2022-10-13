@@ -194,6 +194,10 @@
     "message": "Ці выдаліць сайт з Facebook Container?",
     "description": ""
   },
+  "remove-site-p1": {
+    "message": "Выдаленне гэтага сайта з Facebook Container азначае, што функцыя «Увайсці праз Facebook» больш не будзе працаваць, а кукі Facebook будуць выдалены.",
+    "description": ""
+  },
   "remove-site-p2": {
     "message": "Калі вы захочаце зноў увайсці праз Facebook, вам  прыйдзецца вярнуць сайт у Facebook Container.",
     "description": ""
@@ -210,8 +214,16 @@
     "message": "Facebook Container адключыў гэту кнопку і заблакаваў для Facebook магчымасць асочвання вашых наведванняў гэтай старонкі.",
     "description": ""
   },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container заблакаваў трэкеры Facebook. Ён ізноў зможа асочваць вас, калі вы паспрабуеце ўвайсці на гэты сайт з дапамогай Facebook.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-p1": {
     "message": "Дазволіць Facebook высочваць вас тут?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Калі вы хочаце увайсці з дапамогай уліковага запісу Facebook, тады Facebook зможа асочваць вашу дзейнасць на гэтым сайце. Гэта дапаможа ім стварыць больш поўнае ўяўленне аб вашым жыцці ў Інтэрнэце.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
