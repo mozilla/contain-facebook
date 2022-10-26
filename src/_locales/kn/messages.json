@@ -1,4 +1,14 @@
 {
+  "in-fbc-subhead": {
+    "message": "$URL$ Facebook ಕಂಟೈನರ್‌ನಲ್ಲಿದೆ.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
   "in-fbc-p1": {
     "message": "ಫೇಸ್‌ಬುಕ್ ಈಗ ನಿಮ್ಮನ್ನು ಈ ಸೈಟ್‌ನಲ್ಲಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಬಹುದು. ಫೇಸ್‌ಬುಕ್ ಕಂಟೇನರ್‌ನಿಂದ ಈ ಸೈಟ್ ಅನ್ನು ತೆಗೆದುಹಾಕಲು, ಫೇಸ್‌ಬುಕ್ ಕಂಟೇನರ್‌ನಲ್ಲಿ ಅನುಮತಿಸಲಾದ ಸೈಟ್‌ಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಮತ್ತು ಅದನ್ನು ಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಹಾಕಿ."
   },
