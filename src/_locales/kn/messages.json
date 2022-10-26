@@ -16,6 +16,10 @@
     "message": " ಫೇಸ್ಬುಕ್ ಮತ್ತು ಫೇಸ್ಬುಕ್ ಕಂಟೇನರ್ ಬೌಂಡರಿಯಲ್ಲಿನ ಸೈಟ್ಗಳಲ್ಲಿ",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "on-facebook-p1": {
+    "message": "ನೀವು Facebook-ಒಡೆತನದ ಸೈಟ್‌ಗಳು ಅಥವಾ ನೀವು Facebook ಕಂಟೇನರ್‌ಗೆ ಸೇರಿಸಿದ ಸೈಟ್‌ಗಳಿಗೆ ಭೇಟಿ ನೀಡಿದಾಗ ಈ ಐಕಾನ್ ಫೈರ್‌ಫಾಕ್ಸ್ ವಿಳಾಸ ಪಟ್ಟಿಯಲ್ಲಿ ಗೋಚರಿಸುತ್ತದೆ.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "facebookContainer": {
     "message": "ಫೇಸ್ಬುಕ್ ಕಂಟೇನರ್",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
@@ -43,6 +47,10 @@
   "learn-more": {
     "message": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ",
     "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Facebook ಕಂಟೈನರ್ ಹೇಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
   },
   "sites-included": {
     "message": "SITES INCLUDED",
