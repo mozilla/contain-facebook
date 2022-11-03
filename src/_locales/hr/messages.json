@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "Ako klikneš ovaj gumb, Facebook će moći pratiti tvoju posjetu ovoj stranici.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ako ovdje koristiš svoju pravu e-amil adresu, Facebook će te možda moći pratiti. Pritisni i saznaj više.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Dozvoliti Facebooku da te ovdje prati?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Ova stranica može dijeliti tvoju e-mail asdresu s Facebookom, što omogućuje Facebooku da te prati. Za skrivanje stvarne e-mail adrese koristi uslugu kao što je Firefox Relay.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Odbaci",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Isprobaj Firefox Relay",
+    "description": ""
   }
 }
