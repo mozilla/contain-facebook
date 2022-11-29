@@ -13,6 +13,8 @@ const FACEBOOK_DOMAINS = [
   
   "facebookrecruiting.com", "facebookblueprint.com",
 
+  "fburl.com", "internalfb.com",
+
   "instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
 
