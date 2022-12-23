@@ -155,11 +155,11 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "Кнопкі Facebook, якія з'яўляюцца на на сайтах Інтэрнэт-крам, навінавых і іншых вэб-сайтах, утрымліваюць трэкеры, якія паведамляюць Facebook, дзе вы былі ў Інтэрнэце. Нават калі вы ніколі не выкарыстоўваеце гэтыя кнопкі, каб паставіць лайк ці падзяліцца матэрыялам, трэкеры ўсяроўна могуць збіраць даныя аб вашым вэб-сёрфінгу. Facebook Container блакуе гэтыя трэкеры.",
+    "message": "Кнопкі Facebook, якія з'яўляюцца на сайтах Інтэрнэт-крам, навінавых і іншых вэб-сайтах, утрымліваюць трэкеры, якія паведамляюць Facebook, дзе вы былі ў Інтэрнэце. Нават калі вы ніколі не выкарыстоўваеце гэтыя кнопкі, каб паставіць лайк ці падзяліцца матэрыялам, трэкеры ўся роўна могуць збіраць даныя аб вашым вэб-сёрфінгу. Facebook Container блакіруе гэтыя трэкеры.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container блакуе гэтыя трэкеры. Аднак, калі вы націснеце любую з гэтых кнопак, Facebook зможа адсачыць вас.",
+    "message": "Facebook Container блакіруе гэтыя трэкеры. Аднак, калі вы націснеце любую з гэтых кнопак, Facebook зможа асачыць вас.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
@@ -222,11 +222,11 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container адключыў гэту кнопку і заблакаваў для Facebook магчымасць асочвання вашых наведванняў гэтай старонкі.",
+    "message": "Facebook Container адключыў гэту кнопку і заблакіраваў для Facebook магчымасць асочвання вашых наведванняў гэтай старонкі.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container заблакаваў трэкеры Facebook. Ён ізноў зможа асочваць вас, калі вы паспрабуеце ўвайсці на гэты сайт з дапамогай Facebook.",
+    "message": "Facebook Container заблакіраваў трэкеры Facebook. Ён ізноў зможа асочваць вас, калі вы паспрабуеце ўвайсці на гэты сайт з дапамогай Facebook.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
@@ -246,7 +246,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Калі вы скарыстаецеся тут сваім сапраўдным адрасам эмэйл, Facebook зможа адсачыць вас. Націсніце, каб даведацца больш.",
+    "message": "Калі вы выкарыстаеце тут свой сапраўдны адрас электроннай пошты, Facebook зможа асачыць вас. Націсніце, каб даведацца больш.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
