@@ -1,0 +1,268 @@
+{
+  "extensionDescription": {
+    "message": "තෙවන පාර්ශ්ව දත්තකඩ හරහා ෆේස්බුක් අඩවියෙන් පිටත ඔබව ලුහුබැඳීම වළක්වා ගැනීම සඳහා, ෆේස්බුක් කන්ටේනර් ඔබගේ ෆේස්බුක් ක්‍රියාකාරකම් අනෙක් වියමන ක්‍රියාකාරකම් වලින් හුදකලා කරයි.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "ෆේස්බුක් කන්ටේනර් තුළ $URL$ තිබේ.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "in-fbc-p1": {
+    "message": "දැන් ෆේස්බුක් සේවාවට මෙම අඩවිය හරහා ඔබව නිරීක්‍ෂණය කිරීමට හැකිය. ෆේස්බුක් කන්ටේනර් වෙතින් මෙම අඩවිය ඉවත් කිරීමට, ෆේස්බුක් කන්ටේනර් තුළ ඉඩ දී තිබෙන අඩවි තේරීමෙන් පසු ඒවා ලේඛනයෙන් ඉවත් කරන්න."
+  },
+  "on-facebook-subhead": {
+    "message": "ෆේස්බුක් හි සහ ෆේස්බුක් කන්ටේනර් මාඉම තිබෙන අඩවි",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p1": {
+    "message": "ෆේස්බුක් සතු අඩවියකට හෝ ෆේස්බුක් කන්ටේනර් තුළට එක් කළ අඩවි වෙත ඔබ ගිය විට මෙම නිරූපකය ෆයර්ෆොක්ස් ලිපින තීරුවේ දිස් වේ.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "මෙම අඩවි නිවරදිව ක්‍රියාත්මක වීමට ඔබගේ ෆේස්බුක් අනන්‍යතාව වෙත ප්‍රවේශ විය යුතුය (හෝ ඔබ කවුද යන්න දැන ගන්න). මෙම අඩවිවල ඔබ සිදු කරන සෑම දෙයක්ම ෆේස්බුක් සඳහා නිරීක්‍ෂණය කළ හැකි බව මෙයින් අදහස් වේ.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
+  "notOnFacebookHeader": {
+    "message": "ෆේස්බුක් කන්ටේනර් තුළ $URL$ නැත.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.google.com"
+      }
+    }
+  },
+  "notOnFacebookText": {
+    "message": "මෙම අඩවිය ෆේස්බුක් කන්ටේනර් මෙවලමෙන් පිටත ය. මෙමගින් ෆේස්බුක් සේවාවට ඔබව වියමන පුරා ලුහුබැඳීම අපහසු කරයි.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "onUnknownSiteHeader": {
+    "message": "මෙම අඩවිය ෆේස්බුක් කන්ටේනර් තුළ නැත.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "facebookContainer": {
+    "message": "ෆේස්බුක් කන්ටේනර්",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "onboarding1-subhead": {
+    "message": "ෆේස්බුක් කන්ටේනර් භාවිතයෙන්",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p1": {
+    "message": "ෆේස්බුක් සේවාවට ඔවුන්ගේ Facebook.com අඩවියෙන් ඔබ්බට ඔබගේ පිරික්සුම් නිරීක්‍ෂණය කළ හැකිය. විවිධ අඩවිවල තිබෙන ෆේස්බුක් ලයික් සහ බෙදාගැනීමේ බොත්තම් — කිසි විටෙක භාවිතා නොකළ ද එමගින් ඔබ භාවිතා කළ සේවා හා පිටු නිරීක්‍ෂණය කිරීමට හැකිය.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding1-p2": {
+    "message": "ෆේස්බුක් කන්ටේනර් මගින් ෆේස්බුක් අඩවි සහ සෙසු අඩවි අතර මාඉම ක් සාදයි, එමගින් ෆෙස්බුක් සඳහා ඔබව මාර්ගගතව ලුහුබැඳීමට අපහසු වේ.",
+    "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "ෆේස්බුක් හි සහ ෆේස්බුක් කන්ටේනර් මාඉම තිබෙන අඩවි",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "ෆේස්බුක් කන්ටේනර් වැට නිරූපකය",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "ඔබ ෆේස්බුක් කන්ටේනර් මාඉම තිබෙන Facebook.com වැනි අඩවි වලට ගොඩවදින විට මෙම නිරූපකය ෆයර්ෆොක්ස් ලිපින තීරුවේ දිස් වේ.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "මෙම අඩවි නිවරදිව ක්‍රියාත්මක වීමට ඔබගේ ෆේස්බුක් අනන්‍යතාව වෙත ප්‍රවේශ විය යුතුය (හෝ ඔබ කවුද යන්න දැන ගන්න). මෙම අඩවිවල ඔබ සිදු කරන සෑම දෙයක්ම ෆේස්බුක් සඳහා නිරීක්‍ෂණය කළ හැකි බව මෙයින් අදහස් වේ.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding4-subhead": {
+    "message": "ෆේස්බුක් සේවාවෙන් පිටත",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "ෆේස්බුක් හි ඔබ නොසිටින විට පවා, එම සේවාවට ඔබව මාර්ගගතව ලුහුබැඳීමට හැකිය. ඔබට ෆේස්බුක් වෙත විවිධ දෑ කිරීමට හෝ ඔබගේ ෆේස්බුක් ගිණුම භාවිතයෙන් අඩවිවලට පිවිසීමට ඉඩ සලසන බොත්තම්වල ද ලුහුබැඳීම් අඩංගු වේ. ෆේස්බුක් කන්ටේනර් මගින් මෙම ලුහුබැඳීම් අවහිර කරන අතර ඒවා ඉවත් කළ ස්ථානය වැටක නිරූපකයකින් පෙන්වයි.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "කිසියම් පිටුවක ෆේස්බුක් බොත්තමක් අසල ෆේස්බුක් කන්ටේනර් වැට නිරූපකය දිස්වන ආකාරය මෙම රූපයෙන් පෙන්නුම් කරයි.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "වෙනත් අඩවි සඳහා ෆේස්බුක් සමඟ පිවිසීම",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "වෙනත් අඩවිවල ඔබගේ ෆේස්බුක් පිවිසුම භාවිතා කිරීමට, ඔබ ඒවා මාඉම තුළට ගෙන යා යුතුය. වැට නිරූපකය එබීමෙන් පසු පහළ තිබෙන ‘ෆේස්බුක් කන්ටේනර් වෙත අඩවිය යොදන්න’ තෝරන්න.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "ෆේස්බුක් කන්ටේනර් වෙත වියමන අඩවියක් එක් කිරීමට අදාළ බොත්තම මඬලෙහි දිස්වන ආකාරය මෙම රූපයෙන් පෙන්නුම් කරයි.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "මෙය ෆෙස්බුක් සමඟ පිවිසීමට ඉඩ සලසන අතර ඔබ එම අඩවියෙහි සිදු කරන ක්‍රියාකාරකම් නිරීක්‍ෂණය කිරීමට ද ෆේස්බුක් සේවාවට ඉඩ සලසයි.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
+  "btn-allow": {
+    "message": "ඉඩ දෙන්න",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "අවලංගු",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "ඊළඟ",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "ආපසු",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "අහවරයි",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "කලින් මඬලට ආපසු යන්න.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "ෆේස්බුක් කන්ටේනර් වැඩ කරන අයුරු වෙත යන්න",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "ෆේස්බුක් ලුහුබැඳීම් අනාවරණය වී නැත",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "මෙම පිටුවෙහි කිසිදු ෆේස්බුක් ලුහුබැඳීමක් ෆේස්බුක් කන්ටේනර් වෙත අනාවරණය වී නැත. කෙසේ වෙතත්, මෙම පිටුවෙහි වෙනත් ලුහුබැඳීම් අඩංගු වී තිබීමට ඉඩ ඇත.",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "තව දැනගන්න",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "ෆේස්බුක් කන්ටේනර් ක්‍රියා කරන අයුරු",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "ඔබ ෆේස්බුක් වෙතින් තරමක් ආරක්‍ෂිතයි.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "සාප්පු සවාරි, ප්‍රවෘත්ති සහ වෙනත් වියමන අඩවිවල දිස්වන ෆේස්බුක් බොත්තම් තුළ ඔබ වියමනෙහි යන එන තැන් ෆේස්බුක් වෙත දන්වන ලුහුබැඳීම් අඩංගු වේ. මනාපය දැක්වීමට හෝ බෙදා ගැනීමට ඔබ කිසි විටෙක මෙම බොත්තම් භාවිතා නොකළ ද, ලුහුබැඳීම් මගින් නිරතුරුව ඔබගේ පිරික්සුම් දත්ත රැස් කරයි. ෆේස්බුක් කන්ටේනර් මෙම ලුහුබැඳීම් අවහිර කරයි.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "ෆේස්බුක් කන්ටේනර් මගින් මෙම ලුහුබැඳීම් අවහිර කරයි. කෙසේ වුවද, ඔබ මෙම බොත්තම් වලින් එකක් එබුවහොත් ෆේස්බුක් සඳහා ඔබව ලුහුබැඳීමට හැකිය.",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "පලිහ සහිත ෆේස්බුක් කන්ටේනර් වැට.",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "ෆෙස්බුක් කන්ටේනර් තුළට ඉඩදුන් අඩවි",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "ඇතුළත් අඩවි",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "කිසිත් නැත",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "ඔබ ඉඩ දී තිබෙන අඩවි",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "sites-added-p1": {
+    "message": "ෆේස්බුක් කන්ටේනර් මගින් ෆේස්බුක් සේවාව සතු අඩවි මාඉම තුළ තබයි. ඔබට වෙනත් අඩවි සඳහා මාඉම ඇතුළත ඉඩ දීමට හැකිය, නමුත් මෙමගින් ෆේස්බුක් සේවාවට ඔබගේ බොහෝ පිරික්සුම් ක්‍රියාකාරකම් නිරීක්‍ෂණයට ඉඩ සලසයි."
+  },
+  "remove": {
+    "message": "ඉවත් කරන්න",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "ෆේස්බුක් කන්ටේනර් වෙත අඩවිය යොදන්න",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "ෆේස්බුක් කන්ටේනර් වෙතින් අඩවිය ඉවත් කරන්න",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "මෙය ෆෙස්බුක් සතු අඩවියක් නිසා ෆේස්බුක් කන්ටේනර් වෙතින් ඉවත් කිරීමට නොහැකිය.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "ෆේස්බුක් කන්ටේනර් වෙතින් අඩවිය ඉවත් කරන්නද?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "ෆේස්බුක් කන්ටේනර් වෙතින් මෙම අඩවිය ඉවත් කිරීම යන්නෙන් අදහස් වන්නේ ෆේස්බුක් සමඟ පිවිසෙන්න යන විශේෂාංගය තවදුරටත් ක්‍රියා නොකරන අතර ෆේස්බුක් ලුහුබැඳීමේ දත්තකඩ මකා දමන බවයි.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "ඔබට නැවතත් ෆේස්බුක් සමඟ පිවිසෙන්න භාවිතා කිරීමට අවශ්‍ය නම්, ඔබට එය යළිත් ෆේස්බුක් කන්ටේනර් වෙත ආපසු එක් කිරීමට සිදු වනු ඇත.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "මෙම අඩවියේ ෆේස්බුක් ලුහුබැඳීමට ඉඩ දෙන්නද?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "මෙය ෆෙස්බුක් සමඟ පිවිසීමට ඉඩ සලසන අතර ඔබ එම අඩවියෙහි සිදු කරන දෑ නිරීක්‍ෂණය කිරීමට ද ෆේස්බුක් සේවාවට ඉඩ සලසයි.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "ෆේස්බුක් කන්ටේනර් මගින් මෙම බොත්තම අබල කර ඇති අතර මෙම පිටුව වෙත ඔබගේ ගොඩවැදීම ලුහුබැඳීම සඳහා ෆෙස්බුක් සේවාවට ඉඩ නොදේ.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "ෆේස්බුක් කන්ටේනර් මගින් ෆේස්බුක් ලුහුබැඳීම් අවහිර කර ඇත. ඔබ මෙම අඩවියෙහි තිබෙන ෆේස්බුක් සමඟ පිවිසෙන්න යන්න භාවිතා කළහොත්, ෆේස්බුක් සේවාවට ඔබව ලුහුබැඳීමට හැකි වනු ඇත.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "ඔබව මෙහි ලුහුබැඳීමට ෆේස්බුක් වෙත ඉඩ දෙන්නද?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "ෆෙස්බුක් සමඟ පිවිසෙන්න යන්න භාවිත කළහොත් ඔබ එම අඩවියෙහි සිදු කරන ක්‍රියාකාරකම් නිරීක්‍ෂණය කිරීමට ද ෆේස්බුක් සේවාවට හැකි වනු ඇත. මෙමගින් ඔබගේ ජීවිතය පිළිබඳව සම්පූර්ණ චිත්‍රයක් ගොඩනගා ගැනීමට ඔවුන්ට හැකිය.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "මෙය නැවත නොපෙන්වන්න",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "ඔබ මෙම බොත්තම එබුවහොත්, ෆේස්බුක් සේවාවට මෙම අඩවිය වෙත ඔබගේ ගොඩවැදීම ලුහුබැඳීමට හැකිය.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "ඔබ මෙහි ඔබගේ සැබෑ වි-තැපැල් ලිපිනය භාවිතා කරන්නේ නම්, ෆේස්බුක් සේවාවට ඔබව ලුහුබැඳීමට හැකි වනු ඇත. තව දැන ගැනීමට ඔබන්න.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "ඔබව මෙහි ලුහුබැඳීමට ෆේස්බුක් වෙත ඉඩ දෙන්නද?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "මෙම අඩවියට ෆේස්බුක් සමඟ ඔබගේ වි-තැපැල් ලිපිනය බෙදා ගැනීමට හැකිය, එමඟින් ෆේස්බුක් සේවාවට ඔබව ලුහුබැඳීමට ඉඩ සලසයි. ඔබගේ සැබෑ වි-තැපැල් ලිපිනය සැඟවීමට Firefox Relay වැනි සේවාවක් භාවිතා කරන්න.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "ඉවතලන්න",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox Relay බලන්න",
+    "description": ""
+  }
+}

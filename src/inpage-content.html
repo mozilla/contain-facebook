@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Facebook Container</title>
+    <link rel="stylesheet" href="content_script.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="fbc-container">
+
+    <header>
+        <h1 class="fbc-title"></h1>
+    </header>
+
+    <main class="fbc-badge-prompt">
+        <!-- Login -->
+        <section id="fbc-login" class="is-hidden">
+            <div class="fbc-badge-prompt-contents">
+                <p class="fbc-subtitle-login"></p>
+                <p class="fbc-bodytext-login"></p>
+
+                <div class="fbc-badge-prompt-buttons">
+                    <button class="fbc-badge-prompt-btn-cancel"></button>
+                    <button class="fbc-badge-prompt-btn-allow"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Email -->
+        <section id="fbc-email" class="is-hidden">
+            <div class="fbc-badge-prompt-contents">
+                <p class="fbc-subtitle-email"></p>
+                <p class="fbc-bodytext-email"></p>
+                <div class="fbc-badge-prompt-dontShowAgain-checkbox">
+                    <input type="checkbox" id="hideRelayEmailBadges" class="fbc-badge-prompt-dontShowAgain-checkbox-input settings-checkbox">
+                    <label class="fbc-email-checkbox" for="hideRelayEmailBadges"></label>
+                </div>
+                <div class="fbc-badge-prompt-buttons">
+                    <button class="fbc-badge-email-btn-dismiss"></button>
+                    <button class="fbc-badge-email-btn-cta-fx-relay"></button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="inpage-content.js"></script>
+</html>

@@ -1,4 +1,14 @@
 {
+  "in-fbc-subhead": {
+    "message": "$URL$ Facebook ಕಂಟೈನರ್‌ನಲ್ಲಿದೆ.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
   "in-fbc-p1": {
     "message": "ಫೇಸ್‌ಬುಕ್ ಈಗ ನಿಮ್ಮನ್ನು ಈ ಸೈಟ್‌ನಲ್ಲಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಬಹುದು. ಫೇಸ್‌ಬುಕ್ ಕಂಟೇನರ್‌ನಿಂದ ಈ ಸೈಟ್ ಅನ್ನು ತೆಗೆದುಹಾಕಲು, ಫೇಸ್‌ಬುಕ್ ಕಂಟೇನರ್‌ನಲ್ಲಿ ಅನುಮತಿಸಲಾದ ಸೈಟ್‌ಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಮತ್ತು ಅದನ್ನು ಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಹಾಕಿ."
   },
@@ -6,9 +16,17 @@
     "message": " ಫೇಸ್ಬುಕ್ ಮತ್ತು ಫೇಸ್ಬುಕ್ ಕಂಟೇನರ್ ಬೌಂಡರಿಯಲ್ಲಿನ ಸೈಟ್ಗಳಲ್ಲಿ",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
+  "on-facebook-p1": {
+    "message": "ನೀವು Facebook-ಒಡೆತನದ ಸೈಟ್‌ಗಳು ಅಥವಾ ನೀವು Facebook ಕಂಟೇನರ್‌ಗೆ ಸೇರಿಸಿದ ಸೈಟ್‌ಗಳಿಗೆ ಭೇಟಿ ನೀಡಿದಾಗ ಈ ಐಕಾನ್ ಫೈರ್‌ಫಾಕ್ಸ್ ವಿಳಾಸ ಪಟ್ಟಿಯಲ್ಲಿ ಗೋಚರಿಸುತ್ತದೆ.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "facebookContainer": {
     "message": "ಫೇಸ್ಬುಕ್ ಕಂಟೇನರ್",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  },
+  "onboarding1-subhead": {
+    "message": "Facebook ಕಂಟೈನರ್ ಅನ್ನು ಬಳಸುವುದು",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
   "btn-allow": {
     "message": "ಅನುಮತಿಸು",
@@ -33,6 +51,10 @@
   "learn-more": {
     "message": "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ",
     "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Facebook ಕಂಟೈನರ್ ಹೇಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
   },
   "sites-included": {
     "message": "SITES INCLUDED",

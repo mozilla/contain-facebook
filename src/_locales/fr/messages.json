@@ -246,7 +246,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Si vous utilisez votre véritable adresse électronique ici, Facebook peut être en mesure de vous suivre. Cliquez pour en savoir plus.",
+    "message": "Si vous utilisez votre véritable adresse e-mail ici, Facebook peut être en mesure de vous suivre. Cliquez pour en savoir plus.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
@@ -254,7 +254,7 @@
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Ce site peut partager votre adresse électronique avec Facebook, ce qui permet à Facebook de vous suivre. Utilisez un service comme Firefox Relay pour masquer votre véritable adresse électronique.",
+    "message": "Ce site peut partager votre adresse e-mail avec Facebook, ce qui permet à Facebook de vous suivre. Utilisez un service comme Firefox Relay pour masquer votre véritable adresse e-mail.",
     "description": ""
   },
   "btn-relay-dismiss": {
