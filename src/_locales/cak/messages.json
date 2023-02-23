@@ -244,5 +244,17 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "We napïtz' pa re pitz'b'äl, ri Facebook xtitikïr xrojqaj ri awokem pa re ruxaq k'amaya'l re'.",
     "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "¿La nya' q'ij richin yatrojqaj wawe' ri Facebook?",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Tichup ruwäch",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Tatojtob'ej Firefox Relay",
+    "description": ""
   }
 }
