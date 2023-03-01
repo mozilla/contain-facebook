@@ -82,6 +82,14 @@
     "message": "Sa labas ng Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
   },
+  "onboarding4-img": {
+    "message": "Ang imahe na ito ay nagpapakita kung paano magpapakita ang Facebook Containers fence icon katabi ng Facebook Like button.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Pinapayagan ka nito na mag-login gamit ang Facebook, ngunit masusubaybayan ka ng Facebook sa iyong aktibidad sa site na iyon.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
   "btn-allow": {
     "message": "Payagan",
     "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
@@ -114,6 +122,10 @@
     "message": "Walang natuklasan na mga trackers ng Facebook",
     "description": ""
   },
+  "no-trackers-p1": {
+    "message": "Ang Facebook Container ay walang nakitang mga Facebook trackers sa pahina. Subalit, maaaring may mga ibang tracker sa pahina.",
+    "description": ""
+  },
   "learn-more": {
     "message": "Matuto ng higit pa",
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -125,6 +137,10 @@
   "trackers-detected-subhead": {
     "message": "Protektado ka namin mula sa Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p2": {
+    "message": "Hinahadlangan ng Facebook Container ang mga tracker na ito. Gayunpaman, kung nag-click ka sa anuman sa mga pindutang ito ay masusubaybayan ka ng Facebook.",
+    "description": ""
   },
   "trackers-detected-fence-alt": {
     "message": "Bakod ng Facebook Container na may shield.",
@@ -164,6 +180,10 @@
   },
   "remove-site-subhead": {
     "message": "Alisin ang site mula sa Facebook Container?",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Payagan ang Pagsubaybay ng Facebook sa site na ito?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {

@@ -190,7 +190,7 @@
     "description": ""
   },
   "button-allow-site": {
-    "message": "Дозволити сайт в Facebook Container",
+    "message": "Дозволити сайт у Facebook Container",
     "description": "Button text that allows sites to be added to the Facebook Container"
   },
   "button-remove-site": {
@@ -234,7 +234,7 @@
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Якщо ви хочете скористатися функцією Вхід у Facebook, то Facebook зможе відстежувати вашу діяльність на цьому сайті. Це допоможе їм створити більш повну картину вашого онлайн-життя.",
+    "message": "Якщо ви хочете скористатися функцією Вхід за допомогою Facebook, тоді Facebook зможе стежити за вашою діяльністю на цьому сайті. Це допоможе їм створити повнішу картину вашого онлайн-життя.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -254,7 +254,7 @@
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Цей сайт може передавати вашу електронну адресу Facebook, що дасть змогу Facebook відстежувати вас. Скористайтеся такою службою, як Firefox Relay, щоб приховати свою справжню електронну адресу.",
+    "message": "Цей сайт може передавати вашу електронну адресу Facebook, що дасть змогу Facebook стежити за вами. Скористайтеся такою службою, як-от Firefox Relay, щоб приховати свою справжню електронну адресу.",
     "description": ""
   },
   "btn-relay-dismiss": {

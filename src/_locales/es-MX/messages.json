@@ -155,7 +155,7 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "Los botones de Facebook que aparecen en las compras, noticias y otros sitios contienen rastreadores que indican a Facebook dónde has estado en la web. Incluso si nunca usas estos botones para dar Me Gusta o Compartir, los rastreadores aún pueden recopilar datos sobre su navegación. Facebook Container bloquea estos rastreadores.",
+    "message": "Los botones de Facebook que aparecen en las compras, noticias y otros sitios contienen rastreadores que indican a Facebook dónde has estado en la web. Incluso si nunca usas estos botones para dar Me Gusta o Compartir, los rastreadores aún pueden recopilar datos sobre tu navegación. Facebook Container bloquea estos rastreadores.",
     "description": ""
   },
   "trackers-detected-p2": {

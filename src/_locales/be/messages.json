@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container ізалюе вашу дзейнасць у Facebook ад астатняй вашай актыўнасці ў сеціве, каб прадухіліць асочванне вас Facebook-ам па-за межамі сайта Facebook з дапамогай кукаў трэціх асоб.",
+    "message": "Facebook Container ізалюе вашу дзейнасць у Facebook ад астатняй вашай актыўнасці ў Інтэрнэце, каб прадухіліць Facebook ад асочвання вас па-за межамі сайта Facebook праз староннія кукі.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -25,11 +25,11 @@
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p2": {
-    "message": "Гэтыя сайты мусяць мець доступ да вашай тоеснасці на Facebook (альбо ведаць, хто вы ёсць), каб працаваць. Таксама гэта значыць, што Facebook можа асочваць усё, што вы робіце на гэтых сайтах.",
+    "message": "Гэтыя сайты мусяць мець доступ да вашага ідэнтыфікатара Facebook (альбо ведаць, хто вы ёсць), каб працаваць. Таксама гэта значыць, што Facebook можа асочваць усё, што вы робіце на гэтых сайтах.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   },
   "notOnFacebookHeader": {
-    "message": "$URL$ не ў Кантэйнеры для Facebook.",
+    "message": "$URL$ не ў Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
@@ -39,11 +39,11 @@
     }
   },
   "notOnFacebookText": {
-    "message": "Гэты сайт адкрыты па-за межамі Кантэйнера для Facebook. Гэта робіць асочванне вас па сеціве цяжэйшым для Facebook.",
+    "message": "Гэты сайт знаходзіцца па-за межамі Facebook Container. Гэта робіць асочванне вас у Інтэрнэце цяжэйшым для Facebook.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Гэты сайт не ў Кантэйнеры для Facebook.",
+    "message": "Гэты сайт не ў Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "facebookContainer": {
@@ -51,15 +51,15 @@
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
   },
   "onboarding1-subhead": {
-    "message": "Карыстанне Facebook Container",
+    "message": "Выкарыстанне Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
   "onboarding1-p1": {
-    "message": "Facebook можа сачыць за вашымі праглядамі далёка за межамі facebook.com. Напрыклад, такія кнопкі Фэйсбуку, як \"Упадабаць\" ці \"Абагуліць\", могуць асочваць вас нават на старонках, якія вы ніколі не лайкалі альбо абагульвалі.",
+    "message": "Facebook можа сачыць за вашымі праглядамі далёка за межамі facebook.com. Напрыклад, такія кнопкі Facebook, як \"Упадабаць\" ці \"Падзяліцца\", могуць асочваць вас нават на старонках, якія вы ніколі не лайкалі альбо якімі вы ніколі не дзяліліся.",
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
   "onboarding1-p2": {
-    "message": "Facebook Container стварае мяжу паміж старонкамі Фэйсбука і рэштавым Сецівам, так што Фэйсбуку будзе складанее адсачыць за вамі.",
+    "message": "Facebook Container стварае бар'ер паміж сайтамі Facebook і астатнім Інтэрнэтам, таму Facebook стане цяжэй асочваць вас у сетцы.",
     "description": "Please do not translate \"Facebook Container\""
   },
   "onboarding2-subhead": {
@@ -70,9 +70,41 @@
     "message": "Значок плота Facebook Container ",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
+  "onboarding2-p1": {
+    "message": "Гэты значок з'яўляецца ў адрасным радку Firefox, калі вы наведваеце сайты, такія як Facebook.com, або тыя, што даданы ў Facebook Container.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "Гэтыя сайты мусяць мець доступ да вашага ідэнтыфікатара Facebook (альбо ведаць, хто вы ёсць), каб працаваць. Таксама гэта значыць, што Facebook можа асочваць усё, што вы робіце на гэтых сайтах.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
   "onboarding4-subhead": {
     "message": "Па-за Facebook",
     "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Нават калі вы не знаходзіцеся на Facebook, ён можа сачыць за вамі ў Інтэрнэце. Кнопкі, якія дазваляюць вам дзяліцца матэрыяламі на Facebook або ўваходзіць на вэб-сайты з дапамогай уліковага запісу Facebook, утрымліваюць трэкеры. Facebook Container блакіруе гэтыя трэкеры. На сайтах, дзе гэта адбываецца, будзе адлюстроўвацца значок плота.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "На гэтым відарысе паказана, як будзе выглядаць значок Facebook Container побач з кнопкай «Упадабаць» ад Facebook.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Уваход на іншыя сайты праз Facebook",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Каб выкарыстоўваць уваход праз Facebook на іншых сайтах, вам трэба будзе перамясціць іх унутр кантэйнера. Націсніце на значок Facebook Container і абярыце «Дазволіць сайт у Facebook Container» у ніжняй частцы.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "На гэтым відарысе паказана, як будзе выглядаць кнопка дадавання сайта ў Facebook Container на панэлі.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Гэта дазваляе вам увайсці на сайт праз уліковы запіс Facebook, але таксама дазваляе Facebook сачыць за вашымі дзеяннямі на гэтым сайце.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Дазволіць",
@@ -103,7 +135,11 @@
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Асочвальнікі Facebook не знойдзены",
+    "message": "Трэкеры Facebook не знойдзены",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container не выявіў ніякіх трэкераў Facebook на гэтай старонцы. Тым не менш, старонка ўсё яшчэ можа ўтрымліваць іншыя тыпы трэкераў.",
     "description": ""
   },
   "learn-more": {
@@ -117,6 +153,14 @@
   "trackers-detected-subhead": {
     "message": "Мы абаранілі вас ад Facebook.",
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "Кнопкі Facebook, якія з'яўляюцца на сайтах Інтэрнэт-крам, навінавых і іншых вэб-сайтах, утрымліваюць трэкеры, якія паведамляюць Facebook, дзе вы былі ў Інтэрнэце. Нават калі вы ніколі не выкарыстоўваеце гэтыя кнопкі, каб паставіць лайк ці падзяліцца матэрыялам, трэкеры ўся роўна могуць збіраць даныя аб вашым вэб-сёрфінгу. Facebook Container блакіруе гэтыя трэкеры.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container блакіруе гэтыя трэкеры. Аднак, калі вы націснеце любую з гэтых кнопак, Facebook зможа асачыць вас.",
+    "description": ""
   },
   "trackers-detected-fence-alt": {
     "message": "Плот Facebook Container са шчытом.",
@@ -138,6 +182,9 @@
     "message": "ДАЗВОЛЕНЫЯ ВАМІ САЙТЫ",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
+  "sites-added-p1": {
+    "message": "Facebook Container змяшчае сайты, якія належаць Facebook, у кантэйнер. Вы можаце дазволіць іншым сайтам выходзіць за яго межы, але гэта дазволіць Facebook больш асочваць вас."
+  },
   "remove": {
     "message": "Выдаліць",
     "description": ""
@@ -151,19 +198,43 @@
     "description": "Button text that removes an already-added site from the Facebook Container to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Гэты сайт не мажліва выдаліць з Facebook Container, бо ён з'яўляецца ўласнасцю Facebook.",
+    "message": "Гэты сайт не мажліва выдаліць з Facebook Container, бо ён належыць Facebook.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Ці выдаліць сайт з Facebook Container?",
+    "message": "Выдаліць сайт з Facebook Container?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "Выдаленне гэтага сайта з Facebook Container азначае, што функцыя «Увайсці праз Facebook» больш не будзе працаваць, а кукі Facebook будуць выдалены.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": "Калі вы захочаце зноў увайсці праз Facebook, вам  прыйдзецца вярнуць сайт у Facebook Container.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Ці дазволіць Facebook асочванне на гэтым сайце?",
+    "message": "Дазволіць Facebook асочванне на гэтым сайце?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Гэта дазваляе вам увайсці на сайт праз уліковы запіс Facebook, але таксама дазваляе Facebook сачыць за вашыми дзеяннямі на гэтым сайце.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container адключыў гэту кнопку і заблакіраваў для Facebook магчымасць асочвання вашых наведванняў гэтай старонкі.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container заблакіраваў трэкеры Facebook. Ён ізноў зможа асочваць вас, калі вы паспрабуеце ўвайсці на гэты сайт з дапамогай Facebook.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Дазволіць Facebook высочваць вас тут?",
+    "message": "Дазволіць Facebook асочваць вас тут?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Калі вы хочаце увайсці з дапамогай уліковага запісу Facebook, тады Facebook зможа асочваць вашу дзейнасць на гэтым сайце. Гэта дапаможа ім стварыць больш поўнае ўяўленне аб вашым жыцці ў Інтэрнэце.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -175,11 +246,15 @@
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Калі вы скарыстаецеся тут сваім сапраўдным адрасам эмэйл, Facebook зможа адсачыць вас. Пстрыкніце тут па больш падрабязную інфармацыю.",
+    "message": "Калі вы выкарыстаеце тут свой сапраўдны адрас электроннай пошты, Facebook зможа асачыць вас. Націсніце, каб даведацца больш.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "Ці дазволіць Facebook адсочваць вас тут?",
+    "message": "Дазволіць Facebook асочваць вас тут?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Гэты сайт можа перадаць ваш адрас электроннай пошты Facebook, што дазволіць Facebook адсочваць вас. Скарыстайцеся такім сэрвісам, як Firefox Relay, каб схаваць свой сапраўдны адрас электроннай пошты.",
     "description": ""
   },
   "btn-relay-dismiss": {

@@ -9,7 +9,9 @@ const FACEBOOK_CONTAINER_DETAILS = {
 const FACEBOOK_DOMAINS = [
   "facebook.com", "www.facebook.com", "facebook.net", "fb.com",
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
-  "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net", "facebookrecruiting.com",
+  "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
+  
+  "facebookrecruiting.com", "facebookblueprint.com",
 
   "instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
@@ -29,9 +31,11 @@ const FACEBOOK_DOMAINS = [
   
   "bulletin.com", "facebookbrand.com",
 
-  "novi.com",
+  "mapillary.com",
   
-  "mapillary.com"
+  "metacareers.com", "meta.com",  "metaque.st",
+
+  "novi.com"
 ];
 
 const DEFAULT_SETTINGS = {
