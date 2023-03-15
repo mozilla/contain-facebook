@@ -246,7 +246,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "As jo hjir jo echte e-mailadres brûke, kin Facebook jo mooglik folgje. Klik foar mear ynformaasje.",
+    "message": "As jo hjir jo wiere e-mailadres brûke, kin Facebook jo mooglik folgje. Klik foar mear ynformaasje.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
@@ -254,7 +254,7 @@
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Dizze website kin jo e-mailadres diele mei Facebook, wêrtroch Facebook jo folgje kin. Brûk in service lykas Firefox Relay om jo echte e-mailadres te ferbergjen.",
+    "message": "Dizze website kin jo e-mailadres diele mei Facebook, wêrtroch Facebook jo folgje kin. Brûk in service lykas Firefox Relay om jo wiere e-mailadres te ferbergjen.",
     "description": ""
   },
   "btn-relay-dismiss": {
