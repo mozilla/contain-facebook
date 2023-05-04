@@ -257,6 +257,10 @@
     "message": "Este sitio pode compartir o teu enderezo de correo electrónico con Facebook, o que permite a Facebook rastrexarte. Emprega un servizo como Firefox Relay para agochar o teu verdadeiro enderezo de correo electrónico.",
     "description": ""
   },
+  "btn-relay-dismiss": {
+    "message": "Rexeitar",
+    "description": ""
+  },
   "btn-relay-try": {
     "message": "Proba Firefox Relay",
     "description": ""
