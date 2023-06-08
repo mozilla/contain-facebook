@@ -42,10 +42,10 @@
     "webextensions-jsdom": "^1.4.1"
   },
   "dependencies": {
-    "web-ext": "^6.7.0"
+    "web-ext": "^7.6.2"
   },
   "volta": {
     "node": "16.14.1",
-    "npm": "8.5.0" 
+    "npm": "8.5.0"
   }
 }
