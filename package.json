@@ -39,7 +39,7 @@
     "sinon": "^7.5.0",
     "sinon-chai": "^3.7.0",
     "webextensions-geckodriver": "^0.7.0",
-    "webextensions-jsdom": "^0.18.1"
+    "webextensions-jsdom": "^1.4.1"
   },
   "dependencies": {
     "web-ext": "^6.7.0"
