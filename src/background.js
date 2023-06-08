@@ -7,7 +7,7 @@ const FACEBOOK_CONTAINER_DETAILS = {
 };
 
 const FACEBOOK_DOMAINS = [
-  "facebook.com", "www.facebook.com", "facebook.net", "fb.com",
+  "facebook.com", "www.facebook.com", "facebook.net", "fb.com", "fb.me",
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
   
