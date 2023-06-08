@@ -27,7 +27,7 @@ const FACEBOOK_DOMAINS = [
   "onavo.com",
   "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
 
-  "mapwith.ai", "wit.ai",
+  "mapwith.ai", "wit.ai", "mapillary.com",
 
   "oversightboard.com", "www.oversightboard.com",
   
