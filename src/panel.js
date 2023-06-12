@@ -141,7 +141,7 @@ const isSiteInContainer = async(panelId) => {
 
   const activeRootDomain = await getActiveRootDomainFromBackground();
 
-  if (addedSitesList.includes(activeRootDomain)) {
+  if (addedSitesList && addedSitesList.includes(activeRootDomain)) {
     return true;
   }
 };
@@ -345,7 +345,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const storage = await browser.storage.local.get();
   const currentPanel = storage.CURRENT_PANEL;
 
-  const onboarding = (currentPanel.includes("onboarding"));
+  const onboarding = (currentPanel && currentPanel.includes("onboarding"));
   if (!onboarding) {
     return buildPanel(currentPanel);
   }
