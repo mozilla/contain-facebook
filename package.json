@@ -4,12 +4,15 @@
   "description": "Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies. ",
   "main": "background.js",
   "scripts": {
+    "test-ci": "mocha -test/functional/setup.js test/functional/*.test.js --timeout 60000",
     "test": "eslint src test && npm run coverage && npm run test-functional",
     "test-watch": "mocha --reporter=progress test/setup.js test/features/*.test.js --watch",
     "test-functional": "mocha --reporter=progress test/functional/setup.js test/functional/*.test.js --timeout 60000",
     "test-functional-dev": "cross-env NODE_ENV=development npm run test-functional",
     "coverage": "c8 --reporter=html --reporter=text mocha --reporter=progress test/setup.js test/features/*.test.js --timeout 60000",
+    "coverage:simple": "c8 mocha test/setup.js test/features/*.test.js --timeout 60000",
     "build": "npm test && web-ext build --overwrite-dest -s src",
+    "lint": "eslint src test",
     "dev": "web-ext run -s src --devtools"
   },
   "repository": {
