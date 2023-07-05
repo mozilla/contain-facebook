@@ -35,7 +35,9 @@ const FACEBOOK_DOMAINS = [
 
   "metacareers.com", "meta.com",  "metaque.st",
 
-  "novi.com"
+  "novi.com",
+
+  "threads.net
 ];
 
 const DEFAULT_SETTINGS = {
