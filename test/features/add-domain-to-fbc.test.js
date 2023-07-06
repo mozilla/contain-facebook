@@ -31,6 +31,8 @@ describe("Add domain to Facebook Container", () => {
           removeDomain: "example.com"
         });
 
+        await sleep(300);
+
         const [promise] = await background.browser.runtime.onMessage.addListener.yield({message: "what-sites-are-added"});
         const sites = await promise;
         expect(sites.includes("example.com")).to.be.false;
@@ -39,3 +41,7 @@ describe("Add domain to Facebook Container", () => {
   });
 
 });
+
+async function sleep(ms = 100) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
