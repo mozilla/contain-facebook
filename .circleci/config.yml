@@ -13,7 +13,7 @@ workflows:
     jobs:
       - node/run:
           npm-run: lint
-  test:
+  test-ci:
     jobs:
       - node/run:
-          npm-run: test
+          npm-run: test-ci
