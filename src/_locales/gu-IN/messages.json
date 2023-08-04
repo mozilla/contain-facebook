@@ -244,5 +244,25 @@
   "inPageUI-tooltip-button-share-passive": {
     "message": "જો તમે આ બટનને ક્લિક કરો છો, તો ફેસબુક તમારી આ સાઇટની મુલાકાતને ટ્રેક કરવામાં સમર્થ હશે.",
     "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "જો તમે તમારા વાસ્તવિક ઈમેલ એડ્રેસનો અહીં ઉપયોગ કરો છો, તો Facebook તમને ટ્રૅક કરી શકશે. વધુ જાણવા માટે ક્લિક કરો.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Facebook તમને અહીં ટ્રૅક કરવા દે છે?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "આ સાઇટ તમારું ઇમેઇલ સરનામું Facebook સાથે શેર કરી શકે છે, જે Facebook તમને ટ્રૅક કરવાની મંજૂરી આપે છે. તમારું વાસ્તવિક ઇમેઇલ સરનામું છુપાવવા માટે Firefox રિલે જેવી સેવાનો ઉપયોગ કરો.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "રદ કરો",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Firefox રિલે અજમાવી જુઓ",
+    "description": ""
   }
 }
