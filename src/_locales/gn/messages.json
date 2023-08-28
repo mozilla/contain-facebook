@@ -95,7 +95,7 @@
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "Eipuru hag̃ua ne rembiapo ñepyrũ Facebook-pe ambue tendápe, emongu’eva’erã ikatuha peve. Eikutu pe ta’ãnga’i ha eiporavo \"Facebook Container renda ñemone\" iguypeve gotyo.",
+    "message": "Eiporu hag̃ua ne rembiapo ñepyrũ Facebook-pe ambue tendápe, emongu’eva’erã ikatuha peve. Eikutu pe ta’ãnga’i ha eiporavo \"Facebook Container renda ñemone\" iguypeve gotyo.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
@@ -254,7 +254,7 @@
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Ko tenda omoherakuãkuaa ne ñanduti veve kundaharape Facebook ndive, omoneĩva Facebook-pe nde rapykuehóvo. Eipuru Firefox Relay eñomi hag̃ua ne ñanduti veve.",
+    "message": "Ko tenda omoherakuãkuaa ne ñanduti veve kundaharape Facebook ndive, omoneĩva Facebook-pe nde rapykuehóvo. Eiporu Firefox Relay eñomi hag̃ua ne ñanduti veve.",
     "description": ""
   },
   "btn-relay-dismiss": {
@@ -262,7 +262,7 @@
     "description": ""
   },
   "btn-relay-try": {
-    "message": "Eipuru Firefox Relay",
+    "message": "Eiporu Firefox Relay",
     "description": ""
   }
 }
