@@ -14,7 +14,7 @@
     }
   },
   "in-fbc-p1": {
-    "message": "Facebook ikatu ohapykueho ko tenda ko’ág̃a. Emboguesérõ Facebook guerekohágui, eiporavo “Tenda Facebook guerekoha moneĩmbyre” ha emboguete tysýigui."
+    "message": "Facebook ikatu ohapykueho ko tenda ko’ág̃a. Embogueséramo Facebook oguerekohágui, eiporavo “Tenda Facebook guerekoha moneĩmbyre” ha emboguete tysýigui."
   },
   "on-facebook-subhead": {
     "message": "Facebook ha tenda oĩ Facebook Container mboypýri",
@@ -83,7 +83,7 @@
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Ndereikéiramo jepe Facebook-pe, Facebook nde rapykuehokuaa ñandutípe. Umi votõ omoneĩva ehupi hag̃ua Facebook-pe térã emoñepyrũvo tembiapo ñanduti rendápe eipurúvo ne mba’ete Facebook pegua oguereko tapykuehoha. Facebook Container ojoko ko’ã tapykuehoha ha ohechauka pe ta’ãnga’i ehecha hag̃ua moõitépa oñemboguéra’e tapykuehoha.",
+    "message": "Ndereikéirõ jepe Facebook-pe, Facebook nde rapykuehokuaa ñandutípe. Umi votõ omoneĩva ehupi hag̃ua Facebook-pe térã emoñepyrũvo tembiapo ñanduti rendápe eipurúvo ne mba’ete Facebook pegua oreko tapykuehoha. Facebook Container ojoko ko’ã tapykuehoha ha ohechauka ta’ãnga’i ehecha hag̃ua moõpa oñembogue tapykuehoha.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
@@ -139,7 +139,7 @@
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container ndohechái Facebook rapykuehoha ko kuatiaroguépe. Peicharamojepe, ko kuatiarogue ikatu oguereko ambue jehapykuehoha.",
+    "message": "Facebook Container ndohechái Facebook rapykuehoha ko kuatiaroguépe. Peicharamojepe, ko kuatiarogue ikatu oreko ambue jehapykuehoha.",
     "description": ""
   },
   "learn-more": {
