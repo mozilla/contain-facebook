@@ -13,6 +13,10 @@
       }
     }
   },
+  "on-facebook-subhead": {
+    "message": "In sce Facebook ò un di sciti izolæ da Facebook Container",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "notOnFacebookHeader": {
     "message": "$URL$ o no l'é inte Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
@@ -38,6 +42,10 @@
   "onboarding1-subhead": {
     "message": "Comme adeuviâ Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "In sce Facebook ò un di sciti izolæ da Facebook Container",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding2-alt": {
     "message": "L’icona do reçinto de Facebook Container",
@@ -70,6 +78,10 @@
   "btn-done": {
     "message": "Fæto",
     "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "Vanni inderê a-o panello de primma.",
+    "description": "This is alternative text for the back arrow button."
   },
   "no-trackers-subhead": {
     "message": "Nisciun traciatô de Facebok atrovou",
