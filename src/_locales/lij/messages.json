@@ -107,6 +107,10 @@
     "message": "Scancella",
     "description": ""
   },
+  "button-allow-site": {
+    "message": "Permetti o scito in sce Facebook Container",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
   "btn-relay-dismiss": {
     "message": "No dâghe a mente",
     "description": ""
