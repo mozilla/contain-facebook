@@ -320,7 +320,7 @@ async function maybeReopenTab (url, tab, request) {
     return {cancel: true};
   }
 
-  await browser.tabs.create({
+  const newTab = await browser.tabs.create({
     url,
     cookieStoreId,
     active: tab.active,
@@ -328,6 +328,13 @@ async function maybeReopenTab (url, tab, request) {
     windowId: tab.windowId
   });
   browser.tabs.remove(tab.id);
+
+  const matchingTabs = await browser.tabs.query({url: newTab.url});
+
+  if (!newTab.active && matchingTabs.length > 1) {
+    // Close new tab to prevent multiple reopenings when request origin container also opens new tab
+    browser.tabs.remove(newTab.id);
+  }
 
   return {cancel: true};
 }
