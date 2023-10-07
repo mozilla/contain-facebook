@@ -51,7 +51,7 @@
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
   },
   "onboarding1-subhead": {
-    "message": "Mba’éicha eipurúta Facebook Container",
+    "message": "Mba’éicha eiporúta Facebook Container",
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
   "onboarding1-p1": {
@@ -83,7 +83,7 @@
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Ndereikéirõ jepe Facebook-pe, Facebook nde rapykuehokuaa ñandutípe. Umi votõ omoneĩva ehupi hag̃ua Facebook-pe térã emoñepyrũvo tembiapo ñanduti rendápe eipurúvo ne mba’ete Facebook pegua oreko tapykuehoha. Facebook Container ojoko ko’ã tapykuehoha ha ohechauka ta’ãnga’i ehecha hag̃ua moõpa oñembogue tapykuehoha.",
+    "message": "Ndereikéirõ jepe Facebook-pe, Facebook nde rapykuehokuaa ñandutípe. Umi votõ omoneĩva ehupi hag̃ua Facebook-pe térã emoñepyrũvo tembiapo ñanduti rendápe eiporúvo ne mba’ete Facebook pegua oreko tapykuehoha. Facebook Container ojoko ko’ã tapykuehoha ha ohechauka ta’ãnga’i ehecha hag̃ua moõpa oñembogue tapykuehoha.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
@@ -155,7 +155,7 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "Umi votõ Facebook pegua ojehecháva kuatiarogue jejoguaha, marandu, ha ambue, oguereko tapykuehoha omombe’úva Facebook-pe umi kuatiarogue eike hague. Ndereipurúiramo jepe ko’ã votõ, umi tapykuehoha ikatu ombyaty marandu ne ñeikundahakue rehegua. Facebook Container ojoko umi tapykuehoha.",
+    "message": "Umi votõ Facebook pegua ojehecháva kuatiarogue jejoguaha, marandu, ha ambue, oguereko tapykuehoha omombe’úva Facebook-pe umi kuatiarogue eike hague. Ndereiporúiramo jepe ko’ã votõ, umi tapykuehoha ikatu ombyaty marandu ne ñeikundahakue rehegua. Facebook Container ojoko umi tapykuehoha.",
     "description": ""
   },
   "trackers-detected-p2": {
@@ -226,7 +226,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container ojokóma ijehapykuehoha. Eipurúramo tembiapo ñepyrũ Facebook ndive ko tendápe, ikatu nde rapykueho.",
+    "message": "Facebook Container ojokóma ijehapykuehoha. Eiporúramo tembiapo ñepyrũ Facebook ndive ko tendápe, ikatu nde rapykueho.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
@@ -234,7 +234,7 @@
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Eipurúramo tembiapo ñepyrũ Facebook ndive, Facebook ikatu ohapykueho ne rembiapo ko tendápe. Kóva ikatu ne pytyvõ ehechauka hag̃ua nde rekove porãha eikundahávo ñandutípe.",
+    "message": "Eiporúramo tembiapo ñepyrũ Facebook ndive, Facebook ikatu ohapykueho ne rembiapo ko tendápe. Kóva ikatu ne pytyvõ ehechauka hag̃ua nde rekove porãha eikundahávo ñandutípe.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -246,7 +246,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Eipurúramo ne ñanduti vevete ko’ápe, ikatu Facebook ohapykueho ndehegui. Eikutu eikuaasevéramo.",
+    "message": "Eiporúramo ne ñanduti vevete ko’ápe, ikatu Facebook ohapykueho ndehegui. Eikutu eikuaasevéramo.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
