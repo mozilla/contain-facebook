@@ -59,7 +59,7 @@
     "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
   },
   "onboarding1-p2": {
-    "message": "Facebook Container omoheñói peteĩ opaha tendakuéra Facebook ha ambue ñandutigua, péicha Facebook-pe hasyve nderapykueho hag̃ua eikundaha jave.",
+    "message": "Facebook Container omoheñói opaha tendakuéra Facebook ha ambue ñandutigua, péicha Facebook-pe hasyve nderapykueho hag̃ua eikundaha jave.",
     "description": "Please do not translate \"Facebook Container\""
   },
   "onboarding2-subhead": {
@@ -71,7 +71,7 @@
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Ko ta’ãngachu’i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com-pe, oĩva Facebook Container mboypýri.",
+    "message": "Ko ta’ãngachu’i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com-pe, oĩva Facebook Container mboypýri gotyo.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
@@ -155,7 +155,7 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "Umi votõ Facebook pegua ojehecháva kuatiarogue jejoguaha, marandu, ha ambue, oguereko tapykuehoha omombe’úva Facebook-pe umi kuatiarogue eike hague. Ndereiporúiramo jepe ko’ã votõ, umi tapykuehoha ikatu ombyaty marandu ne ñeikundahakue rehegua. Facebook Container ojoko umi tapykuehoha.",
+    "message": "Umi votõ Facebook pegua ojehecháva kuatiarogue jejoguaha, marandu, ha ambue, oreko tapykuehoha omombe’úva Facebook-pe umi kuatiarogue eike hague. Ndereiporúiramo jepe ko’ã votõ, umi tapykuehoha ikatu ombyaty marandu ne ñeikundahakue rehegua. Facebook Container ojoko umi tapykuehoha.",
     "description": ""
   },
   "trackers-detected-p2": {
@@ -183,7 +183,7 @@
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container omohenda Facebook mba’etee kora jerépe. Ikatu omoneĩ ambue tenda kora jerépe, hákatu kóva omoneĩta Facebook-pe ohapykuehovévo ne kundaha ñandutípe."
+    "message": "Facebook Container omohenda Facebook mba’etee kora jerépe. Ikatu omoneĩ ambue tenda kora jerépe, hákatu kóva omoneĩta Facebook-pe ohapykuehovévo ne kundahára ñandutípe."
   },
   "remove": {
     "message": "Mboguete",
@@ -254,7 +254,7 @@
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Ko tenda omoherakuãkuaa ne ñanduti veve kundaharape Facebook ndive, omoneĩva Facebook-pe nde rapykuehóvo. Eiporu Firefox Relay eñomi hag̃ua ne ñanduti veve.",
+    "message": "Ko tenda omoherakuãkuaa ñanduti veve kundaharape Facebook ndive, omoneĩva Facebook-pe nde rapykuehóvo. Eiporu Firefox Relay eñomi hag̃ua ne ñanduti veve.",
     "description": ""
   },
   "btn-relay-dismiss": {
