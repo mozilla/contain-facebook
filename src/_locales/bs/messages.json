@@ -77,5 +77,192 @@
   "onboarding2-p2": {
     "message": "Ove stranice moraju pristupiti vašem Facebook identitetu (ili znati ko ste) da bi radile. To također znači da Facebook može pratiti sve što radite na ovim stranicama.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding4-subhead": {
+    "message": "Van Facebooka",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "Čak i kada niste na Facebooku, Facebook vas može pratiti na mreži. Dugmad koja vam omogućavaju objavljivanje stvari na Facebooku ili prijavu na web stranice koristeći svoj Facebook račun sadrže pratioce. Facebook Container će blokirati ove pratioce i prikazati ikonicu ograde kako bi vam pokazao gdje su pratiocu uklonjeni.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "Ova slika pokazuje kako će se ikona ograde Facebook Containers pojaviti na stranici pored Facebook dugmeta Sviđa mi se.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "Prijava putem Facebooka na drugim stranicama",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "onboarding5-p1": {
+    "message": "Da biste koristili svoju Facebook prijavu na drugim stranicama, morat ćete ih premjestiti unutar granice. Kliknite na ikonicu ograde i odaberite ‘Dozvoli web stranicu u Facebook Containeru’ na dnu.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
+  "onboarding5-img": {
+    "message": "Ova slika pokazuje kako će se dugme za dodavanje stranice u Facebook Container pojaviti na panelu.",
+    "description": "This is alternative text for the image shown in the fifth onboarding panel."
+  },
+  "onboarding5-p2": {
+    "message": "Ovo vam omogućava da se prijavite na Facebook, ali omogućavate Facebooku da prati vašu aktivnost na toj stranici.",
+    "description": "This is the second paragraph on the fifth onboarding panel."
+  },
+  "btn-allow": {
+    "message": "Dozvoli",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "Otkaži",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "Sljedeće",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "Nazad",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "Gotovo",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "Vrati se na prethodni panel.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "Idite na Kako funkcioniše Facebook Container",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "Nisu otkriveni Facebook programi za praćenje",
+    "description": ""
+  },
+  "no-trackers-p1": {
+    "message": "Facebook Container nije otkrio nijedan Facebook program za praćenje na ovoj stranici. Međutim, stranica može i dalje sadržavati druge vrste pratilaca.",
+    "description": ""
+  },
+  "learn-more": {
+    "message": "Saznajte više",
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  },
+  "how-fbc-works": {
+    "message": "Kako funkcioniše Facebook Container",
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  },
+  "trackers-detected-subhead": {
+    "message": "Zaštitili smo vas od Facebooka.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  },
+  "trackers-detected-p1": {
+    "message": "Dugmad na Facebooku koja se pojavljuju na stranicama za kupovinu, vijesti i druge stranice sadrže programe za praćenje koji govore Facebooku gdje ste bili na webu. Čak i ako nikada ne koristite ove tipke za lajkanje ili dijeljenje, uređaji za praćenje i dalje mogu prikupljati podatke o vašem pretraživanju. Facebook Container blokira ove pratioce.",
+    "description": ""
+  },
+  "trackers-detected-p2": {
+    "message": "Facebook Container blokira ove pratioce. Međutim, ako kliknete na bilo koje od ovih dugmadi, Facebook će vas moći pratiti.",
+    "description": ""
+  },
+  "trackers-detected-fence-alt": {
+    "message": "Facebook Container ograda sa štitom.",
+    "description": "This is alternative text describing the container fence icon."
+  },
+  "sites-added-subhead": {
+    "message": "Dozvoljene stranice u Facebook Containeru",
+    "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "UKLJUČENE STRANICE",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "Nijedna",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "STRANICE KOJE STE DOZVOLI",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "sites-added-p1": {
+    "message": "Facebook Container stavlja stranice u vlasništvu Facebooka unutar granica. Možete dozvoliti drugim web stranicama da uđu u granicu, ali to će omogućiti Facebooku da prati više vašeg pretraživanja weba."
+  },
+  "remove": {
+    "message": "Ukloni",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "Dozvoli stranicu u Facebook Containeru",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Uklonite web stranicu iz Facebook Containera",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Budući da je ovo stranica u vlasništvu Facebooka, ne može se ukloniti iz Facebook Containera.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "Ukloniti web stranicu iz Facebook Containera?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "Uklanjanje ove stranice iz Facebook Containera znači da funkcija Prijava putem Facebooka više neće raditi i da će kolačići za praćenje Facebooka biti izbrisani.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": " Ako ponovo želiš koristiti prijavu putem Facebooka, morat ćeš je ponovo dodati u Facebook Container.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Dozvoliti Facebook praćenje na ovoj stranici?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Ovo vam omogućava da se prijavite na Facebook, ali omogućavate Facebooku da prati šta radite na ovoj stranici.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container je onemogućio ovo dugme i blokirao Facebook da prati vašu posjetu ovoj stranici.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container je blokirao Facebook programe za praćenje. Ako na ovoj stranici koristite prijavu putem Facebooka, Facebook će vas moći pratiti.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Dozvoliti Facebooku da vas prati ovdje?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Ako želite da se prijavite putem Facebooka, onda će Facebook moći pratiti vašu aktivnost na ovoj stranici. To im može pomoći da izgrade potpuniju sliku vašeg života na mreži.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Ne pokazuj mi ovo ponovo",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Ako kliknete na ovo dugme, Facebook će moći pratiti vašu posjetu ovoj stranici.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ako ovdje koristite svoju pravu email adresu, Facebook će vas možda moći pratiti. Kliknite da saznate više.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Dozvoliti Facebooku da vas prati ovdje?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Ova stranica može dijeliti vašu email adresu sa Facebookom, što omogućava Facebooku da vas prati. Koristite uslugu kao što je Firefox Relay da sakrijete svoju pravu email adresu.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Odbaci",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Isprobaj Firefox Relay",
+    "description": ""
   }
 }
