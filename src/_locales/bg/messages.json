@@ -182,8 +182,27 @@
     "message": "САЙТОВЕ, КОИТО СТЕ РАЗРЕШИЛИ",
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
+  "sites-added-p1": {
+    "message": "Facebook Container поставя сайтове, притежавани от Facebook, в рамките на границата. Можете да разрешите на други сайтове в границата, но това ще позволи на Facebook да проследява повече от вашето сърфиране в мрежата."
+  },
   "remove": {
     "message": "Премахване",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "Разрешаване на сайт във Facebook контейнер",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "Премахване на сайта от Facebook Container",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "Тъй като това е сайт, собственост на Facebook, той не може да бъде премахнат от Facebook Container.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "Премахване на сайта от Facebook Container?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
