@@ -1,4 +1,51 @@
 {
+  "extensionDescription": {
+    "message": "Facebook Container изолира вашата активност във Facebook от останалата ви активност в мрежата, за да попречи на Facebook да ви проследява извън уебсайта на Facebook чрез бисквитки на трети страни.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ е във Facebook контейнера.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "in-fbc-p1": {
+    "message": "Facebook вече може да ви следи на този сайт. За да премахнете този сайт от Facebook Container, изберете Sites Allowed in Facebook Container и го премахнете от списъка."
+  },
+  "on-facebook-subhead": {
+    "message": "Във Facebook и сайтове в границата на контейнера на Facebook",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p1": {
+    "message": "Тази икона се появява в адресната лента на Firefox, когато посещавате сайтове, притежавани от Facebook, или сайтове, които сте добавили към Facebook Container.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "on-facebook-p2": {
+    "message": "Тези сайтове трябва да имат достъп до вашата самоличност във Facebook (или да знаят кой сте), за да работят. Това също означава, че Facebook може да следи всичко, което правите в тези сайтове.",
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  },
+  "notOnFacebookHeader": {
+    "message": "$URL$ не е във Facebook контейнера.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.google.com"
+      }
+    }
+  },
+  "notOnFacebookText": {
+    "message": "Този сайт е извън Facebook Container. Това прави по-трудно за Facebook да ви следи в мрежата.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "onUnknownSiteHeader": {
+    "message": "Този сайт не е във Facebook Container.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  },
   "facebookContainer": {
     "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
