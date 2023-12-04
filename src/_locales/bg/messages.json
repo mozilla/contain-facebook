@@ -205,8 +205,64 @@
     "message": "Премахване на сайта от Facebook Container?",
     "description": ""
   },
+  "remove-site-p1": {
+    "message": "Премахването на този сайт от контейнера на Facebook означава, че функцията за влизане с Facebook вече няма да работи и бисквитките за проследяване на Facebook ще бъдат изтрити.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": " Ако искате отново да използвате \"вход чрез Facebook\", ще трябва да го добавите обратно към контейнера на Facebook.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "Разрешаване на Facebook проследяване на този сайт?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "Това ви позволява да влезете с Facebook, но и позволява на Facebook да следи какво правите на този сайт.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container деактивира този бутон и блокира проследяването на посещението ви на тази страница от Facebook.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container блокира Facebook проследяването. Ако използвате \"Вход със Facebook\" на този сайт, Facebook ще може да ви проследява.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Разрешаване на Facebook да ви следи тук?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Ако искате да използвате влизане с Facebook, тогава Facebook ще може да проследява активността ви на този сайт. Това може да им помогне да изградят по-пълна картина на вашия онлайн живот.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "Спиране на този въпрос",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "Ако щракнете върху този бутон, Facebook ще може да проследи посещението ви на този сайт.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "Ако използвате истинския си имейл адрес тук, Facebook може да успее да ви проследи. Кликнете, за да научите повече.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "Разрешаване на Facebook да ви следи тук?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Този сайт може да споделя вашия имейл адрес с Facebook, което позволява на Facebook да ви проследява. Използвайте услуга като Firefox Relay, за да скриете истинския си имейл адрес.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "Отхвърляне",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "Опитайте Firefox Relay",
     "description": ""
   }
 }
