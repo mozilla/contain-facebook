@@ -103,7 +103,7 @@
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Αυτό σας επιτρέπει να συνδεθείτε με το Facebook, αλλά επιτρέπει στο Facebook να παρακολουθεί τη δραστηριότητά σας σε αυτή την ιστοσελίδα.",
+    "message": "Αυτό σας επιτρέπει να συνδεθείτε με το Facebook, αλλά επιτρέπει στο Facebook να παρακολουθεί τη δραστηριότητά σας σε αυτόν τον ιστότοπο.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
@@ -139,7 +139,7 @@
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Το Facebook Container δεν ανίχνευσε ιχνηλάτες του Facebook σε αυτή τη σελίδα. Ωστόσο, η σελίδα ενδέχεται να περιέχει άλλους τύπους ιχνηλατών.",
+    "message": "Το Facebook Container δεν ανίχνευσε ιχνηλάτες του Facebook σε αυτήν τη σελίδα. Ωστόσο, η σελίδα ενδέχεται να περιέχει άλλους τύπους ιχνηλατών.",
     "description": ""
   },
   "learn-more": {
