@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Το Facebook Container απομονώνει τη δραστηριότητά σας στο Facebook από το υπόλοιπο διαδίκτυο, ώστε να μη γίνεται καταγραφή από το Facebook εκτός του ιστοτόπου του Facebook, μέσω cookies τρίτων.",
+    "message": "Το Facebook Container απομονώνει τη δραστηριότητά σας στο Facebook από το υπόλοιπο διαδίκτυο, ώστε να μη γίνεται καταγραφή από το Facebook εκτός του ιστοτόπου του Facebook, μέσω τρίτων cookie.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
