@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container tách biệt Facebook của bạn với phần còn lại của hoạt động web của bạn để ngăn Facebook theo dõi bạn bên ngoài trang web Facebook thông qua cookie của bên thứ ba.",
+    "message": "Facebook Container cô lập hoạt động của bạn trên Facebook khỏi các hoạt động web khác của bạn nhằm ngăn chặn Facebook theo dõi bạn bên ngoài Facebook thông qua cookie của bên thứ ba.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
