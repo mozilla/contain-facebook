@@ -70,6 +70,10 @@
     "message": "סמל הגדר של Facebook Container",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
+  "onboarding2-p1": {
+    "message": "הסמל הזה מופיע בשורת הכתובת ב־Firefox בעת ביקור באתרים כמו Facebook.com, אשר תחומים ב־Facebook Container.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
   "onboarding2-p2": {
     "message": "לאתרים אלה יש צורך בגישה לזהות שלך ב־Facebook כדי לעבוד. המשמעות היא ש־Facebook יכולה לעקוב אחר הפעילויות שלך באתרים אלה.",
     "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
