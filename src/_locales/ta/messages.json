@@ -61,5 +61,69 @@
   "onboarding1-p2": {
     "message": "முகநூல் கொள்கலன் முகநூல் தளங்களுக்கும் மீதமுள்ள வலையுக்கும் இடையில் ஒரு எல்லையை உருவாக்குகிறது, எனவே உங்களை ஆன்லைனில் கண்காணிப்பது முகநூல் கடினம்.",
     "description": "Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-subhead": {
+    "message": "முகநூல் கொள்கலன் எல்லைக்குள் உள்ள முகநூல் மற்றும் பிற தளங்களில்",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding2-alt": {
+    "message": "முகநூல் கொள்கலன் வேலி ஐகான்",
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  },
+  "onboarding2-p1": {
+    "message": "முகநூல் கொள்கலன் எல்லையில் உள்ள முகநூல்.காம் போன்ற தளங்களை நீங்கள் பார்வையிடும்போது இந்த ஐகான் பயர்பாக்ஸ் முகவரி பட்டியில் தோன்றும்.",
+    "description": "This is the first paragraph of the second onboarding panel."
+  },
+  "onboarding2-p2": {
+    "message": "இந்தத் தளங்கள் வேலை செய்ய உங்கள் முகநூல் அடையாளத்தை அணுக வேண்டும் (அல்லது நீங்கள் யார் என்பதை அறிய வேண்டும்). இந்தத் தளங்களில் நீங்கள் செய்யும் அனைத்தையும் முகநூல் கண்காணிக்க முடியும் என்பது இதன் பொருளாகும்.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  },
+  "onboarding4-subhead": {
+    "message": "முகநூலுக்கு வெளியே",
+    "description": "This is the subhead for the fourth onboarding panel."
+  },
+  "onboarding4-p1": {
+    "message": "நீங்கள் முகநூலில் இல்லாத போது கூட, இணையத்தில் முகநூலால் உங்களைக் கண்காணிக்க முடியும். முகநூலில் நீங்கள் பதிவிட உதவும் பொத்தான்கள் அல்லது உங்கள் முகநூல் கணக்கைப் பயன்படுத்தி உள்நுழையும் இணையத்தளங்கள் தடமிகளைக் கொண்டுள்ளன. முகநூல் கொள்கலன் இந்தத் தடமிகளைத் தடுத்து தடமிகள் தடுக்கப்பட்டுள்ளதை உங்களுக்குக் காட்டுவதற்காக வேலிச் சின்னத்தைக் காட்சிப்படுத்தும்.",
+    "description": "This is the first paragraph of the fourth onboarding panel."
+  },
+  "onboarding4-img": {
+    "message": "முகநூல் விருப்ப பொத்தான்களுக்கு அருகில் முகநூல் கொள்கலன்களின் வேலிச் சின்னம் எவ்வாறு தோன்றும் என்பதை இந்தப் படம் விளக்குகிறது.",
+    "description": "This is alternative text for the image shown in the fourth onboarding panel."
+  },
+  "onboarding5-subhead": {
+    "message": "பிற தளங்களில் முகநூல் மூலம் உள்நுழைதல்",
+    "description": "This is the subhead for the fifth onboarding panel."
+  },
+  "btn-allow": {
+    "message": "அனுமதி",
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  },
+  "btn-cancel": {
+    "message": "ரத்து",
+    "description": "This is a button to cancel out of the onboarding panel."
+  },
+  "btn-next": {
+    "message": "அடுத்து",
+    "description": "This is a button to continue to the next onboarding panel."
+  },
+  "btn-back": {
+    "message": "பின்",
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  },
+  "btn-done": {
+    "message": "முடிந்தது",
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  },
+  "btn-arrow-back": {
+    "message": "முந்தைய முகப்புக்கு செல்லவும்.",
+    "description": "This is alternative text for the back arrow button."
+  },
+  "btn-arrow-forward": {
+    "message": "முகநூல் கொள்கலன் எவ்வாறு இயங்குகிறது என்பதற்குச் செல்லவும்",
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  },
+  "no-trackers-subhead": {
+    "message": "முகநூல் தடமிகள் எதுவும் கண்டறியப்படவில்லை",
+    "description": ""
   }
 }
