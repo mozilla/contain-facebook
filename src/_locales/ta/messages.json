@@ -169,5 +169,100 @@
   "sites-added-subhead": {
     "message": "முகநூல் கொள்கலனில் அனுமதிக்கப்பட்ட தளங்கள்",
     "description": "This is a panel subhead."
+  },
+  "sites-included": {
+    "message": "தளங்கள் சேர்க்கப்பட்டுள்ளன",
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  },
+  "no-sites-added": {
+    "message": "ஒன்றுமில்லை",
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  },
+  "sites-allowed": {
+    "message": "நீங்கள் அனுமதித்த தளங்கள்",
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  },
+  "sites-added-p1": {
+    "message": "முகநூல் கொள்கலன் முகநூலுக்கு சொந்தமான தளங்களை எல்லைக்குள் வைக்கிறது. நீங்கள் பிற தளங்களை எல்லைக்குள் அனுமதிக்கலாம், ஆனால் இது உங்கள் வலை உலாவலை மேலும் கண்காணிக்க முகநூலை அனுமதிக்கும்."
+  },
+  "remove": {
+    "message": "நீக்கு",
+    "description": ""
+  },
+  "button-allow-site": {
+    "message": "முகநூல் கொள்கலனில் தளத்தை அனுமதி",
+    "description": "Button text that allows sites to be added to the Facebook Container"
+  },
+  "button-remove-site": {
+    "message": "முகநூல் கொள்கலனில் இருந்து தளத்தை நீக்கு",
+    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+  },
+  "button-remove-site-tooltip": {
+    "message": "இது முகநூலுக்குச் சொந்தமான தளம் என்பதால், இதனை முகநூல் கொள்கலனிலிருந்து நீக்க முடியாது.",
+    "description": "Tooltip that is displayed when hovering over the remove site button"
+  },
+  "remove-site-subhead": {
+    "message": "முகநூல் கொள்கலனில் இருந்து தளத்தை அகற்றவா?",
+    "description": ""
+  },
+  "remove-site-p1": {
+    "message": "முகநூல் கொள்கலனில் இருந்து இந்தத் தளத்தை நீக்குவது என்பதற்கு முகநூலுடன் உள்நுழையும் அம்சம் இனி இயங்காது மற்றும் முகநூல் கண்காணிப்பு நினைவிகள் நீக்கப்படும் என்று பொருளாகும்.",
+    "description": ""
+  },
+  "remove-site-p2": {
+    "message": " நீங்கள் மீண்டும் முகநூல் உடன் உள்நுழைய பயன்படுத்த விரும்பினால், அதை மீண்டும் முகநூல் கொள்கலனில் சேர்க்க வேண்டும்.",
+    "description": ""
+  },
+  "add-site-subhead": {
+    "message": "இத்தளத்தில் முகநூல் தடமறிதலை அனுமதிக்கவா?",
+    "description": ""
+  },
+  "add-site-p1": {
+    "message": "இது முகநூல் மூலமாக உள்நுழைய உங்களை அனுமதிக்கிறது, ஆனால் இந்தத் தளத்தில் உங்கள் செயல்பாட்டை முகநூல் கண்காணிப்பதையும் அனுமதிக்கிறது.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share": {
+    "message": "முகநூல் கொள்கலன் இந்த பொத்தானை முடக்கியுள்ளது மற்றும் இந்த பக்கத்திற்கு உங்கள் வருகையை கண்காணிப்பதில் இருந்து முகநூலைத் தடுத்துள்ளது.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-login": {
+    "message": "முகநூல் கொள்கலன் முகநூல் தடமிகளைத் தடுத்துள்ளது. இந்தத் தளத்தில் நீங்கள் முகநூல் உடன் உள்நுழைந்தால், முகநூல் உங்களை கண்காணிக்க முடியும்.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "உங்களை இங்கே கண்காணிக்க முகநூலை அனுமதிக்கவா?",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "நீங்கள் முகநூல் மூலம் உள்நுழைவைப் பயன்படுத்த விரும்பினால், முகநூல் இந்த தளத்தில் உங்கள் செயல்பாட்டைக் கண்காணிக்க முடியும். இது உங்கள் ஆன்லைன் வாழ்க்கையின் முழுமையான படத்தை உருவாக்க அவர்களுக்கு உதவும்.",
+    "description": ""
+  },
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "இதை மீண்டும் எனக்குக் காட்ட வேண்டாம்",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "இந்த பொத்தானை நீங்கள் கிளிக் செய்தால், இந்த தளத்திற்கான உங்கள் வருகையை பேஸ்புக் கண்காணிக்க முடியும்.",
+    "description": ""
+  },
+  "inPageUI-tooltip-button-email": {
+    "message": "நீங்கள் இங்கு உங்கள் உண்மையான மின்னஞ்சல் முகவரியைப் பயன்படுத்தினால், முகநூல் உங்களைக் கண்காணிக்கலாம். மேலும் அறிய சொடுக்குக.",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p1": {
+    "message": "உம்மை இங்கே தடமறிய முகநூலை அனுமதிக்கவா?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "இந்தத் தளம் உங்கள் மின்னஞ்சல் முகவரியை முகநூலுடன் பகிரலாம், இது முகநூல் உங்களைக் கண்காணிக்க அனுமதிக்கிறது. உங்கள் உண்மையான மின்னஞ்சல் முகவரியை மறைக்க பயர்பாக்சு ரிலே போன்ற சேவைகளைப் பயன்படுத்துங்கள்.",
+    "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "நிராகரி",
+    "description": ""
+  },
+  "btn-relay-try": {
+    "message": "பயர்பாக்சு ரிலேவை முயற்சித்துப் பாருங்கள்",
+    "description": ""
   }
 }
