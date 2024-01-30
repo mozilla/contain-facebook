@@ -1,6 +1,23 @@
 {
+  "extensionDescription": {
+    "message": "முகநூல் மூன்றாம் தரப்பு நினைவிகள் வழியாக முகநூல் வலைத்தளத்திற்கு வெளியே உங்களை கண்காணிப்பதைத் தடுக்க முகநூல் கொள்கலன் உங்கள் முகநூல் செயல்பாட்டை உங்கள் மீதமுள்ள இணையச் செயல்பாடுகளிலிருந்து தனிமைப்படுத்துகிறது.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  },
+  "in-fbc-subhead": {
+    "message": "$URL$ முகநூல் கொள்கலனில் உள்ளது.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "www.facebook.com"
+      }
+    }
+  },
+  "in-fbc-p1": {
+    "message": "முகநூல் இப்போது உங்களை இந்த தளத்தில் கண்காணிக்க முடியும். இந்த தளத்தை முகநூல் கொள்கலனில் இருந்து அகற்ற, முகநூல் கொள்கலனில் அனுமதிக்கப்பட்ட தளங்களைத் தேர்ந்தெடுத்து பட்டியலிலிருந்து அகற்றவும்."
+  },
   "facebookContainer": {
-    "message": "Facebook Container", 
+    "message": "Facebook Container",
     "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
   }
 }
