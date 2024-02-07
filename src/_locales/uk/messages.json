@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container ізолює вашу діяльність у Facebook від решти активності в Інтернеті, щоб запобігти стеженню Facebook за вами на інших сайтах через сторонні куки.",
+    "message": "Facebook Container ізолює вашу діяльність у Facebook від решти активності в Інтернеті, щоб запобігти стеженню Facebook за вами на інших сайтах через сторонні файли cookie.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -206,7 +206,7 @@
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Видалення цього сайту з Facebook Container означає, що функція Вхід з Facebook більше не буде працювати, а куки Facebook будуть видалені.",
+    "message": "Видалення цього сайту з Facebook Container означає, що функція Вхід з Facebook більше не працюватиме, а файли cookie Facebook будуть видалені.",
     "description": ""
   },
   "remove-site-p2": {
