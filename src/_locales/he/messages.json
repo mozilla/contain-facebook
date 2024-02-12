@@ -218,6 +218,10 @@
     "message": "לא להציג הודעה זו שוב",
     "description": ""
   },
+  "inPageUI-tooltip-button-share-passive": {
+    "message": "לחיצה על כפתור זה תגרום לכך של־Facebook תהיה אפשרות לעקוב אחר הביקור שלך באתר זה.",
+    "description": ""
+  },
   "inPageUI-tooltip-button-email": {
     "message": "אם ייעשה שימוש בכתובת הדוא״ל האמיתית שלך כאן, ייתכן שיהיה באפשרות Facebook לעקוב אחריך. יש ללחוץ למידע נוסף.",
     "description": ""
