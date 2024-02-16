@@ -198,6 +198,10 @@
     "message": "להסיר את האתר מ־Facebook Container?",
     "description": ""
   },
+  "remove-site-p2": {
+    "message": " כדי לאפשר כניסה עם Facebook שוב, יש להוסיף אותה בחזרה למגירת Facebook.",
+    "description": ""
+  },
   "add-site-subhead": {
     "message": "לאפשר מעקב של Facebook באתר זה?",
     "description": ""
