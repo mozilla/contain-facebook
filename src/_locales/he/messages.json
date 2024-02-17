@@ -198,8 +198,12 @@
     "message": "להסיר את האתר מ־Facebook Container?",
     "description": ""
   },
+  "remove-site-p1": {
+    "message": "הסרת אתר זה מה־Facebook Container משמעה שיכולת הכניסה עם Facebook לא תעבוד עוד ועוגיות המעקב של Facebook תימחקנה.",
+    "description": ""
+  },
   "remove-site-p2": {
-    "message": " כדי לאפשר כניסה עם Facebook שוב, יש להוסיף אותה בחזרה למגירת Facebook.",
+    "message": " כדי לאפשר כניסה עם Facebook שוב, יש להוסיף אותה בחזרה ל־Facebook Container.",
     "description": ""
   },
   "add-site-subhead": {
