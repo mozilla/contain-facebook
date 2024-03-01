@@ -83,7 +83,7 @@
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Facebook sitesinde olmadığınızda bile Facebook sizi izleyebilir. Sayfaları Facebook’ta paylaşmanızı veya Facebook hesabınızı kullanarak web sitelerine giriş yapmanızı sağlayan düğmelerde takip kodları bulunur. Facebook Container bu takipçileri engeller ve takipçilerin kaldırıldığı yerleri çit simgesiyle gösterir.",
+    "message": "Facebook sitesinde olmadığınızda bile Facebook sizi izleyebilir. Sayfaları Facebook’ta paylaşmanızı veya Facebook hesabınızı kullanarak web sitelerine giriş yapmanızı sağlayan düğmelerde takip kodları bulunur. Facebook Container bu takip kodlarını engeller ve takip kodlarının kaldırıldığı yerleri çit simgesiyle gösterir.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
@@ -135,11 +135,11 @@
     "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Hiç Facebook takipçisi algılanmadı",
+    "message": "Hiç Facebook takip kodu algılanmadı",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container bu sayfada herhangi bir Facebook takipçisi bulamadı. Bununla birlikte, sayfada başka takipçi türleri bulunuyor olabilir.",
+    "message": "Facebook Container bu sayfada herhangi bir Facebook takip kodu bulamadı. Bununla birlikte, sayfada başka takip kodları bulunuyor olabilir.",
     "description": ""
   },
   "learn-more": {
@@ -155,11 +155,11 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "Alışveriş sitelerinde, haber sitelerinde ve başka sitelerde karşınıza çıkan Facebook düğmeleri, hangi sayfalarda gezdiğinizi Facebook’a bildiren “takipçiler” içerir. Bu beğeni ve paylaşım düğmelerini hiç kullanmasanız bile takipçiler sizi takip ederek gezintiniz hakkında veri toplayabilir. Facebook Container bu takipçileri engeller.",
+    "message": "Alışveriş sitelerinde, haber sitelerinde ve başka sitelerde karşınıza çıkan Facebook düğmeleri, hangi sayfalarda gezdiğinizi Facebook’a bildiren “takip kodları” içerir. Bu beğeni ve paylaşım düğmelerini hiç kullanmasanız bile takip kodları sizi takip ederek gezintiniz hakkında veri toplayabilir. Facebook Container bu takip kodlarını engeller.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container bu takipçileri engeller, ama bu düğmelerden herhangi birine tıklarsanız Facebook sizi izleyebilir.",
+    "message": "Facebook Container bu takip kodlarını engeller, ama bu düğmelerden herhangi birine tıklarsanız Facebook sizi izleyebilir.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
@@ -226,7 +226,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container, Facebook takipçilerini engelledi. Bu sitede Facebook ile oturum açarsanız Facebook sizi takip edebilir.",
+    "message": "Facebook Container, Facebook takip kodlarını engelledi. Bu sitede Facebook ile oturum açarsanız Facebook sizi takip edebilir.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
