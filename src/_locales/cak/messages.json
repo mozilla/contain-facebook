@@ -245,8 +245,16 @@
     "message": "We napïtz' pa re pitz'b'äl, ri Facebook xtitikïr xrojqaj ri awokem pa re ruxaq k'amaya'l re'.",
     "description": ""
   },
+  "inPageUI-tooltip-button-email": {
+    "message": "We nawokisaj ri qitzij rochochib'al ataqoya'l, nitikïr yatrojqaj ri Facebook. Tapitz'a' richin nawetamaj ch'aqa' chik.",
+    "description": ""
+  },
   "inPageUI-tooltip-email-prompt-p1": {
     "message": "¿La nya' q'ij richin yatrojqaj wawe' ri Facebook?",
+    "description": ""
+  },
+  "inPageUI-tooltip-email-prompt-p2": {
+    "message": "Re ruxaq re' nitikïr nukomonij ri ataqoya'l rik'in Facebook, ri nuya' q'ij chi re richin yatrojqaj. Tawokisaj ri samajib'al Firefox Relay richin nawewaj ri qitzij ataqoya'l.",
     "description": ""
   },
   "btn-relay-dismiss": {
