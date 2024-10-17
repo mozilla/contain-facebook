@@ -8,9 +8,9 @@
     "test-watch": "mocha --reporter=progress test/setup.js test/features/*.test.js --watch",
     "test-functional": "mocha --reporter=progress test/functional/setup.js test/functional/*.test.js --timeout 60000",
     "test-functional-dev": "cross-env NODE_ENV=development npm run test-functional",
-    "coverage": "nyc --reporter=html --reporter=text mocha --reporter=progress test/setup.js test/features/*.test.js --timeout 60000",
+    "coverage": "c8 --reporter=html --reporter=text mocha --reporter=progress test/setup.js test/features/*.test.js --timeout 60000",
     "build": "npm test && web-ext build --overwrite-dest -s src",
-    "dev": "web-ext run -s src"
+    "dev": "web-ext run -s src --devtools"
   },
   "repository": {
     "type": "git",
@@ -28,24 +28,24 @@
   },
   "homepage": "https://github.com/mozilla/contain-facebook#readme",
   "devDependencies": {
+    "c8": "^8.0.0",
     "chai": "^4.3.6",
     "cross-env": "^5.2.1",
-    "eslint": "^4.19.1",
-    "eslint-plugin-no-unsanitized": "^2.0.2",
-    "fs-extra": "^8.1.0",
-    "mocha": "^5.2.0",
-    "nyc": "^15.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-no-unsanitized": "^4.0.2",
+    "fs-extra": "^11.1.1",
+    "mocha": "^10.2.0",
     "psl": "^1.8.0",
-    "sinon": "^7.5.0",
+    "sinon": "^12.0.1",
     "sinon-chai": "^3.7.0",
     "webextensions-geckodriver": "^0.7.0",
     "webextensions-jsdom": "^1.4.1"
   },
   "dependencies": {
-    "web-ext": "^6.7.0"
+    "web-ext": "^7.6.2"
   },
   "volta": {
     "node": "16.14.1",
-    "npm": "8.5.0" 
+    "npm": "8.5.0"
   }
 }
