@@ -155,7 +155,7 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "A vásárló-, hír- és más oldalakon megjelenő Facebook gombok olyan nyomkövetőket tartalmaznak, amelyek megmondják a Facebooknak, hogy hol volt az interneten. Még akkor is, ha soha nem használja ezeket a gombokat, hogy tetszését fejezze ki vagy tartalmakat osszon meg, a nyomkövetők akkor is böngészési adatokat gyűjthetnek. A Facebook Container blokkolja ezeket a nyomkövetőket.",
+    "message": "A vásárló-, hír- és más oldalakon megjelenő Facebook gombok olyan nyomkövetőket tartalmaznak, amelyek megmondják a Facebooknak, hogy hol volt az interneten. Még akkor is, ha sose használja ezeket a gombokat, hogy tetszését fejezze ki vagy tartalmakat osszon meg, a nyomkövetők akkor is böngészési adatokat gyűjthetnek. A Facebook Container blokkolja ezeket a nyomkövetőket.",
     "description": ""
   },
   "trackers-detected-p2": {
