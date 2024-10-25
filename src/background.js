@@ -7,36 +7,76 @@ const FACEBOOK_CONTAINER_DETAILS = {
 };
 
 const FACEBOOK_DOMAINS = [
-  "facebook.com", "www.facebook.com", "facebook.net", "fb.com", "fb.me",
-  "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
-  "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
-  
-  "facebookrecruiting.com", "facebookblueprint.com",
-
-  "fburl.com", "internalfb.com",
-
-  "instagram.com",
-  "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
-
-  "messenger.com", "m.me", "messengerdevelopers.com", "facebook.messenger.com",
-
+  "accountkit.com",
+  "acebook.com",
+  "faacebook.com",
+  "facebbook.com",
+  "facebookcareers.com",
+  "facebook.co",
+  "facebook.com",
+  "facebook.com.au",
+  "facebook.com.mx",
+  "facebook-dns.com",
+  "facebookenterprise.com",
+  "facebook-hardware.com",
+  "facebook.it",
+  "facebookmail.com",
+  "facebook.net",
+  "facebookrecruiting.com",
+  "facebookstudy.com",
+  "facebookvirtualassistant.com",
+  "fb.audio",
+  "fbcdn.net",
+  "fb.com",
+  "fbe2e.com",
+  "fb.gg",
+  "fbinfra.net",
+  "fb.me",
+  "fbpigeon.com",
+  "fbsbx.com",
+  "fbthirdpartypixel.com",
+  "fb.watch",
+  "fbwat.ch",
+  "internet.org",
+  "m-freeway.com",
+  "parse.com",
+  "wit.ai",
+  "www.facebook.com",
+  "fbcdn.com",
+  "tfbnw.net",
+  "facebook-web-clients.appspot.com",
+  "fbcdn-profile-a.akamaihd.net",
+  "fbsbx.com.online-metrix.net",
+  "connect.facebook.net.edgekey.net",
+  "facebookblueprint.com",
+  "fburl.com",
+  "internalfb.com",
+  "cdninstagram.com",
+  "instagramstatic-a.akamaihd.net",
+  "instagramstatic-a.akamaihd.net.edgesuite.net",
+  "messenger.com",
+  "m.me",
+  "messengerdevelopers.com",
+  "facebook.messenger.com",
   "atdmt.com",
-
-  "workplace.com", "www.workplace.com", "work.facebook.com",
-
+  "workplace.com",
+  "www.workplace.com",
+  "work.facebook.com",
   "onavo.com",
-  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
-
-  "mapwith.ai", "wit.ai", "mapillary.com",
-
-  "oversightboard.com", "www.oversightboard.com",
-  
-  "bulletin.com", "facebookbrand.com",
-
-  "metacareers.com", "meta.com",  "metaque.st",
-
+  "oculus.com",
+  "oculusvr.com",
+  "oculusbrand.com",
+  "oculusforbusiness.com",
+  "mapwith.ai",
+  "mapillary.com",
+  "oversightboard.com",
+  "www.oversightboard.com",
+  "bulletin.com",
+  "facebookbrand.com",
+  "metacareers.com",
+  "meta.com",
+  "metaque.st",
   "novi.com",
-
   "threads.net"
 ];
 
