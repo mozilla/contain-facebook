@@ -226,6 +226,10 @@
     "message": "האם לאפשר ל־Facebook לעקוב אחריך כאן?",
     "description": ""
   },
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "כניסה עם Facebook מאפשרת ל־Facebook לעקוב אחר הפעילות שלך באותו האתר. התיעוד מאפשר להם לגבש תובנות לגבי אורח החיים המקוון שלך.",
+    "description": ""
+  },
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "לא להציג הודעה זו שוב",
     "description": ""
