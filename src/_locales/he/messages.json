@@ -94,6 +94,10 @@
     "message": "התחברות באמצעות Facebook באתרים אחרים",
     "description": "This is the subhead for the fifth onboarding panel."
   },
+  "onboarding5-p1": {
+    "message": "כדי להשתמש בפרטי הגישה שלך ל־Facebook באתרים אחרים, יש להעביר אותם לתוך הגבול. לחיצה על סמל הגדר ובחירה ב‚לאפשר את האתר ב־Facebook Container’ למטה.",
+    "description": "This is the first paragraph of the fifth onboarding panel."
+  },
   "onboarding5-img": {
     "message": "תמונה זו ממחישה כיצד הכפתור להוספת אתר ל־Facebook Container יופיע בחלונית.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
