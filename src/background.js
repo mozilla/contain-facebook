@@ -7,37 +7,52 @@ const FACEBOOK_CONTAINER_DETAILS = {
 };
 
 const FACEBOOK_DOMAINS = [
-  "facebook.com", "www.facebook.com", "facebook.net", "fb.com", "fb.me",
-  "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
-  "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
-  
-  "facebookrecruiting.com", "facebookblueprint.com",
-
-  "fburl.com", "internalfb.com",
-
-  "instagram.com",
-  "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
-
-  "messenger.com", "m.me", "messengerdevelopers.com", "facebook.messenger.com",
-
   "atdmt.com",
-
-  "workplace.com", "www.workplace.com", "work.facebook.com",
-
-  "onavo.com",
-  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
-
-  "mapwith.ai", "wit.ai", "mapillary.com",
-
-  "oversightboard.com", "www.oversightboard.com",
-  
-  "bulletin.com", "facebookbrand.com",
-
-  "metacareers.com", "meta.com",  "metaque.st",
-
+  "bulletin.com",
+  "cdninstagram.com",
+  "connect.facebook.net.edgekey.net",
+  "facebook-web-clients.appspot.com",
+  "facebook.com",
+  "facebook.messenger.com",
+  "facebook.net",
+  "facebookblueprint.com",
+  "facebookbrand.com",
+  "facebookrecruiting.com",
+  "fb.com",
+  "fb.me",
+  "fbcdn-profile-a.akamaihd.net",
+  "fbcdn.com",
+  "fbcdn.net",
+  "fbsbx.com",
+  "fbsbx.com.online-metrix.net",
+  "fburl.com",
+  "instagram.com",
+  "instagramstatic-a.akamaihd.net",
+  "instagramstatic-a.akamaihd.net.edgesuite.net",
+  "internalfb.com",
+  "m.me",
+  "mapillary.com",
+  "mapwith.ai",
+  "messenger.com",
+  "messengerdevelopers.com",
+  "meta.com",
+  "metacareers.com",
+  "metaque.st",
   "novi.com",
-
-  "threads.net"
+  "oculus.com",
+  "oculusbrand.com",
+  "oculusforbusiness.com",
+  "oculusvr.com",
+  "onavo.com",
+  "oversightboard.com",
+  "tfbnw.net",
+  "threads.net",
+  "wit.ai",
+  "work.facebook.com",
+  "workplace.com",
+  "www.facebook.com",
+  "www.oversightboard.com",
+  "www.workplace.com"
 ];
 
 const DEFAULT_SETTINGS = {
