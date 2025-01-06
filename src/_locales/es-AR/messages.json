@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container aísla tu actividad de Facebook del resto de tu actividad web para evitar que te rastree fuera del sitio web de Facebook a través de cookies de terceros.",
+    "message": "Facebook Container aísla tu actividad de Facebook del resto de tu actividad web para evitar que te rastree fuera del sitio de Facebook a través de cookies de terceros.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -25,7 +25,7 @@
     "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p2": {
-    "message": "Para poder funcionar, estos sitios necesitan que acceda con su identidad de Facebook, lo que también significa que Facebook podrá rastrear todo lo que haga.",
+    "message": "Estos sitios necesitan acceder a tu identidad de Facebook (o saber quién sos) para poder funcionar. Esto también significa que Facebook puede rastrear todo lo que hacés en estos sitios.",
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   },
   "notOnFacebookHeader": {
