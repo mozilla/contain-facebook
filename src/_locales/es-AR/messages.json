@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container aísla su actividad de Facebook del resto de su actividad web para evitar que Facebook lo rastree fuera del sitio web de Facebook a través de cookies de terceros.",
+    "message": "Facebook Container aísla tu actividad de Facebook del resto de tu actividad web para evitar que te rastree fuera del sitio web de Facebook a través de cookies de terceros.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -14,7 +14,7 @@
     }
   },
   "in-fbc-p1": {
-    "message": "Facebook puede rastrearlo en este sitio ahora. Para eliminarlo del contenedor de Facebook, seleccione \"Sitios permitidos en el contenedor de Facebook\" y elimínelo de la lista."
+    "message": "Facebook ahora te puede rastrear en este sitio. Para eliminarlo del contenedor de Facebook, seleccioná Sitios permitidos en el contenedor de Facebook y eliminalo de la lista."
   },
   "on-facebook-subhead": {
     "message": "En Facebook y sitios en el límite del Facebook Container",
