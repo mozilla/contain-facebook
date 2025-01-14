@@ -14,7 +14,7 @@
     }
   },
   "in-fbc-p1": {
-    "message": "Facebook สามารถติดตามคุณบนไซต์นี้ได้ หากต้องการเอาไซต์นี้ออกจาก Facebook Container ให้เลือก ไซต์ที่อนุญาต ใน Facebook Container แล้วเอาออกจากรายชื่อ"
+    "message": "Facebook สามารถติดตามคุณบนไซต์นี้ได้ ถ้าต้องการเอาไซต์นี้ออกจาก Facebook Container ให้เลือก ไซต์ที่อนุญาต ใน Facebook Container แล้วเอาออกจากรายชื่อ"
   },
   "on-facebook-subhead": {
     "message": "บน Facebook และไซต์ที่อยู่ในขอบเขตของ Facebook Container",
@@ -95,7 +95,7 @@
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "หากต้องการใช้ข้อมูลการเข้าสู่ระบบ Facebook ของคุณบนไซต์อื่น คุณจะต้องย้ายข้อมูลเหล่านั้นมาไว้ภายในขอบเขต คลิกไอคอนรั้วแล้วเลือก ‘อนุญาตไซต์ใน Facebook Container’ ที่อยู่ด้านล่าง",
+    "message": "ถ้าต้องการใช้ข้อมูลการเข้าสู่ระบบ Facebook ของคุณบนไซต์อื่น คุณจะต้องย้ายข้อมูลเหล่านั้นมาไว้ภายในขอบเขต คลิกไอคอนรั้วแล้วเลือก ‘อนุญาตไซต์ใน Facebook Container’ ที่อยู่ด้านล่าง",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
@@ -159,7 +159,7 @@
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container จะปิดกั้นตัวติดตามเหล่านี้ แต่หากคุณคลิกที่ปุ่มใดปุ่มหนึ่งเหล่านี้ Facebook จะสามารถติดตามคุณได้",
+    "message": "Facebook Container จะปิดกั้นตัวติดตามเหล่านี้ แต่ถ้าคุณคลิกที่ปุ่มใดปุ่มหนึ่งเหล่านี้ Facebook จะสามารถติดตามคุณได้",
     "description": ""
   },
   "trackers-detected-fence-alt": {
@@ -210,7 +210,7 @@
     "description": ""
   },
   "remove-site-p2": {
-    "message": " หากคุณต้องการใช้ “เข้าสู่ระบบด้วย Facebook” อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container ใหม่",
+    "message": " ถ้าคุณต้องการใช้การเข้าสู่ระบบด้วย Facebook อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container ใหม่",
     "description": ""
   },
   "add-site-subhead": {
@@ -226,7 +226,7 @@
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container ได้ปิดกั้นตัวติดตามของ Facebook หากคุณใช้ “เข้าสู่ระบบด้วย Facebook” บนไซต์นี้ Facebook จะสามารถติดตามคุณได้",
+    "message": "Facebook Container ได้ปิดกั้นตัวติดตามของ Facebook ถ้าคุณใช้การเข้าสู่ระบบด้วย Facebook บนไซต์นี้ Facebook จะสามารถติดตามคุณได้",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
@@ -234,7 +234,7 @@
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "หากคุณต้องการใช้การเข้าสู่ระบบด้วย Facebook จะทำให้ Facebook สามารถติดตามกิจกรรมของคุณบนไซต์นี้ได้ ซึ่งจะช่วยให้พวกเขาสร้างภาพชีวิตออนไลน์ของคุณได้สมบูรณ์ยิ่งขึ้น",
+    "message": "ถ้าคุณต้องการใช้การเข้าสู่ระบบด้วย Facebook จะทำให้ Facebook สามารถติดตามกิจกรรมของคุณบนไซต์นี้ได้ ซึ่งจะช่วยให้พวกเขาสร้างภาพชีวิตออนไลน์ของคุณได้สมบูรณ์ยิ่งขึ้น",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,11 +242,11 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "หากคุณคลิกปุ่มนี้ Facebook จะสามารถติดตามการเยี่ยมชมไซต์นี้ของคุณได้",
+    "message": "ถ้าคุณคลิกปุ่มนี้ Facebook จะสามารถติดตามการเยี่ยมชมไซต์นี้ของคุณได้",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "หากคุณใช้ที่อยู่อีเมลจริงของคุณที่นี่ Facebook อาจสามารถติดตามคุณได้ คลิกเพื่อเรียนรู้เพิ่มเติม",
+    "message": "ถ้าคุณใช้ที่อยู่อีเมลจริงของคุณที่นี่ Facebook อาจสามารถติดตามคุณได้ คลิกเพื่อเรียนรู้เพิ่มเติม",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
