@@ -122,5 +122,9 @@
   "inPageUI-tooltip-prompt-checkbox": {
     "message": "దీన్ని మళ్ళీ నాకు చూపించకు",
     "description": ""
+  },
+  "btn-relay-dismiss": {
+    "message": "విస్మరించు",
+    "description": ""
   }
 }
