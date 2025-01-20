@@ -95,7 +95,7 @@
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "لاستخدام معلومات تسجيل الدخول إلى Facebook على مواقع أخرى ، ستحتاج إلى نقلها داخل الحدود. انقر على رمز السور وحدد \"السماح بالموقع في حاوية Facebook\" في الأسفل.",
+    "message": "لاستخدام ولوجك إلى Facebook على مواقع أخرى، ستحتاج إلى نقلها داخل الحدود. انقر على رمز السياج وحدد \"اسمح للموقع في Facebook Container\" في الأسفل.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
