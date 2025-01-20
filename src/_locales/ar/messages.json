@@ -17,7 +17,7 @@
     "message": "يمكن لموقع فيسبوك الآن تعقّب ما تفعل في هذا الموقع. لو أردت إزالة الموقع من امتداد Facebook Container فاختر ”المواقع المسموحة في امتداد Facebook Container“ وأزِله من القائمة."
   },
   "on-facebook-subhead": {
-    "message": "على فيسبوك والمواقع داخل نطاق حاوية فيسبوك",
+    "message": "على فيسبوك والمواقع داخل نطاق Facebook Container",
     "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "on-facebook-p1": {
@@ -63,7 +63,7 @@
     "description": "Please do not translate \"Facebook Container\""
   },
   "onboarding2-subhead": {
-    "message": "على فيسبوك والمواقع داخل نطاق حاوية فيسبوك",
+    "message": "على فيسبوك والمواقع داخل نطاق Facebook Container",
     "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
   },
   "onboarding2-alt": {
@@ -83,7 +83,7 @@
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "حتى لو لم تكن على فيسبوك، يمكن لفيسبوك أن يتعقبك على الإنترنت. تحتوي الأزرار التي تسمح لك بنشر الأشياء على فيسبوك أو الولوج إلى مواقع الوِب باستخدام حساب فيسبوك على متعقبات. ستحجب حاوية فيسبوك هذه المتعقبات و تعرض أيقونة السياج لتظهر لك أين أُزيلت المتعقبات.",
+    "message": "حتى لو لم تكن على فيسبوك، يمكن لفيسبوك أن يتعقبك على الإنترنت. تحتوي الأزرار التي تسمح لك بنشر الأشياء على فيسبوك أو الولوج إلى مواقع الوِب باستخدام حساب فيسبوك على متعقبات. ستحجب Facebook Container هذه المتعقبات و تعرض أيقونة السياج لتظهر لك أين أُزيلت المتعقبات.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
@@ -155,11 +155,11 @@
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
   },
   "trackers-detected-p1": {
-    "message": "تحتوي أزرار فيسبوك التي تظهر حين تتسوق وفي الأخبار والمواقع الأخرى على متعقبات تخبر فيسبوك عن مكانك على الإنترنت، حتى لو لم تستخدم هذه الأزرار للإعجاب أو المشاركة، فإن المتعقبات ما زالت تجمع بيانات عن تصفحك. يحجب حاوي فيسبوك هذه المتعقبات.",
+    "message": "تحتوي أزرار فيسبوك التي تظهر حين تتسوق وفي الأخبار والمواقع الأخرى على متعقبات تخبر فيسبوك عن مكانك على الإنترنت، حتى لو لم تستخدم هذه الأزرار للإعجاب أو المشاركة، فإن المتعقبات ما زالت تجمع بيانات عن تصفحك. تحجب Facebook Container هذه المتعقبات.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "يحجب حاوي فيسبوك هذه المتعقبات. ولكن إذا نقرت على أي من هذه الأزرار سيكون بمقدور فيسبوك تعقبك.",
+    "message": "تحجب Facebook Container هذه المتعقبات. ولكن إذا نقرت على أي من هذه الأزرار سيكون بمقدور فيسبوك تعقبك.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
@@ -183,7 +183,7 @@
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "يجمع حاوي فيسبوك المواقع التي تملكها فيسبوك داخل الحدود. يمكنك السماح للمواقع الأخرى بالدخول إلى تلك الحدود، و لكن هذا سيسمح لفيسبوك بتعقب المزيد من تصفحك للوِب."
+    "message": "يجمع Facebook Container المواقع التي تملكها فيسبوك داخل الحدود. يمكنك السماح للمواقع الأخرى بالدخول إلى تلك الحدود، و لكن هذا سيسمح لفيسبوك بتعقب المزيد من تصفحك للوِب."
   },
   "remove": {
     "message": "أزِل",
@@ -214,11 +214,11 @@
     "description": ""
   },
   "add-site-subhead": {
-    "message": "هل تسمح بتتبع Facebook على هذا الموقع؟",
+    "message": "أتسمح بتتبع فيسبوك على هذا الموقع؟",
     "description": ""
   },
   "add-site-p1": {
-    "message": "يتيح لك هذا تسجيل الدخول باستخدام Facebook، ولكنه يسمح لـFacebook بمتابعة ما تفعله على هذا الموقع.",
+    "message": "يتيح لك هذا تسجيل الدخول باستخدام فيسبوك، ولكنه يسمح لفيسبوك بمتابعة ما تفعله على هذا الموقع.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
@@ -242,11 +242,11 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "إذا قمت بالنقر على هذا الزر، فسيتمكن Facebook من تتبع زيارتك لهذا الموقع.",
+    "message": "إذا نقرت على هذا الزر، فسيتمكن فيسبوك من تتبع زيارتك لهذا الموقع.",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "إذا استخدمت عنوان بريدك الإلكتروني الحقيقي هنا، فقد يتمكن Facebook من تتبعك. اضغط لتتعلم المزيد.",
+    "message": "إذا استخدمت عنوان بريدك الإلكتروني الحقيقي هنا، فقد يتمكن فيسبوك من تتبعك. انقر لتطلع على المزيد.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
