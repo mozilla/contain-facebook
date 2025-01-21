@@ -29,7 +29,7 @@
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   },
   "notOnFacebookHeader": {
-    "message": "$URL$ staat niet in de Facebook-container.",
+    "message": "$URL$ staat niet in de Facebook Container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
@@ -39,7 +39,7 @@
     }
   },
   "notOnFacebookText": {
-    "message": "Deze website bevindt zich buiten de Facebook-container. Dit maakt het voor Facebook moeilijker om u op het web te volgen.",
+    "message": "Deze website staat buiten de Facebook Container. Dit maakt het voor Facebook moeilijker om u op het web te volgen.",
     "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "onUnknownSiteHeader": {
