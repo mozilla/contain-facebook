@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container isoleert uw Facebook-activiteit van de rest van uw internetactiviteit, om zo te voorkomen dat Facebook u buiten de Facebook-website volgt via cookies van derden.",
+    "message": "Facebook Container isoleert uw Facebook-activiteit van de rest van uw internetactiviteit, om zo te voorkomen dat Facebook u via cookies van derden buiten de Facebook-website volgt.",
     "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
   },
   "in-fbc-subhead": {
@@ -29,7 +29,7 @@
     "description": "This is shown in the body of the panel pop up when the user is on Facebook."
   },
   "notOnFacebookHeader": {
-    "message": "$URL$ bevindt zich niet in de Facebook-container.",
+    "message": "$URL$ staat niet in de Facebook-container.",
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
     "placeholders": {
       "url": {
