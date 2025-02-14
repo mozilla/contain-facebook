@@ -33,7 +33,7 @@
     "eslint": "^4.19.1",
     "eslint-plugin-no-unsanitized": "^2.0.2",
     "fs-extra": "^8.1.0",
-    "mocha": "^5.2.0",
+    "mocha": "^10.2.0",
     "nyc": "^15.1.0",
     "psl": "^1.8.0",
     "sinon": "^7.5.0",
