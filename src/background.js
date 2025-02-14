@@ -7,37 +7,78 @@ const FACEBOOK_CONTAINER_DETAILS = {
 };
 
 const FACEBOOK_DOMAINS = [
-  "facebook.com", "www.facebook.com", "facebook.net", "fb.com", "fb.me",
-  "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
-  "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
-  
-  "facebookrecruiting.com", "facebookblueprint.com",
-
-  "fburl.com", "internalfb.com",
-
-  "instagram.com",
-  "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
-
-  "messenger.com", "m.me", "messengerdevelopers.com", "facebook.messenger.com",
-
+  "accountkit.com",
+  "acebook.com",
   "atdmt.com",
-
-  "workplace.com", "www.workplace.com", "work.facebook.com",
-
-  "onavo.com",
-  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
-
-  "mapwith.ai", "wit.ai", "mapillary.com",
-
-  "oversightboard.com", "www.oversightboard.com",
-  
-  "bulletin.com", "facebookbrand.com",
-
-  "metacareers.com", "meta.com",  "metaque.st",
-
+  "bulletin.com",
+  "cdninstagram.com",
+  "connect.facebook.net.edgekey.net",
+  "faacebook.com",
+  "facebbook.com",
+  "facebook-dns.com",
+  "facebook-hardware.com",
+  "facebook-web-clients.appspot.com",
+  "facebook.co",
+  "facebook.com",
+  "facebook.com.au",
+  "facebook.com.mx",
+  "facebook.it",
+  "facebook.messenger.com",
+  "facebook.net",
+  "facebookblueprint.com",
+  "facebookbrand.com",
+  "facebookcareers.com",
+  "facebookenterprise.com",
+  "facebookmail.com",
+  "facebookrecruiting.com",
+  "facebookstudy.com",
+  "facebookvirtualassistant.com",
+  "fb.audio",
+  "fb.com",
+  "fb.gg",
+  "fb.me",
+  "fb.watch",
+  "fbcdn-profile-a.akamaihd.net",
+  "fbcdn.com",
+  "fbcdn.net",
+  "fbe2e.com",
+  "fbinfra.net",
+  "fbpigeon.com",
+  "fbsbx.com",
+  "fbsbx.com.online-metrix.net",
+  "fbthirdpartypixel.com",
+  "fburl.com",
+  "fbwat.ch",
+  "instagram.com",
+  "instagramstatic-a.akamaihd.net",
+  "instagramstatic-a.akamaihd.net.edgesuite.net",
+  "internalfb.com",
+  "internet.org",
+  "m-freeway.com",
+  "m.me",
+  "mapillary.com",
+  "mapwith.ai",
+  "messenger.com",
+  "messengerdevelopers.com",
+  "meta.com",
+  "metacareers.com",
+  "metaque.st",
   "novi.com",
-
-  "threads.net"
+  "oculus.com",
+  "oculusbrand.com",
+  "oculusforbusiness.com",
+  "oculusvr.com",
+  "onavo.com",
+  "oversightboard.com",
+  "parse.com",
+  "tfbnw.net",
+  "threads.net",
+  "wit.ai",
+  "work.facebook.com",
+  "workplace.com",
+  "www.facebook.com",
+  "www.oversightboard.com",
+  "www.workplace.com"
 ];
 
 const DEFAULT_SETTINGS = {
