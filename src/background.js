@@ -37,7 +37,7 @@ const FACEBOOK_DOMAINS = [
 
   "novi.com",
 
-  "threads.net"
+  "threads.net", "threads.com"
 ];
 
 const DEFAULT_SETTINGS = {
