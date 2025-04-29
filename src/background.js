@@ -325,7 +325,8 @@ async function maybeReopenTab (url, tab, request) {
     cookieStoreId,
     active: tab.active,
     index: tab.index,
-    windowId: tab.windowId
+    windowId: tab.windowId,
+    openerTabId: tab.openerTabId
   });
   browser.tabs.remove(tab.id);
 
