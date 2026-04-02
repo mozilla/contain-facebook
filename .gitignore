@@ -6,3 +6,4 @@
 /.web-ext-artifacts
 /.claude
 /test-results
+/.web-ext-config.mjs
