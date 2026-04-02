@@ -16,7 +16,24 @@ jobs:
             - ~/.npm
       - run: npm test
 
+  functional-test:
+    docker:
+      - image: cimg/node:22.14
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - npm-{{ checksum "package-lock.json" }}
+      - run: npm install
+      - save_cache:
+          key: npm-{{ checksum "package-lock.json" }}
+          paths:
+            - ~/.npm
+      - run: npx playwright install firefox --with-deps
+      - run: npm run test:functional
+
 workflows:
   ci:
     jobs:
       - test
+      - functional-test

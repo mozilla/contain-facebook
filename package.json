@@ -5,7 +5,10 @@
   "main": "background.js",
   "type": "module",
   "scripts": {
-    "test": "eslint src test/features && vitest run",
+    "test": "npm run test:lint && npm run test:unit",
+    "test:lint": "eslint src test/features",
+    "test:unit": "vitest run",
+    "test:functional": "playwright test",
     "test-watch": "vitest",
     "coverage": "vitest run --coverage",
     "build": "npm test && web-ext build --overwrite-dest -s src",
@@ -28,14 +31,15 @@
   "homepage": "https://github.com/mozilla/contain-facebook#readme",
   "devDependencies": {
     "@eslint/js": "^9.0.0",
+    "@playwright/test": "^1.59.1",
     "@vitest/coverage-v8": "^4.0.0",
     "chai": "^6.0.0",
-    "eslint-plugin-no-unsanitized": "^4.0.0",
     "eslint": "^10.0.0",
+    "eslint-plugin-no-unsanitized": "^4.0.0",
     "globals": "^17.0.0",
     "jsdom": "^29.0.1",
-    "sinon-chai": "^4.0.0",
     "sinon": "^22.1.0",
+    "sinon-chai": "^4.0.0",
     "vitest": "^4.0.0"
   },
   "dependencies": {
