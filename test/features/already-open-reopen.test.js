@@ -64,7 +64,7 @@ describe("Already Open Reopen", () => {
         url: tab.url,
         status: "complete"
       }, tab);
-      await new Promise(setTimeout);
+      await new Promise(r => setTimeout(r, 0));
 
       expect(background.browser.tabs.create).to.have.been.calledWithMatch({
         url: "https://www.facebook.com",

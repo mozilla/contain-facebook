@@ -3,12 +3,11 @@
   "version": "2.3.12",
   "description": "Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies. ",
   "main": "background.js",
+  "type": "module",
   "scripts": {
-    "test": "eslint src test && npm run coverage && npm run test-functional",
-    "test-watch": "mocha --reporter=progress test/setup.js test/features/*.test.js --watch",
-    "test-functional": "mocha --reporter=progress test/functional/setup.js test/functional/*.test.js --timeout 60000",
-    "test-functional-dev": "cross-env NODE_ENV=development npm run test-functional",
-    "coverage": "nyc --reporter=html --reporter=text mocha --reporter=progress test/setup.js test/features/*.test.js --timeout 60000",
+    "test": "eslint src test/features && vitest run",
+    "test-watch": "vitest",
+    "coverage": "vitest run --coverage",
     "build": "npm test && web-ext build --overwrite-dest -s src",
     "dev": "web-ext run -s src"
   },
@@ -29,25 +28,21 @@
   "homepage": "https://github.com/mozilla/contain-facebook#readme",
   "devDependencies": {
     "@eslint/js": "^9.0.0",
-    "chai": "^4.3.6",
-    "cross-env": "^5.2.1",
-    "eslint": "^10.0.0",
+    "@vitest/coverage-v8": "^4.0.0",
+    "chai": "^6.0.0",
     "eslint-plugin-no-unsanitized": "^4.0.0",
-    "fs-extra": "^8.1.0",
+    "eslint": "^10.0.0",
     "globals": "^17.0.0",
-    "mocha": "^5.2.0",
-    "nyc": "^15.1.0",
-    "psl": "^1.8.0",
-    "sinon": "^7.5.0",
-    "sinon-chai": "^3.7.0",
-    "webextensions-geckodriver": "^0.7.0",
-    "webextensions-jsdom": "^1.4.1"
+    "jsdom": "^29.0.1",
+    "sinon-chai": "^4.0.0",
+    "sinon": "^22.1.0",
+    "vitest": "^4.0.0"
   },
   "dependencies": {
-    "web-ext": "^6.7.0"
+    "web-ext": "^10.1.0"
   },
   "volta": {
-    "node": "16.14.1",
-    "npm": "8.5.0"
+    "node": "22.14.0",
+    "npm": "10.9.2"
   }
 }
