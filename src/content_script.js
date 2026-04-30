@@ -327,8 +327,9 @@ function openInputPrompt(socialAction, fencePos, target, fbcIframeHeight) {
       }
     });
     postMessageListeners(iframeSrcVal, target);
+  } else {
+    hasFbcWrapper.remove();
   }
-  hasFbcWrapper.remove();
 }
 
 function postMessageListeners(iframeSrcVal, target){
