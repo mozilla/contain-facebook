@@ -464,8 +464,8 @@ const buildOnboardingPanel = async (panelId) => {
 
 
 const addHeaderWithBackArrow = (fragment) => {
-  let el = addHeader(fragment);
-  el = document.createElement("button");
+  addHeader(fragment);
+  const el = document.createElement("button");
   el.classList.add("btn-return", "arrow-left");
   fragment.appendChild(el);
   return fragment;

@@ -47,16 +47,20 @@ To learn more about how Multi-Account Containers work, see our support page at [
 ## Development
 
 1. `npm install`
-2. `./node_modules/.bin/web-ext run -s src/`
+2. `npm run dev`
+
+#### Optional: pin a specific Firefox binary
+
+If `npm run dev` launches the wrong Firefox (e.g. Beta instead of Release), copy `.web-ext-config.example.mjs` to `.web-ext-config.mjs` and uncomment the relevant options. This file is gitignored and won't affect other contributors.
 
 ### Testing
-`npm run test`
 
-or
-
-`npm run lint`
-
-for just the linter
+| Command | What it runs |
+|---|---|
+| `npm test` | Lint + unit tests |
+| `npm run test:lint` | ESLint only |
+| `npm run test:unit` | Vitest only |
+| `npm run test:functional` | Playwright functional tests (requires Firefox) |
 
 ### Building
 
