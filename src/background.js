@@ -13,7 +13,7 @@ const FACEBOOK_DOMAINS = [
   
   "facebookrecruiting.com", "facebookblueprint.com",
 
-  "fburl.com", "internalfb.com",
+  "fburl.com", "internalfb.com", "internalmeta.com",
 
   "instagram.com",
   "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
@@ -28,6 +28,8 @@ const FACEBOOK_DOMAINS = [
   "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
 
   "mapwith.ai", "wit.ai", "mapillary.com",
+
+  "meta.ai", "muse.ai",
 
   "oversightboard.com", "www.oversightboard.com",
   
