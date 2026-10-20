@@ -1,5 +1,7 @@
 # Facebook Container
 
+> **Maintenance mode:** We only make minor updates to the site list and fix security issues in this project. We are not adding new features.
+
 **Prevent Facebook from tracking your visits to other websites**
 
 Facebook Container is an add-on you can install on Firefox to prevent Facebook from tracking your activity on other websites, so you can continue to use Facebook while protecting your privacy.
